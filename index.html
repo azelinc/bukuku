@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dragon of Star-Mist Mountain</title>
+    <style>
+        /* Modern, clean look for kids */
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: #1a1a2e; 
+            color: #333;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            margin: 0; 
+        }
+        #game-container { 
+            background: #ffffff; 
+            width: 90%; 
+            max-width: 700px; 
+            padding: 40px; 
+            border-radius: 30px; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
+            text-align: center;
+            border: 8px solid #ffd700; /* Gold border */
+        }
+        #scene-image { 
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; 
+            border-radius: 20px; 
+            margin-bottom: 25px;
+            border: 4px solid #f0f0f0;
+        }
+        h1 { font-size: 28px; line-height: 1.4; margin-bottom: 30px; color: #2c3e50; }
+        .choice-btn { 
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            border: none; 
+            color: white; 
+            padding: 18px 25px; 
+            margin: 10px; 
+            border-radius: 50px; 
+            cursor: pointer; 
+            font-size: 18px; 
+            font-weight: bold;
+            transition: 0.3s;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .choice-btn:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #a777e3, #6e8efb);
+        }
+        #inventory { margin-top: 20px; font-style: italic; color: #666; }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <img id="scene-image" src="" alt="Adventure scene">
+    <h1 id="story-text">Loading your adventure...</h1>
+    <div id="choices"></div>
+    <div id="inventory"></div>
+</div>
+
+<script>
+    // THE STORY DATA
+    const story = {
+        start: {
+            text: "You and your friends find a glowing map in the attic. It shows a path to the Star-Mist Mountain, where a dragon has stolen the Queen Fairy's magic wand! Do you go?",
+            image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=800",
+            choices: [
+                { text: "Grab your backpack and go!", next: "forest_entrance" },
+                { text: "Stay home and eat cookies", next: "home_ending" }
+            ]
+        },
+        home_ending: {
+            text: "The cookies are delicious, but you always wonder what happened to the dragon. (The End)",
+            image: "https://images.unsplash.com/photo-1499636136210-65422ff04a52?auto=format&fit=crop&q=80&w=800",
+            choices: [{ text: "Try again?", next: "start" }]
+        },
+        forest_entrance: {
+            text: "You reach the Whispering Forest. A tiny Fairy named Pip appears. 'Stop!' she squeaks. 'The trees are grumpy today. To pass, you must give them something sweet or sing a song!'",
+            image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=800",
+            choices: [
+                { text: "Give them your emergency chocolate", next: "fairy_village" },
+                { text: "Sing a loud, happy song", next: "fairy_village" }
+            ]
+        },
+        fairy_village: {
+            text: "The trees move aside! You reach the Fairy Village. Queen Luna tells you the Dragon, Spark, isn't mean—he's just lonely and cold. She gives you a Magic Blanket.",
+            image: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=800",
+            choices: [
+                { text: "Climb the mountain path", next: "mountain_climb" },
+                { text: "Take the shortcut through the dark cave", next: "cave_shortcut" }
+            ]
+        },
+        mountain_climb: {
+            text: "The wind howls! You see Spark the Dragon. He is shivering and holding the magic wand like a glow-stick. He looks at you and growls softly.",
+            image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=800",
+            choices: [
+                { text: "Give him the Magic Blanket", next: "good_ending" },
+                { text: "Try to grab the wand and run!", next: "scary_ending" }
+            ]
+        },
+        cave_shortcut: {
+            text: "It's pitch black... then you see two glowing eyes! It's a Cave Troll! But he's just lost his glasses.",
+            image: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&q=80&w=800",
+            choices: [
+                { text: "Help him find his glasses", next: "mountain_climb" },
+                { text: "Run back to the village", next: "fairy_village" }
+            ]
+        },
+        good_ending: {
+            text: "Spark loves the blanket! He gets warm and happily gives the wand back. He even gives you a ride home on his back. You are a hero! (The End)",
+            image: "https://images.unsplash.com/photo-1615551365345-42f8c5f5904f?auto=format&fit=crop&q=80&w=800",
+            choices: [{ text: "Play from the start", next: "start" }]
+        },
+        scary_ending: {
+            text: "Spark was too fast! He let out a giant sneeze and blew you all the way back to the forest entrance. Better try being nice next time!",
+            image: "https://images.unsplash.com/photo-1535905496047-0ed0c1159622?auto=format&fit=crop&q=80&w=800",
+            choices: [{ text: "Try again", next: "start" }]
+        }
+    };
+
+    // THE ENGINE
+    function renderScene(sceneId) {
+        const scene = story[sceneId];
+        
+        // Update Text and Image
+        document.getElementById('story-text').innerText = scene.text;
+        document.getElementById('scene-image').src = scene.image;
+        
+        // Clear old buttons
+        const choicesContainer = document.getElementById('choices');
+        choicesContainer.innerHTML = ''; 
+
+        // Create new buttons
+        scene.choices.forEach(choice => {
+            const btn = document.createElement('button');
+            btn.innerText = choice.text;
+            btn.className = 'choice-btn';
+            btn.onclick = () => {
+                // Add a small fade-out effect
+                document.getElementById('game-container').style.opacity = 0;
+                setTimeout(() => {
+                    renderScene(choice.next);
+                    document.getElementById('game-container').style.opacity = 1;
+                }, 300);
+            };
+            choicesContainer.appendChild(btn);
+        });
+    }
+
+    // Initialize with a fade-in
+    document.getElementById('game-container').style.transition = "opacity 0.5s";
+    renderScene('start');
+</script>
+
+</body>
+</html>
