@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nutty's Big Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #page-number { font-weight: bold; color: #4a90e2; margin-bottom: 10px; }
+        .nav-controls { display: flex; justify-content: center; gap: 20px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="page-number">Page 1</div>
+        <img id="book-image" src="" alt="Story image">
+        <h1 id="book-text">Loading story...</h1>
+        
+        <div class="nav-controls">
+            <button id="prev-btn" class="btn red" onclick="changePage(-1)">⬅️ Back</button>
+            <button id="next-btn" class="btn blue" onclick="changePage(1)">Next ➡️</button>
+        </div>
+
+        <hr>
+        <a href="storybook.html" class="btn orange">📚 Back to Library</a>
+    </div>
+
+    <script>
+        // Static story pages in a simple list
+        const pages = [
+            {
+                text: "Once upon a time, a small squirrel named Nutty found the biggest acorn in the whole forest.",
+                image: "https://images.unsplash.com/photo-1507332130424-037149728271?w=800"
+            },
+            {
+                text: "It was too heavy to carry! Nutty tried to push it, but the acorn didn't move an inch.",
+                image: "https://images.unsplash.com/photo-1444464666168-49d633b86797?w=800"
+            },
+            {
+                text: "Suddenly, a friendly blue jay flew down. 'I can help!' he chirped. Together, they rolled the acorn home.",
+                image: "https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800"
+            },
+            {
+                text: "Nutty was so happy. He shared his acorn with all his friends, and they had a giant feast! The End.",
+                image: "https://images.unsplash.com/photo-1500629408124-70659635b756?w=800"
+            }
+        ];
+
+        let currentPage = 0;
+
+        function updatePage() {
+            const page = pages[currentPage];
+            document.getElementById('book-text').innerText = page.text;
+            document.getElementById('book-image').src = page.image;
+            document.getElementById('page-number').innerText = `Page ${currentPage + 1} of ${pages.length}`;
+
+            // Hide Back button if on first page
+            document.getElementById('prev-btn').style.visibility = (currentPage === 0) ? "hidden" : "visible";
+            
+            // Change "Next" button text on the last page
+            const nextBtn = document.getElementById('next-btn');
+            if (currentPage === pages.length - 1) {
+                nextBtn.innerText = "Finish 🎉";
+                nextBtn.onclick = () => window.location.href = "storybook.html";
+            } else {
+                nextBtn.innerText = "Next ➡️";
+                nextBtn.onclick = () => changePage(1);
+            }
+        }
+
+        function changePage(step) {
+            currentPage += step;
+            updatePage();
+        }
+
+        // Start the book
+        updatePage();
+    </script>
+</body>
+</html>
