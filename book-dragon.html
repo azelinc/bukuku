@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Dragon of Star-Mist Mountain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="scene-image" src="" alt="Adventure scene">
+        <h1 id="story-text">Loading story...</h1>
+        <div id="choices"></div>
+        <hr>
+        <a href="storybook.html" class="btn red">📚 Back to Library</a>
+    </div>
+
+    <script>
+        const story = {
+            start: {
+                text: "You and your friends find a glowing map. It leads to the Star-Mist Mountain, where a dragon lives! Do you go?",
+                image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800",
+                choices: [
+                    { text: "Grab your backpack and go!", next: "forest" },
+                    { text: "Stay home", next: "home" }
+                ]
+            },
+            forest: {
+                text: "In the Whispering Forest, a fairy named Pip asks for a song to let you pass.",
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
+                choices: [{ text: "Sing a happy song", next: "mountain" }]
+            },
+            mountain: {
+                text: "You find Spark the Dragon. He's not mean, he's just shivering! Give him the Magic Blanket?",
+                image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800",
+                choices: [{ text: "Give Blanket", next: "win" }]
+            },
+            win: {
+                text: "Spark is warm! He takes you for a flying ride. You are a hero! (The End)",
+                image: "https://images.unsplash.com/photo-1615551365345-42f8c5f5904f?w=800",
+                choices: [{ text: "Read Again", next: "start" }]
+            },
+            home: {
+                text: "You stayed home and ate cookies. The adventure will wait for another day.",
+                image: "https://images.unsplash.com/photo-1499636136210-65422ff04a52?w=800",
+                choices: [{ text: "Try again", next: "start" }]
+            }
+        };
+
+        function renderScene(sceneId) {
+            const scene = story[sceneId];
+            document.getElementById('story-text').innerText = scene.text;
+            document.getElementById('scene-image').src = scene.image;
+            const choicesContainer = document.getElementById('choices');
+            choicesContainer.innerHTML = ''; 
+
+            scene.choices.forEach(choice => {
+                const btn = document.createElement('button');
+                btn.innerText = choice.text;
+                btn.className = 'btn blue';
+                btn.onclick = () => renderScene(choice.next);
+                choicesContainer.appendChild(btn);
+            });
+        }
+        renderScene('start');
+    </script>
+</body>
+</html>
