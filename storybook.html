@@ -3,18 +3,34 @@
 <head>
     <title>The Magic Library</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .category-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 20px;
+            border: 2px dashed #4a90e2;
+        }
+        h2 { color: #2c3e50; margin-bottom: 20px; font-size: 28px; }
+        .book-description { font-size: 14px; color: #666; margin-bottom: 10px; }
+    </style>
 </head>
 <body>
     <div class="container">
         <h1>📚 The Magic Library</h1>
-        <p>Choose a story to begin your adventure!</p>
         
-        <div style="margin: 30px 0;">
-            <!-- Book 1 -->
+        <!-- SECTION 1: INTERACTIVE BOOKS -->
+        <div class="category-section">
+            <h2>🕹️ Interactive Books</h2>
+            <p class="book-description">You are the hero! Make choices to change the story.</p>
             <a href="book-dragon.html" class="btn blue">🐉 The Dragon of Star-Mist Mountain</a>
-            
-            <!-- You can add Book 2, Book 3, etc. here later! -->
-            <button class="btn" style="background: #ccc; cursor: not-allowed;">🔒 More stories coming soon...</button>
+        </div>
+
+        <!-- SECTION 2: STATIC STORYBOOKS -->
+        <div class="category-section">
+            <h2>📖 Simple Storybooks</h2>
+            <p class="book-description">Classic stories to read at your own pace.</p>
+            <a href="book-squirrel.html" class="btn orange">🐿️ Nutty’s Big Adventure</a>
         </div>
 
         <hr>
