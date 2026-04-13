@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Dragon Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img id="scene-image" src="" alt="">
+        <h1 id="story-text"></h1>
+        <div id="choices"></div>
+        <hr>
+        <a href="index.html" class="btn red">🏠 Back to Main Menu</a>
+    </div>
+
+    <script>
+        const story = {
+            start: {
+                text: "You find a glowing map! Do you follow it to the Dragon's mountain?",
+                image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800",
+                choices: [{ text: "Yes! Let's go!", next: "woods" }, { text: "No, stay home", next: "home" }]
+            },
+            woods: {
+                text: "The Whispering Woods are dark. You see a fairy!",
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
+                choices: [{ text: "Talk to Fairy", next: "end" }]
+            },
+            home: { text: "You stayed home. Safe, but bored!", image: "https://images.unsplash.com/photo-1499636136210-65422ff04a52?w=800", choices: [{ text: "Start over", next: "start" }] },
+            end: { text: "The Fairy takes you to the Dragon. You win!", image: "https://images.unsplash.com/photo-1615551365345-42f8c5f5904f?w=800", choices: [{ text: "Play Again", next: "start" }] }
+        };
+
+        function render(id) {
+            const s = story[id];
+            document.getElementById('story-text').innerText = s.text;
+            document.getElementById('scene-image').src = s.image;
+            const container = document.getElementById('choices');
+            container.innerHTML = '';
+            s.choices.forEach(c => {
+                const b = document.createElement('button');
+                b.innerText = c.text;
+                b.className = 'btn blue';
+                b.onclick = () => render(c.next);
+                container.appendChild(b);
+            });
+        }
+        render('start');
+    </script>
+</body>
+</html>
