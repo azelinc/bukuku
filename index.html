@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- This makes it work perfectly on mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AF Adventure Hub</title>
     <link rel="stylesheet" href="style.css">
@@ -18,6 +17,8 @@
                 <!-- Profile buttons will appear here -->
             </div>
             <button class="btn orange-btn" onclick="showNewUserForm()" style="margin-top: 20px;">+ New Adventurer</button>
+            <!-- Added a cancel button here -->
+            <button onclick="renderMainMenu()" id="cancel-switch" style="display:none; margin: 15px auto; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
         </div>
 
         <!-- 2. NEW USER FORM -->
@@ -49,12 +50,12 @@
                 </a>
             </div>
             
-            <button onclick="initHub()" style="margin-top:30px; background:#eee; border:none; padding:12px; border-radius:15px; cursor:pointer; font-weight: bold; color: #666; width: 100%;">👤 Switch Explorer</button>
+            <!-- FIXED: This now calls showProfileSelection directly -->
+            <button class="btn" onclick="showProfileSelection()" style="margin-top:30px; background:#eee; border:none; padding:12px; border-radius:15px; cursor:pointer; font-weight: bold; color: #666; width: 100%;">👤 Switch Explorer</button>
         </div>
     </div>
 
     <script>
-        // Data logic
         let hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
 
         function initHub() {
@@ -72,6 +73,11 @@
             document.getElementById('profile-selection').style.display = 'block';
             document.getElementById('name-setup').style.display = 'none';
             document.getElementById('main-menu').style.display = 'none';
+
+            // If a user is already logged in, show the cancel button
+            if (hubData.current) {
+                document.getElementById('cancel-switch').style.display = 'block';
+            }
 
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
