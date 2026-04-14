@@ -1,103 +1,136 @@
-<div class="container">
-    <!-- 1. PROFILE SELECTION SCREEN -->
-    <div id="profile-selection" style="display: none;">
-        <h1>👋 Who is playing?</h1>
-        <div id="profile-list" class="nav-grid" style="margin-bottom: 20px;">
-            <!-- Profile buttons will appear here -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AF Adventure Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Magic Background -->
+    <div class="area">
+        <ul class="circles">
+            <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        </ul>
+    </div>
+
+    <main class="hub-wrapper">
+        <div class="container">
+            
+            <!-- 1. PROFILE SELECTION VIEW -->
+            <section id="view-select" class="view" style="display: none;">
+                <div class="header">
+                    <h1>👋 Welcome!</h1>
+                    <p>Who is going on an adventure today?</p>
+                </div>
+                <div id="profile-list" class="profile-grid">
+                    <!-- Profiles injected here -->
+                </div>
+                <button class="btn-secondary" onclick="showView('view-add')">+ Add New Explorer</button>
+            </section>
+
+            <!-- 2. ADD NEW USER VIEW -->
+            <section id="view-add" class="view" style="display: none;">
+                <div class="header">
+                    <h1>✨ New Hero</h1>
+                    <p>Enter your name to start your journey!</p>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="user-name-input" placeholder="Hero Name..." maxlength="12">
+                    <button class="btn blue-btn" onclick="createNewProfile()">Create Profile</button>
+                </div>
+                <button class="btn-text" onclick="initHub()">Go Back</button>
+            </section>
+
+            <!-- 3. MAIN MENU VIEW -->
+            <section id="view-menu" class="view" style="display: none;">
+                <div class="header">
+                    <h1>🌟 Hi, <span id="display-name" class="highlight">Hero</span>!</h1>
+                    <div class="stat-badge">🏆 Best Score: <span id="high-score">0</span></div>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="storybook.html" class="menu-card blue">
+                        <span class="menu-icon">📖</span>
+                        <div class="menu-info">
+                            <h3>Library</h3>
+                            <p>Interactive Stories</p>
+                        </div>
+                    </a>
+                    <a href="games.html" class="menu-card orange">
+                        <span class="menu-icon">🎮</span>
+                        <div class="menu-info">
+                            <h3>Games</h3>
+                            <p>Play & Win</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="footer-actions">
+                    <button class="btn-text" onclick="showView('view-select')">👤 Switch Explorer</button>
+                </div>
+            </section>
+
         </div>
-        <button class="btn orange-btn" onclick="showNewUserForm()">+ New Adventurer</button>
-    </div>
+    </main>
 
-    <!-- 2. NEW USER FORM -->
-    <div id="name-setup" style="display: none;">
-        <h1>🌟 Welcome! 🌟</h1>
-        <p>Enter your name to start:</p>
-        <input type="text" id="user-name-input" placeholder="Your name..." 
-               style="padding: 15px; width: 80%; border-radius: 15px; border: 2px solid #4a90e2; font-size: 1.2rem; margin-bottom: 20px; text-align: center;">
-        <br>
-        <button class="btn blue-btn" onclick="createNewProfile()">Start My Quest!</button>
-        <button onclick="initHub()" style="display:block; margin: 10px auto; background:none; border:none; color:#999; cursor:pointer;">Cancel</button>
-    </div>
+    <script>
+        let hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
 
-    <!-- 3. MAIN MENU -->
-    <div id="main-menu" style="display: none;">
-        <h1>🌟 Hi <span id="display-name">Hero</span>! 🌟</h1>
-        <p>Your Best Score: <span id="high-score">0</span></p>
-        
-        <div class="nav-grid">
-            <a href="storybook.html" class="btn blue-btn">📖 Library</a>
-            <a href="games.html" class="btn orange-btn">🎮 Games</a>
-        </div>
-        
-        <button onclick="initHub()" style="margin-top:20px; background:#f0f0f0; border:none; padding:10px; border-radius:10px; cursor:pointer;">👤 Switch User</button>
-    </div>
-</div>
-
-<script>
-    // Data structure: { "profiles": { "Alex": 15, "Sam": 22 }, "current": "Alex" }
-    let hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
-
-    function initHub() {
-        const profileCount = Object.keys(hubData.profiles).length;
-
-        if (profileCount === 0) {
-            showNewUserForm();
-        } else {
-            showProfileSelection();
+        function showView(viewId) {
+            document.querySelectorAll('.view').forEach(v => v.style.display = 'none');
+            document.getElementById(viewId).style.display = 'block';
         }
-    }
 
-    function showProfileSelection() {
-        document.getElementById('profile-selection').style.display = 'block';
-        document.getElementById('name-setup').style.display = 'none';
-        document.getElementById('main-menu').style.display = 'none';
-
-        const list = document.getElementById('profile-list');
-        list.innerHTML = '';
-
-        for (let name in hubData.profiles) {
-            const btn = document.createElement('button');
-            btn.className = "btn blue-btn";
-            btn.innerHTML = `👤 ${name}`;
-            btn.onclick = () => selectProfile(name);
-            list.appendChild(btn);
+        function initHub() {
+            const profiles = Object.keys(hubData.profiles);
+            if (profiles.length === 0) {
+                showView('view-add');
+            } else if (hubData.current) {
+                renderMenu();
+            } else {
+                renderProfileSelect();
+            }
         }
-    }
 
-    function showNewUserForm() {
-        document.getElementById('profile-selection').style.display = 'none';
-        document.getElementById('name-setup').style.display = 'block';
-        document.getElementById('main-menu').style.display = 'none';
-    }
-
-    function createNewProfile() {
-        const name = document.getElementById('user-name-input').value.trim();
-        if (name && !hubData.profiles[name]) {
-            hubData.profiles[name] = 0; // New user starts with 0 score
-            selectProfile(name);
-        } else if (hubData.profiles[name]) {
-            alert("This name already exists! Choose another.");
+        function renderProfileSelect() {
+            const list = document.getElementById('profile-list');
+            list.innerHTML = '';
+            for (let name in hubData.profiles) {
+                const card = document.createElement('div');
+                card.className = 'profile-card';
+                card.innerHTML = `<div class="avatar">${name[0].toUpperCase()}</div><span>${name}</span>`;
+                card.onclick = () => selectProfile(name);
+                list.appendChild(card);
+            }
+            showView('view-select');
         }
-    }
 
-    function selectProfile(name) {
-        hubData.current = name;
-        saveData();
-        renderMainMenu();
-    }
+        function createNewProfile() {
+            const name = document.getElementById('user-name-input').value.trim();
+            if (name && !hubData.profiles[name]) {
+                hubData.profiles[name] = 0;
+                selectProfile(name);
+            } else if (!name) {
+                alert("Please enter a name!");
+            } else {
+                alert("Name already taken!");
+            }
+        }
 
-    function renderMainMenu() {
-        document.getElementById('profile-selection').style.display = 'none';
-        document.getElementById('name-setup').style.display = 'none';
-        document.getElementById('main-menu').style.display = 'block';
-        
-        document.getElementById('display-name').innerText = hubData.current;
-        document.getElementById('high-score').innerText = hubData.profiles[hubData.current];
-    }
+        function selectProfile(name) {
+            hubData.current = name;
+            localStorage.setItem('hubData', JSON.stringify(hubData));
+            renderMenu();
+        }
 
-    function saveData() {
-        localStorage.setItem('hubData', JSON.stringify(hubData));
-    }
+        function renderMenu() {
+            document.getElementById('display-name').innerText = hubData.current;
+            document.getElementById('high-score').innerText = hubData.profiles[hubData.current];
+            showView('view-menu');
+        }
 
-    initHub();
-</script>
+        initHub();
+    </script>
+</body>
+</html>
