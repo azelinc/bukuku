@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
         <h1>🎮 Games Hub</h1>
-        <p>Pick a game to start your challenge!</p>
+        <p style="margin-bottom: 25px; color: #666;">Choose a game to start your challenge!</p>
         
-        <div style="margin: 30px 0;">
-            <!-- Game 1 -->
-            <a href="game-memory-match.html" class="btn orange">✨ Magic Emoji Match</a>
+        <div class="nav-grid">
+            <!-- GAME 1: ORANGE TILE -->
+            <a href="memory-match.html" class="btn orange-btn">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 5px;">✨</span>
+                Magic Emoji Match
+                <small style="display: block; font-size: 0.8rem; font-weight: normal; opacity: 0.9;">Test your memory!</small>
+            </a>
             
-            <!-- Game 2 (New!) -->
-            <a href="game-dragon-dash.html" class="btn blue">🐉 Dragon Dash</a>
+            <!-- GAME 2: BLUE TILE (Added margin-top for spacing) -->
+            <a href="dragon-dash.html" class="btn blue-btn" style="margin-top: 15px;">
+                <span style="font-size: 2.5rem; display: block; margin-bottom: 5px;">🐉</span>
+                Dragon Dash
+                <small style="display: block; font-size: 0.8rem; font-weight: normal; opacity: 0.9;">Catch the falling stars!</small>
+            </a>
         </div>
 
-        <hr>
-        <a href="index.html" class="btn red">🏠 Back to Main Menu</a>
+        <hr style="margin: 30px 0; opacity: 0.1;">
+        
+        <!-- BACK BUTTON: RED TILE -->
+        <a href="index.html" class="btn red-btn">🏠 Back to Main Menu</a>
     </div>
+
 </body>
 </html>
