@@ -114,11 +114,28 @@
             }, 20);
         }
 
-        function gameOver() {
-            gameActive = false;
-            alert("Oops! You hit a fireball! Final Score: " + score);
-            location.reload(); // Restarts the game
-        }
+function gameOver() {
+    gameActive = false;
+    
+    // 1. Load the big data object
+    let hubData = JSON.parse(localStorage.getItem('hubData'));
+    let currentUser = hubData.current;
+    let oldScore = hubData.profiles[currentUser] || 0;
+
+    let message = `Game Over, ${currentUser}!\nYour Score: ${score}`;
+
+    // 2. Check if this specific kid got a new high score
+    if (score > oldScore) {
+        hubData.profiles[currentUser] = score;
+        localStorage.setItem('hubData', JSON.stringify(hubData));
+        message += `\nNEW PERSONAL BEST! 🎉`;
+    } else {
+        message += `\nPersonal Best: ${oldScore}`;
+    }
+
+    alert(message);
+    location.reload(); 
+}
 
         // Spawn a new item every second
         setInterval(spawnItem, 1000);
