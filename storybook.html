@@ -1,40 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>The Magic Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission to Mars - STEM</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .category-section {
-            margin: 40px 0;
+        .fact-card {
+            background: #f0fff4;
+            border: 3px solid #2ecc71;
             padding: 20px;
-            background: #f9f9f9;
-            border-radius: 20px;
-            border: 2px dashed #4a90e2;
+            border-radius: 15px;
+            margin-top: 15px;
         }
-        h2 { color: #2c3e50; margin-bottom: 20px; font-size: 28px; }
-        .book-description { font-size: 14px; color: #666; margin-bottom: 10px; }
+        #fact-title { color: #27ae60; font-size: 1.4rem; margin-bottom: 10px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📚 The Magic Library</h1>
+        <h1 style="color: #27ae60;">🚀 Mission to Mars</h1>
+        <img id="space-img" src="" alt="Space">
         
-        <!-- SECTION 1: INTERACTIVE BOOKS -->
-        <div class="category-section">
-            <h2>🕹️ Interactive Books</h2>
-            <p class="book-description">You are the hero! Make choices to change the story.</p>
-            <a href="book-dragon.html" class="btn blue">🐉 The Dragon of Star-Mist Mountain</a>
+        <div class="fact-card">
+            <div id="fact-title">Did you know?</div>
+            <p id="space-text">Loading space data...</p>
         </div>
 
-        <!-- SECTION 2: STATIC STORYBOOKS -->
-        <div class="category-section">
-            <h2>📖 Simple Storybooks</h2>
-            <p class="book-description">Classic stories to read at your own pace.</p>
-            <a href="book-squirrel.html" class="btn orange">🐿️ Nutty’s Big Adventure</a>
+        <div style="margin-top: 20px;">
+            <button id="next-btn" class="btn green-btn" onclick="nextFact()" style="background: #2ecc71; color: white; padding: 15px 30px; border-radius: 50px; border:none; border-bottom: 5px solid #27ae60; font-weight: bold;">Next Fact ➡️</button>
         </div>
 
-        <hr>
-        <a href="index.html" class="btn red">🏠 Back to Main Menu</a>
+        <hr style="margin: 20px 0; opacity: 0.2;">
+        <a href="storybook.html" class="btn orange-btn">📚 Back to Library</a>
     </div>
+
+    <script>
+        const facts = [
+            {
+                title: "The Red Planet",
+                text: "Mars is known as the Red Planet because its surface is covered in iron oxide—the same stuff that makes an old bike rusty!",
+                image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800"
+            },
+            {
+                title: "Giant Volcanoes",
+                text: "Mars has the biggest volcano in the entire solar system! It's called Olympus Mons and it's 3 times taller than Mount Everest.",
+                image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800"
+            },
+            {
+                title: "Bouncy Jumps",
+                text: "Gravity on Mars is much weaker than on Earth. If you could stand on Mars, you could jump 3 times as high as you can right now!",
+                image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=800"
+            }
+        ];
+
+        let currentFact = 0;
+
+        function nextFact() {
+            currentFact++;
+            if (currentFact >= facts.length) {
+                alert("You've become a Mars Expert! 🌟");
+                window.location.href = "storybook.html";
+                return;
+            }
+            showFact();
+        }
+
+        function showFact() {
+            const f = facts[currentFact];
+            document.getElementById('fact-title').innerText = f.title;
+            document.getElementById('space-text').innerText = f.text;
+            document.getElementById('space-img').src = f.image;
+        }
+
+        showFact();
+    </script>
 </body>
 </html>
