@@ -6,24 +6,10 @@
     <title>The Magic Library</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .category-section {
-            margin: 25px 0;
-            padding: 15px;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 20px;
-            border: 3px solid #eee;
-            transition: 0.3s;
-        }
-        /* Color Coding for Categories */
+        /* Small overrides to keep storybook.html tidy */
         .interactive { border-color: #4a90e2; }
         .static { border-color: #f39c12; }
-        .stem { border-color: #2ecc71; } /* Green for STEM */
-
-        h2 { font-size: 1.5rem; color: #2c3e50; margin-bottom: 10px; }
-        .book-description { font-size: 0.9rem; color: #666; margin-bottom: 15px; line-height: 1.4; }
-        
-        /* New Green Button for STEM */
-        .green-btn { background: #2ecc71; border-bottom: 6px solid #27ae60; }
+        .stem { border-color: #2ecc71; }
     </style>
 </head>
 <body>
@@ -33,27 +19,28 @@
         <!-- SECTION 1: INTERACTIVE -->
         <div class="category-section interactive">
             <h2>🕹️ Interactive</h2>
-            <p class="book-description">You are the hero! Make choices to change the story.</p>
+            <p class="book-description">Make choices to change the story!</p>
             <a href="book-dragon.html" class="btn blue-btn">🐉 Dragon Mountain</a>
         </div>
 
-        <!-- SECTION 2: STATIC -->
+        <!-- SECTION 2: STORYBOOKS -->
         <div class="category-section static">
             <h2>📖 Storybooks</h2>
-            <p class="book-description">Classic stories to read at your own pace.</p>
+            <p class="book-description">Classic tales to read at your own pace.</p>
             <a href="book-squirrel.html" class="btn orange-btn">🐿️ Nutty’s Big Day</a>
         </div>
 
-        <!-- SECTION 3: STEM (NEW!) -->
+        <!-- SECTION 3: STEM -->
         <div class="category-section stem">
             <h2>🧪 STEM Explorer</h2>
-            <p class="book-description">Learn amazing facts about Science, Space, and Nature!</p>
+            <p class="book-description">Facts about Science and Nature!</p>
             <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
             <a href="buku-solar.html" class="btn green-btn">☀️ Tenaga Solar</a>
         </div>
 
-        <hr style="margin: 20px 0; opacity: 0.2;">
-        <a href="index.html" class="btn red" style="background: #e74c3c; border-bottom: 6px solid #c0392b;">🏠 Back to Menu</a>
+        <div style="margin-top: 30px;">
+            <a href="index.html" class="btn red-btn">🏠 Back to Menu</a>
+        </div>
     </div>
 </body>
 </html>
