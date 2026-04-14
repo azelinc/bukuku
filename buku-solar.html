@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bukuku - Cahaya Menjadi Kuasa</title>
+    <style>
+        :root {
+            --sky-blue: #87CEEB;
+            --sun-yellow: #FFD700;
+            --slate: #2c3e50;
+            --paper: #f9f9f9;
+        }
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: var(--sky-blue);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        #book-container {
+            background: var(--paper);
+            max-width: 800px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+            border: 8px solid white;
+        }
+        .page {
+            padding: 40px;
+            display: none; /* Hidden by default */
+            text-align: center;
+        }
+        .active { display: block; }
+        
+        .illustration {
+            width: 100%;
+            height: 300px;
+            background: #eee;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+        }
+        
+        h1 { color: var(--slate); font-size: 1.8rem; }
+        p { font-size: 1.2rem; color: #333; line-height: 1.6; }
+        
+        .controls {
+            padding: 20px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            border-top: 2px solid #eee;
+        }
+        button {
+            padding: 10px 25px;
+            font-size: 1rem;
+            border-radius: 50px;
+            border: none;
+            background: var(--slate);
+            color: white;
+            cursor: pointer;
+        }
+        button:disabled { background: #ccc; }
+        .logic-box {
+            background: #fff3cd;
+            padding: 15px;
+            border-left: 5px solid #ffeeba;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div id="book-container">
+    <div class="page active" id="p1">
+        <div class="illustration">
+            <span>[Kartun: Alya menunjuk ke arah kepingan biru di bumbung]</span>
+        </div>
+        <h1>Eh, Ada Cermin di Bumbung!</h1>
+        <p>"Ayah, kenapa rumah kita pakai cermin besar di atas bumbung?" tanya Alya. 
+        Matahari tegak di atas kepala, sangat panas!</p>
+    </div>
+
+    <div class="page" id="p2">
+        <div class="illustration">
+            <span>[Kartun: Cikgu Azly menerangkan konsep zarah cahaya]</span>
+        </div>
+        <h1>Zarah Ajaib dari Langit</h1>
+        <p>Cikgu Azly tersenyum. "Itu bukan cermin biasa, Alya. Itu adalah **Panel Suria**. 
+        Ia seperti 'penangkap' zarah cahaya yang dipanggil **Foton**."</p>
+        <div class="logic-box">
+            // Technical Note for Alya:<br>
+            Light Intensity (G) > Threshold = Electricity Starts!
+        </div>
+    </div>
+
+    <div class="page" id="p3">
+        <div class="illustration">
+            <span>[Kartun: Elektron kecil berlari dalam litar seperti litar lumba]</span>
+        </div>
+        <h1>Larian Elektron</h1>
+        <p>"Apabila Foton melanggar panel itu, ia mengejutkan **Elektron** di dalamnya. 
+        Elektron mula berlari laju dalam litar. Itulah yang kita panggil Tenaga Elektrik!"</p>
+    </div>
+
+    <div class="page" id="p4">
+        <div class="illustration">
+            <span>[Kartun: TV dan Kipas berpusing hasil kuasa matahari]</span>
+        </div>
+        <h1>Kuasa Percuma!</h1>
+        <p>"Jadi, selagi matahari bersinar, kita boleh pasang kipas dan TV guna kuasa langit!" 
+        Alya melompat gembira. Sekarang dia tahu, bumbung rumahnya adalah stesen janakuasa kecil.</p>
+    </div>
+
+    <div class="controls">
+        <button id="prevBtn" onclick="changePage(-1)" disabled>Back</button>
+        <span id="pageNumber">Page 1/4</span>
+        <button id="nextBtn" onclick="changePage(1)">Next</button>
+    </div>
+</div>
+
+<script>
+    let currentPage = 1;
+    const totalPages = 4;
+
+    function changePage(step) {
+        document.getElementById(`p${currentPage}`).classList.remove('active');
+        currentPage += step;
+        document.getElementById(`p${currentPage}`).classList.add('active');
+        
+        document.getElementById('pageNumber').innerText = `Page ${currentPage}/${totalPages}`;
+        document.getElementById('prevBtn').disabled = (currentPage === 1);
+        document.getElementById('nextBtn').disabled = (currentPage === totalPages);
+    }
+</script>
+
+</body>
+</html>
