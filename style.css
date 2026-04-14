@@ -1,37 +1,116 @@
+/* 1. SETUP & THEME */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body { 
-    font-family: 'Segoe UI', sans-serif; 
-    background: #1a1a2e; 
+    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif; 
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); 
+    color: #333;
+    min-height: 100vh;
     display: flex; 
     justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    margin: 0; 
+    align-items: center;
+    overflow-x: hidden; /* Prevents side-scrolling on mobile */
 }
+
+/* 2. RESPONSIVE CONTAINER */
 .container { 
-    background: white; 
-    padding: 40px; 
-    border-radius: 30px; 
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
-    text-align: center;
     width: 90%; 
-    max-width: 700px;
-    border: 8px solid #ffd700;
+    max-width: 500px; /* Slimmer for a "Mobile App" feel */
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 30px 20px; 
+    border-radius: 30px; 
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4); 
+    text-align: center;
+    border: 6px solid #ffd700;
+    z-index: 10; /* Sits above the background animation */
 }
+
+h1 { 
+    font-size: clamp(1.5rem, 6vw, 2.2rem); /* Dynamic text size */
+    color: #2c3e50; 
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* 3. NAVIGATION BUTTONS (Touch Friendly) */
+.nav-grid {
+    display: grid;
+    gap: 15px;
+}
+
 .btn {
-    display: inline-block;
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    border-radius: 50px;
-    transition: 0.3s;
-    cursor: pointer;
-    border: none;
+    border-radius: 20px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 8px 0 rgba(0,0,0,0.1);
 }
-.blue { background: #4a90e2; }
-.orange { background: #f39c12; }
-.red { background: #e74c3c; font-size: 14px; }
-.btn:hover { transform: scale(1.05); }
-img { width: 100%; border-radius: 20px; margin-bottom: 20px; }
+
+.btn .icon {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.blue-btn { background: #4a90e2; border-bottom: 6px solid #2e6cb5; }
+.orange-btn { background: #f39c12; border-bottom: 6px solid #c87f0a; }
+
+.btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+}
+
+/* 4. BACKGROUND ANIMATION (Floating Bubbles) */
+.bg-animation {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+}
+
+.bubble {
+    position: absolute;
+    background: rgba(255, 215, 0, 0.1);
+    border-radius: 50%;
+    bottom: -100px;
+    animation: float 15s infinite ease-in;
+}
+
+/* Create different sized bubbles at different spots */
+.bubble:nth-child(1) { width: 80px; height: 80px; left: 10%; animation-duration: 12s; }
+.bubble:nth-child(2) { width: 150px; height: 150px; left: 20%; animation-duration: 18s; animation-delay: 2s; }
+.bubble:nth-child(3) { width: 50px; height: 50px; left: 70%; animation-duration: 10s; animation-delay: 4s; }
+.bubble:nth-child(4) { width: 120px; height: 120px; left: 85%; animation-duration: 22s; animation-delay: 1s; }
+.bubble:nth-child(5) { width: 90px; height: 90px; left: 40%; animation-duration: 15s; animation-delay: 6s; }
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-120vh) rotate(360deg); opacity: 0; }
+}
+
+/* 5. MOBILE OVERRIDES */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 15px;
+        width: 95%;
+    }
+    .btn {
+        padding: 15px;
+        font-size: 1.1rem;
+    }
+}
