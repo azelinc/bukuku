@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <!-- This line is CRITICAL for mobile optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AF Adventure Hub</title>
-    <link rel="stylesheet" href="style.css"> <!-- This connects the CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Background Animation Elements -->
+    <div class="bg-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
     <div class="container">
-        <h1>Hi Kids!!! Welcome to AF Adventure Hub</h1>
-        <p>What would you like to do today?</p>
-        <a href="storybook.html" class="btn blue">📖 Read Storybook</a>
-        <a href="games.html" class="btn orange">🎮 Play Games</a>
+        <div class="hero-content">
+            <h1>🌟 Hi Kids! 🌟<br>Welcome to AF Adventure Hub</h1>
+            <p>Ready for a quest? Choose your path!</p>
+            
+            <div class="nav-grid">
+                <a href="storybook.html" class="btn blue-btn">
+                    <span class="icon">📖</span> Read Storybook
+                </a>
+                <a href="games.html" class="btn orange-btn">
+                    <span class="icon">🎮</span> Play Games
+                </a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
