@@ -1,64 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Magic Match Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Match</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .card {
-            height: 80px;
-            background: #4a90e2;
-            border-radius: 10px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 40px;
-            color: transparent;
-            cursor: pointer;
-            transition: transform 0.3s;
-            user-select: none;
-        }
-        .card.flipped {
-            background: #fff;
-            color: #000;
-            transform: rotateY(180deg);
-            border: 2px solid #ffd700;
-        }
-        .card.matched {
-            background: #a2d149;
-            color: white;
-            cursor: default;
-        }
+        .game-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 15px 0; }
+        .card { height: 70px; background: #4a90e2; border-radius: 12px; display: flex; justify-content: center; align-items: center; font-size: 30px; color: transparent; cursor: pointer; transition: 0.3s; border-bottom: 4px solid #2e6cb5; }
+        .card.flipped { background: white; color: black; transform: rotateY(180deg); border-bottom: none; }
+        .card.matched { background: #2ecc71; border: none; visibility: visible; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>✨ Magic Match ✨</h1>
-        <div id="message" style="font-weight:bold; margin-bottom:10px;">Pairs: 0/8</div>
-        
+        <h1>✨ Magic Match</h1>
+        <div id="stats" style="font-weight: bold; color: #4a90e2; margin-bottom: 10px;">Moves: 0 | Pairs: 0/8</div>
         <div class="game-grid" id="grid"></div>
-
-        <button class="btn blue" onclick="resetGame()">Restart</button>
-        <br>
-        <a href="games.html" class="btn red">🔙 Back to Games List</a>
+        <button class="btn blue-btn" onclick="location.reload()">Reset Game</button>
+        <a href="games.html" class="btn red-btn" style="margin-top: 15px;">🔙 Back to Games</a>
     </div>
 
     <script>
-        const emojis = ['🐉', '🐉', '🧚', '🧚', '💎', '💎', '🦄', '🦄', '🍄', '🍄', '⭐', '⭐', '🍎', '🍎', '🏰', '🏰'];
-        let flippedCards = [];
-        let matchedPairs = 0;
+        const hubData = JSON.parse(localStorage.getItem('hubData')) || { current: "Explorer" };
+        const kidName = hubData.current;
+        const emojis = ['🐉','🐉','🧚','🧚','🦄','🦄','🍄','🍄','💎','💎','⭐','⭐','🍎','🍎','🏰','🏰'];
+        let flipped = [];
+        let pairs = 0;
+        let moves = 0;
         let canClick = true;
 
-        function createBoard() {
+        function init() {
             const grid = document.getElementById('grid');
-            grid.innerHTML = '';
-            const shuffled = emojis.sort(() => Math.random() - 0.5);
-            shuffled.forEach(emoji => {
+            emojis.sort(() => Math.random() - 0.5).forEach(emoji => {
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.dataset.emoji = emoji;
@@ -66,41 +40,32 @@
                     if (!canClick || card.classList.contains('flipped')) return;
                     card.classList.add('flipped');
                     card.innerText = card.dataset.emoji;
-                    flippedCards.push(card);
-                    if (flippedCards.length === 2) checkMatch();
+                    flipped.push(card);
+                    if (flipped.length === 2) check();
                 };
                 grid.appendChild(card);
             });
         }
 
-        function checkMatch() {
+        function check() {
             canClick = false;
-            const [c1, c2] = flippedCards;
+            moves++;
+            const [c1, c2] = flipped;
             if (c1.dataset.emoji === c2.dataset.emoji) {
-                c1.classList.add('matched');
-                c2.classList.add('matched');
-                matchedPairs++;
-                document.getElementById('message').innerText = `Pairs: ${matchedPairs}/8`;
-                flippedCards = [];
-                canClick = true;
-                if (matchedPairs === 8) document.getElementById('message').innerText = "🎉 YOU WIN! 🎉";
+                c1.classList.add('matched'); c2.classList.add('matched');
+                pairs++;
+                flipped = []; canClick = true;
+                if (pairs === 8) alert(`Amazing job, ${kidName}! You won in ${moves} moves!`);
             } else {
                 setTimeout(() => {
                     c1.classList.remove('flipped'); c2.classList.remove('flipped');
                     c1.innerText = ''; c2.innerText = '';
-                    flippedCards = [];
-                    canClick = true;
-                }, 1000);
+                    flipped = []; canClick = true;
+                }, 800);
             }
+            document.getElementById('stats').innerText = `Moves: ${moves} | Pairs: ${pairs}/8`;
         }
-
-        function resetGame() {
-            matchedPairs = 0;
-            document.getElementById('message').innerText = "Pairs: 0/8";
-            createBoard();
-        }
-
-        createBoard();
+        init();
     </script>
 </body>
 </html>
