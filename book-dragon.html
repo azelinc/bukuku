@@ -1,66 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dragon of Star-Mist Mountain</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <img id="scene-image" src="" alt="Adventure scene">
-        <h1 id="story-text">Loading story...</h1>
+        <!-- Progress Bar (Optional but nice for kids) -->
+        <div id="progress-container" style="width: 100%; background: #eee; height: 10px; border-radius: 5px; margin-bottom: 20px;">
+            <div id="progress-bar" style="width: 10%; background: #4a90e2; height: 10px; border-radius: 5px; transition: 0.5s;"></div>
+        </div>
+
+        <img id="scene-image" src="" alt="Story Scene">
+        
+        <!-- The Story Text -->
+        <h1 id="story-text" style="font-size: 1.4rem; line-height: 1.4; color: #2c3e50;">Loading story...</h1>
+        
+        <!-- The Choice Buttons -->
         <div id="choices"></div>
-        <hr>
-        <a href="storybook.html" class="btn red">📚 Back to Library</a>
+
+        <hr style="margin: 20px 0; opacity: 0.2;">
+        
+        <!-- Back to Library -->
+        <a href="storybook.html" class="btn red" style="background: #e74c3c; border-bottom: 6px solid #c0392b; padding: 10px 20px; font-size: 1rem;">📚 Back to Library</a>
     </div>
 
     <script>
+        // 1. GET USER PROFILE DATA
+        const hubData = JSON.parse(localStorage.getItem('hubData')) || { current: "Adventurer" };
+        const kidName = hubData.current || "Adventurer";
+
+        // 2. THE STORY DATA (Using backticks `` for name injection)
         const story = {
             start: {
-                text: "You and your friends find a glowing map. It leads to the Star-Mist Mountain, where a dragon lives! Do you go?",
+                text: `Hi ${kidName}! You find a glowing map in your backyard. It points to the top of Star-Mist Mountain, where a dragon lives. Do you want to go on a quest?`,
                 image: "https://images.unsplash.com/photo-1532012197267-da84d127e765?w=800",
+                progress: "20%",
                 choices: [
-                    { text: "Grab your backpack and go!", next: "forest" },
-                    { text: "Stay home", next: "home" }
+                    { text: "Yes! Pack my bag!", next: "woods" },
+                    { text: "No, stay and play", next: "home" }
                 ]
             },
-            forest: {
-                text: "In the Whispering Forest, a fairy named Pip asks for a song to let you pass.",
+            woods: {
+                text: `You enter the Whispering Woods. A fairy named Pip flies down. "Wait, ${kidName}!" she squeaks. "The trees are grumpy. Will you sing them a song or share your snack?"`,
                 image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800",
-                choices: [{ text: "Sing a happy song", next: "mountain" }]
+                progress: "40%",
+                choices: [
+                    { text: "Sing a happy song", next: "mountain" },
+                    { text: "Give them a cookie", next: "mountain" }
+                ]
             },
             mountain: {
-                text: "You find Spark the Dragon. He's not mean, he's just shivering! Give him the Magic Blanket?",
+                text: `You reach the peak! You find Spark the Dragon, but he isn't breathing fire. He is shivering! "It's so cold up here," Spark whispers. What should ${kidName} do?`,
                 image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800",
-                choices: [{ text: "Give Blanket", next: "win" }]
+                progress: "70%",
+                choices: [
+                    { text: "Give him your Magic Blanket", next: "win" },
+                    { text: "Build a cozy campfire", next: "win" }
+                ]
             },
             win: {
-                text: "Spark is warm! He takes you for a flying ride. You are a hero! (The End)",
+                text: `Spark is warm and happy! He gives you a giant dragon-hug. "Thank you, ${kidName}! You are the bravest hero in the land!" He flies you back home on his back.`,
                 image: "https://images.unsplash.com/photo-1615551365345-42f8c5f5904f?w=800",
-                choices: [{ text: "Read Again", next: "start" }]
+                progress: "100%",
+                choices: [
+                    { text: "Read Again", next: "start" }
+                ]
             },
             home: {
-                text: "You stayed home and ate cookies. The adventure will wait for another day.",
+                text: `You decide to stay home. It's cozy here, but you wonder what adventures Spark the dragon is having without you.`,
                 image: "https://images.unsplash.com/photo-1499636136210-65422ff04a52?w=800",
-                choices: [{ text: "Try again", next: "start" }]
+                progress: "100%",
+                choices: [
+                    { text: "Actually, let's go!", next: "start" }
+                ]
             }
         };
 
+        // 3. THE ENGINE
         function renderScene(sceneId) {
             const scene = story[sceneId];
+            
+            // Update Text & Image
             document.getElementById('story-text').innerText = scene.text;
             document.getElementById('scene-image').src = scene.image;
+            
+            // Update Progress Bar
+            document.getElementById('progress-bar').style.width = scene.progress;
+            
+            // Clear old buttons
             const choicesContainer = document.getElementById('choices');
             choicesContainer.innerHTML = ''; 
 
+            // Create new buttons
             scene.choices.forEach(choice => {
                 const btn = document.createElement('button');
                 btn.innerText = choice.text;
-                btn.className = 'btn blue';
-                btn.onclick = () => renderScene(choice.next);
+                // Using your blue-btn style from style.css
+                btn.className = 'btn blue-btn';
+                btn.style.width = "100%";
+                btn.style.marginBottom = "10px";
+                btn.onclick = () => {
+                    // Add a tiny delay for a smoother feel
+                    setTimeout(() => renderScene(choice.next), 100);
+                };
                 choicesContainer.appendChild(btn);
             });
+
+            // Scroll to top of container when page changes (good for mobile)
+            window.scrollTo(0, 0);
         }
+
+        // Start the book
         renderScene('start');
     </script>
+
 </body>
 </html>
