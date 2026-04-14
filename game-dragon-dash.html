@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon Dash</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -10,43 +12,31 @@
             height: 400px;
             background: linear-gradient(#1a1a2e, #16213e);
             border-radius: 20px;
-            overflow: hidden; /* Keeps falling items inside */
-            cursor: none; /* Hides mouse to use the dragon instead */
+            overflow: hidden;
+            cursor: crosshair;
+            border: 4px solid #4a90e2;
         }
-        #player {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            font-size: 50px;
-            transform: translateX(-50%);
-            transition: 0.1s linear;
-        }
-        .falling-item {
-            position: absolute;
-            font-size: 30px;
-            top: -50px;
-        }
-        #score-board {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
+        #player { position: absolute; bottom: 20px; left: 50%; font-size: 50px; transform: translateX(-50%); transition: 0.1s linear; pointer-events: none; }
+        .falling-item { position: absolute; font-size: 30px; top: -50px; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🐉 Dragon Dash 🐉</h1>
-        <div id="score-board">Stars Caught: 0</div>
+        <h1 id="game-title">🐉 Dragon Dash</h1>
+        <div id="score-board" style="font-size: 1.5rem; font-weight: bold; color: #f39c12; margin-bottom: 10px;">Stars: 0</div>
         
         <div id="game-window">
             <div id="player">🐉</div>
         </div>
 
-        <p>Move your mouse or finger to catch stars! Avoid fire! 🔥</p>
-        <a href="games.html" class="btn red">🔙 Back to Games</a>
+        <p style="margin-top:15px; font-size: 0.9rem; color: #666;">Catch stars ⭐, avoid fire 🔥!</p>
+        <a href="games.html" class="btn red-btn" style="margin-top: 20px;">🔙 Back to Games</a>
     </div>
 
     <script>
+        const hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: "Explorer" };
+        const kidName = hubData.current;
+        
         const gameWindow = document.getElementById('game-window');
         const player = document.getElementById('player');
         const scoreBoard = document.getElementById('score-board');
@@ -54,90 +44,69 @@
         let score = 0;
         let gameActive = true;
 
-        // Move player with mouse or touch
         gameWindow.addEventListener('mousemove', (e) => {
             if (!gameActive) return;
             let rect = gameWindow.getBoundingClientRect();
             let x = e.clientX - rect.left;
-            // Keep dragon inside the box
-            if (x > 25 && x < rect.width - 25) {
-                player.style.left = x + 'px';
-            }
+            if (x > 30 && x < rect.width - 30) player.style.left = x + 'px';
         });
+
+        // Touch support for mobile
+        gameWindow.addEventListener('touchmove', (e) => {
+            if (!gameActive) return;
+            let rect = gameWindow.getBoundingClientRect();
+            let x = e.touches[0].clientX - rect.left;
+            if (x > 30 && x < rect.width - 30) player.style.left = x + 'px';
+            e.preventDefault();
+        }, {passive: false});
 
         function spawnItem() {
             if (!gameActive) return;
-
             const item = document.createElement('div');
             item.className = 'falling-item';
-            
-            // Randomly choose Star (good) or Fire (bad)
             const isStar = Math.random() > 0.3;
             item.innerText = isStar ? '⭐' : '🔥';
-            
-            // Random horizontal position
-            item.style.left = Math.random() * (gameWindow.offsetWidth - 30) + 'px';
+            item.style.left = Math.random() * (gameWindow.offsetWidth - 40) + 20 + 'px';
             gameWindow.appendChild(item);
 
             let fallPos = -50;
-            const fallSpeed = 3 + (score / 5); // Gets faster as you score!
+            let speed = 3 + (score / 10);
 
-            const fallInterval = setInterval(() => {
-                fallPos += fallSpeed;
+            const fall = setInterval(() => {
+                fallPos += speed;
                 item.style.top = fallPos + 'px';
+                const iR = item.getBoundingClientRect();
+                const pR = player.getBoundingClientRect();
 
-                // Check for collision with player
-                const itemRect = item.getBoundingClientRect();
-                const playerRect = player.getBoundingClientRect();
-
-                if (
-                    itemRect.bottom >= playerRect.top &&
-                    itemRect.right >= playerRect.left &&
-                    itemRect.left <= playerRect.right
-                ) {
+                if (iR.bottom >= pR.top && iR.right >= pR.left && iR.left <= pR.right) {
                     if (isStar) {
                         score++;
-                        scoreBoard.innerText = "Stars Caught: " + score;
+                        scoreBoard.innerText = "Stars: " + score;
                         item.remove();
-                        clearInterval(fallInterval);
+                        clearInterval(fall);
                     } else {
-                        gameOver();
-                        clearInterval(fallInterval);
+                        endGame();
+                        clearInterval(fall);
                     }
                 }
-
-                // Remove if it falls past bottom
-                if (fallPos > gameWindow.offsetHeight) {
-                    item.remove();
-                    clearInterval(fallInterval);
-                }
+                if (fallPos > 400) { item.remove(); clearInterval(fall); }
             }, 20);
         }
 
-function gameOver() {
-    gameActive = false;
-    
-    // 1. Load the big data object
-    let hubData = JSON.parse(localStorage.getItem('hubData'));
-    let currentUser = hubData.current;
-    let oldScore = hubData.profiles[currentUser] || 0;
+        function endGame() {
+            gameActive = false;
+            let oldBest = hubData.profiles[kidName] || 0;
+            let msg = `Game Over, ${kidName}!\nScore: ${score}`;
+            
+            if (score > oldBest) {
+                hubData.profiles[kidName] = score;
+                localStorage.setItem('hubData', JSON.stringify(hubData));
+                msg += "\nNEW HIGH SCORE! 🏆";
+            }
+            alert(msg);
+            location.reload();
+        }
 
-    let message = `Game Over, ${currentUser}!\nYour Score: ${score}`;
-
-    // 2. Check if this specific kid got a new high score
-    if (score > oldScore) {
-        hubData.profiles[currentUser] = score;
-        localStorage.setItem('hubData', JSON.stringify(hubData));
-        message += `\nNEW PERSONAL BEST! 🎉`;
-    } else {
-        message += `\nPersonal Best: ${oldScore}`;
-    }
-
-    alert(message);
-    location.reload(); 
-}
-
-        // Spawn a new item every second
         setInterval(spawnItem, 1000);
     </script>
 </body>
