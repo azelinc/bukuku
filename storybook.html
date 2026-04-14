@@ -1,77 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mission to Mars - STEM</title>
+    <title>The Magic Library</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .fact-card {
-            background: #f0fff4;
-            border: 3px solid #2ecc71;
-            padding: 20px;
-            border-radius: 15px;
-            margin-top: 15px;
+        .category-section {
+            margin: 25px 0;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            border: 3px solid #eee;
+            transition: 0.3s;
         }
-        #fact-title { color: #27ae60; font-size: 1.4rem; margin-bottom: 10px; }
+        /* Color Coding for Categories */
+        .interactive { border-color: #4a90e2; }
+        .static { border-color: #f39c12; }
+        .stem { border-color: #2ecc71; } /* Green for STEM */
+
+        h2 { font-size: 1.5rem; color: #2c3e50; margin-bottom: 10px; }
+        .book-description { font-size: 0.9rem; color: #666; margin-bottom: 15px; line-height: 1.4; }
+        
+        /* New Green Button for STEM */
+        .green-btn { background: #2ecc71; border-bottom: 6px solid #27ae60; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="color: #27ae60;">🚀 Mission to Mars</h1>
-        <img id="space-img" src="" alt="Space">
+        <h1>📚 The Magic Library</h1>
         
-        <div class="fact-card">
-            <div id="fact-title">Did you know?</div>
-            <p id="space-text">Loading space data...</p>
+        <!-- SECTION 1: INTERACTIVE -->
+        <div class="category-section interactive">
+            <h2>🕹️ Interactive</h2>
+            <p class="book-description">You are the hero! Make choices to change the story.</p>
+            <a href="book-dragon.html" class="btn blue-btn">🐉 Dragon Mountain</a>
         </div>
 
-        <div style="margin-top: 20px;">
-            <button id="next-btn" class="btn green-btn" onclick="nextFact()" style="background: #2ecc71; color: white; padding: 15px 30px; border-radius: 50px; border:none; border-bottom: 5px solid #27ae60; font-weight: bold;">Next Fact ➡️</button>
+        <!-- SECTION 2: STATIC -->
+        <div class="category-section static">
+            <h2>📖 Storybooks</h2>
+            <p class="book-description">Classic stories to read at your own pace.</p>
+            <a href="book-squirrel.html" class="btn orange-btn">🐿️ Nutty’s Big Day</a>
+        </div>
+
+        <!-- SECTION 3: STEM (NEW!) -->
+        <div class="category-section stem">
+            <h2>🧪 STEM Explorer</h2>
+            <p class="book-description">Learn amazing facts about Science, Space, and Nature!</p>
+            <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
         </div>
 
         <hr style="margin: 20px 0; opacity: 0.2;">
-        <a href="storybook.html" class="btn orange-btn">📚 Back to Library</a>
+        <a href="index.html" class="btn red" style="background: #e74c3c; border-bottom: 6px solid #c0392b;">🏠 Back to Menu</a>
     </div>
-
-    <script>
-        const facts = [
-            {
-                title: "The Red Planet",
-                text: "Mars is known as the Red Planet because its surface is covered in iron oxide—the same stuff that makes an old bike rusty!",
-                image: "https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=800"
-            },
-            {
-                title: "Giant Volcanoes",
-                text: "Mars has the biggest volcano in the entire solar system! It's called Olympus Mons and it's 3 times taller than Mount Everest.",
-                image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800"
-            },
-            {
-                title: "Bouncy Jumps",
-                text: "Gravity on Mars is much weaker than on Earth. If you could stand on Mars, you could jump 3 times as high as you can right now!",
-                image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=800"
-            }
-        ];
-
-        let currentFact = 0;
-
-        function nextFact() {
-            currentFact++;
-            if (currentFact >= facts.length) {
-                alert("You've become a Mars Expert! 🌟");
-                window.location.href = "storybook.html";
-                return;
-            }
-            showFact();
-        }
-
-        function showFact() {
-            const f = facts[currentFact];
-            document.getElementById('fact-title').innerText = f.title;
-            document.getElementById('space-text').innerText = f.text;
-            document.getElementById('space-img').src = f.image;
-        }
-
-        showFact();
-    </script>
 </body>
 </html>
