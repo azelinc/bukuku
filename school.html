@@ -2,42 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container wide-container">
-        <!-- Sticky Header -->
+        <!-- Dashboard Header -->
         <header style="padding: 15px; border-bottom: 1px solid #eee; text-align: center; background: #fff;">
             <h1 style="margin: 0; font-size: 1.3rem;">🏫 School Hub</h1>
         </header>
 
         <div class="library-layout">
-            <!-- Sidebar / Top Nav -->
-            <nav class="sidebar">
+            <!-- Sidebar (becomes Top Bar on mobile) -->
+            <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
                 <button id="tab-profile" class="tab-btn" onclick="openTab('profile', this)">👤 Profile</button>
                 <button class="tab-btn btn-disabled">🧪 STEM</button>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:var(--danger); border:1px solid #ffdada;">🏠 Home</a>
-            </nav>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:var(--danger); border:1px solid #fee;">🏠 Home</a>
+            </div>
 
             <div class="main-content">
-                <!-- TUITION -->
+                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content">
                     <h2 style="text-align: center; font-size: 1.1rem; margin-bottom: 20px; color: #666;">Choose a Study Set</h2>
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR -->
+                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display:none;">
+                    <h2 style="text-align: center; margin-bottom: 15px;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
-                        <h2 style="font-size: 1.2rem; margin-bottom: 15px;">🔢 Sifir Master</h2>
                         <p id="sifir-highscore" style="font-weight: bold; color: var(--warning); margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Challenge 🚀</a>
                     </div>
-
                     <h3 style="text-align: center; margin: 20px 0 10px; font-size: 1rem;">🏆 Global Top 5</h3>
                     <div class="subject-card" style="padding: 0; overflow: hidden;">
                         <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
@@ -46,21 +45,21 @@
                     </div>
                 </div>
 
-                <!-- PROFILE -->
+                <!-- PROFILE SECTION -->
                 <div id="profile" class="category-content" style="display:none;">
                     <h2 style="text-align: center; margin-bottom: 15px;">👤 Profile Settings</h2>
                     <div class="subject-card">
                         <p style="margin-bottom: 15px; color:#666; font-size: 0.9rem;">Show which standards?</p>
-                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold;">
-                            <input type="checkbox" id="chk-4" checked style="width:20px; height:20px;"> Standard 4
+                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold; cursor:pointer;">
+                            <input type="checkbox" id="chk-4" checked style="width:22px; height:22px;"> Standard 4
                         </label>
-                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold;">
-                            <input type="checkbox" id="chk-5" checked style="width:20px; height:20px;"> Standard 5
+                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold; cursor:pointer;">
+                            <input type="checkbox" id="chk-5" checked style="width:22px; height:22px;"> Standard 5
                         </label>
-                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold;">
-                            <input type="checkbox" id="chk-6" checked style="width:20px; height:20px;"> Standard 6
+                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold; cursor:pointer;">
+                            <input type="checkbox" id="chk-6" checked style="width:22px; height:22px;"> Standard 6
                         </label>
-                        <button class="btn green-btn" onclick="saveProfileSettings()">Save Settings</button>
+                        <button class="btn green-btn" onclick="saveProfileSettings()">Save Settings ✅</button>
                     </div>
                 </div>
             </div>
@@ -93,7 +92,6 @@
         let userPrefs = [4, 5, 6];
 
         async function loadData() {
-            const lbBody = document.getElementById('leaderboard-body');
             let scores = {};
             let allUsers = [];
 
@@ -109,19 +107,18 @@
                             [4, 5, 6].forEach(l => document.getElementById(`chk-${l}`).checked = userPrefs.includes(l));
                         }
                     }
-                    if (userScores['sifir-master-obj']) {
-                        allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
-                    }
+                    if (userScores['sifir-master-obj']) allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
+                    else if (userScores['sifir-master']) allUsers.push({ name: doc.id, score: userScores['sifir-master'], time: 999 });
                 });
 
-                if (scores['sifir-master'] !== undefined) {
-                    document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
-                }
+                if (scores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
 
                 allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
+                const lbBody = document.getElementById('leaderboard-body');
                 lbBody.innerHTML = '';
                 allUsers.slice(0, 5).forEach((u, i) => {
-                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:12px;">#${i+1}</td><td style="text-align:left;">${u.name}</td><td>${u.score}/10</td><td>${u.time}s</td></tr>`;
+                    const timeDisp = u.time === 999 ? "N/A" : u.time + "s";
+                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:12px;">#${i+1}</td><td style="text-align:left;">${u.name}</td><td>${u.score}/10</td><td>${timeDisp}</td></tr>`;
                 });
 
                 renderTuition(scores);
@@ -131,14 +128,13 @@
         function renderTuition(scores) {
             const container = document.getElementById('matrix-container');
             container.innerHTML = '';
-            
             if (userPrefs.length === 0) {
-                container.innerHTML = '<p style="text-align:center; padding:40px;">No standards selected.</p>';
+                container.innerHTML = '<p style="text-align:center; padding:40px;">No standards selected. Go to Profile Settings!</p>';
                 return;
             }
 
             subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.9rem; margin-bottom: 10px; text-transform:uppercase;">${sub.name}</h3>`;
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 10px; text-transform:uppercase;">${sub.name}</h3>`;
                 userPrefs.forEach(lvl => {
                     html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
                     for (let n = 1; n <= sub.sets; n++) {
@@ -158,7 +154,6 @@
             if (document.getElementById('chk-4').checked) sel.push(4);
             if (document.getElementById('chk-5').checked) sel.push(5);
             if (document.getElementById('chk-6').checked) sel.push(6);
-            userPrefs = sel;
             if (kidName) {
                 await setDoc(doc(db, "users", kidName), { settings: { visibleLevels: sel } }, { merge: true });
                 alert("Settings Saved!");
@@ -173,6 +168,9 @@
             btn.classList.add('active');
             window.scrollTo(0,0);
         };
+
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
 
         loadData();
     </script>
