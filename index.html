@@ -6,6 +6,7 @@
     <title>AF Adventure Hub</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* Admin Mode Styling */
         .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; }
         .profile-btn { flex: 1; margin: 0 !important; }
         .del-btn { background: #ff7675; border: none; color: white; padding: 15px; border-radius: 15px; cursor: pointer; font-size: 1.2rem; display: none; }
@@ -25,7 +26,7 @@
             
             <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
                 <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
-                <!-- Hidden Admin Access -->
+                <!-- UPDATED: Admin Button -->
                 <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#eee; cursor:pointer; font-size: 0.7rem; margin-top: 20px;">Admin</button>
             </div>
         </div>
@@ -33,7 +34,7 @@
         <!-- 2. NEW USER FORM -->
         <div id="name-setup" style="display: none;">
             <h1>✨ New Quest</h1>
-            <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 20px; text-align: center; outline: none;">
+            <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 20px; text-align: center; outline: none; font-family: inherit;">
             <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
             <button onclick="initHub()" style="margin-top: 20px; background:none; border:none; color:#999; cursor:pointer;">Cancel</button>
         </div>
@@ -54,6 +55,7 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, setDoc, getDocs, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
+        // Your specific Firebase config
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
             authDomain: "af-adventure-hub.firebaseapp.com",
@@ -72,7 +74,7 @@
         const menu = document.getElementById('main-menu');
         
         let isManageMode = false;
-        const ADMIN_PIN = "9988"; // Change this to your secret code!
+        const ADMIN_PIN = "9988"; // Your secret PIN
 
         async function initHub() {
             loading.style.display = 'block';
@@ -90,29 +92,33 @@
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
             
-            const querySnapshot = await getDocs(collection(db, "users"));
-            querySnapshot.forEach((doc) => {
-                const row = document.createElement('div');
-                row.className = "profile-row";
-                
-                const btn = document.createElement('button');
-                btn.className = "btn blue-btn profile-btn";
-                btn.innerHTML = `👤 ${doc.id}`;
-                btn.onclick = () => selectProfile(doc.id);
+            try {
+                const querySnapshot = await getDocs(collection(db, "users"));
+                querySnapshot.forEach((doc) => {
+                    const row = document.createElement('div');
+                    row.className = "profile-row";
+                    
+                    const btn = document.createElement('button');
+                    btn.className = "btn blue-btn profile-btn";
+                    btn.innerHTML = `👤 ${doc.id}`;
+                    btn.onclick = () => selectProfile(doc.id);
 
-                const delBtn = document.createElement('button');
-                delBtn.className = "del-btn";
-                delBtn.innerHTML = "🗑️";
-                delBtn.style.display = isManageMode ? "block" : "none";
-                delBtn.onclick = (e) => {
-                    e.stopPropagation(); // Stop from clicking the profile
-                    deleteProfile(doc.id);
-                };
+                    const delBtn = document.createElement('button');
+                    delBtn.className = "del-btn";
+                    delBtn.innerHTML = "🗑️";
+                    delBtn.style.display = isManageMode ? "block" : "none";
+                    delBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        deleteProfile(doc.id);
+                    };
 
-                row.appendChild(btn);
-                row.appendChild(delBtn);
-                list.appendChild(row);
-            });
+                    row.appendChild(btn);
+                    row.appendChild(delBtn);
+                    list.appendChild(row);
+                });
+            } catch (e) {
+                console.error("Fetch Error:", e);
+            }
         }
 
         window.adminLogin = () => {
@@ -128,7 +134,7 @@
         }
 
         async function deleteProfile(name) {
-            if (confirm(`PERMANENTLY delete "${name}" and all scores?`)) {
+            if (confirm(`PERMANENTLY delete explorer "${name}"?`)) {
                 await deleteDoc(doc(db, "users", name));
                 showProfileSelection();
             }
