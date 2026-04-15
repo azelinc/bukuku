@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Profile Settings Styling */
+        .settings-card { background: #f8f9fa; padding: 20px; border-radius: 15px; border: 2px solid #eee; text-align: left; margin-bottom: 20px; }
+        .check-item { display: flex; align-items: center; gap: 15px; padding: 12px; background: white; margin-bottom: 10px; border-radius: 10px; cursor: pointer; border: 2px solid transparent; transition: 0.2s; }
+        .check-item:hover { border-color: #4a90e2; }
+        .check-item input { width: 22px; height: 22px; cursor: pointer; }
+        .check-label { font-weight: bold; font-size: 1.1rem; color: #2c3e50; }
+        
+        .leaderboard-table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; border-radius: 12px; overflow: hidden; font-size: 0.85rem; }
+        .leaderboard-table tr:nth-child(even) { background: #fffaf0; }
+    </style>
 </head>
 <body>
     <div class="container wide-container">
@@ -17,18 +28,23 @@
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
                 <button class="tab-btn btn-disabled" style="font-size: 0.8rem;">🧪 STEM (Soon)</button>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; margin-top: auto;">🏠 Home</a>
+                
+                <div style="flex-grow: 1;"></div>
+                
+                <!-- NEW: Profile Tab -->
+                <button id="tab-profile" class="tab-btn" onclick="openTab('profile', this)" style="border: 2px solid #4a90e266;">👤 My Profile</button>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
             </div>
 
             <div class="main-content">
-                <!-- TUITION -->
+                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content">
                     <div id="matrix-container">
                         <p style="text-align:center; padding: 20px;">Loading study cloud...</p>
                     </div>
                 </div>
 
-                <!-- SIFIR -->
+                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display:none;">
                     <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
@@ -36,9 +52,32 @@
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
                     <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
-                    <table class="leaderboard-table" id="leaderboard-table" style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
+                    <table class="leaderboard-table" style="width:100%; border-collapse:collapse;">
                         <tbody id="leaderboard-body"></tbody>
                     </table>
+                </div>
+
+                <!-- PROFILE SETTINGS SECTION -->
+                <div id="profile" class="category-content" style="display:none;">
+                    <h2 style="text-align: center; margin-bottom: 5px;">👤 Profile Settings</h2>
+                    <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">Choose which levels to show in Tuition</p>
+                    
+                    <div class="settings-card">
+                        <label class="check-item">
+                            <input type="checkbox" id="chk-4" checked>
+                            <span class="check-label">Standard 4</span>
+                        </label>
+                        <label class="check-item">
+                            <input type="checkbox" id="chk-5" checked>
+                            <span class="check-label">Standard 5</span>
+                        </label>
+                        <label class="check-item">
+                            <input type="checkbox" id="chk-6" checked>
+                            <span class="check-label">Standard 6</span>
+                        </label>
+                        
+                        <button class="btn green-btn" onclick="saveProfileSettings()" style="margin-top: 10px;">Save Preferences ✅</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,7 +85,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, getDocs, collection, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -67,6 +106,8 @@
             { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
         ];
 
+        let userPreferences = [4, 5, 6]; // Default
+
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
             const lbBody = document.getElementById('leaderboard-body');
@@ -79,7 +120,17 @@
                 querySnapshot.forEach((doc) => {
                     const data = doc.data();
                     const userScores = data.scores || {};
-                    if (doc.id === kidName) scores = userScores;
+                    if (doc.id === kidName) {
+                        scores = userScores;
+                        // Load Preferences from Cloud
+                        if (data.settings && data.settings.visibleLevels) {
+                            userPreferences = data.settings.visibleLevels;
+                            // Sync Checkboxes
+                            [4, 5, 6].forEach(l => {
+                                document.getElementById(`chk-${l}`).checked = userPreferences.includes(l);
+                            });
+                        }
+                    }
                     if (userScores['sifir-master-obj']) {
                         allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
                     }
@@ -97,9 +148,17 @@
             } catch (e) { console.error(e); }
 
             container.innerHTML = '';
+            
+            if (userPreferences.length === 0) {
+                container.innerHTML = '<p style="padding:40px; color:#999;">No Standards selected. Go to 👤 My Profile to choose your levels!</p>';
+                return;
+            }
+
             subjects.forEach(sub => {
                 let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22;">${sub.name}</h3>`;
-                [4, 5, 6].forEach(lvl => {
+                
+                // Only loop through levels that are ticked in preferences
+                userPreferences.forEach(lvl => {
                     html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
@@ -113,6 +172,26 @@
                 container.innerHTML += html;
             });
         }
+
+        window.saveProfileSettings = async () => {
+            const selected = [];
+            if (document.getElementById('chk-4').checked) selected.push(4);
+            if (document.getElementById('chk-5').checked) selected.push(5);
+            if (document.getElementById('chk-6').checked) selected.push(6);
+
+            userPreferences = selected;
+
+            if (kidName) {
+                const userRef = doc(db, "users", kidName);
+                await setDoc(userRef, { 
+                    settings: { visibleLevels: selected } 
+                }, { merge: true });
+                
+                alert("Preferences Saved!");
+                openTab('tuition', document.getElementById('tab-tuition'));
+                generateMatrix();
+            }
+        };
 
         window.openTab = (categoryName, element) => {
             const contents = document.getElementsByClassName("category-content");
