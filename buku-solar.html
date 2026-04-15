@@ -6,6 +6,17 @@
     <title>Tenaga Solar - STEM Explorer</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        /* FIX: Limits image size so it doesn't become oversized */
+        #main-img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 4px solid #2ecc71;
+            display: block;
+        }
+
         .fact-card {
             background: #f0fff4;
             border: 3px solid #2ecc71;
@@ -14,20 +25,19 @@
             margin-top: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
+
         #fact-title { 
             color: #27ae60; 
             font-size: 1.4rem; 
             margin-bottom: 10px; 
             font-weight: bold;
         }
-        #space-text {
-            line-height: 1.6;
-            font-size: 1.1rem;
-        }
+
         #progress-text {
             font-size: 0.9rem;
             color: #666;
             margin-top: 10px;
+            text-transform: uppercase;
         }
     </style>
 </head>
@@ -35,16 +45,18 @@
 
     <div class="container">
         <!-- Progress Bar -->
-        <div style="width: 100%; background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px;">
-            <div id="prog-bar" style="width: 20%; background: #2ecc71; height: 8px; border-radius: 4px; transition: 0.5s;"></div>
+        <div style="width: 100%; background: #eee; height: 10px; border-radius: 5px; margin-bottom: 20px; overflow: hidden;">
+            <div id="prog-bar" style="width: 20%; background: #2ecc71; height: 10px; transition: 0.5s;"></div>
         </div>
 
         <h1 style="color: #27ae60;">☀️ Tenaga Solar</h1>
-        <img id="main-img" src="" alt="Tenaga Solar" style="border: 4px solid #2ecc71;">
+        
+        <!-- The Fixed Image -->
+        <img id="main-img" src="" alt="Tenaga Solar">
         
         <div class="fact-card">
             <div id="fact-title">Memuatkan...</div>
-            <p id="main-text">Sila tunggu sebentar...</p>
+            <p id="main-text" style="font-size: 1.1rem; line-height: 1.6;">Sila tunggu sebentar...</p>
         </div>
 
         <div id="progress-text">Fakta 1 dari 5</div>
@@ -54,39 +66,39 @@
         </div>
 
         <hr style="margin: 25px 0; opacity: 0.1;">
-        <a href="storybook.html" class="btn red-btn">📚 Kembali ke Perpustakaan</a>
+        <a href="storybook.html" class="btn red-btn" style="font-size: 1rem; padding: 12px;">📚 Kembali ke Perpustakaan</a>
     </div>
 
     <script>
-        // 1. Ambil nama Profile
+        // 1. PERSONALISATION: Get user profile name
         const hubData = JSON.parse(localStorage.getItem('hubData')) || { current: "Explorer" };
         const kidName = hubData.current || "Explorer";
 
-        // 2. Data Fakta (Dalam Bahasa Melayu)
+        // 2. DATA FAKTA (Using backticks for personalisation)
         const facts = [
             {
                 title: "Apa itu Tenaga Solar?",
-                text: `Hai ${kidName}! Tenaga solar adalah tenaga hebat yang kita dapat terus daripada cahaya matahari. Ia sangat bersih dan tidak habis!`,
+                text: `Hai ${kidName}! Tenaga solar adalah tenaga hebat yang kita dapat terus daripada cahaya matahari. Ia sangat bersih!`,
                 image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800"
             },
             {
                 title: "Panel Solar",
-                text: "Panel hitam yang selalu kita nampak di atas bumbung rumah dipanggil 'Sel Fotovoltaik'. Ia menukar cahaya matahari menjadi elektrik untuk lampu dan TV!",
+                text: "Panel hitam di atas bumbung menukar cahaya matahari menjadi elektrik untuk lampu dan TV di rumah anda.",
                 image: "https://images.unsplash.com/photo-1509391366360-fe5bb65830bb?w=800"
             },
             {
-                title: "Matahari Sangat Kuat",
-                text: `${kidName}, tahukah anda? Cahaya matahari yang sampai ke Bumi dalam masa satu jam cukup untuk membekalkan tenaga kepada seluruh dunia selama setahun!`,
+                title: "Sangat Kuat!",
+                text: `${kidName}, tahukah anda? Cahaya matahari dalam satu jam cukup untuk membekalkan tenaga kepada seluruh dunia selama setahun!`,
                 image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=800"
             },
             {
                 title: "Mesra Alam",
-                text: "Tenaga solar tidak mengeluarkan asap kotor. Ia membantu menjaga bumi kita supaya tetap hijau dan udara kita tetap segar.",
+                text: "Tenaga solar tidak mengeluarkan asap kotor. Ia membantu menjaga bumi kita supaya tetap hijau dan segar.",
                 image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800"
             },
             {
-                title: "Boleh Digunakan Di Mana-Mana",
-                text: "Kerana matahari ada di mana-mana, kita boleh guna tenaga solar di tengah laut, di atas gunung, malah di angkasa lepas untuk satelit!",
+                title: "Pakar Solar!",
+                text: `Hebat! ${kidName} kini sudah tahu rahsia matahari. Gunakan pengetahuan ini untuk menjaga planet kita!`,
                 image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800"
             }
         ];
@@ -104,7 +116,6 @@
             document.getElementById('prog-bar').style.width = prog + "%";
             document.getElementById('progress-text').innerText = `Fakta ${currentIndex + 1} dari ${facts.length}`;
 
-            // Jika fakta terakhir
             if (currentIndex === facts.length - 1) {
                 document.getElementById('next-btn').innerText = "Tamat & Jadi Pakar! 🌟";
             }
@@ -113,6 +124,7 @@
         function nextPage() {
             if (currentIndex < facts.length - 1) {
                 currentIndex++;
+                window.scrollTo(0, 0); // Scroll to top for mobile
                 updateUI();
             } else {
                 alert(`Tahniah ${kidName}! Anda kini seorang Pakar Tenaga Solar! ☀️`);
@@ -120,7 +132,6 @@
             }
         }
 
-        // Jalankan kali pertama
         updateUI();
     </script>
 </body>
