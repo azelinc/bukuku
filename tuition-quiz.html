@@ -1,20 +1,205 @@
-function showResult() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Quiz - AF Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .quiz-box { text-align: left; background: #fff; padding: 20px; border-radius: 20px; margin: 20px 0; border: 3px solid #eee; }
+        .q-text { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; min-height: 60px; }
+        .option-btn { display: block; width: 100%; padding: 15px; margin: 10px 0; background: #f8f9fa; border: 2px solid #ddd; border-radius: 12px; cursor: pointer; text-align: left; font-size: 1.1rem; font-weight: bold; transition: 0.2s; color: #444; }
+        .option-btn:hover { background: #f0f7ff; border-color: #4a90e2; }
+        .correct { background: #d4edda !important; color: #155724 !important; border-color: #c3e6cb !important; }
+        .wrong { background: #f8d7da !important; color: #721c24 !important; border-color: #f5c6cb !important; }
+        #stats { font-weight: bold; margin-bottom: 10px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="quiz-title">Subject Standard ?</h1>
+        <div id="stats">Question 1 of 10 | Score: 0</div>
+
+        <div class="quiz-box" id="quiz-area">
+            <div id="question" class="q-text">Loading question...</div>
+            <div id="options-list"></div>
+        </div>
+
+        <div id="result-area" style="display:none; padding: 20px;">
+            <h2 id="final-score" style="font-size: 2.5rem; color: #f39c12;">0/10</h2>
+            <p id="feedback" style="font-size: 1.2rem; margin: 20px 0; line-height: 1.5;"></p>
+            <a href="school.html" class="btn blue-btn">Back to School Hub</a>
+        </div>
+    </div>
+
+    <script>
+        // 1. DATA INITIALIZATION (Defensive Loading)
+        let hubData;
+        try {
+            hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
+        } catch (e) {
+            hubData = { profiles: {}, current: null };
+        }
+        
+        const kidName = hubData.current;
+        const urlParams = new URLSearchParams(window.location.search);
+        const subject = urlParams.get('sub'); 
+        const level = urlParams.get('lvl');   
+        
+        const titleMap = { 'math': 'Mathematics', 'sci': 'Science' };
+        document.getElementById('quiz-title').innerText = `${titleMap[subject]} Std ${level}`;
+
+        // 2. QUESTIONS BANK
+        const questionBank = {
+            "math": {
+                "4": [
+                    { q: "What is the place value of digit 5 in 85,210?", a: ["Thousands", "Ten Thousands", "Hundreds", "Ones"], c: 0 },
+                    { q: "Round 12,384 to the nearest thousand.", a: ["12,000", "12,400", "13,000", "10,000"], c: 0 },
+                    { q: "3/4 + 1/4 = ?", a: ["1/2", "1/4", "1", "4/8"], c: 2 },
+                    { q: "50,000 - 12,500 = ?", a: ["37,500", "38,500", "47,500", "35,000"], c: 0 },
+                    { q: "Convert 0.7 to percentage.", a: ["7%", "70%", "0.7%", "700%"], c: 1 },
+                    { q: "RM 100 - RM 45.50 = ?", a: ["RM 54.50", "RM 55.50", "RM 64.50", "RM 44.50"], c: 0 },
+                    { q: "How many minutes are in 2 hours 15 minutes?", a: ["120 minutes", "135 minutes", "150 minutes", "215 minutes"], c: 1 },
+                    { q: "A square has a side of 5cm. What is its area?", a: ["20cm²", "10cm²", "25cm²", "15cm²"], c: 2 },
+                    { q: "How many days are in a leap year?", a: ["365", "364", "366", "360"], c: 2 },
+                    { q: "80 ÷ 5 = ?", a: ["14", "16", "18", "12"], c: 1 }
+                ],
+                "5": [
+                    { q: "What is 1/4 million in whole numbers?", a: ["25,000", "250,000", "2,500,000", "2,500"], c: 1 },
+                    { q: "40% of 200 is...", a: ["40", "60", "80", "100"], c: 2 },
+                    { q: "Find the average of 10, 20, and 30.", a: ["15", "20", "25", "60"], c: 1 },
+                    { q: "1.25 Litres + 500 ml = (in ml)", a: ["1750ml", "1255ml", "1500ml", "175ml"], c: 0 },
+                    { q: "Which of these is a prime number?", a: ["9", "15", "17", "21"], c: 2 },
+                    { q: "Find the area of a triangle with base 6cm and height 4cm.", a: ["24cm²", "10cm²", "12cm²", "8cm²"], c: 2 },
+                    { q: "Change 14:00 hours to the 12-hour system.", a: ["2:00 a.m.", "12:00 p.m.", "2:00 p.m.", "4:00 p.m."], c: 2 },
+                    { q: "Calculate 125 x 100 ÷ 10.", a: ["1250", "125", "12500", "12.5"], c: 0 },
+                    { q: "If you save RM 2000 and the interest is 2% per year, how much interest is earned after 1 year?", a: ["RM 20", "RM 40", "RM 200", "RM 4"], c: 1 },
+                    { q: "A box has 12 apples. How many apples are in 1000 boxes?", a: ["120", "1200", "12000", "120,000"], c: 2 }
+                ],
+                "6": [
+                    { q: "What is the ratio of 3 to 5?", a: ["3:5", "5:3", "3/5", "35"], c: 0 },
+                    { q: "A car travels 120km in 2 hours. What is its speed?", a: ["60km/h", "240km/h", "120km/h", "50km/h"], c: 0 },
+                    { q: "Cost Price RM80, Selling Price RM100. What is the profit percentage?", a: ["20%", "25%", "80%", "10%"], c: 1 },
+                    { q: "State 0.05 million as a whole number.", a: ["5,000", "50,000", "500,000", "500"], c: 1 },
+                    { q: "Find the median of the data: 2, 5, 8, 10, 12.", a: ["5", "8", "10", "12"], c: 1 },
+                    { q: "10 - 2.356 =", a: ["7.644", "8.644", "7.744", "8.744"], c: 0 },
+                    { q: "What is the sum of internal angles of a triangle?", a: ["90°", "180°", "360°", "270°"], c: 1 },
+                    { q: "Change 3.5 kg to grams.", a: ["350g", "3500g", "35000g", "35g"], c: 1 },
+                    { q: "How many years are in a decade?", a: ["100", "50", "10", "12"], c: 2 },
+                    { q: "Find the volume of a cube with side 3cm.", a: ["9cm³", "12cm³", "27cm³", "18cm³"], c: 2 }
+                ]
+            },
+            "sci": {
+                "4": [
+                    { q: "What is the main organ for breathing in humans?", a: ["Heart", "Lungs", "Stomach", "Brain"], c: 1 },
+                    { q: "Which animal breathes through its skin and lungs?", a: ["Fish", "Bird", "Frog", "Snake"], c: 2 },
+                    { q: "What is the process where plants make their own food?", a: ["Breathing", "Sweating", "Photosynthesis", "Melting"], c: 2 },
+                    { q: "When light hits a mirror, it bounces off. This is called...", a: ["Refraction", "Reflection", "Shadow", "Rainbow"], c: 1 },
+                    { q: "Energy from flowing water is called...", a: ["Solar", "Wind", "Hydro", "Nuclear"], c: 2 },
+                    { q: "Which part of the skeleton protects the brain?", a: ["Ribs", "Skull", "Backbone", "Pelvis"], c: 1 },
+                    { q: "Objects that allow some light to pass through are called...", a: ["Transparent", "Opaque", "Translucent", "Mirror"], c: 2 },
+                    { q: "The main source of energy for the Earth is...", a: ["The Moon", "The Sun", "Wind", "Batteries"], c: 1 },
+                    { q: "Sound is produced when an object...", a: ["Moves slow", "Heats up", "Vibrates", "Falls"], c: 2 },
+                    { q: "The pull of Earth on objects towards its center is...", a: ["Friction", "Gravity", "Electricity", "Heat"], c: 1 }
+                ],
+                "5": [
+                    { q: "Which part of the blood carries oxygen?", a: ["Plasma", "White blood cells", "Red blood cells", "Platelets"], c: 2 },
+                    { q: "Which organ pumps blood throughout the body?", a: ["Lungs", "Brain", "Heart", "Kidney"], c: 2 },
+                    { q: "In a food chain, green plants are known as...", a: ["Consumers", "Producers", "Decomposers", "Predators"], c: 1 },
+                    { q: "What is the state of matter for an ice cube?", a: ["Liquid", "Gas", "Solid", "Plasma"], c: 2 },
+                    { q: "Which gas is needed for a candle to burn?", a: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Helium"], c: 1 },
+                    { q: "A material that allows electricity to flow through it is a...", a: ["Insulator", "Conductor", "Plastic", "Wood"], c: 1 },
+                    { q: "What is the freezing point of water?", a: ["100°C", "50°C", "0°C", "-10°C"], c: 2 },
+                    { q: "A group of stars that forms a pattern in the sky is a...", a: ["Planet", "Constellation", "Galaxy", "Orbit"], c: 1 },
+                    { q: "Which part of the plant transports water from roots to leaves?", a: ["Stem/Xylem", "Flowers", "Roots", "Stomata"], c: 0 },
+                    { q: "The main source of energy for the Water Cycle is the...", a: ["Ocean", "Moon", "Sun", "Wind"], c: 2 }
+                ],
+                "6": [
+                    { q: "Which microorganism is used to make bread rise?", a: ["Bacteria", "Virus", "Yeast/Fungi", "Algae"], c: 2 },
+                    { q: "The force that opposes the motion of an object is...", a: ["Gravity", "Friction", "Air pressure", "Magnetism"], c: 1 },
+                    { q: "Which method is best to keep fish fresh for a long time?", a: ["Boiling", "Freezing", "Wrapping in paper", "Washing"], c: 1 },
+                    { q: "Air pressure is highest at...", a: ["The top of a mountain", "In an airplane", "Sea level", "The Moon"], c: 2 },
+                    { q: "Which of these simple machines is a lever?", a: ["Screwdriver", "Scissors", "Ramp", "Screw"], c: 1 },
+                    { q: "Tuberculosis is a disease caused by...", a: ["Fungi", "Bacteria", "Virus", "Protozoa"], c: 1 },
+                    { q: "A natural phenomenon when the Moon is between the Sun and Earth.", a: ["Lunar Eclipse", "Solar Eclipse", "Full Moon", "Tsunami"], c: 1 },
+                    { q: "Interactions between individuals of different species is called...", a: ["Interspecific", "Intraspecific", "Competition", "Symbiosis"], c: 0 },
+                    { q: "A simple machine with a grooved wheel and a rope is a...", a: ["Wedge", "Pulley", "Inclined Plane", "Lever"], c: 1 },
+                    { q: "What does 'biodiversity' refer to?", a: ["Weather", "Variety of life", "Pollution", "Soil"], c: 1 }
+                ]
+            }
+        };
+
+        // 3. ENGINE LOGIC
+        let currentQ = 0;
+        let score = 0;
+        let questions = questionBank[subject][level];
+
+        function showQuestion() {
+            const q = questions[currentQ];
+            document.getElementById('stats').innerText = `Question ${currentQ + 1} of 10 | Score: ${score}`;
+            document.getElementById('question').innerText = q.q;
+            const list = document.getElementById('options-list');
+            list.innerHTML = '';
+            q.a.forEach((opt, index) => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerText = opt;
+                btn.onclick = () => checkAnswer(index, btn);
+                list.appendChild(btn);
+            });
+        }
+
+        function checkAnswer(idx, btn) {
+            const btns = document.getElementsByClassName('option-btn');
+            for(let b of btns) b.disabled = true;
+            
+            if(idx === questions[currentQ].c) {
+                btn.classList.add('correct');
+                score++;
+            } else {
+                btn.classList.add('wrong');
+                btns[questions[currentQ].c].classList.add('correct');
+            }
+
+            setTimeout(() => {
+                currentQ++;
+                if(currentQ < 10) showQuestion();
+                else showResult();
+            }, 1500);
+        }
+
+        function showResult() {
             document.getElementById('quiz-area').style.display = 'none';
             document.getElementById('stats').style.display = 'none';
             document.getElementById('result-area').style.display = 'block';
             document.getElementById('final-score').innerText = `${score}/10`;
-            
-            // SAVE SCORE LOGIC
-            const scoreKey = `${subject}-${level}`; // e.g., math-4
-            if (!hubData.profiles[kidName].scores) hubData.profiles[kidName].scores = {};
-            
-            // Only save if it's a new high score for this subject
-            const previousBest = hubData.profiles[kidName].scores[scoreKey] || 0;
-            if (score > previousBest) {
-                hubData.profiles[kidName].scores[scoreKey] = score;
-                localStorage.setItem('hubData', JSON.stringify(hubData));
+
+            // --- DEFENSIVE SAVE LOGIC ---
+            if (kidName && hubData.profiles[kidName]) {
+                // If profile is old format (number), convert to object
+                if (typeof hubData.profiles[kidName] !== 'object') {
+                    hubData.profiles[kidName] = { scores: {} };
+                }
+                // Ensure scores property exists
+                if (!hubData.profiles[kidName].scores) {
+                    hubData.profiles[kidName].scores = {};
+                }
+
+                const scoreKey = `${subject}-${level}`;
+                const previousBest = hubData.profiles[kidName].scores[scoreKey] || 0;
+
+                if (score > previousBest) {
+                    hubData.profiles[kidName].scores[scoreKey] = score;
+                    localStorage.setItem('hubData', JSON.stringify(hubData));
+                }
             }
+            // --- END SAVE LOGIC ---
 
             let message = score > 7 ? `Amazing job, ${kidName}! You are a true expert!` : `Good effort, ${kidName}! Practice makes perfect!`;
             document.getElementById('feedback').innerText = message;
         }
+
+        showQuestion();
+    </script>
+</body>
+</html>
