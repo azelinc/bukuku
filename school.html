@@ -25,20 +25,30 @@
 
             <div class="main-content">
                 <div id="tuition" class="category-content" style="text-align: left;">
-                    <h2 style="text-align: center;">🎓 Tuition (DLP English)</h2>
+                    <h2 style="text-align: center;">🎓 Tuition Hub</h2>
                     
+                    <!-- MATHEMATICS -->
                     <div style="margin-top: 20px;">
-                        <h3 style="color: #4a90e2; border-left: 5px solid #4a90e2; padding-left: 10px;">Mathematics</h3>
+                        <h3 style="color: #4a90e2; border-left: 5px solid #4a90e2; padding-left: 10px;">Mathematics (DLP)</h3>
                         <a href="tuition-quiz.html?sub=math&lvl=4" class="btn blue-btn" id="btn-math-4">Maths Std 4</a>
                         <a href="tuition-quiz.html?sub=math&lvl=5" class="btn blue-btn" id="btn-math-5">Maths Std 5</a>
                         <a href="tuition-quiz.html?sub=math&lvl=6" class="btn blue-btn" id="btn-math-6">Maths Std 6</a>
                     </div>
 
+                    <!-- SCIENCE -->
                     <div style="margin-top: 25px;">
-                        <h3 style="color: #2ecc71; border-left: 5px solid #2ecc71; padding-left: 10px;">Science</h3>
+                        <h3 style="color: #2ecc71; border-left: 5px solid #2ecc71; padding-left: 10px;">Science (DLP)</h3>
                         <a href="tuition-quiz.html?sub=sci&lvl=4" class="btn green-btn" id="btn-sci-4">Science Std 4</a>
                         <a href="tuition-quiz.html?sub=sci&lvl=5" class="btn green-btn" id="btn-sci-5">Science Std 5</a>
                         <a href="tuition-quiz.html?sub=sci&lvl=6" class="btn green-btn" id="btn-sci-6">Science Std 6</a>
+                    </div>
+
+                    <!-- ENGLISH (NEW!) -->
+                    <div style="margin-top: 25px;">
+                        <h3 style="color: #e67e22; border-left: 5px solid #e67e22; padding-left: 10px;">English Language</h3>
+                        <a href="tuition-quiz.html?sub=eng&lvl=4" class="btn orange-btn" id="btn-eng-4">English Std 4</a>
+                        <a href="tuition-quiz.html?sub=eng&lvl=5" class="btn orange-btn" id="btn-eng-5">English Std 5</a>
+                        <a href="tuition-quiz.html?sub=eng&lvl=6" class="btn orange-btn" id="btn-eng-6">English Std 6</a>
                     </div>
                 </div>
 
@@ -53,17 +63,17 @@
     </div>
 
     <script>
-        const hubData = JSON.parse(localStorage.getItem('hubData'));
+        const hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
         const kidName = hubData.current;
 
         function loadScores() {
+            if (!kidName) return;
             const profile = hubData.profiles[kidName];
             if (profile && profile.scores) {
                 for (let key in profile.scores) {
                     const btn = document.getElementById(`btn-${key}`);
                     if (btn) {
                         const score = profile.scores[key];
-                        // Add the score label inside the button
                         btn.innerHTML += `<span class="score-label">Best Score: ${score}/10</span>`;
                     }
                 }
