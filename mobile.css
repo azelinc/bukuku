@@ -1,0 +1,51 @@
+/* MOBILE STYLE (Phones) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body { 
+    font-family: 'Segoe UI', Roboto, sans-serif; 
+    background: #1a1a2e; 
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; /* Vertically center the card */
+    padding: 10px;
+}
+
+.container { 
+    width: 100%;
+    max-width: 100%;
+    background: #ffffff; 
+    padding: 25px 15px; 
+    border-radius: 20px; 
+    border: 5px solid #ffd700;
+    /* Removed fixed heights to prevent elongation */
+    height: auto; 
+}
+
+/* Buttons */
+.btn {
+    display: block; width: 100%; padding: 16px; margin: 10px 0;
+    font-size: 1.1rem; font-weight: 800; color: white !important;
+    border-radius: 15px; border: none; text-align: center; text-decoration: none;
+}
+.blue-btn { background: #4a90e2; border-bottom: 4px solid #2e6cb5; }
+.orange-btn { background: #f39c12; border-bottom: 4px solid #c87f0a; }
+.green-btn { background: #2ecc71; border-bottom: 4px solid #27ae60; }
+.red-btn { background: #e74c3c; border-bottom: 4px solid #c0392b; }
+.btn-disabled { background: #e0e0e0 !important; color: #999 !important; filter: grayscale(1); pointer-events: none; }
+
+/* School Hub Layout */
+.library-layout { display: flex; flex-direction: column; }
+.sidebar { 
+    width: 100%; flex-direction: row; display: flex;
+    overflow-x: auto; padding: 10px; gap: 8px; border-bottom: 2px solid #eee;
+}
+.tab-btn { padding: 8px 15px; white-space: nowrap; border-radius: 10px; background: #eee; font-size: 0.85rem; border: none; }
+.tab-btn.active { background: #4a90e2; color: white; }
+
+/* Matrix Grid */
+.grade-row { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px 0; border-bottom: 1px solid #eee; }
+.set-group { display: grid; grid-template-columns: repeat(5, 45px); gap: 8px; justify-content: center; }
+.set-circle { width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; color: white !important; font-size: 0.9rem; text-decoration: none; position: relative; }
+.set-circle.done { background-color: #2ecc71 !important; }
+.set-circle.done::after { content: "✓"; position: absolute; top: -3px; right: -3px; background: #27ae60; width: 14px; height: 14px; border-radius: 50%; font-size: 8px; display: flex; align-items: center; justify-content: center; color: white; }
