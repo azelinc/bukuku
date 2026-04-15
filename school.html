@@ -14,14 +14,10 @@
 
         <div class="library-layout">
             <div class="sidebar">
-                <!-- ACTIVE TABS -->
-                <button class="tab-btn active" onclick="openTab(event, 'tuition')">🎓 Tuition</button>
-                <button class="tab-btn" onclick="openTab(event, 'sifir')">🔢 Sifir Practice</button>
-                
-                <!-- DISABLED TAB: STEM (Correctly applied class) -->
-                <button class="tab-btn tab-btn-disabled">
-                    🧪 STEM (Soon)
-                </button>
+                <!-- Added IDs to buttons to help the Auto-Tab logic -->
+                <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
+                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Practice</button>
+                <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
                 
                 <div style="flex-grow: 1; min-height: 20px;"></div>
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
@@ -106,16 +102,29 @@
             });
         }
 
-        window.openTab = (evt, categoryName) => {
+        // Updated openTab to be usable by the Auto-Tab logic
+        window.openTab = (categoryName, element) => {
             const contents = document.getElementsByClassName("category-content");
             for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
+            
             const tabs = document.getElementsByClassName("tab-btn");
             for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
+            
             document.getElementById(categoryName).style.display = "block";
-            evt.currentTarget.classList.add("active");
+            if(element) element.classList.add("active");
+        }
+
+        // AUTO-TAB LOGIC: Checks if URL has ?tab=sifir
+        function checkUrlParams() {
+            const params = new URLSearchParams(window.location.search);
+            const targetTab = params.get('tab');
+            if (targetTab === 'sifir') {
+                openTab('sifir', document.getElementById('tab-sifir'));
+            }
         }
 
         generateMatrix();
+        checkUrlParams();
     </script>
 </body>
 </html>
