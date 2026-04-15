@@ -8,25 +8,22 @@
 </head>
 <body>
     <div class="container wide-container">
-        <div style="padding: 20px; border-bottom: 2px solid #eee; text-align: center;">
-            <h1 style="margin: 0;">🏫 School Hub</h1>
+        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center;">
+            <h1 style="margin: 0; font-size: 1.5rem;">🏫 School Hub</h1>
         </div>
 
         <div class="library-layout">
             <div class="sidebar">
                 <button class="tab-btn active" onclick="openTab(event, 'tuition')">🎓 Tuition</button>
                 <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
-                <div style="flex-grow: 1; min-height: 20px;"></div>
+                <div style="flex-grow: 1;"></div>
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
             </div>
 
             <div class="main-content">
                 <div id="tuition" class="category-content">
-                    <h2 style="text-align: center; margin-bottom: 20px;">🎓 Study Sets</h2>
-                    
-                    <div id="quiz-list-container">
-                        <!-- Quizzes will be generated here by JS -->
-                    </div>
+                    <h2 style="font-size: 1.2rem; margin-bottom: 15px; text-align: center;">Choose a Study Set</h2>
+                    <div id="matrix-container"></div>
                 </div>
 
                 <div id="stem" class="category-content" style="display:none;">
@@ -44,37 +41,42 @@
         const kidName = hubData.current;
 
         const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: 'blue-btn' },
-            { id: 'sci', name: 'Science (DLP)', color: 'green-btn' },
-            { id: 'eng', name: 'English Language', color: 'orange-btn' }
+            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2' },
+            { id: 'sci', name: 'Science (DLP)', color: '#2ecc71' },
+            { id: 'eng', name: 'English Language', color: '#f39c12' }
         ];
 
-        function generateQuizList() {
-            const container = document.getElementById('quiz-list-container');
+        function generateMatrix() {
+            const container = document.getElementById('matrix-container');
             const scores = (hubData.profiles[kidName] && hubData.profiles[kidName].scores) ? hubData.profiles[kidName].scores : {};
 
             subjects.forEach(sub => {
-                let html = `<h3 style="margin-top:20px; border-left:5px solid #ccc; padding-left:10px;">${sub.name}</h3>`;
+                let html = `<div class="subject-card">
+                    <h3 style="color:${sub.color}; font-size: 1.1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22;">${sub.name}</h3>`;
                 
                 [4, 5, 6].forEach(lvl => {
-                    html += `<div style="margin: 10px 0; text-align: left; font-weight: bold;">Standard ${lvl}</div>`;
-                    html += `<div class="set-row">`;
+                    html += `<div class="grade-row">
+                        <div class="grade-label">Std ${lvl}</div>
+                        <div class="set-group">`;
                     
                     [1, 2, 3].forEach(setNum => {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = scores[scoreKey] || 0;
-                        const isDone = bestScore >= 5; // Marked as done if score is 5 or more
-                        const doneClass = isDone ? 'completed-btn' : '';
+                        const isDone = bestScore >= 5;
+                        const doneClass = isDone ? 'done' : '';
                         
                         html += `
                             <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
-                               class="btn ${sub.color} set-link ${doneClass}">
-                               Set ${setNum} ${bestScore > 0 ? '('+bestScore+'/10)' : ''}
+                               class="set-circle ${doneClass}" 
+                               style="background-color: ${sub.color}">
+                               ${setNum}
+                               ${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}
                             </a>`;
                     });
                     
-                    html += `</div>`;
+                    html += `</div></div>`;
                 });
+                html += `</div>`;
                 container.innerHTML += html;
             });
         }
@@ -88,7 +90,7 @@
             evt.currentTarget.classList.add("active");
         }
 
-        generateQuizList();
+        generateMatrix();
     </script>
 </body>
 </html>
