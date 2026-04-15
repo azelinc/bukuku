@@ -1,147 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bukuku - Cahaya Menjadi Kuasa</title>
+    <title>Tenaga Solar - STEM Explorer</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        :root {
-            --sky-blue: #87CEEB;
-            --sun-yellow: #FFD700;
-            --slate: #2c3e50;
-            --paper: #f9f9f9;
-        }
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: var(--sky-blue);
-            margin: 0;
-            display: flex;
-            justify-content: center;
+        .fact-card {
+            background: #f0fff4;
+            border: 3px solid #2ecc71;
             padding: 20px;
-        }
-        #book-container {
-            background: var(--paper);
-            max-width: 800px;
-            width: 100%;
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            overflow: hidden;
-            border: 8px solid white;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
-        .page {
-            padding: 40px;
-            display: none; /* Hidden by default */
-            text-align: center;
+        #fact-title { 
+            color: #27ae60; 
+            font-size: 1.4rem; 
+            margin-bottom: 10px; 
+            font-weight: bold;
         }
-        .active { display: block; }
-        
-        .illustration {
-            width: 100%;
-            height: 300px;
-            background: #eee;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px dashed #ccc;
+        #space-text {
+            line-height: 1.6;
+            font-size: 1.1rem;
         }
-        
-        h1 { color: var(--slate); font-size: 1.8rem; }
-        p { font-size: 1.2rem; color: #333; line-height: 1.6; }
-        
-        .controls {
-            padding: 20px;
-            background: #fff;
-            display: flex;
-            justify-content: space-between;
-            border-top: 2px solid #eee;
-        }
-        button {
-            padding: 10px 25px;
-            font-size: 1rem;
-            border-radius: 50px;
-            border: none;
-            background: var(--slate);
-            color: white;
-            cursor: pointer;
-        }
-        button:disabled { background: #ccc; }
-        .logic-box {
-            background: #fff3cd;
-            padding: 15px;
-            border-left: 5px solid #ffeeba;
-            font-family: monospace;
+        #progress-text {
             font-size: 0.9rem;
+            color: #666;
             margin-top: 10px;
-            text-align: left;
         }
     </style>
 </head>
 <body>
 
-<div id="book-container">
-    <div class="page active" id="p1">
-        <div class="illustration">
-            <span>[Kartun: Alya menunjuk ke arah kepingan biru di bumbung]</span>
+    <div class="container">
+        <!-- Progress Bar -->
+        <div style="width: 100%; background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px;">
+            <div id="prog-bar" style="width: 20%; background: #2ecc71; height: 8px; border-radius: 4px; transition: 0.5s;"></div>
         </div>
-        <h1>Eh, Ada Cermin di Bumbung!</h1>
-        <p>"Ayah, kenapa rumah kita pakai cermin besar di atas bumbung?" tanya Alya. 
-        Matahari tegak di atas kepala, sangat panas!</p>
-    </div>
 
-    <div class="page" id="p2">
-        <div class="illustration">
-            <span>[Kartun: Cikgu Azly menerangkan konsep zarah cahaya]</span>
-        </div>
-        <h1>Zarah Ajaib dari Langit</h1>
-        <p>Cikgu Azly tersenyum. "Itu bukan cermin biasa, Alya. Itu adalah **Panel Suria**. 
-        Ia seperti 'penangkap' zarah cahaya yang dipanggil **Foton**."</p>
-        <div class="logic-box">
-            // Technical Note for Alya:<br>
-            Light Intensity (G) > Threshold = Electricity Starts!
-        </div>
-    </div>
-
-    <div class="page" id="p3">
-        <div class="illustration">
-            <span>[Kartun: Elektron kecil berlari dalam litar seperti litar lumba]</span>
-        </div>
-        <h1>Larian Elektron</h1>
-        <p>"Apabila Foton melanggar panel itu, ia mengejutkan **Elektron** di dalamnya. 
-        Elektron mula berlari laju dalam litar. Itulah yang kita panggil Tenaga Elektrik!"</p>
-    </div>
-
-    <div class="page" id="p4">
-        <div class="illustration">
-            <span>[Kartun: TV dan Kipas berpusing hasil kuasa matahari]</span>
-        </div>
-        <h1>Kuasa Percuma!</h1>
-        <p>"Jadi, selagi matahari bersinar, kita boleh pasang kipas dan TV guna kuasa langit!" 
-        Alya melompat gembira. Sekarang dia tahu, bumbung rumahnya adalah stesen janakuasa kecil.</p>
-    </div>
-
-    <div class="controls">
-        <button id="prevBtn" onclick="changePage(-1)" disabled>Back</button>
-        <span id="pageNumber">Page 1/4</span>
-        <button id="nextBtn" onclick="changePage(1)">Next</button>
-    </div>
-</div>
-
-<script>
-    let currentPage = 1;
-    const totalPages = 4;
-
-    function changePage(step) {
-        document.getElementById(`p${currentPage}`).classList.remove('active');
-        currentPage += step;
-        document.getElementById(`p${currentPage}`).classList.add('active');
+        <h1 style="color: #27ae60;">☀️ Tenaga Solar</h1>
+        <img id="main-img" src="" alt="Tenaga Solar" style="border: 4px solid #2ecc71;">
         
-        document.getElementById('pageNumber').innerText = `Page ${currentPage}/${totalPages}`;
-        document.getElementById('prevBtn').disabled = (currentPage === 1);
-        document.getElementById('nextBtn').disabled = (currentPage === totalPages);
-    }
-</script>
+        <div class="fact-card">
+            <div id="fact-title">Memuatkan...</div>
+            <p id="main-text">Sila tunggu sebentar...</p>
+        </div>
 
+        <div id="progress-text">Fakta 1 dari 5</div>
+
+        <div style="margin-top: 25px;">
+            <button id="next-btn" class="btn green-btn" onclick="nextPage()">Fakta Seterusnya ➡️</button>
+        </div>
+
+        <hr style="margin: 25px 0; opacity: 0.1;">
+        <a href="storybook.html" class="btn red-btn">📚 Kembali ke Perpustakaan</a>
+    </div>
+
+    <script>
+        // 1. Ambil nama Profile
+        const hubData = JSON.parse(localStorage.getItem('hubData')) || { current: "Explorer" };
+        const kidName = hubData.current || "Explorer";
+
+        // 2. Data Fakta (Dalam Bahasa Melayu)
+        const facts = [
+            {
+                title: "Apa itu Tenaga Solar?",
+                text: `Hai ${kidName}! Tenaga solar adalah tenaga hebat yang kita dapat terus daripada cahaya matahari. Ia sangat bersih dan tidak habis!`,
+                image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=800"
+            },
+            {
+                title: "Panel Solar",
+                text: "Panel hitam yang selalu kita nampak di atas bumbung rumah dipanggil 'Sel Fotovoltaik'. Ia menukar cahaya matahari menjadi elektrik untuk lampu dan TV!",
+                image: "https://images.unsplash.com/photo-1509391366360-fe5bb65830bb?w=800"
+            },
+            {
+                title: "Matahari Sangat Kuat",
+                text: `${kidName}, tahukah anda? Cahaya matahari yang sampai ke Bumi dalam masa satu jam cukup untuk membekalkan tenaga kepada seluruh dunia selama setahun!`,
+                image: "https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=800"
+            },
+            {
+                title: "Mesra Alam",
+                text: "Tenaga solar tidak mengeluarkan asap kotor. Ia membantu menjaga bumi kita supaya tetap hijau dan udara kita tetap segar.",
+                image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800"
+            },
+            {
+                title: "Boleh Digunakan Di Mana-Mana",
+                text: "Kerana matahari ada di mana-mana, kita boleh guna tenaga solar di tengah laut, di atas gunung, malah di angkasa lepas untuk satelit!",
+                image: "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function updateUI() {
+            const current = facts[currentIndex];
+            document.getElementById('fact-title').innerText = current.title;
+            document.getElementById('main-text').innerText = current.text;
+            document.getElementById('main-img').src = current.image;
+            
+            // Update progress
+            const prog = ((currentIndex + 1) / facts.length) * 100;
+            document.getElementById('prog-bar').style.width = prog + "%";
+            document.getElementById('progress-text').innerText = `Fakta ${currentIndex + 1} dari ${facts.length}`;
+
+            // Jika fakta terakhir
+            if (currentIndex === facts.length - 1) {
+                document.getElementById('next-btn').innerText = "Tamat & Jadi Pakar! 🌟";
+            }
+        }
+
+        function nextPage() {
+            if (currentIndex < facts.length - 1) {
+                currentIndex++;
+                updateUI();
+            } else {
+                alert(`Tahniah ${kidName}! Anda kini seorang Pakar Tenaga Solar! ☀️`);
+                window.location.href = "storybook.html";
+            }
+        }
+
+        // Jalankan kali pertama
+        updateUI();
+    </script>
 </body>
 </html>
