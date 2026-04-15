@@ -1,0 +1,110 @@
+{
+  "4-1": [
+    { "q": "What is the main organ responsible for breathing in humans?", "a": ["Heart", "Lungs", "Stomach", "Brain"], "c": 1 },
+    { "q": "Which animal is able to breathe through both its skin and its lungs?", "a": ["Fish", "Bird", "Frog", "Snake"], "c": 2 },
+    { "q": "What do we call the process where green plants make their own food?", "a": ["Breathing", "Sweating", "Photosynthesis", "Melting"], "c": 2 },
+    { "q": "What happens when light hits a smooth, shiny surface like a mirror?", "a": ["Refraction", "Reflection", "Shadow", "Rainbow"], "c": 1 },
+    { "q": "Energy generated from flowing water is known as...", "a": ["Solar", "Wind", "Hydro", "Nuclear"], "c": 2 },
+    { "q": "The skull is a part of the human skeleton that protects the...", "a": ["Heart", "Brain", "Lungs", "Stomach"], "c": 1 },
+    { "q": "Objects that allow only some light to pass through them are called...", "a": ["Transparent", "Opaque", "Translucent", "Mirror"], "c": 2 },
+    { "q": "What is the primary source of energy for the entire Earth?", "a": ["The Moon", "The Sun", "Wind", "Batteries"], "c": 1 },
+    { "q": "Sound is produced when an object does which of the following?", "a": ["Moves slowly", "Heats up", "Vibrates", "Falls down"], "c": 2 },
+    { "q": "Gravity is a force that pulls all objects on Earth towards the...", "a": ["Sky", "Center/Downwards", "Side", "Clouds"], "c": 1 }
+  ],
+  "4-2": [
+    { "q": "Which of the following is an example of a non-living thing?", "a": ["A tree", "A cat", "A rock", "A bird"], "c": 2 },
+    { "q": "Which part of a plant is responsible for absorbing water from the soil?", "a": ["Leaves", "Flowers", "Roots", "Stem"], "c": 2 },
+    { "q": "Which of these is considered a basic need for human survival?", "a": ["Television", "Air", "Toys", "Computer"], "c": 1 },
+    { "q": "Which sense organ is used to detect the smell of a flower?", "a": ["Eyes", "Ears", "Nose", "Tongue"], "c": 2 },
+    { "q": "What do we call animals that eat only plants?", "a": ["Carnivores", "Herbivores", "Omnivores", "Decomposers"], "c": 1 },
+    { "q": "Which of the following is a standard unit for measuring length?", "a": ["Gram", "Liter", "Meter", "Second"], "c": 2 },
+    { "q": "At what temperature does pure water typically boil?", "a": ["0°C", "50°C", "100°C", "200°C"], "c": 2 },
+    { "q": "Which material is most likely to be attracted to a magnet?", "a": ["Plastic", "Iron", "Wood", "Glass"], "c": 1 },
+    { "q": "What happens when two opposite poles of a magnet are brought together?", "a": ["They repel", "They attract", "They melt", "Nothing happens"], "c": 1 },
+    { "q": "A shadow is formed when light is ____ by an opaque object.", "a": ["Reflected", "Blocked", "Absorbed", "Refracted"], "c": 1 }
+  ],
+  "4-3": [
+    { "q": "How many planets are currently recognized in our Solar System?", "a": ["7", "8", "9", "10"], "c": 1 },
+    { "q": "Which planet is the smallest in our Solar System?", "a": ["Mars", "Mercury", "Venus", "Earth"], "c": 1 },
+    { "q": "Which of these is a natural source of light?", "a": ["Flashlight", "Electric bulb", "The Sun", "Candle"], "c": 2 },
+    { "q": "Which gas do humans primarily exhale during breathing?", "a": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], "c": 2 },
+    { "q": "What is considered the hardest natural substance on Earth?", "a": ["Gold", "Iron", "Diamond", "Rock"], "c": 2 },
+    { "q": "Which of the following is a mammal that lays eggs?", "a": ["Whale", "Platypus", "Kangaroo", "Bat"], "c": 1 },
+    { "q": "All vertebrate animals possess a...", "a": ["Backbone", "Shell", "Set of wings", "Tail"], "c": 0 },
+    { "q": "How do fungi like mushrooms typically reproduce?", "a": ["Seeds", "Spores", "Flowers", "Roots"], "c": 1 },
+    { "q": "Matter on Earth commonly exists in how many states?", "a": ["One", "Two", "Three", "Four"], "c": 2 },
+    { "q": "What is the process called when a liquid changes into a gas?", "a": ["Freezing", "Melting", "Evaporation", "Condensation"], "c": 2 }
+  ],
+  "5-1": [
+    { "q": "Which component of human blood is responsible for carrying oxygen?", "a": ["Plasma", "White blood cells", "Red blood cells", "Platelets"], "c": 2 },
+    { "q": "Which organ acts as a pump to circulate blood throughout the body?", "a": ["Lungs", "Brain", "Heart", "Kidney"], "c": 2 },
+    { "q": "In a food chain, green plants are usually classified as...", "a": ["Consumers", "Producers", "Decomposers", "Predators"], "c": 1 },
+    { "q": "What is the state of matter for a block of ice?", "a": ["Liquid", "Gas", "Solid", "Plasma"], "c": 2 },
+    { "q": "Which gas is required for a fire to keep burning?", "a": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Helium"], "c": 1 },
+    { "q": "A material that allows electricity to flow through it easily is a/an...", "a": ["Insulator", "Conductor", "Plastic", "Wood"], "c": 1 },
+    { "q": "What is the freezing point of pure water in degrees Celsius?", "a": ["100°C", "50°C", "0°C", "-10°C"], "c": 2 },
+    { "q": "What do we call a specific pattern of stars visible in the night sky?", "a": ["Planet", "Constellation", "Galaxy", "Orbit"], "c": 1 },
+    { "q": "Which part of a plant transports water from the roots to the leaves?", "a": ["Xylem (Stem)", "Flowers", "Roots", "Stomata"], "c": 0 },
+    { "q": "What is the main source of energy that drives the Water Cycle?", "a": ["The Ocean", "The Moon", "The Sun", "The Wind"], "c": 2 }
+  ],
+  "5-2": [
+    { "q": "Which of the following is a common disease affecting the lungs?", "a": ["Asthma", "Diabetes", "Fever", "Anemia"], "c": 0 },
+    { "q": "The act of protecting animals from becoming extinct is called...", "a": ["Hunting", "Conservation", "Pollution", "Deforestation"], "c": 1 },
+    { "q": "Which of these is a renewable source of energy?", "a": ["Coal", "Petroleum", "Wind", "Natural Gas"], "c": 2 },
+    { "q": "Shadows are possible because light possesses what property?", "a": ["It travels in straight lines", "It reflects off mirrors", "It refracts in water", "It has many colors"], "c": 0 },
+    { "q": "Acidic substances generally have what kind of taste?", "a": ["Sweet", "Salty", "Bitter", "Sour"], "c": 3 },
+    { "q": "The Earth spins on its own imaginary line called the...", "a": ["Orbit", "Axis", "Equator", "Pole"], "c": 1 },
+    { "q": "How long does it take for the Earth to complete one orbit around the Sun?", "a": ["1 day", "1 month", "1 year", "10 years"], "c": 2 },
+    { "q": "Which scientific tool is used to measure force?", "a": ["Ruler", "Thermometer", "Spring balance", "Beaker"], "c": 2 },
+    { "q": "Friction is a force that typically produces which of the following?", "a": ["Cold", "Heat", "Light", "Sound"], "c": 1 },
+    { "q": "A flagpole uses which simple machine to raise the flag?", "a": ["Inclined plane", "Pulley", "Wedge", "Lever"], "c": 1 }
+  ],
+  "5-3": [
+    { "q": "Which of the following animals is an invertebrate?", "a": ["Dog", "Fish", "Earthworm", "Bird"], "c": 2 },
+    { "q": "Which part of the human eye is responsible for detecting light?", "a": ["Pupil", "Retina", "Lens", "Iris"], "c": 1 },
+    { "q": "What is the process of losing water through the leaves of a plant?", "a": ["Photosynthesis", "Transpiration", "Respiration", "Absorption"], "c": 1 },
+    { "q": "The process of rusting requires both water and which gas?", "a": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"], "c": 1 },
+    { "q": "We can prevent metal from rusting by doing which of the following?", "a": ["Washing it", "Painting it", "Heating it", "Breaking it"], "c": 1 },
+    { "q": "During which phase is the Moon completely invisible from Earth?", "a": ["Full Moon", "New Moon", "Crescent Moon", "Gibbous Moon"], "c": 1 },
+    { "q": "To calculate Speed, you must divide Distance by...", "a": ["Time", "Weight", "Height", "Force"], "c": 0 },
+    { "q": "The energy stored in food is a form of ____ energy.", "a": ["Kinetic", "Chemical", "Potential", "Thermal"], "c": 1 },
+    { "q": "Which planet is famous for its large, visible rings?", "a": ["Mars", "Venus", "Saturn", "Jupiter"], "c": 2 },
+    { "q": "Which gas will turn limewater cloudy when bubbled through it?", "a": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], "c": 2 }
+  ],
+  "6-1": [
+    { "q": "Which microorganism is commonly used by bakers to make bread rise?", "a": ["Bacteria", "Virus", "Yeast", "Algae"], "c": 2 },
+    { "q": "What do we call the force that opposes the motion of one surface over another?", "a": ["Gravity", "Friction", "Pressure", "Magnetism"], "c": 1 },
+    { "q": "Which method is most effective for keeping fish fresh over a long period?", "a": ["Boiling", "Freezing", "Wrapping in paper", "Washing"], "c": 1 },
+    { "q": "Air pressure is generally highest at which of the following locations?", "a": ["The top of a mountain", "Inside an airplane", "At sea level", "On the Moon"], "c": 2 },
+    { "q": "Which of the following is an example of a lever?", "a": ["Screwdriver", "Scissors", "Ramp", "Screw"], "c": 1 },
+    { "q": "Tuberculosis (TB) is a disease primarily caused by which microorganism?", "a": ["Fungi", "Bacteria", "Virus", "Protozoa"], "c": 1 },
+    { "q": "What occurs when the Moon passes directly between the Sun and the Earth?", "a": ["Lunar Eclipse", "Solar Eclipse", "Full Moon", "Tsunami"], "c": 1 },
+    { "q": "What is the term for interactions between individuals of different species?", "a": ["Interspecific", "Intraspecific", "Competition", "Symbiosis"], "c": 0 },
+    { "q": "A simple machine consisting of a grooved wheel and a rope is a...", "a": ["Wedge", "Pulley", "Inclined Plane", "Lever"], "c": 1 },
+    { "q": "What does the term 'biodiversity' refer to?", "a": ["The weather", "The variety of life on Earth", "Water pollution", "Soil quality"], "c": 1 }
+  ],
+  "6-2": [
+    { "q": "Which gas is released as a waste product during photosynthesis?", "a": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"], "c": 1 },
+    { "q": "The bending of light as it passes from one medium to another is called...", "a": ["Reflection", "Refraction", "Blocking", "Absorbing"], "c": 1 },
+    { "q": "Which of these is considered a non-renewable source of energy?", "a": ["Solar", "Natural Gas", "Wind", "Biomass"], "c": 1 },
+    { "q": "In a lever system, the fixed point around which the bar rotates is the...", "a": ["Load", "Effort", "Fulcrum", "Base"], "c": 2 },
+    { "q": "Which food preservation method involves removing all air from the packaging?", "a": ["Canning", "Vacuum packing", "Drying", "Pickling"], "c": 1 },
+    { "q": "A bee collecting nectar from a flower is an example of which interaction?", "a": ["Mutualism", "Parasitism", "Commensalism", "Competition"], "c": 0 },
+    { "q": "Waste that can be broken down naturally by bacteria is called...", "a": ["Plastic", "Glass", "Biodegradable", "Toxic"], "c": 2 },
+    { "q": "What is a major consequence of global warming?", "a": ["More ice forming", "Rising sea levels", "Colder summers", "Cleaner air"], "c": 1 },
+    { "q": "Which device is used by scientists to detect and measure earthquakes?", "a": ["Barometer", "Seismograph", "Anemometer", "Hygrometer"], "c": 1 },
+    { "q": "Galaxies are vast systems containing billions of...", "a": ["Planets", "Stars", "Moons", "Comets"], "c": 1 }
+  ],
+  "6-3": [
+    { "q": "What is the process of using high heat to kill bacteria in milk called?", "a": ["Pasteurization", "Salting", "Waxing", "Cooling"], "c": 0 },
+    { "q": "What do we call an interaction where one organism benefits while the other is harmed?", "a": ["Mutualism", "Commensalism", "Parasitism", "Competition"], "c": 2 },
+    { "q": "A complex machine is essentially a combination of two or more...", "a": ["Electric circuits", "Simple machines", "Computers", "Plastic parts"], "c": 1 },
+    { "q": "The stability of an object is determined by its height and its...", "a": ["Weight", "Base area", "Color", "Length"], "c": 1 },
+    { "q": "What is the process called when a gas turns back into a liquid?", "a": ["Melting", "Boiling", "Condensation", "Freezing"], "c": 2 },
+    { "q": "What force keeps the planets in our solar system in their orbits?", "a": ["Wind", "Gravity", "Light", "Magnetism"], "c": 1 },
+    { "q": "An eclipse that occurs when the Earth is between the Sun and the Moon is a...", "a": ["Solar eclipse", "Lunar eclipse", "Stellar eclipse", "Planetary eclipse"], "c": 1 },
+    { "q": "Which of these animals uses echolocation to navigate and find food?", "a": ["Eagle", "Bat", "Snake", "Cat"], "c": 1 },
+    { "q": "What is the primary source of energy for a solar-powered calculator?", "a": ["Food", "The Sun", "Wind", "Steam"], "c": 1 },
+    { "q": "The Moon takes approximately how many days to complete one orbit around the Earth?", "a": ["1 day", "7 days", "27.3 days", "365 days"], "c": 2 }
+  ]
+}
