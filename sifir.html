@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Hub - AF Hub</title>
+    <title>Sifir Master - AF Hub</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .quiz-box { text-align: center; background: #fff; padding: 25px; border-radius: 20px; margin: 20px 0; border: 3px solid #eee; }
+        .q-text { font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; }
+        .option-btn { display: block; width: 100%; padding: 16px; margin: 12px 0; background: #f8f9fa; border: 2px solid #ddd; border-radius: 12px; cursor: pointer; text-align: center; font-size: 1.5rem; font-weight: bold; transition: 0.2s; color: #444; }
+        .option-btn:hover:not(:disabled) { background: #f0f7ff; border-color: #4a90e2; }
+        .correct { background: #d4edda !important; color: #155724 !important; border-color: #2ecc71 !important; border-width: 3px; }
+        .wrong { background: #f8d7da !important; color: #721c24 !important; border-color: #e74c3c !important; border-width: 3px; }
+        
+        .timer-wrapper { width: 100%; background: #eee; height: 16px; border-radius: 10px; margin-bottom: 20px; overflow: hidden; border: 1px solid #ddd; }
+        #timer-bar { height: 100%; width: 100%; transition: width 1s linear, background-color 0.3s ease; }
+        
+        @keyframes blink-red { 0% { opacity: 1; } 50% { opacity: 0.2; } 100% { opacity: 1; } }
+        .timer-blink { animation: blink-red 0.5s infinite; }
+        
+        #stats { font-weight: bold; margin-bottom: 8px; color: #666; font-size: 1rem; display: flex; justify-content: space-between; }
+    </style>
 </head>
 <body>
-    <div class="container wide-container">
-        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center;">
-            <h1 style="margin: 0; font-size: 1.5rem;">🏫 School Hub</h1>
+    <div class="container">
+        <h1 id="quiz-title">🔢 Sifir Challenge</h1>
+        <div id="stats"><span>Quest <span id="q-num">1</span>/10</span><span>Score: <span id="current-score">0</span></span></div>
+        
+        <div class="timer-wrapper">
+            <div id="timer-bar" style="background-color: #2ecc71;"></div>
         </div>
 
-        <div class="library-layout">
-            <div class="sidebar">
-                <button class="tab-btn active" onclick="openTab(event, 'tuition')">🎓 Tuition</button>
-                <button class="tab-btn" onclick="openTab(event, 'sifir')">🔢 Sifir Practice</button>
-                <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
-                <div style="flex-grow: 1;"></div>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
-            </div>
+        <div class="quiz-box" id="quiz-area">
+            <div id="question" class="q-text">? × ?</div>
+            <div id="options-list"></div>
+        </div>
 
-            <div class="main-content">
-                <!-- TUITION SECTION -->
-                <div id="tuition" class="category-content">
-                    <h2 style="font-size: 1.2rem; margin-bottom: 15px; text-align: center; color: #666;">Choose a Study Set</h2>
-                    <div id="matrix-container">
-                        <p style="text-align:center;">Syncing with cloud...</p>
-                    </div>
-                </div>
-
-                <!-- SIFIR SECTION -->
-                <div id="sifir" class="category-content" style="display:none;">
-                    <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
-                    <p style="text-align: center; color: #666; margin-bottom: 20px;">Test your multiplication skills!</p>
-                    <div class="subject-card" style="text-align: center;">
-                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
-                        <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
-                    </div>
-                </div>
-            </div>
+        <div id="result-area" style="display:none; padding: 20px;">
+            <h2 id="final-score" style="font-size: 3rem; color: #f39c12;">0/10</h2>
+            <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
+            <button class="btn blue-btn" onclick="location.reload()">Refresh & Play New Set 🔄</button>
+            <a href="school.html" class="btn green-btn">Back to Hub</a>
         </div>
     </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -60,56 +61,111 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user');
 
-        const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2' },
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7' },
-            { id: 'eng', name: 'English Language', color: '#f39c12' }
-        ];
+        let currentQ = 0; let score = 0; let timerInterval; let timeLeft = 15;
+        let currentCorrectAns;
 
-        async function generateMatrix() {
-            const container = document.getElementById('matrix-container');
-            let scores = {};
-            if (kidName) {
-                try {
-                    const userDoc = await getDoc(doc(db, "users", kidName));
-                    if (userDoc.exists()) {
-                        const data = userDoc.data();
-                        scores = data.scores || {};
-                        if (scores['sifir-master']) {
-                            document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
-                        }
-                    }
-                } catch (e) { console.error(e); }
+        function generateQuestion() {
+            const a = Math.floor(Math.random() * 11) + 2; 
+            const b = Math.floor(Math.random() * 11) + 2;
+            const ans = a * b;
+            currentCorrectAns = ans;
+
+            let options = [ans];
+            while(options.length < 4) {
+                let wrong = (a + (Math.random() > 0.5 ? 1 : -1)) * (b + (Math.random() > 0.5 ? 1 : -1));
+                if(wrong < 1 || options.includes(wrong)) wrong = ans + Math.floor(Math.random() * 10) - 5;
+                if(wrong > 0 && !options.includes(wrong)) options.push(wrong);
             }
+            options.sort(() => Math.random() - 0.5);
 
-            container.innerHTML = '';
-            subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1.1rem; margin-bottom: 10px;">${sub.name}</h3>`;
-                [4, 5, 6].forEach(lvl => {
-                    html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
-                    [1, 2, 3].forEach(setNum => {
-                        const scoreKey = `${sub.id}-${lvl}-${setNum}`;
-                        const bestScore = scores[scoreKey] || 0;
-                        const doneClass = bestScore >= 5 ? 'done' : '';
-                        html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${doneClass}" style="background-color: ${sub.color}">${setNum}${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
-                    });
-                    html += `</div></div>`;
-                });
-                html += `</div>`;
-                container.innerHTML += html;
+            document.getElementById('question').innerText = `${a} × ${b} = ?`;
+            const list = document.getElementById('options-list');
+            list.innerHTML = '';
+            options.forEach(opt => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.innerText = opt;
+                btn.onclick = () => check(opt, btn);
+                list.appendChild(btn);
             });
+            resetAndStartTimer();
         }
 
-        window.openTab = (evt, categoryName) => {
-            const contents = document.getElementsByClassName("category-content");
-            for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
-            const tabs = document.getElementsByClassName("tab-btn");
-            for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
-            document.getElementById(categoryName).style.display = "block";
-            evt.currentTarget.classList.add("active");
+        function resetAndStartTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 15;
+            updateTimerBar();
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerBar();
+                if (timeLeft <= 0) { clearInterval(timerInterval); handleTimeOut(); }
+            }, 1000);
         }
 
-        generateMatrix();
+        function updateTimerBar() {
+            const bar = document.getElementById('timer-bar');
+            bar.style.width = (timeLeft / 15) * 100 + "%";
+            bar.classList.remove('timer-blink');
+            
+            if (timeLeft > 10) {
+                bar.style.backgroundColor = "#2ecc71"; // Green (15s - 11s)
+            } else if (timeLeft > 5) {
+                bar.style.backgroundColor = "#f1c40f"; // Yellow (10s - 6s)
+            } else { 
+                bar.style.backgroundColor = "#e74c3c"; // Red (5s - 0s)
+                bar.classList.add('timer-blink');      // Blinking red
+            }
+        }
+
+        function check(chosen, btn) {
+            clearInterval(timerInterval);
+            const btns = document.getElementsByClassName('option-btn');
+            for(let b of btns) {
+                b.disabled = true;
+                if(parseInt(b.innerText) === currentCorrectAns) b.classList.add('correct');
+            }
+            if(chosen === currentCorrectAns) { score++; }
+            else { btn.classList.add('wrong'); }
+            document.getElementById('current-score').innerText = score;
+            setTimeout(next, 1500);
+        }
+
+        function handleTimeOut() {
+            const btns = document.getElementsByClassName('option-btn');
+            for(let b of btns) {
+                b.disabled = true;
+                if(parseInt(b.innerText) === currentCorrectAns) b.classList.add('correct');
+            }
+            setTimeout(next, 2000);
+        }
+
+        function next() {
+            currentQ++;
+            if(currentQ < 10) {
+                document.getElementById('q-num').innerText = currentQ + 1;
+                generateQuestion();
+            } else finish();
+        }
+
+        async function finish() {
+            document.getElementById('quiz-area').style.display = 'none';
+            document.querySelector('.timer-wrapper').style.display = 'none';
+            document.getElementById('result-area').style.display = 'block';
+            document.getElementById('final-score').innerText = `${score}/10`;
+
+            if (kidName) {
+                const userRef = doc(db, "users", kidName);
+                const userDoc = await getDoc(userRef);
+                let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
+                if (score > (scores['sifir-master'] || 0)) {
+                    scores['sifir-master'] = score;
+                    await setDoc(userRef, { scores: scores }, { merge: true });
+                }
+            }
+            document.getElementById('feedback').innerText = score >= 8 ? `Spectacular, ${kidName}!` : `Good job, ${kidName}! Keep practicing.`;
+        }
+
+        generateQuestion();
     </script>
 </body>
 </html>
