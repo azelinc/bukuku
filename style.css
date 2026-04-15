@@ -21,19 +21,20 @@ body {
     width: 100%;
     max-width: 600px;
     background: #ffffff; 
-    padding: 30px 20px; 
+    padding: 20px; 
     border-radius: 25px; 
     box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
     text-align: center;
     border: 5px solid #ffd700;
+    overflow: hidden;
 }
 
 .wide-container {
-    max-width: 850px;
+    max-width: 900px;
     padding: 0;
 }
 
-/* 3. HOME PAGE BUTTONS */
+/* 3. BUTTONS (Home Page) */
 .btn {
     display: block;
     width: 100%;
@@ -48,7 +49,6 @@ body {
     transition: 0.2s;
     border: none;
     cursor: pointer;
-    text-align: center;
 }
 
 .blue-btn { background: #4a90e2; border-bottom: 6px solid #2e6cb5; }
@@ -63,54 +63,47 @@ body {
     background: #cccccc !important;
     color: #777777 !important;
     opacity: 0.7;
-    pointer-events: none;
-    cursor: default;
+    filter: grayscale(1);
 }
 
-.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; }
-
-/* 4. SCHOOL HUB MATRIX - UPDATED TO GRID */
+/* 4. SCHOOL HUB MATRIX */
 .subject-card {
     background: #fdfdfd;
     border: 1px solid #eee;
     border-radius: 15px;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .grade-row {
     display: flex;
-    align-items: flex-start; /* Aligns label to the top of the grid */
+    align-items: center;
     justify-content: space-between;
     padding: 15px 0;
     border-bottom: 1px solid #f0f0f0;
 }
 
-/* UPDATED: Rectangular Button style for Std Labels */
 .grade-label {
     background: #f8f9fa;
     color: #2c3e50;
     font-weight: 800;
-    font-size: 0.9rem;
-    padding: 10px 15px;
+    font-size: 0.85rem;
+    padding: 8px 12px;
     border-radius: 10px;
     border: 2px solid #eee;
-    min-width: 85px;
+    min-width: 80px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* UPDATED: 5-column Grid layout */
 .set-group {
     display: grid;
-    grid-template-columns: repeat(5, 52px); /* Forces exactly 5 columns */
-    gap: 12px;
-    justify-content: flex-end;
+    grid-template-columns: repeat(5, 50px); /* 5 columns */
+    gap: 10px;
 }
 
 .set-circle {
-    width: 52px;
-    height: 52px;
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,46 +113,34 @@ body {
     text-decoration: none !important;
     font-weight: bold;
     font-size: 1rem;
-    transition: 0.2s;
-    box-shadow: 0 4px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.1);
     position: relative;
 }
 
-.set-circle small {
-    font-size: 0.6rem;
-    font-weight: normal;
-    display: block;
-    margin-top: -2px;
-}
+.set-circle small { font-size: 0.6rem; display: block; margin-top: -2px; }
 
-.set-circle.done {
-    background-color: #2ecc71 !important;
-    border: 3px solid #ffffff;
-}
-
+.set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
 .set-circle.done::after {
     content: "✓";
     position: absolute;
-    top: -6px;
-    right: -6px;
+    top: -4px;
+    right: -4px;
     background: #27ae60;
-    color: white;
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    font-size: 11px;
+    font-size: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid white;
-    font-weight: bold;
 }
 
 /* 5. SIDEBAR & TABS */
 .library-layout {
     display: flex;
     text-align: left;
-    min-height: 550px;
+    min-height: 500px;
 }
 
 .sidebar {
@@ -173,55 +154,76 @@ body {
 
 .main-content {
     flex: 1;
-    padding: 25px;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .tab-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
+    padding: 14px;
     margin-bottom: 10px;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     background: #fff;
     color: #555;
     font-weight: bold;
     cursor: pointer;
     text-align: left;
     font-size: 0.95rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.tab-btn.active {
-    background: #4a90e2;
-    color: white;
-}
+.tab-btn.active { background: #4a90e2; color: white; }
 
-.tab-btn-disabled {
-    background-color: #e0e0e0 !important;
-    color: #a0a0a0 !important;
-    opacity: 0.6 !important;
-    filter: grayscale(100%) !important;
-    pointer-events: none !important;
-    cursor: not-allowed !important;
-}
-
-/* 6. MOBILE FIXES */
+/* 6. MOBILE OVERRIDES - THE KEY FIX */
 @media (max-width: 600px) {
-    .library-layout { flex-direction: column; }
-    .sidebar { 
-        width: 100%; 
-        flex-direction: row; 
-        overflow-x: auto; 
-        border-right: none; 
-        border-bottom: 2px solid #eee; 
+    body { padding: 5px; }
+    
+    .library-layout {
+        flex-direction: column; /* Stack sidebar on top of content */
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        border-right: none;
+        border-bottom: 2px solid #eee;
         padding: 10px;
+        overflow-x: auto; /* Scrollable tabs if they get too long */
         gap: 8px;
     }
-    .tab-btn { flex: 1; text-align: center; white-space: nowrap; padding: 10px; justify-content: center; }
-    .container { padding: 30px 15px; }
-    .grade-row { flex-direction: column; align-items: center; gap: 15px; }
-    /* On mobile, we might want 4 columns to keep them from being too small */
-    .set-group { grid-template-columns: repeat(4, 52px); justify-content: center; }
+
+    .tab-btn {
+        margin-bottom: 0;
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+
+    .main-content {
+        padding: 15px 10px;
+    }
+
+    .grade-row {
+        flex-direction: column; /* Label on top, Grid below */
+        align-items: center;
+        gap: 12px;
+    }
+
+    .grade-label {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .set-group {
+        grid-template-columns: repeat(5, 45px); /* Smaller circles for mobile */
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .set-circle {
+        width: 45px;
+        height: 45px;
+        font-size: 0.9rem;
+    }
 }
