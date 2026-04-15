@@ -2,51 +2,84 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AF Adventure Hub</title>
+    
+    <!-- Link to PC Styles (Screens wider than 600px) -->
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
+    
+    <!-- Link to Mobile Styles (Screens 600px and smaller) -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+
     <style>
+        /* Shared hidden admin logic styling */
         .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; }
         .profile-btn { flex: 1; margin: 0 !important; }
         .del-btn { background: #ff7675; border: none; color: white; padding: 15px; border-radius: 15px; cursor: pointer; font-size: 1.2rem; display: none; }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div id="loading-screen" style="padding: 50px;">
+        
+        <!-- 0. LOADING SCREEN -->
+        <div id="loading-screen" style="padding: 50px; text-align: center;">
             <h1>🚀 Loading...</h1>
+            <p style="color: #666; margin-top: 10px;">Connecting to Adventure Cloud</p>
         </div>
 
+        <!-- 1. PROFILE SELECTION -->
         <div id="profile-selection" style="display: none;">
-            <h1>👋 Hello!</h1>
-            <p id="selection-sub" style="margin-bottom: 20px; color: #666;">Who is playing today?</p>
-            <div id="profile-list"></div>
-            <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
-                <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
-                <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#eee; cursor:pointer; font-size: 0.7rem; margin-top: 10px;">Admin</button>
+            <h1>👋 Welcome!</h1>
+            <div class="main-menu-padding">
+                <p id="selection-sub" style="margin-bottom: 20px; color: #666;">Who is playing today?</p>
+                <div id="profile-list"></div>
+                
+                <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
+                    <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
+                    <!-- Admin button hidden for kids -->
+                    <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#eee; cursor:pointer; font-size: 0.7rem; margin-top: 10px;">Admin</button>
+                </div>
             </div>
         </div>
 
+        <!-- 2. NEW USER FORM -->
         <div id="name-setup" style="display: none;">
             <h1>✨ New Quest</h1>
-            <p style="margin-bottom: 15px; color: #666;">Enter your name to start:</p>
-            <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 5px; text-align: center; outline: none;">
-            <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
-            <button onclick="initHub()" style="margin-top: 10px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+            <div class="main-menu-padding">
+                <p style="margin-bottom: 15px; color: #666;">Enter your name to start:</p>
+                <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+                <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
+                <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+            </div>
         </div>
 
+        <!-- 3. MAIN MENU -->
         <div id="main-menu" style="display: none;">
-            <h1 style="margin-bottom: 5px;">Hi, <span id="display-name">Hero</span>!</h1>
-            <p style="margin-bottom: 20px; color: #666;">Ready for today's lesson?</p>
+            <h1>Hi, <span id="display-name">Hero</span>!</h1>
             
-            <div class="nav-grid">
-                <a href="school.html" class="btn green-btn">🏫 School Hub</a>
-                <div class="btn btn-disabled">📖 Library <span class="coming-soon-tag">Coming Soon</span></div>
-                <div class="btn btn-disabled">🎮 Games <span class="coming-soon-tag">Coming Soon</span></div>
+            <div class="main-menu-padding">
+                <p style="margin-bottom:20px; color: #666;">Ready for today's lesson?</p>
+                
+                <div class="nav-grid">
+                    <!-- ACTIVE FEATURE -->
+                    <a href="school.html" class="btn green-btn">🏫 School Hub</a>
+                    
+                    <!-- DISABLED FEATURES -->
+                    <div class="btn btn-disabled">
+                        📖 Library
+                        <span class="coming-soon-tag">Coming Soon</span>
+                    </div>
+                    
+                    <div class="btn btn-disabled">
+                        🎮 Games
+                        <span class="coming-soon-tag">Coming Soon</span>
+                    </div>
+                </div>
+                
+                <!-- SWITCH PROFILE -->
+                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
             </div>
-            
-            <button onclick="switchUser()" style="margin-top:30px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
         </div>
     </div>
 
@@ -54,66 +87,9 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, setDoc, getDocs, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
+        // Your Integrated Firebase Config
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
             authDomain: "af-adventure-hub.firebaseapp.com",
             projectId: "af-adventure-hub",
             storageBucket: "af-adventure-hub.firebasestorage.app",
-            messagingSenderId: "440085894217",
-            appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-        const loading = document.getElementById('loading-screen');
-        const selection = document.getElementById('profile-selection');
-        const setup = document.getElementById('name-setup');
-        const menu = document.getElementById('main-menu');
-        let isManageMode = false;
-        const ADMIN_PIN = "9988";
-
-        async function initHub() {
-            loading.style.display = 'block'; selection.style.display = 'none'; setup.style.display = 'none'; menu.style.display = 'none';
-            const activeUser = localStorage.getItem('fb_current_user');
-            if (activeUser) renderMainMenu(activeUser);
-            else await showProfileSelection();
-        }
-
-        async function showProfileSelection() {
-            loading.style.display = 'none'; selection.style.display = 'block';
-            const list = document.getElementById('profile-list'); list.innerHTML = '';
-            const querySnapshot = await getDocs(collection(db, "users"));
-            querySnapshot.forEach((doc) => {
-                const row = document.createElement('div'); row.className = "profile-row";
-                const btn = document.createElement('button'); btn.className = "btn blue-btn profile-btn";
-                btn.innerHTML = `👤 ${doc.id}`; btn.onclick = () => selectProfile(doc.id);
-                const delBtn = document.createElement('button'); delBtn.className = "del-btn";
-                delBtn.innerHTML = "🗑️"; delBtn.style.display = isManageMode ? "block" : "none";
-                delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(doc.id); };
-                row.appendChild(btn); row.appendChild(delBtn); list.appendChild(row);
-            });
-        }
-
-        window.adminLogin = () => {
-            const entry = prompt("Enter Admin PIN:");
-            if (entry === ADMIN_PIN) { isManageMode = true; document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE"; showProfileSelection(); }
-        }
-
-        async function deleteProfile(name) {
-            if (confirm(`Delete "${name}"?`)) { await deleteDoc(doc(db, "users", name)); showProfileSelection(); }
-        }
-
-        document.getElementById('save-name-btn').onclick = async () => {
-            const name = document.getElementById('user-name-input').value.trim();
-            if (name) { await setDoc(doc(db, "users", name), { scores: {} }, { merge: true }); selectProfile(name); }
-        };
-
-        function selectProfile(name) { localStorage.setItem('fb_current_user', name); renderMainMenu(name); }
-        function renderMainMenu(name) { loading.style.display = 'none'; selection.style.display = 'none'; setup.style.display = 'none'; menu.style.display = 'block'; document.getElementById('display-name').innerText = name; }
-        window.switchUser = () => { localStorage.removeItem('fb_current_user'); isManageMode = false; initHub(); }
-        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
-        window.initHub = initHub;
-        initHub();
-    </script>
-</body>
-</html>
