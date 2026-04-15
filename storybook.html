@@ -18,8 +18,7 @@
                 <button class="tab-btn active" onclick="openTab(event, 'interactive')">🕹️ Interactive</button>
                 <button class="tab-btn" onclick="openTab(event, 'story')">📖 Storybooks</button>
                 <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
-                <!-- NEW TUITION TAB -->
-                <button class="tab-btn" onclick="openTab(event, 'tuition')" style="background: #fdf2f2; color: #d63031;">🎓 Tuition</button>
+                <button class="tab-btn" onclick="openTab(event, 'tuition')" style="background: #fff5f5; color: #e74c3c;">🎓 Tuition</button>
                 
                 <div style="flex-grow: 1; min-height: 20px;"></div>
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
@@ -47,13 +46,23 @@
                     <a href="buku-tenaga-air.html" class="btn green-btn">🌊 Kuasa Empangan</a>
                 </div>
 
-                <!-- NEW TUITION SECTION -->
-                <div id="tuition" class="category-content" style="display:none;">
-                    <h2>🎓 Tuition Matematik</h2>
-                    <p style="color:#666; margin-bottom: 15px;">Sila pilih Darjah anda untuk mulakan kuiz:</p>
-                    <a href="tuition-math.html?level=4" class="btn blue-btn">📘 Darjah 4</a>
-                    <a href="tuition-math.html?level=5" class="btn orange-btn">📙 Darjah 5</a>
-                    <a href="tuition-math.html?level=6" class="btn green-btn">📗 Darjah 6</a>
+                <!-- TUITION SECTION -->
+                <div id="tuition" class="category-content" style="display:none; text-align: left;">
+                    <h2 style="text-align: center;">🎓 Tuition (English)</h2>
+                    
+                    <div style="margin-top: 20px;">
+                        <h3 style="color: #4a90e2; border-left: 5px solid #4a90e2; padding-left: 10px;">Mathematics</h3>
+                        <a href="tuition-quiz.html?sub=math&lvl=4" class="btn blue-btn">Maths Standard 4</a>
+                        <a href="tuition-quiz.html?sub=math&lvl=5" class="btn blue-btn">Maths Standard 5</a>
+                        <a href="tuition-quiz.html?sub=math&lvl=6" class="btn blue-btn">Maths Standard 6</a>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <h3 style="color: #2ecc71; border-left: 5px solid #2ecc71; padding-left: 10px;">Science</h3>
+                        <a href="tuition-quiz.html?sub=sci&lvl=4" class="btn green-btn">Science Standard 4</a>
+                        <a href="tuition-quiz.html?sub=sci&lvl=5" class="btn green-btn">Science Standard 5</a>
+                        <a href="tuition-quiz.html?sub=sci&lvl=6" class="btn green-btn">Science Standard 6</a>
+                    </div>
                 </div>
             </div>
         </div>
