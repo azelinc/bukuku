@@ -8,23 +8,29 @@
 </head>
 <body>
     <div class="container wide-container">
-        <div style="padding: 20px; border-bottom: 2px solid #eee; text-align: center;">
-            <h1 style="margin: 0; font-size: 1.8rem;">🏫 School Hub</h1>
+        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center;">
+            <h1 style="margin: 0; font-size: 1.5rem;">🏫 School Hub</h1>
         </div>
 
         <div class="library-layout">
             <div class="sidebar">
+                <!-- ACTIVE TABS -->
                 <button class="tab-btn active" onclick="openTab(event, 'tuition')">🎓 Tuition</button>
                 <button class="tab-btn" onclick="openTab(event, 'sifir')">🔢 Sifir Practice</button>
-                <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
+                
+                <!-- DISABLED TAB: STEM -->
+                <button class="tab-btn tab-btn-disabled">
+                    🧪 STEM (Soon)
+                </button>
+                
                 <div style="flex-grow: 1; min-height: 20px;"></div>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
             </div>
 
             <div class="main-content">
                 <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content">
-                    <h2 style="font-size: 1.2rem; margin-bottom: 20px; text-align: center; color: #666;">Choose a Study Set</h2>
+                    <h2 style="font-size: 1.2rem; margin-bottom: 15px; text-align: center; color: #666;">Choose a Study Set</h2>
                     <div id="matrix-container">
                         <p style="text-align:center;">Syncing with cloud...</p>
                     </div>
@@ -34,7 +40,6 @@
                 <div id="sifir" class="category-content" style="display:none;">
                     <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
                     <p style="text-align: center; color: #666; margin-bottom: 20px;">Test your multiplication skills!</p>
-                    
                     <div class="subject-card" style="text-align: center;">
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
@@ -76,7 +81,6 @@
                     if (userDoc.exists()) {
                         const data = userDoc.data();
                         scores = data.scores || {};
-                        // Update Sifir Best Score
                         if (scores['sifir-master']) {
                             document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
                         }
