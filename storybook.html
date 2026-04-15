@@ -5,105 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic Library - AF Hub</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Specific overrides for the Library Layout */
-        .category-content h2 {
-            margin-bottom: 5px;
-            color: #2c3e50;
-        }
-        .category-description {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
-
-    <!-- Using 'wide-container' to allow space for the sidebar -->
     <div class="container wide-container">
-        
-        <!-- Header -->
         <div style="padding: 25px; border-bottom: 2px solid #eee; text-align: center;">
             <h1 style="margin: 0;">📚 Magic Library</h1>
         </div>
 
         <div class="library-layout">
-            <!-- LEFT: SIDEBAR (TABS) -->
+            <!-- SIDEBAR -->
             <div class="sidebar">
                 <button class="tab-btn active" onclick="openTab(event, 'interactive')">🕹️ Interactive</button>
                 <button class="tab-btn" onclick="openTab(event, 'story')">📖 Storybooks</button>
                 <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
+                <!-- NEW TUITION TAB -->
+                <button class="tab-btn" onclick="openTab(event, 'tuition')" style="background: #fdf2f2; color: #d63031;">🎓 Tuition</button>
                 
-                <!-- Spacer for Desktop -->
                 <div style="flex-grow: 1; min-height: 20px;"></div>
-                
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
             </div>
 
-            <!-- RIGHT: MAIN CONTENT -->
+            <!-- MAIN CONTENT -->
             <div class="main-content">
-                
-                <!-- 1. INTERACTIVE SECTION -->
                 <div id="interactive" class="category-content">
                     <h2>🕹️ Interactive</h2>
-                    <p class="category-description">You are the hero! Your choices change the story.</p>
+                    <p style="color:#666; margin-bottom: 15px;">Make choices to win!</p>
                     <a href="book-dragon.html" class="btn blue-btn">🐉 Dragon Mountain</a>
                 </div>
 
-                <!-- 2. STORYBOOK SECTION -->
                 <div id="story" class="category-content" style="display:none;">
                     <h2>📖 Storybooks</h2>
-                    <p class="category-description">Beautiful tales to read at your own pace.</p>
+                    <p style="color:#666; margin-bottom: 15px;">Beautiful tales to read.</p>
                     <a href="book-squirrel.html" class="btn orange-btn">🐿️ Nutty’s Big Day</a>
                 </div>
 
-                <!-- 3. STEM SECTION -->
                 <div id="stem" class="category-content" style="display:none;">
                     <h2>🧪 STEM Facts</h2>
-                    <p class="category-description">Learn about Science, Space, and our World!</p>
+                    <p style="color:#666; margin-bottom: 15px;">Learn amazing things!</p>
                     <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
                     <a href="buku-tenaga-solar.html" class="btn green-btn">☀️ Tenaga Solar</a>
                     <a href="buku-tenaga-air.html" class="btn green-btn">🌊 Kuasa Empangan</a>
                 </div>
 
+                <!-- NEW TUITION SECTION -->
+                <div id="tuition" class="category-content" style="display:none;">
+                    <h2>🎓 Tuition Matematik</h2>
+                    <p style="color:#666; margin-bottom: 15px;">Sila pilih Darjah anda untuk mulakan kuiz:</p>
+                    <a href="tuition-math.html?level=4" class="btn blue-btn">📘 Darjah 4</a>
+                    <a href="tuition-math.html?level=5" class="btn orange-btn">📙 Darjah 5</a>
+                    <a href="tuition-math.html?level=6" class="btn green-btn">📗 Darjah 6</a>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
-        /**
-         * Function to switch between Library Categories
-         */
         function openTab(evt, categoryName) {
-            // 1. Hide all book category sections
             const contents = document.getElementsByClassName("category-content");
-            for (let i = 0; i < contents.length; i++) {
-                contents[i].style.display = "none";
-            }
-
-            // 2. Remove the "active" class/style from all tab buttons
+            for (let i = 0; i < contents.length; i++) { contents[i].style.display = "none"; }
             const tabs = document.getElementsByClassName("tab-btn");
-            for (let i = 0; i < tabs.length; i++) {
-                tabs[i].classList.remove("active");
-            }
-
-            // 3. Show the selected category section
+            for (let i = 0; i < tabs.length; i++) { tabs[i].classList.remove("active"); }
             document.getElementById(categoryName).style.display = "block";
-
-            // 4. Highlight the button that was clicked
             evt.currentTarget.classList.add("active");
-
-            // 5. Scroll to top of content (useful for mobile)
-            if(window.innerWidth < 600) {
-                window.scrollTo(0, 0);
-            }
+            if(window.innerWidth < 600) { window.scrollTo(0, 0); }
         }
-
-        // Initialize by getting user name for potential use in Library header
-        const hubData = JSON.parse(localStorage.getItem('hubData')) || { current: "Explorer" };
-        console.log("Library loaded for: " + hubData.current);
     </script>
-
 </body>
 </html>
