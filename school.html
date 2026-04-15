@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .score-label { font-size: 0.8rem; font-weight: normal; opacity: 0.9; display: block; margin-top: 5px; }
-    </style>
 </head>
 <body>
     <div class="container wide-container">
-        <div style="padding: 25px; border-bottom: 2px solid #eee; text-align: center;">
+        <div style="padding: 20px; border-bottom: 2px solid #eee; text-align: center;">
             <h1 style="margin: 0;">🏫 School Hub</h1>
         </div>
 
@@ -20,35 +17,15 @@
                 <button class="tab-btn active" onclick="openTab(event, 'tuition')">🎓 Tuition</button>
                 <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
                 <div style="flex-grow: 1; min-height: 20px;"></div>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
             </div>
 
             <div class="main-content">
-                <div id="tuition" class="category-content" style="text-align: left;">
-                    <h2 style="text-align: center;">🎓 Tuition Hub</h2>
+                <div id="tuition" class="category-content">
+                    <h2 style="text-align: center; margin-bottom: 20px;">🎓 Study Sets</h2>
                     
-                    <!-- MATHEMATICS -->
-                    <div style="margin-top: 20px;">
-                        <h3 style="color: #4a90e2; border-left: 5px solid #4a90e2; padding-left: 10px;">Mathematics (DLP)</h3>
-                        <a href="tuition-quiz.html?sub=math&lvl=4" class="btn blue-btn" id="btn-math-4">Maths Std 4</a>
-                        <a href="tuition-quiz.html?sub=math&lvl=5" class="btn blue-btn" id="btn-math-5">Maths Std 5</a>
-                        <a href="tuition-quiz.html?sub=math&lvl=6" class="btn blue-btn" id="btn-math-6">Maths Std 6</a>
-                    </div>
-
-                    <!-- SCIENCE -->
-                    <div style="margin-top: 25px;">
-                        <h3 style="color: #2ecc71; border-left: 5px solid #2ecc71; padding-left: 10px;">Science (DLP)</h3>
-                        <a href="tuition-quiz.html?sub=sci&lvl=4" class="btn green-btn" id="btn-sci-4">Science Std 4</a>
-                        <a href="tuition-quiz.html?sub=sci&lvl=5" class="btn green-btn" id="btn-sci-5">Science Std 5</a>
-                        <a href="tuition-quiz.html?sub=sci&lvl=6" class="btn green-btn" id="btn-sci-6">Science Std 6</a>
-                    </div>
-
-                    <!-- ENGLISH (NEW!) -->
-                    <div style="margin-top: 25px;">
-                        <h3 style="color: #e67e22; border-left: 5px solid #e67e22; padding-left: 10px;">English Language</h3>
-                        <a href="tuition-quiz.html?sub=eng&lvl=4" class="btn orange-btn" id="btn-eng-4">English Std 4</a>
-                        <a href="tuition-quiz.html?sub=eng&lvl=5" class="btn orange-btn" id="btn-eng-5">English Std 5</a>
-                        <a href="tuition-quiz.html?sub=eng&lvl=6" class="btn orange-btn" id="btn-eng-6">English Std 6</a>
+                    <div id="quiz-list-container">
+                        <!-- Quizzes will be generated here by JS -->
                     </div>
                 </div>
 
@@ -66,18 +43,40 @@
         const hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
         const kidName = hubData.current;
 
-        function loadScores() {
-            if (!kidName) return;
-            const profile = hubData.profiles[kidName];
-            if (profile && profile.scores) {
-                for (let key in profile.scores) {
-                    const btn = document.getElementById(`btn-${key}`);
-                    if (btn) {
-                        const score = profile.scores[key];
-                        btn.innerHTML += `<span class="score-label">Best Score: ${score}/10</span>`;
-                    }
-                }
-            }
+        const subjects = [
+            { id: 'math', name: 'Mathematics (DLP)', color: 'blue-btn' },
+            { id: 'sci', name: 'Science (DLP)', color: 'green-btn' },
+            { id: 'eng', name: 'English Language', color: 'orange-btn' }
+        ];
+
+        function generateQuizList() {
+            const container = document.getElementById('quiz-list-container');
+            const scores = (hubData.profiles[kidName] && hubData.profiles[kidName].scores) ? hubData.profiles[kidName].scores : {};
+
+            subjects.forEach(sub => {
+                let html = `<h3 style="margin-top:20px; border-left:5px solid #ccc; padding-left:10px;">${sub.name}</h3>`;
+                
+                [4, 5, 6].forEach(lvl => {
+                    html += `<div style="margin: 10px 0; text-align: left; font-weight: bold;">Standard ${lvl}</div>`;
+                    html += `<div class="set-row">`;
+                    
+                    [1, 2, 3].forEach(setNum => {
+                        const scoreKey = `${sub.id}-${lvl}-${setNum}`;
+                        const bestScore = scores[scoreKey] || 0;
+                        const isDone = bestScore >= 5; // Marked as done if score is 5 or more
+                        const doneClass = isDone ? 'completed-btn' : '';
+                        
+                        html += `
+                            <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
+                               class="btn ${sub.color} set-link ${doneClass}">
+                               Set ${setNum} ${bestScore > 0 ? '('+bestScore+'/10)' : ''}
+                            </a>`;
+                    });
+                    
+                    html += `</div>`;
+                });
+                container.innerHTML += html;
+            });
         }
 
         function openTab(evt, categoryName) {
@@ -89,7 +88,7 @@
             evt.currentTarget.classList.add("active");
         }
 
-        loadScores();
+        generateQuizList();
     </script>
 </body>
 </html>
