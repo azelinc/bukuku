@@ -1,74 +1,88 @@
-/* RESET & BASE */
+/* 1. RESET & BASE */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* 2. THE BACKGROUND & FONT */
 body { 
-    font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif; 
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); 
+    /* Changed font stack to be cleaner and more consistent */
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+    background: #1a1a2e; /* Solid dark color for better focus */
     color: #333;
     min-height: 100vh;
     display: flex; 
-    justify-content: center; /* Horizontal Center */
-    align-items: center;     /* Vertical Center */
-    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px; /* Spacing around the container */
 }
 
-/* MAIN CONTAINER */
+/* 3. THE CONTAINER (Optimized for Mobile) */
 .container { 
     width: 100%;
-    max-width: 500px; /* Limits width on Desktop */
-    background: rgba(255, 255, 255, 0.95); 
-    padding: 30px 20px; 
-    border-radius: 30px; 
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4); 
+    /* This makes it full width on mobile but stays nice on desktop */
+    max-width: 600px; 
+    background: #ffffff; 
+    padding: 40px 25px; 
+    border-radius: 25px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3); 
     text-align: center;
-    border: 6px solid #ffd700;
+    border: 5px solid #ffd700;
 }
 
-/* CATEGORY BOXES */
-.category-section {
-    margin: 20px 0;
-    padding: 20px;
-    background: white;
-    border-radius: 20px;
-    border: 3px solid #eee;
+/* 4. HEADINGS & TEXT */
+h1 { 
+    font-size: 2.2rem; /* Bigger title */
+    color: #2c3e50; 
+    margin-bottom: 10px;
+    letter-spacing: -1px;
 }
 
-/* BUTTONS - This makes them look like "tiles" and prevents overlapping */
-.btn {
-    display: block; /* Stack vertically */
-    width: 100%;    /* Full width of the category box */
-    padding: 15px;
-    margin: 10px 0;
+p {
     font-size: 1.1rem;
-    font-weight: bold;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* 5. TILE BUTTONS (Big and Tappable) */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 22px; /* Bigger touch area for fingers */
+    margin: 12px 0;
+    font-size: 1.4rem; /* Bigger font for buttons */
+    font-weight: 800;
     color: white !important;
     text-decoration: none;
-    border-radius: 15px;
-    transition: 0.3s;
+    border-radius: 20px;
+    transition: 0.2s;
     border: none;
     cursor: pointer;
 }
 
-.blue-btn { background: #4a90e2; border-bottom: 5px solid #2e6cb5; }
-.orange-btn { background: #f39c12; border-bottom: 5px solid #c87f0a; }
-.green-btn { background: #2ecc71; border-bottom: 5px solid #27ae60; }
-.red-btn { background: #e74c3c; border-bottom: 5px solid #c0392b; }
+/* Colors with darker "3D" bottom border */
+.blue-btn { background: #4a90e2; border-bottom: 6px solid #2e6cb5; }
+.orange-btn { background: #f39c12; border-bottom: 6px solid #c87f0a; }
+.green-btn { background: #2ecc71; border-bottom: 6px solid #27ae60; }
+.red-btn { background: #e74c3c; border-bottom: 6px solid #c0392b; }
 
 .btn:active {
     transform: translateY(4px);
     border-bottom-width: 1px;
 }
 
-h1 { font-size: 1.8rem; margin-bottom: 10px; }
-h2 { font-size: 1.4rem; margin-bottom: 5px; }
-.book-description { font-size: 0.9rem; color: #666; margin-bottom: 15px; }
-
-/* MOBILE ADJUSTMENTS */
+/* 6. MOBILE OVERRIDES (Full Screen Feel) */
 @media (max-width: 480px) {
-    .container { padding: 20px 15px; }
-    h1 { font-size: 1.5rem; }
+    body {
+        padding: 10px; /* Less space on edges */
+        align-items: flex-start; /* Move container to the top */
+    }
+    .container {
+        padding: 50px 20px; /* More padding inside */
+        border-radius: 30px;
+        min-height: 80vh; /* Make it fill most of the screen */
+    }
+    h1 { font-size: 2rem; }
+    .btn { font-size: 1.3rem; }
 }
