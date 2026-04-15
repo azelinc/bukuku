@@ -82,9 +82,9 @@
         const kidName = localStorage.getItem('fb_current_user');
 
         const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2' },
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7' },
-            { id: 'eng', name: 'English Language', color: '#f39c12' }
+            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 },
+            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 },
+            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 } // Expanded to 10
         ];
 
         async function generateMatrix() {
@@ -100,64 +100,41 @@
                 querySnapshot.forEach((doc) => {
                     const data = doc.data();
                     const userScores = data.scores || {};
-                    
                     if (doc.id === kidName) scores = userScores;
-
-                    // Support both New Format (object) and Old Format (simple number)
                     if (userScores['sifir-master-obj']) {
-                        allUsers.push({ 
-                            name: doc.id, 
-                            score: userScores['sifir-master-obj'].score, 
-                            time: userScores['sifir-master-obj'].time 
-                        });
-                    } else if (userScores['sifir-master'] !== undefined) {
-                        allUsers.push({ 
-                            name: doc.id, 
-                            score: userScores['sifir-master'], 
-                            time: 999 // Put at bottom of time ranking
-                        });
+                        allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
                     }
                 });
 
-                // Update My Best Score
                 if (scores['sifir-master'] !== undefined) {
                     document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
                 }
 
-                // Sort: Higher Score first, then Faster Time
                 allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
-                
                 lbBody.innerHTML = '';
                 if (allUsers.length === 0) {
                     lbBody.innerHTML = '<tr><td colspan="4">No scores yet. Be the first!</td></tr>';
                 } else {
                     allUsers.slice(0, 5).forEach((user, index) => {
-                        const displayTime = user.time === 999 ? "N/A" : user.time + "s";
-                        const row = `<tr>
-                            <td class="rank-${index+1}">${index+1}</td>
-                            <td>${user.name}</td>
-                            <td>${user.score}/10</td>
-                            <td>${displayTime}</td>
-                        </tr>`;
+                        const row = `<tr><td class="rank-${index+1}">${index+1}</td><td>${user.name}</td><td>${user.score}/10</td><td>${user.time}s</td></tr>`;
                         lbBody.innerHTML += row;
                     });
                 }
-            } catch (e) { 
-                console.error(e); 
-                lbBody.innerHTML = '<tr><td colspan="4">Error loading data.</td></tr>';
-            }
+            } catch (e) { console.error(e); }
 
             container.innerHTML = '';
             subjects.forEach(sub => {
                 let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1.1rem; margin-bottom: 10px;">${sub.name}</h3>`;
                 [4, 5, 6].forEach(lvl => {
-                    html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
-                    [1, 2, 3].forEach(setNum => {
+                    html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group" style="flex-wrap: wrap; justify-content: flex-end;">`;
+                    
+                    // Creates circles based on the number of sets defined in the subjects array
+                    for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = scores[scoreKey] || 0;
                         const doneClass = bestScore >= 5 ? 'done' : '';
-                        html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${doneClass}" style="background-color: ${sub.color}">${setNum}${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
-                    });
+                        html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${doneClass}" style="background-color: ${sub.color}; margin-bottom: 5px;">${setNum}${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
+                    }
                     html += `</div></div>`;
                 });
                 html += `</div>`;
