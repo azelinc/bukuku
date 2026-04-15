@@ -63,14 +63,21 @@
 
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
-            container.innerHTML = '';
+            container.innerHTML = '<p>Syncing your progress...</p>';
             
             let scores = {};
             if (kidName) {
-                const userDoc = await getDoc(doc(db, "users", kidName));
-                if (userDoc.exists()) scores = userDoc.data().scores || {};
+                try {
+                    const userDoc = await getDoc(doc(db, "users", kidName));
+                    if (userDoc.exists()) {
+                        scores = userDoc.data().scores || {};
+                    }
+                } catch (e) {
+                    console.error("Firebase fetch error:", e);
+                }
             }
 
+            container.innerHTML = '';
             subjects.forEach(sub => {
                 let html = `<div class="subject-card">
                     <h3 style="color:${sub.color}; font-size: 1.1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22;">${sub.name}</h3>`;
@@ -79,7 +86,8 @@
                     [1, 2, 3].forEach(setNum => {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = scores[scoreKey] || 0;
-                        const doneClass = bestScore >= 5 ? 'done' : '';
+                        const isDone = bestScore >= 5;
+                        const doneClass = isDone ? 'done' : '';
                         html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${doneClass}" style="background-color: ${sub.color}">${setNum}${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
                     });
                     html += `</div></div>`;
