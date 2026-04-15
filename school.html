@@ -2,65 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container wide-container">
-        <!-- Dashboard Header -->
-        <header style="padding: 15px; border-bottom: 1px solid #eee; text-align: center; background: #fff;">
-            <h1 style="margin: 0; font-size: 1.3rem;">🏫 School Hub</h1>
-        </header>
+        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center; background: #fff;">
+            <h1 style="margin: 0; font-size: 1.4rem;">🏫 School Hub</h1>
+        </div>
 
         <div class="library-layout">
-            <!-- Sidebar (becomes Top Bar on mobile) -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
-                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
-                <button id="tab-profile" class="tab-btn" onclick="openTab('profile', this)">👤 Profile</button>
-                <button class="tab-btn btn-disabled">🧪 STEM</button>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:var(--danger); border:1px solid #fee;">🏠 Home</a>
+                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
+                <button class="tab-btn btn-disabled" style="font-size: 0.8rem;">🧪 STEM (Soon)</button>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; margin-top: auto;">🏠 Home</a>
             </div>
 
             <div class="main-content">
-                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content">
-                    <h2 style="text-align: center; font-size: 1.1rem; margin-bottom: 20px; color: #666;">Choose a Study Set</h2>
+                    <h2 style="font-size: 1.1rem; margin-bottom: 15px; text-align: center; color: #666;">Choose a Study Set</h2>
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display:none;">
-                    <h2 style="text-align: center; margin-bottom: 15px;">🔢 Sifir Master</h2>
+                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
-                        <p id="sifir-highscore" style="font-weight: bold; color: var(--warning); margin-bottom: 15px;">Best Score: 0/10</p>
-                        <a href="sifir.html" class="btn blue-btn">Start Challenge 🚀</a>
+                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
+                        <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-                    <h3 style="text-align: center; margin: 20px 0 10px; font-size: 1rem;">🏆 Global Top 5</h3>
-                    <div class="subject-card" style="padding: 0; overflow: hidden;">
-                        <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
-                            <tbody id="leaderboard-body"></tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- PROFILE SECTION -->
-                <div id="profile" class="category-content" style="display:none;">
-                    <h2 style="text-align: center; margin-bottom: 15px;">👤 Profile Settings</h2>
-                    <div class="subject-card">
-                        <p style="margin-bottom: 15px; color:#666; font-size: 0.9rem;">Show which standards?</p>
-                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold; cursor:pointer;">
-                            <input type="checkbox" id="chk-4" checked style="width:22px; height:22px;"> Standard 4
-                        </label>
-                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold; cursor:pointer;">
-                            <input type="checkbox" id="chk-5" checked style="width:22px; height:22px;"> Standard 5
-                        </label>
-                        <label style="display:flex; align-items:center; gap:12px; margin-bottom:15px; font-weight:bold; cursor:pointer;">
-                            <input type="checkbox" id="chk-6" checked style="width:22px; height:22px;"> Standard 6
-                        </label>
-                        <button class="btn green-btn" onclick="saveProfileSettings()">Save Settings ✅</button>
-                    </div>
+                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
+                    <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
+                        <tbody id="leaderboard-body"></tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -68,7 +43,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc, getDocs, collection, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -89,9 +64,9 @@
             { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
         ];
 
-        let userPrefs = [4, 5, 6];
-
-        async function loadData() {
+        async function generateMatrix() {
+            const container = document.getElementById('matrix-container');
+            const lbBody = document.getElementById('leaderboard-body');
             let scores = {};
             let allUsers = [];
 
@@ -100,79 +75,54 @@
                 querySnapshot.forEach((doc) => {
                     const data = doc.data();
                     const userScores = data.scores || {};
-                    if (doc.id === kidName) {
-                        scores = userScores;
-                        if (data.settings && data.settings.visibleLevels) {
-                            userPrefs = data.settings.visibleLevels;
-                            [4, 5, 6].forEach(l => document.getElementById(`chk-${l}`).checked = userPrefs.includes(l));
-                        }
+                    if (doc.id === kidName) scores = userScores;
+                    if (userScores['sifir-master-obj']) {
+                        allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
                     }
-                    if (userScores['sifir-master-obj']) allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
-                    else if (userScores['sifir-master']) allUsers.push({ name: doc.id, score: userScores['sifir-master'], time: 999 });
                 });
 
-                if (scores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
+                if (scores['sifir-master'] !== undefined) {
+                    document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
+                }
 
                 allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
-                const lbBody = document.getElementById('leaderboard-body');
                 lbBody.innerHTML = '';
-                allUsers.slice(0, 5).forEach((u, i) => {
-                    const timeDisp = u.time === 999 ? "N/A" : u.time + "s";
-                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:12px;">#${i+1}</td><td style="text-align:left;">${u.name}</td><td>${u.score}/10</td><td>${timeDisp}</td></tr>`;
+                allUsers.slice(0, 5).forEach((user, index) => {
+                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:8px;">#${index+1}</td><td style="padding:8px;text-align:left;">${user.name}</td><td style="padding:8px;">${user.score}/10</td><td style="padding:8px;">${user.time}s</td></tr>`;
                 });
-
-                renderTuition(scores);
             } catch (e) { console.error(e); }
-        }
 
-        function renderTuition(scores) {
-            const container = document.getElementById('matrix-container');
             container.innerHTML = '';
-            if (userPrefs.length === 0) {
-                container.innerHTML = '<p style="text-align:center; padding:40px;">No standards selected. Go to Profile Settings!</p>';
-                return;
-            }
-
             subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 10px; text-transform:uppercase;">${sub.name}</h3>`;
-                userPrefs.forEach(lvl => {
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22;">${sub.name}</h3>`;
+                [4, 5, 6].forEach(lvl => {
                     html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
-                    for (let n = 1; n <= sub.sets; n++) {
-                        const key = `${sub.id}-${lvl}-${n}`;
-                        const s = scores[key] || 0;
-                        const done = s >= 5 ? 'done' : '';
-                        html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${n}" class="set-circle ${done}" style="background:${sub.color}">${n}${s > 0 ? '<small>'+s+'/10</small>' : ''}</a>`;
+                    for (let setNum = 1; setNum <= sub.sets; setNum++) {
+                        const scoreKey = `${sub.id}-${lvl}-${setNum}`;
+                        const bestScore = scores[scoreKey] || 0;
+                        const doneClass = bestScore >= 5 ? 'done' : '';
+                        html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${doneClass}" style="background-color: ${sub.color}">${setNum}${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
                     }
                     html += `</div></div>`;
                 });
-                container.innerHTML += html + `</div>`;
+                html += `</div>`;
+                container.innerHTML += html;
             });
         }
 
-        window.saveProfileSettings = async () => {
-            const sel = [];
-            if (document.getElementById('chk-4').checked) sel.push(4);
-            if (document.getElementById('chk-5').checked) sel.push(5);
-            if (document.getElementById('chk-6').checked) sel.push(6);
-            if (kidName) {
-                await setDoc(doc(db, "users", kidName), { settings: { visibleLevels: sel } }, { merge: true });
-                alert("Settings Saved!");
-                location.reload();
-            }
-        };
-
-        window.openTab = (name, btn) => {
-            document.querySelectorAll('.category-content').forEach(c => c.style.display = 'none');
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById(name).style.display = 'block';
-            btn.classList.add('active');
-            window.scrollTo(0,0);
-        };
+        window.openTab = (categoryName, element) => {
+            const contents = document.getElementsByClassName("category-content");
+            for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
+            const tabs = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
+            document.getElementById(categoryName).style.display = "block";
+            if(element) element.classList.add("active");
+        }
 
         const params = new URLSearchParams(window.location.search);
         if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
 
-        loadData();
+        generateMatrix();
     </script>
 </body>
 </html>
