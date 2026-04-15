@@ -17,8 +17,6 @@
             <div class="sidebar">
                 <button class="tab-btn active" onclick="openTab(event, 'interactive')">🕹️ Interactive</button>
                 <button class="tab-btn" onclick="openTab(event, 'story')">📖 Storybooks</button>
-                <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
-                <button class="tab-btn" onclick="openTab(event, 'tuition')" style="background: #fff5f5; color: #e74c3c;">🎓 Tuition</button>
                 
                 <div style="flex-grow: 1; min-height: 20px;"></div>
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
@@ -26,44 +24,21 @@
 
             <!-- MAIN CONTENT -->
             <div class="main-content">
+                
+                <!-- INTERACTIVE -->
                 <div id="interactive" class="category-content">
                     <h2>🕹️ Interactive</h2>
                     <p style="color:#666; margin-bottom: 15px;">Make choices to win!</p>
                     <a href="book-dragon.html" class="btn blue-btn">🐉 Dragon Mountain</a>
                 </div>
 
+                <!-- STORYBOOK -->
                 <div id="story" class="category-content" style="display:none;">
                     <h2>📖 Storybooks</h2>
                     <p style="color:#666; margin-bottom: 15px;">Beautiful tales to read.</p>
                     <a href="book-squirrel.html" class="btn orange-btn">🐿️ Nutty’s Big Day</a>
                 </div>
 
-                <div id="stem" class="category-content" style="display:none;">
-                    <h2>🧪 STEM Facts</h2>
-                    <p style="color:#666; margin-bottom: 15px;">Learn amazing things!</p>
-                    <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
-                    <a href="buku-tenaga-solar.html" class="btn green-btn">☀️ Tenaga Solar</a>
-                    <a href="buku-tenaga-air.html" class="btn green-btn">🌊 Kuasa Empangan</a>
-                </div>
-
-                <!-- TUITION SECTION -->
-                <div id="tuition" class="category-content" style="display:none; text-align: left;">
-                    <h2 style="text-align: center;">🎓 Tuition (English)</h2>
-                    
-                    <div style="margin-top: 20px;">
-                        <h3 style="color: #4a90e2; border-left: 5px solid #4a90e2; padding-left: 10px;">Mathematics</h3>
-                        <a href="tuition-quiz.html?sub=math&lvl=4" class="btn blue-btn">Maths Standard 4</a>
-                        <a href="tuition-quiz.html?sub=math&lvl=5" class="btn blue-btn">Maths Standard 5</a>
-                        <a href="tuition-quiz.html?sub=math&lvl=6" class="btn blue-btn">Maths Standard 6</a>
-                    </div>
-
-                    <div style="margin-top: 25px;">
-                        <h3 style="color: #2ecc71; border-left: 5px solid #2ecc71; padding-left: 10px;">Science</h3>
-                        <a href="tuition-quiz.html?sub=sci&lvl=4" class="btn green-btn">Science Standard 4</a>
-                        <a href="tuition-quiz.html?sub=sci&lvl=5" class="btn green-btn">Science Standard 5</a>
-                        <a href="tuition-quiz.html?sub=sci&lvl=6" class="btn green-btn">Science Standard 6</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
