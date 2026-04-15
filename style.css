@@ -33,7 +33,7 @@ body {
     padding: 0;
 }
 
-/* 3. HOME PAGE BUTTONS */
+/* 3. BUTTONS (Home Page) */
 .btn {
     display: block;
     width: 100%;
@@ -59,19 +59,21 @@ body {
 
 .btn:active { transform: translateY(4px); border-bottom-width: 1px; }
 
-/* FIXED DISABLED STYLE (Home Page) */
-.btn-disabled {
-    background: #cccccc !important;
-    color: #777777 !important;
-    border-bottom: 4px solid #aaaaaa !important;
-    opacity: 0.7;
-    pointer-events: none;
+/* SHARED DISABLED STYLE (Applied to Home buttons and School tabs) */
+.btn-disabled, .tab-btn-disabled {
+    background: #e0e0e0 !important;
+    color: #999999 !important;
+    opacity: 0.6;
+    filter: grayscale(1);
+    pointer-events: none; /* Prevents clicking */
     cursor: default;
+    border-bottom: 2px solid #ccc !important;
+    box-shadow: none !important;
 }
 
-.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; }
+.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; color: #888; }
 
-/* 4. SCHOOL HUB MATRIX (Fixes the Circles) */
+/* 4. SCHOOL HUB MATRIX (The Circles) */
 .subject-card {
     background: #fdfdfd;
     border: 1px solid #eee;
@@ -115,7 +117,7 @@ body {
     font-size: 1.1rem;
     transition: 0.2s;
     box-shadow: 0 4px 0 rgba(0,0,0,0.1);
-    position: relative; /* For badge positioning */
+    position: relative;
 }
 
 .set-circle small {
@@ -125,11 +127,9 @@ body {
     margin-top: -2px;
 }
 
-/* THE SUCCESS BADGE (The Checkmark) */
 .set-circle.done {
     background-color: #2ecc71 !important;
     border: 3px solid #ffffff;
-    box-shadow: 0 0 10px rgba(46, 204, 113, 0.3);
 }
 
 .set-circle.done::after {
@@ -193,12 +193,6 @@ body {
     color: white;
 }
 
-.tab-btn-disabled {
-    opacity: 0.5;
-    background: #eee !important;
-    cursor: not-allowed;
-}
-
 /* 6. MOBILE FIXES */
 @media (max-width: 600px) {
     .library-layout { flex-direction: column; }
@@ -212,7 +206,7 @@ body {
         gap: 8px;
     }
     .tab-btn { flex: 1; text-align: center; white-space: nowrap; padding: 10px; justify-content: center; }
-    .container { padding: 20px 10px; }
+    .container { padding: 30px 15px; }
     .grade-row { flex-direction: column; align-items: center; gap: 10px; padding: 15px 0; }
     .grade-label { text-align: center; width: 100%; }
 }
