@@ -19,24 +19,25 @@
 
         <div id="profile-selection" style="display: none;">
             <h1>👋 Hello!</h1>
-            <p id="selection-sub" style="margin-bottom: 20px;">Who is playing today?</p>
+            <p id="selection-sub" style="margin-bottom: 20px; color: #666;">Who is playing today?</p>
             <div id="profile-list"></div>
-            <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
+            <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
                 <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
-                <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#eee; cursor:pointer; font-size: 0.7rem; margin-top: 20px;">Admin</button>
+                <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#eee; cursor:pointer; font-size: 0.7rem; margin-top: 10px;">Admin</button>
             </div>
         </div>
 
         <div id="name-setup" style="display: none;">
             <h1>✨ New Quest</h1>
-            <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 20px; text-align: center; outline: none;">
+            <p style="margin-bottom: 15px; color: #666;">Enter your name to start:</p>
+            <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 5px; text-align: center; outline: none;">
             <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
-            <button onclick="initHub()" style="margin-top: 20px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+            <button onclick="initHub()" style="margin-top: 10px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
         </div>
 
         <div id="main-menu" style="display: none;">
             <h1 style="margin-bottom: 5px;">Hi, <span id="display-name">Hero</span>!</h1>
-            <p style="margin-bottom: 25px; color: #666;">Ready for today's lesson?</p>
+            <p style="margin-bottom: 20px; color: #666;">Ready for today's lesson?</p>
             
             <div class="nav-grid">
                 <a href="school.html" class="btn green-btn">🏫 School Hub</a>
@@ -44,7 +45,7 @@
                 <div class="btn btn-disabled">🎮 Games <span class="coming-soon-tag">Coming Soon</span></div>
             </div>
             
-            <button onclick="switchUser()" style="margin-top:30px; background:#f4f4f4; border:none; padding:12px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
+            <button onclick="switchUser()" style="margin-top:30px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
         </div>
     </div>
 
@@ -71,8 +72,7 @@
         const ADMIN_PIN = "9988";
 
         async function initHub() {
-            loading.style.display = 'block'; selection.style.display = 'none';
-            setup.style.display = 'none'; menu.style.display = 'none';
+            loading.style.display = 'block'; selection.style.display = 'none'; setup.style.display = 'none'; menu.style.display = 'none';
             const activeUser = localStorage.getItem('fb_current_user');
             if (activeUser) renderMainMenu(activeUser);
             else await showProfileSelection();
@@ -94,13 +94,12 @@
         }
 
         window.adminLogin = () => {
-            const entry = prompt("Enter Admin Secret Pin:");
+            const entry = prompt("Enter Admin PIN:");
             if (entry === ADMIN_PIN) { isManageMode = true; document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE"; showProfileSelection(); }
-            else alert("Wrong Pin!");
         }
 
         async function deleteProfile(name) {
-            if (confirm(`PERMANENTLY delete "${name}"?`)) { await deleteDoc(doc(db, "users", name)); showProfileSelection(); }
+            if (confirm(`Delete "${name}"?`)) { await deleteDoc(doc(db, "users", name)); showProfileSelection(); }
         }
 
         document.getElementById('save-name-btn').onclick = async () => {
