@@ -7,76 +7,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
         
-        <!-- 1. PROFILE SELECTION SCREEN -->
         <div id="profile-selection" style="display: none;">
             <h1>👋 Hello!</h1>
             <p style="margin-bottom:20px;">Who is playing today?</p>
-            <div id="profile-list">
-                <!-- Profile buttons will appear here -->
-            </div>
-            <button class="btn green-btn" onclick="showNewUserForm()" style="margin-top: 20px;">+ New Explorer</button>
+            <div id="profile-list"></div>
+            <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
         </div>
 
-        <!-- 2. NEW USER FORM -->
         <div id="name-setup" style="display: none;">
             <h1>✨ New Quest</h1>
             <p>Enter your name to start:</p>
             <input type="text" id="user-name-input" placeholder="Your name..." 
                    style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 20px; text-align: center; outline: none; font-family: inherit;">
             <button class="btn blue-btn" onclick="createNewProfile()">Start! 🚀</button>
-            <button onclick="initHub()" style="margin-top: 20px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+            <button onclick="initHub()" style="margin-top: 20px; background:none; border:none; color:#999; cursor:pointer;">Cancel</button>
         </div>
 
-        <!-- 3. MAIN MENU -->
         <div id="main-menu" style="display: none;">
-            <h1>Hi, <span id="display-name">Explorer</span>!</h1>
-            <p style="margin-bottom:30px;">Ready for an adventure?</p>
+            <h1>Hi, <span id="display-name">Hero</span>!</h1>
+            <p style="margin-bottom:20px;">What's the plan for today?</p>
             
-            <a href="storybook.html" class="btn blue-btn">📖 Library</a>
-            <a href="games.html" class="btn orange-btn">🎮 Games</a>
+            <div class="nav-grid">
+                <!-- NEW SCHOOL OPTION ON TOP -->
+                <a href="school.html" class="btn green-btn">🏫 School Hub</a>
+                
+                <a href="storybook.html" class="btn blue-btn">📖 Library</a>
+                
+                <a href="games.html" class="btn orange-btn">🎮 Games</a>
+            </div>
             
-            <button onclick="showProfileSelection()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Explorer</button>
+            <button onclick="showProfileSelection()" style="margin-top:30px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Explorer</button>
         </div>
-
     </div>
 
     <script>
-        // Use a "try/catch" block to prevent the whole page from breaking if memory is corrupted
-        let hubData;
-        try {
-            hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
-        } catch (e) {
-            hubData = { profiles: {}, current: null };
-        }
+        let hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
 
         function initHub() {
-            // Hide everything first to be safe
-            document.getElementById('profile-selection').style.display = 'none';
-            document.getElementById('name-setup').style.display = 'none';
-            document.getElementById('main-menu').style.display = 'none';
-
             const profileCount = Object.keys(hubData.profiles).length;
-
-            if (profileCount === 0) {
-                showNewUserForm();
-            } else if (hubData.current) {
-                renderMainMenu();
-            } else {
-                showProfileSelection();
-            }
+            if (profileCount === 0) { showNewUserForm(); } 
+            else if (hubData.current) { renderMainMenu(); } 
+            else { showProfileSelection(); }
         }
 
         function showProfileSelection() {
             document.getElementById('profile-selection').style.display = 'block';
             document.getElementById('name-setup').style.display = 'none';
             document.getElementById('main-menu').style.display = 'none';
-
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
-
             for (let name in hubData.profiles) {
                 const btn = document.createElement('button');
                 btn.className = "btn blue-btn";
@@ -95,21 +76,15 @@
 
         function createNewProfile() {
             const name = document.getElementById('user-name-input').value.trim();
-            if (name) {
-                if (!hubData.profiles[name]) {
-                    hubData.profiles[name] = 0; // Initialize score
-                    selectProfile(name);
-                } else {
-                    alert("This name already exists!");
-                }
-            } else {
-                alert("Please enter a name.");
+            if (name && !hubData.profiles[name]) {
+                hubData.profiles[name] = 0;
+                selectProfile(name);
             }
         }
 
         function selectProfile(name) {
             hubData.current = name;
-            saveData();
+            localStorage.setItem('hubData', JSON.stringify(hubData));
             renderMainMenu();
         }
 
@@ -117,15 +92,9 @@
             document.getElementById('profile-selection').style.display = 'none';
             document.getElementById('name-setup').style.display = 'none';
             document.getElementById('main-menu').style.display = 'block';
-            
             document.getElementById('display-name').innerText = hubData.current;
         }
 
-        function saveData() {
-            localStorage.setItem('hubData', JSON.stringify(hubData));
-        }
-
-        // Start the logic
         initHub();
     </script>
 </body>
