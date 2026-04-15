@@ -6,20 +6,39 @@
     <title>Quiz Engine - AF Hub</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .quiz-box { text-align: left; background: #fff; padding: 25px; border-radius: 20px; margin: 20px 0; border: 3px solid #eee; }
+        .quiz-box { text-align: left; background: #fff; padding: 25px; border-radius: 20px; margin: 20px 0; border: 3px solid #eee; position: relative; }
         .q-text { font-size: 1.25rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; min-height: 60px; line-height: 1.6; }
         .option-btn { display: block; width: 100%; padding: 16px; margin: 12px 0; background: #f8f9fa; border: 2px solid #ddd; border-radius: 12px; cursor: pointer; text-align: left; font-size: 1.1rem; font-weight: bold; transition: 0.2s; color: #444; }
-        .option-btn:hover { background: #f0f7ff; border-color: #4a90e2; }
+        .option-btn:hover:not(:disabled) { background: #f0f7ff; border-color: #4a90e2; }
         .correct { background: #d4edda !important; color: #155724 !important; border-color: #c3e6cb !important; }
         .wrong { background: #f8d7da !important; color: #721c24 !important; border-color: #f5c6cb !important; }
-        #stats { font-weight: bold; margin-bottom: 10px; color: #666; font-size: 0.9rem; }
+        
+        /* TIMER STYLES */
+        .timer-container { width: 100%; background: #eee; height: 12px; border-radius: 10px; margin-bottom: 15px; overflow: hidden; border: 1px solid #ddd; }
+        #timer-bar { height: 100%; background: linear-gradient(to right, #ff7675, #d63031); width: 100%; transition: width 1s linear; }
+        
+        #stats { font-weight: bold; margin-bottom: 5px; color: #666; font-size: 0.9rem; display: flex; justify-content: space-between; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1 id="quiz-title">Loading...</h1>
-        <div id="stats">Question 1 | Score: 0</div>
-        <div class="quiz-box" id="quiz-area"><div id="question" class="q-text">Syncing Knowledge Base...</div><div id="options-list"></div></div>
+        
+        <div id="stats">
+            <span>Question <span id="q-num">1</span> of 10</span>
+            <span>Score: <span id="current-score">0</span></span>
+        </div>
+
+        <!-- TIMER BAR -->
+        <div class="timer-container">
+            <div id="timer-bar"></div>
+        </div>
+
+        <div class="quiz-box" id="quiz-area">
+            <div id="question" class="q-text">Syncing Knowledge Base...</div>
+            <div id="options-list"></div>
+        </div>
+
         <div id="result-area" style="display:none; padding: 20px;">
             <h2 id="final-score" style="font-size: 3rem; color: #f39c12;">0/10</h2>
             <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
@@ -32,7 +51,6 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-        // Your specific Firebase Config
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
             authDomain: "af-adventure-hub.firebaseapp.com",
@@ -51,14 +69,17 @@
         const lvl = urlParams.get('lvl') || '4';
         const setNum = urlParams.get('set') || '1';
 
-        const jsonKey = `${lvl}-${setNum}`; // Key inside the JSON file (e.g. "4-1")
-        const firebaseKey = `${sub}-${lvl}-${setNum}`; // Key for Firebase (e.g. "math-4-1")
+        const jsonKey = `${lvl}-${setNum}`;
+        const firebaseKey = `${sub}-${lvl}-${setNum}`;
 
-        let currentQ = 0; let score = 0; let questions = [];
+        let currentQ = 0; 
+        let score = 0; 
+        let questions = [];
+        let timerInterval;
+        let timeLeft = 30;
 
         async function startEngine() {
             try {
-                // FETCH DATA FROM MODULAR JSON
                 const response = await fetch(`${sub}.json`);
                 const data = await response.json();
                 questions = data[jsonKey];
@@ -75,10 +96,15 @@
 
         function showQuestion() {
             const q = questions[currentQ];
-            document.getElementById('stats').innerText = `Question ${currentQ + 1} of ${questions.length} | Score: ${score}`;
+            
+            // Update UI Stats
+            document.getElementById('q-num').innerText = currentQ + 1;
+            document.getElementById('current-score').innerText = score;
+            
             document.getElementById('question').innerText = q.q;
             const list = document.getElementById('options-list');
             list.innerHTML = '';
+            
             q.a.forEach((opt, index) => {
                 const btn = document.createElement('button');
                 btn.className = 'option-btn';
@@ -86,40 +112,100 @@
                 btn.onclick = () => checkAnswer(index, btn);
                 list.appendChild(btn);
             });
+
+            startTimer();
         }
 
-        function checkAnswer(idx, btn) {
-            const btns = document.getElementsByClassName('option-btn');
-            for(let b of btns) b.disabled = true;
-            if(idx === questions[currentQ].c) { btn.classList.add('correct'); score++; }
-            else { btn.classList.add('wrong'); btns[questions[currentQ].c].classList.add('correct'); }
+        function startTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 30;
+            updateTimerUI();
             
-            setTimeout(() => {
-                currentQ++;
-                if(currentQ < questions.length) showQuestion();
-                else finishQuiz();
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerUI();
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    handleTimeout();
+                }
             }, 1000);
         }
 
+        function updateTimerUI() {
+            const percentage = (timeLeft / 30) * 100;
+            document.getElementById('timer-bar').style.width = percentage + "%";
+        }
+
+        function handleTimeout() {
+            // If time is up, mark as wrong and show answer
+            const btns = document.getElementsByClassName('option-btn');
+            const correctIdx = questions[currentQ].c;
+            
+            for(let b of btns) b.disabled = true;
+            btns[correctIdx].classList.add('correct');
+            
+            // Move to next after a delay
+            setTimeout(() => {
+                nextQuestion();
+            }, 2000);
+        }
+
+        function checkAnswer(idx, btn) {
+            clearInterval(timerInterval); // Stop timer immediately
+            const btns = document.getElementsByClassName('option-btn');
+            const correctIdx = questions[currentQ].c;
+            
+            for(let b of btns) b.disabled = true;
+            
+            if(idx === correctIdx) { 
+                btn.classList.add('correct'); 
+                score++; 
+            } else { 
+                btn.classList.add('wrong'); 
+                btns[correctIdx].classList.add('correct'); 
+            }
+            
+            setTimeout(() => {
+                nextQuestion();
+            }, 1500);
+        }
+
+        function nextQuestion() {
+            currentQ++;
+            if(currentQ < questions.length) {
+                showQuestion();
+            } else {
+                finishQuiz();
+            }
+        }
+
         async function finishQuiz() {
+            clearInterval(timerInterval);
             document.getElementById('quiz-area').style.display = 'none';
+            document.getElementById('stats').style.display = 'none';
+            document.querySelector('.timer-container').style.display = 'none';
             document.getElementById('result-area').style.display = 'block';
             document.getElementById('final-score').innerText = `${score}/${questions.length}`;
 
             if (kidName) {
-                const userRef = doc(db, "users", kidName);
-                const userDoc = await getDoc(userRef);
-                let currentScores = userDoc.exists() ? userDoc.data().scores || {} : {};
+                try {
+                    const userRef = doc(db, "users", kidName);
+                    const userDoc = await getDoc(userRef);
+                    let currentScores = userDoc.exists() ? userDoc.data().scores || {} : {};
 
-                if (score > (currentScores[firebaseKey] || 0)) {
-                    currentScores[firebaseKey] = score;
-                    await setDoc(userRef, { scores: currentScores }, { merge: true });
-                    document.getElementById('sync-status').innerText = "✅ New Personal Best Saved to Cloud!";
-                } else {
-                    document.getElementById('sync-status').innerText = "✅ Progress Synced.";
+                    if (score > (currentScores[firebaseKey] || 0)) {
+                        currentScores[firebaseKey] = score;
+                        await setDoc(userRef, { scores: currentScores }, { merge: true });
+                        document.getElementById('sync-status').innerText = "✅ New Personal Best Saved!";
+                    } else {
+                        document.getElementById('sync-status').innerText = "✅ Score Synced.";
+                    }
+                } catch (e) {
+                    document.getElementById('sync-status').innerText = "❌ Cloud error.";
                 }
             }
-            document.getElementById('feedback').innerText = score >= 5 ? `Amazing job, ${kidName}!` : `Keep trying, ${kidName}!`;
+            document.getElementById('feedback').innerText = score >= 5 ? `Amazing job, ${kidName}!` : `Don't give up, ${kidName}! Practice makes perfect.`;
         }
 
         startEngine();
