@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz - AF Hub</title>
+    <title>Tuition Quiz - AF Hub</title>
     <link rel="stylesheet" href="style.css">
     <style>
         .quiz-box { text-align: left; background: #fff; padding: 25px; border-radius: 20px; margin: 20px 0; border: 3px solid #eee; }
-        .q-text { font-size: 1.25rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; min-height: 60px; line-height: 1.4; }
+        .q-text { font-size: 1.2rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; min-height: 60px; line-height: 1.6; }
         .option-btn { display: block; width: 100%; padding: 16px; margin: 12px 0; background: #f8f9fa; border: 2px solid #ddd; border-radius: 12px; cursor: pointer; text-align: left; font-size: 1.1rem; font-weight: bold; transition: 0.2s; color: #444; }
         .option-btn:hover { background: #f0f7ff; border-color: #4a90e2; }
         .correct { background: #d4edda !important; color: #155724 !important; border-color: #c3e6cb !important; }
         .wrong { background: #f8d7da !important; color: #721c24 !important; border-color: #f5c6cb !important; }
+        #stats { font-weight: bold; margin-bottom: 10px; color: #666; font-size: 0.9rem; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 id="quiz-title">Loading...</h1>
-        <div id="stats" style="font-weight:bold; color:#666; margin-bottom:10px;">Question 1 of 10 | Score: 0</div>
+        <h1 id="quiz-title">Loading Quiz...</h1>
+        <div id="stats">Question 1 of 10 | Score: 0</div>
 
         <div class="quiz-box" id="quiz-area">
-            <div id="question" class="q-text"></div>
+            <div id="question" class="q-text">Selecting questions...</div>
             <div id="options-list"></div>
         </div>
 
         <div id="result-area" style="display:none; padding: 20px;">
             <h2 id="final-score" style="font-size: 3rem; color: #f39c12; margin-bottom:10px;">0/10</h2>
-            <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px;"></p>
+            <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
             <div id="sync-status" style="font-size: 0.8rem; color: #999; margin-bottom: 10px;"></div>
             <a href="school.html" class="btn blue-btn">Back to School Hub</a>
         </div>
@@ -50,63 +51,261 @@
         const kidName = localStorage.getItem('fb_current_user');
 
         const urlParams = new URLSearchParams(window.location.search);
-        const sub = urlParams.get('sub'); 
-        const lvl = urlParams.get('lvl');
+        const sub = urlParams.get('sub') || 'math'; 
+        const lvl = urlParams.get('lvl') || '4';
         const setNum = urlParams.get('set') || "1";
 
-        const titles = { 'math': 'Maths', 'sci': 'Science', 'eng': 'English' };
-        document.getElementById('quiz-title').innerText = `${titles[sub]} Std ${lvl} (Set ${setNum})`;
+        const titles = { 'math': 'Mathematics', 'sci': 'Science', 'eng': 'English' };
+        document.getElementById('quiz-title').innerText = `${titles[sub]} Standard ${lvl} (Set ${setNum})`;
 
         const questionBank = {
             "math": {
                 "4": {
-                    "1": [ { q: "Place value of 5 in 85,210?", a: ["Thousands", "Hundreds", "Tens", "Ones"], c: 0 }, { q: "Round 12,384 to nearest thousand.", a: ["12,000", "13,000", "12,400", "10,000"], c: 0 }, { q: "3/4 + 1/4 = ?", a: ["1/2", "1", "4/8", "1/4"], c: 1 }, { q: "50,000 - 12,500 = ?", a: ["37,500", "38,500", "40,000", "35,000"], c: 0 }, { q: "Convert 0.7 to percentage.", a: ["7%", "70%", "0.7%", "700%"], c: 1 }, { q: "RM 100 - RM 45.50 = ?", a: ["RM 54.50", "RM 55.50", "RM 64.50", "RM 44.50"], c: 0 }, { q: "Minutes in 2h 15m?", a: ["120", "135", "150", "215"], c: 1 }, { q: "Area of 5cm square?", a: ["20", "10", "25", "15"], c: 2 }, { q: "Days in leap year?", a: ["365", "364", "366", "360"], c: 2 }, { q: "80 ÷ 5 = ?", a: ["14", "16", "18", "12"], c: 1 } ],
-                    "2": [ { q: "Value of digit 7 in 74,321?", a: ["700", "7,000", "70,000", "70"], c: 2 }, { q: "Sum of 1,200 and 4,800.", a: ["5,000", "6,000", "7,000", "5,800"], c: 1 }, { q: "Proper fraction?", a: ["5/2", "1/2", "3/1", "7/4"], c: 1 }, { q: "15 x 4 = ?", a: ["40", "50", "60", "70"], c: 2 }, { q: "0.25 as fraction?", a: ["1/2", "1/4", "1/5", "1/10"], c: 1 }, { q: "Months in 3 years?", a: ["24", "30", "36", "48"], c: 2 }, { q: "Sides in triangle?", a: ["3", "4", "5", "6"], c: 0 }, { q: "900 - 450 = ?", a: ["450", "550", "400", "500"], c: 0 }, { q: "2kg to grams?", a: ["20", "200", "2000", "20000"], c: 2 }, { q: "15:00 is what time?", a: ["3 AM", "3 PM", "5 PM", "1 PM"], c: 1 } ],
-                    "3": [ { q: "Sequence: 2, 4, 6, ...", a: ["7", "8", "9", "10"], c: 1 }, { q: "10 x 0.5 = ?", a: ["5", "50", "1", "0.5"], c: 0 }, { q: "Perimeter: Rectangle 4cm by 6cm?", a: ["10", "20", "24", "12"], c: 1 }, { q: "RM 5.20 + RM 4.80 = ?", a: ["RM 9", "RM 10", "RM 11", "RM 10.20"], c: 1 }, { q: "Even number?", a: ["11", "13", "14", "15"], c: 2 }, { q: "100 ÷ 4 = ?", a: ["20", "25", "30", "40"], c: 1 }, { q: "Days in 2 weeks?", a: ["10", "12", "14", "16"], c: 2 }, { q: "Hundreds digit of 4,321?", a: ["4", "3", "2", "1"], c: 1 }, { q: "Half of 500?", a: ["200", "250", "300", "150"], c: 1 }, { q: "Faces on a cube?", a: ["4", "6", "8", "12"], c: 1 } ]
+                    "1": [
+                        { q: "What is the place value of the digit 5 in the number 85,210?", a: ["Thousands", "Ten Thousands", "Hundreds", "Ones"], c: 0 },
+                        { q: "Round off 12,384 to the nearest thousand.", a: ["12,000", "13,000", "12,400", "10,000"], c: 0 },
+                        { q: "What is the result of 3/4 + 1/4?", a: ["1/2", "1", "4/8", "1/4"], c: 1 },
+                        { q: "Subtract 12,500 from 50,000. What is the answer?", a: ["37,500", "38,500", "40,000", "35,000"], c: 0 },
+                        { q: "Convert the decimal 0.7 into a percentage.", a: ["7%", "70%", "0.7%", "700%"], c: 1 },
+                        { q: "If you have RM 100 and you spend RM 45.50, how much money do you have left?", a: ["RM 54.50", "RM 55.50", "RM 64.50", "RM 44.50"], c: 0 },
+                        { q: "How many minutes are there in 2 hours and 15 minutes?", a: ["120 minutes", "135 minutes", "150 minutes", "215 minutes"], c: 1 },
+                        { q: "A square has a side length of 5 cm. What is the area of the square?", a: ["20 cm²", "10 cm²", "25 cm²", "15 cm²"], c: 2 },
+                        { q: "How many days are there in a leap year?", a: ["365 days", "364 days", "366 days", "360 days"], c: 2 },
+                        { q: "Divide 80 by 5. What is the quotient?", a: ["14", "16", "18", "12"], c: 1 }
+                    ],
+                    "2": [
+                        { q: "What is the digit value of 7 in the number 74,321?", a: ["700", "7,000", "70,000", "70"], c: 2 },
+                        { q: "Calculate the total sum of 1,200 and 4,800.", a: ["5,000", "6,000", "7,000", "5,800"], c: 1 },
+                        { q: "Which of the following is a proper fraction?", a: ["5/2", "1/2", "3/1", "7/4"], c: 1 },
+                        { q: "Multiply 15 by 4. What is the product?", a: ["40", "50", "60", "70"], c: 2 },
+                        { q: "Write 0.25 as a fraction in its simplest form.", a: ["1/2", "1/4", "1/5", "1/10"], c: 1 },
+                        { q: "How many months are there in 3 full years?", a: ["24 months", "30 months", "36 months", "48 months"], c: 2 },
+                        { q: "How many vertices does a triangle have?", a: ["3", "4", "5", "6"], c: 0 },
+                        { q: "What is the difference between 900 and 450?", a: ["450", "550", "400", "500"], c: 0 },
+                        { q: "Convert 2 kilograms into grams.", a: ["20 g", "200 g", "2000 g", "20000 g"], c: 2 },
+                        { q: "In the 12-hour system, what time is 15:00 hours?", a: ["3:00 a.m.", "3:00 p.m.", "5:00 p.m.", "1:00 p.m."], c: 1 }
+                    ],
+                    "3": [
+                        { q: "Find the next number in this sequence: 2, 4, 6, ...", a: ["7", "8", "9", "10"], c: 1 },
+                        { q: "What is the result of 10 multiplied by 0.5?", a: ["5", "50", "1", "0.5"], c: 0 },
+                        { q: "A rectangle has a length of 6 cm and a width of 4 cm. What is its perimeter?", a: ["10 cm", "20 cm", "24 cm", "12 cm"], c: 1 },
+                        { q: "Calculate RM 5.20 + RM 4.80.", a: ["RM 9.00", "RM 10.00", "RM 11.00", "RM 10.20"], c: 1 },
+                        { q: "Which of these numbers is an even number?", a: ["11", "13", "14", "15"], c: 2 },
+                        { q: "Divide 100 by 4.", a: ["20", "25", "30", "40"], c: 1 },
+                        { q: "How many days are there in 2 weeks?", a: ["10", "12", "14", "16"], c: 2 },
+                        { q: "Identify the digit in the hundreds place for the number 4,321.", a: ["4", "3", "2", "1"], c: 1 },
+                        { q: "What is half of 500?", a: ["200", "250", "300", "150"], c: 1 },
+                        { q: "How many faces does a cube have?", a: ["4", "6", "8", "12"], c: 1 }
+                    ]
                 },
                 "5": {
-                    "1": [ { q: "1/4 million in numbers?", a: ["25,000", "250,000", "2.5M", "2,500"], c: 1 }, { q: "40% of 200?", a: ["40", "60", "80", "100"], c: 2 }, { q: "Average: 10, 20, 30?", a: ["15", "20", "25", "60"], c: 1 }, { q: "1.25L + 500ml = (in ml)", a: ["1750", "1255", "1500", "175"], c: 0 }, { q: "Prime number?", a: ["9", "15", "17", "21"], c: 2 }, { q: "Area: Base 6, Height 4 Triangle?", a: ["24", "10", "12", "8"], c: 2 }, { q: "14:00 hours is...", a: ["2 AM", "12 PM", "2 PM", "4 PM"], c: 2 }, { q: "125 x 100 ÷ 10 = ?", a: ["1250", "125", "12500", "12.5"], c: 0 }, { q: "RM 2000 interest at 2% for 1y?", a: ["RM 20", "RM 40", "RM 200", "RM 4"], c: 1 }, { q: "Apples in 1000 boxes (12 each)?", a: ["120", "1200", "12000", "120k"], c: 2 } ],
-                    "2": [ { q: "Round 4.56 to 1 decimal place.", a: ["4.5", "4.6", "4.0", "5.0"], c: 1 }, { q: "Tenths digit in 12.345?", a: ["1", "2", "3", "4"], c: 2 }, { q: "20% as fraction?", a: ["1/2", "1/4", "1/5", "1/10"], c: 2 }, { q: "3/5 of 50?", a: ["10", "20", "30", "40"], c: 2 }, { q: "Years in a Century?", a: ["10", "50", "100", "1000"], c: 2 }, { q: "Diameter is twice the...", a: ["Area", "Radius", "Perimeter", "Width"], c: 1 }, { q: "Simplify 10/20.", a: ["1/2", "1/4", "1/5", "2/10"], c: 0 }, { q: "90 degree angle is...", a: ["Acute", "Obtuse", "Right", "Straight"], c: 2 }, { q: "6.5km in meters?", a: ["65", "650", "6500", "65000"], c: 2 }, { q: "1.5 + 2.75 = ?", a: ["3.25", "4.25", "4.00", "3.75"], c: 1 } ],
-                    "3": [ { q: "Composite number?", a: ["2", "3", "4", "5"], c: 2 }, { q: "Square root of 25?", a: ["3", "4", "5", "6"], c: 2 }, { q: "3000 x 0.01 = ?", a: ["3", "30", "300", "0.3"], c: 1 }, { q: "Seconds in 5 minutes?", a: ["150", "300", "500", "600"], c: 1 }, { q: "Area: 10cm by 5cm rectangle?", a: ["15", "30", "50", "100"], c: 2 }, { q: "Ratio: 2 girls to 3 boys?", a: ["2:3", "3:2", "2/5", "3/5"], c: 0 }, { q: "Years in a Millennium?", a: ["100", "500", "1000", "10k"], c: 2 }, { q: "8.4 ÷ 2 = ?", a: ["4.2", "4.0", "4.4", "2.4"], c: 0 }, { q: "Sum of angles in triangle?", a: ["90", "180", "360", "270"], c: 1 }, { q: "Is 17 a prime number?", a: ["Yes", "No", "Only some days", "Maybe"], c: 0 } ]
+                    "1": [
+                        { q: "How do you write 1/4 million in whole numbers?", a: ["25,000", "250,000", "2,500,000", "2,500"], c: 1 },
+                        { q: "What is 40% of 200?", a: ["40", "60", "80", "100"], c: 2 },
+                        { q: "Find the average of the following numbers: 10, 20, and 30.", a: ["15", "20", "25", "60"], c: 1 },
+                        { q: "Add 1.25 Litres and 500 ml. Give the answer in ml.", a: ["1750 ml", "1255 ml", "1500 ml", "175 ml"], c: 0 },
+                        { q: "Which of these numbers is a prime number?", a: ["9", "15", "17", "21"], c: 2 },
+                        { q: "Calculate the area of a triangle with a base of 6 cm and a height of 4 cm.", a: ["24 cm²", "10 cm²", "12 cm²", "8 cm²"], c: 2 },
+                        { q: "Convert 14:00 hours to the 12-hour clock system.", a: ["2:00 a.m.", "12:00 p.m.", "2:00 p.m.", "4:00 p.m."], c: 2 },
+                        { q: "What is the result of 125 x 100 ÷ 10?", a: ["1250", "125", "12500", "12.5"], c: 0 },
+                        { q: "If RM 2,000 is saved with an interest rate of 2% per year, how much interest is earned after 1 year?", a: ["RM 20", "RM 40", "RM 200", "RM 4"], c: 1 },
+                        { q: "If one box contains 12 apples, how many apples are there in 1,000 identical boxes?", a: ["120", "1,200", "12,000", "120,000"], c: 2 }
+                    ],
+                    "2": [
+                        { q: "Round off the decimal 4.56 to one decimal place.", a: ["4.5", "4.6", "4.0", "5.0"], c: 1 },
+                        { q: "What is the value of the tenths digit in the number 12.345?", a: ["1", "2", "3", "4"], c: 2 },
+                        { q: "Express 20% as a fraction in its simplest form.", a: ["1/2", "1/4", "1/5", "1/10"], c: 2 },
+                        { q: "Calculate 3/5 of 50.", a: ["10", "20", "30", "40"], c: 2 },
+                        { q: "How many years are there in a Century?", a: ["10 years", "50 years", "100 years", "1000 years"], c: 2 },
+                        { q: "In a circle, the diameter is always twice the length of the...", a: ["Area", "Radius", "Perimeter", "Width"], c: 1 },
+                        { q: "Simplify the fraction 10/20.", a: ["1/2", "1/4", "1/5", "2/10"], c: 0 },
+                        { q: "What do you call an angle that measures exactly 90 degrees?", a: ["Acute", "Obtuse", "Right", "Straight"], c: 2 },
+                        { q: "Convert 6.5 kilometers into meters.", a: ["65 m", "650 m", "6,500 m", "65,000 m"], c: 2 },
+                        { q: "Add 1.5 and 2.75 together.", a: ["3.25", "4.25", "4.00", "3.75"], c: 1 }
+                    ],
+                    "3": [
+                        { q: "Which of the following is a composite number?", a: ["2", "3", "4", "5"], c: 2 },
+                        { q: "What is the square root of 25?", a: ["3", "4", "5", "6"], c: 2 },
+                        { q: "Multiply 3,000 by 0.01.", a: ["3", "30", "300", "0.3"], c: 1 },
+                        { q: "How many seconds are in 5 minutes?", a: ["150", "300", "500", "600"], c: 1 },
+                        { q: "A rectangle measures 10 cm by 5 cm. What is its area?", a: ["15 cm²", "30 cm²", "50 cm²", "100 cm²"], c: 2 },
+                        { q: "What is the ratio of 2 girls to 3 boys?", a: ["2:3", "3:2", "2/5", "3/5"], c: 0 },
+                        { q: "How many years are there in a Millennium?", a: ["100 years", "500 years", "1,000 years", "10,000 years"], c: 2 },
+                        { q: "Divide 8.4 by 2.", a: ["4.2", "4.0", "4.4", "2.4"], c: 0 },
+                        { q: "What is the sum of the interior angles of a triangle?", a: ["90°", "180°", "360°", "270°"], c: 1 },
+                        { q: "Is the number 17 a prime number?", a: ["Yes", "No", "Only on weekends", "Maybe"], c: 0 }
+                    ]
                 },
                 "6": {
-                    "1": [ { q: "Ratio of 3 to 5?", a: ["3:5", "5:3", "3/5", "35"], c: 0 }, { q: "Travel 120km in 2h. Speed?", a: ["60", "240", "120", "50"], c: 0 }, { q: "Cost RM80, Sell RM100. Profit %?", a: ["20%", "25%", "80%", "10%"], c: 1 }, { q: "0.05M in whole numbers?", a: ["5,000", "50,000", "500,000", "500"], c: 1 }, { q: "Median: 2, 5, 8, 10, 12?", a: ["5", "8", "10", "12"], c: 1 }, { q: "10 - 2.356 = ?", a: ["7.644", "8.644", "7.744", "8.744"], c: 0 }, { q: "Internal angles of triangle sum?", a: ["90", "180", "360", "270"], c: 1 }, { q: "3.5kg in grams?", a: ["350", "3500", "35000", "35"], c: 1 }, { q: "Years in a decade?", a: ["100", "50", "10", "12"], c: 2 }, { q: "Volume of 3cm cube?", a: ["9", "12", "27", "18"], c: 2 } ],
-                    "2": [ { q: "Range of 10, 20, 50?", a: ["10", "40", "50", "30"], c: 1 }, { q: "150% as decimal?", a: ["0.15", "1.5", "15.0", "150"], c: 1 }, { q: "Origin coordinates?", a: ["(1,1)", "(0,1)", "(1,0)", "(0,0)"], c: 3 }, { q: "Edges in a cube?", a: ["6", "8", "12", "16"], c: 2 }, { q: "10 to the power of 3?", a: ["30", "100", "1000", "300"], c: 2 }, { q: "x + 5 = 12. x is?", a: ["5", "6", "7", "8"], c: 2 }, { q: "Area: Circle with r=7 (approx)?", a: ["44", "154", "49", "14"], c: 1 }, { q: "Centimeters in a meter?", a: ["10", "100", "1000", "10k"], c: 1 }, { q: "1/2 + 1/8 = ?", a: ["2/8", "5/8", "4/8", "1/10"], c: 1 }, { q: "4-sided polygon?", a: ["Triangle", "Pentagon", "Quadrilateral", "Hexagon"], c: 2 } ],
-                    "3": [ { q: "Mode of 2, 3, 3, 4, 5?", a: ["2", "3", "4", "5"], c: 1 }, { q: "0.1 x 0.1 = ?", a: ["0.2", "0.01", "0.11", "1.0"], c: 1 }, { q: "Weeks in a year?", a: ["48", "50", "52", "54"], c: 2 }, { q: "Volume Cylinder r=1, h=10?", a: ["31.4", "10", "62.8", "3.14"], c: 0 }, { q: "Reciprocal of 2?", a: ["-2", "0.2", "1/2", "2.0"], c: 2 }, { q: "Prime factors of 6?", a: ["1,6", "2,3", "1,2,3", "6"], c: 1 }, { q: "1/5 as percentage?", a: ["10%", "20%", "25%", "50%"], c: 1 }, { q: "Pi approx?", a: ["2.14", "3.14", "4.14", "5.14"], c: 1 }, { q: "Angle 91 to 179?", a: ["Acute", "Obtuse", "Reflex", "Right"], c: 1 }, { q: "Dodecahedron faces?", a: ["10", "12", "14", "16"], c: 1 } ]
+                    "1": [
+                        { q: "Express the ratio of 3 to 5 in its simplest form.", a: ["3:5", "5:3", "3/5", "35"], c: 0 },
+                        { q: "A car travels 120 km in 2 hours. What is its average speed?", a: ["60 km/h", "240 km/h", "120 km/h", "50 km/h"], c: 0 },
+                        { q: "Cost Price is RM 80, and Selling Price is RM 100. What is the profit percentage?", a: ["20%", "25%", "80%", "10%"], c: 1 },
+                        { q: "How do you express 0.05 million as a whole number?", a: ["5,000", "50,000", "500,000", "500"], c: 1 },
+                        { q: "Find the median of the following data: 2, 5, 8, 10, 12.", a: ["5", "8", "10", "12"], c: 1 },
+                        { q: "What is the result of 10 minus 2.356?", a: ["7.644", "8.644", "7.744", "8.744"], c: 0 },
+                        { q: "What is the sum of the internal angles of a triangle?", a: ["90°", "180°", "360°", "270°"], c: 1 },
+                        { q: "Convert 3.5 kg into grams.", a: ["350 g", "3,500 g", "35,000 g", "35 g"], c: 1 },
+                        { q: "How many years are in one decade?", a: ["100 years", "50 years", "10 years", "12 years"], c: 2 },
+                        { q: "Find the volume of a cube with a side length of 3 cm.", a: ["9 cm³", "12 cm³", "27 cm³", "18 cm³"], c: 2 }
+                    ],
+                    "2": [
+                        { q: "What is the range of the following data set: 10, 20, 50?", a: ["10", "40", "50", "30"], c: 1 },
+                        { q: "Convert 150% into a decimal number.", a: ["0.15", "1.5", "15.0", "150"], c: 1 },
+                        { q: "What are the coordinates of the Origin on a Cartesian plane?", a: ["(1,1)", "(0,1)", "(1,0)", "(0,0)"], c: 3 },
+                        { q: "How many edges does a cube have?", a: ["6", "8", "12", "16"], c: 2 },
+                        { q: "What is the value of 10 to the power of 3 (10³)?", a: ["30", "100", "1,000", "300"], c: 2 },
+                        { q: "If x + 5 = 12, what is the value of x?", a: ["5", "6", "7", "8"], c: 2 },
+                        { q: "Calculate the approximate area of a circle with a radius of 7 cm.", a: ["44 cm²", "154 cm²", "49 cm²", "14 cm²"], c: 1 },
+                        { q: "How many centimeters are in one meter?", a: ["10", "100", "1,000", "10,000"], c: 1 },
+                        { q: "What is the sum of 1/2 and 1/8?", a: ["2/8", "5/8", "4/8", "1/10"], c: 1 },
+                        { q: "What do you call a polygon with four sides?", a: ["Triangle", "Pentagon", "Quadrilateral", "Hexagon"], c: 2 }
+                    ],
+                    "3": [
+                        { q: "Identify the mode in this set: 2, 3, 3, 4, 5.", a: ["2", "3", "4", "5"], c: 1 },
+                        { q: "Calculate 0.1 multiplied by 0.1.", a: ["0.2", "0.01", "0.11", "1.0"], c: 1 },
+                        { q: "How many weeks are there in a standard year?", a: ["48", "50", "52", "54"], c: 2 },
+                        { q: "Find the volume of a cylinder (approx) where radius=1 and height=10.", a: ["31.4", "10", "62.8", "3.14"], c: 0 },
+                        { q: "Which number is the reciprocal of 2?", a: ["-2", "0.2", "1/2", "2.0"], c: 2 },
+                        { q: "What are the prime factors of the number 6?", a: ["1 and 6", "2 and 3", "1, 2, and 3", "6 only"], c: 1 },
+                        { q: "Convert the fraction 1/5 into a percentage.", a: ["10%", "20%", "25%", "50%"], c: 1 },
+                        { q: "What is the approximate value of Pi (π)?", a: ["2.14", "3.14", "4.14", "5.14"], c: 1 },
+                        { q: "An angle that measures between 91 and 179 degrees is called...", a: ["Acute", "Obtuse", "Reflex", "Right"], c: 1 },
+                        { q: "How many faces does a dodecahedron have?", a: ["10", "12", "14", "16"], c: 1 }
+                    ]
                 }
             },
             "sci": {
                 "4": {
-                    "1": [ { q: "Main organ for breathing in humans?", a: ["Heart", "Lungs", "Stomach", "Brain"], c: 1 }, { q: "Breathes skin & lungs?", a: ["Fish", "Bird", "Frog", "Snake"], c: 2 }, { q: "Plant food making process?", a: ["Breathing", "Sweating", "Photosynthesis", "Melting"], c: 2 }, { q: "Light bounces off mirror?", a: ["Refraction", "Reflection", "Shadow", "Rainbow"], c: 1 }, { q: "Flowing water energy?", a: ["Solar", "Wind", "Hydro", "Nuclear"], c: 2 }, { q: "Skull protects the...", a: ["Heart", "Brain", "Lungs", "Stomach"], c: 1 }, { q: "Some light passes through?", a: ["Transparent", "Opaque", "Translucent", "Mirror"], c: 2 }, { q: "Earth's energy source?", a: ["Moon", "Sun", "Wind", "Batteries"], c: 1 }, { q: "Sound is vibrations?", a: ["Moving slow", "Heat", "Vibrations", "Falling"], c: 2 }, { q: "Gravity pulls things...", a: ["Up", "Down/Center", "Side", "Away"], c: 1 } ],
-                    "2": [ { q: "Non-living thing?", a: ["Tree", "Cat", "Rock", "Bird"], c: 2 }, { q: "Plant part absorbs water?", a: ["Leaves", "Flowers", "Roots", "Stem"], c: 2 }, { q: "Human basic need?", a: ["TV", "Air", "Toys", "Computer"], c: 1 }, { q: "Sense for smell?", a: ["Eyes", "Ears", "Nose", "Tongue"], c: 2 }, { q: "Eats only plants?", a: ["Carnivore", "Herbivore", "Omnivore", "Decomposer"], c: 1 }, { q: "Length unit?", a: ["Gram", "Liter", "Meter", "Second"], c: 2 }, { q: "Water boils at...", a: ["0", "50", "100", "200"], c: 2 }, { q: "Magnets attract...", a: ["Plastic", "Iron", "Wood", "Glass"], c: 1 }, { q: "Opposite poles...", a: ["Repel", "Attract", "Explode", "Melt"], c: 1 }, { q: "Shadow: Light is...", a: ["Reflected", "Blocked", "Absorbed", "Refracted"], c: 1 } ],
-                    "3": [ { q: "Planets in Solar System?", a: ["7", "8", "9", "10"], c: 1 }, { q: "Smallest planet?", a: ["Mars", "Mercury", "Venus", "Earth"], c: 1 }, { q: "Natural light source?", a: ["Torch", "Bulb", "Sun", "Candle"], c: 2 }, { q: "Exhaled gas?", a: ["Oxygen", "Nitrogen", "CO2", "Hydrogen"], c: 2 }, { q: "Hardest natural material?", a: ["Gold", "Iron", "Diamond", "Rock"], c: 2 }, { q: "Egg-laying mammal?", a: ["Whale", "Platypus", "Kangaroo", "Bat"], c: 1 }, { q: "Vertebrates have a...", a: ["Backbone", "Shell", "Wings", "Tail"], c: 0 }, { q: "Fungi reproduce by...", a: ["Seeds", "Spores", "Flowers", "Roots"], c: 1 }, { q: "Matter states?", a: ["1", "2", "3", "4"], c: 2 }, { q: "Liquid to gas?", a: ["Freezing", "Melting", "Evaporation", "Condensation"], c: 2 } ]
+                    "1": [
+                        { q: "What is the main organ responsible for breathing in humans?", a: ["Heart", "Lungs", "Stomach", "Brain"], c: 1 },
+                        { q: "Which animal is able to breathe through both its skin and its lungs?", a: ["Fish", "Bird", "Frog", "Snake"], c: 2 },
+                        { q: "What do we call the process where green plants make their own food?", a: ["Breathing", "Sweating", "Photosynthesis", "Melting"], c: 2 },
+                        { q: "What happens when light hits a smooth, shiny surface like a mirror?", a: ["Refraction", "Reflection", "Shadow", "Rainbow"], c: 1 },
+                        { q: "Energy generated from flowing water is known as...", a: ["Solar", "Wind", "Hydro", "Nuclear"], c: 2 },
+                        { q: "The skull is a part of the human skeleton that protects the...", a: ["Heart", "Brain", "Lungs", "Stomach"], c: 1 },
+                        { q: "Objects that allow only some light to pass through them are called...", a: ["Transparent", "Opaque", "Translucent", "Mirror"], c: 2 },
+                        { q: "What is the primary source of energy for the entire Earth?", a: ["The Moon", "The Sun", "Wind", "Batteries"], c: 1 },
+                        { q: "Sound is produced when an object does which of the following?", a: ["Moves slowly", "Heats up", "Vibrates", "Falls down"], c: 2 },
+                        { q: "Gravity is a force that pulls all objects on Earth towards the...", a: ["Sky", "Center/Downwards", "Side", "Clouds"], c: 1 }
+                    ],
+                    "2": [
+                        { q: "Which of the following is an example of a non-living thing?", a: ["A tree", "A cat", "A rock", "A bird"], c: 2 },
+                        { q: "Which part of a plant is responsible for absorbing water from the soil?", a: ["Leaves", "Flowers", "Roots", "Stem"], c: 2 },
+                        { q: "Which of these is considered a basic need for human survival?", a: ["Television", "Air", "Toys", "Computer"], c: 1 },
+                        { q: "Which sense organ is used to detect the smell of a flower?", a: ["Eyes", "Ears", "Nose", "Tongue"], c: 2 },
+                        { q: "What do we call animals that eat only plants?", a: ["Carnivores", "Herbivores", "Omnivores", "Decomposers"], c: 1 },
+                        { q: "Which of the following is a standard unit for measuring length?", a: ["Gram", "Liter", "Meter", "Second"], c: 2 },
+                        { q: "At what temperature does pure water typically boil?", a: ["0°C", "50°C", "100°C", "200°C"], c: 2 },
+                        { q: "Which material is most likely to be attracted to a magnet?", a: ["Plastic", "Iron", "Wood", "Glass"], c: 1 },
+                        { q: "What happens when two opposite poles of a magnet are brought together?", a: ["They repel", "They attract", "They melt", "Nothing happens"], c: 1 },
+                        { q: "A shadow is formed when light is ____ by an opaque object.", a: ["Reflected", "Blocked", "Absorbed", "Refracted"], c: 1 }
+                    ],
+                    "3": [
+                        { q: "How many planets are currently recognized in our Solar System?", a: ["7", "8", "9", "10"], c: 1 },
+                        { q: "Which planet is the smallest in our Solar System?", a: ["Mars", "Mercury", "Venus", "Earth"], c: 1 },
+                        { q: "Which of these is a natural source of light?", a: ["Flashlight", "Electric bulb", "The Sun", "Candle"], c: 2 },
+                        { q: "Which gas do humans primarily exhale during breathing?", a: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], c: 2 },
+                        { q: "What is considered the hardest natural substance on Earth?", a: ["Gold", "Iron", "Diamond", "Rock"], c: 2 },
+                        { q: "Which of the following is a mammal that lays eggs?", a: ["Whale", "Platypus", "Kangaroo", "Bat"], c: 1 },
+                        { q: "All vertebrate animals possess a...", a: ["Backbone", "Shell", "Set of wings", "Tail"], c: 0 },
+                        { q: "How do fungi like mushrooms typically reproduce?", a: ["Seeds", "Spores", "Flowers", "Roots"], c: 1 },
+                        { q: "Matter on Earth commonly exists in how many states?", a: ["One", "Two", "Three", "Four"], c: 2 },
+                        { q: "What is the process called when a liquid changes into a gas?", a: ["Freezing", "Melting", "Evaporation", "Condensation"], c: 2 }
+                    ]
                 },
                 "5": {
-                    "1": [ { q: "Oxygen carried by...", a: ["Plasma", "White cells", "Red cells", "Platelets"], c: 2 }, { q: "Organ pumps blood?", a: ["Lungs", "Brain", "Heart", "Kidney"], c: 2 }, { q: "Green plants are...", a: ["Consumers", "Producers", "Decomposers", "Predators"], c: 1 }, { q: "Ice state?", a: ["Liquid", "Gas", "Solid", "Plasma"], c: 2 }, { q: "Burning needs gas?", a: ["Nitrogen", "Oxygen", "CO2", "Helium"], c: 1 }, { q: "Electricity flows in?", a: ["Insulator", "Conductor", "Plastic", "Wood"], c: 1 }, { q: "Freezing point?", a: ["100", "50", "0", "-10"], c: 2 }, { q: "Star pattern?", a: ["Planet", "Constellation", "Galaxy", "Orbit"], c: 1 }, { q: "Water in plant stem?", a: ["Xylem", "Flowers", "Roots", "Stomata"], c: 0 }, { q: "Water Cycle energy?", a: ["Ocean", "Moon", "Sun", "Wind"], c: 2 } ],
-                    "2": [ { q: "Lung disease?", a: ["Asthma", "Diabetes", "Fever", "Anemia"], c: 0 }, { q: "Animal protection?", a: ["Hunting", "Conservation", "Pollution", "Deforestation"], c: 1 }, { q: "Renewable source?", a: ["Coal", "Oil", "Wind", "Gas"], c: 2 }, { q: "Shadows possible because?", a: ["Light travels straight", "Reflects", "Refracts", "Colored"], c: 0 }, { q: "Acid tastes...", a: ["Sweet", "Salty", "Bitter", "Sour"], c: 3 }, { q: "Earth rotates on its...", a: ["Orbit", "Axis", "Equator", "Pole"], c: 1 }, { q: "Time for Sun orbit?", a: ["1 day", "1 month", "1 year", "10 years"], c: 2 }, { q: "Measures force?", a: ["Ruler", "Thermometer", "Spring balance", "Beaker"], c: 2 }, { q: "Friction creates...", a: ["Cold", "Heat", "Light", "Sound"], c: 1 }, { q: "Flagpole example?", a: ["Ramp", "Pulley", "Knife", "Hammer"], c: 1 } ],
-                    "3": [ { q: "Invertebrate?", a: ["Dog", "Fish", "Earthworm", "Bird"], c: 2 }, { q: "Detects light in eye?", a: ["Pupil", "Retina", "Lens", "Iris"], c: 1 }, { q: "Water loss from leaves?", a: ["Photosynthesis", "Transpiration", "Respiration", "Absorption"], c: 1 }, { q: "Rusting needs water &?", a: ["Nitrogen", "Oxygen", "CO2", "Argon"], c: 1 }, { q: "Stop rust by?", a: ["Washing", "Painting", "Heating", "Breaking"], c: 1 }, { q: "Invisible Moon phase?", a: ["Full", "New", "Crescent", "Gibbous"], c: 1 }, { q: "Speed = Distance ÷ ?", a: ["Time", "Weight", "Height", "Force"], c: 0 }, { q: "Food energy type?", a: ["Kinetic", "Chemical", "Potential", "Thermal"], c: 1 }, { q: "Rings planet?", a: ["Mars", "Venus", "Saturn", "Jupiter"], c: 2 }, { q: "Gas clouding limewater?", a: ["Oxygen", "Nitrogen", "CO2", "Hydrogen"], c: 2 } ]
+                    "1": [
+                        { q: "Which component of human blood is responsible for carrying oxygen?", a: ["Plasma", "White blood cells", "Red blood cells", "Platelets"], c: 2 },
+                        { q: "Which organ acts as a pump to circulate blood throughout the body?", a: ["Lungs", "Brain", "Heart", "Kidney"], c: 2 },
+                        { q: "In a food chain, green plants are usually classified as...", a: ["Consumers", "Producers", "Decomposers", "Predators"], c: 1 },
+                        { q: "What is the state of matter for a block of ice?", a: ["Liquid", "Gas", "Solid", "Plasma"], c: 2 },
+                        { q: "Which gas is required for a fire to keep burning?", a: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Helium"], c: 1 },
+                        { q: "A material that allows electricity to flow through it easily is a/an...", a: ["Insulator", "Conductor", "Plastic", "Wood"], c: 1 },
+                        { q: "What is the freezing point of pure water in degrees Celsius?", a: ["100°C", "50°C", "0°C", "-10°C"], c: 2 },
+                        { q: "What do we call a specific pattern of stars visible in the night sky?", a: ["Planet", "Constellation", "Galaxy", "Orbit"], c: 1 },
+                        { q: "Which part of a plant transports water from the roots to the leaves?", a: ["Xylem (Stem)", "Flowers", "Roots", "Stomata"], c: 0 },
+                        { q: "What is the main source of energy that drives the Water Cycle?", a: ["The Ocean", "The Moon", "The Sun", "The Wind"], c: 2 }
+                    ],
+                    "2": [
+                        { q: "Which of the following is a common disease affecting the lungs?", a: ["Asthma", "Diabetes", "Fever", "Anemia"], c: 0 },
+                        { q: "The act of protecting animals from becoming extinct is called...", a: ["Hunting", "Conservation", "Pollution", "Deforestation"], c: 1 },
+                        { q: "Which of these is a renewable source of energy?", a: ["Coal", "Petroleum", "Wind", "Natural Gas"], c: 2 },
+                        { q: "Shadows are possible because light possesses what property?", a: ["It travels in straight lines", "It reflects off mirrors", "It refracts in water", "It has many colors"], c: 0 },
+                        { q: "Acidic substances generally have what kind of taste?", a: ["Sweet", "Salty", "Bitter", "Sour"], c: 3 },
+                        { q: "The Earth spins on its own imaginary line called the...", a: ["Orbit", "Axis", "Equator", "Pole"], c: 1 },
+                        { q: "How long does it take for the Earth to complete one orbit around the Sun?", a: ["1 day", "1 month", "1 year", "10 years"], c: 2 },
+                        { q: "Which scientific tool is used to measure force?", a: ["Ruler", "Thermometer", "Spring balance", "Beaker"], c: 2 },
+                        { q: "Friction is a force that typically produces which of the following?", a: ["Cold", "Heat", "Light", "Sound"], c: 1 },
+                        { q: "A flagpole uses which simple machine to raise the flag?", a: ["Inclined plane", "Pulley", "Wedge", "Lever"], c: 1 }
+                    ],
+                    "3": [
+                        { q: "Which of the following animals is an invertebrate?", a: ["Dog", "Fish", "Earthworm", "Bird"], c: 2 },
+                        { q: "Which part of the human eye is responsible for detecting light?", a: ["Pupil", "Retina", "Lens", "Iris"], c: 1 },
+                        { q: "What is the process of losing water through the leaves of a plant?", a: ["Photosynthesis", "Transpiration", "Respiration", "Absorption"], c: 1 },
+                        { q: "The process of rusting requires both water and which gas?", a: ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"], c: 1 },
+                        { q: "We can prevent metal from rusting by doing which of the following?", a: ["Washing it", "Painting it", "Heating it", "Breaking it"], c: 1 },
+                        { q: "During which phase is the Moon completely invisible from Earth?", a: ["Full Moon", "New Moon", "Crescent Moon", "Gibbous Moon"], c: 1 },
+                        { q: "To calculate Speed, you must divide Distance by...", a: ["Time", "Weight", "Height", "Force"], c: 0 },
+                        { q: "The energy stored in food is a form of ____ energy.", a: ["Kinetic", "Chemical", "Potential", "Thermal"], c: 1 },
+                        { q: "Which planet is famous for its large, visible rings?", a: ["Mars", "Venus", "Saturn", "Jupiter"], c: 2 },
+                        { q: "Which gas will turn limewater cloudy when bubbled through it?", a: ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"], c: 2 }
+                    ]
                 },
                 "6": {
-                    "1": [ { q: "Bread rising microbe?", a: ["Bacteria", "Virus", "Yeast", "Algae"], c: 2 }, { q: "Force opposing motion?", a: ["Gravity", "Friction", "Pressure", "Magnetism"], c: 1 }, { q: "Fresh fish long time?", a: ["Boiling", "Freezing", "Wrapping", "Washing"], c: 1 }, { q: "Sea level pressure?", a: ["Low", "Highest", "Medium", "Zero"], c: 1 }, { q: "Lever example?", a: ["Screwdriver", "Scissors", "Ramp", "Screw"], c: 1 }, { q: "TB cause?", a: ["Fungi", "Bacteria", "Virus", "Protozoa"], c: 1 }, { q: "Moon between Sun/Earth?", a: ["Lunar", "Solar Eclipse", "Full", "Tsunami"], c: 1 }, { q: "Different species interact?", a: ["Interspecific", "Intraspecific", "Competition", "Symbiosis"], c: 0 }, { q: "Grooved wheel?", a: ["Wedge", "Pulley", "Inclined Plane", "Lever"], c: 1 }, { q: "Variety of life?", a: ["Weather", "Biodiversity", "Pollution", "Soil"], c: 1 } ],
-                    "2": [ { q: "Photosynthesis waste gas?", a: ["CO2", "Oxygen", "Nitrogen", "Hydrogen"], c: 1 }, { q: "Bending of light?", a: ["Reflection", "Refraction", "Blocking", "Absorbing"], c: 1 }, { q: "Non-renewable?", a: ["Solar", "Natural Gas", "Wind", "Biomass"], c: 1 }, { q: "Lever pivot?", a: ["Load", "Effort", "Fulcrum", "Base"], c: 2 }, { q: "Preserve: remove air?", a: ["Canning", "Vacuum packing", "Drying", "Pickling"], c: 1 }, { q: "Bee on flower is?", a: ["Mutualism", "Parasitism", "Commensalism", "Competition"], c: 0 }, { q: "Breaks down naturally?", a: ["Plastic", "Glass", "Biodegradable", "Toxic"], c: 2 }, { q: "Global warming effect?", a: ["More ice", "Sea levels rise", "Colder", "Clean air"], c: 1 }, { q: "Quake device?", a: ["Barometer", "Seismograph", "Anemometer", "Hygrometer"], c: 1 }, { q: "Galaxies made of?", a: ["Planets", "Stars", "Moons", "Comets"], c: 1 } ],
-                    "3": [ { q: "High heat preserve?", a: ["Pasteurization", "Salting", "Waxing", "Cooling"], c: 0 }, { q: "One benefits, one harmed?", a: ["Mutualism", "Commensalism", "Parasitism", "Competition"], c: 2 }, { q: "Complex machine parts?", a: ["Electric", "Simple machines", "Computers", "Plastic"], c: 1 }, { q: "Stability factor?", a: ["Weight", "Base area", "Color", "Length"], c: 1 }, { q: "Gas to liquid?", a: ["Melting", "Boiling", "Condensation", "Freezing"], c: 2 }, { q: "Orbiting force?", a: ["Wind", "Gravity", "Light", "Magnetism"], c: 1 }, { q: "Moon eclipse?", a: ["Solar", "Lunar", "Stellar", "Planetary"], c: 1 }, { q: "Echolocation animal?", a: ["Eagle", "Bat", "Snake", "Cat"], c: 1 }, { q: "Calculator energy?", a: ["Food", "Solar cell", "Wind", "Steam"], c: 1 }, { q: "Moon orbit days?", a: ["1", "7", "27.3", "365"], c: 2 } ]
+                    "1": [
+                        { q: "Which microorganism is commonly used by bakers to make bread rise?", a: ["Bacteria", "Virus", "Yeast", "Algae"], c: 2 },
+                        { q: "What do we call the force that opposes the motion of one surface over another?", a: ["Gravity", "Friction", "Pressure", "Magnetism"], c: 1 },
+                        { q: "Which method is most effective for keeping fish fresh over a long period?", a: ["Boiling", "Freezing", "Wrapping in paper", "Washing"], c: 1 },
+                        { q: "Air pressure is generally highest at which of the following locations?", a: ["The top of a mountain", "Inside an airplane", "At sea level", "On the Moon"], c: 2 },
+                        { q: "Which of the following is an example of a lever?", a: ["Screwdriver", "Scissors", "Ramp", "Screw"], c: 1 },
+                        { q: "Tuberculosis (TB) is a disease primarily caused by which microorganism?", a: ["Fungi", "Bacteria", "Virus", "Protozoa"], c: 1 },
+                        { q: "What occurs when the Moon passes directly between the Sun and the Earth?", a: ["Lunar Eclipse", "Solar Eclipse", "Full Moon", "Tsunami"], c: 1 },
+                        { q: "What is the term for interactions between individuals of different species?", a: ["Interspecific", "Intraspecific", "Competition", "Symbiosis"], c: 0 },
+                        { q: "A simple machine consisting of a grooved wheel and a rope is a...", a: ["Wedge", "Pulley", "Inclined Plane", "Lever"], c: 1 },
+                        { q: "What does the term 'biodiversity' refer to?", a: ["The weather", "The variety of life on Earth", "Water pollution", "Soil quality"], c: 1 }
+                    ],
+                    "2": [
+                        { q: "Which gas is released as a waste product during photosynthesis?", a: ["Carbon Dioxide", "Oxygen", "Nitrogen", "Hydrogen"], c: 1 },
+                        { q: "The bending of light as it passes from one medium to another is called...", a: ["Reflection", "Refraction", "Blocking", "Absorbing"], c: 1 },
+                        { q: "Which of these is considered a non-renewable source of energy?", a: ["Solar", "Natural Gas", "Wind", "Biomass"], c: 1 },
+                        { q: "In a lever system, the fixed point around which the bar rotates is the...", a: ["Load", "Effort", "Fulcrum", "Base"], c: 2 },
+                        { q: "Which food preservation method involves removing all air from the packaging?", a: ["Canning", "Vacuum packing", "Drying", "Pickling"], c: 1 },
+                        { q: "A bee collecting nectar from a flower is an example of which interaction?", a: ["Mutualism", "Parasitism", "Commensalism", "Competition"], c: 0 },
+                        { q: "Waste that can be broken down naturally by bacteria is called...", a: ["Plastic", "Glass", "Biodegradable", "Toxic"], c: 2 },
+                        { q: "What is a major consequence of global warming?", a: ["More ice forming", "Rising sea levels", "Colder summers", "Cleaner air"], c: 1 },
+                        { q: "Which device is used by scientists to detect and measure earthquakes?", a: ["Barometer", "Seismograph", "Anemometer", "Hygrometer"], c: 1 },
+                        { q: "Galaxies are vast systems containing billions of...", a: ["Planets", "Stars", "Moons", "Comets"], c: 1 }
+                    ],
+                    "3": [
+                        { q: "What is the process of using high heat to kill bacteria in milk called?", a: ["Pasteurization", "Salting", "Waxing", "Cooling"], c: 0 },
+                        { q: "What do we call an interaction where one organism benefits while the other is harmed?", a: ["Mutualism", "Commensalism", "Parasitism", "Competition"], c: 2 },
+                        { q: "A complex machine is essentially a combination of two or more...", a: ["Electric circuits", "Simple machines", "Computers", "Plastic parts"], c: 1 },
+                        { q: "The stability of an object is determined by its height and its...", a: ["Weight", "Base area", "Color", "Length"], c: 1 },
+                        { q: "What is the process called when a gas turns back into a liquid?", a: ["Melting", "Boiling", "Condensation", "Freezing"], c: 2 },
+                        { q: "What force keeps the planets in our solar system in their orbits?", a: ["Wind", "Gravity", "Light", "Magnetism"], c: 1 },
+                        { q: "An eclipse that occurs when the Earth is between the Sun and the Moon is a...", a: ["Solar eclipse", "Lunar eclipse", "Stellar eclipse", "Planetary eclipse"], c: 1 },
+                        { q: "Which of these animals uses echolocation to navigate and find food?", a: ["Eagle", "Bat", "Snake", "Cat"], c: 1 },
+                        { q: "What is the primary source of energy for a solar-powered calculator?", a: ["Food", "The Sun", "Wind", "Steam"], c: 1 },
+                        { q: "The Moon takes approximately how many days to complete one orbit around the Earth?", a: ["1 day", "7 days", "27.3 days", "365 days"], c: 2 }
+                    ]
                 }
             },
             "eng": {
                 "4": {
-                    "1": [ { q: "Plural: 'child'?", a: ["Childs", "Children", "Childrens", "Childes"], c: 1 }, { q: "Which is a verb?", a: ["Beautiful", "Quickly", "Run", "Happiness"], c: 2 }, { q: "Sitting ____ table.", a: ["on", "in", "between", "under"], c: 0 }, { q: "Spelling?", a: ["Elephant", "Elefant", "Elepant", "Aliphant"], c: 0 }, { q: "I have ____ apple.", a: ["a", "an", "the", "some"], c: 1 }, { q: "Opposite: 'Fast'?", a: ["Quick", "Slow", "Hard", "Small"], c: 1 }, { q: "Proper noun?", a: ["City", "Boy", "Malaysia", "School"], c: 2 }, { q: "They ____ playing.", a: ["is", "am", "are", "was"], c: 2 }, { q: "____ is birthday?", a: ["Who", "What", "Where", "When"], c: 3 }, { q: "Father ____ to work.", a: ["go", "goes", "going", "gone"], c: 1 } ],
-                    "2": [ { q: "Plural: 'box'?", a: ["Boxs", "Boxies", "Boxes", "Boxen"], c: 2 }, { q: "Adjective?", a: ["Slowly", "Run", "Green", "Table"], c: 2 }, { q: "She ____ book.", a: ["has", "have", "is", "am"], c: 0 }, { q: "Opposite: 'Happy'?", a: ["Glad", "Angry", "Sad", "Excited"], c: 2 }, { q: "Walked yesterday?", a: ["walk", "walks", "walked", "walking"], c: 2 }, { q: "Taller ____ you.", a: ["then", "than", "that", "to"], c: 1 }, { q: "Group of birds?", a: ["Flock", "Herd", "Pack", "School"], c: 0 }, { q: "Sun ____ in east.", a: ["rise", "rises", "rising", "rose"], c: 1 }, { q: "____ crying?", a: ["What", "When", "Why", "Who"], c: 2 }, { q: "Help ____?", a: ["I", "me", "my", "mine"], c: 1 } ],
-                    "3": [ { q: "Past tense: 'eat'?", a: ["eated", "eats", "ate", "eating"], c: 2 }, { q: "Adverb?", a: ["Quiet", "Quietly", "Silence", "Loud"], c: 1 }, { q: "Sick people doctor?", a: ["Teacher", "Doctor", "Pilot", "Farmer"], c: 1 }, { q: "Spelling?", a: ["Recieve", "Receive", "Recive", "Receve"], c: 1 }, { q: "____ engineer.", a: ["a", "an", "the", "no article"], c: 1 }, { q: "Opposite: 'Hot'?", a: ["Warm", "Burning", "Cold", "Dry"], c: 2 }, { q: "____ building?", a: ["Which", "Who", "Where", "When"], c: 0 }, { q: "Flowers ____ pretty.", a: ["is", "are", "am", "was"], c: 1 }, { q: "Sit ____ chair.", a: ["in", "on", "at", "under"], c: 1 }, { q: "He ____ like it.", a: ["don't", "doesn't", "isn't", "wasn't"], c: 1 } ]
+                    "1": [ { q: "What is the plural form of 'child'?", a: ["Childs", "Children", "Childrens", "Childes"], c: 1 }, { q: "Which word is a verb?", a: ["Beautiful", "Quickly", "Run", "Happiness"], c: 2 }, { q: "The cat is sitting ____ the table.", a: ["on", "in", "between", "under"], c: 0 }, { q: "Choose the correct spelling:", a: ["Elephant", "Elefant", "Elepant", "Aliphant"], c: 0 }, { q: "I have ____ apple in my bag.", a: ["a", "an", "the", "some"], c: 1 }, { q: "What is the antonym (opposite) of 'Fast'?", a: ["Quick", "Slow", "Hard", "Small"], c: 1 }, { q: "Which of these is a proper noun?", a: ["City", "Boy", "Malaysia", "School"], c: 2 }, { q: "They ____ playing football now.", a: ["is", "am", "are", "was"], c: 2 }, { q: "____ is your birthday?", a: ["Who", "What", "Where", "When"], c: 3 }, { q: "My father ____ to work every day.", a: ["go", "goes", "going", "gone"], c: 1 } ],
+                    "2": [ { q: "What is the plural of 'box'?", a: ["Boxs", "Boxies", "Boxes", "Boxen"], c: 2 }, { q: "Which of these is an adjective?", a: ["Slowly", "Run", "Green", "Table"], c: 2 }, { q: "She ____ a new book yesterday.", a: ["has", "have", "is", "am"], c: 0 }, { q: "What is the opposite of 'Happy'?", a: ["Glad", "Angry", "Sad", "Excited"], c: 2 }, { q: "We ____ to school this morning.", a: ["walk", "walks", "walked", "walking"], c: 2 }, { q: "I am taller ____ you.", a: ["then", "than", "that", "to"], c: 1 }, { q: "What is the collective noun for 'birds'?", a: ["Flock", "Herd", "Pack", "School"], c: 0 }, { q: "The sun ____ in the east.", a: ["rise", "rises", "rising", "rose"], c: 1 }, { q: "____ are you crying?", a: ["What", "When", "Why", "Who"], c: 2 }, { q: "Can you help ____?", a: ["I", "me", "my", "mine"], c: 1 } ],
+                    "3": [ { q: "What is the past tense of 'eat'?", a: ["eated", "eats", "ate", "eating"], c: 2 }, { q: "Which of these is an adverb?", a: ["Quiet", "Quietly", "Silence", "Loud"], c: 1 }, { q: "A person who treats sick people is a ____.", a: ["Teacher", "Doctor", "Pilot", "Farmer"], c: 1 }, { q: "Choose the correct spelling:", a: ["Recieve", "Receive", "Recive", "Receve"], c: 1 }, { q: "My sister is ____ engineer.", a: ["a", "an", "the", "no article"], c: 1 }, { q: "What is the opposite of 'Hot'?", a: ["Warm", "Burning", "Cold", "Dry"], c: 2 }, { q: "____ is the tallest building?", a: ["Which", "Who", "Where", "When"], c: 0 }, { q: "The flowers ____ very pretty.", a: ["is", "are", "am", "was"], c: 1 }, { q: "Please sit ____ the chair.", a: ["in", "on", "at", "under"], c: 1 }, { q: "He ____ like ice cream.", a: ["don't", "doesn't", "isn't", "wasn't"], c: 1 } ]
                 },
                 "5": {
-                    "1": [ { q: "He ____ football.", a: ["play", "plays", "playing", "are play"], c: 1 }, { q: "Synonym: 'Large'?", a: ["Tiny", "Huge", "Thin", "Short"], c: 1 }, { q: "Went last night?", a: ["go", "goes", "went", "gone"], c: 2 }, { q: "Group of lions?", a: ["Flock", "Pride", "Herd", "School"], c: 1 }, { q: "Sarah's book is ____.", a: ["his", "hers", "her", "their"], c: 2 }, { q: "Tallest girl?", a: ["tall", "taller", "tallest", "most tall"], c: 2 }, { q: "Listen ____.", a: ["careful", "carefully", "carefulness", "caring"], c: 1 }, { q: "Hungry ____ eat.", a: ["but", "or", "so", "because"], c: 2 }, { q: "Adjective?", a: ["Quickly", "Brave", "Run", "He"], c: 1 }, { q: "Neither ____ going.", a: ["is", "are", "am", "was"], c: 1 } ],
-                    "2": [ { q: "Correct?", a: ["don't like", "doesn't like", "not like", "isn't like"], c: 1 }, { q: "Opposite: 'Brave'?", a: ["Strong", "Cowardly", "Fearless", "Kind"], c: 1 }, { q: "Past: 'buy'?", a: ["buyed", "bought", "buys", "buying"], c: 1 }, { q: "Group of 'fish'?", a: ["Swarm", "School", "Pride", "Flock"], c: 1 }, { q: "Car is ____.", a: ["my", "mine", "me", "I"], c: 1 }, { q: "Pretty girl?", a: ["pretty", "prettier", "prettiest", "more"], c: 1 }, { q: "Walk ____.", a: ["slow", "slowly", "slowness", "slower"], c: 1 }, { q: "Study ____ fail.", a: ["and", "but", "or", "so"], c: 2 }, { q: "Conjunction?", a: ["But", "Fast", "Jump", "Apple"], c: 0 }, { q: "News ____ surprising.", a: ["is", "are", "am", "were"], c: 0 } ],
-                    "3": [ { q: "Synonym: 'Beautiful'?", a: ["Ugly", "Pretty", "Small", "Dirty"], c: 1 }, { q: "They ____ finished.", a: ["has", "have", "is", "are"], c: 1 }, { q: "Where ____ yesterday?", a: ["is", "am", "was", "were"], c: 3 }, { q: "Spelling?", a: ["Tommorow", "Tomorrow", "Tomorow", "Toomorrow"], c: 1 }, { q: "A ____ of keys.", a: ["pack", "bunch", "herd", "set"], c: 1 }, { q: "Abstract noun?", a: ["Table", "Honesty", "Car", "Tree"], c: 1 }, { q: "____ since morning.", a: ["is", "has been", "was", "were"], c: 1 }, { q: "Boy ____ found wallet.", a: ["who", "which", "whose", "whom"], c: 0 }, { q: "Look ____ window.", a: ["at", "through", "on", "in"], c: 1 }, { q: "Haven't got ____ money.", a: ["some", "any", "no", "many"], c: 1 } ]
+                    "1": [ { q: "He ____ football every evening.", a: ["play", "plays", "playing", "are play"], c: 1 }, { q: "Synonym for 'Large'?", a: ["Tiny", "Huge", "Thin", "Short"], c: 1 }, { q: "We ____ to the cinema last night.", a: ["go", "goes", "went", "gone"], c: 2 }, { q: "Collective noun for lions?", a: ["Flock", "Pride", "Herd", "School"], c: 1 }, { q: "This book is ____.", a: ["his", "hers", "her", "their"], c: 2 }, { q: "She is the ____ girl in class.", a: ["tall", "taller", "tallest", "most tall"], c: 2 }, { q: "Listen ____ to the teacher.", a: ["careful", "carefully", "carefulness", "caring"], c: 1 }, { q: "I am hungry ____ I will eat.", a: ["but", "or", "so", "because"], c: 2 }, { q: "Which word is an adjective?", a: ["Quickly", "Brave", "Run", "He"], c: 1 }, { q: "Neither Sarah nor her brothers ____ going.", a: ["is", "are", "am", "was"], c: 1 } ],
+                    "2": [ { q: "Which sentence is correct?", a: ["She don't like it.", "She doesn't like it.", "She not like it.", "She isn't like it."], c: 1 }, { q: "Opposite of 'Brave'?", a: ["Strong", "Cowardly", "Fearless", "Kind"], c: 1 }, { q: "Past tense of 'buy'?", a: ["buyed", "bought", "buys", "buying"], c: 1 }, { q: "Group of 'fish'?", a: ["Swarm", "School", "Pride", "Flock"], c: 1 }, { q: "That car is ____.", a: ["my", "mine", "me", "I"], c: 1 }, { q: "She is ____ than her sister.", a: ["pretty", "prettier", "prettiest", "more"], c: 1 }, { q: "Walk ____ across the road.", a: ["slow", "slowly", "slowness", "slower"], c: 1 }, { q: "Study hard ____ you will fail.", a: ["and", "but", "or", "so"], c: 2 }, { q: "Which is a conjunction?", a: ["But", "Fast", "Jump", "Apple"], c: 0 }, { q: "The news ____ very surprising.", a: ["is", "are", "am", "were"], c: 0 } ],
+                    "3": [ { q: "Synonym of 'Beautiful'?", a: ["Ugly", "Pretty", "Small", "Dirty"], c: 1 }, { q: "They ____ finished their work.", a: ["has", "have", "is", "are"], c: 1 }, { q: "Where ____ you yesterday?", a: ["is", "am", "was", "were"], c: 3 }, { q: "Correct spelling:", a: ["Tommorow", "Tomorrow", "Tomorow", "Toomorrow"], c: 1 }, { q: "A ____ of keys.", a: ["pack", "bunch", "herd", "set"], c: 1 }, { q: "Which is an abstract noun?", a: ["Table", "Honesty", "Car", "Tree"], c: 1 }, { q: "It ____ raining since morning.", a: ["is", "has been", "was", "were"], c: 1 }, { q: "He is the boy ____ found my wallet.", a: ["who", "which", "whose", "whom"], c: 0 }, { q: "Look ____ the window.", a: ["at", "through", "on", "in"], c: 1 }, { q: "I haven't got ____ money.", a: ["some", "any", "no", "many"], c: 1 } ]
                 },
                 "6": {
-                    "1": [ { q: "Idiom: 'very easy'?", a: ["Under weather", "Piece of cake", "Break a leg", "Blue moon"], c: 1 }, { q: "If I ____ you...", a: ["am", "was", "were", "be"], c: 2 }, { q: "Space traveler?", a: ["Pilot", "Scientist", "Astronaut", "Doctor"], c: 2 }, { q: "Movie was ____.", a: ["boring", "bored", "bore", "bores"], c: 0 }, { q: "Punctuation?", a: ["going.", "going?", "going?", "going!"], c: 2 }, { q: "Person ____ won.", a: ["which", "who", "whom", "whose"], c: 1 }, { q: "Here ____ five years.", a: ["since", "for", "during", "from"], c: 1 }, { q: "____ honest woman.", a: ["a", "an", "the", "some"], c: 1 }, { q: "Past participle: 'write'?", a: ["Wrote", "Writing", "Writes", "Written"], c: 3 }, { q: "Don't like coffee, ____ you?", a: ["don't", "do", "does", "did"], c: 1 } ],
-                    "2": [ { q: "Passive: 'Eats apple':", a: ["was", "is eaten", "ate", "He is eaten"], c: 1 }, { q: "Synonym: 'Generous'?", a: ["Kind", "Mean", "Selfish", "Angry"], c: 0 }, { q: "Gone if I ____ time.", a: ["have", "has", "had", "having"], c: 2 }, { q: "Spelling?", a: ["Necessary", "Necery", "Nesessary", "Necerary"], c: 0 }, { q: "Idiom: 'Break a leg':", a: ["Injured", "Good luck", "Dance", "Run"], c: 1 }, { q: "Compound word?", a: ["Table", "Butterfly", "Running", "Small"], c: 1 }, { q: "Caught ____ police.", a: ["with", "by", "from", "for"], c: 1 }, { q: "Best player?", a: ["good", "better", "best", "goodest"], c: 2 }, { q: "Tired, ____ he kept working.", a: ["but", "so", "yet", "NONE"], c: 3 }, { q: "Prefix for 'happy'?", a: ["In", "Un", "Dis", "Im"], c: 1 } ],
-                    "3": [ { q: "Reported: 'I am tired'", a: ["am", "was", "I was", "is"], c: 1 }, { q: "Synonym: 'Fragile'?", a: ["Strong", "Brave", "Delicate", "Hard"], c: 2 }, { q: "Neither boy ____ here.", a: ["is", "are", "am", "were"], c: 0 }, { q: "Spelling?", a: ["Accommodation", "Acomodation", "Accomodation", "Acommodation"], c: 0 }, { q: "Author?", a: ["Artist", "Author", "Actor", "Athlete"], c: 1 }, { q: "Idiom: 'Blue moon'?", a: ["Often", "Rarely", "Night", "Never"], c: 1 }, { q: "Afraid ____ spiders.", a: ["of", "with", "at", "by"], c: 0 }, { q: "See you ____ Monday.", a: ["in", "on", "at", "during"], c: 1 }, { q: "Interjection?", a: ["Wow!", "And", "The", "Quickly"], c: 0 }, { q: "Past: 'teach'?", a: ["teached", "taught", "teacher", "teaching"], c: 1 } ]
+                    "1": [ { q: "Idiom for 'very easy'?", a: ["Under weather", "Piece of cake", "Break a leg", "Blue moon"], c: 1 }, { q: "If I ____ you, I would study.", a: ["am", "was", "were", "be"], c: 2 }, { q: "Travels to space?", a: ["Pilot", "Scientist", "Astronaut", "Doctor"], c: 2 }, { q: "Movie was so ____.", a: ["boring", "bored", "bore", "bores"], c: 0 }, { q: "Correct punctuation:", a: ["Where are you going.", "where are you going?", "Where are you going?", "Where are you going!"], c: 2 }, { q: "Person ____ won race.", a: ["which", "who", "whom", "whose"], c: 1 }, { q: "Living here ____ five years.", a: ["since", "for", "during", "from"], c: 1 }, { q: "She is ____ honest woman.", a: ["a", "an", "the", "some"], c: 1 }, { q: "Past participle of 'write'?", a: ["Wrote", "Writing", "Writes", "Written"], c: 3 }, { q: "You don't like coffee, ____ you?", a: ["don't", "do", "does", "did"], c: 1 } ],
+                    "2": [ { q: "Passive voice: 'He eats an apple':", a: ["was", "is eaten", "ate", "He is eaten"], c: 1 }, { q: "Synonym for 'Generous'?", a: ["Kind", "Mean", "Selfish", "Angry"], c: 0 }, { q: "Gone if I ____ time.", a: ["have", "has", "had", "having"], c: 2 }, { q: "Correct spelling:", a: ["Necessary", "Necery", "Nesessary", "Necerary"], c: 0 }, { q: "Idiom: 'Break a leg':", a: ["Injured", "Good luck", "Dance", "Run"], c: 1 }, { q: "Compound word?", a: ["Table", "Butterfly", "Running", "Small"], c: 1 }, { q: "Caught ____ police.", a: ["with", "by", "from", "for"], c: 1 }, { q: "He is the ____ player.", a: ["good", "better", "best", "goodest"], c: 2 }, { q: "Tired, ____ he kept working.", a: ["but", "so", "yet", "NONE"], c: 3 }, { q: "Prefix for 'happy'?", a: ["In", "Un", "Dis", "Im"], c: 1 } ],
+                    "3": [ { q: "Reported speech: 'I am tired'", a: ["am", "was", "I was", "is"], c: 1 }, { q: "Synonym for 'Fragile'?", a: ["Strong", "Brave", "Delicate", "Hard"], c: 2 }, { q: "Neither boy ____ here.", a: ["is", "are", "am", "were"], c: 0 }, { q: "Correct spelling:", a: ["Accommodation", "Acomodation", "Accomodation", "Acommodation"], c: 0 }, { q: "Writes books?", a: ["Artist", "Author", "Actor", "Athlete"], c: 1 }, { q: "Idiom: 'Blue moon'?", a: ["Often", "Rarely", "Night", "Never"], c: 1 }, { q: "Afraid ____ spiders.", a: ["of", "with", "at", "by"], c: 0 }, { q: "See you ____ Monday.", a: ["in", "on", "at", "during"], c: 1 }, { q: "Which is an interjection?", a: ["Wow!", "And", "The", "Quickly"], c: 0 }, { q: "Past tense of 'teach'?", a: ["teached", "taught", "teacher", "teaching"], c: 1 } ]
                 }
             }
         };
@@ -117,6 +316,10 @@
         let questions = questionBank[sub][lvl][setNum];
 
         function showQuestion() {
+            if (!questions || !questions[currentQ]) {
+                document.getElementById('question').innerText = "Question data error. Please return to the menu.";
+                return;
+            }
             const q = questions[currentQ];
             document.getElementById('stats').innerText = `Question ${currentQ + 1} of 10 | Score: ${score}`;
             document.getElementById('question').innerText = q.q;
@@ -155,16 +358,12 @@
             const status = document.getElementById('sync-status');
             status.innerText = "Syncing with cloud...";
 
-            // CLOUD SAVE LOGIC
             if (kidName) {
                 try {
                     const userRef = doc(db, "users", kidName);
                     const userDoc = await getDoc(userRef);
                     let currentScores = {};
-                    
-                    if (userDoc.exists()) {
-                        currentScores = userDoc.data().scores || {};
-                    }
+                    if (userDoc.exists()) currentScores = userDoc.data().scores || {};
 
                     const scoreKey = `${sub}-${lvl}-${setNum}`; 
                     const previousBest = currentScores[scoreKey] || 0;
@@ -172,13 +371,13 @@
                     if (score > previousBest) {
                         currentScores[scoreKey] = score;
                         await setDoc(userRef, { scores: currentScores }, { merge: true });
-                        status.innerText = "✅ Cloud Sync Complete! New Best Score.";
+                        status.innerText = "✅ Cloud Sync Complete!";
                     } else {
-                        status.innerText = "✅ Cloud Sync Complete! Keep practicing.";
+                        status.innerText = "✅ Cloud Sync Complete!";
                     }
                 } catch (e) {
-                    console.error("Cloud save failed: ", e);
-                    status.innerText = "❌ Sync Failed. Check internet.";
+                    console.error("Cloud error:", e);
+                    status.innerText = "❌ Sync Failed.";
                 }
             }
 
