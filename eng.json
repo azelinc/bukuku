@@ -1,0 +1,110 @@
+{
+  "4-1": [
+    { "q": "What is the plural form of the word 'child'?", "a": ["Childs", "Children", "Childrens", "Childes"], "c": 1 },
+    { "q": "Which of the following words is a verb?", "a": ["Beautiful", "Quickly", "Run", "Happiness"], "c": 2 },
+    { "q": "The cat is sleeping ____ the table because it is warm there.", "a": ["on", "in", "between", "under"], "c": 0 },
+    { "q": "Choose the word with the correct spelling:", "a": ["Elephant", "Elefant", "Elepant", "Aliphant"], "c": 0 },
+    { "q": "I would like to eat ____ apple for breakfast.", "a": ["a", "an", "the", "some"], "c": 1 },
+    { "q": "What is the opposite (antonym) of the word 'Fast'?", "a": ["Quick", "Slow", "Hard", "Small"], "c": 1 },
+    { "q": "Which of these is a proper noun?", "a": ["City", "Boy", "Malaysia", "School"], "c": 2 },
+    { "q": "They ____ playing football at the field right now.", "a": ["is", "am", "are", "was"], "c": 2 },
+    { "q": "____ is your birthday? I want to buy you a gift.", "a": ["Who", "What", "Where", "When"], "c": 3 },
+    { "q": "My father ____ to work by car every morning.", "a": ["go", "goes", "going", "gone"], "c": 1 }
+  ],
+  "4-2": [
+    { "q": "What is the plural form of the word 'box'?", "a": ["Boxs", "Boxies", "Boxes", "Boxen"], "c": 2 },
+    { "q": "Which of these words is an adjective?", "a": ["Slowly", "Run", "Green", "Table"], "c": 2 },
+    { "q": "She ____ a new book that she bought yesterday.", "a": ["has", "have", "is", "am"], "c": 0 },
+    { "q": "What is the antonym of 'Happy'?", "a": ["Glad", "Angry", "Sad", "Excited"], "c": 2 },
+    { "q": "We ____ to school together yesterday morning.", "a": ["walk", "walks", "walked", "walking"], "c": 2 },
+    { "q": "I am much taller ____ my younger brother.", "a": ["then", "than", "that", "to"], "c": 1 },
+    { "q": "What is the collective noun for a group of 'birds'?", "a": ["Flock", "Herd", "Pack", "School"], "c": 0 },
+    { "q": "The sun ____ in the east every day.", "a": ["rise", "rises", "rising", "rose"], "c": 1 },
+    { "q": "____ are you crying? Did you lose your toy?", "a": ["What", "When", "Why", "Who"], "c": 2 },
+    { "q": "Excuse me, can you please help ____ with this bag?", "a": ["I", "me", "my", "mine"], "c": 1 }
+  ],
+  "4-3": [
+    { "q": "What is the past tense of the word 'eat'?", "a": ["eated", "eats", "ate", "eating"], "c": 2 },
+    { "q": "Which of the following words is an adverb?", "a": ["Quiet", "Quietly", "Silence", "Loud"], "c": 1 },
+    { "q": "What do you call a person who treats sick people?", "a": ["Teacher", "Doctor", "Pilot", "Farmer"], "c": 1 },
+    { "q": "Choose the correct spelling for this word:", "a": ["Recieve", "Receive", "Recive", "Receve"], "c": 1 },
+    { "q": "My older sister is ____ engineer at a big company.", "a": ["a", "an", "the", "no article"], "c": 1 },
+    { "q": "What is the opposite of 'Hot'?", "a": ["Warm", "Burning", "Cold", "Dry"], "c": 2 },
+    { "q": "____ is the tallest building in our city?", "a": ["Which", "Who", "Where", "When"], "c": 0 },
+    { "q": "The flowers in the garden ____ very pretty.", "a": ["is", "are", "am", "was"], "c": 1 },
+    { "q": "Please sit ____ the chair and listen to me.", "a": ["in", "on", "at", "under"], "c": 1 },
+    { "q": "He ____ like to eat durians because of the smell.", "a": ["don't", "doesn't", "isn't", "wasn't"], "c": 1 }
+  ],
+  "5-1": [
+    { "q": "My brother ____ football with his friends every evening.", "a": ["play", "plays", "playing", "are play"], "c": 1 },
+    { "q": "What is the synonym for the word 'Large'?", "a": ["Tiny", "Huge", "Thin", "Short"], "c": 1 },
+    { "q": "We ____ to the cinema to watch a movie last night.", "a": ["go", "goes", "went", "gone"], "c": 2 },
+    { "q": "What is the collective noun for a group of lions?", "a": ["Flock", "Pride", "Herd", "School"], "c": 1 },
+    { "q": "This book belongs to Sarah. It is ____ book.", "a": ["his", "hers", "her", "their"], "c": 2 },
+    { "q": "She is the ____ girl in our entire class.", "a": ["tall", "taller", "tallest", "most tall"], "c": 2 },
+    { "q": "Please listen ____ to the instructions given by the teacher.", "a": ["careful", "carefully", "carefulness", "caring"], "c": 1 },
+    { "q": "I am very hungry ____ I will eat a large sandwich.", "a": ["but", "or", "so", "because"], "c": 2 },
+    { "q": "Which of these words is an adjective?", "a": ["Quickly", "Brave", "Run", "He"], "c": 1 },
+    { "q": "Neither Sarah nor her brothers ____ going to the party.", "a": ["is", "are", "am", "was"], "c": 1 }
+  ],
+  "5-2": [
+    { "q": "Choose the grammatically correct sentence:", "a": ["She don't like it.", "She doesn't like it.", "She not like it.", "She isn't like it."], "c": 1 },
+    { "q": "What is the antonym of 'Brave'?", "a": ["Strong", "Cowardly", "Fearless", "Kind"], "c": 1 },
+    { "q": "What is the past tense of the verb 'buy'?", "a": ["buyed", "bought", "buys", "buying"], "c": 1 },
+    { "q": "What is the collective noun for a group of 'fish'?", "a": ["Swarm", "School", "Pride", "Flock"], "c": 1 },
+    { "q": "That blue car parked outside is ____.", "a": ["my", "mine", "me", "I"], "c": 1 },
+    { "q": "My mother is much ____ than her younger sister.", "a": ["pretty", "prettier", "prettiest", "more pretty"], "c": 1 },
+    { "q": "You must walk ____ when crossing the busy road.", "a": ["slow", "slowly", "slowness", "slower"], "c": 1 },
+    { "q": "You should study hard ____ you might fail the exam.", "a": ["and", "but", "or", "so"], "c": 2 },
+    { "q": "Which of the following is a conjunction?", "a": ["But", "Fast", "Jump", "Apple"], "c": 0 },
+    { "q": "The news about the accident ____ very surprising.", "a": ["is", "are", "am", "were"], "c": 0 }
+  ],
+  "5-3": [
+    { "q": "What is the synonym of the word 'Beautiful'?", "a": ["Ugly", "Pretty", "Small", "Dirty"], "c": 1 },
+    { "q": "They ____ just finished their homework.", "a": ["has", "have", "is", "are"], "c": 1 },
+    { "q": "Where ____ you and your family yesterday afternoon?", "a": ["is", "am", "was", "were"], "c": 3 },
+    { "q": "Choose the correct spelling for this word:", "a": ["Tommorow", "Tomorrow", "Tomorow", "Toomorrow"], "c": 1 },
+    { "q": "I found a ____ of keys on the floor.", "a": ["pack", "bunch", "herd", "set"], "c": 1 },
+    { "q": "Which of these is an abstract noun?", "a": ["Table", "Honesty", "Car", "Tree"], "c": 1 },
+    { "q": "It ____ raining heavily since early this morning.", "a": ["is", "has been", "was", "were"], "c": 1 },
+    { "q": "He is the boy ____ found my lost wallet.", "a": ["who", "which", "whose", "whom"], "c": 0 },
+    { "q": "Please look ____ the window and see the rainbow.", "a": ["at", "through", "on", "in"], "c": 1 },
+    { "q": "I am sorry, but I haven't got ____ money left.", "a": ["some", "any", "no", "many"], "c": 1 }
+  ],
+  "6-1": [
+    { "q": "Choose the correct idiom that means 'very easy':", "a": ["Under the weather", "A piece of cake", "Break a leg", "Once in a blue moon"], "c": 1 },
+    { "q": "If I ____ you, I would study much harder for the finals.", "a": ["am", "was", "were", "be"], "c": 2 },
+    { "q": "Which word means 'a person who travels to space'?", "a": ["Pilot", "Scientist", "Astronaut", "Doctor"], "c": 2 },
+    { "q": "The long movie was so ____ that I fell asleep.", "a": ["boring", "bored", "bore", "bores"], "c": 0 },
+    { "q": "Choose the correctly punctuated sentence:", "a": ["where are you going.", "where are you going?", "Where are you going?", "Where are you going!"], "c": 2 },
+    { "q": "He is the person ____ won the gold medal yesterday.", "a": ["which", "who", "whom", "whose"], "c": 1 },
+    { "q": "I have been living in this town ____ five years.", "a": ["since", "for", "during", "from"], "c": 1 },
+    { "q": "She is ____ honest woman who always tells the truth.", "a": ["a", "an", "the", "some"], "c": 1 },
+    { "q": "What is the past participle of the verb 'write'?", "a": ["Wrote", "Writing", "Writes", "Written"], "c": 3 },
+    { "q": "You don't like drinking coffee, ____ you?", "a": ["don't", "do", "does", "did"], "c": 1 }
+  ],
+  "6-2": [
+    { "q": "What is the passive voice of: 'He eats an apple'?", "a": ["An apple was eaten by him.", "An apple is eaten by him.", "An apple ate by him.", "He is eaten by an apple."], "c": 1 },
+    { "q": "Which word is a synonym for 'Generous'?", "a": ["Kind", "Mean", "Selfish", "Angry"], "c": 0 },
+    { "q": "I would have gone if I ____ enough time.", "a": ["have", "has", "had", "having"], "c": 2 },
+    { "q": "Choose the word with the correct spelling:", "a": ["Necessary", "Necery", "Nesessary", "Necerary"], "c": 0 },
+    { "q": "What does the idiom 'Break a leg' mean?", "a": ["Get injured", "Good luck", "Dance well", "Run fast"], "c": 1 },
+    { "q": "Which of the following is a compound word?", "a": ["Table", "Butterfly", "Running", "Small"], "c": 1 },
+    { "q": "The thief was eventually caught ____ the police.", "a": ["with", "by", "from", "for"], "c": 1 },
+    { "q": "He is clearly the ____ player on the whole team.", "a": ["good", "better", "best", "goodest"], "c": 2 },
+    { "q": "Although he was tired, ____ he kept on working.", "a": ["but", "so", "yet", "(no word needed)"], "c": 3 },
+    { "q": "What prefix can be added to 'happy' to mean the opposite?", "a": ["In-", "Un-", "Dis-", "Im-"], "c": 1 }
+  ],
+  "6-3": [
+    { "q": "What is the reported speech for: 'I am tired,' he said.", "a": ["He said he am tired.", "He said he was tired.", "He said I was tired.", "He said he is tired."], "c": 1 },
+    { "q": "What is the synonym for the word 'Fragile'?", "a": ["Strong", "Brave", "Delicate", "Hard"], "c": 2 },
+    { "q": "Neither of the boys ____ here at the moment.", "a": ["is", "are", "am", "were"], "c": 0 },
+    { "q": "Choose the correct spelling for this word:", "a": ["Accommodation", "Acomodation", "Accomodation", "Acommodation"], "c": 0 },
+    { "q": "What do you call a person who writes books?", "a": ["Artist", "Author", "Actor", "Athlete"], "c": 1 },
+    { "q": "What does the idiom 'Once in a blue moon' mean?", "a": ["Very often", "Rarely", "Every night", "Never"], "c": 1 },
+    { "q": "She is very afraid ____ spiders and snakes.", "a": ["of", "with", "at", "by"], "c": 0 },
+    { "q": "I will see you ____ Monday afternoon.", "a": ["in", "on", "at", "during"], "c": 1 },
+    { "q": "Which of the following is an interjection?", "a": ["Wow!", "And", "The", "Quickly"], "c": 0 },
+    { "q": "What is the past tense of the verb 'teach'?", "a": ["teached", "taught", "teacher", "teaching"], "c": 1 }
+  ]
+}
