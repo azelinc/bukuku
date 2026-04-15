@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenaga Air - STEM Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .fact-card {
+            background: #eefbff;
+            border: 3px solid #4a90e2;
+            padding: 20px;
+            border-radius: 20px;
+            margin-top: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        #fact-title { 
+            color: #2e6cb5; 
+            font-size: 1.4rem; 
+            margin-bottom: 10px; 
+            font-weight: bold;
+        }
+        #main-text {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        #progress-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Progress Bar -->
+        <div style="width: 100%; background: #eee; height: 8px; border-radius: 4px; margin-bottom: 20px;">
+            <div id="prog-bar" style="width: 12%; background: #4a90e2; height: 8px; border-radius: 4px; transition: 0.5s;"></div>
+        </div>
+
+        <h1 style="color: #2e6cb5;">🌊 Kuasa Air</h1>
+        <img id="main-img" src="" alt="Tenaga Air" style="border: 4px solid #4a90e2; width: 100%; border-radius: 15px;">
+        
+        <div class="fact-card">
+            <div id="fact-title">Sila tunggu...</div>
+            <p id="main-text">Memuatkan data empangan...</p>
+        </div>
+
+        <div id="progress-text">Fakta 1 dari 8</div>
+
+        <div style="margin-top: 25px;">
+            <button id="next-btn" class="btn blue-btn" onclick="nextPage()">Fakta Seterusnya ➡️</button>
+        </div>
+
+        <hr style="margin: 25px 0; opacity: 0.1;">
+        <a href="storybook.html" class="btn red-btn">📚 Kembali ke Perpustakaan</a>
+    </div>
+
+    <script>
+        // 1. Ambil nama Profile
+        const hubData = JSON.parse(localStorage.getItem('hubData')) || { current: "Explorer" };
+        const kidName = hubData.current || "Explorer";
+
+        // 2. Data Fakta Tenaga Air (8 Fakta)
+        const facts = [
+            {
+                title: "Air Yang Bergerak",
+                text: `Hai ${kidName}! Tahukah anda bahawa air yang mengalir dalam sungai sebenarnya mempunyai tenaga yang sangat kuat? Tenaga ini dipanggil tenaga kinetik.`,
+                image: "https://images.unsplash.com/photo-1437335206187-017b839ff4a2?w=800"
+            },
+            {
+                title: "Apa Itu Empangan?",
+                text: "Untuk menangkap tenaga air, kita membina dinding gergasi yang sangat kuat di sungai. Dinding ini dipanggil EMPANGAN.",
+                image: "https://images.unsplash.com/photo-1590538237731-50798150be87?w=800"
+            },
+            {
+                title: "Menyimpan Air",
+                text: `Empangan akan menahan air sungai dan membentuk tasik besar di belakangnya. ${kidName}, tasik buatan ini dipanggil 'takungan' (reservoir).`,
+                image: "https://images.unsplash.com/photo-1518091043644-c1d445bcc9f2?w=800"
+            },
+            {
+                title: "Graviti Menolong Kita",
+                text: "Apabila pintu empangan dibuka, air akan jatuh ke bawah dengan sangat laju kerana tarikan graviti. Kelajuan ini adalah kunci rahsia kita!",
+                image: "https://images.unsplash.com/photo-1504198266287-18594d6d4296?w=800"
+            },
+            {
+                title: "Kipas Gergasi (Turbin)",
+                text: "Air yang jatuh tadi akan melanggar bilah kipas gergasi yang dipanggil 'Turbin'. Turbin ini akan berpusing dengan sangat, sangat laju!",
+                image: "https://images.unsplash.com/photo-1544331585-348cb7af9595?w=800"
+            },
+            {
+                title: "Penjana Elektrik (Generator)",
+                text: `${kidName}, turbin tadi disambungkan kepada 'Penjana'. Di dalam penjana ada magnet gergasi yang menukarkan pusingan tadi menjadi elektrik!`,
+                image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800"
+            },
+            {
+                title: "Bersih & Hijau",
+                text: "Tenaga hidroelektrik adalah tenaga bersih. Ia tidak membakar arang batu atau minyak, jadi udara kita kekal segar dan tidak berasap.",
+                image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800"
+            },
+            {
+                title: "Tugas Selesai!",
+                text: "Selepas memusingkan turbin, air tadi akan mengalir semula ke sungai dengan selamat. Air itu boleh digunakan lagi untuk pertanian atau haiwan hutan.",
+                image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+            }
+        ];
+
+        let currentIndex = 0;
+
+        function updateUI() {
+            const current = facts[currentIndex];
+            document.getElementById('fact-title').innerText = current.title;
+            document.getElementById('main-text').innerText = current.text;
+            document.getElementById('main-img').src = current.image;
+            
+            // Update progress
+            const prog = ((currentIndex + 1) / facts.length) * 100;
+            document.getElementById('prog-bar').style.width = prog + "%";
+            document.getElementById('progress-text').innerText = `Fakta ${currentIndex + 1} dari ${facts.length}`;
+
+            // Jika fakta terakhir
+            if (currentIndex === facts.length - 1) {
+                document.getElementById('next-btn').innerText = "Hebat! Saya Dah Pakar! 🌊";
+            } else {
+                document.getElementById('next-btn').innerText = "Fakta Seterusnya ➡️";
+            }
+        }
+
+        function nextPage() {
+            if (currentIndex < facts.length - 1) {
+                currentIndex++;
+                updateUI();
+            } else {
+                alert(`Tahniah ${kidName}! Anda kini seorang Pakar Tenaga Air & Empangan! 🌊`);
+                window.location.href = "storybook.html";
+            }
+        }
+
+        updateUI();
+    </script>
+</body>
+</html>
