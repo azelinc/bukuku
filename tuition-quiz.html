@@ -33,7 +33,6 @@
     </div>
 
     <script>
-        // 1. DATA INITIALIZATION (Defensive Loading)
         let hubData;
         try {
             hubData = JSON.parse(localStorage.getItem('hubData')) || { profiles: {}, current: null };
@@ -46,10 +45,9 @@
         const subject = urlParams.get('sub'); 
         const level = urlParams.get('lvl');   
         
-        const titleMap = { 'math': 'Mathematics', 'sci': 'Science' };
+        const titleMap = { 'math': 'Mathematics', 'sci': 'Science', 'eng': 'English' };
         document.getElementById('quiz-title').innerText = `${titleMap[subject]} Std ${level}`;
 
-        // 2. QUESTIONS BANK
         const questionBank = {
             "math": {
                 "4": [
@@ -126,10 +124,47 @@
                     { q: "A simple machine with a grooved wheel and a rope is a...", a: ["Wedge", "Pulley", "Inclined Plane", "Lever"], c: 1 },
                     { q: "What does 'biodiversity' refer to?", a: ["Weather", "Variety of life", "Pollution", "Soil"], c: 1 }
                 ]
+            },
+            "eng": {
+                "4": [
+                    { q: "What is the plural of 'child'?", a: ["Childs", "Children", "Childrens", "Childes"], c: 1 },
+                    { q: "Which word is a verb?", a: ["Beautiful", "Quickly", "Run", "Happiness"], c: 2 },
+                    { q: "The cat is sitting ____ the table.", a: ["on", "in", "between", "under"], c: 0 },
+                    { q: "Choose the correct spelling:", a: ["Elephant", "Elefant", "Elepant", "Aliphant"], c: 0 },
+                    { q: "I have ____ apple in my bag.", a: ["a", "an", "the", "some"], c: 1 },
+                    { q: "What is the antonym (opposite) of 'Fast'?", a: ["Quick", "Slow", "Hard", "Small"], c: 1 },
+                    { q: "Which of these is a proper noun?", a: ["City", "Boy", "Malaysia", "School"], c: 2 },
+                    { q: "They ____ playing football now.", a: ["is", "am", "are", "was"], c: 2 },
+                    { q: "____ is your birthday?", a: ["Who", "What", "Where", "When"], c: 3 },
+                    { q: "My father ____ to work every day.", a: ["go", "goes", "going", "gone"], c: 1 }
+                ],
+                "5": [
+                    { q: "Which sentence is correct?", a: ["He play football.", "He plays football.", "He playing football.", "He are play football."], c: 1 },
+                    { q: "Choose the synonym for 'Large':", a: ["Tiny", "Huge", "Thin", "Short"], c: 1 },
+                    { q: "We ____ to the cinema last night.", a: ["go", "goes", "went", "gone"], c: 2 },
+                    { q: "What is the collective noun for a group of lions?", a: ["Flock", "Pride", "Herd", "School"], c: 1 },
+                    { q: "The book belongs to Sarah. It is ____ book.", a: ["his", "hers", "her", "their"], c: 2 },
+                    { q: "She is the ____ girl in the class.", a: ["tall", "taller", "tallest", "most tall"], c: 2 },
+                    { q: "Please listen ____ to the instructions.", a: ["careful", "carefully", "carefulness", "caring"], c: 1 },
+                    { q: "I am hungry ____ I will eat a sandwich.", a: ["but", "or", "so", "because"], c: 2 },
+                    { q: "Which word is an adjective?", a: ["Quickly", "Brave", "Run", "He"], c: 1 },
+                    { q: "Neither Sarah nor her brothers ____ going.", a: ["is", "are", "am", "was"], c: 1 }
+                ],
+                "6": [
+                    { q: "Choose the correct idiom for 'very easy':", a: ["Under the weather", "A piece of cake", "Break a leg", "Once in a blue moon"], c: 1 },
+                    { q: "If I ____ you, I would study harder.", a: ["am", "was", "were", "be"], c: 2 },
+                    { q: "Which word means 'a person who travels to space'?", a: ["Pilot", "Scientist", "Astronaut", "Doctor"], c: 2 },
+                    { q: "The movie was so ____ that I fell asleep.", a: ["boring", "bored", "bore", "bores"], c: 0 },
+                    { q: "Choose the correctly punctuated sentence:", a: ["Where are you going.", "where are you going?", "Where are you going?", "Where are you going!"], c: 2 },
+                    { q: "He is the person ____ won the race.", a: ["which", "who", "whom", "whose"], c: 1 },
+                    { q: "I have been living here ____ five years.", a: ["since", "for", "during", "from"], c: 1 },
+                    { q: "She is ____ honest woman.", a: ["a", "an", "the", "some"], c: 1 },
+                    { q: "What is the past participle of 'write'?", a: ["Wrote", "Writing", "Writes", "Written"], c: 3 },
+                    { q: "You don't like coffee, ____ you?", a: ["don't", "do", "does", "did"], c: 1 }
+                ]
             }
         };
 
-        // 3. ENGINE LOGIC
         let currentQ = 0;
         let score = 0;
         let questions = questionBank[subject][level];
@@ -174,13 +209,10 @@
             document.getElementById('result-area').style.display = 'block';
             document.getElementById('final-score').innerText = `${score}/10`;
 
-            // --- DEFENSIVE SAVE LOGIC ---
             if (kidName && hubData.profiles[kidName]) {
-                // If profile is old format (number), convert to object
                 if (typeof hubData.profiles[kidName] !== 'object') {
                     hubData.profiles[kidName] = { scores: {} };
                 }
-                // Ensure scores property exists
                 if (!hubData.profiles[kidName].scores) {
                     hubData.profiles[kidName].scores = {};
                 }
@@ -193,7 +225,6 @@
                     localStorage.setItem('hubData', JSON.stringify(hubData));
                 }
             }
-            // --- END SAVE LOGIC ---
 
             let message = score > 7 ? `Amazing job, ${kidName}! You are a true expert!` : `Good effort, ${kidName}! Practice makes perfect!`;
             document.getElementById('feedback').innerText = message;
