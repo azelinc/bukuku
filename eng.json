@@ -338,25 +338,25 @@
   "6-9": [
     { "q": "Which idiom means 'to start studying'?", "a": ["Hit the books", "Break a leg", "A piece of cake", "Under the weather"], "c": 0 },
     { "q": "If I ____ time, I will call you.", "a": ["have", "had", "has", "having"], "c": 0 },
-    { "q": "Everyone ____ to finish their work on time.", "a": ["has", "have", "is", "are"], "c: 0 },
+    { "q": "Everyone ____ to finish their work on time.", "a": ["has", "have", "is", "are"], "c": 0 },
     { "q": "The bird is sitting ____ the tree.", "a": ["in", "on", "at", "under"], "c": 0 },
     { "q": "Choose the correctly spelled word:", "a": ["Beginning", "Begining", "Begginning", "Beguning"], "c": 0 },
     { "q": "The bridge ____ by the company next year.", "a": ["will be built", "is built", "was built", "building"], "c": 0 },
     { "q": "I am proud ____ your achievement.", "a": ["of", "at", "in", "for"], "c": 0 },
     { "q": "____ is the best student in your class?", "a": ["Who", "What", "Which", "Whom"], "c": 0 },
     { "q": "He has ____ information about the project.", "a": ["a lot of", "many", "few", "any"], "c": 0 },
-    { "q": "The train ____ the station at 8 a.m. sharp.", "a": ["leave", "leaves", "left", "leaving"], "c: 1 }
+    { "q": "The train ____ the station at 8 a.m. sharp.", "a": ["leave", "leaves", "left", "leaving"], "c": 1 }
   ],
   "6-10": [
     { "q": "What is the synonym of 'Ancient'?", "a": ["New", "Old", "Modern", "Fast"], "c": 1 },
     { "q": "They ____ for the results since yesterday.", "a": ["wait", "waits", "have been waiting", "waiting"], "c": 2 },
     { "q": "Which sentence is correctly punctuated?", "a": ["Where are you going.", "where are you going?", "Where are you going?", "Where are you going!"], "c": 2 },
-    { "q": "The weather is ____ today than yesterday.", "a": ["good", "better", "best", "most good"], "c: 1 },
+    { "q": "The weather is ____ today than yesterday.", "a": ["good", "better", "best", "most good"], "c": 1 },
     { "q": "He is the man ____ daughter is a famous singer.", "a": ["who", "whom", "whose", "which"], "c": 2 },
-    { "q": "By the time I saw him, he ____ finished his work.", "a": ["has", "had", "was", "were"], "c: 1 },
-    { "q": "I'm interested ____ science.", "a": ["at", "in", "on", "for"], "c: 1 },
-    { "q": "____ does this book belong to?", "a": ["Who", "Whom", "Whose", "Which"], "c: 0 },
-    { "q": "The room is being ____ for the party.", "a": ["clean", "cleans", "cleaned", "cleaning"], "c: 2 },
-    { "q": "Choose the correctly spelled word:", "a": ["Environment", "Enviroment", "Envaironment", "Environmint"], "c: 0 }
+    { "q": "By the time I saw him, he ____ finished his work.", "a": ["has", "had", "was", "were"], "c": 1 },
+    { "q": "I'm interested ____ science.", "a": ["at", "in", "on", "for"], "c": 1 },
+    { "q": "____ does this book belong to?", "a": ["Who", "Whom", "Whose", "Which"], "c": 0 },
+    { "q": "The room is being ____ for the party.", "a": ["clean", "cleans", "cleaned", "cleaning"], "c": 2 },
+    { "q": "Choose the correctly spelled word:", "a": ["Environment", "Enviroment", "Envaironment", "Environmint"], "c": 0 }
   ]
 }
