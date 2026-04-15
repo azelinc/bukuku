@@ -5,43 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Magic Library</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Small overrides to keep storybook.html tidy */
-        .interactive { border-color: #4a90e2; }
-        .static { border-color: #f39c12; }
-        .stem { border-color: #2ecc71; }
-    </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>📚 The Magic Library</h1>
-        
-        <!-- SECTION 1: INTERACTIVE -->
-        <div class="category-section interactive">
-            <h2>🕹️ Interactive</h2>
-            <p class="book-description">Make choices to change the story!</p>
-            <a href="book-dragon.html" class="btn blue-btn">🐉 Dragon Mountain</a>
+        <!-- Header -->
+        <div style="padding: 20px; border-bottom: 2px solid #eee; text-align: center;">
+            <h1>📚 Magic Library</h1>
         </div>
 
-        <!-- SECTION 2: STORYBOOKS -->
-        <div class="category-section static">
-            <h2>📖 Storybooks</h2>
-            <p class="book-description">Classic tales to read at your own pace.</p>
-            <a href="book-squirrel.html" class="btn orange-btn">🐿️ Nutty’s Big Day</a>
-        </div>
+        <div class="library-layout">
+            <!-- LEFT: SIDEBAR (TABS) -->
+            <div class="sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'interactive')">🕹️ Interactive</button>
+                <button class="tab-btn" onclick="openTab(event, 'story')">📖 Storybooks</button>
+                <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
+                
+                <hr style="margin: 15px 0; opacity: 0.1;">
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
+            </div>
 
-        <!-- SECTION 3: STEM -->
-        <div class="category-section stem">
-            <h2>🧪 STEM Explorer</h2>
-            <p class="book-description">Facts about Science and Nature!</p>
-            <a href="buku-tenaga-air.html" class="btn green-btn">🌊 Kuasa Empangan Air</a>
-            <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
-            <a href="buku-solar.html" class="btn green-btn">☀️ Tenaga Solar</a>
-        </div>
+            <!-- RIGHT: MAIN CONTENT -->
+            <div class="main-content">
+                
+                <!-- INTERACTIVE SECTION -->
+                <div id="interactive" class="category-content">
+                    <h2>🕹️ Interactive</h2>
+                    <p style="color:#666; font-size: 0.9rem; margin-bottom: 15px;">Make choices to win!</p>
+                    <a href="book-dragon.html" class="btn blue-btn">🐉 Dragon Mountain</a>
+                </div>
 
-        <div style="margin-top: 30px;">
-            <a href="index.html" class="btn red-btn">🏠 Back to Menu</a>
+                <!-- STORYBOOK SECTION -->
+                <div id="story" class="category-content" style="display:none;">
+                    <h2>📖 Storybooks</h2>
+                    <p style="color:#666; font-size: 0.9rem; margin-bottom: 15px;">Sit back and read.</p>
+                    <a href="book-squirrel.html" class="btn orange-btn">🐿️ Nutty’s Big Day</a>
+                </div>
+
+                <!-- STEM SECTION -->
+                <div id="stem" class="category-content" style="display:none;">
+                    <h2>🧪 STEM Facts</h2>
+                    <p style="color:#666; font-size: 0.9rem; margin-bottom: 15px;">Learn amazing things!</p>
+                    <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
+                    <a href="buku-tenaga-solar.html" class="btn green-btn">☀️ Tenaga Solar</a>
+                    <a href="buku-tenaga-air.html" class="btn green-btn">🌊 Kuasa Empangan</a>
+                </div>
+
+            </div>
         </div>
     </div>
+
+    <script>
+        function openTab(evt, categoryName) {
+            // 1. Hide all book lists
+            const contents = document.getElementsByClassName("category-content");
+            for (let i = 0; i < contents.length; i++) {
+                contents[i].style.display = "none";
+            }
+
+            // 2. Remove "active" color from all tabs
+            const tabs = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+
+            // 3. Show the selected category and highlight the tab
+            document.getElementById(categoryName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 </html>
