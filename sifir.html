@@ -29,10 +29,10 @@
             <div id="options-list"></div>
         </div>
         <div id="result-area" style="display:none; padding: 20px;">
-            <h2 id="final-score" style="font-size: 3rem; color: #f39c12; margin-bottom:10px;">0/10</h2>
+            <h2 id="final-score" style="font-size: 3rem; color: #f39c12;">0/10</h2>
+            <p id="time-taken-label" style="font-weight: bold; color: #666;"></p>
             <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
             <button class="btn blue-btn" onclick="location.reload()">Refresh & Play New Set 🔄</button>
-            <!-- UPDATED: Added ?tab=sifir to the link -->
             <a href="school.html?tab=sifir" class="btn green-btn">Back to Hub</a>
         </div>
     </div>
@@ -56,8 +56,11 @@
 
         let currentQ = 0; let score = 0; let timerInterval; let timeLeft = 15;
         let currentCorrectAns;
+        let gameStartTime; // Stopwatch
 
         function generateQuestion() {
+            if (currentQ === 0) gameStartTime = Date.now(); // Start clock on first Q
+
             const a = Math.floor(Math.random() * 11) + 2; 
             const b = Math.floor(Math.random() * 11) + 2;
             const ans = a * b;
@@ -101,10 +104,7 @@
             bar.classList.remove('timer-blink');
             if (timeLeft > 10) bar.style.backgroundColor = "#2ecc71";
             else if (timeLeft > 5) bar.style.backgroundColor = "#f1c40f";
-            else { 
-                bar.style.backgroundColor = "#e74c3c"; 
-                bar.classList.add('timer-blink');
-            }
+            else { bar.style.backgroundColor = "#e74c3c"; bar.classList.add('timer-blink'); }
         }
 
         function check(chosen, btn) {
@@ -138,17 +138,26 @@
         }
 
         async function finish() {
+            const totalTime = ((Date.now() - gameStartTime) / 1000).toFixed(1);
+            clearInterval(timerInterval);
             document.getElementById('quiz-area').style.display = 'none';
             document.querySelector('.timer-wrapper').style.display = 'none';
             document.getElementById('result-area').style.display = 'block';
             document.getElementById('final-score').innerText = `${score}/10`;
+            document.getElementById('time-taken-label').innerText = `Time: ${totalTime} seconds`;
 
             if (kidName) {
                 const userRef = doc(db, "users", kidName);
                 const userDoc = await getDoc(userRef);
                 let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
-                if (score > (scores['sifir-master'] || 0)) {
-                    scores['sifir-master'] = score;
+                
+                // RANKING LOGIC: Better if higher score OR (same score and faster time)
+                const prevRecord = scores['sifir-master-obj'] || { score: 0, time: 999 };
+                
+                if (score > prevRecord.score || (score === prevRecord.score && totalTime < prevRecord.time)) {
+                    scores['sifir-master-obj'] = { score: score, time: parseFloat(totalTime) };
+                    // Keep the old simple key for compatibility with existing display logic
+                    scores['sifir-master'] = score; 
                     await setDoc(userRef, { scores: scores }, { merge: true });
                 }
             }
