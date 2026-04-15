@@ -59,21 +59,23 @@ body {
 
 .btn:active { transform: translateY(4px); border-bottom-width: 1px; }
 
-/* SHARED DISABLED STYLE (Applied to Home buttons and School tabs) */
+/* 4. ROBUST DISABLED STYLE (For Home Buttons & Sidebar Tabs) */
 .btn-disabled, .tab-btn-disabled {
-    background: #e0e0e0 !important;
-    color: #999999 !important;
-    opacity: 0.6;
-    filter: grayscale(1);
-    pointer-events: none; /* Prevents clicking */
-    cursor: default;
-    border-bottom: 2px solid #ccc !important;
+    background-color: #e0e0e0 !important;
+    color: #a0a0a0 !important;
+    opacity: 0.6 !important;
+    filter: grayscale(100%) !important;
+    pointer-events: none !important; /* Makes it unclickable */
+    cursor: not-allowed !important;
+    border: 1px solid #d0d0d0 !important;
+    border-bottom: 2px solid #bdbdbd !important;
     box-shadow: none !important;
+    transform: none !important;
 }
 
-.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; color: #888; }
+.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; color: #999; }
 
-/* 4. SCHOOL HUB MATRIX (The Circles) */
+/* 5. SCHOOL HUB MATRIX (The Circles) */
 .subject-card {
     background: #fdfdfd;
     border: 1px solid #eee;
@@ -150,7 +152,7 @@ body {
     font-weight: bold;
 }
 
-/* 5. SIDEBAR & TABS */
+/* 6. SIDEBAR & TABS */
 .library-layout {
     display: flex;
     text-align: left;
@@ -193,7 +195,7 @@ body {
     color: white;
 }
 
-/* 6. MOBILE FIXES */
+/* 7. MOBILE FIXES */
 @media (max-width: 600px) {
     .library-layout { flex-direction: column; }
     .sidebar { 
@@ -206,7 +208,7 @@ body {
         gap: 8px;
     }
     .tab-btn { flex: 1; text-align: center; white-space: nowrap; padding: 10px; justify-content: center; }
-    .container { padding: 30px 15px; }
+    .container { padding: 20px 10px; }
     .grade-row { flex-direction: column; align-items: center; gap: 10px; padding: 15px 0; }
     .grade-label { text-align: center; width: 100%; }
 }
