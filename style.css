@@ -33,7 +33,7 @@ body {
     padding: 0;
 }
 
-/* 3. BUTTONS (Home Page) */
+/* 3. HOME PAGE BUTTONS */
 .btn {
     display: block;
     width: 100%;
@@ -59,55 +59,58 @@ body {
 
 .btn:active { transform: translateY(4px); border-bottom-width: 1px; }
 
-/* 4. ROBUST DISABLED STYLE (For Home Buttons & Sidebar Tabs) */
-.btn-disabled, .tab-btn-disabled {
-    background-color: #e0e0e0 !important;
-    color: #a0a0a0 !important;
-    opacity: 0.6 !important;
-    filter: grayscale(100%) !important;
-    pointer-events: none !important; /* Makes it unclickable */
-    cursor: not-allowed !important;
-    border: 1px solid #d0d0d0 !important;
-    border-bottom: 2px solid #bdbdbd !important;
-    box-shadow: none !important;
-    transform: none !important;
+.btn-disabled {
+    background: #cccccc !important;
+    color: #777777 !important;
+    opacity: 0.7;
+    pointer-events: none;
+    cursor: default;
 }
 
-.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; color: #999; }
+.coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; }
 
-/* 5. SCHOOL HUB MATRIX (The Circles) */
+/* 4. SCHOOL HUB MATRIX - UPDATED TO GRID */
 .subject-card {
     background: #fdfdfd;
     border: 1px solid #eee;
     border-radius: 15px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .grade-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Aligns label to the top of the grid */
     justify-content: space-between;
-    padding: 12px 0;
+    padding: 15px 0;
     border-bottom: 1px solid #f0f0f0;
 }
 
+/* UPDATED: Rectangular Button style for Std Labels */
 .grade-label {
-    font-weight: bold;
-    color: #666;
-    font-size: 0.95rem;
-    width: 80px;
-    text-align: left;
+    background: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 800;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    min-width: 85px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
+/* UPDATED: 5-column Grid layout */
 .set-group {
-    display: flex;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 52px); /* Forces exactly 5 columns */
+    gap: 12px;
+    justify-content: flex-end;
 }
 
 .set-circle {
-    width: 54px;
-    height: 54px;
+    width: 52px;
+    height: 52px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,14 +119,14 @@ body {
     color: white !important;
     text-decoration: none !important;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: 0.2s;
     box-shadow: 0 4px 0 rgba(0,0,0,0.1);
     position: relative;
 }
 
 .set-circle small {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
     font-weight: normal;
     display: block;
     margin-top: -2px;
@@ -141,10 +144,10 @@ body {
     right: -6px;
     background: #27ae60;
     color: white;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    font-size: 12px;
+    font-size: 11px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,7 +155,7 @@ body {
     font-weight: bold;
 }
 
-/* 6. SIDEBAR & TABS */
+/* 5. SIDEBAR & TABS */
 .library-layout {
     display: flex;
     text-align: left;
@@ -195,7 +198,16 @@ body {
     color: white;
 }
 
-/* 7. MOBILE FIXES */
+.tab-btn-disabled {
+    background-color: #e0e0e0 !important;
+    color: #a0a0a0 !important;
+    opacity: 0.6 !important;
+    filter: grayscale(100%) !important;
+    pointer-events: none !important;
+    cursor: not-allowed !important;
+}
+
+/* 6. MOBILE FIXES */
 @media (max-width: 600px) {
     .library-layout { flex-direction: column; }
     .sidebar { 
@@ -208,7 +220,8 @@ body {
         gap: 8px;
     }
     .tab-btn { flex: 1; text-align: center; white-space: nowrap; padding: 10px; justify-content: center; }
-    .container { padding: 20px 10px; }
-    .grade-row { flex-direction: column; align-items: center; gap: 10px; padding: 15px 0; }
-    .grade-label { text-align: center; width: 100%; }
+    .container { padding: 30px 15px; }
+    .grade-row { flex-direction: column; align-items: center; gap: 15px; }
+    /* On mobile, we might want 4 columns to keep them from being too small */
+    .set-group { grid-template-columns: repeat(4, 52px); justify-content: center; }
 }
