@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="container">
-        
         <div id="profile-selection" style="display: none;">
             <h1>👋 Hello!</h1>
             <p style="margin-bottom:20px;">Who is playing today?</p>
@@ -28,17 +27,12 @@
         <div id="main-menu" style="display: none;">
             <h1>Hi, <span id="display-name">Hero</span>!</h1>
             <p style="margin-bottom:20px;">What's the plan for today?</p>
-            
             <div class="nav-grid">
-                <!-- NEW SCHOOL OPTION ON TOP -->
                 <a href="school.html" class="btn green-btn">🏫 School Hub</a>
-                
                 <a href="storybook.html" class="btn blue-btn">📖 Library</a>
-                
                 <a href="games.html" class="btn orange-btn">🎮 Games</a>
             </div>
-            
-            <button onclick="showProfileSelection()" style="margin-top:30px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Explorer</button>
+            <button onclick="showProfileSelection()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Explorer</button>
         </div>
     </div>
 
@@ -77,13 +71,18 @@
         function createNewProfile() {
             const name = document.getElementById('user-name-input').value.trim();
             if (name && !hubData.profiles[name]) {
-                hubData.profiles[name] = 0;
+                // Initialize profile as an object to hold multiple scores
+                hubData.profiles[name] = { scores: {} };
                 selectProfile(name);
             }
         }
 
         function selectProfile(name) {
             hubData.current = name;
+            // Migration: If profile is just a number (old version), convert to object
+            if (typeof hubData.profiles[name] !== 'object') {
+                hubData.profiles[name] = { scores: { "dragon-dash": hubData.profiles[name] } };
+            }
             localStorage.setItem('hubData', JSON.stringify(hubData));
             renderMainMenu();
         }
