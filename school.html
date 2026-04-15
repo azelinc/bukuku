@@ -8,44 +8,35 @@
 </head>
 <body>
     <div class="container wide-container">
-        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center;">
-            <h1 style="margin: 0; font-size: 1.5rem;">🏫 School Hub</h1>
+        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center; background: #fff;">
+            <h1 style="margin: 0; font-size: 1.4rem;">🏫 School Hub</h1>
         </div>
 
         <div class="library-layout">
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
-                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Practice</button>
-                <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
-                <div style="flex-grow: 1;"></div>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
+                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
+                <button class="tab-btn btn-disabled" style="font-size: 0.8rem;">🧪 STEM (Soon)</button>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; margin-top: auto;">🏠 Home</a>
             </div>
 
             <div class="main-content">
-                <!-- TUITION SECTION -->
+                <!-- TUITION -->
                 <div id="tuition" class="category-content">
-                    <h2 style="font-size: 1.2rem; margin-bottom: 20px; text-align: center; color: #666;">Choose a Study Set</h2>
-                    <div id="matrix-container"></div>
+                    <div id="matrix-container">
+                        <p style="text-align:center; padding: 20px;">Loading study cloud...</p>
+                    </div>
                 </div>
 
-                <!-- SIFIR SECTION -->
+                <!-- SIFIR -->
                 <div id="sifir" class="category-content" style="display:none;">
-                    <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
+                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-
-                    <h3 style="text-align: center; margin-top: 25px; color: #2c3e50;">🏆 Global Top 5</h3>
-                    <table class="leaderboard-table">
-                        <thead>
-                            <tr>
-                                <th>Rank</th>
-                                <th>Name</th>
-                                <th>Score</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
+                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
+                    <table class="leaderboard-table" id="leaderboard-table" style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
                         <tbody id="leaderboard-body"></tbody>
                     </table>
                 </div>
@@ -78,6 +69,8 @@
 
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
+            const lbBody = document.getElementById('leaderboard-body');
+            
             let scores = {};
             let allUsers = [];
 
@@ -88,9 +81,7 @@
                     const userScores = data.scores || {};
                     if (doc.id === kidName) scores = userScores;
                     if (userScores['sifir-master-obj']) {
-                        allUsers.push({ name: doc.id, score: userScores['sifir-master-obj'].score, time: userScores['sifir-master-obj'].time });
-                    } else if (userScores['sifir-master'] !== undefined) {
-                        allUsers.push({ name: doc.id, score: userScores['sifir-master'], time: 999 });
+                        allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
                     }
                 });
 
@@ -99,17 +90,15 @@
                 }
 
                 allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
-                const lbBody = document.getElementById('leaderboard-body');
                 lbBody.innerHTML = '';
                 allUsers.slice(0, 5).forEach((user, index) => {
-                    const displayTime = user.time === 999 ? "N/A" : user.time + "s";
-                    lbBody.innerHTML += `<tr><td class="rank-${index+1}">${index+1}</td><td>${user.name}</td><td>${user.score}/10</td><td>${displayTime}</td></tr>`;
+                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:8px;">#${index+1}</td><td style="padding:8px;text-align:left;">${user.name}</td><td style="padding:8px;">${user.score}/10</td><td style="padding:8px;">${user.time}s</td></tr>`;
                 });
             } catch (e) { console.error(e); }
 
             container.innerHTML = '';
             subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1.1rem; margin-bottom: 10px;">${sub.name}</h3>`;
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22;">${sub.name}</h3>`;
                 [4, 5, 6].forEach(lvl => {
                     html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
@@ -134,13 +123,10 @@
             if(element) element.classList.add("active");
         }
 
-        function checkUrlParams() {
-            const params = new URLSearchParams(window.location.search);
-            if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
-        }
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
 
         generateMatrix();
-        checkUrlParams();
     </script>
 </body>
 </html>
