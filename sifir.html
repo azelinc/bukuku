@@ -12,13 +12,10 @@
         .option-btn:hover:not(:disabled) { background: #f0f7ff; border-color: #4a90e2; }
         .correct { background: #d4edda !important; color: #155724 !important; border-color: #2ecc71 !important; border-width: 3px; }
         .wrong { background: #f8d7da !important; color: #721c24 !important; border-color: #e74c3c !important; border-width: 3px; }
-        
         .timer-wrapper { width: 100%; background: #eee; height: 16px; border-radius: 10px; margin-bottom: 20px; overflow: hidden; border: 1px solid #ddd; }
         #timer-bar { height: 100%; width: 100%; transition: width 1s linear, background-color 0.3s ease; }
-        
         @keyframes blink-red { 0% { opacity: 1; } 50% { opacity: 0.2; } 100% { opacity: 1; } }
         .timer-blink { animation: blink-red 0.5s infinite; }
-        
         #stats { font-weight: bold; margin-bottom: 8px; color: #666; font-size: 1rem; display: flex; justify-content: space-between; }
     </style>
 </head>
@@ -26,21 +23,17 @@
     <div class="container">
         <h1 id="quiz-title">🔢 Sifir Challenge</h1>
         <div id="stats"><span>Quest <span id="q-num">1</span>/10</span><span>Score: <span id="current-score">0</span></span></div>
-        
-        <div class="timer-wrapper">
-            <div id="timer-bar" style="background-color: #2ecc71;"></div>
-        </div>
-
+        <div class="timer-wrapper"><div id="timer-bar" style="background-color: #2ecc71;"></div></div>
         <div class="quiz-box" id="quiz-area">
             <div id="question" class="q-text">? × ?</div>
             <div id="options-list"></div>
         </div>
-
         <div id="result-area" style="display:none; padding: 20px;">
-            <h2 id="final-score" style="font-size: 3rem; color: #f39c12;">0/10</h2>
+            <h2 id="final-score" style="font-size: 3rem; color: #f39c12; margin-bottom:10px;">0/10</h2>
             <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
             <button class="btn blue-btn" onclick="location.reload()">Refresh & Play New Set 🔄</button>
-            <a href="school.html" class="btn green-btn">Back to Hub</a>
+            <!-- UPDATED: Added ?tab=sifir to the link -->
+            <a href="school.html?tab=sifir" class="btn green-btn">Back to Hub</a>
         </div>
     </div>
 
@@ -106,14 +99,11 @@
             const bar = document.getElementById('timer-bar');
             bar.style.width = (timeLeft / 15) * 100 + "%";
             bar.classList.remove('timer-blink');
-            
-            if (timeLeft > 10) {
-                bar.style.backgroundColor = "#2ecc71"; // Green (15s - 11s)
-            } else if (timeLeft > 5) {
-                bar.style.backgroundColor = "#f1c40f"; // Yellow (10s - 6s)
-            } else { 
-                bar.style.backgroundColor = "#e74c3c"; // Red (5s - 0s)
-                bar.classList.add('timer-blink');      // Blinking red
+            if (timeLeft > 10) bar.style.backgroundColor = "#2ecc71";
+            else if (timeLeft > 5) bar.style.backgroundColor = "#f1c40f";
+            else { 
+                bar.style.backgroundColor = "#e74c3c"; 
+                bar.classList.add('timer-blink');
             }
         }
 
