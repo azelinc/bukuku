@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .leaderboard-table { width: 100%; border-collapse: collapse; margin-top: 15px; background: white; border-radius: 10px; overflow: hidden; font-size: 0.9rem; }
+        .leaderboard-table th { background: #f39c12; color: white; padding: 10px; }
+        .leaderboard-table td { padding: 10px; border-bottom: 1px solid #eee; text-align: center; }
+        .leaderboard-table tr:nth-child(even) { background: #fffaf0; }
+        .rank-1 { font-weight: bold; color: #d4af37; } /* Gold */
+    </style>
 </head>
 <body>
     <div class="container wide-container">
@@ -14,32 +21,40 @@
 
         <div class="library-layout">
             <div class="sidebar">
-                <!-- Added IDs to buttons to help the Auto-Tab logic -->
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Practice</button>
                 <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
-                
-                <div style="flex-grow: 1; min-height: 20px;"></div>
-                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
+                <div style="flex-grow: 1;"></div>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center;">🏠 Home</a>
             </div>
 
             <div class="main-content">
-                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content">
                     <h2 style="font-size: 1.2rem; margin-bottom: 15px; text-align: center; color: #666;">Choose a Study Set</h2>
-                    <div id="matrix-container">
-                        <p style="text-align:center;">Syncing with cloud...</p>
-                    </div>
+                    <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display:none;">
                     <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
-                    <p style="text-align: center; color: #666; margin-bottom: 20px;">Test your multiplication skills!</p>
                     <div class="subject-card" style="text-align: center;">
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
+
+                    <h3 style="text-align: center; margin-top: 20px; color: #2c3e50;">🏆 Global Top 5</h3>
+                    <table class="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Name</th>
+                                <th>Score</th>
+                                <th>Time</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <tr><td colspan="4">Loading rankings...</td></tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -47,7 +62,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -71,18 +86,39 @@
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
             let scores = {};
-            if (kidName) {
-                try {
-                    const userDoc = await getDoc(doc(db, "users", kidName));
-                    if (userDoc.exists()) {
-                        const data = userDoc.data();
-                        scores = data.scores || {};
-                        if (scores['sifir-master']) {
-                            document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
-                        }
+            let allUsers = [];
+
+            try {
+                // Fetch all users for leaderboard
+                const querySnapshot = await getDocs(collection(db, "users"));
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    if (doc.id === kidName) scores = data.scores || {};
+                    if (data.scores && data.scores['sifir-master-obj']) {
+                        allUsers.push({ name: doc.id, ...data.scores['sifir-master-obj'] });
                     }
-                } catch (e) { console.error(e); }
-            }
+                });
+
+                // Render Highscore
+                if (scores['sifir-master']) {
+                    document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
+                }
+
+                // Sort Leaderboard: Higher Score first, then lower time
+                allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
+                
+                const lbBody = document.getElementById('leaderboard-body');
+                lbBody.innerHTML = '';
+                allUsers.slice(0, 5).forEach((user, index) => {
+                    const row = `<tr>
+                        <td class="rank-${index+1}">${index+1}</td>
+                        <td>${user.name}</td>
+                        <td>${user.score}/10</td>
+                        <td>${user.time}s</td>
+                    </tr>`;
+                    lbBody.innerHTML += row;
+                });
+            } catch (e) { console.error(e); }
 
             container.innerHTML = '';
             subjects.forEach(sub => {
@@ -102,25 +138,18 @@
             });
         }
 
-        // Updated openTab to be usable by the Auto-Tab logic
         window.openTab = (categoryName, element) => {
             const contents = document.getElementsByClassName("category-content");
             for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
-            
             const tabs = document.getElementsByClassName("tab-btn");
             for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
-            
             document.getElementById(categoryName).style.display = "block";
             if(element) element.classList.add("active");
         }
 
-        // AUTO-TAB LOGIC: Checks if URL has ?tab=sifir
         function checkUrlParams() {
             const params = new URLSearchParams(window.location.search);
-            const targetTab = params.get('tab');
-            if (targetTab === 'sifir') {
-                openTab('sifir', document.getElementById('tab-sifir'));
-            }
+            if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
         }
 
         generateMatrix();
