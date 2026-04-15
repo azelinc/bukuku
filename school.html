@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Hub - AF Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container wide-container">
+        <div style="padding: 25px; border-bottom: 2px solid #eee; text-align: center;">
+            <h1 style="margin: 0;">🏫 School Hub</h1>
+        </div>
+
+        <div class="library-layout">
+            <!-- SIDEBAR -->
+            <div class="sidebar">
+                <button class="tab-btn active" onclick="openTab(event, 'tuition')">🎓 Tuition</button>
+                <button class="tab-btn" onclick="openTab(event, 'stem')">🧪 STEM Facts</button>
+                
+                <div style="flex-grow: 1; min-height: 20px;"></div>
+                <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; border: 2px solid #fee;">🏠 Home</a>
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="main-content">
+                
+                <!-- TUITION SECTION -->
+                <div id="tuition" class="category-content" style="text-align: left;">
+                    <h2 style="text-align: center;">🎓 Tuition (DLP English)</h2>
+                    
+                    <div style="margin-top: 20px;">
+                        <h3 style="color: #4a90e2; border-left: 5px solid #4a90e2; padding-left: 10px;">Mathematics</h3>
+                        <a href="tuition-quiz.html?sub=math&lvl=4" class="btn blue-btn">Maths Std 4</a>
+                        <a href="tuition-quiz.html?sub=math&lvl=5" class="btn blue-btn">Maths Std 5</a>
+                        <a href="tuition-quiz.html?sub=math&lvl=6" class="btn blue-btn">Maths Std 6</a>
+                    </div>
+
+                    <div style="margin-top: 25px;">
+                        <h3 style="color: #2ecc71; border-left: 5px solid #2ecc71; padding-left: 10px;">Science</h3>
+                        <a href="tuition-quiz.html?sub=sci&lvl=4" class="btn green-btn">Science Std 4</a>
+                        <a href="tuition-quiz.html?sub=sci&lvl=5" class="btn green-btn">Science Std 5</a>
+                        <a href="tuition-quiz.html?sub=sci&lvl=6" class="btn green-btn">Science Std 6</a>
+                    </div>
+                </div>
+
+                <!-- STEM SECTION -->
+                <div id="stem" class="category-content" style="display:none;">
+                    <h2>🧪 STEM Explorer</h2>
+                    <p style="color:#666; margin-bottom: 15px;">Discover the wonders of science!</p>
+                    <a href="book-space.html" class="btn green-btn">🚀 Mission to Mars</a>
+                    <a href="buku-tenaga-solar.html" class="btn green-btn">☀️ Tenaga Solar</a>
+                    <a href="buku-tenaga-air.html" class="btn green-btn">🌊 Kuasa Empangan</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, categoryName) {
+            const contents = document.getElementsByClassName("category-content");
+            for (let i = 0; i < contents.length; i++) { contents[i].style.display = "none"; }
+            const tabs = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabs.length; i++) { tabs[i].classList.remove("active"); }
+            document.getElementById(categoryName).style.display = "block";
+            evt.currentTarget.classList.add("active");
+            if(window.innerWidth < 600) { window.scrollTo(0, 0); }
+        }
+    </script>
+</body>
+</html>
