@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AF Adventure Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,48 +10,40 @@
 
     <div class="container">
         
-        <!-- 1. PROFILE SELECTION SCREEN -->
+        <!-- 1. PROFILE SELECTION -->
         <div id="profile-selection" style="display: none;">
-            <h1>👋 Who is playing?</h1>
-            <div id="profile-list">
-                <!-- Profile buttons will appear here -->
-            </div>
-            <button class="btn orange-btn" onclick="showNewUserForm()" style="margin-top: 20px;">+ New Adventurer</button>
-            <!-- Added a cancel button here -->
-            <button onclick="renderMainMenu()" id="cancel-switch" style="display:none; margin: 15px auto; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+            <h1>👋 Hello!</h1>
+            <p>Who is playing today?</p>
+            <div id="profile-list"></div>
+            <button class="btn green-btn" onclick="showNewUserForm()" style="margin-top: 20px;">+ New Explorer</button>
         </div>
 
         <!-- 2. NEW USER FORM -->
         <div id="name-setup" style="display: none;">
-            <h1>🌟 Welcome! 🌟</h1>
-            <p>Enter your name to start:</p>
+            <h1>✨ New Quest</h1>
+            <p>Enter your name:</p>
             <input type="text" id="user-name-input" placeholder="Your name..." 
-                   style="padding: 15px; width: 100%; border-radius: 15px; border: 2px solid #4a90e2; font-size: 1.2rem; margin-bottom: 20px; text-align: center; font-family: inherit;">
-            <button class="btn blue-btn" onclick="createNewProfile()">Start My Quest!</button>
-            <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+                   style="padding: 18px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 20px; text-align: center; outline: none;">
+            <button class="btn blue-btn" onclick="createNewProfile()">Start! 🚀</button>
+            <button onclick="initHub()" style="margin-top: 20px; background:none; border:none; color:#999; cursor:pointer;">Cancel</button>
         </div>
 
         <!-- 3. MAIN MENU -->
         <div id="main-menu" style="display: none;">
-            <h1>🌟 Hi, <span id="display-name">Explorer</span>!</h1>
-            <p style="margin-bottom: 20px;">🏆 Best Score: <span id="high-score" style="font-weight: bold; color: #f39c12;">0</span></p>
+            <h1>Hi, <span id="display-name">Hero</span>!</h1>
+            <p>Ready for an adventure?</p>
             
             <div class="nav-grid">
                 <a href="storybook.html" class="btn blue-btn">
-                    <span style="font-size: 2rem; display: block;">📖</span>
-                    Library
-                    <small style="display: block; font-size: 0.8rem; font-weight: normal; opacity: 0.9;">Interactive Stories</small>
+                    📖 Library
                 </a>
                 
-                <a href="games.html" class="btn orange-btn" style="margin-top: 15px;">
-                    <span style="font-size: 2rem; display: block;">🎮</span>
-                    Games
-                    <small style="display: block; font-size: 0.8rem; font-weight: normal; opacity: 0.9;">Play & Win</small>
+                <a href="games.html" class="btn orange-btn">
+                    🎮 Games
                 </a>
             </div>
             
-            <!-- FIXED: This now calls showProfileSelection directly -->
-            <button class="btn" onclick="showProfileSelection()" style="margin-top:30px; background:#eee; border:none; padding:12px; border-radius:15px; cursor:pointer; font-weight: bold; color: #666; width: 100%;">👤 Switch Explorer</button>
+            <button onclick="showProfileSelection()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%;">👤 Switch Explorer</button>
         </div>
     </div>
 
@@ -74,18 +66,12 @@
             document.getElementById('name-setup').style.display = 'none';
             document.getElementById('main-menu').style.display = 'none';
 
-            // If a user is already logged in, show the cancel button
-            if (hubData.current) {
-                document.getElementById('cancel-switch').style.display = 'block';
-            }
-
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
 
             for (let name in hubData.profiles) {
                 const btn = document.createElement('button');
                 btn.className = "btn blue-btn";
-                btn.style.marginBottom = "10px";
                 btn.innerHTML = `👤 ${name}`;
                 btn.onclick = () => selectProfile(name);
                 list.appendChild(btn);
@@ -103,14 +89,12 @@
             if (name && !hubData.profiles[name]) {
                 hubData.profiles[name] = 0;
                 selectProfile(name);
-            } else if (hubData.profiles[name]) {
-                alert("Name taken!");
             }
         }
 
         function selectProfile(name) {
             hubData.current = name;
-            saveData();
+            localStorage.setItem('hubData', JSON.stringify(hubData));
             renderMainMenu();
         }
 
@@ -119,11 +103,6 @@
             document.getElementById('name-setup').style.display = 'none';
             document.getElementById('main-menu').style.display = 'block';
             document.getElementById('display-name').innerText = hubData.current;
-            document.getElementById('high-score').innerText = hubData.profiles[hubData.current];
-        }
-
-        function saveData() {
-            localStorage.setItem('hubData', JSON.stringify(hubData));
         }
 
         initHub();
