@@ -1,0 +1,110 @@
+{
+  "4-1": [
+    { "q": "What is the place value of the digit 5 in the number 85,210?", "a": ["Thousands", "Ten Thousands", "Hundreds", "Ones"], "c": 0 },
+    { "q": "Round off 12,384 to the nearest thousand.", "a": ["12,000", "13,000", "12,400", "10,000"], "c": 0 },
+    { "q": "What is the result of 3/4 + 1/4?", "a": ["1/2", "1", "4/8", "1/4"], "c": 1 },
+    { "q": "Subtract 12,500 from 50,000. What is the answer?", "a": ["37,500", "38,500", "40,000", "35,000"], "c": 0 },
+    { "q": "Convert the decimal 0.7 into a percentage.", "a": ["7%", "70%", "0.7%", "700%"], "c": 1 },
+    { "q": "If you have RM 100 and you spend RM 45.50, how much money do you have left?", "a": ["RM 54.50", "RM 55.50", "RM 64.50", "RM 44.50"], "c": 0 },
+    { "q": "How many minutes are there in 2 hours and 15 minutes?", "a": ["120 minutes", "135 minutes", "150 minutes", "215 minutes"], "c": 1 },
+    { "q": "A square has a side length of 5 cm. What is the area of the square?", "a": ["20 cm²", "10 cm²", "25 cm²", "15 cm²"], "c": 2 },
+    { "q": "How many days are there in a leap year?", "a": ["365 days", "364 days", "366 days", "360 days"], "c": 2 },
+    { "q": "Divide 80 by 5. What is the quotient?", "a": ["14", "16", "18", "12"], "c": 1 }
+  ],
+  "4-2": [
+    { "q": "What is the digit value of 7 in the number 74,321?", "a": ["700", "7,000", "70,000", "70"], "c": 2 },
+    { "q": "Calculate the total sum of 1,200 and 4,800.", "a": ["5,000", "6,000", "7,000", "5,800"], "c": 1 },
+    { "q": "Which of the following is a proper fraction?", "a": ["5/2", "1/2", "3/1", "7/4"], "c": 1 },
+    { "q": "Multiply 15 by 4. What is the product?", "a": ["40", "50", "60", "70"], "c": 2 },
+    { "q": "Write 0.25 as a fraction in its simplest form.", "a": ["1/2", "1/4", "1/5", "1/10"], "c": 1 },
+    { "q": "How many months are there in 3 full years?", "a": ["24 months", "30 months", "36 months", "48 months"], "c": 2 },
+    { "q": "How many vertices does a triangle have?", "a": ["3", "4", "5", "6"], "c": 0 },
+    { "q": "What is the difference between 900 and 450?", "a": ["450", "550", "400", "500"], "c": 0 },
+    { "q": "Convert 2 kilograms into grams.", "a": ["20 g", "200 g", "2,000 g", "20,000 g"], "c": 2 },
+    { "q": "In the 12-hour system, what time is 15:00 hours?", "a": ["3:00 a.m.", "3:00 p.m.", "5:00 p.m.", "1:00 p.m."], "c": 1 }
+  ],
+  "4-3": [
+    { "q": "Find the next number in this sequence: 2, 4, 6, ...", "a": ["7", "8", "9", "10"], "c": 1 },
+    { "q": "What is the result of 10 multiplied by 0.5?", "a": ["5", "50", "1", "0.5"], "c": 0 },
+    { "q": "A rectangle has a length of 6 cm and a width of 4 cm. What is its perimeter?", "a": ["10 cm", "20 cm", "24 cm", "12 cm"], "c": 1 },
+    { "q": "Calculate RM 5.20 + RM 4.80.", "a": ["RM 9.00", "RM 10.00", "RM 11.00", "RM 10.20"], "c": 1 },
+    { "q": "Which of these numbers is an even number?", "a": ["11", "13", "14", "15"], "c": 2 },
+    { "q": "Divide 100 by 4.", "a": ["20", "25", "30", "40"], "c": 1 },
+    { "q": "How many days are there in 2 weeks?", "a": ["10", "12", "14", "16"], "c": 2 },
+    { "q": "Identify the digit in the hundreds place for the number 4,321.", "a": ["4", "3", "2", "1"], "c": 1 },
+    { "q": "What is half of 500?", "a": ["200", "250", "300", "150"], "c": 1 },
+    { "q": "How many faces does a cube have?", "a": ["4", "6", "8", "12"], "c": 1 }
+  ],
+  "5-1": [
+    { "q": "How do you write 1/4 million in whole numbers?", "a": ["25,000", "250,000", "2,500,000", "2,500"], "c": 1 },
+    { "q": "What is 40% of 200?", "a": ["40", "60", "80", "100"], "c": 2 },
+    { "q": "Find the average of the following numbers: 10, 20, and 30.", "a": ["15", "20", "25", "60"], "c": 1 },
+    { "q": "Add 1.25 Litres and 500 ml. Give the answer in ml.", "a": ["1,750 ml", "1,255 ml", "1,500 ml", "175 ml"], "c": 0 },
+    { "q": "Which of these numbers is a prime number?", "a": ["9", "15", "17", "21"], "c": 2 },
+    { "q": "Calculate the area of a triangle with a base of 6 cm and a height of 4 cm.", "a": ["24 cm²", "10 cm²", "12 cm²", "8 cm²"], "c": 2 },
+    { "q": "Convert 14:00 hours to the 12-hour clock system.", "a": ["2:00 a.m.", "12:00 p.m.", "2:00 p.m.", "4:00 p.m."], "c": 2 },
+    { "q": "What is the result of 125 x 100 ÷ 10?", "a": ["1,250", "125", "12,500", "12.5"], "c": 0 },
+    { "q": "If RM 2,000 is saved with an interest rate of 2% per year, how much interest is earned after 1 year?", "a": ["RM 20", "RM 40", "RM 200", "RM 4"], "c": 1 },
+    { "q": "If one box contains 12 apples, how many apples are there in 1,000 identical boxes?", "a": ["120", "1,200", "12,000", "120,000"], "c": 2 }
+  ],
+  "5-2": [
+    { "q": "Round off the decimal 4.56 to one decimal place.", "a": ["4.5", "4.6", "4.0", "5.0"], "c": 1 },
+    { "q": "What is the value of the tenths digit in the number 12.345?", "a": ["1", "2", "3", "4"], "c": 2 },
+    { "q": "Express 20% as a fraction in its simplest form.", "a": ["1/2", "1/4", "1/5", "1/10"], "c": 2 },
+    { "q": "Calculate 3/5 of 50.", "a": ["10", "20", "30", "40"], "c": 2 },
+    { "q": "How many years are there in a Century?", "a": ["10 years", "50 years", "100 years", "1000 years"], "c": 2 },
+    { "q": "In a circle, the diameter is always twice the length of the...", "a": ["Area", "Radius", "Perimeter", "Width"], "c": 1 },
+    { "q": "Simplify the fraction 10/20.", "a": ["1/2", "1/4", "1/5", "2/10"], "c": 0 },
+    { "q": "What do you call an angle that measures exactly 90 degrees?", "a": ["Acute", "Obtuse", "Right", "Straight"], "c": 2 },
+    { "q": "Convert 6.5 kilometers into meters.", "a": ["65 m", "650 m", "6,500 m", "65,000 m"], "c": 2 },
+    { "q": "Add 1.5 and 2.75 together.", "a": ["3.25", "4.25", "4.00", "3.75"], "c": 1 }
+  ],
+  "5-3": [
+    { "q": "Which of the following is a composite number?", "a": ["2", "3", "4", "5"], "c": 2 },
+    { "q": "What is the square root of 25?", "a": ["3", "4", "5", "6"], "c": 2 },
+    { "q": "Multiply 3,000 by 0.01.", "a": ["3", "30", "300", "0.3"], "c": 1 },
+    { "q": "How many seconds are in 5 minutes?", "a": ["150", "300", "500", "600"], "c": 1 },
+    { "q": "A rectangle measures 10 cm by 5 cm. What is its area?", "a": ["15 cm²", "30 cm²", "50 cm²", "100 cm²"], "c": 2 },
+    { "q": "What is the ratio of 2 girls to 3 boys?", "a": ["2:3", "3:2", "2/5", "3/5"], "c": 0 },
+    { "q": "How many years are there in a Millennium?", "a": ["100 years", "500 years", "1,000 years", "10,000 years"], "c": 2 },
+    { "q": "Divide 8.4 by 2.", "a": ["4.2", "4.0", "4.4", "2.4"], "c": 0 },
+    { "q": "What is the sum of the interior angles of a triangle?", "a": ["90°", "180°", "360°", "270°"], "c": 1 },
+    { "q": "Is the number 17 a prime number?", "a": ["Yes", "No", "Only on weekends", "Maybe"], "c": 0 }
+  ],
+  "6-1": [
+    { "q": "Express the ratio of 3 to 5 in its simplest form.", "a": ["3:5", "5:3", "3/5", "35"], "c": 0 },
+    { "q": "A car travels 120 km in 2 hours. What is its average speed?", "a": ["60 km/h", "240 km/h", "120 km/h", "50 km/h"], "c": 0 },
+    { "q": "Cost Price is RM 80, and Selling Price is RM 100. What is the profit percentage?", "a": ["20%", "25%", "80%", "10%"], "c": 1 },
+    { "q": "How do you express 0.05 million as a whole number?", "a": ["5,000", "50,000", "500,000", "500"], "c": 1 },
+    { "q": "Find the median of the following data: 2, 5, 8, 10, 12.", "a": ["5", "8", "10", "12"], "c": 1 },
+    { "q": "What is the result of 10 minus 2.356?", "a": ["7.644", "8.644", "7.744", "8.744"], "c": 0 },
+    { "q": "What is the sum of the internal angles of a triangle?", "a": ["90°", "180°", "360°", "270°"], "c": 1 },
+    { "q": "Convert 3.5 kg into grams.", "a": ["350 g", "3,500 g", "35,000 g", "35 g"], "c": 1 },
+    { "q": "How many years are in one decade?", "a": ["100 years", "50 years", "10 years", "12 years"], "c": 2 },
+    { "q": "Find the volume of a cube with a side length of 3 cm.", "a": ["9 cm³", "12 cm³", "27 cm³", "18 cm³"], "c": 2 }
+  ],
+  "6-2": [
+    { "q": "What is the range of the following data set: 10, 20, 50?", "a": ["10", "40", "50", "30"], "c": 1 },
+    { "q": "Convert 150% into a decimal number.", "a": ["0.15", "1.5", "15.0", "150"], "c": 1 },
+    { "q": "What are the coordinates of the Origin on a Cartesian plane?", "a": ["(1,1)", "(0,1)", "(1,0)", "(0,0)"], "c": 3 },
+    { "q": "How many edges does a cube have?", "a": ["6", "8", "12", "16"], "c": 2 },
+    { "q": "What is the value of 10 to the power of 3 (10³)?", "a": ["30", "100", "1,000", "300"], "c": 2 },
+    { "q": "If x + 5 = 12, what is the value of x?", "a": ["5", "6", "7", "8"], "c": 2 },
+    { "q": "Calculate the approximate area of a circle with a radius of 7 cm.", "a": ["44 cm²", "154 cm²", "49 cm²", "14 cm²"], "c": 1 },
+    { "q": "How many centimeters are in one meter?", "a": ["10", "100", "1,000", "10,000"], "c": 1 },
+    { "q": "What is the sum of 1/2 and 1/8?", "a": ["2/8", "5/8", "4/8", "1/10"], "c": 1 },
+    { "q": "What do you call a polygon with four sides?", "a": ["Triangle", "Pentagon", "Quadrilateral", "Hexagon"], "c": 2 }
+  ],
+  "6-3": [
+    { "q": "Identify the mode in this set: 2, 3, 3, 4, 5.", "a": ["2", "3", "4", "5"], "c": 1 },
+    { "q": "Calculate 0.1 multiplied by 0.1.", "a": ["0.2", "0.01", "0.11", "1.0"], "c": 1 },
+    { "q": "How many weeks are there in a standard year?", "a": ["48", "50", "52", "54"], "c": 2 },
+    { "q": "Find the volume of a cylinder (approx) where radius=1 and height=10.", "a": ["31.4", "10", "62.8", "3.14"], "c": 0 },
+    { "q": "Which number is the reciprocal of 2?", "a": ["-2", "0.2", "1/2", "2.0"], "c": 2 },
+    { "q": "What are the prime factors of the number 6?", "a": ["1 and 6", "2 and 3", "1, 2, and 3", "6 only"], "c": 1 },
+    { "q": "Convert the fraction 1/5 into a percentage.", "a": ["10%", "20%", "25%", "50%"], "c": 1 },
+    { "q": "What is the approximate value of Pi (π)?", "a": ["2.14", "3.14", "4.14", "5.14"], "c": 1 },
+    { "q": "An angle that measures between 91 and 179 degrees is called...", "a": ["Acute", "Obtuse", "Reflex", "Right"], "c": 1 },
+    { "q": "How many faces does a dodecahedron have?", "a": ["10", "12", "14", "16"], "c": 1 }
+  ]
+}
