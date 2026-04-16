@@ -9,74 +9,78 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
-        /* Admin Row Styling */
-        .profile-row { display: flex; align-items: center; gap: 8px; max-width: 400px; margin: 10px auto; }
-        .profile-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
-        
-        .admin-controls { display: flex; gap: 5px; }
-        
-        .del-btn { background: #ff7675; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; }
-        .prem-toggle-btn { background: #f1c40f; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; }
-        .prem-toggle-btn.is-active { background: #f39c12; box-shadow: inset 0 2px 5px rgba(0,0,0,0.2); }
-        
-        .premium-star { color: #f1c40f; font-weight: bold; }
+        .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; }
+        .profile-btn { flex: 1; margin: 0 !important; }
+        .del-btn { background: #ff7675; border: none; color: white; padding: 15px; border-radius: 15px; cursor: pointer; font-size: 1.2rem; display: none; }
     </style>
 </head>
 <body>
 
     <div class="container">
         
-        <!-- 0. LOADING SCREEN -->
+        <!-- HEADER (Visible once logged in) -->
+        <header id="main-header" class="app-header" style="display: none;">
+            <h1>AF Hub</h1>
+            <div class="header-right">
+                <span id="user-badge" class="user-badge">Explorer</span>
+            </div>
+        </header>
+
+        <!-- LOADING SCREEN -->
         <div id="loading-screen" style="padding: 80px 20px; text-align: center;">
             <div style="font-size: 50px; margin-bottom: 20px;">🚀</div>
             <h1>Loading...</h1>
-            <p style="color: #666; margin-top: 10px;">Connecting to Adventure Cloud</p>
-            <button id="bypass-loading" onclick="showNewUserForm()" style="display:none; margin-top:30px; background:none; border:none; color:#4a90e2; text-decoration:underline; cursor:pointer;">Taking too long? Click here.</button>
+            <p style="color: #666; margin-top: 10px;">Connecting to Cloud</p>
         </div>
 
-        <!-- 1. PROFILE SELECTION -->
+        <!-- PROFILE SELECTION -->
         <div id="profile-selection" style="display: none;">
-            <h1>👋 Welcome!</h1>
+            <h1 style="background:none; color:#333; text-align:center; padding:30px 0;">👋 Welcome!</h1>
             <div class="main-menu-padding">
-                <p id="selection-sub" style="margin-bottom: 20px; color: #666;">Who is online today?</p>
+                <p id="selection-sub" style="margin-bottom: 20px; text-align:center; color: #666;">Who is playing today?</p>
                 <div id="profile-list"></div>
-                
                 <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
-                    <button class="btn green-btn" onclick="showNewUserForm()">+ New Profile</button>
-                    <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#eee; cursor:pointer; font-size: 0.7rem; margin-top: 10px;">Admin</button>
+                    <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
+                    <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#ddd; cursor:pointer; font-size: 0.7rem; margin: 20px auto;">Admin</button>
                 </div>
             </div>
         </div>
 
-        <!-- 2. NEW USER FORM -->
+        <!-- NEW USER FORM -->
         <div id="name-setup" style="display: none;">
-            <h1>✨ New Quest</h1>
+            <h1 style="background:none; color:#333; text-align:center; padding:30px 0;">✨ New Quest</h1>
             <div class="main-menu-padding">
-                <p style="margin-bottom: 15px; color: #666;">Enter your name to start:</p>
                 <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
                 <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
-                <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline;">Cancel</button>
+                <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline; width:100%;">Cancel</button>
             </div>
         </div>
 
-        <!-- 3. MAIN MENU -->
+        <!-- MAIN MENU -->
         <div id="main-menu" style="display: none;">
-            <h1 id="menu-header">Hi, Explorer!</h1>
             <div class="main-menu-padding">
-                <p style="margin-bottom:20px; color: #666;">Are you Ready for today's lesson?</p>
+                <p style="margin-bottom:20px; color: #666; text-align:center; font-weight:bold;">Are you ready for today's lesson?</p>
+                
                 <div class="nav-grid">
                     <a href="school.html" class="btn green-btn">🏫 School Hub</a>
-                    <div class="btn btn-disabled">📖 Library <span class="coming-soon-tag">Coming Soon</span></div>
-                    <div class="btn btn-disabled">🎮 Games <span class="coming-soon-tag">Coming Soon</span></div>
+                    
+                    <div class="btn btn-disabled">
+                        📖 Library <span class="coming-soon-tag">Coming Soon</span>
+                    </div>
+                    
+                    <div class="btn btn-disabled">
+                        🎮 Games <span class="coming-soon-tag">Coming Soon</span>
+                    </div>
                 </div>
-                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
+                
+                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%;">👤 Switch Profile</button>
             </div>
         </div>
     </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -89,11 +93,11 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
-
         const loading = document.getElementById('loading-screen');
         const selection = document.getElementById('profile-selection');
         const setup = document.getElementById('name-setup');
         const menu = document.getElementById('main-menu');
+        const header = document.getElementById('main-header');
         
         let isManageMode = false;
         const ADMIN_PIN = "9988";
@@ -103,6 +107,7 @@
             selection.style.display = 'none';
             setup.style.display = 'none';
             menu.style.display = 'none';
+            header.style.display = 'none';
 
             const activeUser = localStorage.getItem('fb_current_user');
             if (activeUser) {
@@ -117,125 +122,55 @@
             selection.style.display = 'block';
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
-            
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
                 querySnapshot.forEach((docSnap) => {
-                    const userData = docSnap.data();
-                    const name = docSnap.id;
-                    const isPremium = userData.isPremium || false;
-
                     const row = document.createElement('div');
                     row.className = "profile-row";
-                    
                     const btn = document.createElement('button');
                     btn.className = "btn blue-btn profile-btn";
-                    // If Premium, show a star
-                    btn.innerHTML = `👤 ${name} ${isPremium ? '<span class="premium-star">⭐</span>' : ''}`;
-                    btn.onclick = () => selectProfile(name);
-
-                    // Admin Controls Wrapper
-                    const ctrl = document.createElement('div');
-                    ctrl.className = "admin-controls";
-
-                    // Premium Toggle Button
-                    const premBtn = document.createElement('button');
-                    premBtn.className = "prem-toggle-btn" + (isPremium ? " is-active" : "");
-                    premBtn.innerHTML = "⭐";
-                    premBtn.title = "Toggle Premium Status";
-                    premBtn.style.display = isManageMode ? "block" : "none";
-                    premBtn.onclick = (e) => {
-                        e.stopPropagation();
-                        togglePremium(name, isPremium);
-                    };
-
-                    // Delete Button
+                    btn.innerHTML = `👤 ${docSnap.id}`;
+                    btn.onclick = () => selectProfile(docSnap.id);
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
                     delBtn.innerHTML = "🗑️";
                     delBtn.style.display = isManageMode ? "block" : "none";
-                    delBtn.onclick = (e) => {
-                        e.stopPropagation();
-                        deleteProfile(name);
-                    };
-
-                    ctrl.appendChild(premBtn);
-                    ctrl.appendChild(delBtn);
-                    row.appendChild(btn);
-                    row.appendChild(ctrl);
+                    delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(docSnap.id); };
+                    row.appendChild(btn); row.appendChild(delBtn);
                     list.appendChild(row);
                 });
-            } catch (e) {
-                console.error(e);
-            }
+            } catch (e) { console.error(e); }
         }
 
         window.adminLogin = () => {
             const entry = prompt("Enter Admin PIN:");
-            if (entry === ADMIN_PIN) {
-                isManageMode = true;
-                document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE: Toggle ⭐ or Delete 🗑️";
-                document.getElementById('selection-sub').style.color = "red";
-                showProfileSelection();
-            }
-        }
-
-        async function togglePremium(name, currentStatus) {
-            try {
-                const userRef = doc(db, "users", name);
-                await updateDoc(userRef, {
-                    isPremium: !currentStatus
-                });
-                showProfileSelection();
-            } catch (e) {
-                alert("Error updating status.");
-            }
+            if (entry === ADMIN_PIN) { isManageMode = true; document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE"; showProfileSelection(); }
         }
 
         async function deleteProfile(name) {
-            if (confirm(`PERMANENTLY delete explorer "${name}"?`)) {
-                await deleteDoc(doc(db, "users", name));
-                showProfileSelection();
-            }
+            if (confirm(`Delete "${name}"?`)) { await deleteDoc(doc(db, "users", name)); showProfileSelection(); }
         }
 
         document.getElementById('save-name-btn').onclick = async () => {
             const name = document.getElementById('user-name-input').value.trim();
             if (name) {
-                const btn = document.getElementById('save-name-btn');
-                btn.innerText = "Syncing...";
-                btn.disabled = true;
-                try {
-                    // Create basic profile with isPremium: false by default
-                    await setDoc(doc(db, "users", name), { 
-                        lastActive: new Date(),
-                        isPremium: false 
-                    }, { merge: true });
-                    selectProfile(name);
-                } catch (e) {
-                    alert("Cloud save failed.");
-                    btn.innerText = "Start! 🚀";
-                    btn.disabled = false;
-                }
+                await setDoc(doc(db, "users", name), { lastLogin: new Date() }, { merge: true });
+                selectProfile(name);
             }
         };
 
-        async function selectProfile(name) {
+        function selectProfile(name) {
             localStorage.setItem('fb_current_user', name);
             renderMainMenu(name);
         }
 
-        async function renderMainMenu(name) {
+        function renderMainMenu(name) {
             loading.style.display = 'none';
             selection.style.display = 'none';
             setup.style.display = 'none';
             menu.style.display = 'block';
-            
-            // Fetch latest data to see if user is premium
-            const userDoc = await getDoc(doc(db, "users", name));
-            const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
-            
-            document.getElementById('menu-header').innerHTML = `Hi, ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}!`;
+            header.style.display = 'flex';
+            document.getElementById('user-badge').innerText = `👤 ${name}`;
         }
 
         window.switchUser = () => {
@@ -246,7 +181,6 @@
 
         window.initHub = initHub;
         window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
-        
         initHub();
     </script>
 </body>
