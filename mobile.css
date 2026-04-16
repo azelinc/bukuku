@@ -5,7 +5,7 @@ body { font-family: 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: 
 
 .container { width: 100%; min-height: 100vh; margin: 0; padding: 0; display: flex; flex-direction: column; }
 
-/* MOBILE HEADER */
+/* HEADER */
 .app-header {
     background: #1a1a2e; color: #ffffff; padding: 15px 15px;
     display: flex; align-items: center; justify-content: space-between;
@@ -14,44 +14,47 @@ body { font-family: 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: 
 .app-header h1 { font-size: 1.1rem; margin: 0; color: white; background: transparent; padding: 0; }
 .header-right { display: flex; align-items: center; gap: 8px; }
 
-.user-badge { 
-    color: #f1c40f; font-weight: bold; font-size: 0.85rem; 
-    border: 1px solid rgba(255,255,255,0.3); padding: 4px 10px; border-radius: 15px;
-}
-
+.user-badge { color: #f1c40f; font-weight: bold; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.3); padding: 4px 10px; border-radius: 15px; }
 .home-icon-btn { text-decoration: none; font-size: 1.3rem; }
 
-/* APP BUTTONS */
-.main-menu-padding { padding: 25px 20px; flex-grow: 1; }
-.btn { 
-    display: block; width: 100%; padding: 22px; margin: 12px 0; 
-    font-size: 1.2rem; font-weight: 800; color: white !important; 
-    border-radius: 16px; border: none; text-align: center; text-decoration: none; 
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+/* TRAIN SIFIR GRID (Mobile) */
+.sifir-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    margin-top: 10px; 
 }
-.blue-btn { background: #4a90e2 !important; }
-.orange-btn { background: #f39c12 !important; }
-.green-btn { background: #2ecc71 !important; }
-
-.btn-disabled { 
-    background: #f2f2f2 !important; color: #aaaaaa !important; 
-    filter: grayscale(1); box-shadow: none; pointer-events: none;
+.train-card { 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    padding: 15px 5px; 
+    border-radius: 12px; 
+    text-align: center; 
+    text-decoration: none !important; 
+    color: #333; 
+    font-weight: bold; 
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
-.coming-soon-tag { font-size: 0.7rem; display: block; margin-top: 4px; }
+.train-card.mastered { background: #f0fff4; border-color: #2ecc71; }
+.mastered-label { display: block; color: #27ae60; font-size: 0.6rem; }
 
-/* GRID & TABS */
+/* NAVIGATION */
 .sidebar { width: 100%; flex-direction: row; display: flex; overflow-x: auto; padding: 10px; gap: 10px; background: #f8f9fa; border-bottom: 1px solid #eee; position: sticky; top: 54px; z-index: 100; }
 .tab-btn { padding: 10px 18px; white-space: nowrap; border-radius: 50px; background: #fff; font-size: 0.85rem; border: 1px solid #ddd; color: #666; font-weight: bold; }
 .tab-btn.active { background: #4a90e2; color: white; border-color: #4a90e2; }
+
+/* MATRIX */
+.main-content { padding: 15px; }
 .grade-row { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 20px 0; border-bottom: 1px solid #f0f0f0; }
 .grade-label { background: #1a1a2e; color: white; padding: 6px 15px; border-radius: 8px; font-size: 0.8rem; font-weight: bold; }
 .set-group { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; width: 100%; }
 .set-circle { aspect-ratio: 1/1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white !important; font-weight: bold; position: relative; text-decoration: none; line-height: 1; }
 .set-circle small { font-size: 0.6rem; font-weight: normal; margin-top: 2px; }
 .set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
-.set-circle.done::after { content: "✓"; position: absolute; top: -5px; right: -5px; background: #27ae60; width: 20px; height: 20px; border-radius: 50%; font-size: 11px; display: flex; align-items: center; justify-content: center; color: white; border: 2px solid white; }
+.set-circle.done::after { content: "✓"; position: absolute; top: -5px; right: -5px; background: #27ae60; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; display: flex; align-items: center; justify-content: center; color: white; border: 2px solid white; }
 
+/* TABLE */
 .lb-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.85rem; }
 .lb-table td { padding: 12px 5px; border-bottom: 1px solid #f9f9f9; text-align: center; font-weight: bold; }
-.col-rank { width: 40px; }
-.col-name { text-align: left !important; padding-left: 8px !important; }
+.col-name { text-align: left !important; padding-left: 10px !important; }
