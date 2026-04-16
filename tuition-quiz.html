@@ -186,6 +186,10 @@
             document.getElementById('result-area').style.display = 'block';
             document.getElementById('final-score').innerText = `${score}/${questions.length}`;
 
+            const backBtn = document.getElementById('back-to-hub-btn');
+            backBtn.innerText = "☁️ Saving Score...";
+            backBtn.disabled = true; // Lock the button
+            
             if (kidName) {
                 try {
                     const userRef = doc(db, "users", kidName);
