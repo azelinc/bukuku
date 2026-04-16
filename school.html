@@ -2,41 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Link to PC Styles -->
+    <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
+    
+    <!-- Link to Mobile Styles -->
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 </head>
 <body>
     <div class="container wide-container">
-        <div style="padding: 15px; border-bottom: 2px solid #eee; text-align: center; background: #fff;">
-            <h1 style="margin: 0; font-size: 1.4rem;">🏫 School Hub</h1>
-        </div>
+        <!-- App Top Bar -->
+        <h1>🏫 School Hub</h1>
 
         <div class="library-layout">
+            <!-- Sidebar / Top Navigation -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
-                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
-                <button class="tab-btn btn-disabled" style="font-size: 0.8rem;">🧪 STEM (Soon)</button>
+                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
+                <button class="tab-btn btn-disabled">🧪 STEM (Soon)</button>
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; margin-top: auto;">🏠 Home</a>
             </div>
 
+            <!-- Main Content Area -->
             <div class="main-content">
-                <div id="tuition" class="category-content">
-                    <h2 style="font-size: 1.1rem; margin-bottom: 15px; text-align: center; color: #666;">Choose a Study Set</h2>
-                    <div id="matrix-container"></div>
+                
+                <!-- TUITION SECTION (The Std 4, 5, 6 grid) -->
+                <div id="tuition" class="category-content" style="display: block;">
+                    <h2 style="margin-bottom: 15px; font-size: 1.2rem; color: #666;">Choose a Study Set</h2>
+                    <div id="matrix-container">
+                        <p style="text-align:center; padding: 20px;">Loading your progress...</p>
+                    </div>
                 </div>
 
-                <div id="sifir" class="category-content" style="display:none;">
+                <!-- SIFIR SECTION -->
+                <div id="sifir" class="category-content" style="display: none;">
                     <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
-                    <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
-                        <tbody id="leaderboard-body"></tbody>
-                    </table>
+                    
+                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
+                    <div style="background: #f9f9f9; border-radius: 15px; padding: 10px;">
+                        <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
+                            <tbody id="leaderboard-body"></tbody>
+                        </table>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -56,7 +71,7 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
-        const kidName = localStorage.getItem('fb_current_user');
+        const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
         const subjects = [
             { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 },
@@ -65,8 +80,10 @@
         ];
 
         async function generateMatrix() {
+            console.log("Generating Matrix for:", kidName);
             const container = document.getElementById('matrix-container');
             const lbBody = document.getElementById('leaderboard-body');
+            
             let scores = {};
             let allUsers = [];
 
@@ -81,27 +98,41 @@
                     }
                 });
 
+                // Update Sifir UI
                 if (scores['sifir-master'] !== undefined) {
                     document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
                 }
 
+                // Rankings
                 allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
                 lbBody.innerHTML = '';
                 allUsers.slice(0, 5).forEach((user, index) => {
-                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:8px;">#${index+1}</td><td style="padding:8px;text-align:left;">${user.name}</td><td style="padding:8px;">${user.score}/10</td><td style="padding:8px;">${user.time}s</td></tr>`;
+                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${user.name}</td><td>${user.score}/10</td><td>${user.time}s</td></tr>`;
                 });
-            } catch (e) { console.error(e); }
+            } catch (e) { console.error("Firebase Error:", e); }
 
+            // Build the Standard 4, 5, 6 Grid
             container.innerHTML = '';
             subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22;">${sub.name}</h3>`;
+                let html = `<div class="subject-card">
+                    <h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22; padding-bottom: 5px;">${sub.name}</h3>`;
+                
                 [4, 5, 6].forEach(lvl => {
-                    html += `<div class="grade-row"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
+                    html += `<div class="grade-row">
+                        <div class="grade-label">Std ${lvl}</div>
+                        <div class="set-group">`;
+                    
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = scores[scoreKey] || 0;
                         const doneClass = bestScore >= 5 ? 'done' : '';
-                        html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${doneClass}" style="background-color: ${sub.color}">${setNum}${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
+                        html += `
+                            <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
+                               class="set-circle ${doneClass}" 
+                               style="background-color: ${sub.color}">
+                               ${setNum}
+                               ${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}
+                            </a>`;
                     }
                     html += `</div></div>`;
                 });
@@ -110,17 +141,23 @@
             });
         }
 
+        // TAB SWITCHER
         window.openTab = (categoryName, element) => {
             const contents = document.getElementsByClassName("category-content");
             for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
+            
             const tabs = document.getElementsByClassName("tab-btn");
             for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
+            
             document.getElementById(categoryName).style.display = "block";
             if(element) element.classList.add("active");
         }
 
+        // Check if user coming back from Sifir
         const params = new URLSearchParams(window.location.search);
-        if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
+        if (params.get('tab') === 'sifir') {
+            openTab('sifir', document.getElementById('tab-sifir'));
+        }
 
         generateMatrix();
     </script>
