@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sifir Trainer - AF Hub</title>
+    <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <style>
+        .train-box { background: white; padding: 20px; border-radius: 20px; border: 3px solid #eee; margin-top: 10px; }
+        .sifir-row { display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 10px; font-size: 1.5rem; font-weight: bold; }
+        .sifir-input { 
+            width: 80px; padding: 10px; border-radius: 10px; border: 2px solid #ddd; 
+            text-align: center; font-size: 1.4rem; font-family: inherit;
+        }
+        .sifir-input.correct { border-color: #2ecc71; background: #f0fff4; }
+        .sifir-input.wrong { border-color: #e74c3c; background: #fff5f5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Training Sifir ?</h1>
+        <p id="timer-text" style="font-weight: bold; color: #e74c3c; margin: 10px 0;">Time Left: 60s</p>
+
+        <div class="train-box" id="input-area">
+            <!-- Rows 1 to 12 injected here -->
+        </div>
+
+        <button class="btn blue-btn" id="submit-btn" onclick="checkMastery()">Finish & Check ✅</button>
+        <a href="school.html?tab=train" class="btn red-btn">Exit Training</a>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
+            authDomain: "af-adventure-hub.firebaseapp.com",
+            projectId: "af-adventure-hub",
+            storageBucket: "af-adventure-hub.firebasestorage.app",
+            messagingSenderId: "440085894217",
+            appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const kidName = localStorage.getItem('fb_current_user') || "Explorer";
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const n = parseInt(urlParams.get('n')) || 2;
+        document.getElementById('title').innerText = `Training Sifir ${n}`;
+
+        let timeLeft = 60; // For training, let's give 60 seconds for all 12
+        const timer = setInterval(() => {
+            timeLeft--;
+            document.getElementById('timer-text').innerText = `Time Left: ${timeLeft}s`;
+            if (timeLeft <= 0) { clearInterval(timer); checkMastery(); }
+        }, 1000);
+
+        const area = document.getElementById('input-area');
+        for (let i = 1; i <= 12; i++) {
+            area.innerHTML += `
+                <div class="sifir-row">
+                    <span>${i} × ${n} =</span>
+                    <input type="number" class="sifir-input" id="ans-${i}" placeholder="?">
+                </div>
+            `;
+        }
+
+        window.checkMastery = async () => {
+            clearInterval(timer);
+            let correctCount = 0;
+            for (let i = 1; i <= 12; i++) {
+                const input = document.getElementById(`ans-${i}`);
+                const userVal = parseInt(input.value);
+                if (userVal === (i * n)) {
+                    input.classList.add('correct');
+                    correctCount++;
+                } else {
+                    input.classList.add('wrong');
+                    input.value = i * n; // Show correct answer
+                }
+            }
+
+            // Save Progress to Cloud
+            if (kidName) {
+                const userRef = doc(db, "users", kidName);
+                const userDoc = await getDoc(userRef);
+                let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
+                
+                // Only save if it's 12/12
+                if (correctCount > (scores[`train-${n}`] || 0)) {
+                    scores[`train-${n}`] = correctCount;
+                    await setDoc(userRef, { scores: scores }, { merge: true });
+                }
+            }
+
+            document.getElementById('submit-btn').innerText = `Score: ${correctCount}/12 - Done!`;
+            document.getElementById('submit-btn').disabled = true;
+            document.getElementById('timer-text').innerText = "Training Complete!";
+        };
+    </script>
+</body>
+</html>
