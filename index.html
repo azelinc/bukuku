@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
-        .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; }
-        .profile-btn { flex: 1; margin: 0 !important; }
-        .del-btn { background: #ff7675; border: none; color: white; padding: 15px; border-radius: 15px; cursor: pointer; font-size: 1.2rem; display: none; }
+        .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; width: 100%; }
+        .profile-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        .admin-controls { display: flex; gap: 5px; }
+        .del-btn { background: #ff7675; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; min-width: 45px; }
+        .prem-toggle-btn { background: #eee; border: none; color: #aaa; padding: 12px; border-radius: 12px; cursor: pointer; display: none; min-width: 45px; font-size: 1.2rem; }
+        .prem-toggle-btn.is-premium { background: #f1c40f; color: white; }
+        .premium-star { color: #f1c40f; }
     </style>
 </head>
 <body>
@@ -26,19 +30,20 @@
             </div>
         </header>
 
-        <!-- LOADING SCREEN -->
+        <!-- 0. LOADING SCREEN -->
         <div id="loading-screen" style="padding: 80px 20px; text-align: center;">
             <div style="font-size: 50px; margin-bottom: 20px;">🚀</div>
             <h1>Loading...</h1>
-            <p style="color: #666; margin-top: 10px;">Connecting to Cloud</p>
+            <p style="color: #666; margin-top: 10px;">Connecting to Adventure Cloud</p>
         </div>
 
-        <!-- PROFILE SELECTION -->
+        <!-- 1. PROFILE SELECTION -->
         <div id="profile-selection" style="display: none;">
             <h1 style="background:none; color:#333; text-align:center; padding:30px 0;">👋 Welcome!</h1>
             <div class="main-menu-padding">
                 <p id="selection-sub" style="margin-bottom: 20px; text-align:center; color: #666;">Who is playing today?</p>
                 <div id="profile-list"></div>
+                
                 <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
                     <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
                     <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#ddd; cursor:pointer; font-size: 0.7rem; margin: 20px auto;">Admin</button>
@@ -46,41 +51,34 @@
             </div>
         </div>
 
-        <!-- NEW USER FORM -->
+        <!-- 2. NEW USER FORM -->
         <div id="name-setup" style="display: none;">
             <h1 style="background:none; color:#333; text-align:center; padding:30px 0;">✨ New Quest</h1>
             <div class="main-menu-padding">
+                <p style="margin-bottom: 15px; color: #666; text-align: center;">Enter your name to start:</p>
                 <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
                 <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
                 <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline; width:100%;">Cancel</button>
             </div>
         </div>
 
-        <!-- MAIN MENU -->
+        <!-- 3. MAIN MENU -->
         <div id="main-menu" style="display: none;">
             <div class="main-menu-padding">
-                <p style="margin-bottom:20px; color: #666; text-align:center; font-weight:bold;">Are you ready for today's lesson?</p>
-                
+                <p style="margin-bottom:20px; color: #666; text-align:center; font-weight:bold;">Ready for today's lesson?</p>
                 <div class="nav-grid">
                     <a href="school.html" class="btn green-btn">🏫 School Hub</a>
-                    
-                    <div class="btn btn-disabled">
-                        📖 Library <span class="coming-soon-tag">Coming Soon</span>
-                    </div>
-                    
-                    <div class="btn btn-disabled">
-                        🎮 Games <span class="coming-soon-tag">Coming Soon</span>
-                    </div>
+                    <div class="btn btn-disabled">📖 Library Coming Soon</div>
+                    <div class="btn btn-disabled">🎮 Games Coming Soon</div>
                 </div>
-                
-                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%;">👤 Switch Profile</button>
+                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
             </div>
         </div>
     </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -122,21 +120,42 @@
             selection.style.display = 'block';
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
+            
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
                 querySnapshot.forEach((docSnap) => {
+                    const userData = docSnap.data();
+                    const name = docSnap.id;
+                    const isPremium = userData.isPremium === true; // Strict check
+
                     const row = document.createElement('div');
                     row.className = "profile-row";
+                    
                     const btn = document.createElement('button');
                     btn.className = "btn blue-btn profile-btn";
-                    btn.innerHTML = `👤 ${docSnap.id}`;
-                    btn.onclick = () => selectProfile(docSnap.id);
+                    // Star only shown if user isPremium
+                    btn.innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
+                    btn.onclick = () => selectProfile(name);
+
+                    const ctrl = document.createElement('div');
+                    ctrl.className = "admin-controls";
+
+                    const premBtn = document.createElement('button');
+                    premBtn.className = "prem-toggle-btn" + (isPremium ? " is-premium" : "");
+                    premBtn.innerHTML = "⭐";
+                    premBtn.style.display = isManageMode ? "block" : "none";
+                    premBtn.onclick = (e) => { e.stopPropagation(); togglePremium(name, isPremium); };
+
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
                     delBtn.innerHTML = "🗑️";
                     delBtn.style.display = isManageMode ? "block" : "none";
-                    delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(docSnap.id); };
-                    row.appendChild(btn); row.appendChild(delBtn);
+                    delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(name); };
+
+                    ctrl.appendChild(premBtn);
+                    ctrl.appendChild(delBtn);
+                    row.appendChild(btn);
+                    row.appendChild(ctrl);
                     list.appendChild(row);
                 });
             } catch (e) { console.error(e); }
@@ -144,18 +163,46 @@
 
         window.adminLogin = () => {
             const entry = prompt("Enter Admin PIN:");
-            if (entry === ADMIN_PIN) { isManageMode = true; document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE"; showProfileSelection(); }
+            if (entry === ADMIN_PIN) {
+                isManageMode = true;
+                document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE";
+                document.getElementById('selection-sub').style.color = "red";
+                showProfileSelection();
+            }
+        }
+
+        async function togglePremium(name, currentStatus) {
+            try {
+                const userRef = doc(db, "users", name);
+                await updateDoc(userRef, { isPremium: !currentStatus });
+                showProfileSelection();
+            } catch (e) { alert("Error."); }
         }
 
         async function deleteProfile(name) {
-            if (confirm(`Delete "${name}"?`)) { await deleteDoc(doc(db, "users", name)); showProfileSelection(); }
+            if (confirm(`Delete "${name}"?`)) {
+                await deleteDoc(doc(db, "users", name));
+                showProfileSelection();
+            }
         }
 
         document.getElementById('save-name-btn').onclick = async () => {
             const name = document.getElementById('user-name-input').value.trim();
             if (name) {
-                await setDoc(doc(db, "users", name), { lastLogin: new Date() }, { merge: true });
-                selectProfile(name);
+                const btn = document.getElementById('save-name-btn');
+                btn.innerText = "Syncing...";
+                btn.disabled = true;
+                try {
+                    await setDoc(doc(db, "users", name), { 
+                        lastLogin: new Date(),
+                        isPremium: false // Standard by default
+                    }, { merge: true });
+                    selectProfile(name);
+                } catch (e) {
+                    alert("Sync failed.");
+                    btn.innerText = "Start! 🚀";
+                    btn.disabled = false;
+                }
             }
         };
 
@@ -164,24 +211,11 @@
             renderMainMenu(name);
         }
 
-        function renderMainMenu(name) {
+        async function renderMainMenu(name) {
             loading.style.display = 'none';
             selection.style.display = 'none';
             setup.style.display = 'none';
             menu.style.display = 'block';
             header.style.display = 'flex';
-            document.getElementById('user-badge').innerText = `👤 ${name}`;
-        }
-
-        window.switchUser = () => {
-            localStorage.removeItem('fb_current_user');
-            isManageMode = false;
-            initHub();
-        }
-
-        window.initHub = initHub;
-        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
-        initHub();
-    </script>
-</body>
-</html>
+            
+            const userDoc = await g
