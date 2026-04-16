@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
+    
+    <!-- CSS for Desktop -->
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
+    
+    <!-- CSS for Mobile -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+
     <style>
         .filter-bar { display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px; }
         .filter-btn { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; background: white; font-weight: bold; color: #555; }
@@ -37,17 +42,18 @@
         </header>
 
         <div class="library-layout">
-            <!-- SIDEBAR: REARRANGED ORDER -->
+            <!-- SIDEBAR: SWAPPED ORDER -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
                 <button id="tab-train" class="tab-btn" onclick="openTab('train', this)">🧠 Train Sifir</button>
+                <!-- STEM MOVED TO BOTTOM -->
                 <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
             </div>
 
             <div class="main-content">
 
-                <!-- 1. TUITION SECTION (Visible by Default) -->
+                <!-- 1. TUITION SECTION (Default Visible) -->
                 <div id="tuition" class="category-content" style="display: block;">
                     <div class="filter-bar">
                         <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
@@ -71,13 +77,11 @@
                     </div>
                 </div>
 
-                <!-- 3. TRAIN SIFIR SECTION (Rearranged to Bottom) -->
+                <!-- 3. TRAIN SIFIR SECTION -->
                 <div id="train" class="category-content" style="display: none;">
                     <h2 style="text-align: center; margin-bottom: 5px; font-size: 1.2rem;">🧠 Memorization Training</h2>
                     <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">Master each table from 1 to 12</p>
-                    <div class="sifir-grid" id="train-grid">
-                        <!-- Sifir 1-12 buttons will load here -->
-                    </div>
+                    <div class="sifir-grid" id="train-grid"></div>
                 </div>
                 
             </div>
@@ -116,7 +120,7 @@
                     isPremium = userDoc.data().isPremium || false;
                 }
 
-                // Global rankings logic
+                // Global Rankings Merge
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -126,7 +130,6 @@
                 const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
                 newAttempts.forEach(aDoc => masterDataList.push(aDoc.data()));
                 masterDataList.sort((a, b) => b.score - a.score || a.time - b.time);
-                
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
@@ -135,7 +138,7 @@
                 if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
 
-            // BUILD TRAIN SIFIR GRID
+            // BUILD TRAIN GRID
             trainGrid.innerHTML = '';
             for (let i = 1; i <= 12; i++) {
                 const isMastered = userScores[`train-${i}`] === 12;
@@ -178,12 +181,8 @@
 
         window.filterGrade = (lvl, btn) => {
             const btns = document.getElementsByClassName('filter-btn');
-            for(let b of btns) {
-                b.style.background = "white";
-                b.style.color = "#555";
-            }
-            btn.style.background = "#1a1a2e";
-            btn.style.color = "white";
+            for(let b of btns) b.style.background = "white", b.style.color = "#555";
+            btn.style.background = "#1a1a2e", btn.style.color = "white";
             const allRows = document.getElementsByClassName('grade-row');
             for(let row of allRows) {
                 if (lvl === 'all') row.style.display = 'flex';
@@ -192,10 +191,9 @@
         };
 
         const params = new URLSearchParams(window.location.search);
-        // Handle incoming tab deep-links
         if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
         else if (params.get('tab') === 'train') openTab('train', document.getElementById('tab-train'));
-
+        
         generateHub();
     </script>
 </body>
