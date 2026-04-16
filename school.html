@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
     
+    <!-- Link to PC Styles -->
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
+    
+    <!-- Link to Mobile Styles -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
@@ -110,7 +113,9 @@
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
             const lbBody = document.getElementById('leaderboard-body');
+            
             let scores = {};
+            let isPremium = false;
             let allUsers = [];
 
             try {
@@ -118,7 +123,12 @@
                 querySnapshot.forEach((doc) => {
                     const data = doc.data();
                     const userScores = data.scores || {};
-                    if (doc.id === kidName) scores = userScores;
+                    
+                    if (doc.id === kidName) {
+                        scores = userScores;
+                        isPremium = data.isPremium || false; // Check premium status
+                    }
+                    
                     if (userScores['sifir-master-obj']) {
                         allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
                     }
@@ -149,15 +159,30 @@
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = scores[scoreKey] || 0;
                         const isDone = bestScore >= 5;
-                        const doneClass = isDone ? 'done' : '';
                         
-                        html += `
-                            <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
-                               class="set-circle ${doneClass}" 
-                               style="background-color: ${sub.color}">
-                               <span>${setNum}</span>
-                               ${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}
-                            </a>`;
+                        // PREMIUM LOGIC: Lock sets 6-10 for English if not premium
+                        let isLocked = false;
+                        if (sub.id === 'eng' && setNum >= 6 && !isPremium) {
+                            isLocked = true;
+                        }
+
+                        const doneClass = isDone ? 'done' : '';
+                        const lockedClass = isLocked ? 'locked' : '';
+                        
+                        if (isLocked) {
+                            html += `
+                                <div class="set-circle locked">
+                                    <span>🔒</span>
+                                </div>`;
+                        } else {
+                            html += `
+                                <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
+                                   class="set-circle ${doneClass}" 
+                                   style="background-color: ${sub.color}">
+                                   <span>${setNum}</span>
+                                   ${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}
+                                </a>`;
+                        }
                     }
                     html += `</div></div>`;
                 });
@@ -189,9 +214,6 @@
                 }
             }
         };
-
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
 
         generateMatrix();
     </script>
