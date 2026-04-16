@@ -19,13 +19,17 @@
         </header>
 
         <div class="library-layout">
+            <!-- SIDEBAR -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
                 <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
             </div>
 
+            <!-- MAIN CONTENT (No empty space at top) -->
             <div class="main-content">
+                
+                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content" style="display: block;">
                     <div class="filter-bar" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px;">
                         <button class="filter-btn active" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('all', this)">All</button>
@@ -36,14 +40,15 @@
                     <div id="matrix-container"></div>
                 </div>
 
+                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
-                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.1rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
-                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px; font-size: 0.9rem;">Best Score: 0/10</p>
+                        <h2 style="margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
+                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
                     
-                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 10</h3>
+                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 10</h3>
                     <div style="background: #fff; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
                         <table class="lb-table">
                             <thead>
@@ -62,6 +67,7 @@
         </div>
     </div>
 
+    <!-- Firebase Logic -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, getDoc, getDocs, collection, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
@@ -78,9 +84,13 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
-        document.getElementById('user-badge').innerText = kidName;
+        document.getElementById('user-badge').innerText = `👤 ${kidName}`;
 
-        const subjects = [{ id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 }, { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }];
+        const subjects = [
+            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 },
+            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 },
+            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
+        ];
 
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
@@ -95,6 +105,7 @@
                     isPremium = data.isPremium || false;
                 }
 
+                // Global Rankings logic
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -108,13 +119,8 @@
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
-                    lbBody.innerHTML += `
-                        <tr>
-                            <td>#${index + 1}</td>
-                            <td class="col-name">${entry.name}</td>
-                            <td>${entry.score}/10</td>
-                            <td>${timeDisplay}</td>
-                        </tr>`;
+                    const rankClass = index < 3 ? `rank-${index+1}` : '';
+                    lbBody.innerHTML += `<tr><td class="${rankClass}">#${index + 1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
                 });
                 if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
