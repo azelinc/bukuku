@@ -5,14 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
     
-    <!-- CSS for Desktop (Card Look) -->
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
-    
-    <!-- CSS for Mobile (App Look) -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
-        /* Specific page styles for filtering */
         .filter-bar {
             display: flex;
             justify-content: center;
@@ -37,7 +33,6 @@
             color: white;
             border-color: #1a1a2e;
         }
-        /* Mobile specific filter tweak */
         @media (max-width: 600px) {
             .filter-bar { margin: 10px; padding: 5px; }
             .filter-btn { font-size: 0.8rem; padding: 8px 10px; flex: 1; }
@@ -46,26 +41,20 @@
 </head>
 <body>
     <div class="container wide-container">
-        <!-- App Top Bar (Dark on mobile, white on PC) -->
         <h1>🏫 School Hub</h1>
 
         <div class="library-layout">
-            <!-- Sidebar / Top Navigation -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
-                <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
+                <button class="tab-btn btn-disabled">🧪 STEM (Soon)</button>
                 <a href="index.html" class="tab-btn" style="text-decoration:none; color:#e74c3c; text-align:center; margin-top: auto;">🏠 Home</a>
             </div>
 
-            <!-- Main Content Area -->
             <div class="main-content">
-                
-                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content" style="display: block;">
                     <h2 style="margin-bottom: 15px; font-size: 1.1rem; color: #666; text-align: center;">Select Your Standard:</h2>
                     
-                    <!-- THE GRADE FILTER (Profile Buttons) -->
                     <div class="filter-bar">
                         <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
                         <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
@@ -78,14 +67,12 @@
                     </div>
                 </div>
 
-                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
                     <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-                    
                     <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
                     <div style="background: #f9f9f9; border-radius: 15px; padding: 10px;">
                         <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
@@ -93,7 +80,6 @@
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -117,14 +103,13 @@
 
         const subjects = [
             { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 },
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, // Teal
+            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 },
             { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
         ];
 
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
             const lbBody = document.getElementById('leaderboard-body');
-            
             let scores = {};
             let allUsers = [];
 
@@ -163,9 +148,9 @@
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = scores[scoreKey] || 0;
-                        const doneClass = bestScore >= 5 ? 'done' : '';
+                        const isDone = bestScore >= 5;
+                        const doneClass = isDone ? 'done' : '';
                         
-                        // Score logic: <span> for number, <small> for score. Prevents "110/10" text join.
                         html += `
                             <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
                                class="set-circle ${doneClass}" 
@@ -181,7 +166,6 @@
             });
         }
 
-        // TAB SWITCHER
         window.openTab = (categoryName, element) => {
             const contents = document.getElementsByClassName("category-content");
             for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
@@ -191,7 +175,6 @@
             if(element) element.classList.add("active");
         }
 
-        // GRADE FILTERING LOGIC
         window.filterGrade = (lvl, btn) => {
             const btns = document.getElementsByClassName('filter-btn');
             for(let b of btns) b.classList.remove('active');
@@ -200,7 +183,7 @@
             const allRows = document.getElementsByClassName('grade-row');
             for(let row of allRows) {
                 if (lvl === 'all') {
-                    row.style.display = (window.innerWidth <= 600) ? 'flex' : 'flex';
+                    row.style.display = 'flex';
                 } else {
                     row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
                 }
