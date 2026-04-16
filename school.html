@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container wide-container">
+        <!-- HEADER -->
         <header class="app-header">
             <h1>🏫 School Hub</h1>
             <div class="header-right">
@@ -18,6 +19,7 @@
         </header>
 
         <div class="library-layout">
+            <!-- SIDEBAR -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
@@ -26,9 +28,9 @@
             </div>
 
             <div class="main-content">
-                <!-- 1. TUITION -->
+                <!-- TUITION SECTION (Standard 4, 5, 6 Grid) -->
                 <div id="tuition" class="category-content" style="display: block;">
-                    <div class="filter-bar" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px;">
+                    <div class="filter-bar" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 15px; padding: 10px; background: #f8f9fa; border-radius: 15px;">
                         <button class="filter-btn active" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('all', this)">All</button>
                         <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('4', this)">Std 4</button>
                         <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('5', this)">Std 5</button>
@@ -37,23 +39,23 @@
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- 2. SIFIR MASTER -->
+                <!-- SIFIR MASTER SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
-                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.1rem;">🔢 Sifir Master</h2>
-                    <div class="subject-card" style="text-align: center;">
+                    <div class="subject-card" style="text-align: center; margin-top: 0;">
+                        <h2 style="margin-bottom: 5px; font-size: 1.1rem;">🔢 Sifir Master</h2>
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px; font-size: 0.9rem;">Best Score: 0/10</p>
-                        <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
+                        <a href="sifir.html" class="btn blue-btn" style="margin: 0 auto;">Start Challenge 🚀</a>
                     </div>
-                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 10</h3>
+                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 0.9rem;">🏆 Global Top 10</h3>
                     <div style="background: #fff; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
                         <table class="lb-table"><tbody id="leaderboard-body"></tbody></table>
                     </div>
                 </div>
 
-                <!-- 3. TRAIN SIFIR -->
+                <!-- TRAIN SIFIR SECTION -->
                 <div id="train" class="category-content" style="display: none;">
                     <h2 style="text-align: center; margin-bottom: 5px; font-size: 1.1rem;">🧠 Memorization Training</h2>
-                    <p style="text-align: center; color: #666; font-size: 0.85rem; margin-bottom: 20px;">Master each table from 1 to 12</p>
+                    <p style="text-align: center; color: #666; font-size: 0.85rem; margin-bottom: 15px;">Master each table from 1 to 12</p>
                     <div class="sifir-grid" id="train-grid"></div>
                 </div>
             </div>
@@ -84,7 +86,7 @@
             const container = document.getElementById('matrix-container');
             const trainGrid = document.getElementById('train-grid');
             const lbBody = document.getElementById('leaderboard-body');
-            let userScores = {}; let isPremium = false; let masterDataList = [];
+            let userScores = {}; let masterDataList = []; let isPremium = false;
 
             try {
                 const userDoc = await getDoc(doc(db, "users", kidName));
@@ -93,7 +95,7 @@
                     isPremium = userDoc.data().isPremium || false;
                 }
 
-                // Leaderboard Merge
+                // Rankings logic
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -106,29 +108,28 @@
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
-                    lbBody.innerHTML += `<tr><td>#${index+1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
+                    lbBody.innerHTML += `<tr><td style="width:40px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
                 });
                 if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
 
-            // TRAIN GRID
+            // GRID BUILDS
             trainGrid.innerHTML = '';
             for (let i = 1; i <= 12; i++) {
                 const isMastered = userScores[`train-${i}`] === 12;
                 trainGrid.innerHTML += `<a href="train-engine.html?n=${i}" class="train-card ${isMastered ? 'mastered' : ''}">Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}</a>`;
             }
 
-            // MATRIX
             container.innerHTML = '';
             subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22; padding-bottom: 5px;">${sub.name}</h3>`;
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 8px;">${sub.name}</h3>`;
                 [4, 5, 6].forEach(lvl => {
                     html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = userScores[scoreKey] || 0;
-                        const isLocked = (sub.id === 'eng' && setNum >= 6 && !isPremium);
-                        if (isLocked) html += `<div class="set-circle locked"><span>🔒</span></div>`;
+                        const isLocked = (!isPremium && ((sub.id === 'math' && setNum >= 4) || (sub.id === 'eng' && setNum >= 6)));
+                        if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
                         else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
                     }
                     html += `</div></div>`;
@@ -158,9 +159,6 @@
             }
         };
 
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
-        else if (params.get('tab') === 'train') openTab('train', document.getElementById('tab-train'));
         generateHub();
     </script>
 </body>
