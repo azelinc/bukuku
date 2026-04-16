@@ -27,6 +27,7 @@
 </head>
 <body>
     <div class="container wide-container">
+        <!-- HEADER -->
         <header class="app-header">
             <h1>🏫 School Hub</h1>
             <div class="header-right">
@@ -36,19 +37,19 @@
         </header>
 
         <div class="library-layout">
+            <!-- SIDEBAR: REARRANGED ORDER -->
             <div class="sidebar">
-                <!-- NEW TAB ON TOP -->
-                <button id="tab-train" class="tab-btn active" onclick="openTab('train', this)">🧠 Train Sifir</button>
-                <button id="tab-tuition" class="tab-btn" onclick="openTab('tuition', this)">🎓 Tuition</button>
+                <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
                 <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
+                <!-- TRAIN MOVED TO BOTTOM -->
+                <button id="tab-train" class="tab-btn" onclick="openTab('train', this)">🧠 Train Sifir</button>
             </div>
 
             <div class="main-content">
 
-
-                <!-- TUITION SECTION -->
-                <div id="tuition" class="category-content" style="display: none;">
+                <!-- 1. TUITION SECTION (Visible by Default) -->
+                <div id="tuition" class="category-content" style="display: block;">
                     <div class="filter-bar">
                         <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
                         <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
@@ -58,7 +59,7 @@
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR MASTER SECTION -->
+                <!-- 2. SIFIR MASTER SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
                     <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
@@ -71,8 +72,8 @@
                     </div>
                 </div>
 
-                <!-- TRAIN SIFIR SECTION -->
-                <div id="train" class="category-content" style="display: block;">
+                <!-- 3. TRAIN SIFIR SECTION (Rearranged to Bottom) -->
+                <div id="train" class="category-content" style="display: none;">
                     <h2 style="text-align: center; margin-bottom: 5px; font-size: 1.2rem;">🧠 Memorization Training</h2>
                     <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">Master each table from 1 to 12</p>
                     <div class="sifir-grid" id="train-grid">
@@ -116,7 +117,7 @@
                     isPremium = userDoc.data().isPremium || false;
                 }
 
-                // Rankings logic
+                // Global rankings logic
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -126,6 +127,7 @@
                 const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
                 newAttempts.forEach(aDoc => masterDataList.push(aDoc.data()));
                 masterDataList.sort((a, b) => b.score - a.score || a.time - b.time);
+                
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
@@ -177,8 +179,12 @@
 
         window.filterGrade = (lvl, btn) => {
             const btns = document.getElementsByClassName('filter-btn');
-            for(let b of btns) b.style.background = "white", b.style.color = "#555";
-            btn.style.background = "#1a1a2e", btn.style.color = "white";
+            for(let b of btns) {
+                b.style.background = "white";
+                b.style.color = "#555";
+            }
+            btn.style.background = "#1a1a2e";
+            btn.style.color = "white";
             const allRows = document.getElementsByClassName('grade-row');
             for(let row of allRows) {
                 if (lvl === 'all') row.style.display = 'flex';
@@ -187,7 +193,10 @@
         };
 
         const params = new URLSearchParams(window.location.search);
+        // Handle incoming tab deep-links
         if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
+        else if (params.get('tab') === 'train') openTab('train', document.getElementById('tab-train'));
+
         generateHub();
     </script>
 </body>
