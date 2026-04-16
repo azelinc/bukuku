@@ -190,18 +190,31 @@
             backBtn.innerText = "☁️ Saving Score...";
             backBtn.disabled = true; // Lock the button
             
-            if (kidName) {
+             if (kidName) {
                 try {
                     const userRef = doc(db, "users", kidName);
                     const userDoc = await getDoc(userRef);
                     let currentScores = userDoc.exists() ? userDoc.data().scores || {} : {};
+
                     if (score > (currentScores[firebaseKey] || 0)) {
                         currentScores[firebaseKey] = score;
                         await setDoc(userRef, { scores: currentScores }, { merge: true });
-                        document.getElementById('sync-status').innerText = "✅ Personal Best Saved!";
                     }
-                } catch (e) { console.error(e); }
+            
+                    // SHOW NOTIFICATION AND UNLOCK BUTTON
+                    document.getElementById('sync-badge').style.display = 'inline-block';
+                    backBtn.innerText = "Back to School Hub";
+                    backBtn.disabled = false; 
+
+                } catch (e) {
+                    console.error(e);
+                    backBtn.innerText = "Error: Click to return";
+                    backBtn.disabled = false;
+                }
+            } else {
+                backBtn.disabled = false;
             }
+    
             document.getElementById('feedback').innerText = score >= 5 ? `Great job, ${kidName}!` : `Keep practicing, ${kidName}!`;
         }
 
