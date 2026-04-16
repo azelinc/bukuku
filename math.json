@@ -26,8 +26,8 @@
   "4-3": [
     { "q": "Find the next number in this sequence: 2, 4, 6, ...", "a": ["7", "8", "9", "10"], "c": 1 },
     { "q": "What is the result of 10 multiplied by 0.5?", "a": ["5", "50", "1", "0.5"], "c": 0 },
-    { "q": "A rectangle has a length of 6 cm and a width of 4 cm. What is its perimeter?", "a": ["10 cm", "20 cm", "24 cm", "12 cm"], "c: 1 },
-    { "q": "Calculate RM 5.20 + RM 4.80.", "a": ["RM 9.00", "RM 10.00", "RM 11.00", "RM 10.20"], "c: 1 },
+    { "q": "A rectangle has a length of 6 cm and a width of 4 cm. What is its perimeter?", "a": ["10 cm", "20 cm", "24 cm", "12 cm"], "c": 1 },
+    { "q": "Calculate RM 5.20 + RM 4.80.", "a": ["RM 9.00", "RM 10.00", "RM 11.00", "RM 10.20"], "c": 1 },
     { "q": "Which of these numbers is an even number?", "a": ["11", "13", "14", "15"], "c": 2 },
     { "q": "Divide 100 by 4.", "a": ["20", "25", "30", "40"], "c": 1 },
     { "q": "How many days are there in 2 weeks?", "a": ["10", "12", "14", "16"], "c": 2 },
@@ -152,7 +152,7 @@
     { "q": "What is the ratio of 2 girls to 3 boys?", "a": ["2:3", "3:2", "2/5", "3/5"], "c": 0 },
     { "q": "How many years are there in a Millennium?", "a": ["100 years", "50 years", "1,000 years", "10,000 years"], "c": 2 },
     { "q": "Divide 8.4 by 2.", "a": ["4.2", "4.0", "4.4", "2.4"], "c": 0 },
-    { "q": "What is the sum of the interior angles of a triangle?", "a": ["90°", "180°", "360°", "270°"], "c: 1 },
+    { "q": "What is the sum of the interior angles of a triangle?", "a": ["90°", "180°", "360°", "270°"], "c": 1 },
     { "q": "Is the number 17 a prime number?", "a": ["Yes", "No", "Only on weekends", "Maybe"], "c": 0 }
   ],
   "5-4": [
@@ -313,7 +313,7 @@
   ],
   "6-7": [
     { "q": "Ratio of apples to oranges is 2:3. If there are 10 apples, how many oranges?", "a": ["10", "12", "15", "20"], "c": 2 },
-    { "q": "Find the median of: 11, 15, 12, 10, 19.", "a": "11", "a": ["10", "11", "12", "15"], "c": 2 },
+    { "q": "Find the median of: 11, 15, 12, 10, 19.", "a": ["10", "11", "12", "15", "19"], "c": 2 },
     { "q": "Convert 0.125 million into a whole number.", "a": ["12,500", "125,000", "1,250,000", "1,250"], "c": 1 },
     { "q": "State the coordinates of the Origin.", "a": ["(1,1)", "(0,1)", "(1,0)", "(0,0)"], "c": 3 },
     { "q": "A cube has side 5cm. Total surface area?", "a": ["25cm²", "125cm²", "150cm²", "100cm²"], "c": 2 },
@@ -326,7 +326,7 @@
   "6-8": [
     { "q": "Value of digit 2 in 2,456,781?", "a": ["2 million", "200,000", "20,000", "2,000"], "c": 0 },
     { "q": "Price RM 200, Profit 10%. Selling price?", "a": ["RM 180", "RM 210", "RM 220", "RM 10"], "c": 2 },
-    { "q": "Average of 2, 4, 6, 8, 10?", a: ["4", "5", "6", "30"], "c": 2 },
+    { "q": "Average of 2, 4, 6, 8, 10?", "a": ["4", "5", "6", "30"], "c": 2 },
     { "q": "3 Litres 5 ml = (in ml)", "a": ["305", "3,005", "3,500", "35"], "c": 1 },
     { "q": "A clock shows 0830 hours. What is it in 12-hour system?", "a": ["8:30 AM", "8:30 PM", "6:30 PM", "10:30 AM"], "c": 0 },
     { "q": "Distance 120km, Time 1.5 hours. Speed?", "a": ["60 km/h", "80 km/h", "100 km/h", "120 km/h"], "c": 1 },
