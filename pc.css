@@ -48,12 +48,19 @@ body {
 
 .set-circle small { font-size: 0.65rem; font-weight: normal; display: block; }
 
-/* TICK MARK FIX */
 .set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
 .set-circle.done::after {
-    content: "✓";
-    position: absolute; top: -6px; right: -6px;
+    content: "✓"; position: absolute; top: -6px; right: -6px;
     background: #27ae60; color: white; width: 20px; height: 20px;
     border-radius: 50%; font-size: 11px; display: flex; align-items: center; justify-content: center;
     border: 2px solid white; font-weight: bold;
+}
+
+/* PREMIUM LOCKED STYLE */
+.locked {
+    background-color: #d1d1d1 !important;
+    color: #888 !important;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none !important;
 }
