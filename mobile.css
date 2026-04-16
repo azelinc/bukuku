@@ -5,40 +5,89 @@ body { font-family: 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: 
 
 .container { width: 100%; min-height: 100vh; margin: 0; padding: 0; display: flex; flex-direction: column; }
 
-/* MOBILE HEADER */
+/* FIXED INLINE HEADER */
 .app-header {
-    background: #1a1a2e; color: #ffffff; padding: 15px 15px;
-    display: flex; align-items: center; justify-content: space-between;
-    position: sticky; top: 0; z-index: 110;
+    background: #1a1a2e; 
+    color: #ffffff; 
+    padding: 10px 15px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Pushes title left, buttons right */
+    position: sticky; 
+    top: 0; 
+    z-index: 110;
+    height: 60px;
 }
-.app-header h1 { font-size: 1.1rem; margin: 0; color: white; }
-.header-right { display: flex; align-items: center; gap: 8px; }
-.user-badge { color: #f1c40f; font-weight: bold; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.3); padding: 4px 10px; border-radius: 15px; white-space: nowrap; max-width: 120px; overflow: hidden; text-overflow: ellipsis; }
-.home-icon-btn { text-decoration: none; font-size: 1.3rem; }
+.app-header h1 { 
+    font-size: 1.1rem; 
+    margin: 0; 
+    white-space: nowrap;
+}
+.header-right { 
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+.user-badge { 
+    color: #f1c40f; 
+    font-weight: bold; 
+    font-size: 0.8rem; 
+    border: 1px solid rgba(255,255,255,0.3); 
+    padding: 4px 8px; 
+    border-radius: 12px;
+    white-space: nowrap;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.home-icon-btn { text-decoration: none; font-size: 1.2rem; }
 
-/* --- LEADERBOARD TABLE (Mobile) --- */
-.lb-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.85rem; }
-.lb-table th { color: #999; padding: 10px 5px; border-bottom: 1px solid #eee; font-size: 0.7rem; text-transform: uppercase; }
-.lb-table td { padding: 12px 5px; border-bottom: 1px solid #f9f9f9; text-align: center; font-weight: bold; overflow: hidden; text-overflow: ellipsis; }
+/* TABLE FIX (Mobile) */
+.lb-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    table-layout: fixed; /* Crucial for alignment */
+    font-size: 0.8rem; 
+}
+.lb-table th { 
+    color: #999; 
+    padding: 8px 2px; 
+    border-bottom: 1px solid #eee; 
+    font-size: 0.65rem; 
+    text-transform: uppercase; 
+    text-align: center;
+}
+.lb-table td { 
+    padding: 10px 2px; 
+    border-bottom: 1px solid #f9f9f9; 
+    text-align: center; 
+    font-weight: bold; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
 
-/* Mobile column widths */
-.col-rank { width: 40px; }
-.col-name { text-align: left !important; padding-left: 8px !important; }
-.col-score { width: 65px; }
+/* Mobile specific column widths to prevent overlapping */
+.col-rank { width: 35px; }
+.col-name { text-align: left !important; width: auto; padding-left: 5px !important; }
+.col-score { width: 60px; }
 .col-time { width: 65px; }
 
-.sidebar { width: 100%; flex-direction: row; display: flex; overflow-x: auto; padding: 10px; gap: 10px; background: #f8f9fa; border-bottom: 1px solid #eee; position: sticky; top: 54px; z-index: 100; }
-.tab-btn { padding: 10px 18px; white-space: nowrap; border-radius: 50px; background: #fff; font-size: 0.85rem; border: 1px solid #ddd; color: #666; font-weight: bold; }
+/* NAVIGATION TABS */
+.sidebar { 
+    width: 100%; flex-direction: row; display: flex; 
+    overflow-x: auto; padding: 10px; gap: 8px; 
+    background: #f8f9fa; border-bottom: 1px solid #eee; 
+    position: sticky; top: 60px; z-index: 100; 
+}
+.tab-btn { padding: 8px 15px; white-space: nowrap; border-radius: 50px; background: #fff; font-size: 0.85rem; border: 1px solid #ddd; color: #666; font-weight: bold; }
 .tab-btn.active { background: #4a90e2; color: white; border-color: #4a90e2; }
 
+/* MATRIX */
 .main-content { padding: 15px; }
-.grade-row { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 20px 0; border-bottom: 1px solid #f0f0f0; }
-.grade-label { background: #1a1a2e; color: white; padding: 6px 15px; border-radius: 8px; font-size: 0.8rem; font-weight: bold; }
-.set-group { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; width: 100%; }
-.set-circle { aspect-ratio: 1/1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white !important; font-weight: bold; position: relative; text-decoration: none; line-height: 1; }
-.set-circle small { font-size: 0.6rem; font-weight: normal; margin-top: 2px; }
+.grade-row { display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px 0; border-bottom: 1px solid #f0f0f0; }
+.grade-label { background: #1a1a2e; color: white; padding: 5px 12px; border-radius: 8px; font-size: 0.8rem; font-weight: bold; }
+.set-group { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; width: 100%; }
+.set-circle { aspect-ratio: 1/1; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white !important; font-weight: bold; position: relative; text-decoration: none; line-height: 1; }
+.set-circle small { font-size: 0.55rem; font-weight: normal; margin-top: 2px; }
 .set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
-.set-circle.done::after { content: "✓"; position: absolute; top: -5px; right: -5px; background: #27ae60; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; display: flex; align-items: center; justify-content: center; color: white; border: 2px solid white; }
-
-.btn { display: block; width: 100%; padding: 20px; margin: 10px 0; font-size: 1.2rem; font-weight: 800; color: white !important; border-radius: 16px; border: none; text-align: center; text-decoration: none; }
-.blue-btn { background: #4a90e2; }
+.set-circle.done::after { content: "✓"; position: absolute; top: -4px; right: -4px; background: #27ae60; width: 16px; height: 16px; border-radius: 50%; font-size: 10px; display: flex; align-items: center; justify-content: center; color: white; border: 1px solid white; }
