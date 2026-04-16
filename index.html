@@ -16,6 +16,7 @@
         .prem-toggle-btn { background: #eee; border: none; color: #aaa; padding: 12px; border-radius: 12px; cursor: pointer; display: none; min-width: 45px; font-size: 1.2rem; }
         .prem-toggle-btn.is-premium { background: #f1c40f; color: white; }
         .premium-star { color: #f1c40f; }
+        #loading-retry { display: none; margin-top: 20px; color: #4a90e2; text-decoration: underline; cursor: pointer; background: none; border: none; }
     </style>
 </head>
 <body>
@@ -34,7 +35,8 @@
         <div id="loading-screen" style="padding: 80px 20px; text-align: center;">
             <div style="font-size: 50px; margin-bottom: 20px;">🚀</div>
             <h1>Loading...</h1>
-            <p style="color: #666; margin-top: 10px;">Connecting to Adventure Cloud</p>
+            <p id="loading-status">Connecting to Adventure Cloud</p>
+            <button id="loading-retry" onclick="location.reload()">Refresh Page</button>
         </div>
 
         <!-- 1. PROFILE SELECTION -->
@@ -89,8 +91,10 @@
             appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98"
         };
 
+        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
+
         const loading = document.getElementById('loading-screen');
         const selection = document.getElementById('profile-selection');
         const setup = document.getElementById('name-setup');
@@ -100,7 +104,16 @@
         let isManageMode = false;
         const ADMIN_PIN = "9988";
 
+        // Show retry button if loading takes more than 6 seconds
+        setTimeout(() => {
+            if(loading.style.display !== 'none') {
+                document.getElementById('loading-retry').style.display = 'inline-block';
+                document.getElementById('loading-status').innerText = "Cloud is taking a while...";
+            }
+        }, 6000);
+
         async function initHub() {
+            console.log("System: Initializing Hub...");
             loading.style.display = 'block';
             selection.style.display = 'none';
             setup.style.display = 'none';
@@ -108,9 +121,17 @@
             header.style.display = 'none';
 
             const activeUser = localStorage.getItem('fb_current_user');
+            
             if (activeUser) {
-                renderMainMenu(activeUser);
+                console.log("System: Attempting to log in as", activeUser);
+                const success = await renderMainMenu(activeUser);
+                if (!success) {
+                    console.log("System: Local user not found in Cloud. Resetting...");
+                    localStorage.removeItem('fb_current_user');
+                    await showProfileSelection();
+                }
             } else {
+                console.log("System: No local user found. Showing selection.");
                 await showProfileSelection();
             }
         }
@@ -119,27 +140,25 @@
             loading.style.display = 'none';
             selection.style.display = 'block';
             const list = document.getElementById('profile-list');
-            list.innerHTML = '';
+            list.innerHTML = '<p style="color:#999">Fetching adventurers...</p>';
             
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
+                list.innerHTML = '';
                 querySnapshot.forEach((docSnap) => {
                     const userData = docSnap.data();
                     const name = docSnap.id;
-                    const isPremium = userData.isPremium === true; // Strict check
+                    const isPremium = userData.isPremium === true;
 
                     const row = document.createElement('div');
                     row.className = "profile-row";
-                    
                     const btn = document.createElement('button');
                     btn.className = "btn blue-btn profile-btn";
-                    // Star only shown if user isPremium
                     btn.innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
                     btn.onclick = () => selectProfile(name);
 
                     const ctrl = document.createElement('div');
                     ctrl.className = "admin-controls";
-
                     const premBtn = document.createElement('button');
                     premBtn.className = "prem-toggle-btn" + (isPremium ? " is-premium" : "");
                     premBtn.innerHTML = "⭐";
@@ -158,7 +177,11 @@
                     row.appendChild(ctrl);
                     list.appendChild(row);
                 });
-            } catch (e) { console.error(e); }
+                if (querySnapshot.empty) list.innerHTML = '<p style="color:#999">No explorers yet.</p>';
+            } catch (e) { 
+                console.error("Firebase Fetch Error:", e);
+                list.innerHTML = '<p style="color:red">Error connecting to Cloud. Please refresh.</p>';
+            }
         }
 
         window.adminLogin = () => {
@@ -175,14 +198,14 @@
             try {
                 const userRef = doc(db, "users", name);
                 await updateDoc(userRef, { isPremium: !currentStatus });
-                showProfileSelection();
-            } catch (e) { alert("Error."); }
+                await showProfileSelection();
+            } catch (e) { console.error(e); }
         }
 
         async function deleteProfile(name) {
-            if (confirm(`Delete "${name}"?`)) {
+            if (confirm(`Delete explorer "${name}"?`)) {
                 await deleteDoc(doc(db, "users", name));
-                showProfileSelection();
+                await showProfileSelection();
             }
         }
 
@@ -193,13 +216,10 @@
                 btn.innerText = "Syncing...";
                 btn.disabled = true;
                 try {
-                    await setDoc(doc(db, "users", name), { 
-                        lastLogin: new Date(),
-                        isPremium: false // Standard by default
-                    }, { merge: true });
+                    await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
                     selectProfile(name);
                 } catch (e) {
-                    alert("Sync failed.");
+                    alert("Cloud save failed. Check permissions.");
                     btn.innerText = "Start! 🚀";
                     btn.disabled = false;
                 }
@@ -212,10 +232,34 @@
         }
 
         async function renderMainMenu(name) {
-            loading.style.display = 'none';
-            selection.style.display = 'none';
-            setup.style.display = 'none';
-            menu.style.display = 'block';
-            header.style.display = 'flex';
-            
-            const userDoc = await g
+            try {
+                const userDoc = await getDoc(doc(db, "users", name));
+                if (!userDoc.exists()) return false; // Fail if doc missing
+
+                const isPremium = userDoc.data().isPremium === true;
+                loading.style.display = 'none';
+                selection.style.display = 'none';
+                setup.style.display = 'none';
+                menu.style.display = 'block';
+                header.style.display = 'flex';
+                document.getElementById('user-badge').innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
+                return true;
+            } catch (e) {
+                console.error("Menu Render Error:", e);
+                return false;
+            }
+        }
+
+        window.switchUser = () => {
+            localStorage.removeItem('fb_current_user');
+            isManageMode = false;
+            initHub();
+        }
+
+        window.initHub = initHub;
+        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
+        
+        initHub();
+    </script>
+</body>
+</html>
