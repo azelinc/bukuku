@@ -33,10 +33,16 @@ h1 { background: #1a1a2e; color: #ffffff; padding: 25px 20px; font-size: 1.4rem;
 
 .set-circle small { font-size: 0.6rem; font-weight: normal; margin-top: 2px; }
 
-/* TICK MARK FIX FOR MOBILE */
 .set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
 .set-circle.done::after {
     content: "✓"; position: absolute; top: -5px; right: -5px; background: #27ae60;
     width: 20px; height: 20px; border-radius: 50%; font-size: 11px; display: flex;
     align-items: center; justify-content: center; color: white; border: 2px solid white;
+}
+
+/* PREMIUM LOCKED STYLE */
+.locked {
+    background-color: #f0f0f0 !important;
+    color: #ccc !important;
+    pointer-events: none;
 }
