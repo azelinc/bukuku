@@ -37,6 +37,27 @@
         @media (max-width: 600px) {
             .sifir-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
         }
+        /* Specific fix for the Sifir Master button */
+        #sifir-start-btn {
+            display: block !important;
+            width: 100% !important;
+            max-width: 300px !important;
+            margin: 20px auto !important;
+            padding: 18px !important;
+            background-color: #4a90e2 !important;
+            color: white !important;
+            text-decoration: none !important;
+            font-weight: 800 !important;
+            border-radius: 18px !important;
+            text-align: center !important;
+            border-bottom: 5px solid #2e6cb5 !important;
+            font-size: 1.1rem !important;
+                }
+
+        #sifir-start-btn:active {
+            transform: translateY(4px) !important;
+            border-bottom-width: 1px !important;
+        }
     </style>
 </head>
 <body>
