@@ -1,103 +1,42 @@
 /* MOBILE STYLE (Full-Screen App Look) */
-* { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
-    -webkit-tap-highlight-color: transparent; 
-}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
 body { 
-    font-family: 'Segoe UI', Roboto, sans-serif; 
-    background: #ffffff; 
-    color: #333;
-    min-height: 100vh;
-    display: block; 
+    font-family: 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: #333; min-height: 100vh; display: block; 
 }
 
-.container { 
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    border: none !important; 
-    border-radius: 0 !important;
-    box-shadow: none !important;
-}
+.container { width: 100%; min-height: 100vh; margin: 0; padding: 0; border: none !important; border-radius: 0 !important; box-shadow: none !important; display: flex; flex-direction: column; }
 
-h1 {
-    background: #1a1a2e; 
-    color: #ffffff;
-    padding: 25px 20px;
-    font-size: 1.4rem;
-    margin: 0;
-    width: 100%;
-    text-align: left;
-}
+h1 { background: #1a1a2e; color: #ffffff; padding: 25px 20px; font-size: 1.4rem; margin: 0; width: 100%; text-align: left; }
 
-.main-menu-padding {
-    padding: 20px;
-}
-
-.btn {
-    display: block; width: 100%; padding: 22px; margin: 10px 0;
-    font-size: 1.2rem; font-weight: 800; color: white !important;
-    border-radius: 16px; border: none; text-align: center; text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
+.btn { display: block; width: 100%; padding: 22px; margin: 10px 0; font-size: 1.2rem; font-weight: 800; color: white !important; border-radius: 16px; border: none; text-align: center; text-decoration: none; }
 .blue-btn { background: #4a90e2; }
 .orange-btn { background: #f39c12; }
 .green-btn { background: #2ecc71; }
 .red-btn { background: #e74c3c; }
-
 .btn-disabled { background: #f2f2f2 !important; color: #aaaaaa !important; filter: grayscale(1); }
-.coming-soon-tag { font-size: 0.7rem; font-weight: normal; margin-top: 4px; display: block; }
 
-.library-layout { display: flex; flex-direction: column; }
-.sidebar { 
-    width: 100%; flex-direction: row; display: flex;
-    overflow-x: auto; padding: 10px; gap: 10px; background: #f8f9fa;
-    border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100;
-}
-
-.tab-btn { 
-    padding: 10px 20px; white-space: nowrap; border-radius: 20px; 
-    background: #fff; font-size: 0.9rem; border: 1px solid #ddd;
-    font-weight: bold; color: #666;
-}
+.sidebar { width: 100%; flex-direction: row; display: flex; overflow-x: auto; padding: 10px; gap: 10px; background: #f8f9fa; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+.tab-btn { padding: 10px 20px; white-space: nowrap; border-radius: 50px; background: #fff; font-size: 0.9rem; border: 1px solid #ddd; color: #666; font-weight: bold; }
 .tab-btn.active { background: #4a90e2; color: white; border-color: #4a90e2; }
 
-/* FIXING THE GRID ALIGNMENT */
 .main-content { padding: 15px; }
-.subject-card { margin-bottom: 25px; }
+.grade-row { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 20px 0; border-bottom: 1px solid #f0f0f0; }
+.grade-label { background: #1a1a2e; color: white; padding: 6px 15px; border-radius: 8px; font-size: 0.8rem; font-weight: bold; }
 
-.grade-row { 
-    display: flex; flex-direction: column; align-items: flex-start; 
-    gap: 12px; padding: 15px 0; border-bottom: 1px dotted #eee; 
-}
-
-.grade-label { 
-    background: #1a1a2e; color: white; font-weight: bold; 
-    padding: 6px 15px; border-radius: 8px; font-size: 0.8rem;
-}
-
-.set-group { 
-    display: grid; grid-template-columns: repeat(5, 1fr); 
-    gap: 10px; width: 100%;
-}
+.set-group { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; width: 100%; }
 
 .set-circle { 
-    aspect-ratio: 1/1; width: 100%;
-    display: flex; flex-direction: column; /* Force vertical stacking of number and score */
-    align-items: center; justify-content: center; 
-    border-radius: 12px; color: white !important; 
-    font-size: 1.1rem; text-decoration: none; position: relative; font-weight: bold;
+    aspect-ratio: 1/1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; 
+    color: white !important; font-weight: bold; position: relative; text-decoration: none; line-height: 1;
 }
 
-.set-circle.done { background-color: #2ecc71 !important; }
-.set-circle.done::after { 
-    content: "✓"; position: absolute; top: -5px; right: -5px; 
-    background: #27ae60; width: 18px; height: 18px; border-radius: 50%; 
-    font-size: 12px; display: flex; align-items: center; justify-content: center; 
-    color: white; border: 2px solid white;
+.set-circle small { font-size: 0.6rem; font-weight: normal; margin-top: 2px; }
+
+/* TICK MARK FIX FOR MOBILE */
+.set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
+.set-circle.done::after {
+    content: "✓"; position: absolute; top: -5px; right: -5px; background: #27ae60;
+    width: 20px; height: 20px; border-radius: 50%; font-size: 11px; display: flex;
+    align-items: center; justify-content: center; color: white; border: 2px solid white;
 }
