@@ -4,117 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
-    
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
-    
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
-
     <style>
-        /* Shared & Positioning Styles */
-        .container { position: relative; }
-
-        /* The Home Button Logic */
-        .home-top-btn {
-            display: block;
-            text-decoration: none;
-            background: #ffffff;
-            color: #e74c3c;
-            padding: 12px;
-            text-align: center;
-            font-weight: bold;
-            border-bottom: 1px solid #eee;
-            transition: 0.2s;
-        }
-
-        @media screen and (min-width: 601px) {
-            .home-top-btn {
-                position: absolute;
-                top: 25px;
-                right: 30px;
-                border: 2px solid #e74c3c;
-                border-radius: 12px;
-                padding: 8px 20px;
-                z-index: 1000;
-                width: auto;
-            }
-            .home-top-btn:hover {
-                background: #e74c3c;
-                color: white;
-            }
-        }
-
-        /* Filter Bar UI */
-        .filter-bar {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            padding: 10px;
-            background: #f8f9fa;
-            border-radius: 15px;
-        }
-        .filter-btn {
-            padding: 10px 15px;
-            border-radius: 10px;
-            border: 2px solid #ddd;
-            background: white;
-            cursor: pointer;
-            font-weight: bold;
-            color: #555;
-            transition: 0.2s;
-        }
-        .filter-btn.active {
-            background: #1a1a2e;
-            color: white;
-            border-color: #1a1a2e;
-        }
-
+        .filter-bar { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px; }
+        .filter-btn { padding: 10px 15px; border-radius: 10px; border: 2px solid #ddd; background: white; cursor: pointer; font-weight: bold; color: #555; transition: 0.2s; }
+        .filter-btn.active { background: #1a1a2e; color: white; border-color: #1a1a2e; }
+        
+        .leaderboard-container { background: #f9f9f9; border-radius: 15px; padding: 10px; margin-top: 10px; }
+        
         @media (max-width: 600px) {
             .filter-bar { margin: 10px; padding: 5px; }
             .filter-btn { font-size: 0.8rem; padding: 8px 10px; flex: 1; }
-            /* Force the mobile stacked layout for grades */
-            .grade-row { flex-direction: column !important; align-items: flex-end !important; }
         }
     </style>
 </head>
 <body>
     <div class="container wide-container">
-        <a href="index.html" class="home-top-btn">🏠 Home</a>
-
-        <h1>🏫 School Hub</h1>
+        <!-- HEADER -->
+        <header class="app-header">
+            <h1>🏫 School Hub</h1>
+            <div class="header-right">
+                <span id="user-badge" class="user-badge">Explorer</span>
+                <a href="index.html" class="home-icon-btn">🏠</a>
+            </div>
+        </header>
 
         <div class="library-layout">
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
-                <button class="tab-btn btn-disabled">🧪 STEM (Soon)</button>
+                <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
             </div>
 
             <div class="main-content">
+                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content" style="display: block;">
-                    <h2 style="margin-bottom: 15px; font-size: 1.1rem; color: #666; text-align: center;">Select Your Standard:</h2>
-                    
                     <div class="filter-bar">
                         <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
                         <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
                         <button class="filter-btn" onclick="filterGrade('5', this)">Std 5</button>
                         <button class="filter-btn" onclick="filterGrade('6', this)">Std 6</button>
                     </div>
-
-                    <div id="matrix-container">
-                        <p style="text-align:center; padding: 20px;">Syncing with cloud...</p>
-                    </div>
+                    <div id="matrix-container"></div>
                 </div>
 
+                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
-                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
+                    <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 5</h3>
-                    <div style="background: #f9f9f9; border-radius: 15px; padding: 10px;">
-                        <table style="width:100%; border-collapse:collapse; font-size: 0.85rem;">
+                    
+                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50;">🏆 Global Top 10</h3>
+                    <div class="leaderboard-container">
+                        <table class="lb-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-rank">Rank</th>
+                                    <th class="col-name">Name</th>
+                                    <th class="col-score">Score</th>
+                                    <th class="col-time">Time</th>
+                                </tr>
+                            </thead>
                             <tbody id="leaderboard-body"></tbody>
                         </table>
                     </div>
@@ -125,7 +78,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, getDocs, collection, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -139,75 +92,53 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
+        document.getElementById('user-badge').innerText = `👤 ${kidName}`;
 
-        const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 },
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 },
-            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
-        ];
+        const subjects = [{ id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 }, { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }];
 
         async function generateMatrix() {
             const container = document.getElementById('matrix-container');
             const lbBody = document.getElementById('leaderboard-body');
-            
-            let scores = {};
-            let isPremium = false;
-            let allUsers = [];
+            let userScores = {}; let isPremium = false; let masterDataList = [];
 
             try {
-                const querySnapshot = await getDocs(collection(db, "users"));
-                querySnapshot.forEach((doc) => {
-                    const data = doc.data();
-                    const userScores = data.scores || {};
-                    if (doc.id === kidName) {
-                        scores = userScores;
-                        isPremium = data.isPremium || false;
-                    }
-                    if (userScores['sifir-master-obj']) {
-                        allUsers.push({ name: doc.id, ...userScores['sifir-master-obj'] });
-                    }
-                });
-
-                if (scores['sifir-master'] !== undefined) {
-                    document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
+                const userDoc = await getDoc(doc(db, "users", kidName));
+                if (userDoc.exists()) {
+                    userScores = userDoc.data().scores || {};
+                    isPremium = userDoc.data().isPremium || false;
                 }
 
-                allUsers.sort((a, b) => b.score - a.score || a.time - b.time);
-                lbBody.innerHTML = '';
-                allUsers.slice(0, 5).forEach((user, index) => {
-                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${user.name}</td><td>${user.score}/10</td><td>${user.time}s</td></tr>`;
+                // Rankings Merge Logic
+                const userProfiles = await getDocs(collection(db, "users"));
+                userProfiles.forEach(uDoc => {
+                    const data = uDoc.data();
+                    if (data.scores?.['sifir-master-obj']) masterDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
+                    else if (data.scores?.['sifir-master']) masterDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
                 });
+                const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
+                newAttempts.forEach(aDoc => masterDataList.push(aDoc.data()));
+
+                masterDataList.sort((a, b) => b.score - a.score || a.time - b.time);
+                lbBody.innerHTML = '';
+                masterDataList.slice(0, 10).forEach((entry, index) => {
+                    const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
+                    const rankClass = index < 3 ? `rank-${index+1}` : '';
+                    lbBody.innerHTML += `<tr><td class="${rankClass}">#${index + 1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
+                });
+                if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
 
             container.innerHTML = '';
             subjects.forEach(sub => {
-                let html = `<div class="subject-card">
-                    <h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22; padding-bottom: 5px;">${sub.name}</h3>`;
-                
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22; padding-bottom: 5px;">${sub.name}</h3>`;
                 [4, 5, 6].forEach(lvl => {
-                    html += `<div class="grade-row grade-block-${lvl}">
-                        <div class="grade-label">Std ${lvl}</div>
-                        <div class="set-group">`;
-                    
+                    html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
-                        const bestScore = scores[scoreKey] || 0;
-                        const isDone = bestScore >= 5;
-                        
-                        let isLocked = (sub.id === 'eng' && setNum >= 6 && !isPremium);
-                        const doneClass = isDone ? 'done' : '';
-                        
-                        if (isLocked) {
-                            html += `<div class="set-circle locked"><span>🔒</span></div>`;
-                        } else {
-                            html += `
-                                <a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" 
-                                   class="set-circle ${doneClass}" 
-                                   style="background-color: ${sub.color}">
-                                   <span>${setNum}</span>
-                                   ${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}
-                                </a>`;
-                        }
+                        const bestScore = userScores[scoreKey] || 0;
+                        const isLocked = (sub.id === 'eng' && setNum >= 6 && !isPremium);
+                        if (isLocked) html += `<div class="set-circle locked"><span>🔒</span></div>`;
+                        else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
                     }
                     html += `</div></div>`;
                 });
@@ -227,18 +158,21 @@
 
         window.filterGrade = (lvl, btn) => {
             const btns = document.getElementsByClassName('filter-btn');
-            for(let b of btns) b.classList.remove('active');
-            btn.classList.add('active');
+            for(let b of btns) b.style.background = "white", b.style.color = "#555";
+            btn.style.background = "#1a1a2e", btn.style.color = "white";
             const allRows = document.getElementsByClassName('grade-row');
             for(let row of allRows) {
-                if (lvl === 'all') {
-                    row.style.display = 'flex';
-                } else {
-                    row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
-                }
+                if (lvl === 'all') row.style.display = 'flex';
+                else row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
             }
         };
 
+        // FIXED: URL Auto-Tab logic
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('tab') === 'sifir') {
+            openTab('sifir', document.getElementById('tab-sifir'));
+        }
+        
         generateMatrix();
     </script>
 </body>

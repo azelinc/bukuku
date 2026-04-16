@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Sifir Master - AF Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
     <style>
         .quiz-box { text-align: center; background: #fff; padding: 25px; border-radius: 20px; margin: 20px 0; border: 3px solid #eee; }
         .q-text { font-size: 2.5rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; }
@@ -30,16 +31,19 @@
         </div>
         <div id="result-area" style="display:none; padding: 20px;">
             <h2 id="final-score" style="font-size: 3rem; color: #f39c12;">0/10</h2>
-            <p id="time-taken-label" style="font-weight: bold; color: #666;"></p>
+            <p id="time-taken-label" style="font-weight: bold; color: #666; margin-bottom: 10px;"></p>
             <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
-            <button class="btn blue-btn" onclick="location.reload()">Refresh & Play New Set 🔄</button>
+            <div id="sync-status" style="font-size: 0.8rem; color: #999; margin-bottom: 15px;"></div>
+            <button class="btn blue-btn" onclick="location.reload()">New Set 🔄</button>
+            
+            <!-- FIXED LINK: Returns to Sifir Tab -->
             <a href="school.html?tab=sifir" class="btn green-btn">Back to Hub</a>
         </div>
     </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, setDoc, addDoc, collection, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -52,20 +56,18 @@
 
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
-        const kidName = localStorage.getItem('fb_current_user');
+        const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
         let currentQ = 0; let score = 0; let timerInterval; let timeLeft = 15;
         let currentCorrectAns;
-        let gameStartTime; // Stopwatch
+        let gameStartTime;
 
         function generateQuestion() {
-            if (currentQ === 0) gameStartTime = Date.now(); // Start clock on first Q
-
+            if (currentQ === 0) gameStartTime = Date.now();
             const a = Math.floor(Math.random() * 11) + 2; 
             const b = Math.floor(Math.random() * 11) + 2;
             const ans = a * b;
             currentCorrectAns = ans;
-
             let options = [ans];
             while(options.length < 4) {
                 let wrong = (a + (Math.random() > 0.5 ? 1 : -1)) * (b + (Math.random() > 0.5 ? 1 : -1));
@@ -73,7 +75,6 @@
                 if(wrong > 0 && !options.includes(wrong)) options.push(wrong);
             }
             options.sort(() => Math.random() - 0.5);
-
             document.getElementById('question').innerText = `${a} × ${b} = ?`;
             const list = document.getElementById('options-list');
             list.innerHTML = '';
@@ -144,26 +145,35 @@
             document.querySelector('.timer-wrapper').style.display = 'none';
             document.getElementById('result-area').style.display = 'block';
             document.getElementById('final-score').innerText = `${score}/10`;
-            document.getElementById('time-taken-label').innerText = `Time: ${totalTime} seconds`;
+            document.getElementById('time-taken-label').innerText = `Time: ${totalTime}s`;
+            
+            const sync = document.getElementById('sync-status');
+            sync.innerText = "Saving result...";
 
-            if (kidName) {
+            try {
+                // Save attempt to global collection
+                await addDoc(collection(db, "sifir_scores"), {
+                    name: kidName,
+                    score: score,
+                    time: parseFloat(totalTime),
+                    timestamp: serverTimestamp()
+                });
+
+                // Update personal best in user doc
                 const userRef = doc(db, "users", kidName);
                 const userDoc = await getDoc(userRef);
                 let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
-                
-                // RANKING LOGIC: Better if higher score OR (same score and faster time)
-                const prevRecord = scores['sifir-master-obj'] || { score: 0, time: 999 };
-                
-                if (score > prevRecord.score || (score === prevRecord.score && totalTime < prevRecord.time)) {
-                    scores['sifir-master-obj'] = { score: score, time: parseFloat(totalTime) };
-                    // Keep the old simple key for compatibility with existing display logic
-                    scores['sifir-master'] = score; 
+                if (score > (scores['sifir-master'] || 0)) {
+                    scores['sifir-master'] = score;
                     await setDoc(userRef, { scores: scores }, { merge: true });
                 }
+                sync.innerText = "✅ Result Saved!";
+            } catch (e) {
+                sync.innerText = "❌ Sync failed.";
             }
-            document.getElementById('feedback').innerText = score >= 8 ? `Spectacular, ${kidName}!` : `Good job, ${kidName}! Keep practicing.`;
+            
+            document.getElementById('feedback').innerText = score >= 8 ? `Amazing, ${kidName}!` : `Keep trying, ${kidName}!`;
         }
-
         generateQuestion();
     </script>
 </body>
