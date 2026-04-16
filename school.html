@@ -4,29 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>School Hub - AF Hub</title>
-    
-    <!-- Link to PC Styles -->
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
-    
-    <!-- Link to Mobile Styles -->
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
-
-    <style>
-        .filter-bar { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px; }
-        .filter-btn { padding: 10px 15px; border-radius: 10px; border: 2px solid #ddd; background: white; cursor: pointer; font-weight: bold; color: #555; transition: 0.2s; }
-        .filter-btn.active { background: #1a1a2e; color: white; border-color: #1a1a2e; }
-        
-        .leaderboard-container { background: #f9f9f9; border-radius: 15px; padding: 10px; margin-top: 10px; }
-        
-        @media (max-width: 600px) {
-            .filter-bar { margin: 10px; padding: 5px; }
-            .filter-btn { font-size: 0.8rem; padding: 8px 10px; flex: 1; }
-        }
-    </style>
 </head>
 <body>
     <div class="container wide-container">
-        <!-- HEADER -->
         <header class="app-header">
             <h1>🏫 School Hub</h1>
             <div class="header-right">
@@ -44,52 +26,37 @@
             </div>
 
             <div class="main-content">
-                <!-- TUITION SECTION -->
+                <!-- 1. TUITION -->
                 <div id="tuition" class="category-content" style="display: block;">
-                    <div class="filter-bar">
-                        <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
-                        <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
-                        <button class="filter-btn" onclick="filterGrade('5', this)">Std 5</button>
-                        <button class="filter-btn" onclick="filterGrade('6', this)">Std 6</button>
+                    <div class="filter-bar" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px;">
+                        <button class="filter-btn active" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('all', this)">All</button>
+                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('4', this)">Std 4</button>
+                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('5', this)">Std 5</button>
+                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('6', this)">Std 6</button>
                     </div>
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR SECTION -->
+                <!-- 2. SIFIR MASTER -->
                 <div id="sifir" class="category-content" style="display: none;">
-                    <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
+                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.1rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
-                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
+                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px; font-size: 0.9rem;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50;">🏆 Global Top 10</h3>
-                    <div class="leaderboard-container">
-                        <table class="lb-table">
-                            <thead>
-                                <tr><th class="col-rank">Rank</th><th class="col-name">Name</th><th class="col-score">Score</th><th class="col-time">Time</th></tr>
-                            </thead>
-                            <tbody id="leaderboard-body"></tbody>
-                        </table>
+                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 10</h3>
+                    <div style="background: #fff; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
+                        <table class="lb-table"><tbody id="leaderboard-body"></tbody></table>
                     </div>
                 </div>
 
-                <!-- TRAIN SIFIR SECTION -->
+                <!-- 3. TRAIN SIFIR -->
                 <div id="train" class="category-content" style="display: none;">
-                    <h2 style="text-align: center; margin-bottom: 5px; font-size: 1.2rem;">🧠 Memorization Training</h2>
-                    <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">Master each table from 1 to 12</p>
+                    <h2 style="text-align: center; margin-bottom: 5px; font-size: 1.1rem;">🧠 Memorization Training</h2>
+                    <p style="text-align: center; color: #666; font-size: 0.85rem; margin-bottom: 20px;">Master each table from 1 to 12</p>
                     <div class="sifir-grid" id="train-grid"></div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Firebase Modal Popup -->
-    <div id="premium-modal" class="modal-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: none; justify-content: center; align-items: center; z-index: 1000;">
-        <div style="background: white; padding: 30px; border-radius: 25px; width: 90%; max-width: 400px; text-align: center; border: 5px solid #f1c40f;">
-            <h2 style="color: #f39c12;">⭐ Unlock Premium</h2>
-            <p style="margin: 15px 0; color: #666; line-height: 1.5;">Access all <b>Math and English Sets (4-10)</b> to accelerate your learning!</p>
-            <button class="btn orange-btn" onclick="requestPremium()">Upgrade via WhatsApp</button>
-            <button onclick="document.getElementById('premium-modal').style.display='none'" style="background:none; border:none; color:#999; cursor:pointer; text-decoration:underline; margin-top:10px;">Maybe Later</button>
         </div>
     </div>
 
@@ -109,19 +76,14 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
-        document.getElementById('user-badge').innerText = `👤 ${kidName}`;
+        document.getElementById('user-badge').innerText = kidName;
 
-        const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 10 }, // Updated to 10
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 },
-            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
-        ];
+        const subjects = [{ id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 }, { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }];
 
         async function generateHub() {
             const container = document.getElementById('matrix-container');
-            const lbBody = document.getElementById('leaderboard-body');
             const trainGrid = document.getElementById('train-grid');
-            
+            const lbBody = document.getElementById('leaderboard-body');
             let userScores = {}; let isPremium = false; let masterDataList = [];
 
             try {
@@ -131,6 +93,7 @@
                     isPremium = userDoc.data().isPremium || false;
                 }
 
+                // Leaderboard Merge
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -139,24 +102,23 @@
                 });
                 const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
                 newAttempts.forEach(aDoc => masterDataList.push(aDoc.data()));
-
                 masterDataList.sort((a, b) => b.score - a.score || a.time - b.time);
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
-                    lbBody.innerHTML += `<tr><td>#${index + 1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
+                    lbBody.innerHTML += `<tr><td>#${index+1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
                 });
                 if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
 
-            // BUILD TRAIN GRID
+            // TRAIN GRID
             trainGrid.innerHTML = '';
             for (let i = 1; i <= 12; i++) {
                 const isMastered = userScores[`train-${i}`] === 12;
                 trainGrid.innerHTML += `<a href="train-engine.html?n=${i}" class="train-card ${isMastered ? 'mastered' : ''}">Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}</a>`;
             }
 
-            // BUILD TUITION MATRIX
+            // MATRIX
             container.innerHTML = '';
             subjects.forEach(sub => {
                 let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22; padding-bottom: 5px;">${sub.name}</h3>`;
@@ -165,15 +127,8 @@
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = userScores[scoreKey] || 0;
-                        
-                        // PREMIUM LOCKING LOGIC
-                        let isLocked = false;
-                        if (!isPremium) {
-                            if (sub.id === 'math' && setNum >= 6) isLocked = true; // Math Set 4-10
-                            if (sub.id === 'eng' && setNum >= 6) isLocked = true;  // English Set 6-10
-                        }
-
-                        if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
+                        const isLocked = (sub.id === 'eng' && setNum >= 6 && !isPremium);
+                        if (isLocked) html += `<div class="set-circle locked"><span>🔒</span></div>`;
                         else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
                     }
                     html += `</div></div>`;
@@ -181,13 +136,6 @@
                 html += `</div>`;
                 container.innerHTML += html;
             });
-        }
-
-        window.openPremiumModal = () => document.getElementById('premium-modal').style.display = 'flex';
-        window.requestPremium = () => {
-            const phone = "60122750485"; // YOUR WHATSAPP NUMBER
-            const msg = encodeURIComponent(`Hi! I want to upgrade "${kidName}" to Premium on AF Hub.`);
-            window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
         }
 
         window.openTab = (categoryName, element) => {
@@ -212,6 +160,7 @@
 
         const params = new URLSearchParams(window.location.search);
         if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
+        else if (params.get('tab') === 'train') openTab('train', document.getElementById('tab-train'));
         generateHub();
     </script>
 </body>
