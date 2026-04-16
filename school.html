@@ -6,18 +6,6 @@
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
-    <style>
-        .filter-bar { display: flex; justify-content: center; gap: 10px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px; }
-        .filter-btn { padding: 10px 15px; border-radius: 10px; border: 2px solid #ddd; background: white; cursor: pointer; font-weight: bold; color: #555; transition: 0.2s; }
-        .filter-btn.active { background: #1a1a2e; color: white; border-color: #1a1a2e; }
-        
-        .leaderboard-container { background: #f9f9f9; border-radius: 15px; padding: 10px; margin-top: 10px; }
-        
-        @media (max-width: 600px) {
-            .filter-bar { margin: 10px; padding: 5px; }
-            .filter-btn { font-size: 0.8rem; padding: 8px 10px; flex: 1; }
-        }
-    </style>
 </head>
 <body>
     <div class="container wide-container">
@@ -38,27 +26,25 @@
             </div>
 
             <div class="main-content">
-                <!-- TUITION SECTION -->
                 <div id="tuition" class="category-content" style="display: block;">
-                    <div class="filter-bar">
-                        <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
-                        <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
-                        <button class="filter-btn" onclick="filterGrade('5', this)">Std 5</button>
-                        <button class="filter-btn" onclick="filterGrade('6', this)">Std 6</button>
+                    <div class="filter-bar" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px;">
+                        <button class="filter-btn active" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('all', this)">All</button>
+                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('4', this)">Std 4</button>
+                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('5', this)">Std 5</button>
+                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('6', this)">Std 6</button>
                     </div>
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
-                    <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
+                    <h2 style="text-align: center; margin-bottom: 10px; font-size: 1.1rem;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
-                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
+                        <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px; font-size: 0.9rem;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
                     
-                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50;">🏆 Global Top 10</h3>
-                    <div class="leaderboard-container">
+                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 10</h3>
+                    <div style="background: #fff; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
                         <table class="lb-table">
                             <thead>
                                 <tr>
@@ -92,7 +78,7 @@
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
-        document.getElementById('user-badge').innerText = `👤 ${kidName}`;
+        document.getElementById('user-badge').innerText = kidName;
 
         const subjects = [{ id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 }, { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }];
 
@@ -104,11 +90,11 @@
             try {
                 const userDoc = await getDoc(doc(db, "users", kidName));
                 if (userDoc.exists()) {
-                    userScores = userDoc.data().scores || {};
-                    isPremium = userDoc.data().isPremium || false;
+                    const data = userDoc.data();
+                    userScores = data.scores || {};
+                    isPremium = data.isPremium || false;
                 }
 
-                // Rankings Merge Logic
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -122,8 +108,13 @@
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
-                    const rankClass = index < 3 ? `rank-${index+1}` : '';
-                    lbBody.innerHTML += `<tr><td class="${rankClass}">#${index + 1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
+                    lbBody.innerHTML += `
+                        <tr>
+                            <td>#${index + 1}</td>
+                            <td class="col-name">${entry.name}</td>
+                            <td>${entry.score}/10</td>
+                            <td>${timeDisplay}</td>
+                        </tr>`;
                 });
                 if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
@@ -167,12 +158,8 @@
             }
         };
 
-        // FIXED: URL Auto-Tab logic
         const params = new URLSearchParams(window.location.search);
-        if (params.get('tab') === 'sifir') {
-            openTab('sifir', document.getElementById('tab-sifir'));
-        }
-        
+        if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
         generateMatrix();
     </script>
 </body>
