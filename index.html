@@ -9,9 +9,17 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
-        .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; }
-        .profile-btn { flex: 1; margin: 0 !important; }
-        .del-btn { background: #ff7675; border: none; color: white; padding: 15px; border-radius: 15px; cursor: pointer; font-size: 1.2rem; display: none; }
+        /* Admin Row Styling */
+        .profile-row { display: flex; align-items: center; gap: 8px; max-width: 400px; margin: 10px auto; }
+        .profile-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        
+        .admin-controls { display: flex; gap: 5px; }
+        
+        .del-btn { background: #ff7675; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; }
+        .prem-toggle-btn { background: #f1c40f; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; }
+        .prem-toggle-btn.is-active { background: #f39c12; box-shadow: inset 0 2px 5px rgba(0,0,0,0.2); }
+        
+        .premium-star { color: #f1c40f; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -61,14 +69,14 @@
                     <div class="btn btn-disabled">📖 Library <span class="coming-soon-tag">Coming Soon</span></div>
                     <div class="btn btn-disabled">🎮 Games <span class="coming-soon-tag">Coming Soon</span></div>
                 </div>
-                <button onclick="switchUser()" style="margin-top:30px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
+                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
             </div>
         </div>
     </div>
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, setDoc, getDocs, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
@@ -90,15 +98,7 @@
         let isManageMode = false;
         const ADMIN_PIN = "9988";
 
-        // Safety Timeout: Show manual bypass if Firebase is slow
-        setTimeout(() => {
-            if (loading.style.display !== 'none') {
-                document.getElementById('bypass-loading').style.display = 'block';
-            }
-        }, 5000);
-
         async function initHub() {
-            console.log("Checking session...");
             loading.style.display = 'block';
             selection.style.display = 'none';
             setup.style.display = 'none';
@@ -113,7 +113,6 @@
         }
 
         async function showProfileSelection() {
-            console.log("Fetching profiles from cloud...");
             loading.style.display = 'none';
             selection.style.display = 'block';
             const list = document.getElementById('profile-list');
@@ -121,49 +120,80 @@
             
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
-                if (querySnapshot.empty) {
-                    console.log("No profiles found.");
-                    list.innerHTML = '<p style="color:#999; margin:20px;">No explorers yet.</p>';
-                }
-                querySnapshot.forEach((doc) => {
+                querySnapshot.forEach((docSnap) => {
+                    const userData = docSnap.data();
+                    const name = docSnap.id;
+                    const isPremium = userData.isPremium || false;
+
                     const row = document.createElement('div');
                     row.className = "profile-row";
+                    
                     const btn = document.createElement('button');
                     btn.className = "btn blue-btn profile-btn";
-                    btn.innerHTML = `👤 ${doc.id}`;
-                    btn.onclick = () => selectProfile(doc.id);
+                    // If Premium, show a star
+                    btn.innerHTML = `👤 ${name} ${isPremium ? '<span class="premium-star">⭐</span>' : ''}`;
+                    btn.onclick = () => selectProfile(name);
+
+                    // Admin Controls Wrapper
+                    const ctrl = document.createElement('div');
+                    ctrl.className = "admin-controls";
+
+                    // Premium Toggle Button
+                    const premBtn = document.createElement('button');
+                    premBtn.className = "prem-toggle-btn" + (isPremium ? " is-active" : "");
+                    premBtn.innerHTML = "⭐";
+                    premBtn.title = "Toggle Premium Status";
+                    premBtn.style.display = isManageMode ? "block" : "none";
+                    premBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        togglePremium(name, isPremium);
+                    };
+
+                    // Delete Button
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
                     delBtn.innerHTML = "🗑️";
                     delBtn.style.display = isManageMode ? "block" : "none";
-                    delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(doc.id); };
-                    row.appendChild(btn); row.appendChild(delBtn);
+                    delBtn.onclick = (e) => {
+                        e.stopPropagation();
+                        deleteProfile(name);
+                    };
+
+                    ctrl.appendChild(premBtn);
+                    ctrl.appendChild(delBtn);
+                    row.appendChild(btn);
+                    row.appendChild(ctrl);
                     list.appendChild(row);
                 });
             } catch (e) {
-                console.error("Firebase fetch failed:", e);
-                list.innerHTML = '<p style="color:red;">Cloud connection error. Try refreshing.</p>';
+                console.error(e);
             }
-        }
-
-        // Attach to window so HTML onclicks work
-        window.showNewUserForm = () => {
-            loading.style.display = 'none';
-            selection.style.display = 'none';
-            setup.style.display = 'block';
         }
 
         window.adminLogin = () => {
             const entry = prompt("Enter Admin PIN:");
             if (entry === ADMIN_PIN) {
                 isManageMode = true;
-                document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE";
+                document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE: Toggle ⭐ or Delete 🗑️";
+                document.getElementById('selection-sub').style.color = "red";
                 showProfileSelection();
             }
         }
 
+        async function togglePremium(name, currentStatus) {
+            try {
+                const userRef = doc(db, "users", name);
+                await updateDoc(userRef, {
+                    isPremium: !currentStatus
+                });
+                showProfileSelection();
+            } catch (e) {
+                alert("Error updating status.");
+            }
+        }
+
         async function deleteProfile(name) {
-            if (confirm(`Delete "${name}"?`)) {
+            if (confirm(`PERMANENTLY delete explorer "${name}"?`)) {
                 await deleteDoc(doc(db, "users", name));
                 showProfileSelection();
             }
@@ -173,10 +203,14 @@
             const name = document.getElementById('user-name-input').value.trim();
             if (name) {
                 const btn = document.getElementById('save-name-btn');
-                btn.innerText = "Saving...";
+                btn.innerText = "Syncing...";
                 btn.disabled = true;
                 try {
-                    await setDoc(doc(db, "users", name), { lastActive: new Date() }, { merge: true });
+                    // Create basic profile with isPremium: false by default
+                    await setDoc(doc(db, "users", name), { 
+                        lastActive: new Date(),
+                        isPremium: false 
+                    }, { merge: true });
                     selectProfile(name);
                 } catch (e) {
                     alert("Cloud save failed.");
@@ -186,17 +220,22 @@
             }
         };
 
-        function selectProfile(name) {
+        async function selectProfile(name) {
             localStorage.setItem('fb_current_user', name);
             renderMainMenu(name);
         }
 
-        function renderMainMenu(name) {
+        async function renderMainMenu(name) {
             loading.style.display = 'none';
             selection.style.display = 'none';
             setup.style.display = 'none';
             menu.style.display = 'block';
-            document.getElementById('menu-header').innerHTML = `Hi, <span id="display-name">${name}</span>!`;
+            
+            // Fetch latest data to see if user is premium
+            const userDoc = await getDoc(doc(db, "users", name));
+            const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
+            
+            document.getElementById('menu-header').innerHTML = `Hi, ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}!`;
         }
 
         window.switchUser = () => {
@@ -206,6 +245,8 @@
         }
 
         window.initHub = initHub;
+        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
+        
         initHub();
     </script>
 </body>
