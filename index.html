@@ -5,76 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AF Adventure Hub</title>
     
-    <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <!-- NOTICE: NO EXTERNAL CSS LINKS HERE. TOTAL ISOLATION. -->
 
     <style>
-        .profile-row { display: flex; align-items: center; gap: 10px; max-width: 400px; margin: 10px auto; width: 100%; }
-        .profile-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        /* 1. RESET & BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            font-family: 'Segoe UI', Roboto, sans-serif; 
+            background: #1a1a2e; 
+            min-height: 100vh;
+            display: flex; justify-content: center; align-items: center; 
+            padding: 15px;
+        }
+
+        /* 2. THE CONTAINER (Locked Look) */
+        .idx-container { 
+            width: 100%; max-width: 480px; 
+            background: #ffffff; border-radius: 30px; 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
+            text-align: center; border: 6px solid #ffd700;
+            overflow: hidden; display: flex; flex-direction: column;
+        }
+
+        /* 3. APP HEADER (Locked Look) */
+        .idx-header {
+            background: #ffffff; color: #1a1a2e; padding: 15px 25px;
+            display: flex; align-items: center; justify-content: space-between;
+            border-bottom: 2px solid #eee; width: 100%;
+        }
+        .idx-header h1 { font-size: 1.4rem; margin: 0; }
+        .idx-user-badge { 
+            font-weight: bold; color: #2c3e50; font-size: 0.85rem; 
+            background: #f1c40f; padding: 5px 12px; border-radius: 20px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); white-space: nowrap;
+        }
+        .premium-star { color: #f39c12; font-weight: bold; }
+
+        /* 4. CONTENT PADDING */
+        .idx-content { padding: 30px 25px; width: 100%; flex-grow: 1; }
+        .idx-subtext { margin-bottom: 20px; color: #666; font-size: 1rem; }
+
+        /* 5. BUTTON STYLES (Exclusive to Index) */
+        .idx-btn {
+            display: block; width: 100%; padding: 18px; margin: 12px 0;
+            font-size: 1.2rem; font-weight: 800; color: white !important;
+            text-decoration: none; border-radius: 18px; border: none; 
+            cursor: pointer; text-align: center; transition: 0.2s;
+        }
+        .green-btn { background: #2ecc71 !important; border-bottom: 5px solid #27ae60; }
+        .blue-btn { background: #4a90e2 !important; border-bottom: 5px solid #2e6cb5; }
+        .orange-btn { background: #f39c12 !important; border-bottom: 6px solid #c87f0a; }
+        .red-btn { background: #e74c3c !important; border-bottom: 6px solid #c0392b; }
+        
+        .idx-btn:active { transform: translateY(3px); border-bottom-width: 1px; }
+
+        .idx-btn-disabled { 
+            background: #e0e0e0 !important; color: #999 !important; 
+            opacity: 0.7; pointer-events: none; filter: grayscale(1);
+            border-bottom: 4px solid #ccc !important;
+        }
+        .coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; }
+
+        /* 6. ADMIN & PROFILES */
+        .profile-row { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+        .profile-select-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
         .admin-controls { display: flex; gap: 5px; }
-        .del-btn { background: #ff7675; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; min-width: 45px; }
-        .prem-toggle-btn { background: #eee; border: none; color: #aaa; padding: 12px; border-radius: 12px; cursor: pointer; display: none; min-width: 45px; font-size: 1.2rem; }
+        .del-btn { background: #ff7675; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; }
+        .prem-toggle-btn { background: #eee; border: none; color: #aaa; padding: 12px; border-radius: 12px; cursor: pointer; display: none; font-size: 1.1rem; }
         .prem-toggle-btn.is-premium { background: #f1c40f; color: white; }
-        .premium-star { color: #f1c40f; }
-        #loading-retry { display: none; margin-top: 20px; color: #4a90e2; text-decoration: underline; cursor: pointer; background: none; border: none; }
+
+        /* 7. MOBILE OVERRIDES (Isolated to this page) */
+        @media (max-width: 600px) {
+            body { background: #ffffff; padding: 0; display: block; }
+            .idx-container { border: none; border-radius: 0; box-shadow: none; min-height: 100vh; }
+            .idx-header { background: #1a1a2e; color: white; padding: 20px 15px; }
+            .idx-header h1 { color: white; }
+            .idx-btn { padding: 22px; border-radius: 15px; }
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="idx-container">
         
-        <!-- HEADER (Visible once logged in) -->
-        <header id="main-header" class="app-header" style="display: none;">
+        <!-- HEADER (Shared Logic but Isolated Style) -->
+        <header id="main-header" class="idx-header" style="display: none;">
             <h1>AF Hub</h1>
             <div class="header-right">
-                <span id="user-badge" class="user-badge">Explorer</span>
+                <span id="user-badge" class="idx-user-badge">Explorer</span>
             </div>
         </header>
 
-        <!-- 0. LOADING SCREEN -->
-        <div id="loading-screen" style="padding: 80px 20px; text-align: center;">
+        <!-- LOADING SCREEN -->
+        <div id="loading-screen" style="padding: 100px 20px;">
             <div style="font-size: 50px; margin-bottom: 20px;">🚀</div>
-            <h1>Loading...</h1>
-            <p id="loading-status">Connecting to Adventure Cloud</p>
-            <button id="loading-retry" onclick="location.reload()">Refresh Page</button>
+            <h2>Loading...</h2>
+            <p style="color: #666; margin-top: 10px;">Connecting to Cloud</p>
         </div>
 
         <!-- 1. PROFILE SELECTION -->
-        <div id="profile-selection" style="display: none;">
-            <h1 style="background:none; color:#333; text-align:center; padding:30px 0;">👋 Welcome!</h1>
-            <div class="main-menu-padding">
-                <p id="selection-sub" style="margin-bottom: 20px; text-align:center; color: #666;">Who is playing today?</p>
-                <div id="profile-list"></div>
-                
-                <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
-                    <button class="btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
-                    <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#ddd; cursor:pointer; font-size: 0.7rem; margin: 20px auto;">Admin</button>
-                </div>
+        <div id="profile-selection" class="idx-content" style="display: none;">
+            <h1 style="margin-bottom:10px;">👋 Welcome!</h1>
+            <p id="selection-sub" class="idx-subtext">Who is playing today?</p>
+            <div id="profile-list"></div>
+            <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
+                <button class="idx-btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
+                <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#ddd; cursor:pointer; font-size: 0.7rem; margin: 10px auto;">Admin</button>
             </div>
         </div>
 
         <!-- 2. NEW USER FORM -->
-        <div id="name-setup" style="display: none;">
-            <h1 style="background:none; color:#333; text-align:center; padding:30px 0;">✨ New Quest</h1>
-            <div class="main-menu-padding">
-                <p style="margin-bottom: 15px; color: #666; text-align: center;">Enter your name to start:</p>
-                <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; max-width: 400px; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
-                <button class="btn blue-btn" id="save-name-btn">Start! 🚀</button>
-                <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline; width:100%;">Cancel</button>
-            </div>
+        <div id="name-setup" class="idx-content" style="display: none;">
+            <h1>✨ New Quest</h1>
+            <p class="idx-subtext" style="margin-top:15px;">Enter your name to start:</p>
+            <input type="text" id="user-name-input" placeholder="Your name..." style="padding: 18px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1.3rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+            <button class="idx-btn blue-btn" id="save-name-btn">Start! 🚀</button>
+            <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline; width:100%;">Cancel</button>
         </div>
 
         <!-- 3. MAIN MENU -->
-        <div id="main-menu" style="display: none;">
-            <div class="main-menu-padding">
-                <p style="margin-bottom:20px; color: #666; text-align:center; font-weight:bold;">Ready for today's lesson?</p>
-                <div class="nav-grid">
-                    <a href="school.html" class="btn green-btn">🏫 School Hub</a>
-                    <div class="btn btn-disabled">📖 Library Coming Soon</div>
-                    <div class="btn btn-disabled">🎮 Games Coming Soon</div>
+        <div id="main-menu" class="idx-content" style="display: none;">
+            <p class="idx-subtext" style="font-weight:bold;">Ready for today's lesson?</p>
+            
+            <div class="nav-grid">
+                <a href="school.html" class="idx-btn green-btn">🏫 School Hub</a>
+                
+                <div class="idx-btn idx-btn-disabled">
+                    📖 Library Coming Soon
                 </div>
-                <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%; max-width: 400px;">👤 Switch Profile</button>
+                
+                <div class="idx-btn idx-btn-disabled">
+                    🎮 Games Coming Soon
+                </div>
             </div>
+            
+            <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #888; width: 100%;">👤 Switch Profile</button>
         </div>
     </div>
 
@@ -91,10 +156,8 @@
             appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98"
         };
 
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const db = getFirestore(app);
-
         const loading = document.getElementById('loading-screen');
         const selection = document.getElementById('profile-selection');
         const setup = document.getElementById('name-setup');
@@ -104,16 +167,7 @@
         let isManageMode = false;
         const ADMIN_PIN = "9988";
 
-        // Show retry button if loading takes more than 6 seconds
-        setTimeout(() => {
-            if(loading.style.display !== 'none') {
-                document.getElementById('loading-retry').style.display = 'inline-block';
-                document.getElementById('loading-status').innerText = "Cloud is taking a while...";
-            }
-        }, 6000);
-
         async function initHub() {
-            console.log("System: Initializing Hub...");
             loading.style.display = 'block';
             selection.style.display = 'none';
             setup.style.display = 'none';
@@ -121,17 +175,13 @@
             header.style.display = 'none';
 
             const activeUser = localStorage.getItem('fb_current_user');
-            
             if (activeUser) {
-                console.log("System: Attempting to log in as", activeUser);
                 const success = await renderMainMenu(activeUser);
                 if (!success) {
-                    console.log("System: Local user not found in Cloud. Resetting...");
                     localStorage.removeItem('fb_current_user');
                     await showProfileSelection();
                 }
             } else {
-                console.log("System: No local user found. Showing selection.");
                 await showProfileSelection();
             }
         }
@@ -140,11 +190,9 @@
             loading.style.display = 'none';
             selection.style.display = 'block';
             const list = document.getElementById('profile-list');
-            list.innerHTML = '<p style="color:#999">Fetching adventurers...</p>';
-            
+            list.innerHTML = '';
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
-                list.innerHTML = '';
                 querySnapshot.forEach((docSnap) => {
                     const userData = docSnap.data();
                     const name = docSnap.id;
@@ -153,7 +201,7 @@
                     const row = document.createElement('div');
                     row.className = "profile-row";
                     const btn = document.createElement('button');
-                    btn.className = "btn blue-btn profile-btn";
+                    btn.className = "idx-btn blue-btn profile-select-btn";
                     btn.innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
                     btn.onclick = () => selectProfile(name);
 
@@ -173,15 +221,10 @@
 
                     ctrl.appendChild(premBtn);
                     ctrl.appendChild(delBtn);
-                    row.appendChild(btn);
-                    row.appendChild(ctrl);
+                    row.appendChild(btn); row.appendChild(ctrl);
                     list.appendChild(row);
                 });
-                if (querySnapshot.empty) list.innerHTML = '<p style="color:#999">No explorers yet.</p>';
-            } catch (e) { 
-                console.error("Firebase Fetch Error:", e);
-                list.innerHTML = '<p style="color:red">Error connecting to Cloud. Please refresh.</p>';
-            }
+            } catch (e) { console.error(e); }
         }
 
         window.adminLogin = () => {
@@ -195,34 +238,23 @@
         }
 
         async function togglePremium(name, currentStatus) {
-            try {
-                const userRef = doc(db, "users", name);
-                await updateDoc(userRef, { isPremium: !currentStatus });
-                await showProfileSelection();
-            } catch (e) { console.error(e); }
+            const userRef = doc(db, "users", name);
+            await updateDoc(userRef, { isPremium: !currentStatus });
+            showProfileSelection();
         }
 
         async function deleteProfile(name) {
             if (confirm(`Delete explorer "${name}"?`)) {
                 await deleteDoc(doc(db, "users", name));
-                await showProfileSelection();
+                showProfileSelection();
             }
         }
 
         document.getElementById('save-name-btn').onclick = async () => {
             const name = document.getElementById('user-name-input').value.trim();
             if (name) {
-                const btn = document.getElementById('save-name-btn');
-                btn.innerText = "Syncing...";
-                btn.disabled = true;
-                try {
-                    await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
-                    selectProfile(name);
-                } catch (e) {
-                    alert("Cloud save failed. Check permissions.");
-                    btn.innerText = "Start! 🚀";
-                    btn.disabled = false;
-                }
+                await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
+                selectProfile(name);
             }
         };
 
@@ -234,7 +266,7 @@
         async function renderMainMenu(name) {
             try {
                 const userDoc = await getDoc(doc(db, "users", name));
-                if (!userDoc.exists()) return false; // Fail if doc missing
+                if (!userDoc.exists()) return false;
 
                 const isPremium = userDoc.data().isPremium === true;
                 loading.style.display = 'none';
@@ -244,10 +276,7 @@
                 header.style.display = 'flex';
                 document.getElementById('user-badge').innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
                 return true;
-            } catch (e) {
-                console.error("Menu Render Error:", e);
-                return false;
-            }
+            } catch (e) { return false; }
         }
 
         window.switchUser = () => {
@@ -258,7 +287,6 @@
 
         window.initHub = initHub;
         window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
-        
         initHub();
     </script>
 </body>
