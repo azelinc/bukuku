@@ -6,10 +6,27 @@
     <title>School Hub - AF Hub</title>
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <style>
+        .filter-bar { display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px; }
+        .filter-btn { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; background: white; font-weight: bold; color: #555; }
+        
+        /* Grid for Train Sifir Selection */
+        .sifir-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 10px; }
+        .train-card { 
+            background: white; border: 2px solid #eee; padding: 15px; border-radius: 15px; 
+            text-align: center; text-decoration: none; color: #333; font-weight: bold; transition: 0.2s;
+        }
+        .train-card:hover { border-color: #4a90e2; transform: translateY(-3px); }
+        .train-card.mastered { border-color: #2ecc71; background: #f0fff4; }
+        .mastered-label { display: block; color: #2ecc71; font-size: 0.7rem; margin-top: 5px; }
+
+        @media (max-width: 600px) {
+            .sifir-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+        }
+    </style>
 </head>
 <body>
     <div class="container wide-container">
-        <!-- HEADER -->
         <header class="app-header">
             <h1>🏫 School Hub</h1>
             <div class="header-right">
@@ -19,55 +36,51 @@
         </header>
 
         <div class="library-layout">
-            <!-- SIDEBAR -->
             <div class="sidebar">
-                <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
-                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir</button>
+                <!-- NEW TAB ON TOP -->
+                <button id="tab-train" class="tab-btn active" onclick="openTab('train', this)">🧠 Train Sifir</button>
+                <button id="tab-tuition" class="tab-btn" onclick="openTab('tuition', this)">🎓 Tuition</button>
+                <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
                 <button class="tab-btn tab-btn-disabled">🧪 STEM (Soon)</button>
             </div>
 
-            <!-- MAIN CONTENT (No empty space at top) -->
             <div class="main-content">
-                
+                <!-- TRAIN SIFIR SECTION -->
+                <div id="train" class="category-content" style="display: block;">
+                    <h2 style="text-align: center; margin-bottom: 5px; font-size: 1.2rem;">🧠 Memorization Training</h2>
+                    <p style="text-align: center; color: #666; font-size: 0.9rem; margin-bottom: 20px;">Master each table from 1 to 12</p>
+                    <div class="sifir-grid" id="train-grid">
+                        <!-- Sifir 1-12 buttons will load here -->
+                    </div>
+                </div>
+
                 <!-- TUITION SECTION -->
-                <div id="tuition" class="category-content" style="display: block;">
-                    <div class="filter-bar" style="display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; padding: 10px; background: #f8f9fa; border-radius: 15px;">
-                        <button class="filter-btn active" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('all', this)">All</button>
-                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('4', this)">Std 4</button>
-                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('5', this)">Std 5</button>
-                        <button class="filter-btn" style="padding:8px 12px; border-radius:8px; border:1px solid #ddd; cursor:pointer;" onclick="filterGrade('6', this)">Std 6</button>
+                <div id="tuition" class="category-content" style="display: none;">
+                    <div class="filter-bar">
+                        <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
+                        <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
+                        <button class="filter-btn" onclick="filterGrade('5', this)">Std 5</button>
+                        <button class="filter-btn" onclick="filterGrade('6', this)">Std 6</button>
                     </div>
                     <div id="matrix-container"></div>
                 </div>
 
-                <!-- SIFIR SECTION -->
+                <!-- SIFIR MASTER SECTION -->
                 <div id="sifir" class="category-content" style="display: none;">
+                    <h2 style="text-align: center; margin-bottom: 10px;">🔢 Sifir Master</h2>
                     <div class="subject-card" style="text-align: center;">
-                        <h2 style="margin-bottom: 10px; font-size: 1.2rem;">🔢 Sifir Master</h2>
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px;">Best Score: 0/10</p>
                         <a href="sifir.html" class="btn blue-btn">Start Sifir Challenge 🚀</a>
                     </div>
-                    
-                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50; font-size: 1rem;">🏆 Global Top 10</h3>
+                    <h3 style="text-align: center; margin: 20px 0 10px; color: #2c3e50;">🏆 Global Top 10</h3>
                     <div style="background: #fff; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
-                        <table class="lb-table">
-                            <thead>
-                                <tr>
-                                    <th class="col-rank">Rank</th>
-                                    <th class="col-name">Name</th>
-                                    <th class="col-score">Score</th>
-                                    <th class="col-time">Time</th>
-                                </tr>
-                            </thead>
-                            <tbody id="leaderboard-body"></tbody>
-                        </table>
+                        <table class="lb-table"><tbody id="leaderboard-body"></tbody></table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Firebase Logic -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, getDoc, getDocs, collection, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
@@ -86,26 +99,21 @@
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
         document.getElementById('user-badge').innerText = `👤 ${kidName}`;
 
-        const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 3 },
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 },
-            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
-        ];
-
-        async function generateMatrix() {
-            const container = document.getElementById('matrix-container');
+        async function generateHub() {
+            const matrixContainer = document.getElementById('matrix-container');
+            const trainGrid = document.getElementById('train-grid');
             const lbBody = document.getElementById('leaderboard-body');
-            let userScores = {}; let isPremium = false; let masterDataList = [];
+            
+            let userScores = {}; let masterDataList = []; let isPremium = false;
 
             try {
                 const userDoc = await getDoc(doc(db, "users", kidName));
                 if (userDoc.exists()) {
-                    const data = userDoc.data();
-                    userScores = data.scores || {};
-                    isPremium = data.isPremium || false;
+                    userScores = userDoc.data().scores || {};
+                    isPremium = userDoc.data().isPremium || false;
                 }
 
-                // Global Rankings logic
+                // Rankings logic
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
@@ -114,20 +122,31 @@
                 });
                 const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
                 newAttempts.forEach(aDoc => masterDataList.push(aDoc.data()));
-
                 masterDataList.sort((a, b) => b.score - a.score || a.time - b.time);
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
-                    const rankClass = index < 3 ? `rank-${index+1}` : '';
-                    lbBody.innerHTML += `<tr><td class="${rankClass}">#${index + 1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
+                    lbBody.innerHTML += `<tr><td>#${index + 1}</td><td class="col-name">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
                 });
                 if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             } catch (e) { console.error(e); }
 
-            container.innerHTML = '';
+            // BUILD TRAIN SIFIR GRID
+            trainGrid.innerHTML = '';
+            for (let i = 1; i <= 12; i++) {
+                const isMastered = userScores[`train-${i}`] === 12;
+                const card = document.createElement('a');
+                card.href = `train-engine.html?n=${i}`;
+                card.className = `train-card ${isMastered ? 'mastered' : ''}`;
+                card.innerHTML = `Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}`;
+                trainGrid.appendChild(card);
+            }
+
+            // BUILD TUITION MATRIX
+            matrixContainer.innerHTML = '';
+            const subjects = [{ id: 'math', name: 'Mathematics', color: '#4a90e2', sets: 3 }, { id: 'sci', name: 'Science', color: '#0097a7', sets: 3 }, { id: 'eng', name: 'English', color: '#f39c12', sets: 10 }];
             subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px; border-bottom: 2px solid ${sub.color}22; padding-bottom: 5px;">${sub.name}</h3>`;
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 1rem; margin-bottom: 10px;">${sub.name}</h3>`;
                 [4, 5, 6].forEach(lvl => {
                     html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
@@ -140,7 +159,7 @@
                     html += `</div></div>`;
                 });
                 html += `</div>`;
-                container.innerHTML += html;
+                matrixContainer.innerHTML += html;
             });
         }
 
@@ -166,7 +185,7 @@
 
         const params = new URLSearchParams(window.location.search);
         if (params.get('tab') === 'sifir') openTab('sifir', document.getElementById('tab-sifir'));
-        generateMatrix();
+        generateHub();
     </script>
 </body>
 </html>
