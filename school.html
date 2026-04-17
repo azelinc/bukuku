@@ -134,65 +134,69 @@
     </div>
 
     <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc, getDocs, collection, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+    import { getFirestore, doc, getDoc, getDocs, collection, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs",
-            authDomain: "af-adventure-hub.firebaseapp.com",
-            projectId: "af-adventure-hub",
-            storageBucket: "af-adventure-hub.firebasestorage.app",
-            messagingSenderId: "440085894217",
-            appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98"
-        };
+    const firebaseConfig = { 
+        apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs", 
+        authDomain: "af-adventure-hub.firebaseapp.com", 
+        projectId: "af-adventure-hub", 
+        storageBucket: "af-adventure-hub.firebasestorage.app", 
+        messagingSenderId: "440085894217", 
+        appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98" 
+    };
 
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-        const kidName = localStorage.getItem('fb_current_user') || "Explorer";
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
-        // Display current user's name (and star if premium)
-        async function updateBadge() {
-            const userDoc = await getDoc(doc(db, "users", kidName));
-            const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
-            document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremium ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
-            return isPremium;
-        }
+    async function updateBadge() {
+        const userDoc = await getDoc(doc(db, "users", kidName));
+        const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
+        document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremium ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
+        return isPremium;
+    }
 
-        const subjects = [
-            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 10 }, 
-            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, 
-            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
-        ];
+    const subjects = [
+        { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 10 }, 
+        { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, 
+        { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
+    ];
 
-        async function generateHub() {
-            const isPremium = await updateBadge();
-            const container = document.getElementById('matrix-container');
-            const trainGrid = document.getElementById('train-grid');
-            const lbBody = document.getElementById('leaderboard-body');
-            
-            let userScores = {}; let masterDataList = [];
+    async function generateHub() {
+        const isPremium = await updateBadge();
+        const container = document.getElementById('matrix-container');
+        const trainGrid = document.getElementById('train-grid');
+        const lbBody = document.getElementById('leaderboard-body');
+        
+        let userScores = {}; 
+        const rawDataList = [];
 
         try {
-            const rawDataList = [];
             const userProfiles = await getDocs(collection(db, "users"));
             userProfiles.forEach(uDoc => {
                 const data = uDoc.data();
-                if (doc.id === kidName) { scores = data.scores || {}; isPremium = data.isPremium || false; }
-        
-                if (data.scores?.['sifir-master-obj']) rawDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
-                else if (data.scores?.['sifir-master']) rawDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
+                
+                // FIXED: Populate userScores for the current kid correctly
+                if (uDoc.id === kidName) { 
+                    userScores = data.scores || {}; 
+                }
+                
+                // Collect leaderboard data
+                if (data.scores?.['sifir-master-obj']) {
+                    rawDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
+                } else if (data.scores?.['sifir-master'] !== undefined) {
+                    rawDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
+                }
             });
 
             const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
             newAttempts.forEach(aDoc => rawDataList.push(aDoc.data()));
 
-            // This part replaces the snippet you asked about:
             const uniqueBest = {};
             rawDataList.forEach(entry => {
                 const name = entry.name;
-                if (!uniqueBest[name] || 
-                    entry.score > uniqueBest[name].score || 
-                    (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
+                if (!uniqueBest[name] || entry.score > uniqueBest[name].score || (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
                     uniqueBest[name] = entry;
                 }
             });
@@ -205,73 +209,74 @@
                 lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${t}</td></tr>`;
             });
 
-            if(scores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
-        } catch (e) { console.error(e); }
-
-            // GRID BUILD: TRAIN
-            trainGrid.innerHTML = '';
-            for (let i = 1; i <= 12; i++) {
-                const isMastered = userScores[`train-${i}`] === 12;
-                trainGrid.innerHTML += `<a href="train-engine.html?n=${i}" class="train-card ${isMastered ? 'mastered' : ''}">Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}</a>`;
+            if(userScores['sifir-master'] !== undefined) {
+                document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
             }
+        } catch (e) { console.error("Database Error:", e); }
 
-            // GRID BUILD: TUITION
-            container.innerHTML = '';
-            subjects.forEach(sub => {
-                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 8px;">${sub.name}</h3>`;
-                [4, 5, 6].forEach(lvl => {
-                    html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
-                    for (let setNum = 1; setNum <= sub.sets; setNum++) {
-                        const scoreKey = `${sub.id}-${lvl}-${setNum}`;
-                        const bestScore = userScores[scoreKey] || 0;
-                        
-                        // PREMIUM LOCKING
-                        let isLocked = false;
-                        if (!isPremium) {
-                            if (sub.id === 'math' && setNum >= 6) isLocked = true;
-                            if (sub.id === 'eng' && setNum >= 6) isLocked = true;
-                        }
+        // GRID BUILD: TRAIN
+        trainGrid.innerHTML = '';
+        for (let i = 1; i <= 12; i++) {
+            const isMastered = userScores[`train-${i}`] === 12;
+            trainGrid.innerHTML += `<a href="train-engine.html?n=${i}" class="train-card ${isMastered ? 'mastered' : ''}">Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}</a>`;
+        }
 
-                        if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
-                        else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
+        // GRID BUILD: TUITION
+        container.innerHTML = '';
+        subjects.forEach(sub => {
+            let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 8px;">${sub.name}</h3>`;
+            [4, 5, 6].forEach(lvl => {
+                html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
+                for (let setNum = 1; setNum <= sub.sets; setNum++) {
+                    const scoreKey = `${sub.id}-${lvl}-${setNum}`;
+                    const bestScore = userScores[scoreKey] || 0;
+                    
+                    let isLocked = false;
+                    if (!isPremium) {
+                        if (sub.id === 'math' && setNum >= 6) isLocked = true;
+                        if (sub.id === 'eng' && setNum >= 6) isLocked = true;
                     }
-                    html += `</div></div>`;
-                });
-                html += `</div>`;
-                container.innerHTML += html;
+
+                    if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
+                    else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
+                }
+                html += `</div></div>`;
             });
+            html += `</div>`;
+            container.innerHTML += html;
+        });
+    }
+
+    window.openPremiumModal = () => document.getElementById('premium-modal').style.display = 'flex';
+    window.closePremiumModal = () => document.getElementById('premium-modal').style.display = 'none';
+    
+    window.requestPremium = () => {
+        const phone = "60122750485";
+        const msg = encodeURIComponent(`Hi! I want to upgrade my explorer account "${kidName}" to Premium on AF Hub.`);
+        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+    }
+
+    window.openTab = (categoryName, element) => {
+        const contents = document.getElementsByClassName("category-content");
+        for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
+        const tabs = document.getElementsByClassName("tab-btn");
+        for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
+        document.getElementById(categoryName).style.display = "block";
+        if(element) element.classList.add("active");
+    }
+
+    window.filterGrade = (lvl, btn) => {
+        const btns = document.getElementsByClassName('filter-btn');
+        for(let b of btns) b.style.background = "white", b.style.color = "#555";
+        btn.style.background = "#1a1a2e", btn.style.color = "white";
+        const allRows = document.getElementsByClassName('grade-row');
+        for(let row of allRows) {
+            if (lvl === 'all') row.style.display = 'flex';
+            else row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
         }
+    };
 
-        window.openPremiumModal = () => document.getElementById('premium-modal').style.display = 'flex';
-        window.closePremiumModal = () => document.getElementById('premium-modal').style.display = 'none';
-        
-        window.requestPremium = () => {
-            const phone = "60122750485"; // CHANGE TO YOUR PHONE
-            const msg = encodeURIComponent(`Hi! I want to upgrade my explorer account "${kidName}" to Premium on AF Hub.`);
-            window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
-        }
-
-        window.openTab = (categoryName, element) => {
-            const contents = document.getElementsByClassName("category-content");
-            for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
-            const tabs = document.getElementsByClassName("tab-btn");
-            for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
-            document.getElementById(categoryName).style.display = "block";
-            if(element) element.classList.add("active");
-        }
-
-        window.filterGrade = (lvl, btn) => {
-            const btns = document.getElementsByClassName('filter-btn');
-            for(let b of btns) b.style.background = "white", b.style.color = "#555";
-            btn.style.background = "#1a1a2e", btn.style.color = "white";
-            const allRows = document.getElementsByClassName('grade-row');
-            for(let row of allRows) {
-                if (lvl === 'all') row.style.display = 'flex';
-                else row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
-            }
-        };
-
-        generateHub();
-    </script>
+    generateHub();
+</script>
 </body>
 </html>
