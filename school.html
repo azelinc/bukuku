@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
-        /* Specific page overrides to ensure top alignment */
         .filter-bar { display: flex; justify-content: center; gap: 8px; margin-bottom: 15px; padding: 10px; background: #f8f9fa; border-radius: 15px; }
-        .filter-btn { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; background: white; font-weight: bold; color: #555; }
+        .filter-btn { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; background: white; font-weight: bold; color: #555; transition: 0.2s; }
+        .filter-btn.active { background: #1a1a2e; color: white; border-color: #1a1a2e; }
         
         .sifir-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
         .train-card { 
@@ -24,7 +24,6 @@
         .train-card.mastered { border-color: #2ecc71; background: #f0fff4; }
         .mastered-label { display: block; color: #2ecc71; font-size: 0.7rem; margin-top: 5px; }
 
-        /* Premium Modal Overlay */
         .modal-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 2000;
@@ -42,27 +41,16 @@
         @media (max-width: 600px) {
             .sifir-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
         }
-        /* Specific fix for the Sifir Master button */
         #sifir-start-btn {
-            display: block !important;
-            width: 100% !important;
-            max-width: 300px !important;
-            margin: 20px auto !important;
-            padding: 18px !important;
-            background-color: #4a90e2 !important;
-            color: white !important;
-            text-decoration: none !important;
-            font-weight: 800 !important;
-            border-radius: 18px !important;
-            text-align: center !important;
-            border-bottom: 5px solid #2e6cb5 !important;
-            font-size: 1.1rem !important;
-                }
-
-        #sifir-start-btn:active {
-            transform: translateY(4px) !important;
-            border-bottom-width: 1px !important;
+            display: block !important; width: 100% !important; max-width: 300px !important; margin: 20px auto !important;
+            padding: 18px !important; background-color: #4a90e2 !important; color: white !important;
+            text-decoration: none !important; font-weight: 800 !important; border-radius: 18px !important;
+            text-align: center !important; border-bottom: 5px solid #2e6cb5 !important; font-size: 1.1rem !important;
         }
+        #sifir-start-btn:active { transform: translateY(4px) !important; border-bottom-width: 1px !important; }
+
+        /* Leaderboard table simple styling */
+        .lb-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -72,7 +60,7 @@
         <div class="modal-card">
             <h2 style="color: #f39c12; margin-bottom: 10px;">⭐ Unlock Premium</h2>
             <p style="margin-bottom: 20px; color: #666; line-height: 1.5;">
-                Access additional locked sets (premium sets) and support your learning journey!
+                Access all <b>Mathematics</b>, <b>Science</b>, and <b>English</b> sets (6-10) and support your learning journey!
             </p>
             <button class="btn orange-btn" onclick="requestPremium()">Upgrade via WhatsApp</button>
             <button onclick="closePremiumModal()" style="background:none; border:none; color:#999; cursor:pointer; text-decoration:underline; margin-top:15px; width:100%;">Maybe Later</button>
@@ -84,15 +72,16 @@
         <header class="app-header">
             <h1>🏫 School Hub</h1>
 
+            <!-- PROGRESS BAR -->
             <div class="overall-progress-container" id="global-progress-box">
                 <div class="progress-label">
                     <span id="progress-text-label">Overall Progress</span>
                     <span id="progress-percent-label">0%</span>
                 </div>
-            <div class="progress-bg">
-                <div id="progress-fill-bar" class="progress-fill"></div>
+                <div class="progress-bg">
+                    <div id="progress-fill-bar" class="progress-fill"></div>
+                </div>
             </div>
-    </div>
             
             <div class="header-right">
                 <span id="user-badge" class="user-badge">Explorer</span>
@@ -106,7 +95,7 @@
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
                 <button id="tab-train" class="tab-btn" onclick="openTab('train', this)">🧠 Train Sifir</button>
-                <button class="tab-btn tab-btn-disabled">🧪 STEM (coming soon)</button>
+                <button class="tab-btn tab-btn-disabled">🧪 STEM (soon)</button>
             </div>
 
             <div class="main-content">
@@ -128,7 +117,7 @@
                         <p id="sifir-highscore" style="font-weight: bold; color: #f39c12; margin-bottom: 15px; font-size: 0.9rem;">Best Score: 0/10</p>
                         <a href="sifir.html" id="sifir-start-btn">Start Challenge 🚀</a>
                     </div>
-                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 0.9rem;">🏆 Top 10 🏆 </h3>
+                    <h3 style="text-align: center; margin: 15px 0 10px; color: #2c3e50; font-size: 0.9rem;">🏆 Top 10 🏆</h3>
                     <div style="background: #fff; border-radius: 15px; border: 1px solid #eee; overflow: hidden;">
                         <table class="lb-table"><tbody id="leaderboard-body"></tbody></table>
                     </div>
@@ -145,151 +134,170 @@
     </div>
 
     <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getFirestore, doc, getDoc, getDocs, collection, query, limit } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, doc, getDoc, getDocs, collection, query, limit, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
-    const firebaseConfig = { 
-        apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs", 
-        authDomain: "af-adventure-hub.firebaseapp.com", 
-        projectId: "af-adventure-hub", 
-        storageBucket: "af-adventure-hub.firebasestorage.app", 
-        messagingSenderId: "440085894217", 
-        appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98" 
-    };
+        const firebaseConfig = { 
+            apiKey: "AIzaSyDX9zxB-clkB6_DKSaDmWpjQwMgDY439cs", 
+            authDomain: "af-adventure-hub.firebaseapp.com", 
+            projectId: "af-adventure-hub", 
+            storageBucket: "af-adventure-hub.firebasestorage.app", 
+            messagingSenderId: "440085894217", 
+            appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98" 
+        };
 
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    const kidName = localStorage.getItem('fb_current_user') || "Explorer";
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
-    async function updateBadge() {
-        const userDoc = await getDoc(doc(db, "users", kidName));
-        const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
-        document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremium ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
-        return isPremium;
-    }
+        const subjects = [
+            { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 10 }, 
+            { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 10 }, 
+            { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
+        ];
 
-    const subjects = [
-        let cachedScores = {}; // This will hold our scores so we can calculate progress easily
-        { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 10 }, 
-        { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 10 }, 
-        { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
-    ];
+        let cachedScores = {}; // Holds scores for progress calculation
 
-    async function generateHub() {
-        const isPremium = await updateBadge();
-        const container = document.getElementById('matrix-container');
-        const trainGrid = document.getElementById('train-grid');
-        const lbBody = document.getElementById('leaderboard-body');
-        
-        let userScores = {}; 
-        const rawDataList = [];
-
-        try {
-            const userProfiles = await getDocs(collection(db, "users"));
-            userProfiles.forEach(uDoc => {
-                const data = uDoc.data();
-                
-                // FIXED: Populate userScores for the current kid correctly
-                if (uDoc.id === kidName) { 
-                    userScores = data.scores || {}; 
-                }
-                
-                // Collect leaderboard data
-                if (data.scores?.['sifir-master-obj']) {
-                    rawDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
-                } else if (data.scores?.['sifir-master'] !== undefined) {
-                    rawDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
-                }
-            });
-
-            const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
-            newAttempts.forEach(aDoc => rawDataList.push(aDoc.data()));
-
-            const uniqueBest = {};
-            rawDataList.forEach(entry => {
-                const name = entry.name;
-                if (!uniqueBest[name] || entry.score > uniqueBest[name].score || (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
-                    uniqueBest[name] = entry;
-                }
-            });
-
-            const masterDataList = Object.values(uniqueBest).sort((a, b) => b.score - a.score || a.time - b.time);
-
-            lbBody.innerHTML = '';
-            masterDataList.slice(0, 10).forEach((entry, index) => {
-                const t = entry.time === 999 ? "N/A" : entry.time + "s";
-                lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${t}</td></tr>`;
-            });
-
-            if(userScores['sifir-master'] !== undefined) {
-                document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
-            }
-        } catch (e) { console.error("Database Error:", e); }
-
-        // GRID BUILD: TRAIN
-        trainGrid.innerHTML = '';
-        for (let i = 1; i <= 12; i++) {
-            const isMastered = userScores[`train-${i}`] === 12;
-            trainGrid.innerHTML += `<a href="train-engine.html?n=${i}" class="train-card ${isMastered ? 'mastered' : ''}">Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}</a>`;
+        async function updateBadge() {
+            const userDoc = await getDoc(doc(db, "users", kidName));
+            const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
+            document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremium ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
+            return isPremium;
         }
 
-        // GRID BUILD: TUITION
-        container.innerHTML = '';
-        subjects.forEach(sub => {
-            let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 8px;">${sub.name}</h3>`;
-            [4, 5, 6].forEach(lvl => {
-                html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
-                for (let setNum = 1; setNum <= sub.sets; setNum++) {
-                    const scoreKey = `${sub.id}-${lvl}-${setNum}`;
-                    const bestScore = userScores[scoreKey] || 0;
+        async function generateHub() {
+            const isPremium = await updateBadge();
+            const container = document.getElementById('matrix-container');
+            const trainGrid = document.getElementById('train-grid');
+            const lbBody = document.getElementById('leaderboard-body');
+            
+            const rawDataList = [];
+
+            try {
+                const userProfiles = await getDocs(collection(db, "users"));
+                userProfiles.forEach(uDoc => {
+                    const data = uDoc.data();
                     
-                    let isLocked = false;
-                    if (!isPremium) {
-                        if (sub.id === 'math' && setNum >= 6) isLocked = true;
-                        if (sub.id === 'sci' && setNum >= 6) isLocked = true;
-                        if (sub.id === 'eng' && setNum >= 6) isLocked = true;
+                    if (uDoc.id === kidName) { 
+                        cachedScores = data.scores || {}; 
                     }
+                    
+                    if (data.scores?.['sifir-master-obj']) {
+                        rawDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
+                    } else if (data.scores?.['sifir-master'] !== undefined) {
+                        rawDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
+                    }
+                });
 
-                    if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
-                    else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
+                const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
+                newAttempts.forEach(aDoc => rawDataList.push(aDoc.data()));
+
+                const uniqueBest = {};
+                rawDataList.forEach(entry => {
+                    const name = entry.name;
+                    if (!uniqueBest[name] || entry.score > uniqueBest[name].score || (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
+                        uniqueBest[name] = entry;
+                    }
+                });
+
+                const masterDataList = Object.values(uniqueBest).sort((a, b) => b.score - a.score || a.time - b.time);
+
+                lbBody.innerHTML = '';
+                masterDataList.slice(0, 10).forEach((entry, index) => {
+                    const t = entry.time === 999 ? "N/A" : entry.time + "s";
+                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${t}</td></tr>`;
+                });
+
+                if(cachedScores['sifir-master'] !== undefined) {
+                    document.getElementById('sifir-highscore').innerText = `Best Score: ${cachedScores['sifir-master']}/10`;
                 }
-                html += `</div></div>`;
+            } catch (e) { console.error("Database Error:", e); }
+
+            // GRID BUILD: TRAIN
+            trainGrid.innerHTML = '';
+            for (let i = 1; i <= 12; i++) {
+                const isMastered = (cachedScores[`train-${i}`] || 0) === 12;
+                trainGrid.innerHTML += `<a href="train-engine.html?n=${i}" class="train-card ${isMastered ? 'mastered' : ''}">Sifir ${i}${isMastered ? '<span class="mastered-label">✅ Mastered</span>' : ''}</a>`;
+            }
+
+            // GRID BUILD: TUITION
+            container.innerHTML = '';
+            subjects.forEach(sub => {
+                let html = `<div class="subject-card"><h3 style="color:${sub.color}; font-size: 0.95rem; margin-bottom: 8px;">${sub.name}</h3>`;
+                [4, 5, 6].forEach(lvl => {
+                    html += `<div class="grade-row grade-block-${lvl}"><div class="grade-label">Std ${lvl}</div><div class="set-group">`;
+                    for (let setNum = 1; setNum <= sub.sets; setNum++) {
+                        const scoreKey = `${sub.id}-${lvl}-${setNum}`;
+                        const bestScore = cachedScores[scoreKey] || 0;
+                        
+                        let isLocked = (!isPremium && setNum >= 6);
+
+                        if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
+                        else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
+                    }
+                    html += `</div></div>`;
+                });
+                html += `</div>`;
+                container.innerHTML += html;
             });
-            html += `</div>`;
-            container.innerHTML += html;
-        });
-    }
 
-    window.openPremiumModal = () => document.getElementById('premium-modal').style.display = 'flex';
-    window.closePremiumModal = () => document.getElementById('premium-modal').style.display = 'none';
-    
-    window.requestPremium = () => {
-        const phone = "60122750485";
-        const msg = encodeURIComponent(`Hi! I want to upgrade my explorer account "${kidName}" to Premium on AF Hub.`);
-        window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
-    }
-
-    window.openTab = (categoryName, element) => {
-        const contents = document.getElementsByClassName("category-content");
-        for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
-        const tabs = document.getElementsByClassName("tab-btn");
-        for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
-        document.getElementById(categoryName).style.display = "block";
-        if(element) element.classList.add("active");
-    }
-
-    window.filterGrade = (lvl, btn) => {
-        const btns = document.getElementsByClassName('filter-btn');
-        for(let b of btns) b.style.background = "white", b.style.color = "#555";
-        btn.style.background = "#1a1a2e", btn.style.color = "white";
-        const allRows = document.getElementsByClassName('grade-row');
-        for(let row of allRows) {
-            if (lvl === 'all') row.style.display = 'flex';
-            else row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
+            window.updateProgressBar('all');
         }
-    };
 
-    generateHub();
-</script>
+        window.updateProgressBar = (filter) => {
+            let totalPossible = 0;
+            let userEarned = 0;
+
+            subjects.forEach(sub => {
+                const levels = (filter === 'all') ? [4, 5, 6] : [parseInt(filter)];
+                levels.forEach(lvl => {
+                    totalPossible += (sub.sets * 10);
+                    for (let setNum = 1; setNum <= sub.sets; setNum++) {
+                        const scoreKey = `${sub.id}-${lvl}-${setNum}`;
+                        userEarned += (cachedScores[scoreKey] || 0);
+                    }
+                });
+            });
+
+            const percent = totalPossible > 0 ? Math.round((userEarned / totalPossible) * 100) : 0;
+            document.getElementById('progress-fill-bar').style.width = percent + "%";
+            document.getElementById('progress-percent-label').innerText = percent + "%";
+            document.getElementById('progress-text-label').innerText = (filter === 'all') ? "Overall Progress" : `Standard ${filter} Progress`;
+        };
+
+        window.openPremiumModal = () => document.getElementById('premium-modal').style.display = 'flex';
+        window.closePremiumModal = () => document.getElementById('premium-modal').style.display = 'none';
+        
+        window.requestPremium = () => {
+            const phone = "60122750485";
+            const msg = encodeURIComponent(`Hi! I want to upgrade my explorer account "${kidName}" to Premium on AF Hub.`);
+            window.open(`https://wa.me/${phone}?text=${msg}`, '_blank');
+        }
+
+        window.openTab = (categoryName, element) => {
+            const contents = document.getElementsByClassName("category-content");
+            const isTuition = categoryName === 'tuition';
+            document.getElementById('global-progress-box').style.display = isTuition ? 'block' : 'none';
+            for (let i = 0; i < contents.length; i++) contents[i].style.display = "none";
+            const tabs = document.getElementsByClassName("tab-btn");
+            for (let i = 0; i < tabs.length; i++) tabs[i].classList.remove("active");
+            document.getElementById(categoryName).style.display = "block";
+            if(element) element.classList.add("active");
+        }
+
+        window.filterGrade = (lvl, btn) => {
+            const btns = document.getElementsByClassName('filter-btn');
+            for(let b of btns) { b.classList.remove('active'); }
+            btn.classList.add('active');
+            const allRows = document.getElementsByClassName('grade-row');
+            for(let row of allRows) {
+                if (lvl === 'all') row.style.display = 'flex';
+                else row.style.display = row.classList.contains(`grade-block-${lvl}`) ? 'flex' : 'none';
+            }
+            window.updateProgressBar(lvl);
+        };
+
+        generateHub();
+    </script>
 </body>
 </html>
