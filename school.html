@@ -262,7 +262,7 @@
             const percent = totalPossible > 0 ? Math.round((userEarned / totalPossible) * 100) : 0;
             document.getElementById('progress-fill-bar').style.width = percent + "%";
             document.getElementById('progress-percent-label').innerText = percent + "%";
-            document.getElementById('progress-text-label').innerText = (filter === 'all') ? "Overall AA Progress" : `Standard ${filter} Progress`;
+            document.getElementById('progress-text-label').innerText = (filter === 'all') ? "Overall Progress " : `Standard ${filter} Progress`;
         };
 
         window.openPremiumModal = () => document.getElementById('premium-modal').style.display = 'flex';
