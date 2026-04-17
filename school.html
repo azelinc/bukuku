@@ -72,7 +72,7 @@
         <div class="modal-card">
             <h2 style="color: #f39c12; margin-bottom: 10px;">⭐ Unlock Premium</h2>
             <p style="margin-bottom: 20px; color: #666; line-height: 1.5;">
-                Access all <b>Mathematics</b> and <b>English</b> sets (6-10) and support your learning journey!
+                Access additional locked sets (premium sets) and support your learning journey!
             </p>
             <button class="btn orange-btn" onclick="requestPremium()">Upgrade via WhatsApp</button>
             <button onclick="closePremiumModal()" style="background:none; border:none; color:#999; cursor:pointer; text-decoration:underline; margin-top:15px; width:100%;">Maybe Later</button>
@@ -159,7 +159,7 @@
 
     const subjects = [
         { id: 'math', name: 'Mathematics (DLP)', color: '#4a90e2', sets: 10 }, 
-        { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 3 }, 
+        { id: 'sci', name: 'Science (DLP)', color: '#0097a7', sets: 10 }, 
         { id: 'eng', name: 'English Language', color: '#f39c12', sets: 10 }
     ];
 
@@ -234,6 +234,7 @@
                     let isLocked = false;
                     if (!isPremium) {
                         if (sub.id === 'math' && setNum >= 6) isLocked = true;
+                        if (sub.id === 'sci' && setNum >= 6) isLocked = true;
                         if (sub.id === 'eng' && setNum >= 6) isLocked = true;
                     }
 
