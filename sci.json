@@ -350,13 +350,13 @@
   "6-10": [
     { "q": "Which tool is used by a doctor to listen to your heartbeat?", "a": ["Microscope", "Stethoscope", "Telescope", "Thermometer"], "c": 1 },
     { "q": "A complex machine is made up of several ____ machines.", "a": ["Automatic", "Simple", "Electronic", "Big"], "c": 1 },
-    { "q": "The act of planting new trees to replace cut ones is ____.", "a": ["Deforestation", "Reforestation", "Pollution", "Preservation"], "c: 1 },
+    { "q": "The act of planting new trees to replace cut ones is ____.", "a": ["Deforestation", "Reforestation", "Pollution", "Preservation"], "c": 1 },
     { "q": "Which of these helps to reduce air pollution?", "a": ["Burning rubbish", "Using carpool", "Cutting forests", "Wasting paper"], "c": 1 },
     { "q": "An eclipse happens when light travels in ____.", "a": ["Circles", "Bending lines", "Straight lines", "Zig-zags"], "c": 2 },
-    { "q": "The condition of a balanced ecosystem is called ____.", "a": ["Competition", "Equilibrium", "Interaction", "Symbiosis"], "c: 1 },
+    { "q": "The condition of a balanced ecosystem is called ____.", "a": ["Competition", "Equilibrium", "Interaction", "Symbiosis"], "c": 1 },
     { "q": "Microorganisms like Yeast are used to make ____.", "a": ["Milk", "Bread/Pizza dough", "Meat", "Eggs"], "c": 1 },
-    { "q": "Which force helps us to walk without slipping?", "a": ["Gravity", "Friction", "Magnetism", "Pressure"], "c: 1 },
-    { "q": "Preservation by removing moisture is ____.", "a": ["Dehydration/Drying", "Pickling", "Canning", "Waxing"], "c: 0 },
-    { "q": "Sustainability means using resources ____ for the future.", "a": ["Wastefully", "Wisely", "Quickly", "Not at all"], "c: 1 }
+    { "q": "Which force helps us to walk without slipping?", "a": ["Gravity", "Friction", "Magnetism", "Pressure"], "c": 1 },
+    { "q": "Preservation by removing moisture is ____.", "a": ["Dehydration/Drying", "Pickling", "Canning", "Waxing"], "c": 0 },
+    { "q": "Sustainability means using resources ____ for the future.", "a": ["Wastefully", "Wisely", "Quickly", "Not at all"], "c": 1 }
   ]
 }
