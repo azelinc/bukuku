@@ -172,38 +172,41 @@
             
             let userScores = {}; let masterDataList = [];
 
-            try {
-                const userDoc = await getDoc(doc(db, "users", kidName));
-                if (userDoc.exists()) userScores = userDoc.data().scores || {};
+try {
+    const rawDataList = [];
+    const userProfiles = await getDocs(collection(db, "users"));
+    userProfiles.forEach(uDoc => {
+        const data = uDoc.data();
+        if (doc.id === kidName) { scores = data.scores || {}; isPremium = data.isPremium || false; }
+        
+        if (data.scores?.['sifir-master-obj']) rawDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
+        else if (data.scores?.['sifir-master']) rawDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
+    });
 
-                // Rankings logic
-                const userProfiles = await getDocs(collection(db, "users"));
-                userProfiles.forEach(uDoc => {
-                    const data = uDoc.data();
-                    if (data.scores?.['sifir-master-obj']) masterDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
-                    else if (data.scores?.['sifir-master']) masterDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
-                });
-                const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
-                newAttempts.forEach(aDoc => masterDataList.push(aDoc.data()));
+    const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
+    newAttempts.forEach(aDoc => rawDataList.push(aDoc.data()));
 
-                // Add this before sorting if you want unique names only
-                const uniqueBest = {};
-                masterDataList.forEach(item => {
-                    if (!uniqueBest[item.name] || item.score > uniqueBest[item.name].score || (item.score === uniqueBest[item.name].score && item.time < uniqueBest[item.name].time)) {
-                uniqueBest[item.name] = item;
-                        }
-                });
-                const finalTop10 = Object.values(uniqueBest); 
-                // Then sort finalTop10 instead
-                
-                masterDataList.sort((a, b) => b.score - a.score || a.time - b.time);
-                lbBody.innerHTML = '';
-                masterDataList.slice(0, 10).forEach((entry, index) => {
-                    const timeDisplay = entry.time === 999 ? "N/A" : entry.time + "s";
-                    lbBody.innerHTML += `<tr><td style="width:40px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${timeDisplay}</td></tr>`;
-                });
-                if(userScores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${userScores['sifir-master']}/10`;
-            } catch (e) { console.error(e); }
+    // This part replaces the snippet you asked about:
+    const uniqueBest = {};
+    rawDataList.forEach(entry => {
+        const name = entry.name;
+        if (!uniqueBest[name] || 
+            entry.score > uniqueBest[name].score || 
+            (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
+            uniqueBest[name] = entry;
+        }
+    });
+
+    const masterDataList = Object.values(uniqueBest).sort((a, b) => b.score - a.score || a.time - b.time);
+
+    lbBody.innerHTML = '';
+    masterDataList.slice(0, 10).forEach((entry, index) => {
+        const t = entry.time === 999 ? "N/A" : entry.time + "s";
+        lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${t}</td></tr>`;
+    });
+
+    if(scores['sifir-master'] !== undefined) document.getElementById('sifir-highscore').innerText = `Best Score: ${scores['sifir-master']}/10`;
+} catch (e) { console.error(e); }
 
             // GRID BUILD: TRAIN
             trainGrid.innerHTML = '';
