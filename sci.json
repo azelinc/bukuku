@@ -314,7 +314,7 @@
   "6-7": [
     { "q": "Which is an example of a simple machine?", "a": ["Smartphone", "Bottle opener (Lever)", "Fan", "Microwave"], "c": 1 },
     { "q": "Air pressure decreases as we go ____.", "a": ["Higher", "Lower", "Into the sea", "None of above"], "c": 0 },
-    { "q": "Which animal lives in a solitary way?", "a": ["Ant", "Tiger", "Bee", "Elephant"], "c: 1 },
+    { "q": "Which animal lives in a solitary way?", "a": ["Ant", "Tiger", "Bee", "Elephant"], "c": 1 },
     { "q": "Preservation by adding sugar is called ____.", "a": ["Salting", "Bottling", "Candy-making/Preserving", "Cooling"], "c": 2 },
     { "q": "The solar system consists of the Sun and ____ planets.", "a": ["7", "8", "9", "10"], "c": 1 },
     { "q": "Friction produces sound and ____.", "a": ["Light", "Heat", "Vapour", "Ice"], "c": 1 },
