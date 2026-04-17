@@ -14,6 +14,17 @@ body {
 }
 .wide-container { max-width: 950px; display: block; }
 
+.overall-progress-container { 
+    background: #fff; 
+    padding: 20px; 
+    border-radius: 20px; 
+    margin-bottom: 20px; 
+    border: 1px solid #eee; 
+}
+.progress-label { display: flex; justify-content: space-between; font-size: 1rem; font-weight: bold; margin-bottom: 8px; }
+.progress-bg { background: #eee; height: 16px; border-radius: 20px; width: 100%; overflow: hidden; }
+.progress-fill { background: linear-gradient(90deg, #2ecc71, #27ae60); height: 100%; width: 0%; transition: width 0.5s ease-out; }
+
 /* HEADER */
 .app-header {
     display: flex; align-items: center; justify-content: space-between;
