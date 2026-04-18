@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Quiz Engine - AF Hub</title>
     <link rel="stylesheet" href="pc.css" media="screen and (min-width: 601px)">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
@@ -15,16 +15,10 @@
         .correct { background: #d4edda !important; color: #155724 !important; border-color: #2ecc71 !important; border-width: 3px; }
         .wrong { background: #f8d7da !important; color: #721c24 !important; border-color: #e74c3c !important; border-width: 3px; }
         
-        /* TIMER VISUALS */
         .timer-wrapper { width: 100%; background: #eee; height: 16px; border-radius: 10px; margin-bottom: 20px; overflow: hidden; border: 1px solid #ddd; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); }
         #timer-bar { height: 100%; width: 100%; transition: width 1s linear, background-color 0.3s ease; }
         
-        /* BLINKING ANIMATION */
-        @keyframes blink-red {
-            0% { opacity: 1; }
-            50% { opacity: 0.2; }
-            100% { opacity: 1; }
-        }
+        @keyframes blink-red { 0% { opacity: 1; } 50% { opacity: 0.2; } 100% { opacity: 1; } }
         .timer-blink { animation: blink-red 0.5s infinite; }
         
         #stats { font-weight: bold; margin-bottom: 8px; color: #666; font-size: 0.95rem; display: flex; justify-content: space-between; }
@@ -53,11 +47,13 @@
         <div id="result-area" style="display:none; padding: 20px;">
             <h2 id="final-score" style="font-size: 3rem; color: #f39c12;">0/10</h2>
             <p id="feedback" style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.5;"></p>
-            <div id="sync-status" style="font-size: 0.8rem; color: #999; margin-bottom: 10px;"></div>
-            <button id="back-to-hub-btn" class="btn blue-btn" onclick="location.href='school.html'" disabled>
+            <!-- Fixed Sync Message Area -->
+            <div id="sync-status" style="font-size: 0.9rem; color: #2ecc71; font-weight: bold; margin-bottom: 20px;"></div>
+            
+            <!-- Only one clean button -->
+            <button id="back-to-hub-btn" class="btn blue-btn" onclick="location.href='school.html'">
                 Back to School Hub
             </button>
-            <a href="school.html" class="btn blue-btn">Back to School Hub</a>
         </div>
     </div>
 
@@ -139,19 +135,11 @@
             const bar = document.getElementById('timer-bar');
             const percentage = (timeLeft / 30) * 100;
             bar.style.width = percentage + "%";
-            
-            // COLOR LOGIC
             bar.classList.remove('timer-blink');
-            if (timeLeft > 20) {
-                bar.style.backgroundColor = "#2ecc71"; // Green
-            } else if (timeLeft > 10) {
-                bar.style.backgroundColor = "#f1c40f"; // Yellow
-            } else if (timeLeft > 5) {
-                bar.style.backgroundColor = "#e74c3c"; // Red
-            } else {
-                bar.style.backgroundColor = "#e74c3c"; // Red
-                bar.classList.add('timer-blink');      // Blinking
-            }
+            if (timeLeft > 20) bar.style.backgroundColor = "#2ecc71";
+            else if (timeLeft > 10) bar.style.backgroundColor = "#f1c40f";
+            else if (timeLeft > 5) bar.style.backgroundColor = "#e74c3c";
+            else { bar.style.backgroundColor = "#e74c3c"; bar.classList.add('timer-blink'); }
         }
 
         function handleTimeOut() {
@@ -188,10 +176,12 @@
             document.getElementById('final-score').innerText = `${score}/${questions.length}`;
 
             const backBtn = document.getElementById('back-to-hub-btn');
-            backBtn.innerText = "☁️ Saving Score...";
-            backBtn.disabled = true; // Lock the button
+            const syncMsg = document.getElementById('sync-status');
             
-             if (kidName) {
+            backBtn.innerText = "☁️ Saving Score...";
+            backBtn.disabled = true; 
+            
+            if (kidName) {
                 try {
                     const userRef = doc(db, "users", kidName);
                     const userDoc = await getDoc(userRef);
@@ -200,16 +190,19 @@
                     if (score > (currentScores[firebaseKey] || 0)) {
                         currentScores[firebaseKey] = score;
                         await setDoc(userRef, { scores: currentScores }, { merge: true });
+                        syncMsg.innerText = "✅ New Best Score Saved to Cloud!";
+                    } else {
+                        syncMsg.innerText = "✅ Progress Synced.";
                     }
-            
-                    // SHOW NOTIFICATION AND UNLOCK BUTTON
-                    document.getElementById('sync-badge').style.display = 'inline-block';
+                    
                     backBtn.innerText = "Back to School Hub";
                     backBtn.disabled = false; 
 
                 } catch (e) {
                     console.error(e);
-                    backBtn.innerText = "Error: Click to return";
+                    backBtn.innerText = "Back to School Hub";
+                    syncMsg.innerText = "⚠️ Offline: Score saved locally only.";
+                    syncMsg.style.color = "orange";
                     backBtn.disabled = false;
                 }
             } else {
