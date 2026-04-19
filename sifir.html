@@ -139,36 +139,50 @@
         }
 
         async function finish() {
-            const totalTime = ((Date.now() - gameStartTime) / 1000).toFixed(1);
+            const totalTimeNum = parseFloat(((Date.now() - gameStartTime) / 1000).toFixed(1));
             clearInterval(timerInterval);
+            
             document.getElementById('quiz-area').style.display = 'none';
             document.querySelector('.timer-wrapper').style.display = 'none';
             document.getElementById('result-area').style.display = 'block';
+            
             document.getElementById('final-score').innerText = `${score}/10`;
-            document.getElementById('time-taken-label').innerText = `Time: ${totalTime}s`;
+            document.getElementById('time-taken-label').innerText = `Current Time: ${totalTimeNum}s`;
             
             const sync = document.getElementById('sync-status');
-            sync.innerText = "Saving result...";
+            sync.innerText = "Checking records...";
 
             try {
-                // Save attempt to global collection
+                // 1. Save this specific attempt to global history
                 await addDoc(collection(db, "sifir_scores"), {
                     name: kidName,
                     score: score,
-                    time: parseFloat(totalTime),
+                    time: totalTimeNum,
                     timestamp: serverTimestamp()
                 });
 
-                // Update personal best in user doc
+                // 2. Update Personal Best in user profile
                 const userRef = doc(db, "users", kidName);
                 const userDoc = await getDoc(userRef);
                 let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
-                if (score > (scores['sifir-master'] || 0)) {
-                    scores['sifir-master'] = score;
+                
+                // Get previous best (default to 0 score and slow time)
+                const prevBest = scores['sifir-master-obj'] || { score: 0, time: 999 };
+
+                // LOGIC: It's a new record if:
+                // Higher score OR (Same score but faster time)
+                if (score > prevBest.score || (score === prevBest.score && totalTimeNum < prevBest.time)) {
+                    scores['sifir-master-obj'] = { score: score, time: totalTimeNum };
+                    scores['sifir-master'] = score; // Keep for backward compatibility
                     await setDoc(userRef, { scores: scores }, { merge: true });
+                    sync.innerText = "🏆 NEW PERSONAL BEST!";
+                    sync.style.color = "#f1c40f";
+                } else {
+                    sync.innerText = `Personal Best: ${prevBest.time}s (${prevBest.score}/10)`;
+                    sync.style.color = "#999";
                 }
-                sync.innerText = "✅ Result Saved!";
             } catch (e) {
+                console.error(e);
                 sync.innerText = "❌ Sync failed.";
             }
             
