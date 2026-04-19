@@ -174,34 +174,45 @@
             const rawDataList = [];
 
             try {
+                try {
                 const userProfiles = await getDocs(collection(db, "users"));
                 userProfiles.forEach(uDoc => {
                     const data = uDoc.data();
-                    
+                    const currentDocScores = data.scores || {};
+
+                    // Ensure we capture the logged-in kid's scores separately
                     if (uDoc.id === kidName) { 
-                        cachedScores = data.scores || {}; 
+                        userScores = currentDocScores; 
+                        cachedScores = currentDocScores; 
                     }
                     
-                    if (data.scores?.['sifir-master-obj']) {
-                        rawDataList.push({ name: uDoc.id, ...data.scores['sifir-master-obj'] });
-                    } else if (data.scores?.['sifir-master'] !== undefined) {
-                        rawDataList.push({ name: uDoc.id, score: data.scores['sifir-master'], time: 999 });
+                    // Collect data for ranking
+                    if (currentDocScores['sifir-master-obj']) {
+                        rawDataList.push({ name: uDoc.id, ...currentDocScores['sifir-master-obj'] });
+                    } else if (currentDocScores['sifir-master'] !== undefined) {
+                        rawDataList.push({ name: uDoc.id, score: currentDocScores['sifir-master'], time: 999 });
                     }
                 });
 
+                // Fetch recent attempts to include them in the pool
                 const newAttempts = await getDocs(query(collection(db, "sifir_scores"), limit(100)));
                 newAttempts.forEach(aDoc => rawDataList.push(aDoc.data()));
 
+                // Filter to keep ONLY the absolute best attempt for each unique name
                 const uniqueBest = {};
                 rawDataList.forEach(entry => {
                     const name = entry.name;
-                    if (!uniqueBest[name] || entry.score > uniqueBest[name].score || (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
+                    if (!uniqueBest[name] || 
+                        entry.score > uniqueBest[name].score || 
+                        (entry.score === uniqueBest[name].score && entry.time < uniqueBest[name].time)) {
                         uniqueBest[name] = entry;
                     }
                 });
 
+                // Sort: Higher Score first, then Faster Time
                 const masterDataList = Object.values(uniqueBest).sort((a, b) => b.score - a.score || a.time - b.time);
 
+                // Render Leaderboard
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const t = entry.time === 999 ? "N/A" : entry.time + "s";
@@ -213,14 +224,17 @@
                     </tr>`;
                 });
 
-                // Display Best Time if available, otherwise show simple score
+                // Display Best Time for the logged-in user
                 const sifirDisplay = document.getElementById('sifir-highscore');
                 if (userScores['sifir-master-obj']) {
                     const best = userScores['sifir-master-obj'];
                     sifirDisplay.innerHTML = `Best Record: <span style="color:#2ecc71">${best.time}s</span> (${best.score}/10)`;
                 } else if (userScores['sifir-master'] !== undefined) {
                     sifirDisplay.innerText = `Best Score: ${userScores['sifir-master']}/10`;
+                } else {
+                    sifirDisplay.innerText = `Best Score: 0/10`;
                 }
+
             } catch (e) { console.error("Database Error:", e); }
 
             // GRID BUILD: TRAIN
