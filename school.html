@@ -205,11 +205,21 @@
                 lbBody.innerHTML = '';
                 masterDataList.slice(0, 10).forEach((entry, index) => {
                     const t = entry.time === 999 ? "N/A" : entry.time + "s";
-                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;"><td style="padding:10px;">#${index+1}</td><td style="text-align:left;">${entry.name}</td><td>${entry.score}/10</td><td>${t}</td></tr>`;
+                    lbBody.innerHTML += `<tr style="border-bottom:1px solid #eee;">
+                        <td style="padding:10px;">#${index+1}</td>
+                        <td style="text-align:left;">${entry.name}</td>
+                        <td>${entry.score}/10</td>
+                        <td>${t}</td>
+                    </tr>`;
                 });
 
-                if(cachedScores['sifir-master'] !== undefined) {
-                    document.getElementById('sifir-highscore').innerText = `Best Score: ${cachedScores['sifir-master']}/10`;
+                // Display Best Time if available, otherwise show simple score
+                const sifirDisplay = document.getElementById('sifir-highscore');
+                if (userScores['sifir-master-obj']) {
+                    const best = userScores['sifir-master-obj'];
+                    sifirDisplay.innerHTML = `Best Record: <span style="color:#2ecc71">${best.time}s</span> (${best.score}/10)`;
+                } else if (userScores['sifir-master'] !== undefined) {
+                    sifirDisplay.innerText = `Best Score: ${userScores['sifir-master']}/10`;
                 }
             } catch (e) { console.error("Database Error:", e); }
 
