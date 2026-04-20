@@ -93,7 +93,7 @@
                 const data = await response.json();
                 questions = data[jsonKey];
                 if (!questions) throw new Error("Quiz Set not found.");
-                const titles = { 'math': 'Mathematics', 'sci': 'Science', 'eng': 'English' };
+                const titles = { 'math': 'Mathematics', 'sci': 'Science', 'eng': 'English', 'rbt': 'RBT' };
                 document.getElementById('quiz-title').innerText = `${titles[sub]} Std ${lvl} (Set ${setNum})`;
                 showQuestion();
             } catch (e) {
