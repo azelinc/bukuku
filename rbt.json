@@ -119,7 +119,7 @@
     { "q": "Bagaimanakah cara menyimpan apron selepas digunakan?", "a": ["Disumbat dalam beg", "Digantung dengan kemas", "Dibiarkan di atas meja", "Dibuang"], "c": 1 },
     { "q": "Apakah elemen penting dalam reka bentuk?", "a": ["Garisan, rupa, bentuk dan warna", "Berat sahaja", "Harga barang", "Nama kedai"], "c": 0 }
   ],
-    "5-1": [
+  "5-1": [
     { "q": "Antara berikut, manakah alatan yang digunakan untuk memindahkan tanda pola ke kain?", "a": ["Gunting fabrik", "Roda surih dan kertas karbon", "Jarum peniti", "Pembaris lurus"], "c": 1 },
     { "q": "Mata jahitan manakah yang digunakan untuk memulakan dan mematikan jahitan tangan?", "a": ["Jahitan Jelujur", "Jahitan Kia", "Jahitan Sembat", "Jahitan Silang Pangkah"], "c": 1 },
     { "q": "Apakah kegunaan jahitan jelujur kasar?", "a": ["Sebagai hiasan", "Menyambung kain secara kekal", "Menetapkan kedudukan dua atau lebih lapisan kain sementara", "Mengemas tepi kain"], "c": 2 },
@@ -152,7 +152,7 @@
     { "q": "Gandingan dua komponen manakah yang membolehkan model bergerak?", "a": ["Bateri dan mentol", "Motor dan gear", "Buzer dan suis", "LED dan wayar"], "c": 1 },
     { "q": "Apakah fungsi suis dalam satu litar lengkap?", "a": ["Membekalkan tenaga", "Menyambung dan memutuskan litar", "Mencantikkan model", "Menyimpan elektrik"], "c": 1 },
     { "q": "Wayar penyambung biasanya diperbuat daripada...", "a": ["Plastik", "Kayu", "Tembaga (konduktor)", "Kaca"], "c": 2 },
-    { "q": "Apakah sumber tenaga bagi jam loceng digital?", "a": ["Arang batu", "Sel kering / Bateri", "Minyak petrol", "Air"], "c: 1 },
+    { "q": "Apakah sumber tenaga bagi jam loceng digital?", "a": ["Arang batu", "Sel kering / Bateri", "Minyak petrol", "Air"], "c": 1 },
     { "q": "Dalam lukisan skematik, simbol garis lurus mewakili...", "a": ["Bateri", "Mentol", "Wayar penyambung", "Suis"], "c": 2 }
   ],
   "5-4": [
