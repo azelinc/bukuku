@@ -73,7 +73,7 @@
   ],
   "4-7": [
     { "q": "Apakah maksud teknologi hijau?", "a": ["Warna cat hijau", "Pembangunan produk untuk memelihara alam sekitar", "Hanya menggunakan daun", "Menanam pokok di dalam komputer"], "c": 1 },
-    { "q": "Apakah komponen elektrik yang menukarkan tenaga elektrik kepada cahaya?", "a": ["Bateri", "Mentol / LED", "Suis", "Motor"], "c: 1 },
+    { "q": "Apakah komponen elektrik yang menukarkan tenaga elektrik kepada cahaya?", "a": ["Bateri", "Mentol / LED", "Suis", "Motor"], "c": 1 },
     { "q": "Apakah fungsi suis dalam satu litar elektrik?", "a": ["Membekalkan tenaga", "Menyambung dan memutuskan litar", "Mencantikkan litar", "Mengurangkan elektrik"], "c": 1 },
     { "q": "Apakah kegunaan gergaji lengkung halus (coping saw)?", "a": ["Memotong garisan lurus sahaja", "Memotong bentuk melengkung pada bahan nipis", "Memotong besi tebal", "Memahat kayu"], "c": 1 },
     { "q": "Bahan manakah yang sesuai digunakan untuk membuat badan model lori?", "a": ["Kotak/Kadbod", "Ais", "Kertas tisu", "Pasir"], "c": 0 },
