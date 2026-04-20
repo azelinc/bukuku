@@ -118,7 +118,7 @@
     { "q": "In Scratch, a 'Costume' is used to...", "a": ["Change the look of a Sprite", "Make the Sprite loud", "Move the Sprite", "Save the project"], "c": 0 },
     { "q": "Which of these is an example of a simple system?", "a": ["A pencil", "A bicycle", "A rock", "A leaf"], "c": 1 },
     { "q": "The best way to carry a sharp tool is to...", "a": ["Hold it by the blade", "Walk slowly with the tip pointed down", "Run with it", "Throw it to your friend"], "c": 1 }
-  ]
+  ],
 
   "5-1": [
     { "q": "Which tool is used to draw horizontal lines in technical drawing?", "a": ["Compass", "T-square", "Hammer", "Protractor"], "c": 1 },
