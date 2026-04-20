@@ -1,95 +1,107 @@
-/* MOBILE STYLE (Full-Screen App Look) */
+/* MOBILE STYLE - PROFESSIONAL APP LOOK */
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
-body { font-family: 'Segoe UI', Roboto, sans-serif; background: #ffffff; color: #333; min-height: 100vh; display: block; }
-
-.container { width: 100%; min-height: 100vh; margin: 0; padding: 0; display: flex; flex-direction: column; }
-
-/* HEADER */
-.app-header {
-    background: #1a1a2e; color: #ffffff; padding: 15px 15px;
-    display: flex; align-items: center; justify-content: space-between;
-    position: sticky; top: 0; z-index: 110;
-}
-.app-header h1 { font-size: 1.1rem; margin: 0; color: white; background: transparent; padding: 0; }
-.header-right { display: flex; align-items: center; gap: 8px; }
-
-.user-badge { color: #f1c40f; font-weight: bold; font-size: 0.8rem; border: 1px solid rgba(255,255,255,0.3); padding: 4px 10px; border-radius: 15px; }
-.home-icon-btn { text-decoration: none; font-size: 1.3rem; }
-
-/* TRAIN SIFIR GRID (Mobile) */
-.sifir-grid { 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 10px; 
-    margin-top: 10px; 
-}
-.train-card { 
-    background: #fff; 
-    border: 1px solid #ddd; 
-    padding: 15px 5px; 
-    border-radius: 12px; 
-    text-align: center; 
-    text-decoration: none !important; 
-    color: #333; 
-    font-weight: bold; 
-    font-size: 0.9rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-.train-card.mastered { background: #f0fff4; border-color: #2ecc71; }
-.mastered-label { display: block; color: #27ae60; font-size: 0.6rem; }
-
-/* SLIM APP-STYLE PROGRESS BAR */
-h1 { padding: 25px 20px 10px 20px; } /* Tightened bottom padding to connect with bar */
-
-.overall-progress-container { 
-    background: #1a1a2e; /* Matches header background exactly */
-    padding: 0 20px 15px 20px; 
-    border: none;
+body { 
+    font-family: 'Segoe UI', Roboto, sans-serif; 
+    background: #ffffff; 
+    min-height: 100vh;
+    overflow-x: hidden; /* CRITICAL: Prevents the "push to the left" bug */
+    display: block;
 }
 
-.progress-label { 
-    display: flex; 
-    justify-content: space-between; 
-    font-size: 0.65rem; 
-    font-weight: bold; 
-    margin-bottom: 5px; 
-    color: #999; /* Faded grey for "Label" look */
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.container { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-.progress-bg { 
-    background: rgba(255, 255, 255, 0.1); /* Subtle dark track */
-    height: 6px; 
-    border-radius: 10px; 
-    width: 100%; 
-    overflow: hidden; 
+/* Fix the top header to be solid */
+h1 {
+    background: #1a1a2e;
+    color: white;
+    padding: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
 }
 
-.progress-fill { 
-    background: #2ecc71; /* Solid vibrant green */
-    height: 100%; 
-    width: 0%; 
-    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+/* Fix the scrolling subject bar */
+.sidebar {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Allows swiping subjects left/right */
+    padding: 10px;
+    gap: 8px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* NAVIGATION */
-.sidebar { width: 100%; flex-direction: row; display: flex; overflow-x: auto; padding: 10px; gap: 10px; background: #f8f9fa; border-bottom: 1px solid #eee; position: sticky; top: 54px; z-index: 100; }
-.tab-btn { padding: 10px 18px; white-space: nowrap; border-radius: 50px; background: #fff; font-size: 0.85rem; border: 1px solid #ddd; color: #666; font-weight: bold; }
+.tab-btn {
+    padding: 8px 16px;
+    white-space: nowrap;
+    border-radius: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
 .tab-btn.active { background: #4a90e2; color: white; border-color: #4a90e2; }
 
-/* MATRIX */
-.main-content { padding: 15px; }
-.grade-row { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 20px 0; border-bottom: 1px solid #f0f0f0; }
-.grade-label { background: #1a1a2e; color: white; padding: 6px 15px; border-radius: 8px; font-size: 0.8rem; font-weight: bold; }
-.set-group { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; width: 100%; }
-.set-circle { aspect-ratio: 1/1; border-radius: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: white !important; font-weight: bold; position: relative; text-decoration: none; line-height: 1; }
-.set-circle small { font-size: 0.6rem; font-weight: normal; margin-top: 2px; }
-.set-circle.done { background-color: #2ecc71 !important; border: 2px solid #fff; }
-.set-circle.done::after { content: "✓"; position: absolute; top: -5px; right: -5px; background: #27ae60; width: 18px; height: 18px; border-radius: 50%; font-size: 11px; display: flex; align-items: center; justify-content: center; color: white; border: 2px solid white; }
+/* The Grid Fix: 5 columns that fit perfectly */
+.main-content { padding: 10px; }
+.subject-card { margin-bottom: 20px; }
 
-/* TABLE */
-.lb-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 0.85rem; }
-.lb-table td { padding: 12px 5px; border-bottom: 1px solid #f9f9f9; text-align: center; font-weight: bold; }
-.col-name { text-align: left !important; padding-left: 10px !important; }
+.grade-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.grade-label {
+    background: #1a1a2e;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
+}
+
+.set-group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Exactly 5 per row */
+    gap: 10px;
+    width: 100%;
+}
+
+.set-circle {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    line-height: 1; /* Stops text from squashing */
+}
+
+.set-circle small {
+    font-size: 0.55rem;
+    margin-top: 4px;
+    opacity: 0.9;
+}
+
+.set-circle.done { background-color: #2ecc71 !important; }
+.locked { background: #f0f0f0 !important; color: #ccc !important; }
