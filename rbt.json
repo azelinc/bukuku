@@ -23,6 +23,103 @@
     { "q": "What is a 'Sketch'?", "a": ["A final product", "An initial rough drawing", "A photograph", "A written report"], "c": 1 },
     { "q": "Which of these is a non-renewable source of energy?", "a": ["Wind", "Solar", "Petroleum", "Water"], "c": 2 }
   ],
+  "4-3": [
+    { "q": "Which tool is used to tighten or loosen Philip-head screws?", "a": ["Flat-head screwdriver", "Philip's screwdriver", "Hammer", "Hand drill"], "c": 1 },
+    { "q": "What is the purpose of a workshop duty roster?", "a": ["To make the workshop look busy", "To ensure every student has a task to keep it clean", "To choose the smartest student", "To waste time"], "c": 1 },
+    { "q": "Which of the following is a non-metal material used in RBT projects?", "a": ["Zinc", "Aluminum", "Plastic", "Copper"], "c": 2 },
+    { "q": "Why should we use a workbench when cutting materials?", "a": ["To sit down", "To ensure safety and stability during work", "To keep our bags", "To play with friends"], "c": 1 },
+    { "q": "Which tool is used to make a pilot hole on wood before driving a screw?", "a": ["Hammer", "Bradawl", "Steel ruler", "Pliers"], "c": 1 },
+    { "q": "When sticking two pieces of plastic together, which is the best adhesive?", "a": ["PVA glue", "Super glue", "Water", "Staples"], "c": 1 },
+    { "q": "What is the function of a try-square?", "a": ["To cut wood", "To check the squareness of a corner", "To tighten bolts", "To sand surfaces"], "c": 1 },
+    { "q": "Why must we apply oil to metal tools before storing them?", "a": ["To make them smell good", "To prevent rust", "To make them slippery", "To change their color"], "c": 1 },
+    { "q": "Which of these is a power tool?", "a": ["Handsaw", "Electric glue gun", "Steel ruler", "Philip's screwdriver"], "c": 1 },
+    { "q": "What should you wear to protect your clothes in the workshop?", "a": ["Raincoat", "Workshop apron", "Sweater", "Scarf"], "c": 1 }
+  ],
+  "4-4": [
+    { "q": "What is the main source of energy for a solar-powered calculator?", "a": ["Battery", "Sunlight", "Wind", "Water"], "c": 1 },
+    { "q": "Which of these is an example of renewable energy?", "a": ["Coal", "Petroleum", "Wind energy", "Natural gas"], "c": 2 },
+    { "q": "Energy that is produced from moving water is called...", "a": ["Solar energy", "Hydroelectric energy", "Bio-mass", "Nuclear energy"], "c": 1 },
+    { "q": "Which material is obtained from oil and used to make many household items?", "a": ["Wood", "Plastic", "Metal", "Glass"], "c": 1 },
+    { "q": "What happens to energy in a moving bicycle?", "a": ["It disappears", "It changes from kinetic to heat", "It stays the same", "It only turns into light"], "c": 1 },
+    { "q": "Which of these is a way to save energy at home?", "a": ["Leaving lights on", "Using a fan instead of an air conditioner", "Using old lightbulbs", "Keeping the fridge door open"], "c": 1 },
+    { "q": "A 'Mock-up' is another word for...", "a": ["The final product", "A prototype or model", "A drawing", "A list of tools"], "c": 1 },
+    { "q": "Which tool is used to cut thin plywood?", "a": ["Coping saw", "Hack saw", "Cross-cut saw", "Scissors"], "c": 0 },
+    { "q": "Which material is light and can be easily shaped for a model boat?", "a": ["Concrete", "Polystyrene", "Iron", "Bricks"], "c": 1 },
+    { "q": "What is the first step in the design process?", "a": ["Building the product", "Identifying a problem or need", "Selling the product", "Evaluating the product"], "c": 1 }
+  ],
+  "4-5": [
+    { "q": "What is the meaning of 'Design'?", "a": ["A plan or drawing produced to show the look and function of an object", "Copying someone's work", "Buying new things", "Destroying old tools"], "c": 0 },
+    { "q": "Which of these is a type of sketch used in design?", "a": ["Photograph", "Oblique sketch", "Map", "Blueprint only"], "c": 1 },
+    { "q": "What does a dashed line usually represent in a technical drawing?", "a": ["The main outline", "A hidden edge", "A cutting line", "A decorative pattern"], "c": 1 },
+    { "q": "Why is it important to evaluate a finished design?", "a": ["To make it more expensive", "To find weaknesses and improve it", "To show off", "To throw it away"], "c": 1 },
+    { "q": "Which material is a good insulator of heat?", "a": ["Aluminum", "Copper", "Wood", "Steel"], "c": 2 },
+    { "q": "A model that looks like the real product but doesn't work is called a...", "a": ["Function model", "Appearance mock-up", "Final product", "Sketch"], "c": 1 },
+    { "q": "Which adhesive is used with a hot glue gun?", "a": ["Liquid glue", "Glue stick (melted)", "Tape", "Solder"], "c": 1 },
+    { "q": "To make a model surface smooth, we use...", "a": ["A hammer", "Sandpaper", "A screwdriver", "A saw"], "c": 1 },
+    { "q": "Which of these is a sustainable material?", "a": ["Single-use plastic", "Bamboo", "Polystyrene", "Lead"], "c": 1 },
+    { "q": "When sketching, what should we use to draw lines easily?", "a": ["Ink pen", "Pencil", "Crayon", "Marker"], "c": 1 }
+  ],
+  "4-6": [
+    { "q": "What is an 'Algorithm'?", "a": ["A computer language", "A step-by-step set of instructions to solve a task", "A type of robot", "A mathematical error"], "c": 1 },
+    { "q": "A flowchart uses ____ to show the sequence of steps.", "a": ["Pictures", "Standard symbols and arrows", "Numbers only", "Code"], "c": 1 },
+    { "q": "What does the 'Diamond' shape represent in a flowchart?", "a": ["Start or End", "Process", "Decision (Yes/No)", "Input/Output"], "c": 2 },
+    { "q": "What is 'Pseudocode'?", "a": ["Fake code that cannot be read", "Informal language that describes programming logic", "A finished computer program", "A hardware component"], "c": 1 },
+    { "q": "The 'Oval' shape in a flowchart is used for...", "a": ["Process", "Input", "Start and End", "Decision"], "c": 2 },
+    { "q": "Why do we use flowcharts in programming?", "a": ["To make it look pretty", "To visualize the logic of a program", "To use less paper", "To hide the instructions"], "c": 1 },
+    { "q": "If a robot turns right when it sees a red line, what is the 'Condition'?", "a": ["Turning right", "Seeing a red line", "The robot moving", "The battery"], "c": 1 },
+    { "q": "Which symbol shows the direction of flow in a flowchart?", "a": ["Circle", "Arrow", "Square", "Dot"], "c": 1 },
+    { "q": "What is a 'Bug' in a program?", "a": ["An insect in the computer", "An error that prevents the program from working", "A type of code", "A new feature"], "c": 1 },
+    { "q": "A sequence is a set of instructions that follow...", "a": ["Random order", "One after another in a fixed order", "Reverse order", "No order"], "c": 1 }
+  ],
+  "4-7": [
+    { "q": "Which block in Scratch is used to start a script?", "a": ["Move block", "When green flag clicked", "Say hello block", "Stop block"], "c": 1 },
+    { "q": "What is a 'Sprite' in Scratch?", "a": ["A soft drink", "A character or object that performs actions", "A type of background", "The coding window"], "c": 1 },
+    { "q": "Which category of blocks is used to change the Sprite's color?", "a": ["Motion", "Looks", "Sound", "Events"], "c": 1 },
+    { "q": "The area where we build the scripts in Scratch is the...", "a": ["Stage", "Script Area", "Sprite List", "Toolbar"], "c": 1 },
+    { "q": "What does the 'Forever' block do?", "a": ["Runs the code once", "Repeats the code inside it without stopping", "Stops the program", "Deletes the Sprite"], "c": 1 },
+    { "q": "How do you make a Sprite move forward?", "a": ["Change size block", "Move 10 steps block", "Hide block", "Wait block"], "c": 1 },
+    { "q": "Which block is used to make a character wait for a while?", "a": ["Repeat block", "Wait 1 second block", "Glide block", "If block"], "c": 1 },
+    { "q": "The background of the project in Scratch is called the...", "a": ["Backdrop/Stage", "Wallpaper", "Floor", "Canvas"], "c": 0 },
+    { "q": "If you want a Sprite to speak, which block should you use?", "a": ["Point in direction", "Say 'Hello' for 2 seconds", "Next costume", "Think"], "c": 1 },
+    { "q": "Which block allows a program to make a choice?", "a": ["Repeat", "If-then", "Go to", "Change x by"], "c": 1 }
+  ],
+  "4-8": [
+    { "q": "What is 'Debug'?", "a": ["Adding more sprites", "Finding and fixing errors in code", "Sharing a project", "Recording sound"], "c": 1 },
+    { "q": "In a flowchart, the 'Rectangle' shape represents a...", "a": ["Decision", "Process or Action", "Input", "Terminal"], "c": 1 },
+    { "q": "Which of these is an input for a computer program?", "a": ["A sound from the speaker", "Clicking a mouse button", "A picture on the screen", "The printer printing"], "c": 1 },
+    { "q": "Which block is used to repeat an action 10 times?", "a": ["Forever", "Repeat 10", "Wait", "Start"], "c": 1 },
+    { "q": "What happens when a program enters a 'Loop'?", "a": ["It crashes", "It repeats a set of instructions", "It finishes instantly", "It sends an email"], "c": 1 },
+    { "q": "Which sense in a robot would be like our eyes?", "a": ["Speaker", "Ultrasonic/Light Sensor", "Motor", "Battery"], "c": 1 },
+    { "q": "To stop a program in Scratch, we click the...", "a": ["Green Flag", "Red Stop Sign", "Blue Button", "Yellow Icon"], "c": 1 },
+    { "q": "What is the X-position in Scratch?", "a": ["Up and Down position", "Left and Right position", "The size of the sprite", "The volume"], "c": 1 },
+    { "q": "What is the Y-position in Scratch?", "a": ["Up and Down position", "Left and Right position", "The color", "The rotation"], "c": 0 },
+    { "q": "Software is a collection of...", "a": ["Hardware parts", "Programs and instructions", "Tools and machines", "Wires and cables"], "c": 1 }
+  ],
+  "4-9": [
+    { "q": "Which of these is a safety practice in the RBT workshop?", "a": ["Running to get tools", "Reporting spills to the teacher immediately", "Eating while working", "Working alone at night"], "c": 1 },
+    { "q": "Why must we use a dustpan after sweeping?", "a": ["To play with it", "To collect the dust and dispose of it properly", "To hide the mess", "To fan ourselves"], "c": 1 },
+    { "q": "What should you do if you get a small cut on your finger?", "a": ["Wash it with dirty water", "Inform the teacher and use the first aid kit", "Ignore it", "Cover it with tape"], "c": 1 },
+    { "q": "A project evaluation helps us to check...", "a": ["The price of materials", "If the product meets the original goal", "Who worked the hardest", "The color of the tools"], "c": 1 },
+    { "q": "Which tool is used for sanding flat surfaces?", "a": ["Pliers", "Sanding block", "Handsaw", "Hammer"], "c": 1 },
+    { "q": "To stick wood pieces strongly, we use...", "a": ["Clear tape", "Wood glue (PVA)", "UHU glue", "Rubber bands"], "c": 1 },
+    { "q": "Why is it important to follow a design sketch?", "a": ["To avoid using a ruler", "To ensure the final product follows the plan", "To make it look like a photo", "To use more glue"], "c": 1 },
+    { "q": "Which of these is a hand-held cutting tool?", "a": ["Steel ruler", "Junior hacksaw", "Try-square", "Marking gauge"], "c": 1 },
+    { "q": "What is the function of an ultrasonic sensor?", "a": ["To make sound", "To measure distance by using sound waves", "To provide light", "To spin a wheel"], "c": 1 },
+    { "q": "In a design, 'Function' means...", "a": ["How pretty it looks", "The purpose or what it does", "The cost of the product", "The size of the box"], "c": 1 }
+  ],
+  "4-10": [
+    { "q": "Which shape is used to represent Input/Output in a flowchart?", "a": ["Oval", "Parallelogram (Slanted rectangle)", "Diamond", "Rectangle"], "c": 1 },
+    { "q": "To make a character walk back and forth in Scratch, we use...", "a": ["Move and 'if on edge, bounce' blocks", "Hide block", "Color block", "Stop block"], "c": 0 },
+    { "q": "Which energy is stored in food and plants?", "a": ["Kinetic", "Chemical potential", "Electrical", "Sound"], "c": 1 },
+    { "q": "Which material can be recycled to save the environment?", "a": ["Food waste", "Aluminum cans", "Tissue paper", "Dust"], "c": 1 },
+    { "q": "A project evaluation is done ____ the product is finished.", "a": ["Before", "During", "After", "Never"], "c": 2 },
+    { "q": "A robot's brain is usually a...", "a": ["Battery", "Microcontroller", "Wheel", "Wire"], "c": 1 },
+    { "q": "Which tool is used to remove a screw?", "a": ["Hammer", "Screwdriver", "Try-square", "Handsaw"], "c": 1 },
+    { "q": "In Scratch, a 'Costume' is used to...", "a": ["Change the look of a Sprite", "Make the Sprite loud", "Move the Sprite", "Save the project"], "c": 0 },
+    { "q": "Which of these is an example of a simple system?", "a": ["A pencil", "A bicycle", "A rock", "A leaf"], "c": 1 },
+    { "q": "The best way to carry a sharp tool is to...", "a": ["Hold it by the blade", "Walk slowly with the tip pointed down", "Run with it", "Throw it to your friend"], "c": 1 }
+  ]
+
   "5-1": [
     { "q": "Which tool is used to draw horizontal lines in technical drawing?", "a": ["Compass", "T-square", "Hammer", "Protractor"], "c": 1 },
     { "q": "What is the purpose of an oblique sketch?", "a": ["To show one face and depth", "To show only the top", "To show internal parts", "To hide the design"], "c": 0 },
