@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
 
     <style>
-        /* PAGE SPECIFIC STYLES */
+        /* PAGE SPECIFIC OVERRIDES */
         #subject-filter-container::-webkit-scrollbar { display: none; }
         #subject-filter-container { scrollbar-width: none; -ms-overflow-style: none; }
         
@@ -27,7 +27,6 @@
         .filter-btn { padding: 8px 12px; border-radius: 8px; border: 1px solid #ddd; cursor: pointer; background: white; font-weight: bold; color: #555; transition: 0.2s; }
         .filter-btn.active { background: #1a1a2e !important; color: white !important; border-color: #1a1a2e !important; }
         
-        /* Leaderboard table simple styling */
         .lb-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
         
         .sifir-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
@@ -38,7 +37,6 @@
         .train-card.mastered { border-color: #2ecc71; background: #f0fff4; }
         .mastered-label { display: block; color: #2ecc71; font-size: 0.7rem; margin-top: 5px; }
 
-        /* Premium Modal */
         .modal-overlay {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 2000;
@@ -49,11 +47,6 @@
         }
         
         .locked { background-color: #f0f0f0 !important; color: #ccc !important; cursor: pointer !important; pointer-events: auto !important; }
-
-        @media (max-width: 600px) {
-            .sifir-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
-            .filter-btn { font-size: 0.75rem; padding: 6px 10px; }
-        }
 
         #sifir-start-btn {
             display: block !important; width: 100% !important; max-width: 300px !important; margin: 20px auto !important;
@@ -81,26 +74,25 @@
         <!-- HEADER -->
         <header class="app-header">
             <h1>🏫 School Hub</h1>
-
-            <!-- PROGRESS BAR -->
-            <div class="overall-progress-container" id="global-progress-box">
-                <div class="progress-label">
-                    <span id="progress-text-label">Overall Progress </span>
-                    <span id="progress-percent-label">0 %</span>
-                </div>
-                <div class="progress-bg">
-                    <div id="progress-fill-bar" class="progress-fill"></div>
-                </div>
-            </div>
-            
             <div class="header-right">
                 <span id="user-badge" class="user-badge">Explorer</span>
                 <a href="index.html" class="home-icon-btn">🏠</a>
             </div>
         </header>
 
+        <!-- PROGRESS BAR -->
+        <div class="overall-progress-container" id="global-progress-box">
+            <div class="progress-label">
+                <span id="progress-text-label">Overall Progress </span>
+                <span id="progress-percent-label">0 %</span>
+            </div>
+            <div class="progress-bg">
+                <div id="progress-fill-bar" class="progress-fill"></div>
+            </div>
+        </div>
+
         <div class="library-layout">
-            <!-- SIDEBAR -->
+            <!-- SIDEBAR NAVIGATION -->
             <div class="sidebar">
                 <button id="tab-tuition" class="tab-btn active" onclick="openTab('tuition', this)">🎓 Tuition</button>
                 <button id="tab-sifir" class="tab-btn" onclick="openTab('sifir', this)">🔢 Sifir Master</button>
@@ -121,10 +113,10 @@
 
                     <!-- GRADE FILTERS -->
                     <div class="filter-bar">
-                        <button class="filter-btn active" onclick="filterGrade('all', this)">All</button>
-                        <button class="filter-btn" onclick="filterGrade('4', this)">Std 4</button>
-                        <button class="filter-btn" onclick="filterGrade('5', this)">Std 5</button>
-                        <button class="filter-btn" onclick="filterGrade('6', this)">Std 6</button>
+                        <button class="filter-btn active" onclick="window.filterGrade('all', this)">All</button>
+                        <button class="filter-btn" onclick="window.filterGrade('4', this)">Std 4</button>
+                        <button class="filter-btn" onclick="window.filterGrade('5', this)">Std 5</button>
+                        <button class="filter-btn" onclick="window.filterGrade('6', this)">Std 6</button>
                     </div>
 
                     <div id="matrix-container">
@@ -172,26 +164,28 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
+        // APP STATE
+        let activeGrade = 'all';
+        let activeSubject = 'all';
+        let cachedScores = {}; 
+        let isPremiumUser = false;
+
         const subjects = [
-            { id: 'math', name: 'Maths', color: '#4a90e2', icon: '🔢', sets: 10 }, 
+            { id: 'math', name: 'Mathematics', color: '#4a90e2', icon: '🔢', sets: 10 }, 
             { id: 'sci', name: 'Science', color: '#0097a7', icon: '🧪', sets: 10 }, 
             { id: 'eng', name: 'English', color: '#f39c12', icon: '📖', sets: 10 },
             { id: 'rbt', name: 'RBT', color: '#e74c3c', icon: '🛠️', sets: 10 }
         ];
 
-        let activeGrade = 'all';
-        let activeSubject = 'all';
-        let cachedScores = {}; 
-
         async function updateBadge() {
             const userDoc = await getDoc(doc(db, "users", kidName));
-            const isPremium = userDoc.exists() ? userDoc.data().isPremium : false;
-            document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremium ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
-            return isPremium;
+            isPremiumUser = userDoc.exists() ? userDoc.data().isPremium : false;
+            document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremiumUser ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
+            return isPremiumUser;
         }
 
         async function generateHub() {
-            const isPremium = await updateBadge();
+            await updateBadge();
             const container = document.getElementById('matrix-container');
             const trainGrid = document.getElementById('train-grid');
             const lbBody = document.getElementById('leaderboard-body');
@@ -252,7 +246,7 @@
                     for (let setNum = 1; setNum <= sub.sets; setNum++) {
                         const scoreKey = `${sub.id}-${lvl}-${setNum}`;
                         const bestScore = cachedScores[scoreKey] || 0;
-                        let isLocked = (!isPremium && setNum >= 6);
+                        let isLocked = (!isPremiumUser && setNum >= 6);
                         if (isLocked) html += `<div class="set-circle locked" onclick="window.openPremiumModal()"><span>🔒</span></div>`;
                         else html += `<a href="tuition-quiz.html?sub=${sub.id}&lvl=${lvl}&set=${setNum}" class="set-circle ${bestScore >= 5 ? 'done' : ''}" style="background-color: ${sub.color}"><span>${setNum}</span>${bestScore > 0 ? '<small>' + bestScore + '/10</small>' : ''}</a>`;
                     }
