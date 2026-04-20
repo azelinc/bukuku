@@ -1,0 +1,62 @@
+{
+  "4-1": [
+    { "q": "What is the first thing you should do before entering the RBT workshop?", "a": ["Run inside", "Wait for teacher's permission", "Start using tools", "Eat snacks"], "c": 1 },
+    { "q": "Which of these is a safety rule in the workshop?", "a": ["Play with friends", "Keep the floor oily", "Wear personal protective equipment", "Hide broken tools"], "c": 2 },
+    { "q": "Why must we maintain good ventilation in the workshop?", "a": ["To stay cold", "To remove dust and fumes", "To hear the teacher better", "To save electricity"], "c": 1 },
+    { "q": "What should you do if a tool is broken?", "a": ["Fix it yourself", "Put it back quietly", "Inform the teacher immediately", "Throw it in the bin"], "c": 2 },
+    { "q": "Which sign indicates a 'Hazard' or 'Danger'?", "a": ["Green circle", "Blue square", "Yellow triangle", "White rectangle"], "c": 2 },
+    { "q": "What is the function of a first aid kit?", "a": ["To store food", "To treat minor injuries", "To clean tools", "To keep money"], "c": 1 },
+    { "q": "How should long hair be managed in the workshop?", "a": ["Left loose", "Tied up neatly", "Covered with a cap only", "Cut short"], "c": 1 },
+    { "q": "Which of these is used to extinguish a small fire?", "a": ["Plastic bag", "Fire extinguisher", "Hand fan", "Cardboard"], "c": 1 },
+    { "q": "Why must workshop benches be cleaned after work?", "a": ["To make them look new", "To ensure safety and neatness", "To waste time", "To help the janitor"], "c": 1 },
+    { "q": "What is the correct way to carry sharp tools?", "a": ["Pointed upwards", "Pointed downwards", "In your pocket", "Swinging them"], "c": 1 }
+  ],
+  "4-2": [
+    { "q": "What does 'Technology' mean in daily life?", "a": ["Using only computers", "Application of knowledge to ease work", "Buying expensive things", "Playing games"], "c": 1 },
+    { "q": "Which tool is used to measure length accurately?", "a": ["Hammer", "Steel ruler", "Screwdriver", "Glue gun"], "c": 1 },
+    { "q": "What is the main purpose of a design?", "a": ["To make things expensive", "To solve problems and meet needs", "To waste materials", "To show off skills"], "c": 1 },
+    { "q": "Which of these is a manual tool?", "a": ["Electric drill", "Handsaw", "Microwave", "Computer"], "c": 1 },
+    { "q": "What material is usually used to make a mock-up model?", "a": ["Steel", "Concrete", "Cardboard or polystyrene", "Glass"], "c": 2 },
+    { "q": "In a workshop organization chart, who is at the top?", "a": ["Student", "Teacher", "Storekeeper", "Cleaner"], "c": 1 },
+    { "q": "What is the use of a cross-cut saw?", "a": ["To cut metal", "To cut wood across the grain", "To tighten screws", "To sand surfaces"], "c": 1 },
+    { "q": "Which adhesive is best for sticking cardboard together?", "a": ["Hot melt glue", "Water", "Engine oil", "Solder"], "c": 0 },
+    { "q": "What is a 'Sketch'?", "a": ["A final product", "An initial rough drawing", "A photograph", "A written report"], "c": 1 },
+    { "q": "Which of these is a non-renewable source of energy?", "a": ["Wind", "Solar", "Petroleum", "Water"], "c": 2 }
+  ],
+  "5-1": [
+    { "q": "Which tool is used to draw horizontal lines in technical drawing?", "a": ["Compass", "T-square", "Hammer", "Protractor"], "c": 1 },
+    { "q": "What is the purpose of an oblique sketch?", "a": ["To show one face and depth", "To show only the top", "To show internal parts", "To hide the design"], "c": 0 },
+    { "q": "In basic electricity, what does a battery provide?", "a": ["Light", "Electric current/Energy", "Sound", "Heat"], "c": 1 },
+    { "q": "Which component allows or blocks electricity in a circuit?", "a": ["Bulb", "Switch", "Wire", "Motor"], "c": 1 },
+    { "q": "What is the main advantage of hydroponics?", "a": ["Needs a lot of soil", "No soil required", "Needs no water", "Grows slower"], "c": 1 },
+    { "q": "Which tool is used to remove tiny stitches in sewing?", "a": ["Scissors", "Seam ripper", "Needle", "Thimble"], "c": 1 },
+    { "q": "What is 'Renewable Energy'?", "a": ["Energy that runs out", "Energy from sources that replenish", "Energy from coal", "Expensive energy"], "c": 1 },
+    { "q": "Which gas is produced by plants in a greenhouse?", "a": ["Oxygen", "Nitrogen", "Argon", "Helium"], "c": 0 },
+    { "q": "What is the function of a solar panel?", "a": ["To make shade", "To convert sunlight to electricity", "To reflect light", "To cool the house"], "c": 1 },
+    { "q": "Which type of line is used to show hidden parts in a drawing?", "a": ["Solid line", "Dashed line", "Thick line", "Zig-zag line"], "c": 1 }
+  ],
+  "5-2": [
+    { "q": "Which tool is used to loosen or tighten screws with a cross (+) head?", "a": ["Flat head screwdriver", "Philip's head screwdriver", "Hammer", "Spanner"], "c": 1 },
+    { "q": "What is the purpose of a technical drawing?", "a": ["To look pretty", "To provide accurate information for construction", "To practice coloring", "To waste paper"], "c": 1 },
+    { "q": "Which process uses water and nutrient solution to grow plants?", "a": ["Tilling", "Hydroponics", "Ploughing", "Weeding"], "c": 1 },
+    { "q": "In an electric circuit, what is the role of a wire?", "a": ["To provide energy", "To carry electric current", "To light up", "To control the flow"], "c": 1 },
+    { "q": "What is the main source of energy for wind turbines?", "a": ["Sunlight", "Moving air (Wind)", "Batteries", "Water"], "c": 1 },
+    { "q": "Which tool is used to cut thin metal wires?", "a": ["Handsaw", "Side cutters", "Steel ruler", "Hammer"], "c": 1 },
+    { "q": "What does a green light usually mean in an indicator system?", "a": ["Stop", "Danger", "Go/Ready", "Broken"], "c": 2 },
+    { "q": "Why is it important to use sustainable materials?", "a": ["They are cheaper", "To reduce environmental impact", "They last forever", "Because they look better"], "c": 1 },
+    { "q": "What is a mock-up used for?", "a": ["Final sale", "Testing the design look and size", "Storing tools", "Photography"], "c": 1 },
+    { "q": "Which of these is an example of an organic waste?", "a": ["Plastic bottle", "Glass jar", "Food scraps", "Metal can"], "c": 2 }
+  ],
+  "6-1": [
+    { "q": "What is an 'Electromechanical' product?", "a": ["Uses only manual power", "Combines electrical and mechanical parts", "Uses only batteries", "A product made of wood"], "c": 1 },
+    { "q": "Which component is used to rotate the wheels of a robot?", "a": ["LED", "DC Motor", "Buzzer", "Switch"], "c": 1 },
+    { "q": "What is the function of a 'Microcontroller'?", "a": ["To store food", "To act as the brain/control system", "To provide power", "To make sound"], "c": 1 },
+    { "q": "Which programming block is used to repeat an action?", "a": ["If-then", "Wait", "Loop/Forever", "Start"], "c": 2 },
+    { "q": "What is the purpose of food packaging?", "a": ["To make food heavier", "To protect and preserve food", "To increase the price", "To hide the ingredients"], "c": 1 },
+    { "q": "Which material is used to insulate wires?", "a": ["Copper", "Plastic/PVC", "Iron", "Aluminum"], "c": 1 },
+    { "q": "What does a 'Sensor' do in a smart system?", "a": ["Provides electricity", "Detects changes in environment", "Turns off the power", "Displays pictures"], "c": 1 },
+    { "q": "In marketing, what does 'Brand' mean?", "a": ["The price of the item", "The identity of the product", "The size of the box", "The location of the shop"], "c": 1 },
+    { "q": "What is the function of a gear in a machine?", "a": ["To provide light", "To transmit motion and force", "To stop the machine", "To heat the parts"], "c": 1 },
+    { "q": "Why is 'Sustainable Design' important?", "a": ["To use more plastic", "To protect the environment for the future", "To make things break faster", "To avoid using technology"], "c": 1 }
+  ]
+}
