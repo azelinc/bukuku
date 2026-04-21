@@ -213,3 +213,23 @@ h1 {
 
 .set-circle.done { background-color: #2ecc71 !important; }
 .locked { background: #f2f2f2 !important; color: #ccc !important; }
+
+/* RESTORE DONE CHECKMARK FOR MOBILE */
+.set-circle.done::after {
+    content: "✓";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #27ae60;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
