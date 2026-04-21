@@ -117,7 +117,13 @@
                 const response = await fetch(`${sub}.json`);
                 const data = await response.json();
                 questions = data[jsonKey];
-                const titles = { 'math': 'Mathematics', 'sci': 'Science', 'eng': 'English', 'rbt': 'Reka Bentuk & Teknologi' };
+                const titles = { 
+                    'math': 'Mathematics', 
+                    'mathhigh': 'Mathematics (High School)', // Add this
+                    'sci': 'Science', 
+                    'eng': 'English', 
+                    'rbt': 'Reka Bentuk & Teknologi' 
+            };
                 document.getElementById('quiz-title').innerText = `${titles[sub]} Std ${lvl} (Set ${setNum})`;
                 showQuestion();
             } catch (e) {
