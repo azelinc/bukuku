@@ -106,3 +106,23 @@ body {
 .lb-table { width: 100%; border-collapse: collapse; table-layout: fixed; margin-top: 10px; }
 .lb-table td { padding: 15px 5px; border-bottom: 1px solid #f1f1f1; text-align: center; font-weight: bold; }
 .col-name { text-align: left !important; padding-left: 15px !important; }
+
+/* RESTORE DONE CHECKMARK FOR PC */
+.set-circle.done::after {
+    content: "✓";
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: #27ae60;
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
