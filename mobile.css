@@ -174,11 +174,10 @@ h1 {
 .grade-label {
     background: #1a1a2e;
     color: white;
-    padding: 6px 15px;
-    border-radius: 8px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    margin-bottom: 12px;
 }
 
 .set-group {
@@ -186,6 +185,7 @@ h1 {
     grid-template-columns: repeat(5, 1fr); 
     gap: 10px;
     width: 100%;
+    overflow: visible !important; /* ALLOWS BADGE TO POP OUT */
 }
 
 .set-circle {
@@ -202,6 +202,8 @@ h1 {
     text-decoration: none;
     line-height: 1.1;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative !important; /* CRITICAL FOR BADGE */
+    z-index: 1;
 }
 
 .set-circle small {
@@ -214,22 +216,23 @@ h1 {
 .set-circle.done { background-color: #2ecc71 !important; }
 .locked { background: #f2f2f2 !important; color: #ccc !important; }
 
-/* RESTORE DONE CHECKMARK FOR MOBILE */
+/* FIXED DONE CHECKMARK FOR MOBILE */
 .set-circle.done::after {
-    content: "✓";
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: #27ae60;
-    color: white;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid white;
-    font-weight: bold;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    content: "✓" !important;
+    position: absolute !important;
+    top: -6px !important;
+    right: -6px !important;
+    background: #27ae60 !important;
+    color: white !important;
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 50% !important;
+    font-size: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 2px solid white !important;
+    font-weight: bold !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3) !important;
+    z-index: 99 !important; /* FORCES BADGE TO THE FRONT */
 }
