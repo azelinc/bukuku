@@ -238,5 +238,127 @@
     { "q": "Mengapa dokumentasi projek penting?", "a": ["Sebagai rekod kerja dan rujukan masa hadapan", "Hanya untuk peperiksaan", "Untuk membazir kertas", "Menambah berat beg"], "c": 0 },
     { "q": "Apakah kegunaan pita selofan (cellophane tape)?", "a": ["Memotong kain", "Melekatkan bahan ringan secara sementara", "Mengikat besi", "Menjahit baju"], "c": 1 },
     { "q": "Nilai murni yang perlu ada semasa aktiviti berkumpulan ialah...", "a": ["Bekerjasama", "Bergaduh", "Malas", "Pentingkan diri"], "c": 0 }
+  ],
+  
+  "6-1": [
+    { "q": "Apakah maksud produk elektromekanikal?", "a": ["Produk yang menggunakan bateri sahaja", "Produk yang menggabungkan komponen elektrik dan mekanikal", "Produk yang diperbuat daripada kayu", "Produk yang tidak menggunakan tenaga"], "c": 1 },
+    { "q": "Antara berikut, manakah komponen mekanikal yang berfungsi memindahkan kuasa?", "a": ["Bateri", "Genggelung (Gears)", "Suis", "Mentol"], "c": 1 },
+    { "q": "Apakah fungsi motor DC dalam sebuah kereta mainan?", "a": ["Menghasilkan cahaya", "Menukarkan tenaga elektrik kepada tenaga kinetik", "Menyimpan tenaga", "Mengawal kelajuan secara manual"], "c": 1 },
+    { "q": "Produk elektromekanikal memerlukan ____ untuk berfungsi.", "a": ["Cahaya matahari sahaja", "Sumber tenaga elektrik", "Air", "Kayu balsa"], "c": 1 },
+    { "q": "Manakah antara berikut adalah contoh produk elektromekanikal?", "a": ["Pembaris keluli", "Mesin basuh automatik", "Tukul kuku kambing", "Pensel"], "c": 1 },
+    { "q": "Apakah fungsi gear dalam sistem mekanikal?", "a": ["Membekalkan kuasa", "Menukar arah gerakan dan kelajuan", "Menghasilkan bunyi", "Menyejukkan motor"], "c": 1 },
+    { "q": "Tali sawat (belt) biasanya digunakan bersama dengan...", "a": ["Gear", "Takal (pulley)", "Buzer", "Suis"], "c": 1 },
+    { "q": "Dalam sistem elektromekanikal, suis berfungsi untuk...", "a": ["Membekalkan tenaga", "Memutus dan menyambungkan litar", "Mengerakkan roda", "Menyimpan kod"], "c": 1 },
+    { "q": "Mengapa kita perlu membuat lakaran sebelum membina produk?", "a": ["Untuk membuang masa", "Melihat gambaran awal dan melakukan penambahbaikan", "Hanya untuk mewarna", "Meniru kerja kawan"], "c": 1 },
+    { "q": "Alatan manakah yang sesuai untuk memotong wayar elektrik?", "a": ["Gergaji tangan", "Pemotong sisi (side cutter)", "Tukul", "Pembaris"], "c": 1 }
+  ],
+  "6-2": [
+    { "q": "Apakah peranti yang bertindak sebagai 'otak' bagi sistem robotik?", "a": ["Bateri", "Mikropengawal (Microcontroller)", "Roda", "Wayar"], "c": 1 },
+    { "q": "Peranti input bertugas untuk...", "a": ["Menggerakkan robot", "Menerima isyarat daripada persekitaran", "Memberi tenaga", "Memaparkan teks"], "c": 1 },
+    { "q": "Manakah antara berikut adalah peranti output?", "a": ["Penderia cahaya", "Buzer", "Suis tekan", "Penderia inframerah"], "c": 1 },
+    { "q": "Apakah kegunaan penderia inframerah (Infrared Sensor)?", "a": ["Mengeluarkan suara", "Mengesan halangan atau jarak", "Membekalkan elektrik", "Menukarkan warna"], "c": 1 },
+    { "q": "Penderia LDR digunakan untuk mengesan perubahan ____.", "a": ["Suhu", "Cahaya", "Bunyi", "Tekanan"], "c": 1 },
+    { "q": "Apakah peranti yang digunakan untuk menghasilkan gerakan putaran tepat dalam robot?", "a": ["Buzer", "Motor Servo", "LED", "Bateri"], "c": 1 },
+    { "q": "Dalam sistem robotik, proses pemprosesan data berlaku di dalam...", "a": ["Penderia", "Mikropengawal", "Roda", "Suis"], "c": 1 },
+    { "q": "Apakah fungsi LED dalam satu sistem elektronik?", "a": ["Menghasilkan gerakan", "Mengeluarkan cahaya sebagai isyarat", "Mengesan haba", "Menyimpan data"], "c": 1 },
+    { "q": "Robot vakum menggunakan penderia ____ untuk mengelak daripada jatuh tangga.", "a": ["Sentuh", "Jarak (Ultrasonic/Infrared)", "Suara", "Warna"], "c": 1 },
+    { "q": "Apakah tujuan menggunakan pemegang bateri?", "a": ["Mencantikkan robot", "Menetapkan kedudukan sel kering dengan kemas", "Menukar arus elektrik", "Meningkatkan berat"], "c": 1 }
+  ],
+  "6-3": [
+    { "q": "Apakah langkah pertama dalam membina atur cara?", "a": ["Terus menaip kod", "Menghasilkan algoritma, pseudokod atau carta alir", "Membeli robot", "Mencaj bateri"], "c": 1 },
+    { "q": "Simbol 'berlian' dalam carta alir bermaksud...", "a": ["Mula/Tamat", "Keputusan (Yes/No)", "Proses", "Input/Output"], "c": 1 },
+    { "q": "Blok 'Wait' dalam pengaturcaraan bertujuan untuk...", "a": ["Mematikan program", "Mengenakan sela masa sebelum arahan seterusnya", "Mengulang arahan", "Memadam data"], "c": 1 },
+    { "q": "Apakah fungsi arahan 'Loop'?", "a": ["Menjalankan arahan sekali sahaja", "Mengulang set arahan secara berterusan", "Memberhentikan motor", "Menukarkan warna lampu"], "c": 1 },
+    { "q": "Dalam pengaturcaraan berasaskan blok, kita membina arahan dengan...", "a": ["Menulis kod C++ yang rumit", "Menyusun blok-blok grafik mengikut logik", "Melukis gambar", "Merakam suara"], "c": 1 },
+    { "q": "Apakah maksud 'Logic Error' (Ralat Logik)?", "a": ["Komputer meledak", "Atur cara berjalan tetapi tidak memberi hasil yang diingini", "Komputer tidak boleh dihidupkan", "Bateri robot habis"], "c": 1 },
+    { "q": "Blok 'If-Then-Else' digunakan untuk...", "a": ["Mengulang tindakan", "Membuat keputusan berdasarkan syarat tertentu", "Menghasilkan bunyi", "Menamatkan atur cara"], "c": 1 },
+    { "q": "Mengapa simulasi penting sebelum memuat turun atur cara ke papan mikropengawal?", "a": ["Untuk menjimatkan masa guru", "Mengesan kesilapan awal tanpa merosakkan perkakasan", "Supaya komputer nampak hebat", "Hanya sebagai hiasan"], "c": 1 },
+    { "q": "Kabel yang menyambungkan komputer ke papan mikropengawal ialah...", "a": ["Kabel Audio", "Kabel USB", "Kabel TV", "Tali rafia"], "c": 1 },
+    { "q": "Apakah fungsi pemboleh ubah (Variable) dalam pengaturcaraan?", "a": ["Menukar nama robot", "Menyimpan data yang boleh berubah seperti skor atau nilai penderia", "Mematikan suis", "Mencantikkan paparan"], "c": 1 }
+  ],
+  "6-4": [
+    { "q": "Apakah tujuan utama pembungkusan makanan?", "a": ["Supaya makanan nampak berat", "Melindungi, memelihara dan mempromosikan produk", "Meningkatkan harga tanpa sebab", "Menyembunyikan tarikh luput"], "c": 1 },
+    { "q": "Maklumat manakah yang WAJIB ada pada label makanan?", "a": ["Nama kawan pengilang", "Tarikh luput dan senarai ramuan", "Gambar bunga", "Warna kegemaran"], "c": 1 },
+    { "q": "Apakah fungsi simbol 'Kitar Semula' pada bungkusan?", "a": ["Sebagai hiasan", "Memberitahu bahawa bungkusan boleh diproses semula", "Tanda produk itu mahal", "Menunjukkan berat produk"], "c": 1 },
+    { "q": "Pembungkusan yang mesra alam biasanya menggunakan bahan...", "a": ["Plastik tebal", "Bahan yang mudah terurai (biodegradasi)", "Logam berat", "Kaca nipis"], "c": 1 },
+    { "q": "Antara berikut, manakah elemen reka bentuk pembungkusan?", "a": ["Harga barang", "Tipografi (fon), warna dan grafik", "Nama kedai sebelah", "Lokasi kilang"], "c": 1 },
+    { "q": "Mengapa reka bentuk pembungkusan perlu menarik?", "a": ["Supaya susah dibuka", "Menarik minat pelanggan untuk membeli", "Untuk membazir dakwat", "Supaya produk nampak kecil"], "c": 1 },
+    { "q": "Apakah kegunaan kod bar (barcode) pada label?", "a": ["Untuk diconteng", "Memudahkan pengurusan stok dan jualan", "Sebagai corak hiasan", "Menunjukkan rasa makanan"], "c": 1 },
+    { "q": "Bahan bungkusan manakah yang paling sesuai untuk susu segar?", "a": ["Kertas biasa", "Kotak karton berlapis (tetra pak)", "Kain", "Plastik nipis"], "c": 1 },
+    { "q": "Apakah fungsi tanda 'Halal' pada bungkusan di Malaysia?", "a": ["Menunjukkan harga murah", "Menjamin produk diproses mengikut syarak", "Nama pengurus kilang", "Menunjukkan tarikh lahir"], "c": 1 },
+    { "q": "Botol plastik PET sering digunakan untuk minuman kerana...", "a": ["Ia sangat berat", "Ringan, lut sinar dan boleh dikitar semula", "Ia mudah pecah", "Rasanya manis"], "c": 1 }
+  ],
+  "6-5": [
+    { "q": "Apakah maksud 'Pemasaran'?", "a": ["Menyimpan barang di stor", "Aktiviti menyalurkan produk daripada pengeluar ke pengguna", "Membeli barang untuk diri sendiri", "Menghasilkan produk secara besar-besaran sahaja"], "c": 1 },
+    { "q": "Manakah antara berikut merupakan media pemasaran digital?", "a": ["Papan iklan tepi jalan", "Media sosial dan laman web", "Surat khabar fizikal", "Risalah kertas"], "c": 1 },
+    { "q": "Apakah kelebihan pemasaran melalui internet?", "a": ["Hanya boleh dilihat oleh jiran", "Capaian pelanggan yang lebih luas dan cepat", "Sangat susah digunakan", "Kos yang sentiasa percuma selamanya"], "c": 1 },
+    { "q": "Penghasilan produk reka bentuk perlu mengambil kira...", "a": ["Kehendak guru sahaja", "Kos, fungsi dan estetika (kecantikan)", "Berat alat sahaja", "Warna kegemaran sendiri sahaja"], "c": 1 },
+    { "q": "Apakah maksud 'Brand' (Jenama)?", "a": ["Warna bungkusan", "Identiti unik sesuatu produk", "Harga barang", "Saiz kedai"], "c": 1 },
+    { "q": "Promosi bertujuan untuk...", "a": ["Menyembunyikan maklumat produk", "Memberitahu dan menarik minat pelanggan tentang produk", "Memburukkan produk lain", "Meningkatkan kos penghantaran"], "c": 1 },
+    { "q": "Antara berikut, manakah cara mempromosikan produk secara kreatif?", "a": ["Hanya bercakap dengan kawan", "Mengadakan demonstrasi atau video tutorial", "Menyimpan produk di bawah meja", "Memberitahu nama sahaja"], "c": 1 },
+    { "q": "Apakah kepentingan maklumat nutrisi pada label?", "a": ["Mencantikkan label", "Membantu pengguna membuat pilihan sihat", "Menambah berat bungkusan", "Menunjukkan warna makanan"], "c": 1 },
+    { "q": "Reka bentuk pembungkusan yang 'ergonomik' bermaksud...", "a": ["Warna yang sangat terang", "Mudah digenggam dan digunakan oleh manusia", "Diperbuat daripada besi", "Sangat besar saiznya"], "c": 1 },
+    { "q": "Langkah akhir sebelum memasarkan produk reka bentuk ialah...", "a": ["Memusnahkan produk", "Penilaian kualiti dan pembungkusan", "Membuat lakaran semula", "Membiarkan produk berabuk"], "c": 1 }
+  ],
+  "6-6": [
+    { "q": "Apakah komponen yang menukarkan isyarat elektrik kepada cahaya?", "a": ["Motor DC", "LED", "Buzer", "Bateri"], "c": 1 },
+    { "q": "Peranti output yang menghasilkan getaran bunyi ialah...", "a": ["Suis", "Buzer", "Penderia Cahaya", "Wayar"], "c": 1 },
+    { "q": "Apakah kegunaan bateri dalam sistem robotik?", "a": ["Menghasilkan suara", "Membekalkan tenaga elektrik", "Mengesan haba", "Menyimpan atur cara"], "c": 1 },
+    { "q": "Apakah tugas utama penderia sentuh?", "a": ["Mengesan cahaya matahari", "Menerima isyarat apabila berlaku sentuhan fizikal", "Memusingkan gear", "Menyala di waktu malam"], "c": 1 },
+    { "q": "Produk elektromekanikal 'Mesin Pengisar' menggunakan komponen mekanikal...", "a": ["Tali sawat", "Bilah pemotong dan aci (shaft)", "Penderia warna", "Lampu LED"], "c": 1 },
+    { "q": "Apakah fungsi papan litar dalam mikropengawal?", "a": ["Menghasilkan haba", "Menghubungkan semua komponen elektronik secara sistematik", "Sebagai perhiasan", "Menyimpan bateri"], "c": 1 },
+    { "q": "Manakah antara berikut adalah sumber tenaga kimia?", "a": ["Cahaya matahari", "Bateri / Sel kering", "Angin", "Air terjun"], "c": 1 },
+    { "q": "Apakah kegunaan 'Solenoid' dalam sistem elektromekanikal?", "a": ["Menghasilkan cahaya", "Menghasilkan gerakan linear (tolak/tarik) menggunakan magnet", "Menyimpan air", "Mengukur jarak"], "c": 1 },
+    { "q": "Lampu isyarat automatik dikawal oleh...", "a": ["Tali sawat", "Atur cara di dalam mikropengawal", "Manual oleh manusia setiap saat", "Bateri sahaja"], "c": 1 },
+    { "q": "Apakah peranti yang mengesan tahap kelembapan tanah?", "a": ["Penderia Kelembapan Tanah", "Penderia Cahaya", "Buzer", "Motor"], "c": 0 }
+  ],
+  "6-7": [
+    { "q": "Apakah simbol yang menunjukkan permulaan carta alir?", "a": ["Segi empat tepat", "Terminal (bentuk bujur)", "Berlian", "Anak panah"], "c": 1 },
+    { "q": "Atur cara komputer ialah set ____ yang disusun mengikut urutan.", "a": ["Gambar", "Arahan", "Lagu", "Permainan"], "c": 1 },
+    { "q": "Antara berikut, yang manakah simbol input dalam carta alir?", "a": ["Bulatan", "Segi empat selari (parallelogram)", "Bintang", "Segi tiga"], "c": 1 },
+    { "q": "Apakah kegunaan aplikasi seperti mBlock atau Scratch?", "a": ["Menulis e-mel", "Menghasilkan atur cara secara visual", "Melayari internet", "Menonton filem"], "c": 1 },
+    { "q": "Ralat dalam atur cara dipanggil sebagai...", "a": ["Virus", "Bug", "Folder", "Data"], "c": 1 },
+    { "q": "Blok 'Repeat 10' bermaksud arahan di dalamnya akan diulang sebanyak...", "a": ["5 kali", "10 kali", "Tanpa henti", "Sekali sahaja"], "c": 1 },
+    { "q": "Untuk mengesan kehadiran orang di pintu automatik, penderia ____ digunakan.", "a": ["Suhu", "Gerakan (Motion/PIR)", "Bunyi", "Warna"], "c": 1 },
+    { "q": "Pusat kawalan utama sesebuah robot ialah...", "a": ["Roda", "Unit Pemprosesan Pusat / Mikropengawal", "Bateri", "Lampu"], "c": 1 },
+    { "q": "Apakah fungsi blok 'Set Servo Pin 9 to 90 degrees'?", "a": ["Mematikan robot", "Menggerakkan motor servo ke sudut tertentu", "Menyalakan lampu", "Membunyikan buzer"], "c": 1 },
+    { "q": "Setelah menulis atur cara di komputer, kita perlu melakukan proses ____.", "a": ["Memadam", "Muat naik (Upload)", "Mengecat", "Membungkus"], "c": 1 }
+  ],
+  "6-8": [
+    { "q": "Bahan manakah yang sesuai untuk membuat pembungkusan makanan yang panas?", "a": ["Kertas nipis", "Kadbod tebal atau bekas tahan haba", "Beg plastik nipis", "Daun kering sahaja"], "c": 1 },
+    { "q": "Apakah kegunaan tingkap plastik lut sinar pada bungkusan makanan?", "a": ["Supaya makanan boleh bernafas", "Membolehkan pelanggan melihat rupa produk di dalam", "Menjadikan bungkusan lebih berat", "Menjimatkan kertas"], "c": 1 },
+    { "q": "Maklumat 'Berat Bersih' pada label merujuk kepada...", "a": ["Berat bungkusan sahaja", "Berat sebenar produk tanpa bungkusan", "Berat kedai", "Berat lori penghantaran"], "c": 1 },
+    { "q": "Pembungkusan yang baik mestilah mudah ____.", "a": ["Dibuang ke sungai", "Dibuka dan ditutup semula (jika perlu)", "Pecah", "Terbakar"], "c": 1 },
+    { "q": "Apakah fungsi lapisan aluminium di dalam kotak susu?", "a": ["Sebagai hiasan perak", "Menghalang cahaya dan udara untuk memanjangkan tempoh kesegaran", "Supaya susu rasa besi", "Menjadikan kotak lebih mahal"], "c": 1 },
+    { "q": "Penjenamaan (Branding) yang kuat membantu produk ____.", "a": ["Hilang di pasaran", "Dikenali dan dipercayai oleh pelanggan", "Menjadi lebih murah", "Sukar dicari"], "c": 1 },
+    { "q": "Susunan teks dan gambar yang kemas pada bungkusan dipanggil...", "a": ["Lakaran kasar", "Tipografi dan susun atur (layout)", "Contengan", "Warna warni"], "c": 1 },
+    { "q": "Mengapa label perlu mempunyai tarikh luput?", "a": ["Supaya label penuh", "Menjamin keselamatan pengguna daripada memakan makanan rosak", "Untuk mencantikkan reka bentuk", "Menunjukkan umur kilang"], "c": 1 },
+    { "q": "Bahan pembungkusan kaca digunakan kerana ia bersifat...", "a": ["Mudah lentur", "Inert (tidak bertindak balas kimia dengan makanan)", "Sangat ringan", "Tidak boleh pecah"], "c": 1 },
+    { "q": "Pembungkusan produk digital (seperti perisian) biasanya dalam bentuk...", "a": ["Kotak kayu", "Kad aktivasi atau muat turun dalam talian", "Beg plastik", "Tin aluminium"], "c": 1 }
+  ],
+  "6-9": [
+    { "q": "How do animals that live in groups benefit?", "a": ["Safety from predators", "Easier to find food", "Taking care of young", "All of the above"], "c": 3 },
+    { "q": "What happens to speed if an object covers more distance in less time?", "a": ["Increases", "Decreases", "Stays same", "Becomes zero"], "c": 0 },
+    { "q": "Which of these is a complex machine?", "a": ["Crowbar", "Wheelbarrow", "Screw", "Knife"], "c": 1 },
+    { "q": "A Solar Eclipse happens during the ____ phase.", "a": ["New Moon", "Full Moon", "Crescent", "Gibbous"], "c": 0 },
+    { "q": "Which gas is used in fire extinguishers because it doesn't support burning?", "a": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Helium"], "c": 1 },
+    { "q": "The interaction between a flea and a dog is ____.", "a": ["Mutualism", "Commensalism", "Parasitism", "Competition"], "c": 2 },
+    { "q": "Preservation by coating food with a layer of wax is ____.", "a": ["Pickling", "Waxing", "Drying", "Salting"], "c": 1 },
+    { "q": "Which planet is known for its beautiful rings?", "a": ["Jupiter", "Uranus", "Saturn", "Mars"], "c": 2 },
+    { "q": "Microorganisms that can cause diseases are called ____.", "a": ["Nutrients", "Pathogens/Germs", "Vitamins", "Minerals"], "c": 1 },
+    { "q": "The property of a material to return to its original shape is ____.", "a": ["Hardness", "Elasticity", "Opacity", "Strength"], "c": 1 }
+  ],
+  "6-10": [
+    { "q": "Apakah elemen utama dalam revolusi industri 4.0?", "a": ["Penggunaan kuda", "Internet Kebendaan (IoT) dan Kecerdasan Buatan (AI)", "Hanya menggunakan kertas", "Kerja manual sepenuhnya"], "c": 1 },
+    { "q": "Pencetakan 3D (3D Printing) digunakan untuk...", "a": ["Mencetak gambar di atas kertas", "Membina model fizikal tiga dimensi daripada reka bentuk digital", "Merakam video", "Mencuci pakaian"], "c": 1 },
+    { "q": "Apakah kegunaan dron dalam bidang pertanian?", "a": ["Untuk bermain sahaja", "Menyembur racun dan memantau kesihatan tanaman", "Membawa penumpang ke bandar", "Menghasilkan muzik"], "c": 1 },
+    { "q": "Teknologi 'Smart Home' (Rumah Pintar) membolehkan kita...", "a": ["Membakar rumah dengan telefon", "Mengawal peralatan rumah secara automatik atau jarak jauh", "Menukar warna dinding secara ajaib", "Menghilangkan habuk tanpa vakum"], "c": 1 },
+    { "q": "Apakah maksud kelestarian global dalam RBT?", "a": ["Mencemarkan sungai", "Menggunakan sumber secara bijak tanpa merosakkan alam sekitar", "Membuang bateri di merata tempat", "Menggunakan plastik sekali guna"], "c": 1 },
+    { "q": "Peranti boleh pakai (Wearable technology) seperti jam pintar berfungsi untuk...", "a": ["Hanya sebagai perhiasan tangan", "Memantau kesihatan dan kecergasan pengguna", "Membekalkan tenaga solar", "Menghasilkan haba"], "c": 1 },
+    { "q": "Apakah kelebihan menggunakan pengangkutan elektrik (EV)?", "a": ["Mengeluarkan asap tebal", "Mengurangkan pelepasan karbon dan mesra alam", "Sangat bising", "Tidak memerlukan penyelenggaraan"], "c": 1 },
+    { "q": "Dalam reka bentuk masa hadapan, kita mementingkan produk yang...", "a": ["Mudah rosak", "Boleh dikitar semula dan cekap tenaga", "Sangat mahal harganya", "Susah untuk dibaiki"], "c": 1 },
+    { "q": "Apakah peranan kreativiti dalam menangani cabaran masa hadapan?", "a": ["Menjadikan kita malas", "Membantu mencari penyelesaian masalah yang lebih baik dan efisien", "Hanya untuk melukis", "Supaya kita boleh tidur lama"], "c": 1 },
+    { "q": "Belajar RBT membantu murid untuk menjadi lebih ____.", "a": ["Pemalas", "Inovatif, kreatif dan berkemahiran teknikal", "Takut pada mesin", "Bosan dengan sekolah"], "c": 1 }
   ]
 }
+
