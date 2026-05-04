@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AF Adventure Hub</title>
     
-    <!-- NOTICE: NO EXTERNAL CSS LINKS HERE. TOTAL ISOLATION. -->
     <!-- Link to Manifest -->
     <link rel="manifest" href="manifest.json">
     <!-- iOS Support tags -->
@@ -25,17 +24,17 @@
             padding: 15px;
         }
 
-        /* 2. THE CONTAINER (Locked Look) */
+        /* 2. THE CONTAINER */
         .idx-container { 
             width: 100%; max-width: 480px; 
             background: #ffffff; border-radius: 30px; 
             box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
             text-align: center; border: 6px solid #ffd700;
             overflow: hidden; display: flex; flex-direction: column;
-            position: relative; /* For modal positioning context */
+            position: relative; 
         }
 
-        /* 3. APP HEADER (Locked Look) */
+        /* 3. APP HEADER */
         .idx-header {
             background: #ffffff; color: #1a1a2e; padding: 15px 25px;
             display: flex; align-items: center; justify-content: space-between;
@@ -53,7 +52,7 @@
         .idx-content { padding: 30px 25px; width: 100%; flex-grow: 1; }
         .idx-subtext { margin-bottom: 20px; color: #666; font-size: 1rem; }
 
-        /* 5. BUTTON STYLES (Exclusive to Index) */
+        /* 5. BUTTON STYLES */
         .idx-btn {
             display: block; width: 100%; padding: 18px; margin: 12px 0;
             font-size: 1.2rem; font-weight: 800; color: white !important;
@@ -66,13 +65,11 @@
         .red-btn { background: #e74c3c !important; border-bottom: 6px solid #c0392b; }
         
         .idx-btn:active { transform: translateY(3px); border-bottom-width: 1px; }
-
         .idx-btn-disabled { 
             background: #e0e0e0 !important; color: #999 !important; 
             opacity: 0.7; pointer-events: none; filter: grayscale(1);
             border-bottom: 4px solid #ccc !important;
         }
-        .coming-soon-tag { font-size: 0.7rem; display: block; font-weight: normal; margin-top: 4px; }
 
         /* 6. ADMIN & PROFILES */
         .profile-row { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
@@ -82,7 +79,7 @@
         .prem-toggle-btn { background: #eee; border: none; color: #aaa; padding: 12px; border-radius: 12px; cursor: pointer; display: none; font-size: 1.1rem; }
         .prem-toggle-btn.is-premium { background: #f1c40f; color: white; }
 
-        /* 7. MOBILE OVERRIDES (Isolated to this page) */
+        /* 7. MOBILE OVERRIDES */
         @media (max-width: 600px) {
             body { background: #ffffff; padding: 0; display: block; }
             .idx-container { border: none; border-radius: 0; box-shadow: none; min-height: 100vh; }
@@ -134,55 +131,42 @@
         .modal-cancel { background: #eee; color: #333; }
 
         /* 10. TOAST NOTIFICATIONS */
-        .toast-container {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
+        #toast-container {
+            position: fixed; bottom: 20px; left: 50%;
             transform: translateX(-50%);
             z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+            display: flex; flex-direction: column; gap: 10px;
+            width: 90%; max-width: 400px;
             pointer-events: none;
         }
         .toast {
-            background: #1a1a2e;
-            color: white;
-            padding: 14px 24px;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-            font-size: 0.95rem;
-            font-weight: 500;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: toastIn 0.3s ease forwards;
-            min-width: 250px;
+            background: #333; color: #fff;
+            padding: 12px 20px; border-radius: 8px;
+            font-size: 0.9rem; font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            opacity: 0; transform: translateY(20px);
+            animation: fadeInOut 3s forwards;
             text-align: center;
-            pointer-events: auto;
         }
         .toast.success { background: #2ecc71; }
         .toast.error { background: #e74c3c; }
-        .toast.info { background: #4a90e2; }
-        .toast.warning { background: #f39c12; }
-        .toast.toast-out {
-            animation: toastOut 0.3s ease forwards;
-        }
-        @keyframes toastIn {
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes toastOut {
-            to { opacity: 0; transform: translateY(-20px); }
+        .toast.info { background: #3498db; }
+        
+        @keyframes fadeInOut {
+            0% { opacity: 0; transform: translateY(20px); }
+            10% { opacity: 1; transform: translateY(0); }
+            90% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-10px); }
         }
     </style>
 </head>
 <body>
 
     <!-- TOAST CONTAINER -->
-    <div id="toast-container" class="toast-container"></div>
+    <div id="toast-container"></div>
 
     <div class="idx-container">
-        
-        <!-- HEADER (Shared Logic but Isolated Style) -->
+        <!-- HEADER -->
         <header id="main-header" class="idx-header" style="display: none;">
             <h1>AF Education Hub</h1>
             <div class="header-right">
@@ -190,14 +174,14 @@
             </div>
         </header>
 
-        <!-- LOADING SCREEN (Improved) -->
+        <!-- LOADING SCREEN -->
         <div id="loading-screen" style="padding: 100px 20px;">
             <div class="spinner"></div>
             <h2>Loading...</h2>
             <p style="color: #666; margin-top: 10px;">Connecting to Cloud</p>
         </div>
 
-        <!-- 1. PROFILE SELECTION -->
+        <!-- PROFILE SELECTION -->
         <div id="profile-selection" class="idx-content" style="display: none;">
             <h1 style="margin-bottom:10px;">👋 Welcome!</h1>
             <p id="selection-sub" class="idx-subtext">Who is online today?</p>
@@ -208,7 +192,7 @@
             </div>
         </div>
 
-        <!-- 2. NEW USER FORM -->
+        <!-- NEW USER FORM -->
         <div id="name-setup" class="idx-content" style="display: none;">
             <h1>✨ New Profile</h1>
             <p class="idx-subtext" style="margin-top:15px;">Enter your name to start:</p>
@@ -217,7 +201,7 @@
             <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline; width:100%;">Cancel</button>
         </div>
 
-        <!-- 3. MAIN MENU -->
+        <!-- MAIN MENU -->
         <div id="main-menu" class="idx-content" style="display: none;">
             <p class="idx-subtext" style="font-weight:bold;">Ready for today's lesson?</p>
             
@@ -225,19 +209,14 @@
                 <a href="school.html" class="idx-btn green-btn">🏫 Primary School Hub</a>
                 <a href="schoolhigh.html" class="idx-btn green-btn">🏫 Secondary School Hub</a>
                 
-                <div class="idx-btn idx-btn-disabled">
-                    📖 Library (coming soon)
-                </div>
-                
-                <div class="idx-btn idx-btn-disabled">
-                    🎮 Games (coming soon)
-                </div>
+                <div class="idx-btn idx-btn-disabled">📖 Library (coming soon)</div>
+                <div class="idx-btn idx-btn-disabled">🎮 Games (coming soon)</div>
             </div>
             
             <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #ff1100; width: 100%;">👤 Switch Profile</button>
         </div>
 
-        <!-- ADMIN MODAL (New) -->
+        <!-- ADMIN MODAL -->
         <div id="admin-modal" class="modal-overlay">
             <div class="modal-box">
                 <h3>🔒 Admin Access</h3>
@@ -277,19 +256,15 @@
         let isManageMode = false;
         const ADMIN_PIN = "9988";
 
-        // TOAST NOTIFICATION FUNCTION
-        function showToast(message, type = 'info', duration = 3000) {
+        // Toast Function
+        function showToast(message, type = 'info') {
             const toast = document.createElement('div');
             toast.className = `toast ${type}`;
-            toast.textContent = message;
+            toast.innerText = message;
             toastContainer.appendChild(toast);
-            
             setTimeout(() => {
-                toast.classList.add('toast-out');
-                setTimeout(() => {
-                    toast.remove();
-                }, 300);
-            }, duration);
+                toast.remove();
+            }, 3000);
         }
 
         async function initHub() {
@@ -304,7 +279,6 @@
                 const success = await renderMainMenu(activeUser);
                 if (!success) {
                     localStorage.removeItem('fb_current_user');
-                    showToast('Profile not found, please select again', 'warning');
                     await showProfileSelection();
                 }
             } else {
@@ -319,9 +293,6 @@
             list.innerHTML = '';
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
-                if (querySnapshot.empty) {
-                    showToast('No profiles found. Create one!', 'info');
-                }
                 querySnapshot.forEach((docSnap) => {
                     const userData = docSnap.data();
                     const name = docSnap.id;
@@ -353,10 +324,7 @@
                     row.appendChild(btn); row.appendChild(ctrl);
                     list.appendChild(row);
                 });
-            } catch (e) { 
-                console.error(e); 
-                showToast('Failed to load profiles', 'error');
-            }
+            } catch (e) { console.error(e); showToast("Failed to load profiles", "error"); }
         }
 
         // Modal Functions
@@ -378,14 +346,13 @@
                 document.getElementById('selection-sub').style.color = "red";
                 closeAdminModal();
                 showProfileSelection();
-                showToast('Admin mode activated', 'success');
+                showToast("Admin Mode Unlocked", "success");
             } else {
-                showToast('Incorrect PIN', 'error');
+                showToast("Incorrect PIN", "error");
                 pinInput.value = '';
             }
         }
 
-        // Handle Enter key in modal
         pinInput.addEventListener('keypress', function (e) {
             if (e.key === 'Enter') {
                 submitAdminPin();
@@ -396,10 +363,10 @@
             try {
                 const userRef = doc(db, "users", name);
                 await updateDoc(userRef, { isPremium: !currentStatus });
+                showToast(`Premium status updated for ${name}`, "success");
                 showProfileSelection();
-                showToast(`${name} is now ${!currentStatus ? 'Premium' : 'Standard'}`, !currentStatus ? 'success' : 'info');
             } catch (e) {
-                showToast('Failed to update premium status', 'error');
+                showToast("Failed to update status", "error");
             }
         }
 
@@ -407,10 +374,10 @@
             if (confirm(`Delete explorer "${name}"?`)) {
                 try {
                     await deleteDoc(doc(db, "users", name));
+                    showToast(`Profile "${name}" deleted`, "success");
                     showProfileSelection();
-                    showToast(`Profile "${name}" deleted`, 'success');
                 } catch (e) {
-                    showToast('Failed to delete profile', 'error');
+                    showToast("Failed to delete profile", "error");
                 }
             }
         }
@@ -420,13 +387,11 @@
             if (name) {
                 try {
                     await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
-                    showToast(`Welcome ${name}!`, 'success');
+                    showToast(`Welcome ${name}!`, "success");
                     selectProfile(name);
                 } catch (e) {
-                    showToast('Failed to create profile', 'error');
+                    showToast("Failed to create profile", "error");
                 }
-            } else {
-                showToast('Please enter a name', 'warning');
             }
         };
 
@@ -447,7 +412,6 @@
                 menu.style.display = 'block';
                 header.style.display = 'flex';
                 document.getElementById('user-badge').innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
-                showToast(`Welcome back, ${name}!`, 'success');
                 return true;
             } catch (e) { return false; }
         }
@@ -455,16 +419,11 @@
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
             isManageMode = false;
-            showToast('Profile switched', 'info');
             initHub();
         }
 
         window.initHub = initHub;
-        window.showNewUserForm = () => { 
-            selection.style.display = 'none'; 
-            setup.style.display = 'block'; 
-            showToast('Create a new profile', 'info');
-        }
+        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
         initHub();
         
         if ('serviceWorker' in navigator) {
