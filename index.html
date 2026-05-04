@@ -6,10 +6,8 @@
     <title>AF Adventure Hub</title>
     
     <!-- NOTICE: NO EXTERNAL CSS LINKS HERE. TOTAL ISOLATION. -->
-
     <!-- Link to Manifest -->
     <link rel="manifest" href="manifest.json">
-
     <!-- iOS Support tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -34,6 +32,7 @@
             box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
             text-align: center; border: 6px solid #ffd700;
             overflow: hidden; display: flex; flex-direction: column;
+            position: relative; /* For modal positioning context */
         }
 
         /* 3. APP HEADER (Locked Look) */
@@ -91,6 +90,48 @@
             .idx-header h1 { color: white; }
             .idx-btn { padding: 22px; border-radius: 15px; }
         }
+
+        /* 8. NEW: LOADING ANIMATION */
+        .spinner {
+            width: 50px; height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #ffd700;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 9. NEW: ADMIN MODAL */
+        .modal-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            display: none; justify-content: center; align-items: center;
+            z-index: 100;
+        }
+        .modal-box {
+            background: white; padding: 25px; border-radius: 20px;
+            width: 80%; max-width: 300px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .modal-box h3 { margin-bottom: 15px; color: #1a1a2e; }
+        .modal-input {
+            width: 100%; padding: 12px; margin-bottom: 15px;
+            border: 2px solid #eee; border-radius: 10px;
+            font-size: 1.2rem; text-align: center;
+            font-family: inherit;
+        }
+        .modal-actions { display: flex; gap: 10px; justify-content: center; }
+        .modal-btn {
+            padding: 10px 20px; border: none; border-radius: 10px;
+            font-weight: bold; cursor: pointer; flex: 1;
+        }
+        .modal-confirm { background: #1a1a2e; color: white; }
+        .modal-cancel { background: #eee; color: #333; }
     </style>
 </head>
 <body>
@@ -105,9 +146,9 @@
             </div>
         </header>
 
-        <!-- LOADING SCREEN -->
+        <!-- LOADING SCREEN (Improved) -->
         <div id="loading-screen" style="padding: 100px 20px;">
-            <div style="font-size: 50px; margin-bottom: 20px;">🚀</div>
+            <div class="spinner"></div>
             <h2>Loading...</h2>
             <p style="color: #666; margin-top: 10px;">Connecting to Cloud</p>
         </div>
@@ -119,7 +160,7 @@
             <div id="profile-list"></div>
             <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
                 <button class="idx-btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
-                <button id="manage-toggle" onclick="adminLogin()" style="background:none; border:none; color:#ddd; cursor:pointer; font-size: 0.7rem; margin: 10px auto;">Admin</button>
+                <button id="manage-toggle" onclick="openAdminModal()" style="background:none; border:none; color:#ddd; cursor:pointer; font-size: 0.7rem; margin: 10px auto;">Admin</button>
             </div>
         </div>
 
@@ -151,6 +192,18 @@
             
             <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #ff1100; width: 100%;">👤 Switch Profile</button>
         </div>
+
+        <!-- ADMIN MODAL (New) -->
+        <div id="admin-modal" class="modal-overlay">
+            <div class="modal-box">
+                <h3>🔒 Admin Access</h3>
+                <input type="password" id="admin-pin-input" class="modal-input" placeholder="Enter PIN" maxlength="4">
+                <div class="modal-actions">
+                    <button class="modal-btn modal-cancel" onclick="closeAdminModal()">Cancel</button>
+                    <button class="modal-btn modal-confirm" onclick="submitAdminPin()">Unlock</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script type="module">
@@ -173,6 +226,8 @@
         const setup = document.getElementById('name-setup');
         const menu = document.getElementById('main-menu');
         const header = document.getElementById('main-header');
+        const modal = document.getElementById('admin-modal');
+        const pinInput = document.getElementById('admin-pin-input');
         
         let isManageMode = false;
         const ADMIN_PIN = "9988";
@@ -237,15 +292,37 @@
             } catch (e) { console.error(e); }
         }
 
-        window.adminLogin = () => {
-            const entry = prompt("Enter Admin PIN:");
+        // New Modal Functions
+        window.openAdminModal = () => {
+            modal.style.display = 'flex';
+            pinInput.value = '';
+            pinInput.focus();
+        }
+
+        window.closeAdminModal = () => {
+            modal.style.display = 'none';
+        }
+
+        window.submitAdminPin = () => {
+            const entry = pinInput.value;
             if (entry === ADMIN_PIN) {
                 isManageMode = true;
                 document.getElementById('selection-sub').innerText = "⚠️ ADMIN MODE";
                 document.getElementById('selection-sub').style.color = "red";
+                closeAdminModal();
                 showProfileSelection();
+            } else {
+                alert("Incorrect PIN");
+                pinInput.value = '';
             }
         }
+
+        // Handle Enter key in modal
+        pinInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                submitAdminPin();
+            }
+        });
 
         async function togglePremium(name, currentStatus) {
             const userRef = doc(db, "users", name);
