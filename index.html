@@ -91,7 +91,7 @@
             .idx-btn { padding: 22px; border-radius: 15px; }
         }
 
-        /* 8. NEW: LOADING ANIMATION */
+        /* 8. LOADING ANIMATION */
         .spinner {
             width: 50px; height: 50px;
             border: 5px solid #f3f3f3;
@@ -105,7 +105,7 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* 9. NEW: ADMIN MODAL */
+        /* 9. ADMIN MODAL */
         .modal-overlay {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background: rgba(0,0,0,0.6);
@@ -132,9 +132,53 @@
         }
         .modal-confirm { background: #1a1a2e; color: white; }
         .modal-cancel { background: #eee; color: #333; }
+
+        /* 10. TOAST NOTIFICATIONS */
+        .toast-container {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            pointer-events: none;
+        }
+        .toast {
+            background: #1a1a2e;
+            color: white;
+            padding: 14px 24px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            font-size: 0.95rem;
+            font-weight: 500;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: toastIn 0.3s ease forwards;
+            min-width: 250px;
+            text-align: center;
+            pointer-events: auto;
+        }
+        .toast.success { background: #2ecc71; }
+        .toast.error { background: #e74c3c; }
+        .toast.info { background: #4a90e2; }
+        .toast.warning { background: #f39c12; }
+        .toast.toast-out {
+            animation: toastOut 0.3s ease forwards;
+        }
+        @keyframes toastIn {
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes toastOut {
+            to { opacity: 0; transform: translateY(-20px); }
+        }
     </style>
 </head>
 <body>
+
+    <!-- TOAST CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
 
     <div class="idx-container">
         
@@ -228,9 +272,25 @@
         const header = document.getElementById('main-header');
         const modal = document.getElementById('admin-modal');
         const pinInput = document.getElementById('admin-pin-input');
+        const toastContainer = document.getElementById('toast-container');
         
         let isManageMode = false;
         const ADMIN_PIN = "9988";
+
+        // TOAST NOTIFICATION FUNCTION
+        function showToast(message, type = 'info', duration = 3000) {
+            const toast = document.createElement('div');
+            toast.className = `toast ${type}`;
+            toast.textContent = message;
+            toastContainer.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.classList.add('toast-out');
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, duration);
+        }
 
         async function initHub() {
             loading.style.display = 'block';
@@ -244,6 +304,7 @@
                 const success = await renderMainMenu(activeUser);
                 if (!success) {
                     localStorage.removeItem('fb_current_user');
+                    showToast('Profile not found, please select again', 'warning');
                     await showProfileSelection();
                 }
             } else {
@@ -258,6 +319,9 @@
             list.innerHTML = '';
             try {
                 const querySnapshot = await getDocs(collection(db, "users"));
+                if (querySnapshot.empty) {
+                    showToast('No profiles found. Create one!', 'info');
+                }
                 querySnapshot.forEach((docSnap) => {
                     const userData = docSnap.data();
                     const name = docSnap.id;
@@ -289,10 +353,13 @@
                     row.appendChild(btn); row.appendChild(ctrl);
                     list.appendChild(row);
                 });
-            } catch (e) { console.error(e); }
+            } catch (e) { 
+                console.error(e); 
+                showToast('Failed to load profiles', 'error');
+            }
         }
 
-        // New Modal Functions
+        // Modal Functions
         window.openAdminModal = () => {
             modal.style.display = 'flex';
             pinInput.value = '';
@@ -311,8 +378,9 @@
                 document.getElementById('selection-sub').style.color = "red";
                 closeAdminModal();
                 showProfileSelection();
+                showToast('Admin mode activated', 'success');
             } else {
-                alert("Incorrect PIN");
+                showToast('Incorrect PIN', 'error');
                 pinInput.value = '';
             }
         }
@@ -325,23 +393,40 @@
         });
 
         async function togglePremium(name, currentStatus) {
-            const userRef = doc(db, "users", name);
-            await updateDoc(userRef, { isPremium: !currentStatus });
-            showProfileSelection();
+            try {
+                const userRef = doc(db, "users", name);
+                await updateDoc(userRef, { isPremium: !currentStatus });
+                showProfileSelection();
+                showToast(`${name} is now ${!currentStatus ? 'Premium' : 'Standard'}`, !currentStatus ? 'success' : 'info');
+            } catch (e) {
+                showToast('Failed to update premium status', 'error');
+            }
         }
 
         async function deleteProfile(name) {
             if (confirm(`Delete explorer "${name}"?`)) {
-                await deleteDoc(doc(db, "users", name));
-                showProfileSelection();
+                try {
+                    await deleteDoc(doc(db, "users", name));
+                    showProfileSelection();
+                    showToast(`Profile "${name}" deleted`, 'success');
+                } catch (e) {
+                    showToast('Failed to delete profile', 'error');
+                }
             }
         }
 
         document.getElementById('save-name-btn').onclick = async () => {
             const name = document.getElementById('user-name-input').value.trim();
             if (name) {
-                await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
-                selectProfile(name);
+                try {
+                    await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
+                    showToast(`Welcome ${name}!`, 'success');
+                    selectProfile(name);
+                } catch (e) {
+                    showToast('Failed to create profile', 'error');
+                }
+            } else {
+                showToast('Please enter a name', 'warning');
             }
         };
 
@@ -362,6 +447,7 @@
                 menu.style.display = 'block';
                 header.style.display = 'flex';
                 document.getElementById('user-badge').innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
+                showToast(`Welcome back, ${name}!`, 'success');
                 return true;
             } catch (e) { return false; }
         }
@@ -369,11 +455,16 @@
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
             isManageMode = false;
+            showToast('Profile switched', 'info');
             initHub();
         }
 
         window.initHub = initHub;
-        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
+        window.showNewUserForm = () => { 
+            selection.style.display = 'none'; 
+            setup.style.display = 'block'; 
+            showToast('Create a new profile', 'info');
+        }
         initHub();
         
         if ('serviceWorker' in navigator) {
