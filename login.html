@@ -151,7 +151,7 @@
             </div>
 
             <div class="auth-divider"></div>
-            <a href="index.html" class="auth-back">← Back to Hub</a>
+            <a href="index.html?_=cb" id="back-to-hub" class="auth-back">← Back to Hub</a>
         </div>
     </div>
 
@@ -288,7 +288,7 @@
         };
 
         window.goToHub = () => {
-            window.location.href = 'index.html';
+            window.location.href = 'index.html?_=' + Date.now();
         };
 
         // Enter key support
