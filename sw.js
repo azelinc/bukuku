@@ -1,7 +1,8 @@
-const CACHE_NAME = 'af-hub-v2';
+const CACHE_NAME = 'af-hub-v3';
 const ASSETS = [
   '/',
   '/index.html',
+  '/login.html',
   '/school.html',
   '/schoolhigh.html',
   '/sifir.html',
