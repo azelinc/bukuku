@@ -1,0 +1,3153 @@
+{
+  "subjects": {
+    "math5": {
+      "name": "Mathematics Year 5 (DLP)",
+      "icon": "🔢",
+      "color": "#e67e22",
+      "units": {
+        "1": {
+          "name": "Whole Numbers and Operations",
+          "topics": {
+            "1.1": {
+              "name": "Recognise, Write, Compare and Arrange Numbers",
+              "revision": "In Year 5, we work with numbers up to 1 000 000. The place values are millions, hundred thousands, ten thousands, thousands, hundreds, tens, and ones. Numbers can be written in numerals, words, and expanded form. To compare numbers, look at the digit in the highest place value first.",
+              "questions": [
+                {
+                  "q": "What is the place value of digit 4 in 3 452 178?",
+                  "a": [
+                    "Millions",
+                    "Hundred thousands",
+                    "Ten thousands",
+                    "Hundreds"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Write 'three million, four hundred fifty-six thousand, two hundred' in numerals.",
+                  "a": [
+                    "3 456 200",
+                    "3 056 200",
+                    "3 456 020",
+                    "345 620"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "What is the digit value of 7 in 1 789 034?",
+                  "a": [
+                    "7 000",
+                    "70 000",
+                    "700 000",
+                    "7"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which number is larger: 2 345 678 or 2 354 678?",
+                  "a": [
+                    "2 345 678",
+                    "2 354 678",
+                    "Both are equal",
+                    "Cannot be determined"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Arrange in ascending order: 1 234 567, 1 243 567, 1 234 657, 1 324 567",
+                  "a": [
+                    "1 234 567, 1 234 657, 1 243 567, 1 324 567",
+                    "1 234 567, 1 243 567, 1 234 657, 1 324 567",
+                    "1 324 567, 1 243 567, 1 234 657, 1 234 567",
+                    "1 234 567, 1 324 567, 1 243 567, 1 234 657"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What number comes before 1 000 000?",
+                  "a": [
+                    "100 000",
+                    "999 999",
+                    "999 990",
+                    "1 000 001"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Partition 2 508 043 correctly.",
+                  "a": [
+                    "2 000 000 + 500 000 + 8 000 + 40 + 3",
+                    "2 000 000 + 50 000 + 8 000 + 43",
+                    "2 000 000 + 500 000 + 8 000 + 43",
+                    "2 000 000 + 508 000 + 43"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which digit is in the ten thousands place in 6 152 087?",
+                  "a": [
+                    "6",
+                    "1",
+                    "5",
+                    "2"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Prime Numbers and Number Patterns",
+              "revision": "A prime number is a number greater than 1 that can only be divided evenly by 1 and itself. The first prime numbers are 2, 3, 5, 7, 11, 13, 17, 19, 23, 29. Note that 2 is the only even prime number. For number patterns, look for the rule.",
+              "questions": [
+                {
+                  "q": "Which of the following numbers is a prime number?",
+                  "a": [
+                    "15",
+                    "21",
+                    "17",
+                    "27"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "How many prime numbers are there between 1 and 20?",
+                  "a": [
+                    "9",
+                    "8",
+                    "7",
+                    "10"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Is 29 a prime number?",
+                  "a": [
+                    "Yes, because it can only be divided by 1 and 29",
+                    "No, because it is an odd number",
+                    "Yes, because it is greater than 10",
+                    "No, because it is divisible by 3"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which of these is NOT a prime number?",
+                  "a": [
+                    "13",
+                    "19",
+                    "23",
+                    "1"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Find the next number: 5, 10, 20, 40, ___",
+                  "a": [
+                    "50",
+                    "60",
+                    "80",
+                    "45"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Find the next number: 2 450, 2 400, 2 350, 2 300, ___",
+                  "a": [
+                    "2 250",
+                    "2 200",
+                    "2 350",
+                    "2 200"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the 7th prime number?",
+                  "a": [
+                    "13",
+                    "17",
+                    "19",
+                    "11"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "The number pattern is: 3, 8, 18, 38, ___. What is the rule?",
+                  "a": [
+                    "Add 5",
+                    "Multiply by 2 then add 2",
+                    "Add 10 then subtract 2",
+                    "Multiply by 3"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Estimation and Rounding Off",
+              "revision": "Estimation is used to find a rough value. When rounding to the nearest ten thousand, look at the thousand digit — if it is 5 or more, round up; if less than 5, round down. The same rule applies for rounding to any place value.",
+              "questions": [
+                {
+                  "q": "Round off 34 789 to the nearest ten thousand.",
+                  "a": [
+                    "30 000",
+                    "35 000",
+                    "34 800",
+                    "40 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Round off 1 456 723 to the nearest hundred thousand.",
+                  "a": [
+                    "1 400 000",
+                    "1 500 000",
+                    "1 460 000",
+                    "1 450 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Estimate the total: 51 230 + 29 876 (round each to the nearest ten thousand first).",
+                  "a": [
+                    "80 000",
+                    "70 000",
+                    "81 000",
+                    "90 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A school has 2 867 students. Round this to the nearest hundred.",
+                  "a": [
+                    "2 800",
+                    "2 870",
+                    "2 900",
+                    "3 000"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The population of a city is 498 523. Round to the nearest thousand.",
+                  "a": [
+                    "499 000",
+                    "498 000",
+                    "500 000",
+                    "498 500"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Round off 5 501 999 to the nearest million.",
+                  "a": [
+                    "5 000 000",
+                    "5 500 000",
+                    "6 000 000",
+                    "5 502 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Estimate 789 × 21 by rounding to nearest hundred and ten.",
+                  "a": [
+                    "16 000",
+                    "15 800",
+                    "14 000",
+                    "15 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Round 99 567 to the nearest thousand.",
+                  "a": [
+                    "99 000",
+                    "100 000",
+                    "99 600",
+                    "99 500"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "1.4": {
+              "name": "Addition and Subtraction",
+              "revision": "Addition and subtraction with numbers up to 1 000 000. Align the digits by place value, then add or subtract starting from the ones place. Remember to regroup when necessary.",
+              "questions": [
+                {
+                  "q": "456 789 + 123 456 = ___",
+                  "a": [
+                    "580 245",
+                    "579 245",
+                    "580 345",
+                    "579 345"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "789 034 + 210 966 = ___",
+                  "a": [
+                    "1 000 000",
+                    "999 000",
+                    "1 000 100",
+                    "999 990"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "500 000 - 234 567 = ___",
+                  "a": [
+                    "265 433",
+                    "266 433",
+                    "265 333",
+                    "276 433"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1 204 567 - 567 890 = ___",
+                  "a": [
+                    "636 677",
+                    "637 677",
+                    "626 677",
+                    "636 767"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What must be added to 345 678 to make 600 000?",
+                  "a": [
+                    "254 322",
+                    "255 322",
+                    "245 322",
+                    "254 222"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "356 890 + 43 110 + 500 000 = ___",
+                  "a": [
+                    "900 000",
+                    "899 000",
+                    "890 000",
+                    "910 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A factory produced 234 567 toys in January and 345 678 in February. Total?",
+                  "a": [
+                    "579 245",
+                    "580 245",
+                    "579 345",
+                    "580 345"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "7 234 - 5 678 = ___",
+                  "a": [
+                    "1 556",
+                    "1 566",
+                    "1 456",
+                    "1 446"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.5": {
+              "name": "Multiplication and Division",
+              "revision": "When multiplying by a 2-digit number, multiply by the ones digit first, then the tens digit, and add both results. For division, use the relationship between multiplication and division to check your answer.",
+              "questions": [
+                {
+                  "q": "3 456 × 25 = ___",
+                  "a": [
+                    "86 400",
+                    "85 400",
+                    "86 500",
+                    "86 300"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "1 234 × 56 = ___",
+                  "a": [
+                    "69 104",
+                    "69 014",
+                    "68 104",
+                    "69 204"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "45 678 ÷ 6 = ___",
+                  "a": [
+                    "7 613",
+                    "7 612",
+                    "7 713",
+                    "7 623"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "89 012 ÷ 12 = ___",
+                  "a": [
+                    "7 417 r 8",
+                    "7 417 r 6",
+                    "7 418 r 4",
+                    "7 417 r 4"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A shop sells 234 boxes of pencils. Each box has 24 pencils. Total pencils?",
+                  "a": [
+                    "5 616",
+                    "5 506",
+                    "5 716",
+                    "5 606"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "1 250 × 48 = ___",
+                  "a": [
+                    "60 000",
+                    "59 000",
+                    "61 000",
+                    "60 500"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "12 345 ÷ 5 = ___",
+                  "a": [
+                    "2 469",
+                    "2 479",
+                    "2 459",
+                    "2 468"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "99 999 ÷ 9 = ___",
+                  "a": [
+                    "11 111",
+                    "11 111 r 9",
+                    "11 101",
+                    "1 111"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.6": {
+              "name": "Unknown in Multiplication and Division",
+              "revision": "When the unknown is a missing number in a multiplication or division sentence, use the inverse operation. In multiplication, if 3 × p = 18, then p = 18 ÷ 3. In division, if 20 ÷ q = 5, then q = 20 ÷ 5.",
+              "questions": [
+                {
+                  "q": "If 45 × a = 900, what is the value of a?",
+                  "a": [
+                    "20",
+                    "25",
+                    "30",
+                    "15"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If b × 36 = 1 080, what is b?",
+                  "a": [
+                    "30",
+                    "25",
+                    "35",
+                    "40"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If 1 200 ÷ c = 48, what is c?",
+                  "a": [
+                    "30",
+                    "25",
+                    "35",
+                    "20"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "If d ÷ 24 = 125, what is d?",
+                  "a": [
+                    "3 000",
+                    "2 900",
+                    "3 100",
+                    "3 200"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Find the value: ___ × 56 = 2 800",
+                  "a": [
+                    "50",
+                    "45",
+                    "55",
+                    "60"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Find the value: 4 200 ÷ ___ = 175",
+                  "a": [
+                    "24",
+                    "25",
+                    "20",
+                    "30"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A number multiplied by 125 gives 1 000. What is the number?",
+                  "a": [
+                    "8",
+                    "9",
+                    "7",
+                    "6"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "1.7": {
+              "name": "Mixed Operations",
+              "revision": "Mixed operations involve two different operations. Remember the order: multiplication and division are done first, followed by addition and subtraction. For example, 45 + 6 × 5 = 45 + 30 = 75.",
+              "questions": [
+                {
+                  "q": "24 + 36 × 5 = ___",
+                  "a": [
+                    "204",
+                    "300",
+                    "150",
+                    "294"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "150 − 45 × 2 = ___",
+                  "a": [
+                    "60",
+                    "210",
+                    "90",
+                    "30"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "200 + 500 ÷ 5 = ___",
+                  "a": [
+                    "300",
+                    "140",
+                    "250",
+                    "350"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "500 − 240 ÷ 8 = ___",
+                  "a": [
+                    "470",
+                    "530",
+                    "460",
+                    "480"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "120 × 3 + 450 = ___",
+                  "a": [
+                    "810",
+                    "960",
+                    "720",
+                    "840"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "1 000 − 245 × 4 = ___",
+                  "a": [
+                    "20",
+                    "3 020",
+                    "180",
+                    "120"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "256 ÷ 8 + 345 = ___",
+                  "a": [
+                    "377",
+                    "367",
+                    "378",
+                    "376"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "950 − 600 ÷ 12 = ___",
+                  "a": [
+                    "900",
+                    "850",
+                    "890",
+                    "880"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "1.8": {
+              "name": "Problem Solving",
+              "revision": "When solving word problems, identify what is given, what is asked, and what operation to use. For multi-step problems, solve one step at a time. Check your answer by estimating or using the inverse operation.",
+              "questions": [
+                {
+                  "q": "A library has 12 456 storybooks and 8 544 textbooks. Total books?",
+                  "a": [
+                    "21 000",
+                    "21 900",
+                    "20 000",
+                    "20 800"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ali earns RM4 500 per month. How much in 12 months?",
+                  "a": [
+                    "RM54 000",
+                    "RM50 000",
+                    "RM55 000",
+                    "RM53 000"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A baker makes 250 cupcakes daily. How many in 30 days?",
+                  "a": [
+                    "7 500",
+                    "6 500",
+                    "7 000",
+                    "8 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A farmer has 12 480 eggs. He packs them in trays of 30. How many trays?",
+                  "a": [
+                    "416",
+                    "426",
+                    "406",
+                    "436"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A school collected 45 678 kg of newspapers over 6 months. Average per month?",
+                  "a": [
+                    "7 613",
+                    "7 513",
+                    "7 713",
+                    "7 613 r 5"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siti saved RM500 per month. After one year, she spent RM2 500. Left?",
+                  "a": [
+                    "RM3 500",
+                    "RM6 000",
+                    "RM3 000",
+                    "RM5 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A truck carries 1 500 bricks per trip. 15 trips per day for 5 days. Total bricks?",
+                  "a": [
+                    "112 500",
+                    "75 000",
+                    "22 500",
+                    "112 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "2 400 chairs in a hall arranged in 48 rows. Chairs per row?",
+                  "a": [
+                    "50",
+                    "55",
+                    "45",
+                    "60"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Fractions, Decimals, and Percentages",
+          "topics": {
+            "2.1": {
+              "name": "Multiplication of Fractions",
+              "revision": "To multiply a fraction by a whole number, multiply the numerator by the whole number and keep the denominator the same. Simplify if possible. Example: 3/4 × 8 = (3 × 8)/4 = 24/4 = 6.",
+              "questions": [
+                {
+                  "q": "2/5 × 15 = ___",
+                  "a": [
+                    "6",
+                    "8",
+                    "4",
+                    "10"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "3/8 × 24 = ___",
+                  "a": [
+                    "9",
+                    "8",
+                    "6",
+                    "12"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5/6 × 36 = ___",
+                  "a": [
+                    "25",
+                    "30",
+                    "28",
+                    "32"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "2/3 of 60 oranges are sold. How many sold?",
+                  "a": [
+                    "30",
+                    "40",
+                    "20",
+                    "50"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "3/4 × 1/2 = ___",
+                  "a": [
+                    "2/6",
+                    "3/8",
+                    "4/6",
+                    "3/6"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "1/3 of 45 = ___",
+                  "a": [
+                    "12",
+                    "13",
+                    "14",
+                    "15"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "7/10 of RM200 = ___",
+                  "a": [
+                    "RM140",
+                    "RM150",
+                    "RM120",
+                    "RM130"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A cake is cut into 12 pieces. If 3/4 is eaten, how many pieces eaten?",
+                  "a": [
+                    "8",
+                    "9",
+                    "6",
+                    "10"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Rounding off Decimals",
+              "revision": "To round off decimals, look at the digit to the right of the place value you are rounding to. If it is 5 or more, round up. If less than 5, round down. Example: 3.457 to 1 d.p. → look at the second decimal digit (5), so 3.5.",
+              "questions": [
+                {
+                  "q": "Round 4.567 to 1 decimal place.",
+                  "a": [
+                    "4.5",
+                    "4.6",
+                    "4.57",
+                    "5.0"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Round 12.345 to 2 decimal places.",
+                  "a": [
+                    "12.34",
+                    "12.35",
+                    "12.30",
+                    "12.4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Round 0.999 to 1 decimal place.",
+                  "a": [
+                    "0.9",
+                    "1.0",
+                    "0.99",
+                    "1.00"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Round 56.784 to the nearest whole number.",
+                  "a": [
+                    "56",
+                    "57",
+                    "56.8",
+                    "55"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Round 3.14159 to 3 decimal places.",
+                  "a": [
+                    "3.142",
+                    "3.141",
+                    "3.14",
+                    "3.140"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which is the correct rounding of 7.895 to 2 decimal places?",
+                  "a": [
+                    "7.89",
+                    "7.90",
+                    "7.89",
+                    "8.00"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Round 0.054 to 1 decimal place.",
+                  "a": [
+                    "0.0",
+                    "0.1",
+                    "0.05",
+                    "0.054"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Addition and Subtraction of Decimals",
+              "revision": "When adding or subtracting decimals, align the decimal points first. Add zeros so all numbers have the same number of decimal places. Then add or subtract as usual and bring down the decimal point.",
+              "questions": [
+                {
+                  "q": "12.45 + 7.55 = ___",
+                  "a": [
+                    "19.90",
+                    "20.00",
+                    "19.00",
+                    "20.90"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "23.67 - 8.89 = ___",
+                  "a": [
+                    "14.78",
+                    "15.78",
+                    "14.88",
+                    "15.88"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "56.7 + 43.3 = ___",
+                  "a": [
+                    "100.0",
+                    "100.0",
+                    "99.0",
+                    "100.1"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "100.00 - 34.56 = ___",
+                  "a": [
+                    "65.44",
+                    "66.44",
+                    "65.54",
+                    "64.44"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "8.125 + 2.875 = ___",
+                  "a": [
+                    "10.000",
+                    "11.000",
+                    "10.900",
+                    "11.110"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "45.7 - 12.89 = ___",
+                  "a": [
+                    "32.81",
+                    "33.81",
+                    "32.71",
+                    "33.71"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "0.75 + 0.68 + 0.57 = ___",
+                  "a": [
+                    "1.90",
+                    "2.00",
+                    "1.80",
+                    "1.10"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "250.05 - 149.95 = ___",
+                  "a": [
+                    "100.10",
+                    "100.00",
+                    "100.15",
+                    "99.95"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.4": {
+              "name": "Multiplication and Division of Decimals",
+              "revision": "To multiply a decimal by a whole number, multiply as usual, then place the decimal point so the answer has the same number of decimal places as the decimal number. To divide, divide as usual and line up the decimal point in the answer.",
+              "questions": [
+                {
+                  "q": "3.45 × 6 = ___",
+                  "a": [
+                    "20.7",
+                    "18.9",
+                    "20.4",
+                    "18.9"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "12.5 × 8 = ___",
+                  "a": [
+                    "100.0",
+                    "96.0",
+                    "104.0",
+                    "100.5"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "7.25 × 12 = ___",
+                  "a": [
+                    "86.00",
+                    "87.00",
+                    "85.00",
+                    "87.50"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "45.6 ÷ 8 = ___",
+                  "a": [
+                    "5.6",
+                    "5.7",
+                    "5.8",
+                    "5.5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "8.40 ÷ 5 = ___",
+                  "a": [
+                    "1.68",
+                    "1.66",
+                    "1.68",
+                    "1.78"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "0.75 × 100 = ___",
+                  "a": [
+                    "7.50",
+                    "75.0",
+                    "0.075",
+                    "750.0"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "123.45 ÷ 5 = ___",
+                  "a": [
+                    "24.69",
+                    "24.69",
+                    "24.59",
+                    "24.79"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "6.25 × 4 = ___",
+                  "a": [
+                    "24.00",
+                    "25.00",
+                    "24.50",
+                    "25.50"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "2.5": {
+              "name": "Mixed Numbers, Percentages, and Problem Solving",
+              "revision": "To convert a mixed number to a percentage, convert it to an improper fraction, then to a fraction out of 100. To find a percentage of a quantity, convert the percentage to a fraction and multiply. Example: 75% of RM200 = 75/100 × 200 = RM150.",
+              "questions": [
+                {
+                  "q": "Convert 1 1/4 to a percentage.",
+                  "a": [
+                    "125%",
+                    "25%",
+                    "110%",
+                    "115%"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Convert 3/5 to a percentage.",
+                  "a": [
+                    "30%",
+                    "60%",
+                    "75%",
+                    "65%"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Find 25% of RM500.",
+                  "a": [
+                    "RM100",
+                    "RM125",
+                    "RM150",
+                    "RM75"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is 10% of 250?",
+                  "a": [
+                    "20",
+                    "15",
+                    "25",
+                    "30"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "If 30% of a number is 90, what is the number?",
+                  "a": [
+                    "300",
+                    "270",
+                    "250",
+                    "350"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A shirt costs RM80 with 15% discount. Discount amount?",
+                  "a": [
+                    "RM12",
+                    "RM15",
+                    "RM10",
+                    "RM8"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "In a class of 40 students, 60% are boys. Number of boys?",
+                  "a": [
+                    "20",
+                    "24",
+                    "28",
+                    "30"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "2 1/4 as a decimal is ___",
+                  "a": [
+                    "2.25",
+                    "2.025",
+                    "2.52",
+                    "2.5"
+                  ],
+                  "c": 3
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Money",
+          "topics": {
+            "3.1": {
+              "name": "Operations Involving Money",
+              "revision": "Operations with money follow the same rules as adding, subtracting, multiplying, and dividing decimals. Always align the decimal point and write the RM symbol with two decimal places in the answer.",
+              "questions": [
+                {
+                  "q": "RM45.80 + RM32.50 = ___",
+                  "a": [
+                    "RM78.30",
+                    "RM77.30",
+                    "RM78.30",
+                    "RM77.80"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "RM100.00 - RM37.45 = ___",
+                  "a": [
+                    "RM62.55",
+                    "RM63.55",
+                    "RM62.45",
+                    "RM62.65"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM25.50 × 8 = ___",
+                  "a": [
+                    "RM204.00",
+                    "RM200.00",
+                    "RM210.00",
+                    "RM204.50"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM75.00 ÷ 6 = ___",
+                  "a": [
+                    "RM12.50",
+                    "RM12.00",
+                    "RM13.50",
+                    "RM12.40"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "RM356.80 + RM143.20 = ___",
+                  "a": [
+                    "RM500.00",
+                    "RM499.00",
+                    "RM500.50",
+                    "RM490.00"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "RM250.50 - RM178.90 = ___",
+                  "a": [
+                    "RM71.60",
+                    "RM72.60",
+                    "RM71.50",
+                    "RM71.70"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM12.80 × 15 = ___",
+                  "a": [
+                    "RM192.00",
+                    "RM184.00",
+                    "RM200.00",
+                    "RM187.50"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "RM500.00 ÷ 8 = ___",
+                  "a": [
+                    "RM62.50",
+                    "RM60.00",
+                    "RM62.00",
+                    "RM65.50"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Mixed Operations Involving Money",
+              "revision": "For mixed operations with money, follow the order of operations: multiplication and division first, then addition and subtraction. Write the answer with RM and two decimal places.",
+              "questions": [
+                {
+                  "q": "RM45 + RM15 × 3 = ___",
+                  "a": [
+                    "RM90",
+                    "RM180",
+                    "RM100",
+                    "RM85"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "RM200 - RM25 × 4 = ___",
+                  "a": [
+                    "RM100",
+                    "RM0",
+                    "RM75",
+                    "RM150"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "RM60 + RM120 ÷ 4 = ___",
+                  "a": [
+                    "RM90",
+                    "RM75",
+                    "RM95",
+                    "RM85"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM500 - RM360 ÷ 6 = ___",
+                  "a": [
+                    "RM440",
+                    "RM400",
+                    "RM450",
+                    "RM445"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ali has RM250. He buys 5 books at RM28 each. Left?",
+                  "a": [
+                    "RM110",
+                    "RM140",
+                    "RM100",
+                    "RM120"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "RM80 + RM240 ÷ 8 + RM50 = ___",
+                  "a": [
+                    "RM160",
+                    "RM170",
+                    "RM150",
+                    "RM165"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siti buys 3 kg chicken at RM14/kg and 2L milk at RM6/L. Total?",
+                  "a": [
+                    "RM54",
+                    "RM50",
+                    "RM48",
+                    "RM56"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Financial Literacy: Save, Invest, Interest, Credit",
+              "revision": "Saving means keeping money for future use. Investing means using money to earn more money. Interest is extra money paid on savings. Credit means borrowing money to buy now and pay later. Debt is the amount you owe.",
+              "questions": [
+                {
+                  "q": "Save RM200 each month for 6 months. Total saved?",
+                  "a": [
+                    "RM1 200",
+                    "RM1 000",
+                    "RM1 300",
+                    "RM1 500"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Simple interest 4% per year on RM500 for 1 year is ___",
+                  "a": [
+                    "RM20",
+                    "RM15",
+                    "RM25",
+                    "RM10"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Save RM100 every month for a year. Total savings?",
+                  "a": [
+                    "RM1 200",
+                    "RM1 000",
+                    "RM900",
+                    "RM1 100"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Bank pays 3% interest per year. Deposit RM1 000 for 1 year. Interest?",
+                  "a": [
+                    "RM30",
+                    "RM20",
+                    "RM35",
+                    "RM25"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Best way to save regularly?",
+                  "a": [
+                    "Spend all pocket money",
+                    "Set aside fixed amount each month",
+                    "Only save when extra money comes",
+                    "Borrow to save"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "TV costs RM2 400 paid in 12 monthly instalments. Monthly payment?",
+                  "a": [
+                    "RM200",
+                    "RM180",
+                    "RM220",
+                    "RM240"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Buying with a credit card means you are ___",
+                  "a": [
+                    "Using your own money",
+                    "Borrowing money to pay back",
+                    "Getting free money",
+                    "Exchanging goods without paying"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Compound interest means interest earned on ___",
+                  "a": [
+                    "Only the original amount",
+                    "Original amount plus interest",
+                    "Only the interest",
+                    "None of these"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "3.4": {
+              "name": "Problem Solving with Money",
+              "revision": "Read the problem carefully and identify what is given and what is asked. Decide which operation to use. For multi-step problems, solve each step in order. Always include RM and two decimal places.",
+              "questions": [
+                {
+                  "q": "A shop sold 45 kg apples at RM6/kg and 32 kg oranges at RM5/kg. Total revenue?",
+                  "a": [
+                    "RM430",
+                    "RM420",
+                    "RM440",
+                    "RM450"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "You have RM500. Buy shirt RM85, shoes RM120, bag RM150. Left?",
+                  "a": [
+                    "RM145",
+                    "RM155",
+                    "RM135",
+                    "RM125"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Worker earns RM120 per day. How much in 25 days?",
+                  "a": [
+                    "RM3 000",
+                    "RM2 800",
+                    "RM3 200",
+                    "RM2 500"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Store sells bicycle RM850 with RM50 discount. Price after discount?",
+                  "a": [
+                    "RM800",
+                    "RM780",
+                    "RM750",
+                    "RM850"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Save RM25 per week. Weeks to save RM500?",
+                  "a": [
+                    "18",
+                    "20",
+                    "22",
+                    "25"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3 friends share gift cost equally. Gift costs RM135. Each pays?",
+                  "a": [
+                    "RM42",
+                    "RM45",
+                    "RM48",
+                    "RM50"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Farmer sells 120 eggs at RM0.50 each. Total?",
+                  "a": [
+                    "RM60",
+                    "RM50",
+                    "RM70",
+                    "RM65"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Water bill for 3 months is RM210. Average monthly bill?",
+                  "a": [
+                    "RM70",
+                    "RM65",
+                    "RM75",
+                    "RM60"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Time",
+          "topics": {
+            "4.1": {
+              "name": "Duration and Conversion of Time Units",
+              "revision": "Time can be converted between units: 1 minute = 60 seconds, 1 hour = 60 minutes, 1 day = 24 hours, 1 week = 7 days, 1 month ≈ 30 days, 1 year = 12 months, 1 decade = 10 years, 1 century = 100 years. To convert a larger unit to a smaller unit, multiply. To convert a smaller unit to a larger unit, divide.",
+              "questions": [
+                {
+                  "q": "3 hours = ___ minutes",
+                  "a": [
+                    "120",
+                    "180",
+                    "300",
+                    "150"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5 days = ___ hours",
+                  "a": [
+                    "100",
+                    "120",
+                    "140",
+                    "150"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "2 decades = ___ years",
+                  "a": [
+                    "10",
+                    "15",
+                    "20",
+                    "30"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "3 centuries = ___ years",
+                  "a": [
+                    "300",
+                    "30",
+                    "3 000",
+                    "150"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1/2 hour = ___ minutes",
+                  "a": [
+                    "20",
+                    "25",
+                    "40",
+                    "30"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "48 months = ___ years",
+                  "a": [
+                    "3",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1.5 decades = ___ years",
+                  "a": [
+                    "10",
+                    "15",
+                    "20",
+                    "12"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "120 minutes = ___ hours",
+                  "a": [
+                    "1",
+                    "1.5",
+                    "2",
+                    "2.5"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Addition of Time",
+              "revision": "When adding time, add the same units together (hours with hours, minutes with minutes, etc.). If the sum of smaller units exceeds the conversion unit, convert and carry over. Example: 2 h 45 min + 1 h 35 min = 3 h 80 min = 4 h 20 min.",
+              "questions": [
+                {
+                  "q": "2 h 30 min + 1 h 45 min = ___",
+                  "a": [
+                    "3 h 75 min",
+                    "4 h 15 min",
+                    "4 h 00 min",
+                    "3 h 15 min"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "3 days 12 h + 2 days 18 h = ___",
+                  "a": [
+                    "5 days 30 h",
+                    "6 days 6 h",
+                    "5 days 6 h",
+                    "6 days 12 h"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1 year 8 months + 2 years 7 months = ___",
+                  "a": [
+                    "3 years 15 months",
+                    "4 years 3 months",
+                    "3 years 3 months",
+                    "4 years 15 months"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "2 decades 5 years + 1 decade 8 years = ___",
+                  "a": [
+                    "3 decades 13 years",
+                    "4 decades 3 years",
+                    "3 decades 3 years",
+                    "4 decades 13 years"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "1 century 30 years + 2 centuries 80 years = ___",
+                  "a": [
+                    "3 centuries 110 years",
+                    "4 centuries 10 years",
+                    "3 centuries 10 years",
+                    "4 centuries 110 years"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "5 h 50 min + 4 h 25 min = ___",
+                  "a": [
+                    "9 h 75 min",
+                    "10 h 15 min",
+                    "9 h 15 min",
+                    "10 h 75 min"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "6 years 9 months + 3 years 6 months = ___",
+                  "a": [
+                    "9 years 15 months",
+                    "10 years 3 months",
+                    "9 years 3 months",
+                    "10 years 15 months"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "4 decades 7 years + 3 decades 6 years = ___",
+                  "a": [
+                    "7 decades 13 years",
+                    "8 decades 3 years",
+                    "7 decades 3 years",
+                    "8 decades 13 years"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Subtraction of Time",
+              "revision": "When subtracting time, subtract the same units. If the subtrahend is larger than the minuend in a smaller unit, borrow 1 from the next larger unit. Example: 2 h 10 min - 1 h 30 min = borrow 1 h = 60 min → 1 h 70 min - 1 h 30 min = 0 h 40 min.",
+              "questions": [
+                {
+                  "q": "3 h 15 min - 1 h 45 min = ___",
+                  "a": [
+                    "1 h 30 min",
+                    "2 h 30 min",
+                    "1 h 15 min",
+                    "2 h 15 min"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "5 days 6 h - 2 days 18 h = ___",
+                  "a": [
+                    "3 days 12 h",
+                    "2 days 18 h",
+                    "2 days 12 h",
+                    "3 days 18 h"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "4 years 3 months - 1 year 8 months = ___",
+                  "a": [
+                    "2 years 7 months",
+                    "3 years 5 months",
+                    "2 years 5 months",
+                    "3 years 7 months"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3 decades 2 years - 1 decade 5 years = ___",
+                  "a": [
+                    "1 decade 7 years",
+                    "2 decades 3 years",
+                    "1 decade 3 years",
+                    "2 decades 7 years"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "5 centuries 20 years - 2 centuries 90 years = ___",
+                  "a": [
+                    "2 centuries 30 years",
+                    "3 centuries 30 years",
+                    "2 centuries 130 years",
+                    "3 centuries 70 years"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "8 h 20 min - 3 h 45 min = ___",
+                  "a": [
+                    "5 h 35 min",
+                    "4 h 35 min",
+                    "5 h 25 min",
+                    "4 h 25 min"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "7 years 2 months - 4 years 9 months = ___",
+                  "a": [
+                    "3 years 7 months",
+                    "2 years 5 months",
+                    "2 years 7 months",
+                    "3 years 5 months"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.4": {
+              "name": "Problem Solving with Time",
+              "revision": "Read time problems carefully. Convert all units to the same unit before adding or subtracting. For duration problems, subtract the start time from the end time. For schedules, add the duration to the start time to find the end time.",
+              "questions": [
+                {
+                  "q": "A movie starts at 2:30 PM and ends at 4:15 PM. How long is it?",
+                  "a": [
+                    "1 h 45 min",
+                    "2 h 15 min",
+                    "1 h 30 min",
+                    "2 h 45 min"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "School starts at 7:30 AM and ends at 1:00 PM. How many hours?",
+                  "a": [
+                    "5 h 30 min",
+                    "6 h 30 min",
+                    "5 h 00 min",
+                    "6 h 00 min"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ali takes 45 minutes to walk to school. If he leaves at 6:50 AM, when does he arrive?",
+                  "a": [
+                    "7:35 AM",
+                    "7:25 AM",
+                    "7:45 AM",
+                    "7:15 AM"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A bus journey takes 3 h 20 min. It departs at 9:45 AM. Arrival time?",
+                  "a": [
+                    "12:05 PM",
+                    "1:05 PM",
+                    "12:45 PM",
+                    "1:15 PM"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siti studied for 2 h 45 min and finished at 5:30 PM. When did she start?",
+                  "a": [
+                    "2:45 PM",
+                    "3:15 PM",
+                    "2:30 PM",
+                    "3:00 PM"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A garden is watered for 25 minutes each day. Total watering time in 7 days?",
+                  "a": [
+                    "2 h 55 min",
+                    "3 h 25 min",
+                    "2 h 35 min",
+                    "3 h 05 min"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A baker works from 8:00 AM to 4:30 PM with a 1-hour break. Total working time?",
+                  "a": [
+                    "7 h 30 min",
+                    "8 h 30 min",
+                    "7 h 00 min",
+                    "8 h 00 min"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "How many days from 15 March to 10 April (in the same year)?",
+                  "a": [
+                    "25",
+                    "26",
+                    "24",
+                    "27"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Length, Mass, and Volume of Liquid",
+          "topics": {
+            "5.1": {
+              "name": "Convert Units of Length",
+              "revision": "Length units: 1 cm = 10 mm, 1 m = 100 cm, 1 km = 1 000 m. To convert a larger unit to a smaller unit, multiply. To convert a smaller unit to a larger unit, divide. Example: 3.5 km = 3.5 × 1 000 = 3 500 m.",
+              "questions": [
+                {
+                  "q": "5 cm = ___ mm",
+                  "a": [
+                    "5",
+                    "50",
+                    "500",
+                    "0.5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "3.5 m = ___ cm",
+                  "a": [
+                    "35",
+                    "350",
+                    "3 500",
+                    "3 050"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "2.5 km = ___ m",
+                  "a": [
+                    "250",
+                    "2 500",
+                    "25 000",
+                    "250 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "450 cm = ___ m",
+                  "a": [
+                    "0.45",
+                    "4.5",
+                    "45",
+                    "45 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1 500 m = ___ km",
+                  "a": [
+                    "0.15",
+                    "1.5",
+                    "15",
+                    "150"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "75 mm = ___ cm",
+                  "a": [
+                    "0.75",
+                    "7.5",
+                    "750",
+                    "0.075"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "0.8 km = ___ m",
+                  "a": [
+                    "80",
+                    "800",
+                    "8 000",
+                    "8"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Operations with Length",
+              "revision": "When adding or subtracting lengths, convert to the same unit first. For multiplication and division of length, multiply or divide the number as usual and keep the unit the same.",
+              "questions": [
+                {
+                  "q": "2.5 m + 150 cm = ___ cm",
+                  "a": [
+                    "175",
+                    "400",
+                    "2 650",
+                    "300"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "3 km - 500 m = ___ m",
+                  "a": [
+                    "2 500",
+                    "3 500",
+                    "2 000",
+                    "250"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "1.2 m × 5 = ___ m",
+                  "a": [
+                    "6.0",
+                    "7.0",
+                    "5.0",
+                    "6.5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "2.5 km ÷ 5 = ___ km",
+                  "a": [
+                    "0.5",
+                    "0.25",
+                    "1.25",
+                    "0.75"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "4 cm 5 mm + 3 cm 8 mm = ___",
+                  "a": [
+                    "7 cm 13 mm",
+                    "8 cm 3 mm",
+                    "7 cm 3 mm",
+                    "8 cm 13 mm"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A ribbon is 2.5 m long. It is cut into 5 equal pieces. Each piece length?",
+                  "a": [
+                    "0.5 m",
+                    "50 cm",
+                    "Both A and B",
+                    "25 cm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A rope is 3.6 m. Another rope is 275 cm. Total length in m?",
+                  "a": [
+                    "6.35",
+                    "5.35",
+                    "6.75",
+                    "5.75"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A rectangle is 8 cm long and 5 cm wide. Perimeter = ___",
+                  "a": [
+                    "40 cm",
+                    "26 cm",
+                    "13 cm",
+                    "80 cm"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Convert and Operate with Mass",
+              "revision": "Mass units: 1 kg = 1 000 g. To convert kg to g, multiply by 1 000. To convert g to kg, divide by 1 000. Operations with mass follow the same rules as length but using kg and g.",
+              "questions": [
+                {
+                  "q": "2.5 kg = ___ g",
+                  "a": [
+                    "250",
+                    "2 500",
+                    "25 000",
+                    "250 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "750 g = ___ kg",
+                  "a": [
+                    "0.075",
+                    "0.75",
+                    "7.5",
+                    "75"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "3 kg 500 g + 1 kg 800 g = ___",
+                  "a": [
+                    "4 kg 1 300 g",
+                    "5 kg 300 g",
+                    "4 kg 300 g",
+                    "5 kg 1 300 g"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "5 kg - 850 g = ___ g",
+                  "a": [
+                    "4 150",
+                    "4 250",
+                    "3 850",
+                    "4 050"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "1.8 kg × 4 = ___ kg",
+                  "a": [
+                    "6.2",
+                    "7.2",
+                    "7.0",
+                    "6.8"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3.6 kg ÷ 6 = ___ g",
+                  "a": [
+                    "60",
+                    "600",
+                    "6 000",
+                    "60 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A bag of rice weighs 5 kg. It is packed into 250 g packets. How many packets?",
+                  "a": [
+                    "20",
+                    "25",
+                    "30",
+                    "15"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A watermelon weighs 2.8 kg and a papaya weighs 1.5 kg. Total mass?",
+                  "a": [
+                    "4.3 kg",
+                    "4.2 kg",
+                    "3.3 kg",
+                    "5.3 kg"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "5.4": {
+              "name": "Convert and Operate with Volume of Liquid",
+              "revision": "Volume units: 1 ℓ = 1 000 mℓ. To convert litres to millilitres, multiply by 1 000. To convert millilitres to litres, divide by 1 000. Operations follow the same rules.",
+              "questions": [
+                {
+                  "q": "3.5 ℓ = ___ mℓ",
+                  "a": [
+                    "350",
+                    "3 500",
+                    "35 000",
+                    "350 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "750 mℓ = ___ ℓ",
+                  "a": [
+                    "0.075",
+                    "0.75",
+                    "7.5",
+                    "75"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "2 ℓ 300 mℓ + 1 ℓ 900 mℓ = ___",
+                  "a": [
+                    "4 ℓ 200 mℓ",
+                    "3 ℓ 1 200 mℓ",
+                    "4 ℓ 100 mℓ",
+                    "3 ℓ 200 mℓ"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "5 ℓ - 1 ℓ 800 mℓ = ___ mℓ",
+                  "a": [
+                    "3 200",
+                    "4 200",
+                    "3 000",
+                    "4 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "1.5 ℓ × 6 = ___ ℓ",
+                  "a": [
+                    "8.0",
+                    "9.0",
+                    "7.5",
+                    "8.5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "4.8 ℓ ÷ 8 = ___ mℓ",
+                  "a": [
+                    "60",
+                    "600",
+                    "6 000",
+                    "600 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A jug contains 1.25 ℓ of water. Mili pours another 750 mℓ. Total volume in ℓ?",
+                  "a": [
+                    "2.0 ℓ",
+                    "1.75 ℓ",
+                    "1.5 ℓ",
+                    "2.25 ℓ"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A fish tank holds 20 ℓ. It is filled with 5 buckets of water equally. Each bucket?",
+                  "a": [
+                    "5 ℓ",
+                    "4 ℓ",
+                    "3 ℓ",
+                    "6 ℓ"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "5.5": {
+              "name": "Problem Solving",
+              "revision": "Read the problem and identify the unit involved (length, mass, or volume). Convert all measurements to the same unit before calculating. Check if the answer is reasonable and include the correct unit.",
+              "questions": [
+                {
+                  "q": "A road is 2.5 km long. Lampposts are placed every 50 m. How many lampposts?",
+                  "a": [
+                    "50",
+                    "51",
+                    "49",
+                    "55"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A cake recipe needs 250 g flour, 150 g sugar, and 100 g butter. Total mass?",
+                  "a": [
+                    "500 g",
+                    "400 g",
+                    "600 g",
+                    "450 g"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A water tank holds 500 ℓ. 350 ℓ is used. How much water remains?",
+                  "a": [
+                    "50 ℓ",
+                    "150 ℓ",
+                    "250 ℓ",
+                    "200 ℓ"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A roll of ribbon is 5 m. 8 equal pieces are cut, each 45 cm. Total ribbon used?",
+                  "a": [
+                    "360 cm",
+                    "3.6 m",
+                    "Both A and B",
+                    "400 cm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A fruit seller has 12 kg of apples. He sells 3 kg 500 g. How much is left?",
+                  "a": [
+                    "8 kg 500 g",
+                    "9 kg 500 g",
+                    "8 kg",
+                    "9 kg"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3 bottles each contain 500 mℓ of juice. Total volume in ℓ?",
+                  "a": [
+                    "1.5 ℓ",
+                    "1.0 ℓ",
+                    "2.0 ℓ",
+                    "1.25 ℓ"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A wall is 2.4 m high. Tiles are 20 cm high each. How many tiles needed?",
+                  "a": [
+                    "10",
+                    "12",
+                    "14",
+                    "15"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A cake weighs 1.2 kg. It is cut into 8 equal slices. Each slice mass in g?",
+                  "a": [
+                    "120",
+                    "150",
+                    "140",
+                    "160"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Space",
+          "topics": {
+            "6.1": {
+              "name": "Regular Polygons and Interior Angles",
+              "revision": "A regular polygon has all sides equal and all angles equal. Examples: equilateral triangle, square, regular pentagon, regular hexagon. The sum of interior angles of a triangle is 180°, quadrilateral is 360°, pentagon is 540°, hexagon is 720°.",
+              "questions": [
+                {
+                  "q": "A regular polygon with 4 equal sides is a ___",
+                  "a": [
+                    "Pentagon",
+                    "Square",
+                    "Triangle",
+                    "Hexagon"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A regular hexagon has how many sides?",
+                  "a": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "An equilateral triangle has ___ equal sides.",
+                  "a": [
+                    "2",
+                    "3",
+                    "0",
+                    "4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The sum of interior angles of a quadrilateral is ___",
+                  "a": [
+                    "180°",
+                    "360°",
+                    "540°",
+                    "720°"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A regular pentagon has ___ sides.",
+                  "a": [
+                    "4",
+                    "5",
+                    "6",
+                    "3"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Each interior angle of a square is ___",
+                  "a": [
+                    "60°",
+                    "90°",
+                    "120°",
+                    "180°"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A polygon with 8 sides is called an ___",
+                  "a": [
+                    "Octagon",
+                    "Heptagon",
+                    "Hexagon",
+                    "Pentagon"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of these is a regular polygon?",
+                  "a": [
+                    "Rectangle",
+                    "Rhombus",
+                    "Square",
+                    "Parallelogram"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Perimeter and Area of Composite Shapes",
+              "revision": "A composite shape is made of two or more simple shapes. To find the perimeter, add all the outer side lengths. To find the area, split into simple shapes (rectangles, squares), find each area, and add them together.",
+              "questions": [
+                {
+                  "q": "A 5 cm × 3 cm rectangle has perimeter ___",
+                  "a": [
+                    "15 cm",
+                    "16 cm",
+                    "8 cm",
+                    "14 cm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A rectangle 8 cm by 4 cm has area ___",
+                  "a": [
+                    "24 cm²",
+                    "32 cm²",
+                    "12 cm²",
+                    "36 cm²"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A square of side 6 cm has perimeter ___",
+                  "a": [
+                    "36 cm",
+                    "12 cm",
+                    "24 cm",
+                    "30 cm"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Two squares of side 3 cm are joined side by side. Total area?",
+                  "a": [
+                    "9 cm²",
+                    "18 cm²",
+                    "27 cm²",
+                    "36 cm²"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A rectangle is 10 cm long and 4 cm wide. Perimeter?",
+                  "a": [
+                    "40 cm",
+                    "28 cm",
+                    "14 cm",
+                    "32 cm"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A garden is 12 m long and 8 m wide. Area in m²?",
+                  "a": [
+                    "40",
+                    "96",
+                    "48",
+                    "80"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A shape is made of a 6 cm square and a 4 cm by 3 cm rectangle. Total area?",
+                  "a": [
+                    "36 cm²",
+                    "48 cm²",
+                    "40 cm²",
+                    "52 cm²"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A rectangle with length 15 cm and width 6 cm. Area?",
+                  "a": [
+                    "90 cm²",
+                    "42 cm²",
+                    "60 cm²",
+                    "100 cm²"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Volume of Composite Shapes",
+              "revision": "Volume is the amount of space an object occupies. For a cuboid, Volume = length × width × height. For composite shapes, split into cuboids, find each volume, and add them together.",
+              "questions": [
+                {
+                  "q": "A cuboid 5 cm × 4 cm × 3 cm has volume ___",
+                  "a": [
+                    "60 cm³",
+                    "20 cm³",
+                    "12 cm³",
+                    "40 cm³"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A cube of side 4 cm has volume ___",
+                  "a": [
+                    "16 cm³",
+                    "64 cm³",
+                    "32 cm³",
+                    "48 cm³"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A box is 10 cm long, 6 cm wide, 4 cm high. Volume?",
+                  "a": [
+                    "240 cm³",
+                    "200 cm³",
+                    "160 cm³",
+                    "300 cm³"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A water tank is 2 m long, 1.5 m wide, 1 m high. Volume in m³?",
+                  "a": [
+                    "2.5 m³",
+                    "3.0 m³",
+                    "4.5 m³",
+                    "3.5 m³"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A cuboid has a base area of 20 cm² and height 8 cm. Volume?",
+                  "a": [
+                    "160 cm³",
+                    "28 cm³",
+                    "120 cm³",
+                    "80 cm³"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A cube has volume 125 cm³. What is its side length?",
+                  "a": [
+                    "25 cm",
+                    "5 cm",
+                    "15 cm",
+                    "10 cm"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Two identical cuboids 3 cm × 2 cm × 5 cm are stacked. Total volume?",
+                  "a": [
+                    "30 cm³",
+                    "60 cm³",
+                    "45 cm³",
+                    "90 cm³"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A rectangular block is 8 cm long, 5 cm wide, and 3 cm high. Volume?",
+                  "a": [
+                    "120 cm³",
+                    "40 cm³",
+                    "80 cm³",
+                    "100 cm³"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "6.4": {
+              "name": "Problem Solving",
+              "revision": "For space problems, identify whether you need perimeter, area, or volume. Draw a diagram if helpful. Ensure all measurements are in the same unit before calculating. Write the correct unit (cm, cm², or cm³) in the answer.",
+              "questions": [
+                {
+                  "q": "A photo 15 cm × 10 cm needs a frame. Perimeter of frame?",
+                  "a": [
+                    "150 cm",
+                    "50 cm",
+                    "25 cm",
+                    "100 cm"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A floor is 6 m long and 4 m wide. How many tiles of 1 m² each are needed?",
+                  "a": [
+                    "20",
+                    "24",
+                    "10",
+                    "15"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A swimming pool is 25 m long, 10 m wide, 2 m deep. Volume of water?",
+                  "a": [
+                    "250 m³",
+                    "500 m³",
+                    "750 m³",
+                    "37 m³"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A piece of land is 30 m × 20 m. Half is used for a house. Land area for house?",
+                  "a": [
+                    "600 m²",
+                    "300 m²",
+                    "150 m²",
+                    "450 m²"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A paint can covers 5 m². How many cans to paint a wall 10 m × 4 m?",
+                  "a": [
+                    "6",
+                    "8",
+                    "7",
+                    "10"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A room is 5 m long, 4 m wide, 3 m high. Volume of air in the room?",
+                  "a": [
+                    "60 m³",
+                    "20 m³",
+                    "80 m³",
+                    "120 m³"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A garden path is 8 m long and 1.5 m wide. Area to be paved?",
+                  "a": [
+                    "9.5 m²",
+                    "12 m²",
+                    "14 m²",
+                    "10 m²"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Coordinates, Ratio, and Proportion",
+          "topics": {
+            "7.1": {
+              "name": "Distance Between Two Coordinates",
+              "revision": "Coordinates (x, y) show position on a grid. The x-axis is horizontal, the y-axis is vertical. The origin is (0, 0). To find horizontal distance, subtract the x-values. To find vertical distance, subtract the y-values. The total distance between two points is the sum of horizontal and vertical distances if moving along grid lines.",
+              "questions": [
+                {
+                  "q": "Point A is at (2, 3) and Point B is at (7, 3). Horizontal distance?",
+                  "a": [
+                    "3 units",
+                    "4 units",
+                    "5 units",
+                    "6 units"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Point P is at (4, 1) and Point Q is at (4, 6). Vertical distance?",
+                  "a": [
+                    "4 units",
+                    "5 units",
+                    "6 units",
+                    "3 units"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Point X is at (1, 2). Its horizontal distance from the origin?",
+                  "a": [
+                    "1 unit",
+                    "2 units",
+                    "3 units",
+                    "0 units"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Point Y is at (3, 5). Its vertical distance from the origin?",
+                  "a": [
+                    "3 units",
+                    "5 units",
+                    "8 units",
+                    "2 units"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "From (1, 2) to (6, 2) is how many units horizontally?",
+                  "a": [
+                    "4",
+                    "5",
+                    "6",
+                    "3"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "From (3, 1) to (3, 7) is how many units vertically?",
+                  "a": [
+                    "4",
+                    "5",
+                    "6",
+                    "7"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The distance from (2, 3) to (7, 8) moving along grid lines is ___",
+                  "a": [
+                    "5 units",
+                    "10 units",
+                    "13 units",
+                    "8 units"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Point (0, 4) is ___ units above the origin.",
+                  "a": [
+                    "0",
+                    "4",
+                    "8",
+                    "2"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Ratio between Two Quantities",
+              "revision": "A ratio compares two quantities. It is written as a : b and read as 'a to b'. The order matters — the first number compares to the second. To simplify a ratio, divide both parts by the greatest common factor. Example: 4 : 6 = 2 : 3.",
+              "questions": [
+                {
+                  "q": "A bag has 3 red balls and 5 blue balls. Ratio of red to blue?",
+                  "a": [
+                    "5 : 3",
+                    "3 : 5",
+                    "3 : 8",
+                    "5 : 8"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Simplify the ratio 8 : 12.",
+                  "a": [
+                    "4 : 6",
+                    "2 : 3",
+                    "2 : 4",
+                    "4 : 3"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "There are 20 boys and 15 girls. Ratio of boys to girls?",
+                  "a": [
+                    "20 : 15",
+                    "4 : 3",
+                    "3 : 4",
+                    "15 : 20"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A recipe uses 2 cups flour to 3 cups sugar. Ratio flour to sugar?",
+                  "a": [
+                    "3 : 2",
+                    "2 : 3",
+                    "2 : 5",
+                    "5 : 3"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In a class, the ratio of Malay students to Chinese students is 5 : 3. If there are 15 Malay students, how many Chinese students?",
+                  "a": [
+                    "9",
+                    "6",
+                    "12",
+                    "8"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A string is cut in the ratio 2 : 5. The shorter piece is 4 m. Length of longer piece?",
+                  "a": [
+                    "8 m",
+                    "10 m",
+                    "6 m",
+                    "12 m"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The ratio of cats to dogs is 3 : 7. If there are 30 animals total, how many cats?",
+                  "a": [
+                    "9",
+                    "21",
+                    "7",
+                    "3"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Simplify 10 : 25.",
+                  "a": [
+                    "5 : 10",
+                    "2 : 5",
+                    "1 : 2.5",
+                    "10 : 25"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Proportion to Find A Value",
+              "revision": "Proportion shows the relationship between two equal ratios. If a : b = c : d, then a × d = b × c (cross multiplication). This is useful to find an unknown value. Example: If 2 apples cost RM3, how much for 6 apples? 2:3 = 6:x, so 2x = 18, x = 9.",
+              "questions": [
+                {
+                  "q": "If 3 kg of fish costs RM24, how much does 5 kg cost?",
+                  "a": [
+                    "RM35",
+                    "RM40",
+                    "RM45",
+                    "RM30"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "If 4 books cost RM28, how many books for RM84?",
+                  "a": [
+                    "10",
+                    "12",
+                    "14",
+                    "8"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A car travels 180 km in 3 hours. How far in 5 hours?",
+                  "a": [
+                    "270 km",
+                    "300 km",
+                    "240 km",
+                    "350 km"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5 workers build a wall in 10 days. How long for 2 workers (same rate)?",
+                  "a": [
+                    "25 days",
+                    "20 days",
+                    "15 days",
+                    "30 days"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If 6 oranges cost RM8.40, how much for 10 oranges?",
+                  "a": [
+                    "RM14.00",
+                    "RM15.00",
+                    "RM12.00",
+                    "RM13.00"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A map scale is 1 cm : 5 km. Distance on map is 8 cm. Actual distance?",
+                  "a": [
+                    "50 km",
+                    "40 km",
+                    "35 km",
+                    "45 km"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "If 2 : 5 = 6 : x, what is x?",
+                  "a": [
+                    "12",
+                    "15",
+                    "10",
+                    "20"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.4": {
+              "name": "Problem Solving",
+              "revision": "For coordinate problems, first find the horizontal and vertical distances. For ratio problems, write the ratio correctly (order matters). For proportion problems, set up two equal ratios and cross multiply to find the unknown.",
+              "questions": [
+                {
+                  "q": "Point P is at (2, 3). Point Q is 5 units to the right and 2 units up from P. Coordinates of Q?",
+                  "a": [
+                    "(7, 5)",
+                    "(5, 5)",
+                    "(7, 6)",
+                    "(3, 5)"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A map has scale 1:100 000. Two towns are 5 cm apart on the map. Actual distance in km?",
+                  "a": [
+                    "5 km",
+                    "50 km",
+                    "10 km",
+                    "100 km"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "The ratio of adults to children at a park is 2 : 7. If there are 14 children, how many adults?",
+                  "a": [
+                    "4",
+                    "6",
+                    "2",
+                    "8"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A rectangle measures 6 cm by 4 cm on a plan with scale 1:50. Actual dimensions in m?",
+                  "a": [
+                    "3 m × 2 m",
+                    "6 m × 4 m",
+                    "300 m × 200 m",
+                    "12 m × 8 m"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If 5 kg of rice costs RM12.50, what is the cost for 8 kg?",
+                  "a": [
+                    "RM20.00",
+                    "RM22.00",
+                    "RM18.00",
+                    "RM25.00"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Three points: A(1,2), B(1,6), C(4,2). Vertical distance A to B?",
+                  "a": [
+                    "3 units",
+                    "4 units",
+                    "5 units",
+                    "2 units"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The ratio of boys to girls is 4 : 5. Total students 27. How many girls?",
+                  "a": [
+                    "12",
+                    "15",
+                    "9",
+                    "18"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A recipe needs 3 eggs for 12 pancakes. How many eggs for 20 pancakes?",
+                  "a": [
+                    "4",
+                    "5",
+                    "6",
+                    "3"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Data Handling",
+          "topics": {
+            "8.1": {
+              "name": "Interpreting Pie Charts",
+              "revision": "A pie chart shows data as parts of a whole circle. The full circle represents 360° or 100%. Each sector represents a category. To find the value of a sector, use the percentage or fraction of the total. Example: if a sector is 25% of the pie chart, it represents 25% of the total.",
+              "questions": [
+                {
+                  "q": "In a pie chart, a sector of 50% represents what fraction?",
+                  "a": [
+                    "1/2",
+                    "1/4",
+                    "1/3",
+                    "3/4"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A pie chart shows 4 categories: A 25%, B 25%, C 25%, D 25%. Each category represents ___",
+                  "a": [
+                    "1/2 of total",
+                    "1/4 of total",
+                    "1/3 of total",
+                    "1/5 of total"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "In a pie chart with total 360 students, a sector is 90°. Number of students?",
+                  "a": [
+                    "45",
+                    "90",
+                    "180",
+                    "120"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A pie chart of 200 fruits shows 40% apples. Number of apples?",
+                  "a": [
+                    "40",
+                    "80",
+                    "60",
+                    "100"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "In a pie chart, 25% is how many degrees?",
+                  "a": [
+                    "60°",
+                    "90°",
+                    "120°",
+                    "45°"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A pie chart has total 480 people. 30% prefer cycling. How many prefer cycling?",
+                  "a": [
+                    "120",
+                    "144",
+                    "96",
+                    "160"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "If 180° of a pie chart represents 50 students, the total number of students is ___",
+                  "a": [
+                    "100",
+                    "150",
+                    "200",
+                    "50"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "In a pie chart showing RM1 200 spending, food is 45%. Amount spent on food?",
+                  "a": [
+                    "RM450",
+                    "RM540",
+                    "RM500",
+                    "RM600"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Mode, Range, Median, and Mean",
+              "revision": "Mode: the most frequent value. Range: largest value minus smallest value. Median: the middle value when data is sorted. Mean: the sum of all values divided by how many values there are. Mean = total ÷ number of items.",
+              "questions": [
+                {
+                  "q": "Find the mode: 3, 5, 3, 7, 9, 3, 5",
+                  "a": [
+                    "5",
+                    "3",
+                    "7",
+                    "9"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Find the range: 12, 45, 23, 67, 34",
+                  "a": [
+                    "55",
+                    "45",
+                    "67",
+                    "23"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Find the median: 4, 8, 6, 5, 9",
+                  "a": [
+                    "5",
+                    "6",
+                    "7",
+                    "8"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Find the mean: 10, 20, 30, 40",
+                  "a": [
+                    "20",
+                    "25",
+                    "30",
+                    "35"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Scores: 80, 85, 90, 85, 95. The mode is ___",
+                  "a": [
+                    "80",
+                    "85",
+                    "90",
+                    "95"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ages: 12, 15, 18, 15, 14, 17. The median is ___",
+                  "a": [
+                    "15",
+                    "14",
+                    "15.5",
+                    "16"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Temperatures over 5 days: 28°C, 30°C, 29°C, 31°C, 32°C. Mean temperature?",
+                  "a": [
+                    "28°C",
+                    "30°C",
+                    "29°C",
+                    "31°C"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The range of 8, 15, 12, 20, 10 is ___",
+                  "a": [
+                    "7",
+                    "15",
+                    "12",
+                    "20"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Problem Solving",
+              "revision": "Read the data carefully and identify what is being asked. For pie charts, use fractions or percentages of the total. For mode, median, mean, and range, sort the data first (for median) or find the most frequent value (for mode).",
+              "questions": [
+                {
+                  "q": "A pie chart shows RM500 spending: Rent 35%, Food 25%, Transport 20%, Others 20%. Amount spent on Rent?",
+                  "a": [
+                    "RM175",
+                    "RM125",
+                    "RM100",
+                    "RM150"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Test scores: 76, 82, 88, 82, 90. Mean score?",
+                  "a": [
+                    "82.6",
+                    "83.6",
+                    "82.0",
+                    "84.0"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A survey of 30 people: 12 like blue, 10 like red, 8 like green. Mode of favourite colour?",
+                  "a": [
+                    "Red",
+                    "Blue",
+                    "Green",
+                    "All equally"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Daily visitors: 120, 150, 110, 130, 140. Median visitors?",
+                  "a": [
+                    "120",
+                    "140",
+                    "130",
+                    "150"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A pie chart of 360 pets: Dogs 180°, Cats 90°, Fish 45°, Birds 45°. Number of dogs?",
+                  "a": [
+                    "90",
+                    "180",
+                    "45",
+                    "135"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A class test scores: 60, 75, 80, 75, 90, 75. The mode is ___",
+                  "a": [
+                    "75",
+                    "80",
+                    "90",
+                    "60"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A class has 25 students. Total marks for a test is 1 875. Mean score?",
+                  "a": [
+                    "72",
+                    "75",
+                    "78",
+                    "80"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

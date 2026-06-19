@@ -233,11 +233,25 @@
             return null;
         }
 
-        // Load question bank
+        // Load question bank(s)
         async function loadBank() {
             try {
-                const resp = await fetch('math4-tb.json');
-                questionBank = await resp.json();
+                const [resp4, resp5] = await Promise.all([
+                    fetch('math4-tb.json').catch(() => null),
+                    fetch('math5-tb.json').catch(() => null)
+                ]);
+                const combined = { subjects: {} };
+                if (resp4 && resp4.ok) {
+                    const d4 = await resp4.json();
+                    Object.assign(combined.subjects, d4.subjects);
+                }
+                if (resp5 && resp5.ok) {
+                    const d5 = await resp5.json();
+                    Object.assign(combined.subjects, d5.subjects);
+                }
+                if (Object.keys(combined.subjects).length === 0)
+                    throw new Error('No subjects loaded');
+                questionBank = combined;
                 await loadUserScores();
                 renderSubjects();
                 updateStreakDisplay();

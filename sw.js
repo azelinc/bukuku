@@ -26,7 +26,8 @@ const ASSETS = [
   '/sci.json',
   '/rbt.json',
   '/tuition-tb.html',
-  '/math4-tb.json'
+  '/math4-tb.json',
+  '/math5-tb.json'
 ];
 
 // Install Service Worker
