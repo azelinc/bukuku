@@ -27,14 +27,19 @@
         .orange-btn { background: #f39c12; border-bottom: 5px solid #e67e22; }
         .orange-btn:active { transform: translateY(4px); border-bottom-width: 1px; }
 
-        .unit-card, .topic-card {
+        .unit-card, .topic-card, .subject-card {
             display: block; width: 100%; padding: 16px; margin: 8px 0;
             background: #f8f9fa; border: 1px solid #ddd; border-radius: 12px;
             cursor: pointer; text-align: left; font-size: 1rem; color: #444; font-weight: 600;
             transition: 0.2s;
         }
-        .unit-card:hover, .topic-card:hover { background: #e8f0fe; border-color: #4a90e2; }
+        .unit-card:hover, .topic-card:hover, .subject-card:hover { background: #e8f0fe; border-color: #4a90e2; }
         .unit-card .unit-num { color: #4a90e2; font-weight: 800; margin-right: 8px; }
+        .subject-card { display: flex; align-items: center; gap: 12px; font-size: 1.1rem; }
+        .subject-card .subj-icon { font-size: 2rem; }
+        .subject-card .subj-info { flex: 1; }
+        .subject-card .subj-name { font-weight: 700; color: #2c3e50; }
+        .subject-card .subj-desc { font-weight: 400; font-size: 0.85rem; color: #999; margin-top: 2px; }
 
         .option-btn { display: block; width: 100%; padding: 16px; margin: 12px 0; background: #f8f9fa; border: 1px solid #ddd; border-radius: 12px; cursor: pointer; text-align: left; font-size: 1.1rem; color: #444; font-weight: 600; }
         .correct { background: #d4edda !important; color: #155724 !important; border-color: #2ecc71 !important; border-width: 3px; }
@@ -59,13 +64,23 @@
     <div class="container">
         <h1>📘 Textbook Practice</h1>
 
-        <!-- SELECTION SCREEN -->
-        <div id="selection-screen">
+        <!-- SUBJECT SELECTION SCREEN -->
+        <div id="subject-screen">
             <div class="section">
-                <p style="color: #666; margin-top: 0;">Select a unit to practice:</p>
+                <p style="color: #666; margin-top: 0;">Choose a subject:</p>
+                <div id="subject-list"></div>
+            </div>
+            <a class="back-link" href="index.html">← Back to Hub</a>
+        </div>
+
+        <!-- UNIT SELECTION SCREEN -->
+        <div id="unit-screen" style="display:none;">
+            <div class="section">
+                <a id="back-to-subjects" class="back-link" style="margin: 0 0 15px 0;">← All Subjects</a>
+                <h2 id="subject-title" style="margin: 10px 0; font-size: 1.3rem; color: #2c3e50;"></h2>
+                <p style="color: #666; font-size: 0.9rem;">Select a unit to practice:</p>
                 <div id="unit-list"></div>
             </div>
-            <a id="back-to-hub-link" class="back-link" href="index.html">← Back to Hub</a>
         </div>
 
         <!-- TOPIC SELECTION SCREEN -->
@@ -141,6 +156,7 @@
 
         // State
         let questionBank = null;
+        let currentSubject = null;
         let currentUnit = null;
         let currentTopic = null;
         let currentQ = 0;
@@ -165,34 +181,66 @@
             try {
                 const resp = await fetch('math4-tb.json');
                 questionBank = await resp.json();
-                renderUnits();
+                renderSubjects();
             } catch(e) {
-                document.getElementById('unit-list').innerHTML = '<p style="color: #e74c3c;">⚠️ Failed to load questions.</p>';
+                document.getElementById('subject-list').innerHTML = '<p style="color: #e74c3c;">⚠️ Failed to load questions.</p>';
             }
         }
 
-        // RENDER UNIT LIST
-        function renderUnits() {
-            const list = document.getElementById('unit-list');
+        // RENDER SUBJECT LIST
+        function renderSubjects() {
+            const list = document.getElementById('subject-list');
             list.innerHTML = '';
-            const units = questionBank.units;
-            Object.keys(units).forEach(key => {
-                const u = units[key];
-                const topics = Object.keys(u.topics);
+            const subs = questionBank.subjects;
+            Object.keys(subs).forEach(key => {
+                const s = subs[key];
+                const units = Object.keys(s.units);
                 let totalQ = 0;
-                topics.forEach(tk => { totalQ += u.topics[tk].questions.length; });
+                units.forEach(uk => {
+                    Object.keys(s.units[uk].topics).forEach(tk => {
+                        totalQ += s.units[uk].topics[tk].questions.length;
+                    });
+                });
                 const card = document.createElement('div');
-                card.className = 'unit-card';
-                card.innerHTML = `<span class="unit-num">Unit ${key}</span> ${u.name}`;
-                card.onclick = () => selectUnit(key);
+                card.className = 'subject-card';
+                card.innerHTML = `<span class="subj-icon">${s.icon || '📘'}</span>
+                    <div class="subj-info">
+                        <div class="subj-name">${s.name}</div>
+                        <div class="subj-desc">${units.length} units · ${totalQ} questions</div>
+                    </div>`;
+                card.onclick = () => selectSubject(key);
                 list.appendChild(card);
             });
+        }
+
+        // SELECT SUBJECT → show units
+        function selectSubject(key) {
+            currentSubject = key;
+            const s = questionBank.subjects[key];
+            document.getElementById('subject-title').textContent = `${s.icon || '📘'} ${s.name}`;
+
+            const list = document.getElementById('unit-list');
+            list.innerHTML = '';
+            const units = s.units;
+            Object.keys(units).forEach(uk => {
+                const u = units[uk];
+                const topics = Object.keys(u.topics);
+                const card = document.createElement('div');
+                card.className = 'unit-card';
+                card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}`;
+                card.onclick = () => selectUnit(uk);
+                list.appendChild(card);
+            });
+
+            document.getElementById('subject-screen').style.display = 'none';
+            document.getElementById('unit-screen').style.display = 'block';
+            document.getElementById('topic-screen').style.display = 'none';
         }
 
         // SELECT UNIT → show topics
         function selectUnit(key) {
             currentUnit = key;
-            const u = questionBank.units[key];
+            const u = questionBank.subjects[currentSubject].units[key];
             document.getElementById('unit-title').textContent = `Unit ${key}: ${u.name}`;
 
             const topicList = document.getElementById('topic-list');
@@ -202,20 +250,19 @@
                 const t = topics[tk];
                 const card = document.createElement('div');
                 card.className = 'topic-card';
-                const qCount = t.questions.length;
                 card.innerHTML = `${tk} ${t.name}`;
                 card.onclick = () => startQuiz(tk);
                 topicList.appendChild(card);
             });
 
-            document.getElementById('selection-screen').style.display = 'none';
+            document.getElementById('unit-screen').style.display = 'none';
             document.getElementById('topic-screen').style.display = 'block';
         }
 
         // START QUIZ for a topic
         function startQuiz(tk) {
             currentTopic = tk;
-            const t = questionBank.units[currentUnit].topics[tk];
+            const t = questionBank.subjects[currentSubject].units[currentUnit].topics[tk];
             questions = [...t.questions];
 
             // Show revision screen first
@@ -235,7 +282,8 @@
             score = 0;
             answered = false;
 
-            document.getElementById('topic-header').textContent = `Unit ${currentUnit} · ${currentTopic} ${questionBank.units[currentUnit].topics[currentTopic].name}`;
+            const t = questionBank.subjects[currentSubject].units[currentUnit].topics[currentTopic];
+            document.getElementById('topic-header').textContent = `Unit ${currentUnit} · ${currentTopic} ${t.name}`;
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'block';
             document.getElementById('q-total').textContent = questions.length;
@@ -334,7 +382,7 @@
             const uid = getUserId();
             if (uid) {
                 try {
-                    const scoreKey = `tb-${currentUnit}-${currentTopic}`;
+                    const scoreKey = `tb-${currentSubject}-${currentUnit}-${currentTopic}`;
                     const docRef = doc(db, 'tb_scores', uid);
                     const snap = await getDoc(docRef);
                     const existing = snap.exists() ? snap.data() : {};
@@ -358,8 +406,21 @@
 
         // NAVIGATION
         function goToUnits() {
-            document.getElementById('selection-screen').style.display = 'block';
             document.getElementById('topic-screen').style.display = 'none';
+            document.getElementById('quiz-screen').style.display = 'none';
+            document.getElementById('result-area').style.display = 'none';
+            document.getElementById('revision-screen').style.display = 'none';
+            document.getElementById('unit-screen').style.display = 'block';
+        }
+
+        function goToSubjects() {
+            currentSubject = null;
+            currentUnit = null;
+            currentTopic = null;
+            document.getElementById('subject-screen').style.display = 'block';
+            document.getElementById('unit-screen').style.display = 'none';
+            document.getElementById('topic-screen').style.display = 'none';
+            document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
             document.getElementById('result-area').style.display = 'none';
         }
@@ -372,6 +433,7 @@
             document.getElementById('result-area').style.display = 'none';
         }
 
+        document.getElementById('back-to-subjects').onclick = goToSubjects;
         document.getElementById('back-to-units').onclick = goToUnits;
         document.getElementById('back-to-topics').onclick = goToTopics;
         document.getElementById('back-to-topics-rev').onclick = goToTopics;
