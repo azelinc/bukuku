@@ -600,6 +600,7 @@
             document.getElementById('result-area').style.display = 'none';
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('unit-screen').style.display = 'block';
+            selectSubject(currentSubject);
         }
 
         function goToSubjects() {
@@ -612,7 +613,7 @@
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
             document.getElementById('result-area').style.display = 'none';
-            renderSubjects(); // refresh progress
+            renderSubjects();
         }
 
         function goToTopics() {
@@ -621,6 +622,7 @@
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
             document.getElementById('result-area').style.display = 'none';
+            selectUnit(currentUnit);
         }
 
         document.getElementById('back-to-subjects').onclick = goToSubjects;
