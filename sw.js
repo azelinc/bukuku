@@ -1,4 +1,4 @@
-const CACHE_NAME = 'af-hub-v5';
+const CACHE_NAME = 'af-hub-v6';
 const ASSETS = [
   '/',
   '/index.html',
