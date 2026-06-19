@@ -31,12 +31,15 @@
             display: flex; width: 100%; padding: 16px; margin: 8px 0;
             background: #f8f9fa; border: 1px solid #ddd; border-radius: 12px;
             cursor: pointer; text-align: left; font-size: 1rem; color: #444; font-weight: 600;
-            transition: 0.2s; align-items: center; gap: 8px;
+            transition: 0.2s; align-items: center; gap: 8px; overflow: hidden;
         }
         .unit-card:hover, .topic-card:hover { background: #e8f0fe; border-color: #4a90e2; }
-        .unit-card .unit-num { color: #4a90e2; font-weight: 800; margin-right: 4px; }
+        .unit-card .unit-num { color: #4a90e2; font-weight: 800; margin-right: 4px; flex-shrink: 0; }
+        .unit-card .unit-name, .topic-card .topic-name {
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap; flex: 1; min-width: 0;
+        }
         .unit-card .q-count, .topic-card .q-count {
-            margin-left: auto; color: #999; font-weight: 400; font-size: 0.85rem;
+            flex-shrink: 0; color: #999; font-weight: 400; font-size: 0.85rem;
             background: #eee; padding: 2px 10px; border-radius: 20px; white-space: nowrap;
         }
 
@@ -176,7 +179,7 @@
                 topics.forEach(tk => { totalQ += u.topics[tk].questions.length; });
                 const card = document.createElement('div');
                 card.className = 'unit-card';
-                card.innerHTML = `<span class="unit-num">Unit ${key}</span> ${u.name} <span class="q-count">${totalQ}</span>`;
+                card.innerHTML = `<span class="unit-num">Unit ${key}</span><span class="unit-name">${u.name}</span><span class="q-count">${totalQ}</span>`;
                 card.onclick = () => selectUnit(key);
                 list.appendChild(card);
             });
@@ -196,7 +199,7 @@
                 const card = document.createElement('div');
                 card.className = 'topic-card';
                 const qCount = t.questions.length;
-                card.innerHTML = `${tk} ${t.name} <span class="q-count">${qCount}</span>`;
+                card.innerHTML = `<span class="topic-name">${tk} ${t.name}</span><span class="q-count">${qCount}</span>`;
                 card.onclick = () => startQuiz(tk);
                 topicList.appendChild(card);
             });
