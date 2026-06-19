@@ -234,6 +234,7 @@
         let currentUser = null;          // Firebase Auth user
         let adminData = null;            // Admin doc data (subscription, etc.)
         let subscriptionPlan = 'free';
+        let _firstAuthCheck = true;      // Prevent double render on initial load
 
         // Toast Function
         function showToast(message, type = 'info') {
@@ -270,10 +271,6 @@
                 authBtn.style.color = '#f39c12';
                 authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
                 isManageMode = true;
-                // Re-render profile selection to show admin controls
-                if (selection.style.display === 'block') {
-                    await showProfileSelection();
-                }
             } else {
                 currentUser = null;
                 adminData = null;
@@ -282,11 +279,14 @@
                 authBtn.style.color = '#ddd';
                 authStatus.innerHTML = '';
                 isManageMode = false;
-                // Re-render to hide admin controls
-                if (selection.style.display === 'block') {
-                    await showProfileSelection();
-                }
             }
+            
+            // Re-render if profile selection is visible, but skip the very first auth check
+            // (initHub already renders profiles on page load)
+            if (!_firstAuthCheck && selection.style.display === 'block') {
+                await showProfileSelection();
+            }
+            _firstAuthCheck = false;
         });
 
         window.handleAuthClick = () => {
@@ -457,6 +457,7 @@
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
             isManageMode = false;
+            _firstAuthCheck = false;
             initHub();
         }
 
