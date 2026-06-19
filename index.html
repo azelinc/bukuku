@@ -71,15 +71,68 @@
             border-bottom: 4px solid #ccc !important;
         }
 
-        /* 6. ADMIN & PROFILES */
+        /* 6. PROFILES */
         .profile-row { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
         .profile-select-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
-        .admin-controls { display: flex; gap: 5px; }
-        .del-btn { background: #ff7675; border: none; color: white; padding: 12px; border-radius: 12px; cursor: pointer; display: none; }
-        .prem-toggle-btn { background: #eee; border: none; color: #aaa; padding: 12px; border-radius: 12px; cursor: pointer; display: none; font-size: 1.1rem; }
-        .prem-toggle-btn.is-premium { background: #f1c40f; color: white; }
 
-        /* 7. MOBILE OVERRIDES */
+        /* 7. ADMIN CONTROLS - improved visibility */
+        .admin-controls { display: flex; gap: 6px; align-items: stretch; }
+        .del-btn, .prem-toggle-btn {
+            border: none; padding: 10px 14px; border-radius: 12px; cursor: pointer; display: none;
+            font-size: 0.85rem; font-weight: 700; white-space: nowrap; transition: 0.15s;
+        }
+        .prem-toggle-btn { background: #e8e8e8; color: #888; }
+        .prem-toggle-btn:hover { background: #ddd; }
+        .prem-toggle-btn.is-premium { background: #f1c40f; color: #7d6608; }
+        .del-btn { background: #ff7675; color: white; }
+        .del-btn:hover { background: #ff5e5e; }
+
+        /* 8. MANAGE BAR - the key UI improvement */
+        .manage-bar {
+            display: none; align-items: center; justify-content: space-between;
+            background: #f8f9fa; border: 2px solid #e0e0e0; border-radius: 14px;
+            padding: 12px 16px; margin: 0 0 18px 0;
+        }
+        .manage-bar.visible { display: flex; }
+        .manage-bar-label {
+            font-size: 0.9rem; font-weight: 700; color: #555;
+            display: flex; align-items: center; gap: 8px;
+        }
+        /* Toggle switch */
+        .manage-toggle {
+            position: relative; width: 52px; height: 28px; flex-shrink: 0;
+            background: #ccc; border-radius: 14px; cursor: pointer;
+            transition: 0.25s; border: none; padding: 0;
+        }
+        .manage-toggle.on { background: #f39c12; }
+        .manage-toggle::after {
+            content: ''; position: absolute; top: 3px; left: 3px;
+            width: 22px; height: 22px; background: white; border-radius: 50%;
+            transition: 0.25s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        .manage-toggle.on::after { left: 27px; }
+        .manage-toggle-label {
+            font-size: 0.8rem; font-weight: 700; min-width: 32px; text-align: center;
+        }
+
+        /* 9. AUTH BAR - more prominent */
+        .auth-bar {
+            display: flex; align-items: center; justify-content: center; gap: 12px;
+            margin-top: 18px; padding: 12px 16px;
+            background: #f5f5f5; border-radius: 14px;
+        }
+        .auth-btn {
+            background: none; border: none; cursor: pointer;
+            font-size: 0.8rem; padding: 4px 8px; font-weight: 600;
+            color: #999; transition: 0.2s;
+        }
+        .auth-btn.signed-in { color: #f39c12; background: #fff3e0; border-radius: 20px; padding: 6px 14px; }
+        .auth-btn.signed-out { color: #aaa; }
+        .auth-status {
+            font-size: 0.7rem; color: #aaa;
+        }
+
+        /* 10. MOBILE OVERRIDES */
         @media (max-width: 600px) {
             body { background: #ffffff; padding: 0; display: block; }
             .idx-container { border: none; border-radius: 0; box-shadow: none; min-height: 100vh; }
@@ -88,7 +141,7 @@
             .idx-btn { padding: 22px; border-radius: 15px; }
         }
 
-        /* 8. LOADING ANIMATION */
+        /* 11. LOADING ANIMATION */
         .spinner {
             width: 50px; height: 50px;
             border: 5px solid #f3f3f3;
@@ -102,21 +155,14 @@
             100% { transform: rotate(360deg); }
         }
 
-        /* 9. AUTH BADGE */
-        .auth-badge {
-            display: inline-flex; align-items: center; gap: 5px;
-            font-size: 0.75rem; padding: 4px 10px; border-radius: 15px;
-            cursor: pointer; transition: 0.2s;
-        }
-        .auth-badge.signed-in { background: #f1c40f; color: #2c3e50; }
-        .auth-badge.signed-out { background: #eee; color: #999; }
+        /* 12. SUBSCRIPTION BADGE */
         .sub-badge {
-            font-size: 0.7rem; padding: 2px 8px; border-radius: 10px;
+            font-size: 0.65rem; padding: 2px 8px; border-radius: 10px;
             background: #2ecc71; color: white; margin-left: 4px;
         }
         .sub-badge.free { background: #95a5a6; }
 
-        /* 10. TOAST NOTIFICATIONS */
+        /* 13. TOAST NOTIFICATIONS */
         #toast-container {
             position: fixed; bottom: 20px; left: 50%;
             transform: translateX(-50%);
@@ -171,12 +217,22 @@
         <div id="profile-selection" class="idx-content" style="display: none;">
             <h1 style="margin-bottom:10px;">👋 Welcome!</h1>
             <p id="selection-sub" class="idx-subtext">Who is online today?</p>
+            
+            <!-- MANAGE BAR - visible only when signed in -->
+            <div id="manage-bar" class="manage-bar">
+                <span class="manage-bar-label">🔧 Manage Profiles</span>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span id="manage-toggle-label" class="manage-toggle-label">OFF</span>
+                    <button id="manage-toggle" class="manage-toggle" onclick="toggleManageMode()"></button>
+                </div>
+            </div>
+
             <div id="profile-list"></div>
             <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
                 <button id="create-profile-btn" class="idx-btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
-                <div style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-top: 5px;">
-                    <button id="auth-btn" onclick="handleAuthClick()" style="background:none; border:none; cursor:pointer; font-size: 0.7rem; padding: 5px;">🔑 Sign In</button>
-                    <span id="auth-status" style="font-size: 0.65rem; color: #ccc;"></span>
+                <div class="auth-bar">
+                    <button id="auth-btn" class="auth-btn signed-out" onclick="handleAuthClick()">🔑 Sign In</button>
+                    <span id="auth-status" class="auth-status"></span>
                 </div>
             </div>
         </div>
@@ -230,12 +286,16 @@
         const menu = document.getElementById('main-menu');
         const header = document.getElementById('main-header');
         const toastContainer = document.getElementById('toast-container');
+        const manageBar = document.getElementById('manage-bar');
+        const manageToggle = document.getElementById('manage-toggle');
+        const manageToggleLabel = document.getElementById('manage-toggle-label');
         
-        let isManageMode = false;
-        let currentUser = null;          // Firebase Auth user
-        let adminData = null;            // Admin doc data (subscription, etc.)
+        let isAdmin = false;            // Whether user is authenticated
+        let manageActive = true;        // Whether manage mode toggle is ON (default ON when admin)
+        let currentUser = null;         // Firebase Auth user
+        let adminData = null;           // Admin doc data (subscription, etc.)
         let subscriptionPlan = 'free';
-        let _firstAuthCheck = true;      // Prevent double render on initial load
+        let _firstAuthCheck = true;     // Prevent double render on initial load
 
         // Toast Function
         function showToast(message, type = 'info') {
@@ -248,12 +308,43 @@
             }, 3000);
         }
 
-        function fallbackToSignedOut() {
-            document.getElementById('auth-btn').innerHTML = '🔑 Sign In';
-            document.getElementById('auth-btn').style.color = '#ddd';
-            document.getElementById('auth-status').innerHTML = '';
-            isManageMode = false;
+        function updateManageBar() {
+            if (isAdmin) {
+                manageBar.classList.add('visible');
+                manageToggle.classList.toggle('on', manageActive);
+                manageToggleLabel.textContent = manageActive ? 'ON' : 'OFF';
+            } else {
+                manageBar.classList.remove('visible');
+                manageActive = false;
+            }
         }
+
+        function updateAuthUI(email) {
+            const authBtn = document.getElementById('auth-btn');
+            const authStatus = document.getElementById('auth-status');
+            if (email) {
+                authBtn.innerHTML = `🔑 ${email}`;
+                authBtn.className = 'auth-btn signed-in';
+                authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
+            } else {
+                authBtn.innerHTML = '🔑 Sign In';
+                authBtn.className = 'auth-btn signed-out';
+                authStatus.innerHTML = '';
+            }
+        }
+
+        function fallbackToSignedOut() {
+            updateAuthUI(null);
+            isAdmin = false;
+            manageActive = false;
+            updateManageBar();
+        }
+
+        window.toggleManageMode = () => {
+            manageActive = !manageActive;
+            updateManageBar();
+            showProfileSelection();
+        };
 
         // ---- AUTH STATE ----
         // Check localStorage first for instant UI, Firebase will verify
@@ -261,16 +352,15 @@
         if (storedAuth) {
             try {
                 const { email } = JSON.parse(storedAuth);
-                document.getElementById('auth-btn').innerHTML = `🔑 ${email}`;
-                document.getElementById('auth-btn').style.color = '#f39c12';
-                document.getElementById('auth-status').innerHTML = 'Admin <span class="sub-badge">···</span>';
+                isAdmin = true;
+                manageActive = true;
+                updateAuthUI(email);
+                updateManageBar();
             } catch(e) {}
         }
 
         onAuthStateChanged(auth, async (user) => {
             currentUser = user;
-            const authBtn = document.getElementById('auth-btn');
-            const authStatus = document.getElementById('auth-status');
             
             if (user) {
                 // Save to localStorage
@@ -288,23 +378,21 @@
                     subscriptionPlan = 'free';
                 }
                 
-                authBtn.innerHTML = `🔑 ${user.email}`;
-                authBtn.style.color = '#f39c12';
-                authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
-                isManageMode = true;
+                isAdmin = true;
+                manageActive = true;
+                updateAuthUI(user.email);
             } else {
-                // Don't clear localStorage here — session may still be restoring
                 currentUser = null;
                 adminData = null;
                 subscriptionPlan = 'free';
-                // Only update button if localStorage doesn't show a signed-in state
+                // Only sign out UI if localStorage doesn't show a signed-in state
                 if (!localStorage.getItem('bukuku_auth')) {
-                    authBtn.innerHTML = '🔑 Sign In';
-                    authBtn.style.color = '#ddd';
-                    authStatus.innerHTML = '';
+                    isAdmin = false;
+                    manageActive = false;
+                    updateAuthUI(null);
                 }
-                isManageMode = false;
             }
+            updateManageBar();
             
             // Re-render if visible, but skip first check (initHub already renders)
             if (!_firstAuthCheck && selection.style.display === 'block') {
@@ -317,10 +405,10 @@
             if (currentUser) {
                 if (confirm('Sign out of admin account?')) {
                     localStorage.removeItem('bukuku_auth');
-                    document.getElementById('auth-btn').innerHTML = '🔑 Sign In';
-                    document.getElementById('auth-btn').style.color = '#ddd';
-                    document.getElementById('auth-status').innerHTML = '';
-                    isManageMode = false;
+                    isAdmin = false;
+                    manageActive = false;
+                    updateAuthUI(null);
+                    updateManageBar();
                     signOut(auth);
                     showToast('Signed out', 'info');
                     showProfileSelection();
@@ -354,16 +442,12 @@
             loading.style.display = 'none';
             selection.style.display = 'block';
             
-            // Update auth button state
-            const authBtn = document.getElementById('auth-btn');
-            const authStatus = document.getElementById('auth-status');
             const createBtn = document.getElementById('create-profile-btn');
             
             if (currentUser) {
-                authBtn.innerHTML = `🔑 ${currentUser.email}`;
-                authBtn.style.color = '#f39c12';
-                authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
-                isManageMode = true;
+                isAdmin = true;
+                manageActive = true;
+                updateAuthUI(currentUser.email);
                 createBtn.style.display = 'block';
             } else {
                 // Check localStorage for cached auth in case Firebase hasn't restored yet
@@ -371,10 +455,9 @@
                 if (storedAuth) {
                     try {
                         const { email } = JSON.parse(storedAuth);
-                        authBtn.innerHTML = `🔑 ${email}`;
-                        authBtn.style.color = '#f39c12';
-                        authStatus.innerHTML = 'Admin <span class="sub-badge">···</span>';
-                        isManageMode = true;
+                        isAdmin = true;
+                        manageActive = true;
+                        updateAuthUI(email);
                     } catch(e) {
                         fallbackToSignedOut();
                     }
@@ -383,6 +466,7 @@
                 }
                 createBtn.style.display = 'block';
             }
+            updateManageBar();
             
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
@@ -407,14 +491,14 @@
                     ctrl.className = "admin-controls";
                     const premBtn = document.createElement('button');
                     premBtn.className = "prem-toggle-btn" + (isPremium ? " is-premium" : "");
-                    premBtn.innerHTML = "⭐";
-                    premBtn.style.display = isManageMode ? "block" : "none";
+                    premBtn.innerHTML = isPremium ? "⭐ Premium" : "⭐ Free";
+                    premBtn.style.display = manageActive && isAdmin ? "block" : "none";
                     premBtn.onclick = (e) => { e.stopPropagation(); togglePremium(name, isPremium); };
 
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
-                    delBtn.innerHTML = "🗑️";
-                    delBtn.style.display = isManageMode ? "block" : "none";
+                    delBtn.innerHTML = "🗑️ Delete";
+                    delBtn.style.display = manageActive && isAdmin ? "block" : "none";
                     delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(name); };
 
                     ctrl.appendChild(premBtn);
@@ -496,7 +580,6 @@
 
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
-            isManageMode = false;
             _firstAuthCheck = false;
             initHub();
         }
@@ -508,23 +591,22 @@
         initHub();
         
         // Extra safety: re-check localStorage after module init in case
-        // onAuthStateChanged overwrote the button before session restored
+        // onAuthStateChanged fires late and the page is already visible
         setTimeout(() => {
-            const storedAuth = localStorage.getItem('bukuku_auth');
-            const btn = document.getElementById('auth-btn');
-            if (storedAuth && btn && btn.innerHTML.includes('Sign In')) {
-                const { email } = JSON.parse(storedAuth);
-                btn.innerHTML = `🔑 ${email}`;
-                btn.style.color = '#f39c12';
-                document.getElementById('auth-status').innerHTML = 'Admin <span class="sub-badge">···</span>';
+            if (selection.style.display === 'block') {
+                const storedAuth = localStorage.getItem('bukuku_auth');
+                if (storedAuth && !currentUser) {
+                    try {
+                        const { email } = JSON.parse(storedAuth);
+                        isAdmin = true;
+                        manageActive = true;
+                        updateAuthUI(email);
+                        updateManageBar();
+                        showProfileSelection();
+                    } catch(e) {}
+                }
             }
         }, 500);
-        
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('sw.js')
-            .then(() => console.log("PWA Service Worker Registered"))
-            .catch((err) => console.log("PWA Service Worker Failed", err));
-        }    
     </script>
 </body>
 </html>
