@@ -248,6 +248,13 @@
             }, 3000);
         }
 
+        function fallbackToSignedOut() {
+            document.getElementById('auth-btn').innerHTML = '🔑 Sign In';
+            document.getElementById('auth-btn').style.color = '#ddd';
+            document.getElementById('auth-status').innerHTML = '';
+            isManageMode = false;
+        }
+
         // ---- AUTH STATE ----
         // Check localStorage first for instant UI, Firebase will verify
         const storedAuth = localStorage.getItem('bukuku_auth');
@@ -359,10 +366,21 @@
                 isManageMode = true;
                 createBtn.style.display = 'block';
             } else {
-                authBtn.innerHTML = '🔑 Sign In';
-                authBtn.style.color = '#ddd';
-                authStatus.innerHTML = '';
-                isManageMode = false;
+                // Check localStorage for cached auth in case Firebase hasn't restored yet
+                const storedAuth = localStorage.getItem('bukuku_auth');
+                if (storedAuth) {
+                    try {
+                        const { email } = JSON.parse(storedAuth);
+                        authBtn.innerHTML = `🔑 ${email}`;
+                        authBtn.style.color = '#f39c12';
+                        authStatus.innerHTML = 'Admin <span class="sub-badge">···</span>';
+                        isManageMode = true;
+                    } catch(e) {
+                        fallbackToSignedOut();
+                    }
+                } else {
+                    fallbackToSignedOut();
+                }
                 createBtn.style.display = 'block';
             }
             
@@ -488,6 +506,19 @@
         
         // Start
         initHub();
+        
+        // Extra safety: re-check localStorage after module init in case
+        // onAuthStateChanged overwrote the button before session restored
+        setTimeout(() => {
+            const storedAuth = localStorage.getItem('bukuku_auth');
+            const btn = document.getElementById('auth-btn');
+            if (storedAuth && btn && btn.innerHTML.includes('Sign In')) {
+                const { email } = JSON.parse(storedAuth);
+                btn.innerHTML = `🔑 ${email}`;
+                btn.style.color = '#f39c12';
+                document.getElementById('auth-status').innerHTML = 'Admin <span class="sub-badge">···</span>';
+            }
+        }, 500);
         
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('sw.js')
