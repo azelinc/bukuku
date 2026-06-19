@@ -1,0 +1,999 @@
+{
+  "units": {
+    "1": {
+      "name": "Numbers and Operations",
+      "topics": {
+        "1.1": {
+          "name": "Explore Numbers",
+          "questions": [
+            {
+              "q": "What is the place value of the digit 5 in 52 173?",
+              "a": ["Ten thousands", "Thousands", "Hundreds", "Tens"],
+              "c": 0
+            },
+            {
+              "q": "What is the digit value of 8 in 14 087?",
+              "a": ["8 000", "800", "80", "8"],
+              "c": 2
+            },
+            {
+              "q": "Which of the following numbers has 3 ten thousands?",
+              "a": ["32 578", "51 398", "42 316", "43 721"],
+              "c": 0
+            },
+            {
+              "q": "Partition 62 307 correctly.",
+              "a": ["60 000 + 2 000 + 300 + 7", "62 000 + 300 + 7", "60 000 + 2 300 + 7", "62 300 + 7"],
+              "c": 0
+            },
+            {
+              "q": "Which is the smallest 5-digit number?",
+              "a": ["10 000", "9 999", "10 001", "11 111"],
+              "c": 0
+            },
+            {
+              "q": "What number comes after 49 999?",
+              "a": ["50 000", "49 998", "50 001", "49 999"],
+              "c": 0
+            },
+            {
+              "q": "Arrange in ascending order: 45 321, 45 231, 45 312, 45 123",
+              "a": ["45 123, 45 231, 45 312, 45 321", "45 321, 45 312, 45 231, 45 123", "45 123, 45 312, 45 231, 45 321", "45 231, 45 123, 45 312, 45 321"],
+              "c": 0
+            },
+            {
+              "q": "The number pattern increases by sevens: 26 418, 26 425, 26 432, ____. What is the next number?",
+              "a": ["26 439", "26 438", "26 429", "26 449"],
+              "c": 0
+            },
+            {
+              "q": "80 000 + 400 + 30 + 5 = _____",
+              "a": ["80 435", "84 035", "80 453", "84 350"],
+              "c": 0
+            },
+            {
+              "q": "Which digit has the value 7 000 in 87 241?",
+              "a": ["7", "8", "2", "1"],
+              "c": 0
+            }
+          ]
+        },
+        "1.2": {
+          "name": "Even and Odd Numbers",
+          "questions": [
+            {
+              "q": "Which of the following is an odd number?",
+              "a": ["37 421", "24 680", "52 424", "36 000"],
+              "c": 0
+            },
+            {
+              "q": "State all odd numbers from 520 to 531.",
+              "a": ["521, 523, 525, 527, 529, 531", "520, 522, 524, 526, 528, 530", "521, 523, 525, 527, 529", "522, 524, 526, 528, 530"],
+              "c": 2
+            },
+            {
+              "q": "Which month has an odd number of days?",
+              "a": ["January (31)", "June (30)", "April (30)", "November (30)"],
+              "c": 0
+            },
+            {
+              "q": "If a number ends with 0, 2, 4, 6, or 8, it is...",
+              "a": ["an even number", "an odd number", "a prime number", "a decimal number"],
+              "c": 0
+            },
+            {
+              "q": "Add the smallest even number and the largest odd number from this set: 15, 18, 21, 24, 27. What is the sum?",
+              "a": ["42", "39", "45", "33"],
+              "c": 0
+            }
+          ]
+        },
+        "1.3": {
+          "name": "Estimation",
+          "questions": [
+            {
+              "q": "Estimate the number of beads in a jar if there are about 100 beads in a small handful and you can scoop 8 handfuls.",
+              "a": ["About 800", "About 700", "About 900", "About 600"],
+              "c": 0
+            },
+            {
+              "q": "A classroom has 12 rows of chairs with 8 chairs in each row. Estimate the total number of chairs.",
+              "a": ["About 100", "About 120", "About 80", "About 150"],
+              "c": 0
+            },
+            {
+              "q": "Which of these is the best estimate for the volume of water in a 25-m pool if a 1-litre bottle fills about 10 cm of the pool's depth?",
+              "a": ["About 250 ℓ", "About 25 ℓ", "About 2 500 ℓ", "About 25 000 ℓ"],
+              "c": 0
+            },
+            {
+              "q": "A book has 198 pages. Estimate the number of pages in 6 similar books.",
+              "a": ["About 1 200", "About 1 000", "About 1 400", "About 800"],
+              "c": 0
+            },
+            {
+              "q": "A school has 485 pupils. Estimate the number of pupils in 4 similar schools.",
+              "a": ["About 2 000", "About 1 600", "About 1 800", "About 2 400"],
+              "c": 0
+            }
+          ]
+        },
+        "1.4": {
+          "name": "Round Off Numbers",
+          "questions": [
+            {
+              "q": "Round off 38 704 to the nearest ten thousand.",
+              "a": ["40 000", "38 000", "39 000", "30 000"],
+              "c": 0
+            },
+            {
+              "q": "Round off 19 500 mℓ to the nearest thousand mℓ.",
+              "a": ["20 000 mℓ", "19 000 mℓ", "20 500 mℓ", "19 500 mℓ"],
+              "c": 0
+            },
+            {
+              "q": "Round off RM63 988 to the nearest ten thousand ringgit.",
+              "a": ["RM60 000", "RM64 000", "RM70 000", "RM63 000"],
+              "c": 0
+            },
+            {
+              "q": "Round off 51 473 to the nearest thousand.",
+              "a": ["51 000", "52 000", "50 000", "51 500"],
+              "c": 0
+            },
+            {
+              "q": "A stadium seats 24 875 people. Round off this number to the nearest hundred.",
+              "a": ["24 900", "24 800", "25 000", "24 000"],
+              "c": 0
+            }
+          ]
+        },
+        "1.5": {
+          "name": "Multiplication and Division",
+          "questions": [
+            {
+              "q": "8 × 2 915 = ______",
+              "a": ["23 320", "23 230", "22 320", "24 320"],
+              "c": 0
+            },
+            {
+              "q": "7 560 ÷ 6 = ______",
+              "a": ["1 260", "1 250", "1 265", "1 270"],
+              "c": 0
+            },
+            {
+              "q": "A factory produces 1 250 bottles of sauce per day. How many bottles are produced in 5 days?",
+              "a": ["6 250", "5 250", "6 200", "6 000"],
+              "c": 0
+            },
+            {
+              "q": "There are 48 pupils in a hall. They are divided equally into 6 groups. How many pupils are in each group?",
+              "a": ["8", "6", "7", "9"],
+              "c": 0
+            },
+            {
+              "q": "Calculate 12 × 3 046.",
+              "a": ["36 552", "36 525", "35 652", "36 256"],
+              "c": 0
+            },
+            {
+              "q": "Divide 8 424 by 8.",
+              "a": ["1 053", "1 063", "1 053 remainder 4", "1 073"],
+              "c": 0
+            },
+            {
+              "q": "A gardener plants 2 016 seedlings equally in 7 rows. How many seedlings are in each row?",
+              "a": ["288", "298", "278", "308"],
+              "c": 0
+            },
+            {
+              "q": "38 725 ÷ 5 = ______",
+              "a": ["7 745", "7 765", "7 475", "7 745 remainder 2"],
+              "c": 0
+            },
+            {
+              "q": "A box contains 7 packets. Each packet has 125 marbles. How many marbles in total?",
+              "a": ["875", "825", "885", "915"],
+              "c": 0
+            },
+            {
+              "q": "9 504 ÷ 9 = ______",
+              "a": ["1 056", "1 056 remainder 1", "1 046", "1 065"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "2": {
+      "name": "Fractions, Decimals, and Percentages",
+      "topics": {
+        "2.1": {
+          "name": "Improper Fractions and Mixed Numbers",
+          "questions": [
+            {
+              "q": "Convert to mixed number: 11/4",
+              "a": ["2 3/4", "2 1/4", "3 1/4", "2 3/5"],
+              "c": 0
+            },
+            {
+              "q": "Convert to improper fraction: 3 2/5",
+              "a": ["17/5", "15/5", "13/5", "11/5"],
+              "c": 0
+            },
+            {
+              "q": "Which of these is a proper fraction?",
+              "a": ["3/4", "5/4", "7/4", "9/4"],
+              "c": 0
+            },
+            {
+              "q": "Convert 9/2 to a mixed number.",
+              "a": ["4 1/2", "4 1/4", "3 1/2", "4 3/4"],
+              "c": 0
+            },
+            {
+              "q": "Express 5 1/3 as an improper fraction.",
+              "a": ["16/3", "15/3", "17/3", "14/3"],
+              "c": 0
+            }
+          ]
+        },
+        "2.2": {
+          "name": "Addition and Subtraction of Fractions",
+          "questions": [
+            {
+              "q": "What is the total of 3/8 + 2/8?",
+              "a": ["5/8", "5/16", "1/2", "6/8"],
+              "c": 0
+            },
+            {
+              "q": "7/12 - 3/12 =",
+              "a": ["4/12 = 1/3", "4/12 = 2/6", "4/12", "10/12"],
+              "c": 0
+            },
+            {
+              "q": "Add: 1/3 + 1/4",
+              "a": ["7/12", "2/7", "2/12", "7/24"],
+              "c": 0
+            },
+            {
+              "q": "A cake is cut into 8 equal slices. Ali eats 3 slices and Mei eats 2 slices. What fraction of cake was eaten?",
+              "a": ["5/8", "5/16", "3/8", "2/8"],
+              "c": 0
+            },
+            {
+              "q": "2 1/3 + 1 1/3 =",
+              "a": ["3 2/3", "3 1/3", "4 2/3", "3 2/6"],
+              "c": 0
+            },
+            {
+              "q": "5/6 - 1/2 =",
+              "a": ["1/3", "2/6", "4/6", "2/3"],
+              "c": 0
+            },
+            {
+              "q": "Mina used 2/5 of a roll of ribbon. What fraction of the ribbon is left?",
+              "a": ["3/5", "2/5", "1/5", "4/5"],
+              "c": 0
+            },
+            {
+              "q": "3/10 + 2/5 =",
+              "a": ["7/10", "5/15", "5/10", "3/10"],
+              "c": 0
+            },
+            {
+              "q": "Solve: 2 1/2 - 1 1/4",
+              "a": ["1 1/4", "1 1/2", "1 3/4", "1 1/6"],
+              "c": 0
+            },
+            {
+              "q": "A pizza was cut into 6 equal slices. Ben took 2 slices and Chan took 1 slice. What is the total fraction of pizza taken?",
+              "a": ["1/2", "1/3", "3/6 = 1/2", "2/6"],
+              "c": 2
+            }
+          ]
+        },
+        "2.3": {
+          "name": "Addition and Subtraction of Decimals",
+          "questions": [
+            {
+              "q": "2.5 + 1.8 =",
+              "a": ["4.3", "3.13", "4.13", "3.3"],
+              "c": 0
+            },
+            {
+              "q": "7.65 - 3.42 =",
+              "a": ["4.23", "4.22", "4.13", "4.43"],
+              "c": 0
+            },
+            {
+              "q": "A 1.5 ℓ bottle is filled with 0.8 ℓ of water. How much more water is needed to fill it?",
+              "a": ["0.7 ℓ", "0.3 ℓ", "0.5 ℓ", "0.9 ℓ"],
+              "c": 0
+            },
+            {
+              "q": "5.09 + 3.87 =",
+              "a": ["8.96", "8.86", "8.97", "9.96"],
+              "c": 0
+            },
+            {
+              "q": "10.0 - 4.56 =",
+              "a": ["5.44", "5.54", "6.44", "4.44"],
+              "c": 0
+            },
+            {
+              "q": "The total mass of three bags is 1.5 kg, 2.3 kg, and 0.7 kg. What is the total mass?",
+              "a": ["4.5 kg", "4.0 kg", "3.5 kg", "5.5 kg"],
+              "c": 0
+            },
+            {
+              "q": "6.24 + 12.76 =",
+              "a": ["19.00", "18.90", "19.10", "18.00"],
+              "c": 0
+            },
+            {
+              "q": "15.80 - 9.95 =",
+              "a": ["5.85", "5.95", "6.05", "5.75"],
+              "c": 0
+            },
+            {
+              "q": "A piece of cloth is 3.6 m long. 1.8 m is used to make a shirt. What length is left?",
+              "a": ["1.8 m", "2.2 m", "1.6 m", "2.0 m"],
+              "c": 0
+            },
+            {
+              "q": "Add: 4.07 + 5.93",
+              "a": ["10.00", "9.90", "10.10", "9.00"],
+              "c": 0
+            }
+          ]
+        },
+        "2.4": {
+          "name": "Multiplication and Division of Decimals",
+          "questions": [
+            {
+              "q": "3 × 2.5 =",
+              "a": ["7.5", "7.0", "6.5", "8.5"],
+              "c": 0
+            },
+            {
+              "q": "4.8 ÷ 4 =",
+              "a": ["1.2", "1.4", "1.6", "1.0"],
+              "c": 0
+            },
+            {
+              "q": "A bottle contains 1.75 ℓ of juice. How many ℓ are there in 6 such bottles?",
+              "a": ["10.5 ℓ", "10.0 ℓ", "9.5 ℓ", "11.0 ℓ"],
+              "c": 0
+            },
+            {
+              "q": "6.4 ÷ 8 =",
+              "a": ["0.8", "0.7", "0.9", "1.0"],
+              "c": 0
+            },
+            {
+              "q": "5 × 0.63 =",
+              "a": ["3.15", "3.00", "2.85", "3.25"],
+              "c": 0
+            }
+          ]
+        },
+        "2.5": {
+          "name": "Fractions, Decimals and Percentages",
+          "questions": [
+            {
+              "q": "Express 1/2 as a percentage.",
+              "a": ["50%", "25%", "75%", "100%"],
+              "c": 0
+            },
+            {
+              "q": "Express 25% as a fraction in its simplest form.",
+              "a": ["1/4", "25/100", "1/2", "5/20"],
+              "c": 0
+            },
+            {
+              "q": "What is 3/4 as a percentage?",
+              "a": ["75%", "25%", "50%", "100%"],
+              "c": 0
+            },
+            {
+              "q": "30 out of 100 pupils cycle to school. What percentage is this?",
+              "a": ["30%", "3%", "70%", "13%"],
+              "c": 0
+            },
+            {
+              "q": "A class has 25 children. 60% are boys. How many boys are there?",
+              "a": ["15", "12", "10", "18"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "3": {
+      "name": "Money",
+      "topics": {
+        "3.1": {
+          "name": "Basic Operations with Money",
+          "questions": [
+            {
+              "q": "RM25.50 + RM18.70 =",
+              "a": ["RM44.20", "RM43.20", "RM44.00", "RM43.70"],
+              "c": 0
+            },
+            {
+              "q": "RM50.00 - RM27.85 =",
+              "a": ["RM22.15", "RM22.85", "RM23.15", "RM22.05"],
+              "c": 0
+            },
+            {
+              "q": "A book costs RM12.50 and a pen costs RM3.80. What is the total cost?",
+              "a": ["RM16.30", "RM15.30", "RM16.80", "RM15.80"],
+              "c": 0
+            },
+            {
+              "q": "5 × RM24.80 =",
+              "a": ["RM124.00", "RM120.00", "RM125.00", "RM134.00"],
+              "c": 0
+            },
+            {
+              "q": "RM85.50 ÷ 3 =",
+              "a": ["RM28.50", "RM28.00", "RM29.50", "RM27.50"],
+              "c": 0
+            },
+            {
+              "q": "A school collects RM756.50 for a charity. They need RM1 000. How much more money do they need?",
+              "a": ["RM243.50", "RM244.50", "RM243.00", "RM253.50"],
+              "c": 0
+            },
+            {
+              "q": "6 friends share the cost of a gift equally. The gift costs RM73.80. How much does each pay?",
+              "a": ["RM12.30", "RM12.80", "RM13.30", "RM11.80"],
+              "c": 0
+            },
+            {
+              "q": "RM100.00 - RM34.90 - RM25.50 =",
+              "a": ["RM39.60", "RM38.60", "RM40.60", "RM49.60"],
+              "c": 0
+            },
+            {
+              "q": "A packet of biscuits costs RM2.40. How much do 7 packets cost?",
+              "a": ["RM16.80", "RM14.80", "RM15.80", "RM17.80"],
+              "c": 0
+            },
+            {
+              "q": "RM250.00 ÷ 8 =",
+              "a": ["RM31.25", "RM31.50", "RM32.25", "RM30.25"],
+              "c": 0
+            }
+          ]
+        },
+        "3.2": {
+          "name": "Manage Money Wisely",
+          "questions": [
+            {
+              "q": "Ahmad has RM50 pocket money. He spends RM32.50 on food and saves the rest. How much does he save?",
+              "a": ["RM17.50", "RM18.50", "RM16.50", "RM27.50"],
+              "c": 0
+            },
+            {
+              "q": "A school bag costs RM45.90. A wallet costs RM12.80. What is the price difference?",
+              "a": ["RM33.10", "RM32.10", "RM33.90", "RM34.10"],
+              "c": 0
+            },
+            {
+              "q": "Siti has RM200. She wants to buy 3 shirts at RM35.90 each. Does she have enough money?",
+              "a": ["Yes, she has RM92.30 left", "No, she needs RM7.70 more", "Yes, she has RM100 left", "No, she needs RM10 more"],
+              "c": 0
+            },
+            {
+              "q": "A family spends RM12.50 on breakfast, RM28.90 on lunch, and RM45.60 on dinner. What is the total spent on meals?",
+              "a": ["RM87.00", "RM86.00", "RM88.00", "RM77.00"],
+              "c": 0
+            },
+            {
+              "q": "Encik Ramli saves RM125.60 per month. How much does he save in 4 months?",
+              "a": ["RM502.40", "RM500.00", "RM512.40", "RM492.40"],
+              "c": 0
+            }
+          ]
+        },
+        "3.3": {
+          "name": "Foreign Currency and Payment Instruments",
+          "questions": [
+            {
+              "q": "Which of the following is NOT a type of payment instrument?",
+              "a": ["Weight", "Cash", "Credit card", "Online banking"],
+              "c": 0
+            },
+            {
+              "q": "The currency used in Singapore is called...",
+              "a": ["Singapore Dollar", "Ringgit", "Rupiah", "Baht"],
+              "c": 0
+            },
+            {
+              "q": "A cheque is considered a...",
+              "a": ["payment instrument", "type of currency", "coin", "bank account"],
+              "c": 0
+            },
+            {
+              "q": "Which currency is used in Japan?",
+              "a": ["Yen", "Yuan", "Won", "Dollar"],
+              "c": 0
+            },
+            {
+              "q": "The safest way to carry a large amount of money when travelling abroad is...",
+              "a": ["A travel card or credit card", "Cash", "Gold", "A cheque book"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "4": {
+      "name": "Time",
+      "topics": {
+        "4.1": {
+          "name": "12-hour and 24-hour Systems",
+          "questions": [
+            {
+              "q": "What is 2:00 p.m. in the 24-hour system?",
+              "a": ["1400 hours", "0200 hours", "1200 hours", "1600 hours"],
+              "c": 0
+            },
+            {
+              "q": "What is 2000 hours in the 12-hour system?",
+              "a": ["8:00 p.m.", "8:00 a.m.", "10:00 p.m.", "2:00 p.m."],
+              "c": 0
+            },
+            {
+              "q": "What is 11:30 a.m. in the 24-hour system?",
+              "a": ["1130 hours", "2330 hours", "0130 hours", "1230 hours"],
+              "c": 0
+            },
+            {
+              "q": "Convert 7:45 p.m. to the 24-hour system.",
+              "a": ["1945 hours", "0745 hours", "1745 hours", "2045 hours"],
+              "c": 0
+            },
+            {
+              "q": "School starts at 0730 hours. What time is this in the 12-hour system?",
+              "a": ["7:30 a.m.", "7:30 p.m.", "5:30 p.m.", "5:30 a.m."],
+              "c": 0
+            },
+            {
+              "q": "A TV programme starts at 2100 hours. What time is this in the 12-hour system?",
+              "a": ["9:00 p.m.", "9:00 a.m.", "10:00 p.m.", "8:00 p.m."],
+              "c": 0
+            },
+            {
+              "q": "Which time is later: 1530 hours or 3:30 p.m.?",
+              "a": ["They are the same time", "1530 hours", "3:30 p.m.", "Cannot compare"],
+              "c": 0
+            },
+            {
+              "q": "Convert 0015 hours to the 12-hour system.",
+              "a": ["12:15 a.m.", "12:15 p.m.", "1:15 a.m.", "1:15 p.m."],
+              "c": 0
+            },
+            {
+              "q": "What is 10:10 a.m. in the 24-hour system?",
+              "a": ["1010 hours", "2210 hours", "1110 hours", "2010 hours"],
+              "c": 0
+            },
+            {
+              "q": "Convert 2359 hours to the 12-hour system.",
+              "a": ["11:59 p.m.", "11:59 a.m.", "12:59 a.m.", "1:59 p.m."],
+              "c": 0
+            }
+          ]
+        },
+        "4.2": {
+          "name": "Duration and Estimation",
+          "questions": [
+            {
+              "q": "The school day starts at 7:30 a.m. and ends at 1:30 p.m. How long is the school day?",
+              "a": ["6 hours", "5 hours", "7 hours", "4 hours"],
+              "c": 0
+            },
+            {
+              "q": "A journey starts at 0945 hours and ends at 1345 hours. How long is the journey?",
+              "a": ["4 hours", "3 hours", "5 hours", "4 hours 30 minutes"],
+              "c": 0
+            },
+            {
+              "q": "A movie starts at 2:15 p.m. and lasts 1 hour 45 minutes. What time does it end?",
+              "a": ["4:00 p.m.", "3:00 p.m.", "3:45 p.m.", "4:15 p.m."],
+              "c": 0
+            },
+            {
+              "q": "If a baby sleeps from 9:30 p.m. to 6:00 a.m., how long does he sleep?",
+              "a": ["8 hours 30 minutes", "9 hours", "7 hours 30 minutes", "8 hours"],
+              "c": 0
+            },
+            {
+              "q": "A bus leaves at 1100 hours and arrives at 1330 hours. How long is the journey?",
+              "a": ["2 hours 30 minutes", "2 hours", "3 hours", "1 hour 30 minutes"],
+              "c": 0
+            }
+          ]
+        },
+        "4.3": {
+          "name": "Millennium, Century, Decade",
+          "questions": [
+            {
+              "q": "How many years are in a decade?",
+              "a": ["10 years", "100 years", "1 000 years", "50 years"],
+              "c": 0
+            },
+            {
+              "q": "How many years are in one century?",
+              "a": ["100 years", "10 years", "1 000 years", "50 years"],
+              "c": 0
+            },
+            {
+              "q": "How many years are in a millennium?",
+              "a": ["1 000 years", "100 years", "10 000 years", "10 years"],
+              "c": 0
+            },
+            {
+              "q": "How many decades are there in one century?",
+              "a": ["10 decades", "100 decades", "5 decades", "20 decades"],
+              "c": 0
+            },
+            {
+              "q": "If a building was built in 1990, how many decades old is it in 2026?",
+              "a": ["3 decades", "4 decades", "2 decades", "5 decades"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Length, Mass, and Volume of Liquid",
+      "topics": {
+        "5.1": {
+          "name": "Length (mm, cm, m, km)",
+          "questions": [
+            {
+              "q": "How many millimetres are in 1 centimetre?",
+              "a": ["10 mm", "100 mm", "1 000 mm", "5 mm"],
+              "c": 0
+            },
+            {
+              "q": "Convert 5 km to metres.",
+              "a": ["5 000 m", "500 m", "50 000 m", "500 cm"],
+              "c": 0
+            },
+            {
+              "q": "A pencil is 15 cm long. How many millimetres is that?",
+              "a": ["150 mm", "15 mm", "1 500 mm", "1.5 mm"],
+              "c": 0
+            },
+            {
+              "q": "A rope is 3.5 m long. Express this in centimetres.",
+              "a": ["350 cm", "35 cm", "3 500 cm", "3 050 cm"],
+              "c": 0
+            },
+            {
+              "q": "Which is longer? 0.25 km or 250 m?",
+              "a": ["They are the same length", "0.25 km", "250 m", "Cannot compare"],
+              "c": 0
+            },
+            {
+              "q": "Add: 2.3 km + 1.8 km =",
+              "a": ["4.1 km", "4.0 km", "3.1 km", "4.2 km"],
+              "c": 0
+            },
+            {
+              "q": "A ribbon is 80 cm long. 35 cm is cut off. What length is left?",
+              "a": ["45 cm", "55 cm", "35 cm", "50 cm"],
+              "c": 0
+            },
+            {
+              "q": "A garden is 6 m wide and 8 m long. What is the total distance around the garden?",
+              "a": ["28 m", "48 m", "14 m", "24 m"],
+              "c": 0
+            },
+            {
+              "q": "How many centimetres are in 2.5 m?",
+              "a": ["250 cm", "25 cm", "2 500 cm", "205 cm"],
+              "c": 0
+            },
+            {
+              "q": "A road is 2.85 km long. Another road is 3.6 km long. Total length =",
+              "a": ["6.45 km", "6.35 km", "5.45 km", "6.50 km"],
+              "c": 0
+            }
+          ]
+        },
+        "5.2": {
+          "name": "Mass (g and kg)",
+          "questions": [
+            {
+              "q": "How many grams are in 1 kilogram?",
+              "a": ["1 000 g", "100 g", "10 g", "10 000 g"],
+              "c": 0
+            },
+            {
+              "q": "Convert 3.5 kg to grams.",
+              "a": ["3 500 g", "350 g", "35 000 g", "305 g"],
+              "c": 0
+            },
+            {
+              "q": "A bag of rice weighs 2 kg. A bag of flour weighs 750 g. What is the total mass in grams?",
+              "a": ["2 750 g", "2 750 kg", "750 g", "2 075 g"],
+              "c": 0
+            },
+            {
+              "q": "A watermelon weighs 4.8 kg. A pineapple weighs 1.2 kg. How much heavier is the watermelon?",
+              "a": ["3.6 kg", "4.0 kg", "3.0 kg", "6.0 kg"],
+              "c": 0
+            },
+            {
+              "q": "5 identical bags have a total mass of 12.5 kg. What is the mass of each bag?",
+              "a": ["2.5 kg", "2.0 kg", "3.0 kg", "2.2 kg"],
+              "c": 0
+            }
+          ]
+        },
+        "5.3": {
+          "name": "Volume of Liquid (ml and ℓ)",
+          "questions": [
+            {
+              "q": "How many millilitres are in 1 litre?",
+              "a": ["1 000 mℓ", "100 mℓ", "10 mℓ", "10 000 mℓ"],
+              "c": 0
+            },
+            {
+              "q": "Convert 2.5 ℓ to millilitres.",
+              "a": ["2 500 mℓ", "250 mℓ", "25 000 mℓ", "2 050 mℓ"],
+              "c": 0
+            },
+            {
+              "q": "A bottle has 750 mℓ of water. Another 600 mℓ is added. What is the total volume in ℓ?",
+              "a": ["1.35 ℓ", "1.35 mℓ", "13.5 ℓ", "1.5 ℓ"],
+              "c": 0
+            },
+            {
+              "q": "A pail holds 5 ℓ of water. 1.75 ℓ is used to water plants. How much water is left?",
+              "a": ["3.25 ℓ", "3.75 ℓ", "4.25 ℓ", "2.25 ℓ"],
+              "c": 0
+            },
+            {
+              "q": "Three bottles contain 0.8 ℓ, 1.2 ℓ, and 1.5 ℓ respectively. Total volume =",
+              "a": ["3.5 ℓ", "3.0 ℓ", "3.8 ℓ", "2.5 ℓ"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Space",
+      "topics": {
+        "6.1": {
+          "name": "Angles",
+          "questions": [
+            {
+              "q": "A right angle is equal to...",
+              "a": ["90°", "45°", "180°", "60°"],
+              "c": 0
+            },
+            {
+              "q": "Which angle is smaller than a right angle?",
+              "a": ["Acute angle", "Obtuse angle", "Straight angle", "Reflex angle"],
+              "c": 0
+            },
+            {
+              "q": "Which of these angles is obtuse?",
+              "a": ["120°", "80°", "90°", "40°"],
+              "c": 0
+            },
+            {
+              "q": "How many right angles make a straight line?",
+              "a": ["2", "1", "3", "4"],
+              "c": 0
+            },
+            {
+              "q": "A triangle has a right angle and two equal angles. What type of triangle is it?",
+              "a": ["Right-angled isosceles triangle", "Equilateral triangle", "Scalene triangle", "Obtuse triangle"],
+              "c": 0
+            }
+          ]
+        },
+        "6.2": {
+          "name": "2D Shapes",
+          "questions": [
+            {
+              "q": "How many sides does a hexagon have?",
+              "a": ["6", "5", "7", "8"],
+              "c": 0
+            },
+            {
+              "q": "Which shape has 4 equal sides and 4 right angles?",
+              "a": ["Square", "Rectangle", "Rhombus", "Parallelogram"],
+              "c": 0
+            },
+            {
+              "q": "An isosceles triangle has...",
+              "a": ["two equal sides", "three equal sides", "no equal sides", "four sides"],
+              "c": 0
+            },
+            {
+              "q": "Which shape has exactly 3 lines of symmetry?",
+              "a": ["Equilateral triangle", "Square", "Isosceles triangle", "Rectangle"],
+              "c": 0
+            },
+            {
+              "q": "A pentagon has how many vertices?",
+              "a": ["5", "6", "4", "7"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "7": {
+      "name": "Coordinates, Ratio, and Proportion",
+      "topics": {
+        "7.1": {
+          "name": "Coordinates",
+          "questions": [
+            {
+              "q": "In a grid, the point (3, 5) means...",
+              "a": ["3 units across, 5 units up", "5 units across, 3 units up", "3 units across, 5 units down", "5 units across, 3 units down"],
+              "c": 0
+            },
+            {
+              "q": "Which point is at the origin (0, 0) on a coordinate grid?",
+              "a": ["The starting point where both axes meet", "The top left corner", "The bottom right corner", "The middle of the grid"],
+              "c": 0
+            },
+            {
+              "q": "If point A is at (2, 4) and point B is at (2, 7), what is the same about them?",
+              "a": ["They have the same x-coordinate", "They have the same y-coordinate", "They are at the same point", "Nothing"],
+              "c": 0
+            },
+            {
+              "q": "A point is plotted 4 units across and 3 units up from the origin. What are its coordinates?",
+              "a": ["(4, 3)", "(3, 4)", "(4, 4)", "(3, 3)"],
+              "c": 0
+            },
+            {
+              "q": "On a grid, which direction does the y-axis go?",
+              "a": ["Vertical (up and down)", "Horizontal (left and right)", "Diagonal", "Circular"],
+              "c": 0
+            }
+          ]
+        },
+        "7.2": {
+          "name": "Ratio",
+          "questions": [
+            {
+              "q": "There are 3 apples and 5 oranges. What is the ratio of apples to oranges?",
+              "a": ["3 : 5", "5 : 3", "3 : 8", "5 : 8"],
+              "c": 0
+            },
+            {
+              "q": "A recipe uses 2 cups of flour for every 1 cup of sugar. What is the ratio of flour to sugar?",
+              "a": ["2 : 1", "1 : 2", "2 : 3", "3 : 1"],
+              "c": 0
+            },
+            {
+              "q": "In a class, the ratio of boys to girls is 4 : 3. If there are 12 boys, how many girls are there?",
+              "a": ["9", "8", "10", "6"],
+              "c": 0
+            },
+            {
+              "q": "A drink is made by mixing 1 part syrup with 4 parts water. What is the ratio of syrup to water?",
+              "a": ["1 : 4", "4 : 1", "1 : 5", "5 : 1"],
+              "c": 0
+            },
+            {
+              "q": "There are 6 red marbles and 4 blue marbles. What is the ratio of red to blue marbles in its simplest form?",
+              "a": ["3 : 2", "6 : 4", "2 : 3", "4 : 6"],
+              "c": 0
+            }
+          ]
+        },
+        "7.3": {
+          "name": "Proportion",
+          "questions": [
+            {
+              "q": "If 3 pens cost RM6.00, how much do 6 pens cost?",
+              "a": ["RM12.00", "RM9.00", "RM18.00", "RM15.00"],
+              "c": 0
+            },
+            {
+              "q": "A car uses 8 litres of petrol to travel 100 km. How much petrol is needed for 300 km?",
+              "a": ["24 litres", "16 litres", "20 litres", "32 litres"],
+              "c": 0
+            },
+            {
+              "q": "4 workers take 6 days to paint a house. How long will 8 workers take?",
+              "a": ["3 days", "2 days", "4 days", "1 day"],
+              "c": 0
+            },
+            {
+              "q": "2 kg of flour makes 24 roti canai. How many roti canai can be made with 5 kg of flour?",
+              "a": ["60", "48", "72", "84"],
+              "c": 0
+            },
+            {
+              "q": "If 5 apples cost RM4.00, find the cost of 15 apples.",
+              "a": ["RM12.00", "RM10.00", "RM8.00", "RM20.00"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    },
+    "8": {
+      "name": "Data Handling",
+      "topics": {
+        "8.1": {
+          "name": "Pictographs",
+          "questions": [
+            {
+              "q": "In a pictograph, each symbol represents 5 books. If there are 6 symbols, how many books are there?",
+              "a": ["30", "6", "11", "35"],
+              "c": 0
+            },
+            {
+              "q": "A pictograph shows 4 full symbols and 1 half symbol. Each full symbol represents 10 votes. How many votes is this?",
+              "a": ["45", "40", "50", "35"],
+              "c": 0
+            },
+            {
+              "q": "A pictograph about favourite fruits shows: Mango 🥭🥭🥭, Apple 🍎🍎, Orange 🍊🍊🍊🍊. Each fruit icon = 4 children. Which fruit is the most popular?",
+              "a": ["Orange", "Mango", "Apple", "Cannot tell"],
+              "c": 0
+            },
+            {
+              "q": "In a pictograph, one icon = 10 pupils. There are 3 icons for football and 5 icons for badminton. How many more pupils like badminton than football?",
+              "a": ["20", "15", "30", "10"],
+              "c": 0
+            },
+            {
+              "q": "If a pictograph shows 4.5 symbols and each symbol = 8 children, how many children is this?",
+              "a": ["36", "32", "40", "34"],
+              "c": 0
+            }
+          ]
+        },
+        "8.2": {
+          "name": "Bar Charts",
+          "questions": [
+            {
+              "q": "A bar chart shows sales of ice cream: Monday=15, Tuesday=20, Wednesday=25, Thursday=10. Which day had the highest sales?",
+              "a": ["Wednesday", "Tuesday", "Monday", "Thursday"],
+              "c": 0
+            },
+            {
+              "q": "In a bar chart, the height of a bar reaches 8 units. Each unit represents 5 children. How many children does this bar represent?",
+              "a": ["40", "8", "13", "45"],
+              "c": 0
+            },
+            {
+              "q": "A bar chart shows 4 bars: Red=20, Blue=35, Green=15, Yellow=30. What is the total number of items?",
+              "a": ["100", "80", "90", "110"],
+              "c": 0
+            },
+            {
+              "q": "In a bar chart, a bar height of 12 represents 60 pupils. What does each unit represent?",
+              "a": ["5 pupils", "6 pupils", "10 pupils", "4 pupils"],
+              "c": 0
+            },
+            {
+              "q": "A bar chart shows the number of books read in a week: Mon=3, Tue=5, Wed=2, Thu=4, Fri=6. How many more books were read on Friday than Wednesday?",
+              "a": ["4", "3", "2", "5"],
+              "c": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

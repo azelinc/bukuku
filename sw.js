@@ -1,4 +1,4 @@
-const CACHE_NAME = 'af-hub-v7';
+const CACHE_NAME = 'af-hub-v8';
 const ASSETS = [
   '/',
   '/index.html',
@@ -24,7 +24,9 @@ const ASSETS = [
   '/math.json',
   '/eng.json',
   '/sci.json',
-  '/rbt.json'
+  '/rbt.json',
+  '/tuition-tb.html',
+  '/math4-tb.json'
 ];
 
 // Install Service Worker
