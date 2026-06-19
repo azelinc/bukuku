@@ -125,6 +125,7 @@
             <div>
                 <h1>⚙️ Admin Panel</h1>
                 <span id="admin-email" style="font-size:0.8rem; color:#aaa;"></span>
+                <a href="login.html" style="font-size:0.7rem; color:#f39c12; margin-left:8px;" onclick="localStorage.removeItem('bukuku_auth');">[sign out]</a>
             </div>
             <a href="index.html?_=cb">← Hub</a>
         </div>
@@ -139,8 +140,12 @@
         <div id="denied-state" class="card access-denied" style="display:none;">
             <div style="font-size:3rem;">🔒</div>
             <h2>Access Denied</h2>
-            <p>Only platform administrators can access this page.</p>
-            <a href="login.html?_=cb"><button class="auth-btn">Sign In</button></a>
+            <p id="denied-msg">Only platform administrators can access this page.</p>
+            <p id="denied-email" style="font-size:0.8rem; color:#999; margin-bottom:15px;"></p>
+            <button class="auth-btn" onclick="window.location.reload()">Try Again</button>
+            <div style="margin-top:10px;">
+                <a href="login.html?_=cb"><button class="auth-btn" style="background:#2ecc71; margin-top:8px;">Sign In</button></a>
+            </div>
         </div>
 
         <!-- ADMIN DASHBOARD -->
@@ -198,6 +203,26 @@
         let allAccounts = [];
         let currentUser_ = null;
         let isOwner = false;
+
+        // ---- CHECK localStorage for instant auth (same as hub) ----
+        const storedAdminAuth = localStorage.getItem('bukuku_auth');
+        if (storedAdminAuth) {
+            try {
+                const parsed = JSON.parse(storedAdminAuth);
+                if (parsed.email === PLATFORM_OWNER) {
+                    isOwner = true;
+                    adminEmail.textContent = 'Loading... (' + parsed.email + ')';
+                    // Show loading while Firebase confirms, start loading accounts
+                    loadAccounts().then(() => {
+                        renderAccounts();
+                        loadingEl.style.display = 'none';
+                        deniedEl.style.display = 'none';
+                        dashboardEl.style.display = 'block';
+                        adminEmail.textContent = parsed.email;
+                    });
+                }
+            } catch(e) {}
+        }
 
         function showToast(msg, type = 'info') {
             const c = document.getElementById('toast-container');
@@ -304,6 +329,13 @@
         // Auth
         onAuthStateChanged(auth, async (user) => {
             currentUser_ = user;
+            // If already showing from localStorage, just update the email
+            if (dashboardEl.style.display === 'block') {
+                if (user && user.email === PLATFORM_OWNER) {
+                    adminEmail.textContent = user.email;
+                }
+                return;
+            }
             if (user && user.email === PLATFORM_OWNER) {
                 isOwner = true;
                 adminEmail.textContent = user.email;
@@ -317,10 +349,14 @@
                 loadingEl.style.display = 'none';
                 deniedEl.style.display = 'block';
                 dashboardEl.style.display = 'none';
+                document.getElementById('denied-msg').textContent = 'Signed in as ' + user.email;
+                document.getElementById('denied-email').textContent = 'Only azel.inc@gmail.com can access this page.';
             } else {
                 loadingEl.style.display = 'none';
                 deniedEl.style.display = 'block';
                 dashboardEl.style.display = 'none';
+                document.getElementById('denied-msg').textContent = 'Not signed in. Sign in with the owner account.';
+                document.getElementById('denied-email').textContent = '';
             }
         });
 
