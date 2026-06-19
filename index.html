@@ -5,117 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AF Adventure Hub</title>
     
-    <!-- Link to Manifest -->
     <link rel="manifest" href="manifest.json">
-    <!-- iOS Support tags -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="AF Hub">
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/5351/5351460.png">
    
     <style>
-        /* 1. RESET & BASE */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { 
-            font-family: 'Segoe UI', Roboto, sans-serif; 
-            background: #1a1a2e; 
+        body {
+            font-family: 'Segoe UI', Roboto, sans-serif;
+            background: #1a1a2e;
             min-height: 100vh;
-            display: flex; justify-content: center; align-items: center; 
+            display: flex; justify-content: center; align-items: center;
             padding: 15px;
         }
-
-        /* 2. THE CONTAINER */
-        .idx-container { 
-            width: 100%; max-width: 480px; 
-            background: #ffffff; border-radius: 30px; 
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4); 
+        .idx-container {
+            width: 100%; max-width: 480px;
+            background: #ffffff; border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
             text-align: center; border: 6px solid #ffd700;
             overflow: hidden; display: flex; flex-direction: column;
-            position: relative; 
+            position: relative;
         }
-
-        /* 3. APP HEADER */
         .idx-header {
             background: #ffffff; color: #1a1a2e; padding: 15px 25px;
             display: flex; align-items: center; justify-content: space-between;
             border-bottom: 2px solid #eee; width: 100%;
         }
         .idx-header h1 { font-size: 1.4rem; margin: 0; }
-        .idx-user-badge { 
-            font-weight: bold; color: #2c3e50; font-size: 0.85rem; 
-            background: #f1c40f; padding: 5px 12px; border-radius: 20px; 
+        .idx-user-badge {
+            font-weight: bold; color: #2c3e50; font-size: 0.85rem;
+            background: #f1c40f; padding: 5px 12px; border-radius: 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1); white-space: nowrap;
         }
         .premium-star { color: #f39c12; font-weight: bold; }
-
-        /* 4. CONTENT PADDING */
         .idx-content { padding: 30px 25px; width: 100%; flex-grow: 1; }
         .idx-subtext { margin-bottom: 20px; color: #666; font-size: 1rem; }
-
-        /* 5. BUTTON STYLES */
         .idx-btn {
             display: block; width: 100%; padding: 18px; margin: 12px 0;
             font-size: 1.2rem; font-weight: 800; color: white !important;
-            text-decoration: none; border-radius: 18px; border: none; 
+            text-decoration: none; border-radius: 18px; border: none;
             cursor: pointer; text-align: center; transition: 0.2s;
         }
         .green-btn { background: #2ecc71 !important; border-bottom: 5px solid #27ae60; }
         .blue-btn { background: #4a90e2 !important; border-bottom: 5px solid #2e6cb5; }
         .orange-btn { background: #f39c12 !important; border-bottom: 6px solid #c87f0a; }
         .red-btn { background: #e74c3c !important; border-bottom: 6px solid #c0392b; }
-        
         .idx-btn:active { transform: translateY(3px); border-bottom-width: 1px; }
-        .idx-btn-disabled { 
-            background: #e0e0e0 !important; color: #999 !important; 
+        .idx-btn-disabled {
+            background: #e0e0e0 !important; color: #999 !important;
             opacity: 0.7; pointer-events: none; filter: grayscale(1);
             border-bottom: 4px solid #ccc !important;
         }
-
-        /* 6. PROFILES */
         .profile-row { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
         .profile-select-btn { flex: 1; margin: 0 !important; display: flex; align-items: center; justify-content: center; gap: 8px; }
-
-        /* 7. ADMIN CONTROLS - improved visibility */
-        .admin-controls { display: flex; gap: 6px; align-items: stretch; }
-        .del-btn, .prem-toggle-btn {
-            border: none; padding: 10px 14px; border-radius: 12px; cursor: pointer; display: none;
-            font-size: 0.85rem; font-weight: 700; white-space: nowrap; transition: 0.15s;
+        .profile-select-btn.locked { opacity: 0.5; filter: grayscale(0.5); }
+        .del-btn {
+            border: none; padding: 10px 14px; border-radius: 12px; cursor: pointer;
+            font-size: 0.85rem; font-weight: 700; white-space: nowrap;
+            background: #ff7675; color: white; display: none;
         }
-        .prem-toggle-btn { background: #e8e8e8; color: #888; }
-        .prem-toggle-btn:hover { background: #ddd; }
-        .prem-toggle-btn.is-premium { background: #f1c40f; color: #7d6608; }
-        .del-btn { background: #ff7675; color: white; }
         .del-btn:hover { background: #ff5e5e; }
-
-        /* 8. MANAGE BAR - the key UI improvement */
+        .upgrade-banner {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white; padding: 16px; border-radius: 14px;
+            margin: 15px 0; font-size: 0.85rem; font-weight: 700;
+            cursor: pointer; transition: 0.2s;
+        }
+        .upgrade-banner:hover { transform: scale(1.02); }
         .manage-bar {
             display: none; align-items: center; justify-content: space-between;
             background: #f8f9fa; border: 2px solid #e0e0e0; border-radius: 14px;
             padding: 12px 16px; margin: 0 0 18px 0;
         }
         .manage-bar.visible { display: flex; }
-        .manage-bar-label {
-            font-size: 0.9rem; font-weight: 700; color: #555;
-            display: flex; align-items: center; gap: 8px;
-        }
-        /* Toggle switch */
+        .manage-bar-label { font-size: 0.9rem; font-weight: 700; color: #555; display: flex; align-items: center; gap: 8px; }
         .manage-toggle {
             position: relative; width: 52px; height: 28px; flex-shrink: 0;
             background: #ccc; border-radius: 14px; cursor: pointer;
             transition: 0.25s; border: none; padding: 0;
         }
-        .manage-toggle.on { background: #f39c12; }
+        .manage-toggle.on { background: #e74c3c; }
         .manage-toggle::after {
             content: ''; position: absolute; top: 3px; left: 3px;
             width: 22px; height: 22px; background: white; border-radius: 50%;
             transition: 0.25s; box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         }
         .manage-toggle.on::after { left: 27px; }
-        .manage-toggle-label {
-            font-size: 0.8rem; font-weight: 700; min-width: 32px; text-align: center;
-        }
-
-        /* 9. AUTH BAR - more prominent */
+        .manage-toggle-label { font-size: 0.8rem; font-weight: 700; min-width: 32px; text-align: center; }
         .auth-bar {
             display: flex; align-items: center; justify-content: center; gap: 12px;
             margin-top: 18px; padding: 12px 16px;
@@ -128,11 +106,13 @@
         }
         .auth-btn.signed-in { color: #f39c12; background: #fff3e0; border-radius: 20px; padding: 6px 14px; }
         .auth-btn.signed-out { color: #aaa; }
-        .auth-status {
-            font-size: 0.7rem; color: #aaa;
+        .auth-status { font-size: 0.7rem; color: #aaa; }
+        .sub-badge {
+            font-size: 0.65rem; padding: 2px 8px; border-radius: 10px;
+            background: #2ecc71; color: white; margin-left: 4px;
         }
-
-        /* 10. MOBILE OVERRIDES */
+        .sub-badge.free { background: #95a5a6; }
+        .sub-badge.premium { background: #f39c12; }
         @media (max-width: 600px) {
             body { background: #ffffff; padding: 0; display: block; }
             .idx-container { border: none; border-radius: 0; box-shadow: none; min-height: 100vh; }
@@ -140,8 +120,6 @@
             .idx-header h1 { color: white; }
             .idx-btn { padding: 22px; border-radius: 15px; }
         }
-
-        /* 11. LOADING ANIMATION */
         .spinner {
             width: 50px; height: 50px;
             border: 5px solid #f3f3f3;
@@ -150,19 +128,7 @@
             animation: spin 1s linear infinite;
             margin: 0 auto 20px auto;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-
-        /* 12. SUBSCRIPTION BADGE */
-        .sub-badge {
-            font-size: 0.65rem; padding: 2px 8px; border-radius: 10px;
-            background: #2ecc71; color: white; margin-left: 4px;
-        }
-        .sub-badge.free { background: #95a5a6; }
-
-        /* 13. TOAST NOTIFICATIONS */
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         #toast-container {
             position: fixed; bottom: 20px; left: 50%;
             transform: translateX(-50%);
@@ -183,7 +149,6 @@
         .toast.success { background: #2ecc71; }
         .toast.error { background: #e74c3c; }
         .toast.info { background: #3498db; }
-        
         @keyframes fadeInOut {
             0% { opacity: 0; transform: translateY(20px); }
             10% { opacity: 1; transform: translateY(0); }
@@ -194,11 +159,9 @@
 </head>
 <body>
 
-    <!-- TOAST CONTAINER -->
     <div id="toast-container"></div>
 
     <div class="idx-container">
-        <!-- HEADER -->
         <header id="main-header" class="idx-header" style="display: none;">
             <h1>AF Education Hub</h1>
             <div class="header-right">
@@ -206,7 +169,6 @@
             </div>
         </header>
 
-        <!-- LOADING SCREEN -->
         <div id="loading-screen" style="padding: 100px 20px;">
             <div class="spinner"></div>
             <h2>Loading...</h2>
@@ -217,8 +179,8 @@
         <div id="profile-selection" class="idx-content" style="display: none;">
             <h1 style="margin-bottom:10px;">👋 Welcome!</h1>
             <p id="selection-sub" class="idx-subtext">Who is online today?</p>
-            
-            <!-- MANAGE BAR - visible only when signed in -->
+
+            <!-- MANAGE BAR -->
             <div id="manage-bar" class="manage-bar">
                 <span class="manage-bar-label">🔧 Manage Profiles</span>
                 <div style="display:flex; align-items:center; gap:8px;">
@@ -228,11 +190,20 @@
             </div>
 
             <div id="profile-list"></div>
+
+            <!-- UPGRADE BANNER (shown when free user hits profile limit) -->
+            <div id="upgrade-banner" class="upgrade-banner" style="display:none;" onclick="showUpgradeInfo()">
+                🚀 Upgrade to Premium — unlimited profiles & advanced features
+            </div>
+
             <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
-                <button id="create-profile-btn" class="idx-btn green-btn" onclick="showNewUserForm()">+ New Explorer</button>
+                <button id="create-profile-btn" class="idx-btn green-btn" onclick="showNewUserForm()">
+                    + New Explorer
+                </button>
                 <div class="auth-bar">
                     <button id="auth-btn" class="auth-btn signed-out" onclick="handleAuthClick()">🔑 Sign In</button>
                     <span id="auth-status" class="auth-status"></span>
+                    <a id="admin-link" href="admin.html" style="display:none; font-size:0.7rem; color:#f39c12; text-decoration:none; font-weight:600;">⚙️</a>
                 </div>
             </div>
         </div>
@@ -246,18 +217,36 @@
             <button onclick="initHub()" style="margin-top: 15px; background:none; border:none; color:#999; cursor:pointer; text-decoration: underline; width:100%;">Cancel</button>
         </div>
 
+        <!-- UPGRADE INFO MODAL -->
+        <div id="upgrade-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); z-index:999; display:none; align-items:center; justify-content:center; padding:20px;">
+            <div style="background:white; border-radius:24px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+                <div style="font-size:3rem; margin-bottom:10px;">🚀</div>
+                <h2 style="margin-bottom:5px;">Upgrade to Premium</h2>
+                <p style="color:#666; margin-bottom:20px; font-size:0.9rem;">Get unlimited profiles, advanced subjects & quizzes, and ad-free experience!</p>
+                <div style="background:#f8f9fa; border-radius:14px; padding:15px; margin-bottom:20px;">
+                    <p style="font-weight:700; font-size:1.3rem;">RMXX</p>
+                    <p style="color:#666; font-size:0.8rem;">One-time payment • Lifetime access</p>
+                </div>
+                <div style="background:#f5f5f5; border-radius:14px; padding:20px; margin-bottom:20px;">
+                    <p style="font-weight:700; margin-bottom:8px;">📱 Scan to pay via TNG</p>
+                    <div style="width:160px; height:160px; background:#ddd; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#999; font-size:0.8rem;">
+                        [QR Code Placeholder]
+                    </div>
+                    <p style="margin-top:8px; font-size:0.8rem; color:#666;">After payment, email <strong>azel.inc@gmail.com</strong> with your account email</p>
+                </div>
+                <button onclick="document.getElementById('upgrade-modal').style.display='none'" style="background:none; border:none; color:#999; cursor:pointer; font-size:0.85rem;">Close</button>
+            </div>
+        </div>
+
         <!-- MAIN MENU -->
         <div id="main-menu" class="idx-content" style="display: none;">
             <p class="idx-subtext" style="font-weight:bold;">Ready for today's lesson?</p>
-            
             <div class="nav-grid">
                 <a href="school.html" class="idx-btn green-btn">🏫 Primary School Hub</a>
                 <a href="schoolhigh.html" class="idx-btn green-btn">🏫 Secondary School Hub</a>
-                
                 <div class="idx-btn idx-btn-disabled">📖 Library (coming soon)</div>
                 <div class="idx-btn idx-btn-disabled">🎮 Games (coming soon)</div>
             </div>
-            
             <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #ff1100; width: 100%;">👤 Switch Profile</button>
         </div>
     </div>
@@ -265,7 +254,7 @@
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getAuth, onAuthStateChanged, signOut, browserLocalPersistence, setPersistence } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSy...39cs",
@@ -280,6 +269,7 @@
         const auth = getAuth(app);
         setPersistence(auth, browserLocalPersistence);
         const db = getFirestore(app);
+
         const loading = document.getElementById('loading-screen');
         const selection = document.getElementById('profile-selection');
         const setup = document.getElementById('name-setup');
@@ -289,22 +279,22 @@
         const manageBar = document.getElementById('manage-bar');
         const manageToggle = document.getElementById('manage-toggle');
         const manageToggleLabel = document.getElementById('manage-toggle-label');
-        
-        let isAdmin = false;            // Whether user is authenticated
-        let manageActive = true;        // Whether manage mode toggle is ON (default ON when admin)
-        let currentUser = null;         // Firebase Auth user
-        let adminData = null;           // Admin doc data (subscription, etc.)
+        const upgradeBanner = document.getElementById('upgrade-banner');
+        const upgradeModal = document.getElementById('upgrade-modal');
+
+        let isAdmin = false;
+        let manageActive = false;
+        let currentUser = null;
         let subscriptionPlan = 'free';
-        
-        // Toast Function
+        let profileCount = 0;
+        const FREE_PROFILE_LIMIT = 1;
+
         function showToast(message, type = 'info') {
             const toast = document.createElement('div');
             toast.className = `toast ${type}`;
             toast.innerText = message;
             toastContainer.appendChild(toast);
-            setTimeout(() => {
-                toast.remove();
-            }, 3000);
+            setTimeout(() => toast.remove(), 3000);
         }
 
         function updateManageBar() {
@@ -325,10 +315,17 @@
                 authBtn.innerHTML = `🔑 ${email}`;
                 authBtn.className = 'auth-btn signed-in';
                 authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
+                // Show admin panel link for platform owner
+                const adminLink = document.getElementById('admin-link');
+                if (adminLink) {
+                    adminLink.style.display = email === 'azel.inc@gmail.com' ? 'inline-block' : 'none';
+                }
             } else {
                 authBtn.innerHTML = '🔑 Sign In';
                 authBtn.className = 'auth-btn signed-out';
                 authStatus.innerHTML = '';
+                const adminLink = document.getElementById('admin-link');
+                if (adminLink) adminLink.style.display = 'none';
             }
         }
 
@@ -345,8 +342,42 @@
             showProfileSelection();
         };
 
+        window.showUpgradeInfo = () => {
+            upgradeModal.style.display = 'flex';
+        };
+
+        // ---- AUTO-MIGRATION from old users/{name} to profiles/{uid}/{name} ----
+        async function migrateOldProfiles(uid) {
+            try {
+                // Check if old users/ collection has any profiles
+                const oldSnap = await getDocs(collection(db, "users"));
+                if (oldSnap.empty) return 0;
+
+                // Check if already migrated (profiles exist under this uid)
+                const newSnap = await getDocs(collection(db, "profiles", uid));
+                if (!newSnap.empty) return 0; // already migrated
+
+                let migrated = 0;
+                for (const docSnap of oldSnap.docs) {
+                    const name = docSnap.id;
+                    const data = docSnap.data();
+                    // Copy to profiles/{uid}/{name}
+                    await setDoc(doc(db, "profiles", uid, name), {
+                        name: name,
+                        createdAt: data.createdAt || data.lastLogin || new Date(),
+                        lastLogin: data.lastLogin || null,
+                        progress: data.progress || {}
+                    });
+                    migrated++;
+                }
+                return migrated;
+            } catch (e) {
+                console.error("Migration error:", e);
+                return -1;
+            }
+        }
+
         // ---- AUTH STATE ----
-        // Check localStorage first for instant UI, Firebase will verify
         const storedAuth = localStorage.getItem('bukuku_auth');
         if (storedAuth) {
             try {
@@ -360,31 +391,42 @@
 
         onAuthStateChanged(auth, async (user) => {
             currentUser = user;
-            
+
             if (user) {
-                // Save to localStorage
                 localStorage.setItem('bukuku_auth', JSON.stringify({ email: user.email, uid: user.uid }));
-                
-                // Fetch admin doc for subscription info
+
+                // Fetch/initialize admin doc
                 try {
-                    const adminSnap = await getDoc(doc(db, "admins", user.uid));
+                    const adminRef = doc(db, "admins", user.uid);
+                    const adminSnap = await getDoc(adminRef);
                     if (adminSnap.exists()) {
                         adminData = adminSnap.data();
                         subscriptionPlan = adminData.subscription?.plan || 'free';
+                    } else {
+                        // Create admin doc on sign-in if missing
+                        await setDoc(adminRef, {
+                            email: user.email,
+                            subscription: { plan: "free" },
+                            updatedAt: new Date()
+                        }, { merge: true });
+                        subscriptionPlan = 'free';
                     }
                 } catch (e) {
-                    adminData = null;
                     subscriptionPlan = 'free';
                 }
-                
+
+                // Auto-migrate old profiles
+                const migrated = await migrateOldProfiles(user.uid);
+                if (migrated > 0) {
+                    showToast(`Migrated ${migrated} profiles!`, 'success');
+                }
+
                 isAdmin = true;
                 manageActive = true;
                 updateAuthUI(user.email);
             } else {
                 currentUser = null;
-                adminData = null;
                 subscriptionPlan = 'free';
-                // Only sign out UI if localStorage doesn't show a signed-in state
                 if (!localStorage.getItem('bukuku_auth')) {
                     isAdmin = false;
                     manageActive = false;
@@ -392,8 +434,7 @@
                 }
             }
             updateManageBar();
-            
-            // Re-render if profile selection is visible
+
             if (selection.style.display === 'block') {
                 await showProfileSelection();
             }
@@ -439,16 +480,17 @@
         async function showProfileSelection() {
             loading.style.display = 'none';
             selection.style.display = 'block';
-            
+            upgradeModal.style.display = 'none';
+
             const createBtn = document.getElementById('create-profile-btn');
-            
+            profileCount = 0;
+
             if (currentUser) {
                 isAdmin = true;
                 manageActive = true;
                 updateAuthUI(currentUser.email);
                 createBtn.style.display = 'block';
             } else {
-                // Check localStorage for cached auth in case Firebase hasn't restored yet
                 const storedAuth = localStorage.getItem('bukuku_auth');
                 if (storedAuth) {
                     try {
@@ -465,81 +507,75 @@
                 createBtn.style.display = 'block';
             }
             updateManageBar();
-            
+
             const list = document.getElementById('profile-list');
             list.innerHTML = '';
+            upgradeBanner.style.display = 'none';
+
             try {
-                const querySnapshot = await getDocs(collection(db, "users"));
-                if (querySnapshot.empty) {
+                let profiles = [];
+
+                if (currentUser) {
+                    // Read profiles scoped to this user
+                    const snap = await getDocs(collection(db, "profiles", currentUser.uid));
+                    snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+                } else {
+                    // Fallback: read from old users/ collection (for backward compat during loading)
+                    const oldSnap = await getDocs(collection(db, "users"));
+                    oldSnap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+                }
+
+                profileCount = profiles.length;
+
+                if (profiles.length === 0) {
                     list.innerHTML = '<p style="color: #999; padding: 20px;">No profiles yet. Create one!</p>';
                 }
-                querySnapshot.forEach((docSnap) => {
-                    const userData = docSnap.data();
-                    const name = docSnap.id;
-                    const isPremium = userData.isPremium === true;
 
+                profiles.forEach(({ name, data }) => {
                     const row = document.createElement('div');
                     row.className = "profile-row";
                     const btn = document.createElement('button');
                     btn.className = "idx-btn blue-btn profile-select-btn";
-                    btn.innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
+                    btn.innerHTML = `👤 ${name}`;
                     btn.onclick = () => selectProfile(name);
 
                     const ctrl = document.createElement('div');
                     ctrl.className = "admin-controls";
-                    const premBtn = document.createElement('button');
-                    premBtn.className = "prem-toggle-btn" + (isPremium ? " is-premium" : "");
-                    const authLoading = isAdmin && !currentUser && localStorage.getItem('bukuku_auth');
-                    premBtn.innerHTML = authLoading ? "⏳..." : (isPremium ? "⭐ Premium" : "⭐ Free");
-                    premBtn.style.display = manageActive && isAdmin ? "block" : "none";
-                    premBtn.disabled = authLoading;
-                    premBtn.style.opacity = authLoading ? "0.6" : "1";
-                    premBtn.onclick = (e) => { e.stopPropagation(); if (!authLoading) togglePremium(name, isPremium); };
+                    ctrl.style.display = 'flex';
 
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
-                    delBtn.innerHTML = authLoading ? "⏳..." : "🗑️ Delete";
+                    delBtn.innerHTML = "🗑️ Delete";
                     delBtn.style.display = manageActive && isAdmin ? "block" : "none";
+                    const authLoading = isAdmin && !currentUser && localStorage.getItem('bukuku_auth');
                     delBtn.disabled = authLoading;
                     delBtn.style.opacity = authLoading ? "0.6" : "1";
-                    delBtn.onclick = (e) => { e.stopPropagation(); if (!authLoading) deleteProfile(name); };
+                    delBtn.onclick = (e) => { e.stopPropagation(); if (!authLoading && currentUser) deleteProfile(name); };
 
-                    ctrl.appendChild(premBtn);
                     ctrl.appendChild(delBtn);
                     row.appendChild(btn); row.appendChild(ctrl);
                     list.appendChild(row);
                 });
-            } catch (e) { console.error(e); showToast("Failed to load profiles", "error"); }
-        }
 
-        async function togglePremium(name, currentStatus) {
-            if (!currentUser) {
-                showToast("Sign in to manage profiles", "error");
-                return;
-            }
-            try {
-                const userRef = doc(db, "users", name);
-                await updateDoc(userRef, { isPremium: !currentStatus });
-                showToast(`Premium status updated for ${name}`, "success");
-                showProfileSelection();
+                // Show upgrade banner if free and at limit
+                const isPremium = subscriptionPlan === 'premium';
+                if (!isPremium && profileCount >= FREE_PROFILE_LIMIT && currentUser) {
+                    upgradeBanner.style.display = 'block';
+                }
             } catch (e) {
-                showToast("Failed to update status", "error");
+                console.error(e);
+                showToast("Failed to load profiles", "error");
             }
         }
 
         async function deleteProfile(name) {
             if (!currentUser) {
-                const storedAuth = localStorage.getItem('bukuku_auth');
-                if (storedAuth) {
-                    showToast("Session loading, please try again...", "info");
-                } else {
-                    showToast("Sign in to manage profiles", "error");
-                }
+                showToast("Sign in to manage profiles", "error");
                 return;
             }
             if (confirm(`Delete explorer "${name}"?`)) {
                 try {
-                    await deleteDoc(doc(db, "users", name));
+                    await deleteDoc(doc(db, "profiles", currentUser.uid, name));
                     showToast(`Profile "${name}" deleted`, "success");
                     showProfileSelection();
                 } catch (e) {
@@ -555,8 +591,21 @@
                     showToast("Sign in to create profiles", "error");
                     return;
                 }
+
+                // Check profile limit
+                const isPremium = subscriptionPlan === 'premium';
+                if (!isPremium && profileCount >= FREE_PROFILE_LIMIT) {
+                    showUpgradeInfo();
+                    showToast("Upgrade to Premium to add more profiles", "info");
+                    return;
+                }
+
                 try {
-                    await setDoc(doc(db, "users", name), { lastLogin: new Date(), isPremium: false }, { merge: true });
+                    await setDoc(doc(db, "profiles", currentUser.uid, name), {
+                        name: name,
+                        createdAt: new Date(),
+                        lastLogin: new Date()
+                    });
                     showToast(`Welcome ${name}!`, "success");
                     selectProfile(name);
                 } catch (e) {
@@ -572,16 +621,20 @@
 
         async function renderMainMenu(name) {
             try {
-                const userDoc = await getDoc(doc(db, "users", name));
+                let userDoc;
+                if (currentUser) {
+                    userDoc = await getDoc(doc(db, "profiles", currentUser.uid, name));
+                } else {
+                    userDoc = await getDoc(doc(db, "users", name));
+                }
                 if (!userDoc.exists()) return false;
 
-                const isPremium = userDoc.data().isPremium === true;
                 loading.style.display = 'none';
                 selection.style.display = 'none';
                 setup.style.display = 'none';
                 menu.style.display = 'block';
                 header.style.display = 'flex';
-                document.getElementById('user-badge').innerHTML = `👤 ${name}${isPremium ? ' <span class="premium-star">⭐</span>' : ''}`;
+                document.getElementById('user-badge').innerHTML = `👤 ${name}`;
                 return true;
             } catch (e) { return false; }
         }
@@ -589,16 +642,15 @@
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
             initHub();
-        }
+        };
 
         window.initHub = initHub;
-        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; }
-        
+        window.showNewUserForm = () => { selection.style.display = 'none'; setup.style.display = 'block'; };
+
         // Start
         initHub();
-        
-        // Extra safety: re-check localStorage after module init in case
-        // onAuthStateChanged fires late and the page is already visible
+
+        // Safety re-check
         setTimeout(() => {
             if (selection.style.display === 'block') {
                 const storedAuth = localStorage.getItem('bukuku_auth');
