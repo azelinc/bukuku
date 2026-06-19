@@ -501,9 +501,16 @@
                 const storedAuth = localStorage.getItem('bukuku_auth');
                 if (storedAuth) {
                     try {
-                        const { email } = JSON.parse(storedAuth);
+                        const { email, uid } = JSON.parse(storedAuth);
                         isAdmin = true;
                         manageActive = true;
+                        // Re-fetch subscription using stored uid (Firebase may not be ready yet)
+                        try {
+                            const adminSnap = await getDoc(doc(db, "admins", uid));
+                            if (adminSnap.exists()) {
+                                subscriptionPlan = adminSnap.data().subscription?.plan || 'free';
+                            }
+                        } catch(e) {}
                         updateAuthUI(email);
                     } catch(e) {
                         fallbackToSignedOut();
