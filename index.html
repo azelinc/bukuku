@@ -249,12 +249,26 @@
         }
 
         // ---- AUTH STATE ----
+        // Check localStorage first for instant UI, Firebase will verify
+        const storedAuth = localStorage.getItem('bukuku_auth');
+        if (storedAuth) {
+            try {
+                const { email } = JSON.parse(storedAuth);
+                document.getElementById('auth-btn').innerHTML = `🔑 ${email}`;
+                document.getElementById('auth-btn').style.color = '#f39c12';
+                document.getElementById('auth-status').innerHTML = 'Admin <span class="sub-badge">···</span>';
+            } catch(e) {}
+        }
+
         onAuthStateChanged(auth, async (user) => {
             currentUser = user;
             const authBtn = document.getElementById('auth-btn');
             const authStatus = document.getElementById('auth-status');
             
             if (user) {
+                // Save to localStorage
+                localStorage.setItem('bukuku_auth', JSON.stringify({ email: user.email, uid: user.uid }));
+                
                 // Fetch admin doc for subscription info
                 try {
                     const adminSnap = await getDoc(doc(db, "admins", user.uid));
@@ -263,7 +277,6 @@
                         subscriptionPlan = adminData.subscription?.plan || 'free';
                     }
                 } catch (e) {
-                    // Admin doc might not exist yet — that's ok
                     adminData = null;
                     subscriptionPlan = 'free';
                 }
@@ -273,6 +286,7 @@
                 authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
                 isManageMode = true;
             } else {
+                localStorage.removeItem('bukuku_auth');
                 currentUser = null;
                 adminData = null;
                 subscriptionPlan = 'free';
@@ -282,8 +296,7 @@
                 isManageMode = false;
             }
             
-            // Re-render if profile selection is visible, but skip the very first auth check
-            // (initHub already renders profiles on page load)
+            // Re-render if visible, but skip first check (initHub already renders)
             if (!_firstAuthCheck && selection.style.display === 'block') {
                 await showProfileSelection();
             }
@@ -292,8 +305,8 @@
 
         window.handleAuthClick = () => {
             if (currentUser) {
-                // Toggle admin mode or sign out
                 if (confirm('Sign out of admin account?')) {
+                    localStorage.removeItem('bukuku_auth');
                     signOut(auth);
                     showToast('Signed out', 'info');
                 }

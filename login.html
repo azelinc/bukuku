@@ -214,13 +214,16 @@
         onAuthStateChanged(auth, (user) => {
             loadingEl.style.display = 'none';
             if (user) {
-                // Already logged in
+                // Save to localStorage for cross-page recognition
+                localStorage.setItem('bukuku_auth', JSON.stringify({ email: user.email, uid: user.uid }));
+                
                 loginForm.style.display = 'none';
                 registerForm.style.display = 'none';
                 loggedIn.style.display = 'block';
                 loggedEmail.textContent = user.email;
             } else {
-                // Not logged in - show login form
+                localStorage.removeItem('bukuku_auth');
+                
                 loggedIn.style.display = 'none';
                 loginForm.style.display = 'block';
             }
