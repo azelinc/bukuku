@@ -58,11 +58,67 @@
         .back-link { display: inline-block; margin: 10px 20px; color: #4a90e2; cursor: pointer; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
         .back-link:hover { text-decoration: underline; }
         .topic-header { font-size: 0.9rem; color: #999; margin-bottom: 15px; font-weight: 400; }
+
+        /* STARS ON TOPICS */
+        .topic-card .topic-stars { display: block; font-size: 0.9rem; margin-top: 4px; letter-spacing: 2px; }
+        .topic-card .topic-stars .star-on { color: #f39c12; }
+        .topic-card .topic-stars .star-off { color: #ddd; }
+
+        /* UNIT PROGRESS BAR */
+        .unit-progress-wrap { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+        .unit-progress-bar { flex: 1; height: 6px; background: #e8e8e8; border-radius: 10px; overflow: hidden; }
+        .unit-progress-fill { height: 100%; border-radius: 10px; background: #2ecc71; transition: width 0.5s; }
+        .unit-progress-text { font-weight: 400; font-size: 0.8rem; color: #999; white-space: nowrap; }
+
+        /* STREAK FLAME */
+        #streak-display { display: inline-flex; align-items: center; gap: 4px; margin-left: 12px; font-size: 1rem; font-weight: 700; color: #f39c12; vertical-align: middle; }
+        #streak-display .streak-off { color: #999; font-weight: 400; font-size: 0.8rem; }
+
+        /* CONFETTI OVERLAY */
+        #confetti-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 9999; overflow: hidden;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+        }
+        .confetti-piece {
+            position: absolute; width: 10px; height: 10px; top: 0;
+            animation: confetti-fall 2.5s ease-in forwards;
+        }
+
+        /* CELEBRATION MODAL OVERLAY */
+        .celebration-modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5); z-index: 9998;
+            display: flex; align-items: center; justify-content: center;
+            animation: fadeIn 0.3s;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.1); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .celebration-card {
+            background: white; border-radius: 30px; padding: 40px; text-align: center;
+            max-width: 320px; margin: 20px; animation: bounceIn 0.5s;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .celebration-card .big { font-size: 4rem; display: block; }
+        .celebration-card h2 { font-size: 1.8rem; color: #f39c12; margin: 10px 0; }
+        .celebration-card p { color: #666; margin: 0 0 20px; }
+        .celebration-card button { background: #f39c12; border: none; color: white; padding: 14px 40px; border-radius: 50px; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>📘 Textbook Practice</h1>
+        <h1>📘 Textbook Practice <span id="streak-display"></span></h1>
+
+        <!-- CONFETTI OVERLAY -->
+        <div id="confetti-overlay"></div>
 
         <!-- SUBJECT SELECTION SCREEN -->
         <div id="subject-screen">
@@ -166,6 +222,7 @@
         let timeLeft = 30;
         let answered = false;
         let currentUserId = null;
+        let userScores = {};
 
         // Get stored user
         function getUserId() {
@@ -181,10 +238,102 @@
             try {
                 const resp = await fetch('math4-tb.json');
                 questionBank = await resp.json();
+                await loadUserScores();
                 renderSubjects();
+                updateStreakDisplay();
             } catch(e) {
                 document.getElementById('subject-list').innerHTML = '<p style="color: #e74c3c;">⚠️ Failed to load questions.</p>';
             }
+        }
+
+        // Load user scores from Firestore
+        async function loadUserScores() {
+            const uid = getUserId();
+            if (!uid) return;
+            try {
+                const snap = await getDoc(doc(db, 'tb_scores', uid));
+                if (snap.exists()) userScores = snap.data();
+            } catch(e) {}
+        }
+
+        // Get star rating based on percentage
+        function getStars(pct) {
+            if (pct == null || pct === 0) return '<span class="star-off">☆☆☆</span>';
+            if (pct >= 80) return '<span class="star-on">★★★</span>';
+            if (pct >= 60) return '<span class="star-on">★★</span><span class="star-off">☆</span>';
+            return '<span class="star-on">★</span><span class="star-off">☆☆</span>';
+        }
+
+        // Update streak display in header
+        async function updateStreakDisplay() {
+            const el = document.getElementById('streak-display');
+            if (!userScores._streak || !userScores._streak.count) {
+                el.innerHTML = '';
+                return;
+            }
+            const count = userScores._streak.count;
+            const fire = count >= 3 ? '🔥' : count >= 2 ? '🔥' : '🔥';
+            el.innerHTML = `${fire} ${count}<span class="streak-off"> day${count > 1 ? 's' : ''}</span>`;
+        }
+
+        // Update streak after quiz
+        async function updateStreak() {
+            const uid = getUserId();
+            if (!uid) return;
+            const today = new Date().toISOString().split('T')[0];
+            const streak = userScores._streak || { count: 0, lastDate: null };
+
+            if (streak.lastDate === today) return; // already practiced today
+
+            const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+            if (streak.lastDate === yesterday) {
+                streak.count++;
+            } else {
+                streak.count = 1; // streak broken or first time
+            }
+            streak.lastDate = today;
+
+            try {
+                const docRef = doc(db, 'tb_scores', uid);
+                await setDoc(docRef, { ...userScores, _streak: streak }, { merge: true });
+                userScores._streak = streak;
+                updateStreakDisplay();
+            } catch(e) {}
+        }
+
+        // Confetti burst
+        function showConfetti() {
+            const overlay = document.getElementById('confetti-overlay');
+            overlay.innerHTML = '';
+            const colors = ['#e74c3c','#f39c12','#2ecc71','#3498db','#9b59b6','#e91e63','#ff9800'];
+            for (let i = 0; i < 60; i++) {
+                const piece = document.createElement('div');
+                piece.className = 'confetti-piece';
+                piece.style.left = Math.random() * 100 + '%';
+                piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+                piece.style.width = (Math.random() * 6 + 5) + 'px';
+                piece.style.height = (Math.random() * 6 + 5) + 'px';
+                piece.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+                piece.style.animationDelay = Math.random() * 1.5 + 's';
+                piece.style.animationDuration = (Math.random() * 1 + 2) + 's';
+                overlay.appendChild(piece);
+            }
+            setTimeout(() => overlay.innerHTML = '', 4000);
+        }
+
+        // Celebration modal for perfect score
+        function showCelebration() {
+            const modal = document.createElement('div');
+            modal.className = 'celebration-modal';
+            modal.id = 'celeb-modal';
+            modal.innerHTML = `
+                <div class="celebration-card">
+                    <span class="big">🎉</span>
+                    <h2>PERFECT!</h2>
+                    <p>You answered all questions correctly!<br>Amazing work! 🌟</p>
+                    <button onclick="document.getElementById('celeb-modal').remove()">Continue</button>
+                </div>`;
+            document.body.appendChild(modal);
         }
 
         // RENDER SUBJECT LIST
@@ -225,9 +374,21 @@
             Object.keys(units).forEach(uk => {
                 const u = units[uk];
                 const topics = Object.keys(u.topics);
+                // Calculate unit progress
+                let done = 0;
+                topics.forEach(tk => {
+                    const sk = `tb-${currentSubject}-${uk}-${tk}`;
+                    if (userScores[sk] && userScores[sk].score > 0) done++;
+                });
+                const pct = topics.length > 0 ? Math.round((done / topics.length) * 100) : 0;
+
                 const card = document.createElement('div');
                 card.className = 'unit-card';
-                card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}`;
+                card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
+                    <div class="unit-progress-wrap">
+                        <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
+                        <span class="unit-progress-text">${done}/${topics.length}</span>
+                    </div>`;
                 card.onclick = () => selectUnit(uk);
                 list.appendChild(card);
             });
@@ -248,9 +409,11 @@
             const topics = u.topics;
             Object.keys(topics).forEach(tk => {
                 const t = topics[tk];
+                const sk = `tb-${currentSubject}-${key}-${tk}`;
+                const pct = userScores[sk] ? userScores[sk].pct : 0;
                 const card = document.createElement('div');
                 card.className = 'topic-card';
-                card.innerHTML = `${tk} ${t.name}`;
+                card.innerHTML = `${tk} ${t.name}<span class="topic-stars">${getStars(pct)}</span>`;
                 card.onclick = () => startQuiz(tk);
                 topicList.appendChild(card);
             });
@@ -380,24 +543,36 @@
 
             // Save to Firestore
             const uid = getUserId();
+            let isNewBest = false;
             if (uid) {
                 try {
                     const scoreKey = `tb-${currentSubject}-${currentUnit}-${currentTopic}`;
                     const docRef = doc(db, 'tb_scores', uid);
                     const snap = await getDoc(docRef);
                     const existing = snap.exists() ? snap.data() : {};
+                    userScores = existing;
                     if (!existing[scoreKey] || score > existing[scoreKey].score) {
                         existing[scoreKey] = { score, total, pct, updatedAt: new Date().toISOString() };
                         await setDoc(docRef, existing);
+                        userScores = existing;
                         document.getElementById('sync-status').textContent = '✅ Score saved!';
+                        isNewBest = true;
                     } else {
                         document.getElementById('sync-status').textContent = '✅ Best score kept!';
                     }
+                    // Update streak
+                    await updateStreak();
                 } catch(e) {
                     document.getElementById('sync-status').textContent = '⚠️ Offline mode (score not saved)';
                 }
             } else {
                 document.getElementById('sync-status').textContent = 'Sign in to save your progress';
+            }
+
+            // Celebration for perfect score
+            if (pct === 100) {
+                showConfetti();
+                setTimeout(() => showCelebration(), 800);
             }
 
             document.getElementById('retry-btn').onclick = () => startQuiz(currentTopic);
@@ -423,6 +598,7 @@
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
             document.getElementById('result-area').style.display = 'none';
+            renderSubjects(); // refresh progress
         }
 
         function goToTopics() {
