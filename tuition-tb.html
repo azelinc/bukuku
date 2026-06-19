@@ -176,7 +176,7 @@
                 topics.forEach(tk => { totalQ += u.topics[tk].questions.length; });
                 const card = document.createElement('div');
                 card.className = 'unit-card';
-                card.innerHTML = `<span class="unit-num">Unit ${key}</span> ${u.name} <span class="q-count">${totalQ} questions</span>`;
+                card.innerHTML = `<span class="unit-num">Unit ${key}</span> ${u.name} <span class="q-count">${totalQ}</span>`;
                 card.onclick = () => selectUnit(key);
                 list.appendChild(card);
             });
@@ -196,7 +196,7 @@
                 const card = document.createElement('div');
                 card.className = 'topic-card';
                 const qCount = t.questions.length;
-                card.innerHTML = `${tk} ${t.name} <span class="q-count">${qCount} questions</span>`;
+                card.innerHTML = `${tk} ${t.name} <span class="q-count">${qCount}</span>`;
                 card.onclick = () => startQuiz(tk);
                 topicList.appendChild(card);
             });
