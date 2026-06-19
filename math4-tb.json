@@ -106,7 +106,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "Numbers up to 100 000 have place values (ten thousands, thousands, hundreds, tens, ones). A number like 52 173 means 5 ten thousands + 2 thousands + 1 hundred + 7 tens + 3 ones. Numbers can be compared, arranged in ascending or descending order, and partitioned into digit values."
         },
         "1.2": {
           "name": "Even and Odd Numbers",
@@ -161,7 +162,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "Even numbers end with 0, 2, 4, 6, or 8 and can be divided equally by 2. Odd numbers end with 1, 3, 5, 7, or 9 and leave a remainder of 1 when divided by 2."
         },
         "1.3": {
           "name": "Estimation",
@@ -216,7 +218,8 @@
               ],
               "c": 0
             }
-          ]
+          ],
+          "revision": "Estimation means finding a close approximate value without calculating exactly. Round numbers to the nearest ten, hundred, or thousand before estimating to make calculations faster and easier."
         },
         "1.4": {
           "name": "Round Off Numbers",
@@ -271,7 +274,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "Rounding off makes a number simpler but keeps it close to the original value. Look at the digit to the right of the rounding place \u2014 if it is 5 or more, round up. If it is 4 or less, round down."
         },
         "1.5": {
           "name": "Multiplication and Division",
@@ -376,7 +380,8 @@
               ],
               "c": 2
             }
-          ]
+          ],
+          "revision": "Multiplication is repeated addition. When multiplying by a 1-digit number, multiply each place value starting from ones. Division is sharing equally. When dividing, start from the largest place value and work left to right."
         }
       }
     },
@@ -436,7 +441,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "A proper fraction has a numerator smaller than the denominator (e.g. 3/4). An improper fraction has a numerator equal to or larger than the denominator (e.g. 11/4). A mixed number combines a whole number and a proper fraction (e.g. 2 3/4)."
         },
         "2.2": {
           "name": "Addition and Subtraction of Fractions",
@@ -541,7 +547,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "To add or subtract fractions, the denominators must be the same. Find the smallest common denominator, convert the fractions, then add or subtract only the numerators. Simplify the answer when possible."
         },
         "2.3": {
           "name": "Addition and Subtraction of Decimals",
@@ -646,7 +653,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "To add or subtract decimals, line up the decimal points vertically. Add zeros to make the same number of decimal places if needed. Then add or subtract as with whole numbers and bring the decimal point straight down."
         },
         "2.4": {
           "name": "Multiplication and Division of Decimals",
@@ -701,7 +709,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "To multiply a decimal by a whole number, multiply as with whole numbers, then place the decimal point with the same number of decimal places. To divide a decimal, divide as with whole numbers and bring the decimal point straight up."
         },
         "2.5": {
           "name": "Fractions, Decimals and Percentages",
@@ -756,7 +765,8 @@
               ],
               "c": 0
             }
-          ]
+          ],
+          "revision": "A percentage (%) means out of 100. 50% = 50/100 = 1/2. To convert a fraction to a percentage, multiply by 100%. To convert a percentage to a fraction, write it over 100 and simplify."
         }
       }
     },
@@ -866,7 +876,8 @@
               ],
               "c": 2
             }
-          ]
+          ],
+          "revision": "Money operations in Ringgit Malaysia (RM) follow the same rules as decimal operations. Always align the decimal point and the RM symbol. When giving change, subtract the cost from the amount paid."
         },
         "3.2": {
           "name": "Manage Money Wisely",
@@ -921,7 +932,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "Managing money wisely means planning your spending, saving regularly, and differentiating between needs and wants. Always check if you have enough money before buying and try to save a portion of your money."
         },
         "3.3": {
           "name": "Foreign Currency and Payment Instruments",
@@ -976,7 +988,8 @@
               ],
               "c": 0
             }
-          ]
+          ],
+          "revision": "Different countries use different currencies. Malaysia uses Ringgit (RM), Singapore uses Dollar (SGD), Japan uses Yen (JPY), and the US uses Dollar (USD). Payment instruments include cash, credit cards, debit cards, cheques, and online banking."
         }
       }
     },
@@ -1086,7 +1099,8 @@
               ],
               "c": 2
             }
-          ]
+          ],
+          "revision": "The 12-hour system uses a.m. (before noon) and p.m. (after noon). The 24-hour system runs from 0000 to 2359 hours. To convert p.m. to 24-hour, add 12 to the hour. 2:00 p.m. = 1400 hours, 8:00 p.m. = 2000 hours."
         },
         "4.2": {
           "name": "Duration and Estimation",
@@ -1141,7 +1155,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "Duration is the length of time between two events. To find duration, subtract the start time from the end time. A school day from 7:30 a.m. to 1:30 p.m. is 6 hours."
         },
         "4.3": {
           "name": "Millennium, Century, Decade",
@@ -1196,7 +1211,8 @@
               ],
               "c": 0
             }
-          ]
+          ],
+          "revision": "Time relationships: 1 decade = 10 years, 1 century = 100 years = 10 decades, 1 millennium = 1 000 years = 10 centuries. The year 2026 is in the 3rd millennium, 21st century."
         }
       }
     },
@@ -1306,7 +1322,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "Length units: 10 mm = 1 cm, 100 cm = 1 m, 1 000 m = 1 km. To convert from larger to smaller units, multiply. To convert from smaller to larger, divide. A 3.5 m rope = 350 cm."
         },
         "5.2": {
           "name": "Mass (g and kg)",
@@ -1361,7 +1378,8 @@
               ],
               "c": 2
             }
-          ]
+          ],
+          "revision": "Mass units: 1 000 g = 1 kg. To convert kg to g, multiply by 1 000. 3.5 kg = 3 500 g. To convert g to kg, divide by 1 000."
         },
         "5.3": {
           "name": "Volume of Liquid (ml and \u2113)",
@@ -1416,7 +1434,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "Volume units: 1 000 m\u2113 = 1 \u2113. To convert \u2113 to m\u2113, multiply by 1 000. 2.5 \u2113 = 2 500 m\u2113. To convert m\u2113 to \u2113, divide by 1 000."
         }
       }
     },
@@ -1476,7 +1495,8 @@
               ],
               "c": 2
             }
-          ]
+          ],
+          "revision": "An angle measures the turn between two lines. A right angle = 90 degrees. An acute angle is smaller than 90 degrees. An obtuse angle is larger than 90 but smaller than 180. A straight line = 180 degrees = 2 right angles."
         },
         "6.2": {
           "name": "2D Shapes",
@@ -1531,7 +1551,8 @@
               ],
               "c": 2
             }
-          ]
+          ],
+          "revision": "2D shapes: triangle (3 sides), square (4 equal sides, 4 right angles), rectangle (4 sides, 4 right angles), pentagon (5 sides), hexagon (6 sides). An isosceles triangle has 2 equal sides."
         }
       }
     },
@@ -1591,7 +1612,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "Coordinates are written as (x, y). x is the horizontal distance from the origin (0, 0). y is the vertical distance. Point (3, 5) means 3 units across and 5 units up."
         },
         "7.2": {
           "name": "Ratio",
@@ -1646,7 +1668,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "A ratio compares two quantities. If there are 3 apples and 5 oranges, the ratio of apples to oranges is 3 : 5. Ratios can be simplified like fractions."
         },
         "7.3": {
           "name": "Proportion",
@@ -1701,7 +1724,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "Proportion shows the relationship between equal ratios. If 3 pens cost RM6, then 6 pens cost RM12 \u2014 the cost is proportional to the number of pens."
         }
       }
     },
@@ -1761,7 +1785,8 @@
               ],
               "c": 1
             }
-          ]
+          ],
+          "revision": "A pictograph uses symbols to represent data. The key shows what each symbol stands for. If one icon = 5 books and there are 6 icons, that is 30 books. Half icons represent half the value."
         },
         "8.2": {
           "name": "Bar Charts",
@@ -1816,7 +1841,8 @@
               ],
               "c": 3
             }
-          ]
+          ],
+          "revision": "A bar chart uses rectangular bars to show data. The height or length of each bar represents the value. The higher the bar, the larger the value. Read the scale carefully to interpret bar charts."
         }
       }
     }

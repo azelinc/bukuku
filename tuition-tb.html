@@ -78,6 +78,17 @@
             </div>
         </div>
 
+        <!-- REVISION SCREEN -->
+        <div id="revision-screen" style="display:none;">
+            <a id="back-to-topics-rev" class="back-link" style="margin: 10px 20px; display:block; text-align:left;">← Back to Topics</a>
+            <div class="section" style="text-align:left;">
+                <h2 id="rev-title" style="margin: 0 0 5px; font-size: 1.2rem; color: #2c3e50;"></h2>
+                <p id="rev-subtitle" style="color: #999; font-size: 0.85rem; margin: 0 0 20px;"></p>
+                <div id="rev-content" style="background: #f0f7ff; padding: 20px; border-radius: 16px; border-left: 4px solid #4a90e2; line-height: 1.6; color: #333; font-size: 1rem;"></div>
+                <button id="start-quiz-btn" class="btn blue-btn" style="margin-top: 25px;">▶ Start Quiz</button>
+            </div>
+        </div>
+
         <!-- QUIZ SCREEN -->
         <div id="quiz-screen" style="display:none;">
             <a id="back-to-topics" class="back-link" style="margin: 0 20px 5px; display:block; text-align:left;">← Back to Topics</a>
@@ -206,14 +217,27 @@
             currentTopic = tk;
             const t = questionBank.units[currentUnit].topics[tk];
             questions = [...t.questions];
+
+            // Show revision screen first
+            document.getElementById('rev-title').textContent = `${tk}: ${t.name}`;
+            document.getElementById('rev-subtitle').textContent = `Unit ${currentUnit} · ${questions.length} questions`;
+            document.getElementById('rev-content').textContent = t.revision || 'Review the topic before starting.';
+
+            document.getElementById('topic-screen').style.display = 'none';
+            document.getElementById('revision-screen').style.display = 'block';
+            document.getElementById('quiz-screen').style.display = 'none';
+            document.getElementById('result-area').style.display = 'none';
+        }
+
+        // BEGIN actual quiz after revision
+        function beginQuiz() {
             currentQ = 0;
             score = 0;
             answered = false;
 
-            document.getElementById('topic-header').textContent = `Unit ${currentUnit} · ${tk} ${t.name}`;
-            document.getElementById('topic-screen').style.display = 'none';
+            document.getElementById('topic-header').textContent = `Unit ${currentUnit} · ${currentTopic} ${questionBank.units[currentUnit].topics[currentTopic].name}`;
+            document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'block';
-            document.getElementById('result-area').style.display = 'none';
             document.getElementById('q-total').textContent = questions.length;
 
             showQuestion();
@@ -343,12 +367,15 @@
         function goToTopics() {
             currentTopic = null;
             document.getElementById('topic-screen').style.display = 'block';
+            document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
             document.getElementById('result-area').style.display = 'none';
         }
 
         document.getElementById('back-to-units').onclick = goToUnits;
         document.getElementById('back-to-topics').onclick = goToTopics;
+        document.getElementById('back-to-topics-rev').onclick = goToTopics;
+        document.getElementById('start-quiz-btn').onclick = beginQuiz;
 
         // INIT
         loadBank();
