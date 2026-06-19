@@ -488,6 +488,13 @@
             if (currentUser) {
                 isAdmin = true;
                 manageActive = true;
+                // Re-fetch subscription data every time (catches admin-toggle changes)
+                try {
+                    const adminSnap = await getDoc(doc(db, "admins", currentUser.uid));
+                    if (adminSnap.exists()) {
+                        subscriptionPlan = adminSnap.data().subscription?.plan || 'free';
+                    }
+                } catch(e) {}
                 updateAuthUI(currentUser.email);
                 createBtn.style.display = 'block';
             } else {
