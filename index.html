@@ -295,8 +295,7 @@
         let currentUser = null;         // Firebase Auth user
         let adminData = null;           // Admin doc data (subscription, etc.)
         let subscriptionPlan = 'free';
-        let _firstAuthCheck = true;     // Prevent double render on initial load
-
+        
         // Toast Function
         function showToast(message, type = 'info') {
             const toast = document.createElement('div');
@@ -394,11 +393,10 @@
             }
             updateManageBar();
             
-            // Re-render if visible, but skip first check (initHub already renders)
-            if (!_firstAuthCheck && selection.style.display === 'block') {
+            // Re-render if profile selection is visible
+            if (selection.style.display === 'block') {
                 await showProfileSelection();
             }
-            _firstAuthCheck = false;
         });
 
         window.handleAuthClick = () => {
@@ -491,15 +489,20 @@
                     ctrl.className = "admin-controls";
                     const premBtn = document.createElement('button');
                     premBtn.className = "prem-toggle-btn" + (isPremium ? " is-premium" : "");
-                    premBtn.innerHTML = isPremium ? "⭐ Premium" : "⭐ Free";
+                    const authLoading = isAdmin && !currentUser && localStorage.getItem('bukuku_auth');
+                    premBtn.innerHTML = authLoading ? "⏳..." : (isPremium ? "⭐ Premium" : "⭐ Free");
                     premBtn.style.display = manageActive && isAdmin ? "block" : "none";
-                    premBtn.onclick = (e) => { e.stopPropagation(); togglePremium(name, isPremium); };
+                    premBtn.disabled = authLoading;
+                    premBtn.style.opacity = authLoading ? "0.6" : "1";
+                    premBtn.onclick = (e) => { e.stopPropagation(); if (!authLoading) togglePremium(name, isPremium); };
 
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
-                    delBtn.innerHTML = "🗑️ Delete";
+                    delBtn.innerHTML = authLoading ? "⏳..." : "🗑️ Delete";
                     delBtn.style.display = manageActive && isAdmin ? "block" : "none";
-                    delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(name); };
+                    delBtn.disabled = authLoading;
+                    delBtn.style.opacity = authLoading ? "0.6" : "1";
+                    delBtn.onclick = (e) => { e.stopPropagation(); if (!authLoading) deleteProfile(name); };
 
                     ctrl.appendChild(premBtn);
                     ctrl.appendChild(delBtn);
@@ -526,7 +529,12 @@
 
         async function deleteProfile(name) {
             if (!currentUser) {
-                showToast("Sign in to manage profiles", "error");
+                const storedAuth = localStorage.getItem('bukuku_auth');
+                if (storedAuth) {
+                    showToast("Session loading, please try again...", "info");
+                } else {
+                    showToast("Sign in to manage profiles", "error");
+                }
                 return;
             }
             if (confirm(`Delete explorer "${name}"?`)) {
@@ -580,7 +588,6 @@
 
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
-            _firstAuthCheck = false;
             initHub();
         }
 
