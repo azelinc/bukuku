@@ -286,13 +286,16 @@
                 authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
                 isManageMode = true;
             } else {
-                localStorage.removeItem('bukuku_auth');
+                // Don't clear localStorage here — session may still be restoring
                 currentUser = null;
                 adminData = null;
                 subscriptionPlan = 'free';
-                authBtn.innerHTML = '🔑 Sign In';
-                authBtn.style.color = '#ddd';
-                authStatus.innerHTML = '';
+                // Only update button if localStorage doesn't show a signed-in state
+                if (!localStorage.getItem('bukuku_auth')) {
+                    authBtn.innerHTML = '🔑 Sign In';
+                    authBtn.style.color = '#ddd';
+                    authStatus.innerHTML = '';
+                }
                 isManageMode = false;
             }
             
@@ -307,8 +310,13 @@
             if (currentUser) {
                 if (confirm('Sign out of admin account?')) {
                     localStorage.removeItem('bukuku_auth');
+                    document.getElementById('auth-btn').innerHTML = '🔑 Sign In';
+                    document.getElementById('auth-btn').style.color = '#ddd';
+                    document.getElementById('auth-status').innerHTML = '';
+                    isManageMode = false;
                     signOut(auth);
                     showToast('Signed out', 'info');
+                    showProfileSelection();
                 }
             } else {
                 window.location.href = 'login.html';
