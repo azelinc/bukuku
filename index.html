@@ -287,6 +287,7 @@
         let currentUser = null;
         let subscriptionPlan = 'free';
         let profileCount = 0;
+        let _renderingProfiles = false;   // Guard against concurrent renders
         const FREE_PROFILE_LIMIT = 1;
 
         function showToast(message, type = 'info') {
@@ -478,6 +479,8 @@
         }
 
         async function showProfileSelection() {
+            if (_renderingProfiles) return;
+            _renderingProfiles = true;
             loading.style.display = 'none';
             selection.style.display = 'block';
             upgradeModal.style.display = 'none';
@@ -561,10 +564,7 @@
                     delBtn.className = "del-btn";
                     delBtn.innerHTML = "🗑️ Delete";
                     delBtn.style.display = manageActive && isAdmin ? "block" : "none";
-                    const authLoading = isAdmin && !currentUser && localStorage.getItem('bukuku_auth');
-                    delBtn.disabled = authLoading;
-                    delBtn.style.opacity = authLoading ? "0.6" : "1";
-                    delBtn.onclick = (e) => { e.stopPropagation(); if (!authLoading && currentUser) deleteProfile(name); };
+                    delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(name); };
 
                     ctrl.appendChild(delBtn);
                     row.appendChild(btn); row.appendChild(ctrl);
@@ -576,20 +576,25 @@
                 if (!isPremium && profileCount >= FREE_PROFILE_LIMIT && currentUser) {
                     upgradeBanner.style.display = 'block';
                 }
-            } catch (e) {
-                console.error(e);
-                showToast("Failed to load profiles", "error");
-            }
+            } catch (e) { console.error(e); showToast("Failed to load profiles", "error"); }
+            _renderingProfiles = false;
         }
 
         async function deleteProfile(name) {
-            if (!currentUser) {
+            let uid = currentUser?.uid;
+            if (!uid) {
+                try {
+                    const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                    uid = stored?.uid;
+                } catch(e) {}
+            }
+            if (!uid) {
                 showToast("Sign in to manage profiles", "error");
                 return;
             }
             if (confirm(`Delete explorer "${name}"?`)) {
                 try {
-                    await deleteDoc(doc(db, "profiles", currentUser.uid, name));
+                    await deleteDoc(doc(db, "profiles", uid, name));
                     showToast(`Profile "${name}" deleted`, "success");
                     showProfileSelection();
                 } catch (e) {
