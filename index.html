@@ -537,9 +537,24 @@
                     const snap = await getDocs(collection(db, "profiles", currentUser.uid));
                     snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
                 } else {
-                    // Fallback: read from old users/ collection (for backward compat during loading)
-                    const oldSnap = await getDocs(collection(db, "users"));
-                    oldSnap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+                    // Try reading from profiles/{storedUid}/ using localStorage first
+                    const storedAuth = localStorage.getItem('bukuku_auth');
+                    let loadedFromNew = false;
+                    if (storedAuth) {
+                        try {
+                            const { uid } = JSON.parse(storedAuth);
+                            const snap = await getDocs(collection(db, "profiles", uid));
+                            if (!snap.empty) {
+                                snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+                                loadedFromNew = true;
+                            }
+                        } catch(e) {}
+                    }
+                    if (!loadedFromNew) {
+                        // Fallback: read from old users/ collection (for backward compat)
+                        const oldSnap = await getDocs(collection(db, "users"));
+                        oldSnap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+                    }
                 }
 
                 profileCount = profiles.length;
@@ -598,7 +613,14 @@
                     showToast(`Profile "${name}" deleted`, "success");
                     showProfileSelection();
                 } catch (e) {
-                    showToast("Failed to delete profile", "error");
+                    // Fallback: try old users/ collection
+                    try {
+                        await deleteDoc(doc(db, "users", name));
+                        showToast(`Profile "${name}" deleted`, "success");
+                        showProfileSelection();
+                    } catch(e2) {
+                        showToast("Failed to delete profile", "error");
+                    }
                 }
             }
         }
