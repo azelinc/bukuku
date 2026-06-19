@@ -20,7 +20,7 @@
                     "Ten thousands",
                     "Hundreds"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Write 'three million, four hundred fifty-six thousand, two hundred' in numerals.",
@@ -60,7 +60,7 @@
                     "1 324 567, 1 243 567, 1 234 657, 1 234 567",
                     "1 234 567, 1 324 567, 1 243 567, 1 234 657"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "What number comes before 1 000 000?",
@@ -90,7 +90,7 @@
                     "5",
                     "2"
                   ],
-                  "c": 0
+                  "c": 2
                 }
               ]
             },
@@ -106,7 +106,7 @@
                     "17",
                     "27"
                   ],
-                  "c": 3
+                  "c": 2
                 },
                 {
                   "q": "How many prime numbers are there between 1 and 20?",
@@ -116,7 +116,7 @@
                     "7",
                     "10"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Is 29 a prime number?",
@@ -136,7 +136,7 @@
                     "23",
                     "1"
                   ],
-                  "c": 0
+                  "c": 3
                 },
                 {
                   "q": "Find the next number: 5, 10, 20, 40, ___",
@@ -146,7 +146,7 @@
                     "80",
                     "45"
                   ],
-                  "c": 1
+                  "c": 2
                 },
                 {
                   "q": "Find the next number: 2 450, 2 400, 2 350, 2 300, ___",
@@ -156,7 +156,7 @@
                     "2 350",
                     "2 200"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "What is the 7th prime number?",
@@ -166,7 +166,7 @@
                     "19",
                     "11"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "The number pattern is: 3, 8, 18, 38, ___. What is the rule?",
@@ -192,7 +192,7 @@
                     "34 800",
                     "40 000"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "Round off 1 456 723 to the nearest hundred thousand.",
@@ -212,7 +212,7 @@
                     "81 000",
                     "90 000"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "A school has 2 867 students. Round this to the nearest hundred.",
@@ -242,7 +242,7 @@
                     "6 000 000",
                     "5 502 000"
                   ],
-                  "c": 1
+                  "c": 2
                 },
                 {
                   "q": "Estimate 789 × 21 by rounding to nearest hundred and ten.",
@@ -252,7 +252,7 @@
                     "14 000",
                     "15 000"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "Round 99 567 to the nearest thousand.",
@@ -262,7 +262,7 @@
                     "99 600",
                     "99 500"
                   ],
-                  "c": 2
+                  "c": 1
                 }
               ]
             },
@@ -278,7 +278,7 @@
                     "580 345",
                     "579 345"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "789 034 + 210 966 = ___",
@@ -288,7 +288,7 @@
                     "1 000 100",
                     "999 990"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "500 000 - 234 567 = ___",
@@ -298,7 +298,7 @@
                     "265 333",
                     "276 433"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "1 204 567 - 567 890 = ___",
@@ -308,7 +308,7 @@
                     "626 677",
                     "636 767"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "What must be added to 345 678 to make 600 000?",
@@ -338,7 +338,7 @@
                     "579 345",
                     "580 345"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "7 234 - 5 678 = ___",
@@ -364,7 +364,7 @@
                     "86 500",
                     "86 300"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "1 234 × 56 = ___",
@@ -374,7 +374,7 @@
                     "68 104",
                     "69 204"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "45 678 ÷ 6 = ___",
@@ -384,7 +384,7 @@
                     "7 713",
                     "7 623"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "89 012 ÷ 12 = ___",
@@ -404,7 +404,7 @@
                     "5 716",
                     "5 606"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "1 250 × 48 = ___",
@@ -424,7 +424,7 @@
                     "2 459",
                     "2 468"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "99 999 ÷ 9 = ___",
@@ -450,7 +450,7 @@
                     "30",
                     "15"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "If b × 36 = 1 080, what is b?",
@@ -460,7 +460,7 @@
                     "35",
                     "40"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "If 1 200 ÷ c = 48, what is c?",
@@ -500,7 +500,7 @@
                     "20",
                     "30"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A number multiplied by 125 gives 1 000. What is the number?",
@@ -510,7 +510,7 @@
                     "7",
                     "6"
                   ],
-                  "c": 2
+                  "c": 0
                 }
               ]
             },
@@ -536,7 +536,7 @@
                     "90",
                     "30"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "200 + 500 ÷ 5 = ___",
@@ -556,7 +556,7 @@
                     "460",
                     "480"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "120 × 3 + 450 = ___",
@@ -566,7 +566,7 @@
                     "720",
                     "840"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "1 000 − 245 × 4 = ___",
@@ -576,7 +576,7 @@
                     "180",
                     "120"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "256 ÷ 8 + 345 = ___",
@@ -586,7 +586,7 @@
                     "378",
                     "376"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "950 − 600 ÷ 12 = ___",
@@ -596,7 +596,7 @@
                     "890",
                     "880"
                   ],
-                  "c": 1
+                  "c": 0
                 }
               ]
             },
@@ -612,7 +612,7 @@
                     "20 000",
                     "20 800"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Ali earns RM4 500 per month. How much in 12 months?",
@@ -622,7 +622,7 @@
                     "RM55 000",
                     "RM53 000"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "A baker makes 250 cupcakes daily. How many in 30 days?",
@@ -632,7 +632,7 @@
                     "7 000",
                     "8 000"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A farmer has 12 480 eggs. He packs them in trays of 30. How many trays?",
@@ -642,7 +642,7 @@
                     "406",
                     "436"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "A school collected 45 678 kg of newspapers over 6 months. Average per month?",
@@ -662,7 +662,7 @@
                     "RM3 000",
                     "RM5 000"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A truck carries 1 500 bricks per trip. 15 trips per day for 5 days. Total bricks?",
@@ -672,7 +672,7 @@
                     "22 500",
                     "112 000"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "2 400 chairs in a hall arranged in 48 rows. Chairs per row?",
@@ -682,7 +682,7 @@
                     "45",
                     "60"
                   ],
-                  "c": 1
+                  "c": 0
                 }
               ]
             }
@@ -703,7 +703,7 @@
                     "4",
                     "10"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "3/8 × 24 = ___",
@@ -713,7 +713,7 @@
                     "6",
                     "12"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "5/6 × 36 = ___",
@@ -723,7 +723,7 @@
                     "28",
                     "32"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "2/3 of 60 oranges are sold. How many sold?",
@@ -743,7 +743,7 @@
                     "4/6",
                     "3/6"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "1/3 of 45 = ___",
@@ -753,7 +753,7 @@
                     "14",
                     "15"
                   ],
-                  "c": 0
+                  "c": 3
                 },
                 {
                   "q": "7/10 of RM200 = ___",
@@ -763,7 +763,7 @@
                     "RM120",
                     "RM130"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A cake is cut into 12 pieces. If 3/4 is eaten, how many pieces eaten?",
@@ -773,7 +773,7 @@
                     "6",
                     "10"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             },
@@ -789,7 +789,7 @@
                     "4.57",
                     "5.0"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "Round 12.345 to 2 decimal places.",
@@ -799,7 +799,7 @@
                     "12.30",
                     "12.4"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "Round 0.999 to 1 decimal place.",
@@ -809,7 +809,7 @@
                     "0.99",
                     "1.00"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "Round 56.784 to the nearest whole number.",
@@ -819,7 +819,7 @@
                     "56.8",
                     "55"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Round 3.14159 to 3 decimal places.",
@@ -829,7 +829,7 @@
                     "3.14",
                     "3.140"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Which is the correct rounding of 7.895 to 2 decimal places?",
@@ -839,7 +839,7 @@
                     "7.89",
                     "8.00"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "Round 0.054 to 1 decimal place.",
@@ -865,7 +865,7 @@
                     "19.00",
                     "20.90"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "23.67 - 8.89 = ___",
@@ -875,7 +875,7 @@
                     "14.88",
                     "15.88"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "56.7 + 43.3 = ___",
@@ -885,7 +885,7 @@
                     "99.0",
                     "100.1"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "100.00 - 34.56 = ___",
@@ -895,7 +895,7 @@
                     "65.54",
                     "64.44"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "8.125 + 2.875 = ___",
@@ -905,7 +905,7 @@
                     "10.900",
                     "11.110"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "45.7 - 12.89 = ___",
@@ -915,7 +915,7 @@
                     "32.71",
                     "33.71"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "0.75 + 0.68 + 0.57 = ___",
@@ -935,7 +935,7 @@
                     "100.15",
                     "99.95"
                   ],
-                  "c": 2
+                  "c": 0
                 }
               ]
             },
@@ -951,7 +951,7 @@
                     "20.4",
                     "18.9"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "12.5 × 8 = ___",
@@ -961,7 +961,7 @@
                     "104.0",
                     "100.5"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "7.25 × 12 = ___",
@@ -971,7 +971,7 @@
                     "85.00",
                     "87.50"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "45.6 ÷ 8 = ___",
@@ -991,7 +991,7 @@
                     "1.68",
                     "1.78"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "0.75 × 100 = ___",
@@ -1001,7 +1001,7 @@
                     "0.075",
                     "750.0"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "123.45 ÷ 5 = ___",
@@ -1021,7 +1021,7 @@
                     "24.50",
                     "25.50"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             },
@@ -1067,7 +1067,7 @@
                     "25",
                     "30"
                   ],
-                  "c": 3
+                  "c": 2
                 },
                 {
                   "q": "If 30% of a number is 90, what is the number?",
@@ -1087,7 +1087,7 @@
                     "RM10",
                     "RM8"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "In a class of 40 students, 60% are boys. Number of boys?",
@@ -1097,7 +1097,7 @@
                     "28",
                     "30"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "2 1/4 as a decimal is ___",
@@ -1107,7 +1107,7 @@
                     "2.52",
                     "2.5"
                   ],
-                  "c": 3
+                  "c": 0
                 }
               ]
             }
@@ -1128,7 +1128,7 @@
                     "RM78.30",
                     "RM77.80"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "RM100.00 - RM37.45 = ___",
@@ -1158,7 +1158,7 @@
                     "RM13.50",
                     "RM12.40"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "RM356.80 + RM143.20 = ___",
@@ -1168,7 +1168,7 @@
                     "RM500.50",
                     "RM490.00"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "RM250.50 - RM178.90 = ___",
@@ -1188,7 +1188,7 @@
                     "RM200.00",
                     "RM187.50"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "RM500.00 ÷ 8 = ___",
@@ -1198,7 +1198,7 @@
                     "RM62.00",
                     "RM65.50"
                   ],
-                  "c": 3
+                  "c": 0
                 }
               ]
             },
@@ -1214,7 +1214,7 @@
                     "RM100",
                     "RM85"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "RM200 - RM25 × 4 = ___",
@@ -1224,7 +1224,7 @@
                     "RM75",
                     "RM150"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "RM60 + RM120 ÷ 4 = ___",
@@ -1244,7 +1244,7 @@
                     "RM450",
                     "RM445"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Ali has RM250. He buys 5 books at RM28 each. Left?",
@@ -1254,7 +1254,7 @@
                     "RM100",
                     "RM120"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "RM80 + RM240 ÷ 8 + RM50 = ___",
@@ -1274,7 +1274,7 @@
                     "RM48",
                     "RM56"
                   ],
-                  "c": 2
+                  "c": 0
                 }
               ]
             },
@@ -1290,7 +1290,7 @@
                     "RM1 300",
                     "RM1 500"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Simple interest 4% per year on RM500 for 1 year is ___",
@@ -1300,7 +1300,7 @@
                     "RM25",
                     "RM10"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Save RM100 every month for a year. Total savings?",
@@ -1310,7 +1310,7 @@
                     "RM900",
                     "RM1 100"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Bank pays 3% interest per year. Deposit RM1 000 for 1 year. Interest?",
@@ -1320,7 +1320,7 @@
                     "RM35",
                     "RM25"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Best way to save regularly?",
@@ -1330,7 +1330,7 @@
                     "Only save when extra money comes",
                     "Borrow to save"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "TV costs RM2 400 paid in 12 monthly instalments. Monthly payment?",
@@ -1340,7 +1340,7 @@
                     "RM220",
                     "RM240"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Buying with a credit card means you are ___",
@@ -1350,7 +1350,7 @@
                     "Getting free money",
                     "Exchanging goods without paying"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "Compound interest means interest earned on ___",
@@ -1360,7 +1360,7 @@
                     "Only the interest",
                     "None of these"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             },
@@ -1386,7 +1386,7 @@
                     "RM135",
                     "RM125"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Worker earns RM120 per day. How much in 25 days?",
@@ -1396,7 +1396,7 @@
                     "RM3 200",
                     "RM2 500"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Store sells bicycle RM850 with RM50 discount. Price after discount?",
@@ -1406,7 +1406,7 @@
                     "RM750",
                     "RM850"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Save RM25 per week. Weeks to save RM500?",
@@ -1416,7 +1416,7 @@
                     "22",
                     "25"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "3 friends share gift cost equally. Gift costs RM135. Each pays?",
@@ -1467,7 +1467,7 @@
                     "300",
                     "150"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "5 days = ___ hours",
@@ -1477,7 +1477,7 @@
                     "140",
                     "150"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "2 decades = ___ years",
@@ -1487,7 +1487,7 @@
                     "20",
                     "30"
                   ],
-                  "c": 1
+                  "c": 2
                 },
                 {
                   "q": "3 centuries = ___ years",
@@ -1497,7 +1497,7 @@
                     "3 000",
                     "150"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "1/2 hour = ___ minutes",
@@ -1527,7 +1527,7 @@
                     "20",
                     "12"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "120 minutes = ___ hours",
@@ -1537,7 +1537,7 @@
                     "2",
                     "2.5"
                   ],
-                  "c": 3
+                  "c": 2
                 }
               ]
             },
@@ -1573,7 +1573,7 @@
                     "3 years 3 months",
                     "4 years 15 months"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "2 decades 5 years + 1 decade 8 years = ___",
@@ -1583,7 +1583,7 @@
                     "3 decades 3 years",
                     "4 decades 13 years"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "1 century 30 years + 2 centuries 80 years = ___",
@@ -1593,7 +1593,7 @@
                     "3 centuries 10 years",
                     "4 centuries 110 years"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "5 h 50 min + 4 h 25 min = ___",
@@ -1603,7 +1603,7 @@
                     "9 h 15 min",
                     "10 h 75 min"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "6 years 9 months + 3 years 6 months = ___",
@@ -1613,7 +1613,7 @@
                     "9 years 3 months",
                     "10 years 15 months"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "4 decades 7 years + 3 decades 6 years = ___",
@@ -1623,7 +1623,7 @@
                     "7 decades 3 years",
                     "8 decades 13 years"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             },
@@ -1639,7 +1639,7 @@
                     "1 h 15 min",
                     "2 h 15 min"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "5 days 6 h - 2 days 18 h = ___",
@@ -1649,7 +1649,7 @@
                     "2 days 12 h",
                     "3 days 18 h"
                   ],
-                  "c": 1
+                  "c": 2
                 },
                 {
                   "q": "4 years 3 months - 1 year 8 months = ___",
@@ -1669,7 +1669,7 @@
                     "1 decade 3 years",
                     "2 decades 7 years"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "5 centuries 20 years - 2 centuries 90 years = ___",
@@ -1775,7 +1775,7 @@
                     "7 h 00 min",
                     "8 h 00 min"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "How many days from 15 March to 10 April (in the same year)?",
@@ -1785,7 +1785,7 @@
                     "24",
                     "27"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             }
@@ -1816,7 +1816,7 @@
                     "3 500",
                     "3 050"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "2.5 km = ___ m",
@@ -1826,7 +1826,7 @@
                     "25 000",
                     "250 000"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "450 cm = ___ m",
@@ -1856,7 +1856,7 @@
                     "750",
                     "0.075"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "0.8 km = ___ m",
@@ -1882,7 +1882,7 @@
                     "2 650",
                     "300"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "3 km - 500 m = ___ m",
@@ -1892,7 +1892,7 @@
                     "2 000",
                     "250"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "1.2 m × 5 = ___ m",
@@ -1902,7 +1902,7 @@
                     "5.0",
                     "6.5"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "2.5 km ÷ 5 = ___ km",
@@ -1922,7 +1922,7 @@
                     "7 cm 3 mm",
                     "8 cm 13 mm"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A ribbon is 2.5 m long. It is cut into 5 equal pieces. Each piece length?",
@@ -1932,7 +1932,7 @@
                     "Both A and B",
                     "25 cm"
                   ],
-                  "c": 3
+                  "c": 2
                 },
                 {
                   "q": "A rope is 3.6 m. Another rope is 275 cm. Total length in m?",
@@ -1942,7 +1942,7 @@
                     "6.75",
                     "5.75"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "A rectangle is 8 cm long and 5 cm wide. Perimeter = ___",
@@ -1952,7 +1952,7 @@
                     "13 cm",
                     "80 cm"
                   ],
-                  "c": 3
+                  "c": 1
                 }
               ]
             },
@@ -1968,7 +1968,7 @@
                     "25 000",
                     "250 000"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "750 g = ___ kg",
@@ -1978,7 +1978,7 @@
                     "7.5",
                     "75"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "3 kg 500 g + 1 kg 800 g = ___",
@@ -1988,7 +1988,7 @@
                     "4 kg 300 g",
                     "5 kg 1 300 g"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "5 kg - 850 g = ___ g",
@@ -2008,7 +2008,7 @@
                     "7.0",
                     "6.8"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "3.6 kg ÷ 6 = ___ g",
@@ -2018,7 +2018,7 @@
                     "6 000",
                     "60 000"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A bag of rice weighs 5 kg. It is packed into 250 g packets. How many packets?",
@@ -2028,7 +2028,7 @@
                     "30",
                     "15"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "A watermelon weighs 2.8 kg and a papaya weighs 1.5 kg. Total mass?",
@@ -2074,7 +2074,7 @@
                     "4 ℓ 100 mℓ",
                     "3 ℓ 200 mℓ"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "5 ℓ - 1 ℓ 800 mℓ = ___ mℓ",
@@ -2084,7 +2084,7 @@
                     "3 000",
                     "4 000"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "1.5 ℓ × 6 = ___ ℓ",
@@ -2104,7 +2104,7 @@
                     "6 000",
                     "600 000"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A jug contains 1.25 ℓ of water. Mili pours another 750 mℓ. Total volume in ℓ?",
@@ -2114,7 +2114,7 @@
                     "1.5 ℓ",
                     "2.25 ℓ"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A fish tank holds 20 ℓ. It is filled with 5 buckets of water equally. Each bucket?",
@@ -2124,7 +2124,7 @@
                     "3 ℓ",
                     "6 ℓ"
                   ],
-                  "c": 2
+                  "c": 1
                 }
               ]
             },
@@ -2140,7 +2140,7 @@
                     "49",
                     "55"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "A cake recipe needs 250 g flour, 150 g sugar, and 100 g butter. Total mass?",
@@ -2150,7 +2150,7 @@
                     "600 g",
                     "450 g"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A water tank holds 500 ℓ. 350 ℓ is used. How much water remains?",
@@ -2160,7 +2160,7 @@
                     "250 ℓ",
                     "200 ℓ"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A roll of ribbon is 5 m. 8 equal pieces are cut, each 45 cm. Total ribbon used?",
@@ -2170,7 +2170,7 @@
                     "Both A and B",
                     "400 cm"
                   ],
-                  "c": 3
+                  "c": 2
                 },
                 {
                   "q": "A fruit seller has 12 kg of apples. He sells 3 kg 500 g. How much is left?",
@@ -2200,7 +2200,7 @@
                     "14",
                     "15"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A cake weighs 1.2 kg. It is cut into 8 equal slices. Each slice mass in g?",
@@ -2210,7 +2210,7 @@
                     "140",
                     "160"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             }
@@ -2251,7 +2251,7 @@
                     "0",
                     "4"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "The sum of interior angles of a quadrilateral is ___",
@@ -2261,7 +2261,7 @@
                     "540°",
                     "720°"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A regular pentagon has ___ sides.",
@@ -2271,7 +2271,7 @@
                     "6",
                     "3"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "Each interior angle of a square is ___",
@@ -2291,7 +2291,7 @@
                     "Hexagon",
                     "Pentagon"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "Which of these is a regular polygon?",
@@ -2301,7 +2301,7 @@
                     "Square",
                     "Parallelogram"
                   ],
-                  "c": 0
+                  "c": 2
                 }
               ]
             },
@@ -2327,7 +2327,7 @@
                     "12 cm²",
                     "36 cm²"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A square of side 6 cm has perimeter ___",
@@ -2337,7 +2337,7 @@
                     "24 cm",
                     "30 cm"
                   ],
-                  "c": 0
+                  "c": 2
                 },
                 {
                   "q": "Two squares of side 3 cm are joined side by side. Total area?",
@@ -2347,7 +2347,7 @@
                     "27 cm²",
                     "36 cm²"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A rectangle is 10 cm long and 4 cm wide. Perimeter?",
@@ -2357,7 +2357,7 @@
                     "14 cm",
                     "32 cm"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A garden is 12 m long and 8 m wide. Area in m²?",
@@ -2367,7 +2367,7 @@
                     "48",
                     "80"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A shape is made of a 6 cm square and a 4 cm by 3 cm rectangle. Total area?",
@@ -2377,7 +2377,7 @@
                     "40 cm²",
                     "52 cm²"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A rectangle with length 15 cm and width 6 cm. Area?",
@@ -2387,7 +2387,7 @@
                     "60 cm²",
                     "100 cm²"
                   ],
-                  "c": 3
+                  "c": 0
                 }
               ]
             },
@@ -2403,7 +2403,7 @@
                     "12 cm³",
                     "40 cm³"
                   ],
-                  "c": 3
+                  "c": 0
                 },
                 {
                   "q": "A cube of side 4 cm has volume ___",
@@ -2423,7 +2423,7 @@
                     "160 cm³",
                     "300 cm³"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A water tank is 2 m long, 1.5 m wide, 1 m high. Volume in m³?",
@@ -2433,7 +2433,7 @@
                     "4.5 m³",
                     "3.5 m³"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A cuboid has a base area of 20 cm² and height 8 cm. Volume?",
@@ -2443,7 +2443,7 @@
                     "120 cm³",
                     "80 cm³"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A cube has volume 125 cm³. What is its side length?",
@@ -2453,7 +2453,7 @@
                     "15 cm",
                     "10 cm"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Two identical cuboids 3 cm × 2 cm × 5 cm are stacked. Total volume?",
@@ -2463,7 +2463,7 @@
                     "45 cm³",
                     "90 cm³"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A rectangular block is 8 cm long, 5 cm wide, and 3 cm high. Volume?",
@@ -2473,7 +2473,7 @@
                     "80 cm³",
                     "100 cm³"
                   ],
-                  "c": 2
+                  "c": 0
                 }
               ]
             },
@@ -2489,7 +2489,7 @@
                     "25 cm",
                     "100 cm"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A floor is 6 m long and 4 m wide. How many tiles of 1 m² each are needed?",
@@ -2499,7 +2499,7 @@
                     "10",
                     "15"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A swimming pool is 25 m long, 10 m wide, 2 m deep. Volume of water?",
@@ -2509,7 +2509,7 @@
                     "750 m³",
                     "37 m³"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "A piece of land is 30 m × 20 m. Half is used for a house. Land area for house?",
@@ -2529,7 +2529,7 @@
                     "7",
                     "10"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A room is 5 m long, 4 m wide, 3 m high. Volume of air in the room?",
@@ -2570,7 +2570,7 @@
                     "5 units",
                     "6 units"
                   ],
-                  "c": 0
+                  "c": 2
                 },
                 {
                   "q": "Point P is at (4, 1) and Point Q is at (4, 6). Vertical distance?",
@@ -2580,7 +2580,7 @@
                     "6 units",
                     "3 units"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Point X is at (1, 2). Its horizontal distance from the origin?",
@@ -2590,7 +2590,7 @@
                     "3 units",
                     "0 units"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Point Y is at (3, 5). Its vertical distance from the origin?",
@@ -2600,7 +2600,7 @@
                     "8 units",
                     "2 units"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "From (1, 2) to (6, 2) is how many units horizontally?",
@@ -2610,7 +2610,7 @@
                     "6",
                     "3"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "From (3, 1) to (3, 7) is how many units vertically?",
@@ -2620,7 +2620,7 @@
                     "6",
                     "7"
                   ],
-                  "c": 1
+                  "c": 2
                 },
                 {
                   "q": "The distance from (2, 3) to (7, 8) moving along grid lines is ___",
@@ -2630,7 +2630,7 @@
                     "13 units",
                     "8 units"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Point (0, 4) is ___ units above the origin.",
@@ -2640,7 +2640,7 @@
                     "8",
                     "2"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             },
@@ -2656,7 +2656,7 @@
                     "3 : 8",
                     "5 : 8"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "Simplify the ratio 8 : 12.",
@@ -2666,7 +2666,7 @@
                     "2 : 4",
                     "4 : 3"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "There are 20 boys and 15 girls. Ratio of boys to girls?",
@@ -2676,7 +2676,7 @@
                     "3 : 4",
                     "15 : 20"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A recipe uses 2 cups flour to 3 cups sugar. Ratio flour to sugar?",
@@ -2696,7 +2696,7 @@
                     "12",
                     "8"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "A string is cut in the ratio 2 : 5. The shorter piece is 4 m. Length of longer piece?",
@@ -2716,7 +2716,7 @@
                     "7",
                     "3"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Simplify 10 : 25.",
@@ -2726,7 +2726,7 @@
                     "1 : 2.5",
                     "10 : 25"
                   ],
-                  "c": 3
+                  "c": 1
                 }
               ]
             },
@@ -2752,7 +2752,7 @@
                     "14",
                     "8"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A car travels 180 km in 3 hours. How far in 5 hours?",
@@ -2762,7 +2762,7 @@
                     "240 km",
                     "350 km"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "5 workers build a wall in 10 days. How long for 2 workers (same rate)?",
@@ -2772,7 +2772,7 @@
                     "15 days",
                     "30 days"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "If 6 oranges cost RM8.40, how much for 10 oranges?",
@@ -2792,7 +2792,7 @@
                     "35 km",
                     "45 km"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "If 2 : 5 = 6 : x, what is x?",
@@ -2802,7 +2802,7 @@
                     "10",
                     "20"
                   ],
-                  "c": 3
+                  "c": 1
                 }
               ]
             },
@@ -2838,7 +2838,7 @@
                     "2",
                     "8"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "A rectangle measures 6 cm by 4 cm on a plan with scale 1:50. Actual dimensions in m?",
@@ -2848,7 +2848,7 @@
                     "300 m × 200 m",
                     "12 m × 8 m"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "If 5 kg of rice costs RM12.50, what is the cost for 8 kg?",
@@ -2858,7 +2858,7 @@
                     "RM18.00",
                     "RM25.00"
                   ],
-                  "c": 1
+                  "c": 0
                 },
                 {
                   "q": "Three points: A(1,2), B(1,6), C(4,2). Vertical distance A to B?",
@@ -2868,7 +2868,7 @@
                     "5 units",
                     "2 units"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "The ratio of boys to girls is 4 : 5. Total students 27. How many girls?",
@@ -2878,7 +2878,7 @@
                     "9",
                     "18"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "A recipe needs 3 eggs for 12 pancakes. How many eggs for 20 pancakes?",
@@ -2909,7 +2909,7 @@
                     "1/3",
                     "3/4"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "A pie chart shows 4 categories: A 25%, B 25%, C 25%, D 25%. Each category represents ___",
@@ -2919,7 +2919,7 @@
                     "1/3 of total",
                     "1/5 of total"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "In a pie chart with total 360 students, a sector is 90°. Number of students?",
@@ -2939,7 +2939,7 @@
                     "60",
                     "100"
                   ],
-                  "c": 3
+                  "c": 1
                 },
                 {
                   "q": "In a pie chart, 25% is how many degrees?",
@@ -2949,7 +2949,7 @@
                     "120°",
                     "45°"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A pie chart has total 480 people. 30% prefer cycling. How many prefer cycling?",
@@ -2959,7 +2959,7 @@
                     "96",
                     "160"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "If 180° of a pie chart represents 50 students, the total number of students is ___",
@@ -2969,7 +2969,7 @@
                     "200",
                     "50"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "In a pie chart showing RM1 200 spending, food is 45%. Amount spent on food?",
@@ -2979,7 +2979,7 @@
                     "RM500",
                     "RM600"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             },
@@ -3005,7 +3005,7 @@
                     "67",
                     "23"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Find the median: 4, 8, 6, 5, 9",
@@ -3015,7 +3015,7 @@
                     "7",
                     "8"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Find the mean: 10, 20, 30, 40",
@@ -3025,7 +3025,7 @@
                     "30",
                     "35"
                   ],
-                  "c": 0
+                  "c": 1
                 },
                 {
                   "q": "Scores: 80, 85, 90, 85, 95. The mode is ___",
@@ -3045,7 +3045,7 @@
                     "15.5",
                     "16"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Temperatures over 5 days: 28°C, 30°C, 29°C, 31°C, 32°C. Mean temperature?",
@@ -3055,7 +3055,7 @@
                     "29°C",
                     "31°C"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "The range of 8, 15, 12, 20, 10 is ___",
@@ -3065,7 +3065,7 @@
                     "12",
                     "20"
                   ],
-                  "c": 1
+                  "c": 2
                 }
               ]
             },
@@ -3081,7 +3081,7 @@
                     "RM100",
                     "RM150"
                   ],
-                  "c": 2
+                  "c": 0
                 },
                 {
                   "q": "Test scores: 76, 82, 88, 82, 90. Mean score?",
@@ -3101,7 +3101,7 @@
                     "Green",
                     "All equally"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "Daily visitors: 120, 150, 110, 130, 140. Median visitors?",
@@ -3111,7 +3111,7 @@
                     "130",
                     "150"
                   ],
-                  "c": 3
+                  "c": 2
                 },
                 {
                   "q": "A pie chart of 360 pets: Dogs 180°, Cats 90°, Fish 45°, Birds 45°. Number of dogs?",
@@ -3121,7 +3121,7 @@
                     "45",
                     "135"
                   ],
-                  "c": 2
+                  "c": 1
                 },
                 {
                   "q": "A class test scores: 60, 75, 80, 75, 90, 75. The mode is ___",
@@ -3141,7 +3141,7 @@
                     "78",
                     "80"
                   ],
-                  "c": 0
+                  "c": 1
                 }
               ]
             }
