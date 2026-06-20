@@ -409,11 +409,18 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    // Path: profiles/{uid}/children/{name} (4 segments = valid doc ref)
-                    const profileRef = doc(db, "profiles", uid, "children", name);
-                    await setDoc(profileRef, { scores: {} }, { merge: true });
-                    // Also reset old path for backward compat
-                    await setDoc(doc(db, "users", name), { scores: {} }, { merge: true });
+                    // Use updateDoc to directly replace scores field (setDoc+merge does deep merge on maps)
+                    try {
+                        await updateDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
+                    } catch(e) {
+                        // Document might not exist — create it
+                        await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
+                    }
+                    try {
+                        await updateDoc(doc(db, "users", name), { scores: {} });
+                    } catch(e) {
+                        await setDoc(doc(db, "users", name), { scores: {} });
+                    }
                 }
 
                 showToast(`✅ Reset ${children.length} profile(s) for ${email}`, 'success');
