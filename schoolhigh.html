@@ -43,7 +43,7 @@
         <header class="app-header">
             <h1>🏫 Secondary School Hub</h1>
             <div class="header-right">
-                <span id="user-badge" class="user-badge">Explorer</span>
+                <span id="user-badge" class="user-badge" style="cursor:pointer;" onclick="location.href='index.html'">Explorer</span>
                 <a href="index.html" class="home-icon-btn">🏠</a>
             </div>
         </header>
@@ -142,7 +142,7 @@
             if (!ref) return;
             const userDoc = await getDoc(ref);
             isPremiumUser = userDoc.exists() ? userDoc.data().isPremium : false;
-            document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremiumUser ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
+            document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremiumUser ? ' <span style="color:#f1c40f">⭐</span>' : ''} <span style="font-size:0.7rem;color:#999;">▾</span>`;
         }
 
         async function generateHub() {

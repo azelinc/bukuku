@@ -172,7 +172,7 @@
         <header id="main-header" class="idx-header" style="display: none;">
             <h1>AF Education Hub</h1>
             <div class="header-right">
-                <span id="user-badge" class="idx-user-badge">Explorer</span>
+                <span id="user-badge" class="idx-user-badge" style="cursor:pointer;" onclick="switchUser()">Explorer</span>
             </div>
         </header>
 
@@ -284,7 +284,6 @@
                 <a href="tuition-tb.html" class="idx-btn blue-btn">📘 Textbook Practice</a>
                 <!-- Games removed for now -->
             </div>
-            <button onclick="switchUser()" style="margin-top:40px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #ff1100; width: 100%;">👤 Switch Profile</button>
         </div>
     </div>
 
@@ -823,7 +822,7 @@
                 setup.style.display = 'none';
                 menu.style.display = 'block';
                 header.style.display = 'flex';
-                document.getElementById('user-badge').innerHTML = `👤 ${name}`;
+                document.getElementById('user-badge').innerHTML = `👤 ${name} ▾`;
                 return true;
             } catch (e) { return false; }
         }
