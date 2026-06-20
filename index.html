@@ -252,7 +252,7 @@
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getAuth, onAuthStateChanged, signOut, browserLocalPersistence, setPersistence } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSy...39cs",
@@ -368,6 +368,12 @@
                         progress: data.progress || {}
                     });
                     migrated++;
+                }
+                // After migration, populate children list in metadata doc
+                if (migrated > 0) {
+                    await setDoc(doc(db, "profiles", uid), {
+                        children: oldSnap.docs.map(d => d.id)
+                    }, { merge: true });
                 }
                 return migrated;
             } catch (e) {
@@ -645,6 +651,10 @@
                         createdAt: new Date(),
                         lastLogin: new Date()
                     });
+                    // Maintain children list in profiles/{uid} metadata doc
+                    await setDoc(doc(db, "profiles", currentUser.uid), {
+                        children: arrayUnion(name)
+                    }, { merge: true });
                     showToast(`Welcome ${name}!`, "success");
                     selectProfile(name);
                 } catch (e) {

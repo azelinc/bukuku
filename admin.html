@@ -370,30 +370,40 @@
 
         // Reset a specific account's progress
         async function resetAccountProgress(uid, email) {
-            const confirmed = confirm(`⚠️ Reset ALL progress to zero for account "${email}"?\n\nThis will delete quiz scores, sifir scores, and train scores for EVERY profile under this account.\n\nThis cannot be undone!`);
+            const confirmed = confirm(`⚠️ Reset ALL progress to zero for account "${email}"?\n\nThis will delete quiz scores for EVERY profile under this account.\n\nThis cannot be undone!`);
             if (!confirmed) return;
 
             const doubleConfirm = confirm(`❗ FINAL WARNING: "${email}"\n\nAll quiz, sifir, and train scores will be deleted.\n\nProceed?`);
             if (!doubleConfirm) return;
 
             try {
-                const snap = await getDocs(collection(db, "profiles", uid));
-                const profiles = [];
-                snap.forEach(d => profiles.push(d.id));
+                // Read children list from profiles/{uid} metadata doc
+                const metaDoc = await getDoc(doc(db, "profiles", uid));
+                let children = [];
 
-                if (profiles.length === 0) {
+                if (metaDoc.exists() && Array.isArray(metaDoc.data().children)) {
+                    children = metaDoc.data().children;
+                } else {
+                    // Fallback: try old users/ collection
+                    const oldSnap = await getDocs(collection(db, "users"));
+                    oldSnap.forEach(d => children.push(d.id));
+                }
+
+                if (children.length === 0) {
                     showToast(`No profiles found for ${email}`, 'info');
                     return;
                 }
 
-                showToast(`⏳ Resetting ${profiles.length} profile(s) for ${email}...`, 'info');
+                showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
-                for (const name of profiles) {
+                for (const name of children) {
+                    // Save to both new and old paths for backward compatibility
                     const profileRef = doc(db, "profiles", uid, name);
                     await setDoc(profileRef, { scores: {} }, { merge: true });
+                    await setDoc(doc(db, "users", name), { scores: {} }, { merge: true });
                 }
 
-                showToast(`✅ Reset ${profiles.length} profile(s) for ${email}`, 'success');
+                showToast(`✅ Reset ${children.length} profile(s) for ${email}`, 'success');
             } catch (e) {
                 showToast(`❌ Failed to reset ${email}: ${e.message}`, 'error');
             }
