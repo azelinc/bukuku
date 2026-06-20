@@ -409,8 +409,8 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    // Clear scores in scoped path only (auth-gated)
-                    await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
+                    // Clear scores and textbook progress in scoped path
+                    await setDoc(doc(db, "profiles", uid, "children", name), { scores: {}, tb_scores: {} });
                 }
 
                 showToast(`✅ Reset ${children.length} profile(s) for ${email}`, 'success');
