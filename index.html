@@ -560,7 +560,7 @@
                 await signInWithEmailAndPassword(auth, email, pass);
                 // onAuthStateChanged will handle the rest
             } catch (e) {
-                errEl.textContent = e.message.replace('Firebase: ', '').replace(/\(.*\)/, '');
+                errEl.textContent = '❌ ' + (e.code ? e.code.replace('auth/', '') : 'Login failed. Check email and password.');
                 btn.disabled = false; btn.innerHTML = '🔑 Sign In';
                 document.getElementById('signin-form-area').style.display = 'block';
                 document.getElementById('signin-loading').style.display = 'none';
@@ -601,7 +601,7 @@
                 });
                 // onAuthStateChanged will handle the rest
             } catch (e) {
-                errEl.textContent = e.message.replace('Firebase: ', '').replace(/\(.*\)/, '');
+                errEl.textContent = '❌ ' + (e.code ? e.code.replace('auth/', '') : 'Registration failed.');
                 btn.disabled = false; btn.innerHTML = 'Create Account';
                 document.getElementById('signin-form-area').style.display = 'block';
                 document.getElementById('register-area').style.display = 'block';
