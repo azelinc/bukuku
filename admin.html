@@ -384,9 +384,21 @@
                 if (metaDoc.exists() && Array.isArray(metaDoc.data().children)) {
                     children = metaDoc.data().children;
                 } else {
-                    // Fallback: try old users/ collection
-                    const oldSnap = await getDocs(collection(db, "users"));
-                    oldSnap.forEach(d => children.push(d.id));
+                    // No metadata doc yet — prompt admin to seed children list
+                    const manualNames = prompt(
+                        `No profile list found for "${email}".\n\nEnter comma-separated profile names to reset (e.g. Alya, Afeef, Ayza):\n\nOr cancel if you don't know them.`
+                    );
+                    if (!manualNames) {
+                        showToast('Reset cancelled — no profile names provided', 'info');
+                        return;
+                    }
+                    children = manualNames.split(',').map(n => n.trim()).filter(Boolean);
+                    // Save names for next time
+                    if (children.length > 0) {
+                        await setDoc(doc(db, "profiles", uid), {
+                            children: children
+                        }, { merge: true });
+                    }
                 }
 
                 if (children.length === 0) {
@@ -397,9 +409,9 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    // Save to both new and old paths for backward compatibility
                     const profileRef = doc(db, "profiles", uid, name);
                     await setDoc(profileRef, { scores: {} }, { merge: true });
+                    // Also reset old path for backward compat
                     await setDoc(doc(db, "users", name), { scores: {} }, { merge: true });
                 }
 
