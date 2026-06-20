@@ -103,7 +103,7 @@
         // AUTH CHECK — must be signed in
         const authCheck = localStorage.getItem('bukuku_auth');
         if (!authCheck) {
-            window.location.href = 'login.html?_=' + Date.now();
+            window.location.href = 'index.html';
         }
 
         // Bypass old service worker cache

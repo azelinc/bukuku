@@ -155,6 +155,13 @@
             90% { opacity: 1; transform: translateY(0); }
             100% { opacity: 0; transform: translateY(-10px); }
         }
+        .spinner-sm {
+            display: inline-block; width: 20px; height: 20px;
+            border: 3px solid rgba(255,255,255,0.3);
+            border-top: 3px solid white;
+            border-radius: 50%; animation: spin 0.8s linear infinite;
+            vertical-align: middle; margin-right: 8px;
+        }
     </style>
 </head>
 <body>
@@ -181,12 +188,29 @@
                 <div style="font-size: 4rem; margin-bottom: 15px;">🔐</div>
                 <h1 style="margin-bottom: 10px;">Sign In Required</h1>
                 <p class="idx-subtext">Please sign in to access your learning profiles</p>
-                <button id="signin-main-btn" class="idx-btn blue-btn" onclick="goToLogin()">
-                    🔑 Sign In / Create Account
-                </button>
-                <p style="color: #999; font-size: 0.8rem; margin-top: 15px;">
-                    Your progress is saved to your account securely
-                </p>
+
+                <div id="signin-form-area">
+                    <div id="signin-error" style="color:#e74c3c;font-size:0.85rem;min-height:20px;margin-bottom:8px;"></div>
+                    <input type="email" id="si-email" placeholder="Email address" style="padding: 16px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+                    <input type="password" id="si-pass" placeholder="Password" style="padding: 16px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+                    <button id="signin-btn" class="idx-btn blue-btn">🔑 Sign In</button>
+                    <p style="margin-top:12px; font-size:0.85rem; color:#999;">
+                        No account? <a href="#" id="show-register-link" style="color:#4a90e2; text-decoration:underline;">Create one</a>
+                    </p>
+                    <div id="register-area" style="display:none; margin-top:10px;">
+                        <input type="email" id="reg-email" placeholder="Email address" style="padding: 16px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+                        <input type="password" id="reg-pass" placeholder="Password (min 6 chars)" style="padding: 16px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+                        <input type="password" id="reg-confirm" placeholder="Confirm password" style="padding: 16px; width: 100%; border-radius: 15px; border: 3px solid #eee; font-size: 1rem; margin-bottom: 10px; text-align: center; outline: none; font-family: inherit;">
+                        <div id="reg-error" style="color:#e74c3c;font-size:0.85rem;min-height:20px;margin-bottom:8px;"></div>
+                        <button id="register-btn" class="idx-btn green-btn">Create Account</button>
+                        <p style="margin-top:8px;"><a href="#" id="show-login-link" style="color:#999; text-decoration:underline; font-size:0.85rem;">← Back to Sign In</a></p>
+                    </div>
+                </div>
+
+                <div id="signin-loading" style="display:none; padding:20px;">
+                    <div class="spinner"></div>
+                    <p style="color:#666;">Signing in...</p>
+                </div>
             </div>
         </div>
 
@@ -266,7 +290,7 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getAuth, onAuthStateChanged, signOut, browserLocalPersistence, setPersistence } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getAuth, onAuthStateChanged, signOut, signInWithEmailAndPassword, createUserWithEmailAndPassword, browserLocalPersistence, setPersistence } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, getDocs, getDoc, collection, deleteDoc, arrayUnion } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const firebaseConfig = {
@@ -477,7 +501,7 @@
                     showProfileSelection();
                 }
             } else {
-                window.location.href = 'login.html?_=' + Date.now();
+                goToLogin();
             }
         };
 
@@ -490,11 +514,11 @@
             header.style.display = 'none';
             signinScreen.style.display = 'none';
 
-            // Check authentication — must be signed in to use app
-            const isAuthed = currentUser || localStorage.getItem('bukuku_auth');
-            if (!isAuthed) {
+            // Check authentication — must be signed in (use Firebase auth, not stale localStorage)
+            if (!currentUser) {
                 loading.style.display = 'none';
                 signinScreen.style.display = 'block';
+                document.getElementById('si-email').focus();
                 return;
             }
 
@@ -511,8 +535,84 @@
         }
 
         window.goToLogin = () => {
-            window.location.href = 'login.html?_=' + Date.now();
+            // Show sign-in form on this page (no redirect needed)
+            signinScreen.style.display = 'block';
+            selection.style.display = 'none';
+            setup.style.display = 'none';
+            menu.style.display = 'none';
+            header.style.display = 'none';
+            loading.style.display = 'none';
+            document.getElementById('si-email').focus();
         };
+
+        // ---- INLINE SIGN-IN / REGISTER ----
+        document.getElementById('signin-btn').onclick = async () => {
+            const email = document.getElementById('si-email').value.trim();
+            const pass = document.getElementById('si-pass').value;
+            const errEl = document.getElementById('signin-error');
+            if (!email || !pass) { errEl.textContent = 'Fill in all fields'; return; }
+            errEl.textContent = '';
+            const btn = document.getElementById('signin-btn');
+            btn.disabled = true; btn.innerHTML = '<span class="spinner-sm"></span> Signing in...';
+            document.getElementById('signin-form-area').style.display = 'none';
+            document.getElementById('signin-loading').style.display = 'block';
+            try {
+                await signInWithEmailAndPassword(auth, email, pass);
+                // onAuthStateChanged will handle the rest
+            } catch (e) {
+                errEl.textContent = e.message.replace('Firebase: ', '').replace(/\(.*\)/, '');
+                btn.disabled = false; btn.innerHTML = '🔑 Sign In';
+                document.getElementById('signin-form-area').style.display = 'block';
+                document.getElementById('signin-loading').style.display = 'none';
+            }
+        };
+
+        document.getElementById('show-register-link').onclick = (e) => {
+            e.preventDefault();
+            document.getElementById('register-area').style.display = 'block';
+            document.getElementById('show-register-link').style.display = 'none';
+        };
+
+        document.getElementById('show-login-link').onclick = (e) => {
+            e.preventDefault();
+            document.getElementById('register-area').style.display = 'none';
+            document.getElementById('show-register-link').style.display = 'inline';
+        };
+
+        document.getElementById('register-btn').onclick = async () => {
+            const email = document.getElementById('reg-email').value.trim();
+            const pass = document.getElementById('reg-pass').value;
+            const confirm = document.getElementById('reg-confirm').value;
+            const errEl = document.getElementById('reg-error');
+            if (!email || !pass || !confirm) { errEl.textContent = 'Fill in all fields'; return; }
+            if (pass.length < 6) { errEl.textContent = 'Password must be at least 6 characters'; return; }
+            if (pass !== confirm) { errEl.textContent = 'Passwords do not match'; return; }
+            errEl.textContent = '';
+            const btn = document.getElementById('register-btn');
+            btn.disabled = true; btn.innerHTML = '<span class="spinner-sm"></span> Creating...';
+            document.getElementById('signin-form-area').style.display = 'none';
+            document.getElementById('signin-loading').style.display = 'block';
+            try {
+                const cred = await createUserWithEmailAndPassword(auth, email, pass);
+                await setDoc(doc(db, "admins", cred.user.uid), {
+                    email: email,
+                    subscription: { plan: "free" },
+                    updatedAt: new Date()
+                });
+                // onAuthStateChanged will handle the rest
+            } catch (e) {
+                errEl.textContent = e.message.replace('Firebase: ', '').replace(/\(.*\)/, '');
+                btn.disabled = false; btn.innerHTML = 'Create Account';
+                document.getElementById('signin-form-area').style.display = 'block';
+                document.getElementById('register-area').style.display = 'block';
+                document.getElementById('signin-loading').style.display = 'none';
+            }
+        };
+
+        // Enter key support on sign-in form
+        document.getElementById('si-pass').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') document.getElementById('signin-btn').click();
+        });
 
         async function showProfileSelection() {
             if (_renderingProfiles) return;
