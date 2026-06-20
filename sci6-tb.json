@@ -1,0 +1,2327 @@
+{
+  "subjects": {
+    "sci6": {
+      "name": "Science Year 6 (DLP)",
+      "icon": "🧪",
+      "color": "#0097a7",
+      "units": {
+        "1": {
+          "name": "Scientific Skills",
+          "topics": {
+            "1.1": {
+              "name": "Science Process Skills",
+              "revision": "Science process skills are the foundation of scientific investigation. Key skills include identifying variables (manipulated, responding, constant), designing experiments, making hypotheses, using apparatus correctly, and drawing conclusions. The manipulated variable is what you change on purpose, the responding variable is what you measure, and the constant variables remain the same throughout the experiment. Mastering these skills allows you to conduct fair and accurate scientific investigations.",
+              "questions": [
+                {
+                  "q": "In an experiment, the variable that is changed on purpose by the scientist is called the...",
+                  "a": [
+                    "Constant variable",
+                    "Manipulated variable",
+                    "Responding variable",
+                    "Controlled variable"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In a fair test, which variables should be kept the same throughout?",
+                  "a": [
+                    "Manipulated variables",
+                    "Responding variables",
+                    "Constant variables",
+                    "All variables"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A student wants to test how the type of fertiliser affects plant growth. What is the responding variable?",
+                  "a": [
+                    "Type of fertiliser",
+                    "Amount of water",
+                    "Amount of sunlight",
+                    "Height of plant"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following is NOT one of the basic science process skills?",
+                  "a": [
+                    "Observing",
+                    "Classifying",
+                    "Playing",
+                    "Predicting"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Siti notices that a metal spoon feels colder than a wooden spoon even though both are at the same temperature. Which skill is she using?",
+                  "a": [
+                    "Measuring",
+                    "Classifying",
+                    "Observing",
+                    "Inferring"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Drawing a specimen exactly as you see it under a microscope is an example of which manipulative skill?",
+                  "a": [
+                    "Using apparatus correctly",
+                    "Handling specimens carefully",
+                    "Drawing specimens accurately",
+                    "Cleaning equipment"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is the correct order of the scientific method?",
+                  "a": [
+                    "Hypothesis, experiment, conclusion, problem",
+                    "Problem, hypothesis, experiment, conclusion",
+                    "Conclusion, hypothesis, experiment, problem",
+                    "Experiment, problem, hypothesis, conclusion"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In a fair test, why must only one variable be changed at a time?",
+                  "a": [
+                    "To save time",
+                    "So we know exactly which variable caused the result",
+                    "Because it is easier",
+                    "To use less equipment"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Manipulative Skills",
+              "revision": "Manipulative skills involve the correct and safe use of science apparatus and materials. These include handling glassware carefully, using measuring tools accurately, setting up equipment properly, drawing specimens with accurate labels, storing chemicals safely, and cleaning up after experiments. Good manipulative skills ensure safety and accurate results in scientific investigations.",
+              "questions": [
+                {
+                  "q": "Which apparatus is most suitable for measuring exactly 25 ml of water?",
+                  "a": [
+                    "A beaker",
+                    "A measuring cylinder",
+                    "A conical flask",
+                    "A test tube"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "When using a microscope, which part should you use to focus the image clearly?",
+                  "a": [
+                    "The eyepiece",
+                    "The objective lens",
+                    "The fine adjustment knob",
+                    "The stage"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Why should you always wear safety goggles during a science experiment?",
+                  "a": [
+                    "To see better",
+                    "To protect your eyes from chemicals or broken glass",
+                    "To look like a scientist",
+                    "To prevent dust from getting in your eyes"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "When drawing a scientific diagram of a specimen, you should...",
+                  "a": [
+                    "Use a pen with colourful ink",
+                    "Use a pencil with shading",
+                    "Use a sharp pencil and draw clean lines",
+                    "Draw quickly without details"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is the correct way to smell a chemical in the lab?",
+                  "a": [
+                    "Put your nose directly over the container",
+                    "Wave your hand over the container to bring the smell towards you",
+                    "Pour it out and smell it",
+                    "Shake the container and then smell"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the correct way to hold a test tube when heating it over a Bunsen burner?",
+                  "a": [
+                    "Point it towards yourself",
+                    "Hold it with your bare hands",
+                    "Use a test tube holder and point it away from yourself and others",
+                    "Hold it at a 90-degree angle pointing up"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Human Reproduction",
+          "topics": {
+            "2.1": {
+              "name": "Male and Female Reproductive Systems",
+              "revision": "The human reproductive system enables reproduction. The male reproductive organs include the testes (produce sperm), penis, sperm duct, and scrotum. The female reproductive organs include the ovaries (produce eggs), fallopian tubes (where fertilisation occurs), uterus (where the baby grows), and vagina. When a sperm cell from a male joins with an egg cell from a female, fertilisation occurs, and a baby begins to develop in the uterus.",
+              "questions": [
+                {
+                  "q": "Where are egg cells produced in the female reproductive system?",
+                  "a": [
+                    "In the uterus",
+                    "In the fallopian tubes",
+                    "In the ovaries",
+                    "In the vagina"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The organ where a baby develops and grows during pregnancy is the...",
+                  "a": [
+                    "Ovary",
+                    "Fallopian tube",
+                    "Vagina",
+                    "Uterus"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Where does fertilisation typically take place?",
+                  "a": [
+                    "In the ovary",
+                    "In the fallopian tube",
+                    "In the uterus",
+                    "In the vagina"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The male reproductive cell is called a...",
+                  "a": [
+                    "Sperm",
+                    "Egg",
+                    "Zygote",
+                    "Foetus"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which organ in the male reproductive system produces sperm cells?",
+                  "a": [
+                    "The penis",
+                    "The sperm duct",
+                    "The scrotum",
+                    "The testes"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Fertilisation occurs when...",
+                  "a": [
+                    "The egg is released from the ovary",
+                    "A sperm cell joins with an egg cell",
+                    "The baby is born",
+                    "The sperm is produced in the testes"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is produced by the testes in the male reproductive system?",
+                  "a": [
+                    "Egg cells",
+                    "Sperm cells",
+                    "Blood cells",
+                    "Nerve cells"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Physical Changes During Puberty",
+              "revision": "Puberty is the stage when a child's body begins to develop into an adult body. Boys experience: voice deepens, shoulders broaden, hair grows on face and body, muscles develop, and the reproductive organs mature. Girls experience: breasts develop, hips widen, menstruation (periods) begins, and hair grows under arms and in the pubic area. These changes are normal and happen at different times for different people.",
+              "questions": [
+                {
+                  "q": "What is the starting of menstruation in girls called?",
+                  "a": [
+                    "Ovulation",
+                    "Puberty",
+                    "Menarche",
+                    "Menopause"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is a physical change that happens to boys during puberty?",
+                  "a": [
+                    "Breasts develop",
+                    "Hips widen",
+                    "Voice deepens",
+                    "Menstruation begins"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is a physical change that happens to girls during puberty?",
+                  "a": [
+                    "Voice deepens",
+                    "Shoulders broaden",
+                    "Hips widen",
+                    "Facial hair grows"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "During puberty, boys' bodies produce more of the hormone called...",
+                  "a": [
+                    "Oestrogen",
+                    "Testosterone",
+                    "Insulin",
+                    "Adrenaline"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "During puberty, girls' bodies produce more of the hormone called...",
+                  "a": [
+                    "Testosterone",
+                    "Adrenaline",
+                    "Oestrogen",
+                    "Cortisol"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The age at which puberty typically begins in most children is between...",
+                  "a": [
+                    "5 and 7 years old",
+                    "8 and 14 years old",
+                    "15 and 18 years old",
+                    "18 and 21 years old"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is a change that occurs in BOTH boys and girls during puberty?",
+                  "a": [
+                    "Voice deepens",
+                    "Growth of pubic hair",
+                    "Shoulders broaden",
+                    "Menstruation begins"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Differences Between Boys and Girls During Puberty",
+              "revision": "During puberty, both boys and girls experience physical changes, but there are differences. Boys grow facial and chest hair, their voice deepens, and their shoulders broaden. Girls experience breast development, wider hips, and begin menstruation. Both boys and girls grow taller, gain weight, and develop body odour as sweat glands become more active. These changes are driven by hormones — testosterone in boys and oestrogen in girls.",
+              "questions": [
+                {
+                  "q": "Which change is unique to boys during puberty?",
+                  "a": [
+                    "Breast development",
+                    "Widening of hips",
+                    "Facial hair growth",
+                    "Menstruation"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which change is unique to girls during puberty?",
+                  "a": [
+                    "Deepening of the voice",
+                    "Menstruation",
+                    "Broadening of shoulders",
+                    "Growth of facial hair"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Both boys and girls experience which of the following during puberty?",
+                  "a": [
+                    "Facial hair growth",
+                    "Growth in height",
+                    "Menstruation",
+                    "Voice deepening"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Body odour becomes more noticeable during puberty because...",
+                  "a": [
+                    "Children stop bathing",
+                    "Hormones cause sweat glands to become more active",
+                    "The skin becomes thicker",
+                    "The body produces less sweat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Acne during puberty is caused by...",
+                  "a": [
+                    "Eating too much chocolate",
+                    "Dirty skin only",
+                    "Hormonal changes that increase oil production in the skin",
+                    "Not drinking enough water"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The changes during puberty are triggered by...",
+                  "a": [
+                    "Vitamins",
+                    "Exercise",
+                    "Hormones",
+                    "Diet"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Animal and Plant Reproduction",
+          "topics": {
+            "3.1": {
+              "name": "How Animals Reproduce",
+              "revision": "Animals reproduce in two main ways. Oviparous animals (egg-laying) lay eggs that develop outside the mother's body. Examples include birds, reptiles, fish, amphibians, and insects. Viviparous animals (giving birth) give birth to live young that develop inside the mother's body. Examples include most mammals like cats, dogs, elephants, and humans. Some animals, like sharks, can be both oviparous and viviparous depending on the species.",
+              "questions": [
+                {
+                  "q": "Animals that lay eggs are called...",
+                  "a": [
+                    "Viviparous",
+                    "Oviparous",
+                    "Herbivores",
+                    "Mammals"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Animals that give birth to live young are called...",
+                  "a": [
+                    "Oviparous",
+                    "Reptiles",
+                    "Viviparous",
+                    "Carnivores"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is an oviparous animal?",
+                  "a": [
+                    "Cow",
+                    "Cat",
+                    "Eagle",
+                    "Dolphin"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is a viviparous animal?",
+                  "a": [
+                    "Crocodile",
+                    "Frog",
+                    "Butterfly",
+                    "Elephant"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A duck is an oviparous animal because it...",
+                  "a": [
+                    "Gives birth to live young",
+                    "Lays eggs",
+                    "Has fur",
+                    "Breathes with lungs"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Viviparous animals have an advantage because their young are...",
+                  "a": [
+                    "Always born in water",
+                    "Protected inside the mother's body during development",
+                    "Born with fully grown fur",
+                    "Immediately independent at birth"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which animal is both oviparous and can also give birth to live young in some species?",
+                  "a": [
+                    "Eagle",
+                    "Shark",
+                    "Frog",
+                    "Cat"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.2": {
+              "name": "How Plants Reproduce",
+              "revision": "Plants can reproduce in various ways. Sexual reproduction involves seeds (from flowers after pollination and fertilisation) and spores (from ferns and mushrooms). Asexual reproduction happens without seeds: suckers (new shoots from the parent's root like banana and pineapple), stem cuttings (planting a piece of stem like tapioca and rose), leaves (new plants grow from leaves like begonia and bryophyllum), and underground stems (tubers like potato, rhizomes like ginger, bulbs like onion).",
+              "questions": [
+                {
+                  "q": "A farmer cuts a stem of tapioca and plants it in the soil. What type of reproduction is this?",
+                  "a": [
+                    "Seed reproduction",
+                    "Stem cutting",
+                    "Leaf reproduction",
+                    "Spore reproduction"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which plant reproduces by suckers?",
+                  "a": [
+                    "Rose",
+                    "Banana",
+                    "Potato",
+                    "Fern"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A new begonia plant can grow from a broken leaf placed on soil. This is an example of...",
+                  "a": [
+                    "Stem cutting",
+                    "Seed germination",
+                    "Leaf reproduction",
+                    "Underground stem"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Potatoes and ginger reproduce through...",
+                  "a": [
+                    "Seeds",
+                    "Suckers",
+                    "Leaves",
+                    "Underground stems"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ferns reproduce by releasing tiny structures called...",
+                  "a": [
+                    "Seeds",
+                    "Suckers",
+                    "Spores",
+                    "Pollen"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following reproduces through bulbs?",
+                  "a": [
+                    "Tapioca",
+                    "Onion",
+                    "Banana",
+                    "Rose"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The part of a flower that develops into a seed after fertilisation is the...",
+                  "a": [
+                    "Petal",
+                    "Ovule",
+                    "Stamen",
+                    "Sepal"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Comparing Different Ways of Reproduction",
+              "revision": "Different reproduction methods have different advantages. Seeds protect the baby plant inside a hard coat and can be spread far by wind, water, or animals. Suckers grow from the parent's root system, which means the new plant is already connected to a strong root network. Stem cuttings grow quickly from a piece of parent stem. Spores are very light and can travel far in the wind. Underground stems store food that helps the new plant grow. Understanding these differences helps farmers and gardeners choose the best method for each plant.",
+              "questions": [
+                {
+                  "q": "What advantage do seeds have over spores?",
+                  "a": [
+                    "Seeds are lighter than spores",
+                    "Seeds have a protective coat and stored food",
+                    "Seeds can be produced in larger numbers",
+                    "Seeds do not need water"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A farmer wants plants that grow quickly and are identical to the parent. Which method should they use?",
+                  "a": [
+                    "Growing from seeds",
+                    "Growing from spores",
+                    "Growing from stem cuttings",
+                    "Growing from wind dispersal"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Why are suckers considered a fast way for plants to reproduce?",
+                  "a": [
+                    "They grow from the parent's strong root system",
+                    "They travel far through the air",
+                    "They need a lot of sunlight",
+                    "They produce flowers quickly"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which of the following best describes how spores are dispersed?",
+                  "a": [
+                    "By animals eating them",
+                    "By floating in the wind",
+                    "By sticking to fur",
+                    "By falling straight to the ground"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Underground stems like potato tubers have the advantage of...",
+                  "a": [
+                    "Growing far from the parent",
+                    "Storing food to nourish the new plant",
+                    "Producing flowers year-round",
+                    "Attracting more pollinators"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which method of reproduction produces offspring that are genetically identical to the parent?",
+                  "a": [
+                    "Sexual reproduction through seeds",
+                    "Asexual reproduction through cuttings",
+                    "Pollination by bees",
+                    "Fertilisation"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Interaction Among Living Things",
+          "topics": {
+            "4.1": {
+              "name": "Ecosystems",
+              "revision": "An ecosystem is a community of living things interacting with each other and their environment. It has two components: biotic (living things like plants, animals, microorganisms) and abiotic (non-living things like sunlight, water, air, temperature, soil). Examples of ecosystems include a rainforest, a pond, a coral reef, and a garden. Every living thing in an ecosystem has a role to play, and all parts depend on each other for survival.",
+              "questions": [
+                {
+                  "q": "Which of the following is a biotic component of an ecosystem?",
+                  "a": [
+                    "Sunlight",
+                    "Air",
+                    "Trees",
+                    "Water"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is an abiotic component of an ecosystem?",
+                  "a": [
+                    "Birds",
+                    "Fish",
+                    "Plants",
+                    "Temperature"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A pond ecosystem includes fish, water plants, and...",
+                  "a": [
+                    "Only living things",
+                    "Only fish",
+                    "Both living and non-living components",
+                    "Only water"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Why is sunlight important in an ecosystem?",
+                  "a": [
+                    "It provides heat only",
+                    "It helps plants make food through photosynthesis",
+                    "It scares away predators",
+                    "It helps animals sleep"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A large area with a community of living things interacting with their environment is called a(n)...",
+                  "a": [
+                    "Population",
+                    "Ecosystem",
+                    "Community",
+                    "Habitat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is an example of an ecosystem?",
+                  "a": [
+                    "A single tree",
+                    "A fish tank with fish, plants, water, and a light",
+                    "A pile of sand",
+                    "A glass of water"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Food Chains and Food Webs",
+              "revision": "A food chain shows how energy passes from one living thing to another. It always starts with a producer (plants that make their own food). Consumers eat other organisms: herbivores eat only plants, carnivores eat only meat, and omnivores eat both plants and animals. Decomposers like bacteria and fungi break down dead matter and return nutrients to the soil. A food web is a network of interconnected food chains in an ecosystem.",
+              "questions": [
+                {
+                  "q": "In a food chain, organisms that make their own food are called...",
+                  "a": [
+                    "Consumers",
+                    "Herbivores",
+                    "Producers",
+                    "Decomposers"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A rabbit eats grass. The rabbit is a...",
+                  "a": [
+                    "Producer",
+                    "Herbivore",
+                    "Carnivore",
+                    "Decomposer"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is a correct food chain?",
+                  "a": [
+                    "Sun → Grass → Rabbit → Eagle",
+                    "Eagle → Rabbit → Grass → Sun",
+                    "Rabbit → Grass → Sun → Eagle",
+                    "Grass → Eagle → Rabbit → Sun"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "An animal that eats both plants and meat is called a(n)...",
+                  "a": [
+                    "Herbivore",
+                    "Carnivore",
+                    "Omnivore",
+                    "Producer"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is the role of decomposers in a food web?",
+                  "a": [
+                    "They produce food for others",
+                    "They hunt other animals",
+                    "They break down dead organisms and return nutrients to the soil",
+                    "They eat only plants"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If all the grass in a field dies, what will most likely happen to the herbivores?",
+                  "a": [
+                    "They will become carnivores",
+                    "They will thrive",
+                    "They will struggle to find food and numbers may decrease",
+                    "They will start eating meat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "In the food chain 'Grass → Grasshopper → Frog → Snake', which is the secondary consumer?",
+                  "a": [
+                    "Grasshopper",
+                    "Frog",
+                    "Snake",
+                    "Grass"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Types of Interactions",
+              "revision": "Living things interact in various ways. Predator-prey (one animal hunts and eats another). Competition (organisms fight for the same limited resources like food, water, space, or mates). Mutualism (both organisms benefit, e.g. bees and flowers). Commensalism (one benefits, the other is neither helped nor harmed, e.g. barnacles on a whale). Parasitism (one benefits, the other is harmed, e.g. ticks on a dog). These interactions help maintain balance in an ecosystem.",
+              "questions": [
+                {
+                  "q": "A lion hunts and eats a zebra. This interaction is called...",
+                  "a": [
+                    "Mutualism",
+                    "Predator-prey",
+                    "Commensalism",
+                    "Parasitism"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bees collect nectar from flowers and help pollinate them. Both benefit. This is...",
+                  "a": [
+                    "Predator-prey",
+                    "Competition",
+                    "Mutualism",
+                    "Commensalism"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A tick attaches to a dog's skin and feeds on its blood. This is an example of...",
+                  "a": [
+                    "Mutualism",
+                    "Commensalism",
+                    "Predator-prey",
+                    "Parasitism"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Barnacles attach themselves to a whale's skin. The barnacles get a ride to food sources, and the whale is not affected. This is...",
+                  "a": [
+                    "Parasitism",
+                    "Commensalism",
+                    "Mutualism",
+                    "Competition"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Two male deer fight for the same female to mate. This interaction is...",
+                  "a": [
+                    "Predator-prey",
+                    "Competition",
+                    "Mutualism",
+                    "Parasitism"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In mutualism, the relationship between the two organisms is...",
+                  "a": [
+                    "Harmful to both",
+                    "Beneficial to both",
+                    "Beneficial to one and harmful to the other",
+                    "Beneficial to one and neutral to the other"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Two species of birds living in the same tree and eating the same insects are in...",
+                  "a": [
+                    "Mutualism",
+                    "Competition",
+                    "Commensalism",
+                    "Predator-prey"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Energy",
+          "topics": {
+            "5.1": {
+              "name": "Sources of Energy",
+              "revision": "Energy sources are divided into renewable and non-renewable. Renewable sources can be replenished naturally and include the Sun (solar), wind, water (hydroelectric), biomass (plant and animal waste), and geothermal (heat from inside the Earth). Non-renewable sources will run out one day and include petroleum (oil), natural gas, and coal — also called fossil fuels. Burning fossil fuels releases carbon dioxide, which contributes to global warming. Renewable energy is cleaner and more sustainable.",
+              "questions": [
+                {
+                  "q": "Which of the following is a renewable energy source?",
+                  "a": [
+                    "Petroleum",
+                    "Natural gas",
+                    "Wind",
+                    "Coal"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is a non-renewable energy source?",
+                  "a": [
+                    "Solar",
+                    "Wind",
+                    "Coal",
+                    "Biomass"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Fossil fuels are called non-renewable because...",
+                  "a": [
+                    "They are very cheap",
+                    "They take millions of years to form and will eventually run out",
+                    "They can be made quickly in factories",
+                    "They produce clean energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Solar panels convert energy from the Sun into...",
+                  "a": [
+                    "Heat energy only",
+                    "Chemical energy",
+                    "Electrical energy",
+                    "Sound energy"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Geothermal energy comes from...",
+                  "a": [
+                    "The wind",
+                    "The Sun",
+                    "Heat inside the Earth",
+                    "Moving water"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which renewable energy source uses moving air to generate electricity?",
+                  "a": [
+                    "Solar power",
+                    "Wind power",
+                    "Geothermal power",
+                    "Hydroelectric power"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which type of renewable energy uses the flow of rivers and dams to generate electricity?",
+                  "a": [
+                    "Solar",
+                    "Wind",
+                    "Hydroelectric",
+                    "Geothermal"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Forms of Energy",
+              "revision": "Energy exists in many forms around us. Light energy comes from the Sun, lamps, and fire. Heat energy is felt as temperature from the Sun, heaters, and friction. Sound energy travels as waves from music, speech, and noise. Electrical energy flows through wires to power our devices. Kinetic energy is the energy of moving objects. Potential energy is stored energy in an object at rest. Chemical energy is stored in food, batteries, and fuels. Energy can change from one form to another.",
+              "questions": [
+                {
+                  "q": "A moving car has which type of energy?",
+                  "a": [
+                    "Potential energy",
+                    "Chemical energy",
+                    "Kinetic energy",
+                    "Heat energy"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Batteries store which form of energy?",
+                  "a": [
+                    "Electrical energy",
+                    "Chemical energy",
+                    "Light energy",
+                    "Heat energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A wound-up spring in a toy has which type of energy?",
+                  "a": [
+                    "Kinetic energy",
+                    "Potential energy",
+                    "Sound energy",
+                    "Light energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A light bulb converts electrical energy into...",
+                  "a": [
+                    "Heat energy only",
+                    "Light energy only",
+                    "Light and heat energy",
+                    "Sound energy"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The food we eat contains which type of energy?",
+                  "a": [
+                    "Kinetic energy",
+                    "Electrical energy",
+                    "Potential energy",
+                    "Chemical energy"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A drum being struck produces which form of energy?",
+                  "a": [
+                    "Light energy",
+                    "Sound energy",
+                    "Heat energy",
+                    "Chemical energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A stretched rubber band has which type of energy?",
+                  "a": [
+                    "Kinetic energy",
+                    "Potential energy",
+                    "Chemical energy",
+                    "Thermal energy"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Energy Conversion",
+              "revision": "Energy can be converted from one form to another. This is called energy conversion or energy transformation. Examples: a toaster converts electrical energy to heat energy; a fan converts electrical energy to kinetic energy; a solar panel converts light energy to electrical energy; a microphone converts sound energy to electrical energy; a car engine converts chemical energy (from fuel) to kinetic energy and heat energy. Energy cannot be created or destroyed — it only changes form. This is the Law of Conservation of Energy.",
+              "questions": [
+                {
+                  "q": "A toaster converts electrical energy into which form?",
+                  "a": [
+                    "Light energy",
+                    "Heat energy",
+                    "Sound energy",
+                    "Kinetic energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "When we eat food and run, what energy conversion happens?",
+                  "a": [
+                    "Chemical to kinetic",
+                    "Kinetic to chemical",
+                    "Heat to chemical",
+                    "Light to chemical"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A television converts electrical energy into...",
+                  "a": [
+                    "Light and sound energy",
+                    "Heat energy only",
+                    "Chemical energy",
+                    "Kinetic energy only"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A solar-powered calculator uses which energy conversion?",
+                  "a": [
+                    "Heat energy to electrical energy",
+                    "Light energy to electrical energy",
+                    "Electrical energy to light energy",
+                    "Chemical energy to electrical energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In a hydroelectric dam, the kinetic energy of falling water is converted into...",
+                  "a": [
+                    "Chemical energy",
+                    "Heat energy",
+                    "Electrical energy",
+                    "Sound energy"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The Law of Conservation of Energy states that energy...",
+                  "a": [
+                    "Can be created but not destroyed",
+                    "Can be destroyed but not created",
+                    "Cannot be created or destroyed, only converted",
+                    "Can be created and destroyed"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Electricity and Magnetism",
+          "topics": {
+            "6.1": {
+              "name": "Complete Electrical Circuits",
+              "revision": "An electrical circuit is a complete path through which electric current flows. A complete circuit needs four basic components: a dry cell (power source), a bulb (load), connecting wires (path), and a switch (control). When the switch is closed, the circuit is complete and current flows, lighting up the bulb. When the switch is open, the circuit is broken and current cannot flow — the bulb is off. Electric current flows from the positive terminal of the battery to the negative terminal.",
+              "questions": [
+                {
+                  "q": "Which component in a circuit provides the electrical energy?",
+                  "a": [
+                    "The bulb",
+                    "The switch",
+                    "The connecting wires",
+                    "The dry cell"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "What happens when a switch is open in a circuit?",
+                  "a": [
+                    "The bulb glows brighter",
+                    "The circuit is broken and current stops flowing",
+                    "The bulb gets dimmer",
+                    "The battery charges"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the function of connecting wires in a circuit?",
+                  "a": [
+                    "To produce electricity",
+                    "To provide a path for electric current to flow",
+                    "To control the brightness of the bulb",
+                    "To store electricity"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Electric current in a circuit flows from the...",
+                  "a": [
+                    "Negative terminal to positive terminal",
+                    "Positive terminal to negative terminal",
+                    "Bulb to the battery",
+                    "Switch to the bulb"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A complete circuit is needed for a bulb to light up because...",
+                  "a": [
+                    "Electricity can jump through gaps",
+                    "Electricity needs an unbroken path to flow through",
+                    "The bulb works without electricity",
+                    "The switch does not matter"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "If one wire is disconnected from a circuit with one bulb and one battery, the bulb will...",
+                  "a": [
+                    "Glow dimmer",
+                    "Glow brighter",
+                    "Not light up at all",
+                    "Flash on and off"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Series and Parallel Circuits",
+              "revision": "In a series circuit, all components are connected in a single loop. The same current flows through each component. If one bulb blows, the circuit breaks and all bulbs go out. Bulbs are dimmer because the current is shared. In a parallel circuit, components are connected on separate branches. Each branch has its own path. If one bulb blows, the others stay lit. Bulbs in parallel are brighter because each receives the full voltage. Parallel circuits are used in homes so lights can work independently.",
+              "questions": [
+                {
+                  "q": "In a series circuit with two bulbs, what happens if one bulb blows?",
+                  "a": [
+                    "The other bulb stays lit",
+                    "The other bulb gets brighter",
+                    "Both bulbs go out",
+                    "The other bulb flashes"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "In a parallel circuit with two bulbs, what happens if one bulb blows?",
+                  "a": [
+                    "Both bulbs go out",
+                    "The other bulb continues to light",
+                    "The other bulb gets brighter",
+                    "The circuit stops working"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which type of circuit is commonly used for household lighting?",
+                  "a": [
+                    "Series circuit",
+                    "Parallel circuit",
+                    "Magnetic circuit",
+                    "Static circuit"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Two bulbs in a series circuit will be...",
+                  "a": [
+                    "Brighter than a single bulb",
+                    "Dimmer than a single bulb",
+                    "The same brightness as a single bulb",
+                    "Not lit at all"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In a parallel circuit, each bulb has its own...",
+                  "a": [
+                    "Battery",
+                    "Switch",
+                    "Path or branch",
+                    "Wire colour"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which circuit arrangement allows you to turn off one light while keeping others on?",
+                  "a": [
+                    "Series circuit with one switch",
+                    "Parallel circuit with individual switches",
+                    "A circuit with no switch",
+                    "A single-loop circuit"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Magnetic Force",
+              "revision": "Magnets produce a magnetic force field around them. A magnet has two poles — north (N) and south (S). Opposite poles attract (N and S pull together), and like poles repel (N-N or S-S push apart). Magnetic materials (like iron, steel, nickel, and cobalt) are attracted to magnets. Non-magnetic materials (like plastic, wood, paper, aluminium, and copper) are not attracted. The strength of a magnet is strongest at its poles. Larger magnets are generally stronger, but shape also matters.",
+              "questions": [
+                {
+                  "q": "If you bring the north pole of one magnet near the north pole of another magnet, they will...",
+                  "a": [
+                    "Attract",
+                    "Repel",
+                    "Have no effect",
+                    "Stick together"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following materials is attracted to a magnet?",
+                  "a": [
+                    "Plastic ruler",
+                    "Iron nail",
+                    "Paper",
+                    "Aluminium foil"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The strongest part of a magnet is at its...",
+                  "a": [
+                    "Middle",
+                    "Edges",
+                    "Poles",
+                    "Surface"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A north pole and a south pole of two magnets will...",
+                  "a": [
+                    "Repel each other",
+                    "Attract each other",
+                    "Have no effect on each other",
+                    "Destroy each other"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is NOT attracted to a magnet?",
+                  "a": [
+                    "A paperclip made of steel",
+                    "An iron nail",
+                    "A copper coin",
+                    "A nickel coin"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A magnetic field is...",
+                  "a": [
+                    "The area around a magnet where magnetic force can be felt",
+                    "The colour of the magnet",
+                    "The weight of the magnet",
+                    "The shape of the magnet"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A magnet can attract an object from a distance because of its...",
+                  "a": [
+                    "Weight",
+                    "Colour",
+                    "Magnetic field",
+                    "Size"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A paperclip can be turned into a temporary magnet by...",
+                  "a": [
+                    "Heating it",
+                    "Rubbing it repeatedly with a magnet in one direction",
+                    "Dropping it",
+                    "Painting it"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "6.4": {
+              "name": "Electromagnets",
+              "revision": "An electromagnet is a temporary magnet made by wrapping a coil of wire around an iron core and connecting it to a battery. When current flows, the iron core becomes magnetised. The strength of an electromagnet can be increased by: increasing the number of coils of wire, increasing the size of the battery (voltage), or using a thicker iron core. The electromagnet stops working when the current is switched off. Electromagnets are used in doorbells, cranes to lift scrap metal, speakers, and electric motors.",
+              "questions": [
+                {
+                  "q": "What materials are needed to make a simple electromagnet?",
+                  "a": [
+                    "A magnet, rubber, and wood",
+                    "An iron nail, copper wire, and a battery",
+                    "Plastic, aluminium, and a battery",
+                    "A steel bar and a bulb"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "How can you increase the strength of an electromagnet?",
+                  "a": [
+                    "Use fewer coils of wire",
+                    "Use a smaller battery",
+                    "Increase the number of coils",
+                    "Use a plastic core"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "An electromagnet loses its magnetism when...",
+                  "a": [
+                    "It is hit with a hammer",
+                    "It is heated",
+                    "The electric current is switched off",
+                    "The wire is made longer"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following devices uses an electromagnet?",
+                  "a": [
+                    "A wooden spoon",
+                    "A plastic cup",
+                    "An electric doorbell",
+                    "A paper towel"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is the function of the iron core in an electromagnet?",
+                  "a": [
+                    "To conduct electricity",
+                    "To become magnetised when current flows through the coil",
+                    "To protect the wire from breaking",
+                    "To make the electromagnet colourful"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A student wraps 20 coils of wire around an iron nail and connects it to one battery. To make the electromagnet stronger, she should...",
+                  "a": [
+                    "Use fewer coils and a smaller battery",
+                    "Use more coils and a bigger battery",
+                    "Remove the iron core",
+                    "Use a copper nail instead"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Simple Machines",
+          "topics": {
+            "7.1": {
+              "name": "Types of Simple Machines",
+              "revision": "Simple machines help us do work with less effort. There are six types: lever (a bar that pivots on a fulcrum — see-saw, crowbar), pulley (a grooved wheel with a rope — flagpole, crane), wheel and axle (a wheel attached to a rod — steering wheel, bicycle wheel), inclined plane (a sloping surface — ramp, staircase), wedge (two inclined planes back to back — knife, axe, scissors), screw (an inclined plane wrapped around a cylinder — screw, jar lid), and gear (toothed wheels that interlock — bicycle gears, clock gears).",
+              "questions": [
+                {
+                  "q": "A ramp used to move heavy objects to a higher level is which simple machine?",
+                  "a": [
+                    "Lever",
+                    "Inclined plane",
+                    "Wedge",
+                    "Screw"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A flag is raised to the top of a pole using a wheel and rope. This uses which simple machine?",
+                  "a": [
+                    "Lever",
+                    "Wheel and axle",
+                    "Pulley",
+                    "Inclined plane"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A knife uses which simple machine to cut through objects?",
+                  "a": [
+                    "Inclined plane",
+                    "Screw",
+                    "Pulley",
+                    "Wedge"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A screw is a simple machine that is actually an inclined plane...",
+                  "a": [
+                    "Cut into small pieces",
+                    "Wrapped around a cylinder in a spiral",
+                    "Standing on its end",
+                    "Pushed into a slope"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The steering wheel of a car is an example of which simple machine?",
+                  "a": [
+                    "Lever",
+                    "Pulley",
+                    "Screw",
+                    "Wheel and axle"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which simple machine consists of a bar that rotates around a fixed point called a fulcrum?",
+                  "a": [
+                    "Pulley",
+                    "Wedge",
+                    "Lever",
+                    "Screw"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Interlocking toothed wheels that transfer motion are called...",
+                  "a": [
+                    "Pulleys",
+                    "Wedges",
+                    "Gears",
+                    "Levers"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Uses of Simple Machines",
+              "revision": "Simple machines make work easier by reducing the amount of force needed, changing the direction of force, or increasing the speed or distance of movement. A lever (like a crowbar) helps lift heavy objects with less force. A pulley (like on a flagpole) changes the direction of force so you pull down to lift up. An inclined plane (ramp) spreads the work over a longer distance. A wedge (axe) concentrates force on a small area. A screw (like a jar lid) turns a small turning force into a strong pulling force.",
+              "questions": [
+                {
+                  "q": "A crowbar helps lift a heavy rock by using which principle?",
+                  "a": [
+                    "It increases the distance the force travels",
+                    "It changes the direction of the force only",
+                    "It reduces the force needed by using leverage",
+                    "It uses electricity to lift the rock"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Using a ramp to move a heavy box into a lorry is easier because...",
+                  "a": [
+                    "The box becomes lighter",
+                    "The force needed is spread over a longer distance",
+                    "Gravity stops pulling the box",
+                    "The ramp pushes the box up"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pulling a rope downward to raise a flag upward shows that a pulley...",
+                  "a": [
+                    "Changes the direction of force",
+                    "Reduces the amount of force needed",
+                    "Speeds up the movement",
+                    "Increases the weight of the flag"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Screws are used to hold two pieces of wood together because...",
+                  "a": [
+                    "They are cheaper than nails",
+                    "They use an inclined plane to pull the wood together tightly",
+                    "They melt into the wood",
+                    "They expand when heated"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "An axe splits wood because the wedge shape...",
+                  "a": [
+                    "Concentrates force on a small area",
+                    "Distributes force evenly",
+                    "Is very heavy",
+                    "Creates heat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Scissors make cutting easier because they combine two...",
+                  "a": [
+                    "Pulleys",
+                    "Inclined planes",
+                    "Levers",
+                    "Wheels and axles"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Using a longer ramp to reach a higher level requires...",
+                  "a": [
+                    "More force",
+                    "Less force over a longer distance",
+                    "The same force",
+                    "No force at all"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Combining Simple Machines",
+              "revision": "Most tools and machines we use daily combine two or more simple machines to work more efficiently. A pair of scissors combines two levers (the handles) and two wedges (the blades). A bicycle combines wheels and axles (the wheels), pulleys and gears (the chain and gear system), and levers (the brakes and pedals). A wheelbarrow combines a lever (the handles) and a wheel and axle (the wheel). An egg beater combines gears and a wheel and axle. Understanding how simple machines combine helps us design better tools.",
+              "questions": [
+                {
+                  "q": "Scissors are made by combining which two simple machines?",
+                  "a": [
+                    "Pulley and wedge",
+                    "Lever and wedge",
+                    "Screw and lever",
+                    "Inclined plane and pulley"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A wheelbarrow combines which two simple machines?",
+                  "a": [
+                    "Pulley and lever",
+                    "Lever and wheel and axle",
+                    "Screw and wedge",
+                    "Inclined plane and wheel and axle"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A bicycle uses gears and a chain. These are combinations of which simple machines?",
+                  "a": [
+                    "Lever and wedge",
+                    "Screw and inclined plane",
+                    "Pulley and wheel and axle",
+                    "Lever and screw"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What simple machine is used in the pedal system of a bicycle?",
+                  "a": [
+                    "Pulley",
+                    "Wedge",
+                    "Screw",
+                    "Lever"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A can opener uses a combination of which simple machines?",
+                  "a": [
+                    "A wedge to cut and a lever to lift",
+                    "Two pulleys and a screw",
+                    "A wheel and axle only",
+                    "An inclined plane and a pulley"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Why are complex machines that combine simple machines better than single simple machines?",
+                  "a": [
+                    "They are cheaper to make",
+                    "They can perform more complex tasks more efficiently",
+                    "They never break down",
+                    "They use less material"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Technology and Inventions",
+          "topics": {
+            "8.1": {
+              "name": "What is Technology?",
+              "revision": "Technology is the application of scientific knowledge for practical purposes. It involves creating tools, systems, and devices to solve problems and make our lives easier and better. Examples of technology include smartphones (communication), computers (information processing), the Internet (global connectivity), medical equipment (healthcare), vehicles (transportation), and kitchen appliances (cooking). Technology improves our quality of life in countless ways and continues to evolve rapidly. Almost everything around us that is man-made involves some form of technology.",
+              "questions": [
+                {
+                  "q": "Technology is best defined as...",
+                  "a": [
+                    "The study of living things",
+                    "The application of scientific knowledge for practical purposes",
+                    "The study of the Earth",
+                    "The practice of cooking"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is an example of technology used for communication?",
+                  "a": [
+                    "A spoon",
+                    "A bicycle",
+                    "A smartphone",
+                    "A pencil"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following is NOT an example of technology?",
+                  "a": [
+                    "A microwave oven",
+                    "A computer",
+                    "A river",
+                    "A car"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Medical technology helps doctors to...",
+                  "a": [
+                    "Cook food faster",
+                    "Diagnose and treat illnesses more effectively",
+                    "Build houses",
+                    "Grow crops"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "How has transportation technology improved our lives?",
+                  "a": [
+                    "It has made travel slower",
+                    "It allows us to travel farther and faster than before",
+                    "It has made travel more dangerous",
+                    "It has reduced the number of roads"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following shows how technology helps in agriculture?",
+                  "a": [
+                    "Using a hand fan to cool down",
+                    "Using a tractor to plough fields quickly",
+                    "Using a pencil to write notes",
+                    "Using a clock to tell time"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following best describes the relationship between science and technology?",
+                  "a": [
+                    "Science and technology are unrelated",
+                    "Science discovers knowledge; technology applies it",
+                    "Technology only uses electricity",
+                    "Science only involves experiments"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Inventions That Changed the World",
+              "revision": "Some inventions have dramatically changed how humans live. The wheel (3500 BCE) revolutionised transport and machinery. The telephone (Alexander Graham Bell, 1876) changed communication. The light bulb (Thomas Edison, 1879) gave us light at night. The Internet (1960s-1990s) connected the world. The printing press (Johannes Gutenberg, 1440) made books and knowledge available to everyone. Penicillin (Alexander Fleming, 1928) saved millions from bacterial infections. Medicine and vaccines have greatly increased human lifespan.",
+              "questions": [
+                {
+                  "q": "Who is credited with inventing the telephone?",
+                  "a": [
+                    "Thomas Edison",
+                    "Alexander Graham Bell",
+                    "Nikola Tesla",
+                    "Albert Einstein"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The invention of the light bulb is credited to...",
+                  "a": [
+                    "Alexander Graham Bell",
+                    "Isaac Newton",
+                    "Thomas Edison",
+                    "Marie Curie"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which invention allowed information to spread quickly across the world?",
+                  "a": [
+                    "The wheel",
+                    "The light bulb",
+                    "The Internet",
+                    "The compass"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The wheel was first invented approximately how long ago?",
+                  "a": [
+                    "500 years ago",
+                    "1,000 years ago",
+                    "Over 5,500 years ago",
+                    "100 years ago"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Penicillin, an antibiotic that fights bacterial infections, was discovered by...",
+                  "a": [
+                    "Louis Pasteur",
+                    "Alexander Fleming",
+                    "Joseph Lister",
+                    "Edward Jenner"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The printing press was important because it...",
+                  "a": [
+                    "Made printing slower",
+                    "Made books more expensive",
+                    "Made knowledge accessible to more people",
+                    "Reduced the number of libraries"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Benefits of Technology to Humans",
+              "revision": "Technology has brought enormous benefits to humanity. In communication, we can instantly call, message, or video chat with anyone around the world. In transportation, planes, trains, and cars let us travel quickly and efficiently. In healthcare, advanced equipment, vaccines, and medicines save lives and treat diseases. In agriculture, machines and better seeds increase food production. In education, computers and the Internet provide access to vast knowledge. Technology also helps in entertainment, construction, and environmental protection. However, technology must be used responsibly.",
+              "questions": [
+                {
+                  "q": "How has technology improved communication?",
+                  "a": [
+                    "Messages now take weeks to arrive",
+                    "People can communicate instantly across the world",
+                    "Only rich people can communicate",
+                    "Communication has become more expensive"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Vaccines are a medical technology that helps...",
+                  "a": [
+                    "Cure all diseases instantly",
+                    "Prevent people from getting certain diseases",
+                    "Make people grow taller",
+                    "Improve eyesight"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Modern farming machines like tractors and harvesters help farmers by...",
+                  "a": [
+                    "Reducing crop yield",
+                    "Making farming slower",
+                    "Increasing food production with less labour",
+                    "Using more water"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "GPS navigation technology helps drivers by...",
+                  "a": [
+                    "Playing music in the car",
+                    "Showing the best route to a destination",
+                    "Making the car go faster",
+                    "Finding parking spots automatically"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Renewable energy technology like solar panels helps the environment by...",
+                  "a": [
+                    "Producing more pollution",
+                    "Generating clean electricity without burning fossil fuels",
+                    "Using more coal",
+                    "Making electricity more expensive"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Robotic surgery in healthcare allows doctors to...",
+                  "a": [
+                    "Perform more precise operations with smaller incisions",
+                    "Work without any training",
+                    "Operate on patients from home",
+                    "Replace all nurses"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Air conditioning technology works by...",
+                  "a": [
+                    "Cooling the air using a refrigeration cycle",
+                    "Blowing hot air outside",
+                    "Creating cold from nothing",
+                    "Using ice"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "The Earth and the Solar System",
+          "topics": {
+            "9.1": {
+              "name": "The Solar System",
+              "revision": "The Solar System consists of the Sun (a star at the centre) and everything that orbits it: eight planets, moons, asteroids, comets, and meteoroids. The planets in order from the Sun are: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. The inner planets (Mercury, Venus, Earth, Mars) are small and rocky. The outer planets (Jupiter, Saturn, Uranus, Neptune) are large and made mostly of gas. Jupiter is the largest planet, and Mercury is the smallest. Earth is the third planet from the Sun and the only one known to support life.",
+              "questions": [
+                {
+                  "q": "What is at the centre of the Solar System?",
+                  "a": [
+                    "The Moon",
+                    "Jupiter",
+                    "Earth",
+                    "The Sun"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which planet is closest to the Sun?",
+                  "a": [
+                    "Earth",
+                    "Venus",
+                    "Mercury",
+                    "Mars"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which is the largest planet in the Solar System?",
+                  "a": [
+                    "Saturn",
+                    "Neptune",
+                    "Jupiter",
+                    "Uranus"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Earth is the... planet from the Sun.",
+                  "a": [
+                    "First",
+                    "Second",
+                    "Third",
+                    "Fourth"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mars is also known as the...",
+                  "a": [
+                    "Blue Planet",
+                    "Red Planet",
+                    "Green Planet",
+                    "Morning Star"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which planet is known for its prominent rings made of ice and rock?",
+                  "a": [
+                    "Jupiter",
+                    "Neptune",
+                    "Uranus",
+                    "Saturn"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which is the farthest planet from the Sun in our Solar System?",
+                  "a": [
+                    "Uranus",
+                    "Saturn",
+                    "Neptune",
+                    "Pluto"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Why is Venus sometimes called Earth's 'sister planet'?",
+                  "a": [
+                    "It has oceans like Earth",
+                    "It is similar in size and composition to Earth",
+                    "It has the same atmosphere",
+                    "It orbits at the same speed"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Rotation and Revolution of Earth",
+              "revision": "Earth has two main movements. Rotation is the spinning of Earth on its axis (an imaginary line through the North and South Poles). One complete rotation takes about 24 hours (one day) and causes day and night. The Earth rotates from west to east, making the Sun appear to rise in the east and set in the west. Revolution is the movement of Earth around the Sun in a fixed path called an orbit. One complete revolution takes about 365.25 days (one year). Earth's axis is tilted at 23.5 degrees, which together with revolution causes the seasons.",
+              "questions": [
+                {
+                  "q": "How long does Earth take to complete one rotation on its axis?",
+                  "a": [
+                    "12 hours",
+                    "24 hours",
+                    "365 days",
+                    "30 days"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "How long does Earth take to complete one revolution around the Sun?",
+                  "a": [
+                    "24 hours",
+                    "30 days",
+                    "365 days (approximately one year)",
+                    "7 days"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What causes day and night on Earth?",
+                  "a": [
+                    "The Moon blocking the Sun",
+                    "Earth's revolution around the Sun",
+                    "Earth's rotation on its axis",
+                    "The Sun moving around Earth"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The imaginary line around which Earth spins is called its...",
+                  "a": [
+                    "Orbit",
+                    "Equator",
+                    "Axis",
+                    "Tropic line"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The Sun appears to rise in the east because Earth rotates from...",
+                  "a": [
+                    "North to south",
+                    "South to north",
+                    "East to west",
+                    "West to east"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The path Earth takes around the Sun is called its...",
+                  "a": [
+                    "Rotation",
+                    "Axis",
+                    "Orbit",
+                    "Cycle"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If Earth rotated more slowly, what would happen to the length of a day?",
+                  "a": [
+                    "Days would be shorter",
+                    "Days would be longer",
+                    "Days would stay the same",
+                    "There would be no day or night"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Phases of the Moon",
+              "revision": "The Moon does not produce its own light — it reflects sunlight. As the Moon orbits Earth, different parts of it are lit by the Sun, creating the phases of the Moon. The eight phases in order are: new Moon (not visible), waxing crescent, first quarter, waxing gibbous, full Moon (fully lit), waning gibbous, third quarter, and waning crescent. The cycle repeats every 29.5 days. The Moon takes about 27.3 days to orbit Earth (sidereal month) and about 29.5 days to complete a full phase cycle (synodic month).",
+              "questions": [
+                {
+                  "q": "Why does the Moon appear to change shape throughout the month?",
+                  "a": [
+                    "The Moon is changing shape",
+                    "Clouds cover different parts of the Moon",
+                    "We see different amounts of the Moon's lit side as it orbits Earth",
+                    "The Earth's shadow falls on the Moon"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "When the Moon is completely lit by the Sun and appears as a full circle, it is called a...",
+                  "a": [
+                    "New Moon",
+                    "Full Moon",
+                    "Crescent Moon",
+                    "Quarter Moon"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The Moon phase that comes just before a full Moon is called...",
+                  "a": [
+                    "Waning gibbous",
+                    "Waxing crescent",
+                    "First quarter",
+                    "Waxing gibbous"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "How long does the Moon take to complete all its phases?",
+                  "a": [
+                    "365 days",
+                    "About 29.5 days",
+                    "24 hours",
+                    "7 days"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "When the Moon is between Earth and the Sun, the side facing Earth is dark. This phase is called...",
+                  "a": [
+                    "Full Moon",
+                    "First quarter",
+                    "New Moon",
+                    "Crescent"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "After a full Moon, the Moon appears to get smaller. This is called...",
+                  "a": [
+                    "Waxing",
+                    "Waning",
+                    "Eclipsing",
+                    "Orbiting"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "9.4": {
+              "name": "Understanding Eclipses",
+              "revision": "An eclipse occurs when one celestial body blocks light from another. A solar eclipse happens when the Moon passes between the Sun and Earth, casting its shadow on Earth. During a total solar eclipse, the sky becomes dark for a few minutes. A lunar eclipse happens when Earth passes between the Sun and the Moon, and Earth's shadow falls on the Moon, making it appear reddish (sometimes called a 'blood moon'). Solar eclipses are rare at any given location and should never be looked at directly without special eye protection.",
+              "questions": [
+                {
+                  "q": "A solar eclipse occurs when...",
+                  "a": [
+                    "Earth comes between the Sun and the Moon",
+                    "The Moon comes between the Sun and Earth",
+                    "The Sun comes between Earth and the Moon",
+                    "The Moon moves behind the Sun"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A lunar eclipse occurs when...",
+                  "a": [
+                    "The Moon comes between the Sun and Earth",
+                    "Earth comes between the Sun and the Moon",
+                    "The Sun comes between Earth and the Moon",
+                    "The Moon moves away from Earth"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "During a lunar eclipse, the Moon appears reddish because...",
+                  "a": [
+                    "The Moon turns red",
+                    "Sunlight is bent through Earth's atmosphere and red light reaches the Moon",
+                    "The Moon is on fire",
+                    "The Moon moves closer to Mars"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Why should you never look directly at a solar eclipse without special glasses?",
+                  "a": [
+                    "The Moon might hit your eyes",
+                    "The Sun's rays can permanently damage your eyes even during an eclipse",
+                    "You might get sunburned",
+                    "It is bad luck"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "During which phase of the Moon can a solar eclipse occur?",
+                  "a": [
+                    "Full Moon",
+                    "First quarter",
+                    "New Moon",
+                    "Waxing crescent"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "During which phase of the Moon can a lunar eclipse occur?",
+                  "a": [
+                    "New Moon",
+                    "Full Moon",
+                    "Crescent",
+                    "First quarter"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "10": {
+          "name": "Natural Phenomena and Environmental Conservation",
+          "topics": {
+            "10.1": {
+              "name": "Natural Phenomena",
+              "revision": "Natural phenomena are powerful events caused by natural processes. Tsunamis are huge ocean waves caused by underwater earthquakes or volcanic eruptions. Volcanic eruptions happen when magma from inside Earth forces its way to the surface. Earthquakes occur when tectonic plates suddenly shift, causing the ground to shake. Typhoons (also called hurricanes or cyclones) are powerful rotating storms that form over warm ocean waters, bringing strong winds and heavy rain. These natural disasters can cause massive damage, but scientists study them to improve warning systems and save lives.",
+              "questions": [
+                {
+                  "q": "What is the main cause of a tsunami?",
+                  "a": [
+                    "Heavy rainfall",
+                    "Strong winds",
+                    "Underwater earthquakes or volcanic eruptions",
+                    "The Moon's gravity"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A powerful rotating storm that forms over warm ocean waters is called a...",
+                  "a": [
+                    "Tsunami",
+                    "Earthquake",
+                    "Volcanic eruption",
+                    "Typhoon"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Magma that reaches the Earth's surface during a volcanic eruption is called...",
+                  "a": [
+                    "Ash",
+                    "Lava",
+                    "Smoke",
+                    "Rock"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Earthquakes are usually caused by...",
+                  "a": [
+                    "The wind blowing hard",
+                    "Heavy rain washing away soil",
+                    "Tectonic plates shifting and releasing energy",
+                    "Animals digging underground"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The instrument used to measure the strength of an earthquake is called a...",
+                  "a": [
+                    "Barometer",
+                    "Thermometer",
+                    "Seismograph",
+                    "Spectrometer"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following natural phenomena is most likely to occur in Malaysia?",
+                  "a": [
+                    "Typhoon",
+                    "Blizzard",
+                    "Earthquake",
+                    "Volcanic eruption"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which scale is used to measure the magnitude of an earthquake?",
+                  "a": [
+                    "Celsius scale",
+                    "Richter scale",
+                    "pH scale",
+                    "Decibel scale"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "10.2": {
+              "name": "Environmental Issues",
+              "revision": "Human activities are causing serious environmental problems. Global warming is the gradual increase in Earth's temperature caused by greenhouse gases (carbon dioxide, methane) from burning fossil fuels, deforestation, and agriculture. Deforestation is the clearing of forests for farming, logging, or development, destroying wildlife habitats and reducing oxygen production. Water pollution occurs when chemicals, plastics, and waste contaminate rivers, lakes, and oceans. Air pollution comes from vehicle emissions, factory smoke, and burning, causing respiratory problems and acid rain. These issues threaten ecosystems, wildlife, and human health.",
+              "questions": [
+                {
+                  "q": "The gradual increase in Earth's average temperature is called...",
+                  "a": [
+                    "The ice age",
+                    "Global warming",
+                    "Cooling",
+                    "Seasonal change"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which gas is a major contributor to global warming?",
+                  "a": [
+                    "Oxygen",
+                    "Nitrogen",
+                    "Carbon dioxide",
+                    "Hydrogen"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Deforestation contributes to global warming because...",
+                  "a": [
+                    "Trees release carbon dioxide at night",
+                    "Trees absorb carbon dioxide and help regulate the climate",
+                    "Forests block sunlight",
+                    "Trees produce oxygen only"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is a major cause of water pollution?",
+                  "a": [
+                    "Plants growing in rivers",
+                    "Dumping industrial waste and plastic into rivers",
+                    "Fish swimming in water",
+                    "Rain falling into rivers"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Air pollution from factories and vehicles can cause...",
+                  "a": [
+                    "Better visibility",
+                    "Respiratory problems like asthma",
+                    "Cleaner air",
+                    "Healthier lungs"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Plastic waste in the ocean is harmful because...",
+                  "a": [
+                    "Plastic dissolves in water quickly",
+                    "Marine animals can eat or get tangled in plastic",
+                    "Plastic helps fish breathe",
+                    "Plastic adds nutrients to water"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Eutrophication in lakes is caused by...",
+                  "a": [
+                    "Too many fish",
+                    "Excess fertilisers running off into water",
+                    "Too much sunlight",
+                    "Natural plant decay"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "10.3": {
+              "name": "Conservation",
+              "revision": "Environmental conservation means protecting and preserving our natural resources and environment for future generations. The 3Rs — Reduce, Reuse, Recycle — help minimise waste. Reduce means buying and using less. Reuse means finding new uses for old items instead of throwing them away. Recycle means turning waste materials into new products. Other conservation efforts include saving energy (turning off lights and appliances when not in use), saving water, protecting wildlife and their habitats, planting trees (reforestation), and using renewable energy. Every small action helps protect our planet.",
+              "questions": [
+                {
+                  "q": "The 3Rs of environmental conservation stand for...",
+                  "a": [
+                    "Read, Write, Repeat",
+                    "Reduce, Reuse, Recycle",
+                    "Remove, Return, Restore",
+                    "Repair, Replace, Refund"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Using a reusable water bottle instead of buying disposable plastic bottles is an example of...",
+                  "a": [
+                    "Recycling",
+                    "Reducing",
+                    "Reusing",
+                    "Rotting"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Turning off lights when leaving a room helps conserve...",
+                  "a": [
+                    "Water",
+                    "Electricity",
+                    "Paper",
+                    "Food"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Putting used paper, glass, and plastic into separate collection bins is an example of...",
+                  "a": [
+                    "Reusing",
+                    "Reducing",
+                    "Recycling",
+                    "Removing"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Planting more trees helps the environment because trees...",
+                  "a": [
+                    "Produce carbon dioxide",
+                    "Absorb carbon dioxide and release oxygen",
+                    "Use up all the water",
+                    "Block all sunlight"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which action helps to protect wildlife?",
+                  "a": [
+                    "Hunting animals for sports",
+                    "Destroying forests for development",
+                    "Creating wildlife reserves and protected areas",
+                    "Collecting rare animals as pets"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Using energy-efficient LED bulbs instead of regular bulbs is an example of...",
+                  "a": [
+                    "Reusing",
+                    "Reducing energy consumption",
+                    "Recycling",
+                    "Replacing"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

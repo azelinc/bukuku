@@ -1,0 +1,1352 @@
+{
+  "subjects": {
+    "eng6": {
+      "name": "English Year 6",
+      "icon": "📖",
+      "color": "#8e44ad",
+      "units": {
+        "1": {
+          "name": "Reading: A Window to the World",
+          "topics": {
+            "1.1": {
+              "name": "Book Genres",
+              "revision": "Books are grouped into genres or types. Fiction is made-up stories (fantasy, mystery, science fiction). Non-fiction is about real facts and information. Fantasy includes magic and imaginary worlds (Harry Potter). Mystery involves solving a crime or puzzle. Science fiction involves futuristic technology and space. Fairy tales have magical creatures and happy endings like Cinderella.",
+              "questions": [
+                {
+                  "q": "Which genre features magic and imaginary worlds?",
+                  "a": ["Mystery", "Fantasy", "Science Fiction", "Non-fiction"],
+                  "c": 1
+                },
+                {
+                  "q": "A book about real facts and information is called ________.",
+                  "a": ["fiction", "fantasy", "non-fiction", "mystery"],
+                  "c": 2
+                },
+                {
+                  "q": "Which genre involves solving a crime or puzzle?",
+                  "a": ["Fantasy", "Science Fiction", "Mystery", "Fairy Tale"],
+                  "c": 2
+                },
+                {
+                  "q": "Harry Potter books belong to which genre?",
+                  "a": ["Mystery", "Non-fiction", "Fantasy", "Science Fiction"],
+                  "c": 2
+                },
+                {
+                  "q": "Stories with futuristic technology and space travel are ________ fiction.",
+                  "a": ["science", "fantasy", "historical", "realistic"],
+                  "c": 0
+                },
+                {
+                  "q": "Cinderella and Snow White are examples of ________.",
+                  "a": ["mysteries", "fairy tales", "science fiction", "biographies"],
+                  "c": 1
+                },
+                {
+                  "q": "A made-up story that could happen in real life is called ________ fiction.",
+                  "a": ["science", "fantasy", "realistic", "historical"],
+                  "c": 2
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Parts of a Book",
+              "revision": "A book has many parts. The cover protects the book and shows the title and author. The title is the name of the book. The author writes the book. The illustrator draws the pictures. The spine is the side of the book that you see on a shelf. The contents page lists chapters and page numbers. The index at the back lists topics alphabetically. The glossary explains difficult words used in the book.",
+              "questions": [
+                {
+                  "q": "Which part of the book shows the name of the book?",
+                  "a": ["Spine", "Glossary", "Title", "Index"],
+                  "c": 2
+                },
+                {
+                  "q": "The person who writes a book is called the ________.",
+                  "a": ["illustrator", "publisher", "author", "printer"],
+                  "c": 2
+                },
+                {
+                  "q": "Which part of the book draws the pictures?",
+                  "a": ["Author", "Illustrator", "Publisher", "Editor"],
+                  "c": 1
+                },
+                {
+                  "q": "To find a chapter in a book, you look at the ________.",
+                  "a": ["glossary", "index", "contents page", "spine"],
+                  "c": 2
+                },
+                {
+                  "q": "Where do you find difficult words explained in a book?",
+                  "a": ["Index", "Glossary", "Contents page", "Cover"],
+                  "c": 1
+                },
+                {
+                  "q": "The ________ lists topics alphabetically at the back of a book.",
+                  "a": ["glossary", "contents page", "index", "title page"],
+                  "c": 2
+                },
+                {
+                  "q": "The side of the book you see on a shelf is called the ________.",
+                  "a": ["cover", "spine", "page", "binding"],
+                  "c": 1
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Reading Comprehension",
+              "revision": "When reading a text, you should identify the main idea (what the text is mostly about), find details (specific information), and understand the sequence of events (what happened first, next, last). Ask yourself: Who? What? When? Where? Why? These questions help you understand the text better and remember what you read.",
+              "questions": [
+                {
+                  "q": "The main idea of a story is ________.",
+                  "a": ["every small detail", "what the story is mostly about", "the title only", "the last sentence"],
+                  "c": 1
+                },
+                {
+                  "q": "Questions like 'Who?', 'What?', 'Where?' help you find ________.",
+                  "a": ["the main idea", "details", "the ending", "opinions"],
+                  "c": 1
+                },
+                {
+                  "q": "The sequence of events means the ________ things happen.",
+                  "a": ["order in which", "reason why", "place where", "person who"],
+                  "c": 0
+                },
+                {
+                  "q": "If a story says 'First, Maya planted seeds. Then, she watered them. Finally, flowers grew.' What happened last?",
+                  "a": ["Maya planted seeds", "Maya watered the seeds", "Flowers grew", "Maya bought seeds"],
+                  "c": 2
+                },
+                {
+                  "q": "A detail tells you ________ about the story.",
+                  "a": ["the general topic", "specific information", "only the ending", "only the title"],
+                  "c": 1
+                },
+                {
+                  "q": "'The children went to the library after school.' Where did the children go?",
+                  "a": ["To the park", "To the library", "To the shop", "To the playground"],
+                  "c": 1
+                },
+                {
+                  "q": "When you read a new word, what should you do?",
+                  "a": ["Skip it completely", "Try to understand it from context", "Ignore the sentence", "Close the book"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Appreciating Others",
+          "topics": {
+            "2.1": {
+              "name": "Describing People Positively",
+              "revision": "We use positive adjectives to describe people. Kind means caring and nice to others. Generous means sharing what you have. Helpful means giving assistance. Honest means telling the truth. Brave means not afraid to face danger. Patient means able to wait calmly. Thoughtful means thinking about other people's needs. Using these words makes others feel appreciated.",
+              "questions": [
+                {
+                  "q": "A person who always tells the truth is ________.",
+                  "a": ["lazy", "dishonest", "honest", "rude"],
+                  "c": 2
+                },
+                {
+                  "q": "My friend shares her snacks with everyone. She is very ________.",
+                  "a": ["selfish", "generous", "greedy", "mean"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ person waits calmly without complaining.",
+                  "a": ["impatient", "patient", "angry", "loud"],
+                  "c": 1
+                },
+                {
+                  "q": "He always thinks about how others feel. He is ________.",
+                  "a": ["thoughtless", "thoughtful", "careless", "selfish"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ person helps others without being asked.",
+                  "a": ["helpful", "lazy", "noisy", "rude"],
+                  "c": 0
+                },
+                {
+                  "q": "The firefighter saved a cat from a tree. He was very ________.",
+                  "a": ["scared", "brave", "weak", "shy"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ person is caring and nice to everyone.",
+                  "a": ["cruel", "unkind", "kind", "mean"],
+                  "c": 2
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Showing Appreciation",
+              "revision": "We show appreciation by saying kind words. 'Thank you' is the most basic way to show gratitude. 'I appreciate your help' means I value what you did. 'I'm grateful for...' shows deeper thanks. 'You are very kind' praises the person's character. 'I really appreciate it' emphasises your thanks. Showing appreciation makes relationships stronger and spreads kindness.",
+              "questions": [
+                {
+                  "q": "The most common way to show appreciation is to say ________.",
+                  "a": ["Go away", "Thank you", "Not now", "I don't care"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I ________ your help with my homework.'",
+                  "a": ["appreciate", "ignore", "refuse", "reject"],
+                  "c": 0
+                },
+                {
+                  "q": "Which sentence shows deep gratitude?",
+                  "a": ["Thanks.", "I'm grateful for your kindness.", "Okay.", "Fine."],
+                  "c": 1
+                },
+                {
+                  "q": "When someone holds the door for you, you should say ________.",
+                  "a": ["Hurry up!", "Thank you!", "Move aside!", "Watch out!"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'You are very ________ to help me carry these bags.'",
+                  "a": ["selfish", "rude", "kind", "lazy"],
+                  "c": 2
+                },
+                {
+                  "q": "What does 'I really appreciate it' mean?",
+                  "a": ["I don't need it", "I am very thankful", "I don't like it", "I want more"],
+                  "c": 1
+                },
+                {
+                  "q": "When your friend helps you study, you can say '________ your help.'",
+                  "a": ["I hate", "I appreciate", "I refuse", "I ignore"],
+                  "c": 1
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Giving Compliments and Responding",
+              "revision": "Compliments are nice things we say to make others feel good. Examples: 'You look great today!' 'Well done on your test!' 'I like your drawing.' 'That was a great performance!' When you receive a compliment, respond politely: 'Thank you, that's kind of you,' 'Thank you, I'm glad you like it,' or simply 'Thank you!' Never ignore a compliment or disagree with it.",
+              "questions": [
+                {
+                  "q": "Which is a compliment?",
+                  "a": ["You are bad.", "Well done!", "Go away.", "Not good enough."],
+                  "c": 1
+                },
+                {
+                  "q": "How should you respond to 'You look nice today'?",
+                  "a": ["I know.", "Thank you, that's kind of you.", "You're wrong.", "Don't say that."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I like your new ________. Where did you get it?'",
+                  "a": ["problem", "homework", "bag", "mistake"],
+                  "c": 2
+                },
+                {
+                  "q": "Your friend says 'You are a great singer!' The best response is: ________",
+                  "a": ["No, I'm not.", "Thank you, I'm glad you like it.", "You're lying.", "I'm the best."],
+                  "c": 1
+                },
+                {
+                  "q": "When giving a compliment, you should sound ________.",
+                  "a": ["angry", "sincere", "sarcastic", "loud"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'You did a great job on the project! Well ________!'",
+                  "a": ["done", "made", "tried", "worked"],
+                  "c": 0
+                },
+                {
+                  "q": "What is the best way to respond to a compliment?",
+                  "a": ["Ignore it", "Say 'Thank you'", "Walk away", "Change the subject"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Life in the Past",
+          "topics": {
+            "3.1": {
+              "name": "Past Tense Review",
+              "revision": "Regular past tense verbs add '-ed' (walk → walked, play → played). Irregular verbs change completely (go → went, eat → ate, see → saw, buy → bought, take → took, make → made, do → did, get → got, have → had, say → said). Some verbs don't change at all (put → put, cut → cut, read → read). Past tense talks about actions that happened before now.",
+              "questions": [
+                {
+                  "q": "What is the past tense of 'walk'?",
+                  "a": ["walking", "walks", "walked", "walk"],
+                  "c": 2
+                },
+                {
+                  "q": "The past tense of 'go' is ________.",
+                  "a": ["goed", "went", "gone", "going"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We ________ (visit) our grandmother last Sunday.'",
+                  "a": ["visits", "visiting", "visited", "visit"],
+                  "c": 2
+                },
+                {
+                  "q": "What is the past tense of 'see'?",
+                  "a": ["seed", "seen", "saw", "seeing"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'She ________ (make) a cake for her mother yesterday.'",
+                  "a": ["makes", "making", "maked", "made"],
+                  "c": 3
+                },
+                {
+                  "q": "Which verb does NOT change in the past tense?",
+                  "a": ["walk", "eat", "put", "go"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'I ________ (have) a great time at the party last weekend.'",
+                  "a": ["haved", "has", "had", "having"],
+                  "c": 2
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Comparing Past and Present",
+              "revision": "We use 'used to' to talk about past habits that no longer happen. Example: 'I used to play with marbles, but now I play video games.' 'Used to' is followed by the base verb. In the past, children played traditional games like congkak, hopscotch, and kite flying. Today, children play digital games on phones and tablets. 'Then and now' comparisons show how life has changed.",
+              "questions": [
+                {
+                  "q": "Complete: 'My grandfather ________ (used to) tell us stories every night.'",
+                  "a": ["use to", "used to", "uses to", "using to"],
+                  "c": 1
+                },
+                {
+                  "q": "'I used to play with marbles' means ________.",
+                  "a": ["I still play with marbles", "I played with marbles before but not now", "I will play with marbles", "I never played with marbles"],
+                  "c": 1
+                },
+                {
+                  "q": "In the past, children played ________, a traditional game with shells or stones.",
+                  "a": ["video games", "congkak", "computer games", "tablet games"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Nowadays, children ________ (spend) more time on digital devices.'",
+                  "a": ["spends", "spent", "spend", "spending"],
+                  "c": 2
+                },
+                {
+                  "q": "Which was a popular traditional game in Malaysia?",
+                  "a": ["PlayStation", "Kite flying", "iPad games", "Virtual reality"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'People ________ (not have) smartphones fifty years ago.'",
+                  "a": ["did not have", "do not have", "does not have", "are not having"],
+                  "c": 0
+                },
+                {
+                  "q": "The phrase 'used to' is followed by the ________ form of the verb.",
+                  "a": ["-ing", "past", "base", "past participle"],
+                  "c": 2
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Historical Figures",
+              "revision": "Malaysia has many important historical figures. Tunku Abdul Rahman was Malaysia's first Prime Minister and the 'Father of Independence.' He declared Merdeka on 31 August 1957. Parameswara was a prince who founded the Malacca Sultanate. Tok Janggut was a Malay warrior who fought against British rule in Kelantan. These heroes shaped Malaysia's history and identity.",
+              "questions": [
+                {
+                  "q": "Who is known as the 'Father of Independence' of Malaysia?",
+                  "a": ["Tok Janggut", "Parameswara", "Tunku Abdul Rahman", "Hang Tuah"],
+                  "c": 2
+                },
+                {
+                  "q": "Merdeka Day in Malaysia is celebrated on ________.",
+                  "a": ["16 September", "31 August", "1 January", "31 July"],
+                  "c": 1
+                },
+                {
+                  "q": "Parameswara founded the ________ Sultanate.",
+                  "a": ["Johor", "Kedah", "Malacca", "Perak"],
+                  "c": 2
+                },
+                {
+                  "q": "Tok Janggut was a warrior from ________ who fought against British rule.",
+                  "a": ["Penang", "Kelantan", "Sabah", "Sarawak"],
+                  "c": 1
+                },
+                {
+                  "q": "Tunku Abdul Rahman became Malaysia's first ________.",
+                  "a": ["King", "Prime Minister", "Governor", "Sultan"],
+                  "c": 1
+                },
+                {
+                  "q": "What year did Malaysia gain independence?",
+                  "a": ["1947", "1957", "1963", "1970"],
+                  "c": 1
+                },
+                {
+                  "q": "According to legend, Parameswara named Malacca after the ________ tree.",
+                  "a": ["coconut", "durian", "melaka", "mango"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Cool and Cold",
+          "topics": {
+            "4.1": {
+              "name": "Weather Vocabulary",
+              "revision": "Weather vocabulary describes different weather conditions. A blizzard is a severe snowstorm with strong winds. Hail is frozen rain that falls as balls of ice. A drought is a long period with very little rain. A heatwave is a period of very hot weather. A flood happens when water covers land that is usually dry. A thunderstorm has thunder, lightning, and heavy rain. A tornado is a violent spinning wind that destroys buildings.",
+              "questions": [
+                {
+                  "q": "A severe snowstorm with strong winds is called a ________.",
+                  "a": ["thunderstorm", "blizzard", "flood", "drought"],
+                  "c": 1
+                },
+                {
+                  "q": "Frozen rain that falls as balls of ice is called ________.",
+                  "a": ["snow", "hail", "rain", "fog"],
+                  "c": 1
+                },
+                {
+                  "q": "A very long period with no rain is a ________.",
+                  "a": ["flood", "blizzard", "drought", "storm"],
+                  "c": 2
+                },
+                {
+                  "q": "A period of extremely hot weather is called a ________.",
+                  "a": ["cold wave", "heatwave", "drought", "blizzard"],
+                  "c": 1
+                },
+                {
+                  "q": "A violent spinning wind that can destroy buildings is a ________.",
+                  "a": ["tornado", "breeze", "drought", "flood"],
+                  "c": 0
+                },
+                {
+                  "q": "When water covers land that is usually dry, it is a ________.",
+                  "a": ["drought", "flood", "blizzard", "tornado"],
+                  "c": 1
+                },
+                {
+                  "q": "A storm with thunder, lightning, and heavy rain is called a ________.",
+                  "a": ["thunderstorm", "blizzard", "tornado", "heatwave"],
+                  "c": 0
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Countries and Climates",
+              "revision": "Countries near the equator have hot and tropical climates with rain all year (Malaysia, Indonesia, Brazil). Countries near the North and South Poles have very cold climates with snow and ice (Norway, Canada, Russia). Temperate countries have four seasons — spring, summer, autumn, and winter (Japan, United Kingdom, South Korea). Climate affects the way people live, dress, and the food they grow.",
+              "questions": [
+                {
+                  "q": "Malaysia has a ________ climate because it is near the equator.",
+                  "a": ["cold", "tropical", "polar", "temperate"],
+                  "c": 1
+                },
+                {
+                  "q": "Which country has a very cold climate?",
+                  "a": ["Malaysia", "Indonesia", "Norway", "Thailand"],
+                  "c": 2
+                },
+                {
+                  "q": "Countries with four seasons have a ________ climate.",
+                  "a": ["tropical", "polar", "temperate", "desert"],
+                  "c": 2
+                },
+                {
+                  "q": "Which season comes after spring?",
+                  "a": ["Winter", "Autumn", "Summer", "Rainy"],
+                  "c": 2
+                },
+                {
+                  "q": "The equator is an imaginary line around the ________ of the Earth.",
+                  "a": ["top", "bottom", "middle", "side"],
+                  "c": 2
+                },
+                {
+                  "q": "Norway is near the North Pole, so its climate is very ________.",
+                  "a": ["hot", "cold", "dry", "wet"],
+                  "c": 1
+                },
+                {
+                  "q": "Japan has ________ distinct seasons in a year.",
+                  "a": ["two", "three", "four", "five"],
+                  "c": 2
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Weather Adverbs",
+              "revision": "Adverbs describe how something happens. Weather adverbs often end in '-ly'. Heavily means with great weight or force (the rain fell heavily). Brightly means with a lot of light (the sun shone brightly). Gently means softly or mildly (the wind blew gently). Loudly means with a lot of noise (the thunder boomed loudly). These adverbs make weather descriptions more vivid.",
+              "questions": [
+                {
+                  "q": "Complete: 'The rain fell ________ all night long.'",
+                  "a": ["gentle", "heavily", "bright", "soft"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The sun shone ________ on the beach.'",
+                  "a": ["darkly", "brightly", "coldly", "hardly"],
+                  "c": 1
+                },
+                {
+                  "q": "'The wind blew gently.' What does 'gently' mean?",
+                  "a": ["Strongly", "Softly", "Loudly", "Quickly"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The thunder boomed ________ across the sky.'",
+                  "a": ["quietly", "loudly", "softly", "brightly"],
+                  "c": 1
+                },
+                {
+                  "q": "Which word is a weather adverb?",
+                  "a": ["Heavy", "Bright", "Heavily", "Gentle"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'The snow fell ________ and covered the ground.'",
+                  "a": ["gently", "loudly", "brightly", "angry"],
+                  "c": 0
+                },
+                {
+                  "q": "Which suffix do weather adverbs often end in?",
+                  "a": ["-ed", "-ly", "-ing", "-er"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The wind howled ________ through the night.'",
+                  "a": ["gentle", "bright", "fiercely", "soft"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "360°",
+          "topics": {
+            "5.1": {
+              "name": "Describing Places",
+              "revision": "To describe places vividly, we use adjectives. Picturesque means visually attractive, like a scenic village. Bustling means full of people and activity, like a busy market. Serene means calm and peaceful, like a quiet lake. Historic means important in history, like an old castle. Vibrant means full of energy and colour, like a festival. Magnificent means very beautiful and impressive, like a grand palace.",
+              "questions": [
+                {
+                  "q": "A ________ village has beautiful scenery that is nice to look at.",
+                  "a": ["bustling", "picturesque", "vibrant", "noisy"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ market is full of people and activity.",
+                  "a": ["serene", "quiet", "bustling", "empty"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ lake is calm and peaceful.",
+                  "a": ["bustling", "vibrant", "serene", "crowded"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ building is important in history.",
+                  "a": ["historic", "modern", "new", "tall"],
+                  "c": 0
+                },
+                {
+                  "q": "A ________ city is full of energy, colour, and life.",
+                  "a": ["dull", "vibrant", "boring", "quiet"],
+                  "c": 1
+                },
+                {
+                  "q": "The ________ palace was the most beautiful building I have ever seen.",
+                  "a": ["small", "ugly", "magnificent", "ordinary"],
+                  "c": 2
+                },
+                {
+                  "q": "The opposite of 'bustling' is ________.",
+                  "a": ["crowded", "quiet", "noisy", "busy"],
+                  "c": 1
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Prepositions of Place and Direction",
+              "revision": "Prepositions show where things are or where they are going. Above means higher than something. Below means lower than something. Across means from one side to the other. Through means going in one side and out the other. Along means following a line. Around means encircling or in a circle. Towards means in the direction of. Beyond means further away than. These words help describe locations and movements precisely.",
+              "questions": [
+                {
+                  "q": "The bird flew ________ my head. (higher than)",
+                  "a": ["below", "above", "through", "along"],
+                  "c": 1
+                },
+                {
+                  "q": "We walked ________ the bridge to reach the other side of the river.",
+                  "a": ["along", "through", "below", "across"],
+                  "c": 3
+                },
+                {
+                  "q": "The cat ran ________ the tunnel and came out the other end.",
+                  "a": ["along", "through", "above", "around"],
+                  "c": 1
+                },
+                {
+                  "q": "We walked ________ the beach, enjoying the waves.",
+                  "a": ["across", "through", "along", "towards"],
+                  "c": 2
+                },
+                {
+                  "q": "The children ran ________ the tree in a game of tag.",
+                  "a": ["through", "above", "around", "across"],
+                  "c": 2
+                },
+                {
+                  "q": "The dog ran ________ its owner when called.",
+                  "a": ["away", "beyond", "towards", "through"],
+                  "c": 2
+                },
+                {
+                  "q": "The school is just ________ the hill, in the next valley.",
+                  "a": ["above", "below", "along", "beyond"],
+                  "c": 3
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Giving Directions in Detail",
+              "revision": "When giving detailed directions, use landmarks (buildings, parks, statues), distances (about 200 metres, two blocks away), and compass directions (north, south, east, west). Example: 'Go north for about 500 metres. You will see a petrol station on your left. The library is just beyond it.' Using clear landmarks helps people find places easily.",
+              "questions": [
+                {
+                  "q": "Which compass direction points upwards on a map?",
+                  "a": ["South", "East", "West", "North"],
+                  "c": 3
+                },
+                {
+                  "q": "A landmark is a ________ object that helps people find their way.",
+                  "a": ["small and hidden", "familiar and noticeable", "new and unknown", "broken and old"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Walk ________ for two blocks, then turn right.'",
+                  "a": ["straight", "around", "through", "above"],
+                  "c": 0
+                },
+                {
+                  "q": "If the sun rises in the east, the opposite direction is the ________.",
+                  "a": ["north", "south", "east", "west"],
+                  "c": 3
+                },
+                {
+                  "q": "Complete: 'Go south for about 200 ________ and you will see the post office.'",
+                  "a": ["kilometres", "metres", "centimetres", "millimetres"],
+                  "c": 1
+                },
+                {
+                  "q": "'The school is opposite the mosque.' This means the school is ________ the mosque.",
+                  "a": ["next to", "behind", "across from", "inside"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'Turn left ________ the traffic lights and you will see the bank.'",
+                  "a": ["at", "in", "on", "by"],
+                  "c": 0
+                },
+                {
+                  "q": "If you are facing north, the direction behind you is ________.",
+                  "a": ["east", "west", "south", "north"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Go Green!",
+          "topics": {
+            "6.1": {
+              "name": "Environmental Problems",
+              "revision": "Our environment faces serious problems. Pollution comes in many forms: air pollution (from cars and factories), water pollution (from chemicals and waste), and land pollution (from rubbish). Deforestation means cutting down too many trees. Extinction happens when all animals of a species die out. Global warming is the rise in Earth's temperature due to greenhouse gases. These problems harm wildlife and human health.",
+              "questions": [
+                {
+                  "q": "Smoke from cars and factories causes ________ pollution.",
+                  "a": ["water", "air", "land", "noise"],
+                  "c": 1
+                },
+                {
+                  "q": "Throwing chemicals into rivers causes ________ pollution.",
+                  "a": ["air", "land", "water", "light"],
+                  "c": 2
+                },
+                {
+                  "q": "Cutting down too many trees is called ________.",
+                  "a": ["reforestation", "deforestation", "gardening", "planting"],
+                  "c": 1
+                },
+                {
+                  "q": "When a type of animal no longer exists, it is ________.",
+                  "a": ["endangered", "extinct", "common", "abundant"],
+                  "c": 1
+                },
+                {
+                  "q": "Global warming is the ________ of Earth's temperature.",
+                  "a": ["decrease", "rise", "drop", "freeze"],
+                  "c": 1
+                },
+                {
+                  "q": "Littering in public places causes ________ pollution.",
+                  "a": ["air", "water", "land", "noise"],
+                  "c": 2
+                },
+                {
+                  "q": "Which of these is a greenhouse gas?",
+                  "a": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
+                  "c": 1
+                }
+              ]
+            },
+            "6.2": {
+              "name": "The 3Rs: Reduce, Reuse, Recycle",
+              "revision": "The 3Rs help protect our environment. Reduce means using less (use fewer plastic bags, turn off lights when not needed). Reuse means using something again (use a water bottle many times, donate old clothes). Recycle means turning old items into new products (recycle paper, glass, plastic bottles, and aluminium cans). Following the 3Rs reduces waste and saves natural resources.",
+              "questions": [
+                {
+                  "q": "Which R means 'using less of something'?",
+                  "a": ["Reuse", "Recycle", "Reduce", "Refuse"],
+                  "c": 2
+                },
+                {
+                  "q": "Using a water bottle many times instead of buying new ones is an example of ________.",
+                  "a": ["reducing", "reusing", "recycling", "refusing"],
+                  "c": 1
+                },
+                {
+                  "q": "Putting paper in a recycling bin is an example of ________.",
+                  "a": ["reducing", "reusing", "recycling", "rethinking"],
+                  "c": 2
+                },
+                {
+                  "q": "Turning off lights when you leave a room helps to ________ energy.",
+                  "a": ["waste", "reduce", "increase", "ignore"],
+                  "c": 1
+                },
+                {
+                  "q": "Which item can be recycled?",
+                  "a": ["Banana peel", "Glass bottle", "Used tissue", "Polystyrene"],
+                  "c": 1
+                },
+                {
+                  "q": "Donating old clothes to charity is an example of ________.",
+                  "a": ["reducing", "reusing", "recycling", "destroying"],
+                  "c": 1
+                },
+                {
+                  "q": "Composting food scraps is a form of ________.",
+                  "a": ["reducing", "reusing", "recycling", "wasting"],
+                  "c": 2
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Modal Verbs: Must, Mustn't, Should, Shouldn't",
+              "revision": "Modal verbs express rules, advice, and obligation. 'Must' means it is necessary or a rule (You must wear a seatbelt). 'Mustn't' means it is forbidden (You mustn't litter). 'Should' gives advice (You should save water). 'Shouldn't' advises against something (You shouldn't waste electricity). After modals, the verb stays in base form without 'to'. These words help give clear instructions and advice.",
+              "questions": [
+                {
+                  "q": "Complete: 'You ________ recycle your waste.' (strong advice)",
+                  "a": ["must", "mustn't", "shouldn't", "can"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'You ________ throw rubbish into the river.' (forbidden)",
+                  "a": ["must", "mustn't", "should", "can"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'You ________ turn off the tap when brushing your teeth.' (advice)",
+                  "a": ["should", "shouldn't", "mustn't", "can't"],
+                  "c": 0
+                },
+                {
+                  "q": "Which sentence shows a rule?",
+                  "a": ["You should recycle.", "You must wear a helmet when cycling.", "You can ride a bike.", "You might like cycling."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'You ________ waste water.' (advice against)",
+                  "a": ["should", "must", "shouldn't", "need"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'Students ________ keep the school clean.' (rule)",
+                  "a": ["shouldn't", "must", "mustn't", "can't"],
+                  "c": 1
+                },
+                {
+                  "q": "After 'must' and 'should', the verb is in ________ form.",
+                  "a": ["-ing", "past tense", "base", "past participle"],
+                  "c": 2
+                }
+              ]
+            },
+            "6.4": {
+              "name": "Persuasive Language",
+              "revision": "Persuasive language is used to convince others to take action or agree with a point of view. Common phrases: 'Save our planet!' 'We need to act now!' 'It is our responsibility to protect the Earth.' 'Together, we can make a difference.' 'Don't wait — start today!' Persuasive writing uses strong words, calls to action, and emotional appeals to encourage people to change their behaviour for the good of the environment.",
+              "questions": [
+                {
+                  "q": "Which phrase is persuasive?",
+                  "a": ["Maybe we can help.", "It is our responsibility to protect the Earth.", "I don't know.", "Whatever."],
+                  "c": 1
+                },
+                {
+                  "q": "'We need to act now!' is a ________.",
+                  "a": ["question", "call to action", "joke", "statement of fact"],
+                  "c": 1
+                },
+                {
+                  "q": "Persuasive language aims to ________ someone to do something.",
+                  "a": ["force", "convince", "confuse", "ignore"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: '________ our planet — it is the only one we have!'",
+                  "a": ["Destroy", "Ignore", "Save", "Forget"],
+                  "c": 2
+                },
+                {
+                  "q": "Which sentence is most persuasive for saving water?",
+                  "a": ["Water is wet.", "Turn off the tap — every drop counts!", "I like water.", "Water comes from rain."],
+                  "c": 1
+                },
+                {
+                  "q": "'Together, we can make a ________!' is a common persuasive phrase.",
+                  "a": ["mess", "difference", "problem", "mistake"],
+                  "c": 1
+                },
+                {
+                  "q": "Which phrase is a strong call to action for recycling?",
+                  "a": ["Recycling is okay.", "Recycle now — our future depends on it!", "I might recycle.", "Recycling is boring."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Don't wait — ________ recycling today!'",
+                  "a": ["stop", "start", "forget", "avoid"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Myths and Legends",
+          "topics": {
+            "7.1": {
+              "name": "Myths vs Legends",
+              "revision": "Myths and legends are traditional stories, but they are different. Myths explain natural phenomena (like how the world was created) and often involve gods, goddesses, and supernatural beings. Legends are based on real people or events, but the stories have been exaggerated over time. Myths are usually set in a timeless past, while legends are set in a more specific historical period. Both teach moral lessons.",
+              "questions": [
+                {
+                  "q": "Myths often involve ________ such as gods and goddesses.",
+                  "a": ["ordinary people", "supernatural beings", "animals", "robots"],
+                  "c": 1
+                },
+                {
+                  "q": "Legends are usually based on ________ people or events.",
+                  "a": ["imaginary", "real", "future", "fictional"],
+                  "c": 1
+                },
+                {
+                  "q": "A story explaining how the world was created is a ________.",
+                  "a": ["legend", "myth", "news report", "diary"],
+                  "c": 1
+                },
+                {
+                  "q": "In a legend, the story is often ________ over time.",
+                  "a": ["shortened", "exaggerated", "forgotten", "ignored"],
+                  "c": 1
+                },
+                {
+                  "q": "Both myths and legends teach ________ lessons.",
+                  "a": ["science", "maths", "moral", "geography"],
+                  "c": 2
+                },
+                {
+                  "q": "A story about a hero who really lived but with exaggerated adventures is a ________.",
+                  "a": ["myth", "fairy tale", "legend", "fable"],
+                  "c": 2
+                },
+                {
+                  "q": "Myths are usually set in ________.",
+                  "a": ["a specific year", "modern times", "a timeless past", "the future"],
+                  "c": 2
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Malaysian Legends",
+              "revision": "Malaysia has many famous legends. Hang Tuah was a legendary Malay warrior known for his loyalty, bravery, and martial arts skills. His friend Hang Jebat rebelled against the Sultan. Mahsuri was a woman from Langkawi who was wrongly accused and cursed the island for seven generations. Puteri Gunung Ledang is a princess who lived on Mount Ledang with impossible marriage demands. Badang was a strongman who could lift huge rocks.",
+              "questions": [
+                {
+                  "q": "Which legendary warrior was known for his loyalty to the Sultan?",
+                  "a": ["Hang Jebat", "Hang Tuah", "Badang", "Tok Janggut"],
+                  "c": 1
+                },
+                {
+                  "q": "Mahsuri was from the island of ________.",
+                  "a": ["Penang", "Langkawi", "Borneo", "Singapore"],
+                  "c": 1
+                },
+                {
+                  "q": "Puteri Gunung Ledang was said to live on Mount ________.",
+                  "a": ["Kinabalu", "Ledang", "Everest", "Tahan"],
+                  "c": 1
+                },
+                {
+                  "q": "The legendary strongman who could lift huge rocks was ________.",
+                  "a": ["Hang Tuah", "Hang Jebat", "Badang", "Mat Kilau"],
+                  "c": 2
+                },
+                {
+                  "q": "Hang Jebat rebelled because he felt his friend was treated ________.",
+                  "a": ["fairly", "unfairly", "kindly", "well"],
+                  "c": 1
+                },
+                {
+                  "q": "According to legend, Mahsuri was accused of something she ________ do.",
+                  "a": ["did", "did not", "could", "would"],
+                  "c": 1
+                },
+                {
+                  "q": "The legend of Mahsuri is often used to explain why Langkawi had seven generations of ________.",
+                  "a": ["prosperity", "bad luck", "peace", "happiness"],
+                  "c": 1
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Story Elements",
+              "revision": "Every story has key elements. The plot is what happens in the story — the sequence of events with a beginning, middle, and end. The setting is where and when the story takes place. Characters are the people, animals, or creatures in the story. The moral is the lesson the story teaches. The beginning introduces characters and setting. The middle has the problem or conflict. The end resolves the problem and shows the moral.",
+              "questions": [
+                {
+                  "q": "The plot of a story is the ________ of events.",
+                  "a": ["setting", "sequence", "moral", "character"],
+                  "c": 1
+                },
+                {
+                  "q": "Where and when a story happens is called the ________.",
+                  "a": ["plot", "character", "setting", "moral"],
+                  "c": 2
+                },
+                {
+                  "q": "The people or animals in a story are the ________.",
+                  "a": ["settings", "plots", "characters", "morals"],
+                  "c": 2
+                },
+                {
+                  "q": "The lesson that a story teaches is called the ________.",
+                  "a": ["setting", "plot", "character", "moral"],
+                  "c": 3
+                },
+                {
+                  "q": "In the beginning of a story, we usually learn about the ________ and setting.",
+                  "a": ["ending", "problem", "characters", "solution"],
+                  "c": 2
+                },
+                {
+                  "q": "The problem in a story usually appears in the ________.",
+                  "a": ["beginning", "middle", "end", "title"],
+                  "c": 1
+                },
+                {
+                  "q": "The ________ of a story shows how the problem is solved.",
+                  "a": ["beginning", "middle", "end", "introduction"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "How the Tiger Got Its Stripes",
+          "topics": {
+            "8.1": {
+              "name": "Folktale Vocabulary",
+              "revision": "Folktales use special vocabulary to describe characters and events. Brave means showing courage. Clever means smart and quick-thinking. Cunning means using intelligence to trick others. Trick means to deceive someone. Respect means to admire and treat someone well. Humble means not bragging or showing off. Cunning can be used in a negative way (to trick someone for selfish reasons) or a positive way (to outsmart a villain).",
+              "questions": [
+                {
+                  "q": "A character who shows courage is ________.",
+                  "a": ["scared", "brave", "cowardly", "weak"],
+                  "c": 1
+                },
+                {
+                  "q": "The mouse deer, Sang Kancil, is known for being ________.",
+                  "a": ["lazy", "stupid", "clever", "greedy"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ person does not brag or show off.",
+                  "a": ["proud", "humble", "arrogant", "loud"],
+                  "c": 1
+                },
+                {
+                  "q": "To 'trick' someone means to ________ them.",
+                  "a": ["help", "deceive", "praise", "thank"],
+                  "c": 1
+                },
+                {
+                  "q": "Sang Kancil is a popular ________ character in Malaysian folktales.",
+                  "a": ["tiger", "mouse deer", "elephant", "monkey"],
+                  "c": 1
+                },
+                {
+                  "q": "In a folktale, a cunning fox might ________ other animals to get food.",
+                  "a": ["help", "trick", "feed", "protect"],
+                  "c": 1
+                },
+                {
+                  "q": "We should ________ our elders and listen to their advice.",
+                  "a": ["ignore", "disrespect", "respect", "forget"],
+                  "c": 2
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Sequence Connectors",
+              "revision": "Sequence connectors help show the order of events in a story. First is used for the first event. Then shows what happens next. Next continues the sequence. After that shows the following event. Finally indicates the last event. Eventually shows something that happens after a long time. Meanwhile shows two things happening at the same time. Using these words makes stories easier to follow.",
+              "questions": [
+                {
+                  "q": "Which connector is used for the first event in a story?",
+                  "a": ["Finally", "Next", "First", "Then"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: '________, Sang Kancil saw a crocodile. ________, he thought of a plan.'",
+                  "a": ["First... Then", "Finally... Next", "After that... First", "Meanwhile... Finally"],
+                  "c": 0
+                },
+                {
+                  "q": "Which connector shows the last step?",
+                  "a": ["First", "Next", "Then", "Finally"],
+                  "c": 3
+                },
+                {
+                  "q": "'________' shows two events happening at the same time.",
+                  "a": ["Finally", "Meanwhile", "After that", "Then"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The rabbit ran fast. ________, the tortoise caught up.'",
+                  "a": ["First", "Next", "Eventually", "Meanwhile"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'She finished her homework. ________, she watched television.'",
+                  "a": ["After that", "First", "Finally", "Meanwhile"],
+                  "c": 0
+                },
+                {
+                  "q": "Sequence connectors help show the ________ of events.",
+                  "a": ["reason", "order", "place", "cause"],
+                  "c": 1
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Direct and Reported Speech",
+              "revision": "Direct speech uses the exact words someone said, in quotation marks: 'I am hungry,' said Ali. Reported speech tells what someone said without using their exact words: Ali said he was hungry. In reported speech, the tense usually shifts back: 'I am' becomes 'he was', 'I will' becomes 'he would', 'I have' becomes 'he had'. Common reporting verbs: said, asked, replied, told, shouted, whispered.",
+              "questions": [
+                {
+                  "q": "Direct speech uses ________ to show the exact words.",
+                  "a": ["brackets", "quotation marks", "full stops", "commas"],
+                  "c": 1
+                },
+                {
+                  "q": "Change to reported speech: 'I am tired,' said Ravi.",
+                  "a": ["Ravi said I am tired.", "Ravi said he is tired.", "Ravi said he was tired.", "Ravi said he tired."],
+                  "c": 2
+                },
+                {
+                  "q": "Complete the direct speech: '________ are you going?' asked Mum.",
+                  "a": ["What", "Where", "When", "Why"],
+                  "c": 1
+                },
+                {
+                  "q": "Change to reported speech: 'I will help you,' she said.",
+                  "a": ["She said she will help me.", "She said she would help me.", "She said she helps me.", "She said she helped me."],
+                  "c": 1
+                },
+                {
+                  "q": "Which verb is used for asking a question in reported speech?",
+                  "a": ["said", "told", "asked", "shouted"],
+                  "c": 2
+                },
+                {
+                  "q": "Change to reported speech: 'I have finished my work,' said Amy.",
+                  "a": ["Amy said she has finished her work.", "Amy said she had finished her work.", "Amy said she finishes her work.", "Amy said she finished her work."],
+                  "c": 1
+                },
+                {
+                  "q": "In reported speech, the tense usually shifts ________.",
+                  "a": ["forward", "back", "stays the same", "to future"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "A Heart of Gold",
+          "topics": {
+            "9.1": {
+              "name": "Character Traits",
+              "revision": "Character traits describe a person's personality. Positive traits: compassionate (caring about others' suffering), caring (showing concern), generous (willing to share), honest (truthful), responsible (dependable). Negative traits: selfish (caring only about oneself), greedy (wanting more than needed), dishonest (not truthful), cruel (causing pain), lazy (not wanting to work). A person 'with a heart of gold' is very kind and good-natured.",
+              "questions": [
+                {
+                  "q": "A person who cares about others' suffering is ________.",
+                  "a": ["selfish", "compassionate", "greedy", "cruel"],
+                  "c": 1
+                },
+                {
+                  "q": "The opposite of 'generous' is ________.",
+                  "a": ["kind", "selfish", "caring", "helpful"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ person only thinks about themselves.",
+                  "a": ["generous", "selfish", "caring", "helpful"],
+                  "c": 1
+                },
+                {
+                  "q": "Someone who always wants more than they need is ________.",
+                  "a": ["generous", "greedy", "kind", "honest"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ person is someone you can trust to tell the truth.",
+                  "a": ["dishonest", "honest", "lazy", "selfish"],
+                  "c": 1
+                },
+                {
+                  "q": "A 'heart of gold' means someone is very ________.",
+                  "a": ["rich", "kind", "loud", "strict"],
+                  "c": 1
+                },
+                {
+                  "q": "Being ________ means people can count on you to do what you say.",
+                  "a": ["irresponsible", "responsible", "lazy", "selfish"],
+                  "c": 1
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Moral Values",
+              "revision": "Moral values are important principles that guide our behaviour. Honesty means always telling the truth. Kindness means being friendly and considerate. Responsibility means being accountable for your actions. Respect means treating others with dignity. Courage means doing the right thing even when it is difficult. These values help us make good decisions, build strong relationships, and become better people in our community.",
+              "questions": [
+                {
+                  "q": "Which moral value means telling the truth?",
+                  "a": ["Kindness", "Honesty", "Courage", "Respect"],
+                  "c": 1
+                },
+                {
+                  "q": "Showing good manners and treating people well is called ________.",
+                  "a": ["respect", "honesty", "courage", "generosity"],
+                  "c": 0
+                },
+                {
+                  "q": "Taking responsibility for your actions means you are ________.",
+                  "a": ["blaming others", "accountable", "running away", "ignoring problems"],
+                  "c": 1
+                },
+                {
+                  "q": "A person who helps a friend in trouble is showing ________.",
+                  "a": ["selfishness", "kindness", "greed", "laziness"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'It takes ________ to stand up for what is right.'",
+                  "a": ["fear", "courage", "laziness", "selfishness"],
+                  "c": 1
+                },
+                {
+                  "q": "Returning a lost wallet to its owner shows the value of ________.",
+                  "a": ["greed", "honesty", "selfishness", "cruelty"],
+                  "c": 1
+                },
+                {
+                  "q": "Moral values help us make good ________ in life.",
+                  "a": ["mistakes", "decisions", "problems", "excuses"],
+                  "c": 1
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Writing a Simple Story",
+              "revision": "A simple story has a clear structure. The beginning introduces the characters and setting. The middle presents a problem or conflict. The end shows how the problem is solved. A good story also has a moral message — a lesson the reader learns. Use descriptive words to make the story interesting. Keep the sequence clear with words like 'first,' 'then,' and 'finally.' The moral should be stated clearly at the end.",
+              "questions": [
+                {
+                  "q": "In story writing, the beginning introduces the ________ and setting.",
+                  "a": ["problem", "characters", "solution", "moral"],
+                  "c": 1
+                },
+                {
+                  "q": "The middle of a story usually contains a ________.",
+                  "a": ["moral", "problem or conflict", "ending", "title"],
+                  "c": 1
+                },
+                {
+                  "q": "The moral of a story is the ________ the reader learns.",
+                  "a": ["fact", "lesson", "date", "name"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: '________ the story teaches us that honesty is the best policy.'",
+                  "a": ["First", "The moral of", "Meanwhile", "After"],
+                  "c": 1
+                },
+                {
+                  "q": "A good story should have a clear beginning, middle, and ________.",
+                  "a": ["chapter", "end", "title", "index"],
+                  "c": 1
+                },
+                {
+                  "q": "Using ________ words makes a story more interesting to read.",
+                  "a": ["boring", "descriptive", "short", "easy"],
+                  "c": 1
+                },
+                {
+                  "q": "A story about a boy who learns to share might have a moral about ________.",
+                  "a": ["greed", "generosity", "laziness", "selfishness"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: '________ there lived a kind princess in a faraway kingdom.'",
+                  "a": ["Finally", "Once upon a time", "After that", "Meanwhile"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "10": {
+          "name": "The World of Sport",
+          "topics": {
+            "10.1": {
+              "name": "Types of Sports",
+              "revision": "Sports can be grouped into team sports and individual sports. Team sports are played with a group: football (11 players per team), hockey (11 players), netball (7 players), basketball (5 players). Individual sports are played by one person: badminton, swimming, athletics (running, jumping, throwing), gymnastics, tennis, and golf. Both types teach discipline, teamwork, and sportsmanship. Some sports have both singles and doubles versions.",
+              "questions": [
+                {
+                  "q": "Football is a ________ sport because it is played with a group.",
+                  "a": ["individual", "team", "water", "indoor"],
+                  "c": 1
+                },
+                {
+                  "q": "How many players are on a football team on the field?",
+                  "a": ["5", "7", "11", "15"],
+                  "c": 2
+                },
+                {
+                  "q": "Swimming is an ________ sport.",
+                  "a": ["team", "individual", "group", "indoor"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sport is played with a shuttlecock?",
+                  "a": ["Tennis", "Badminton", "Football", "Hockey"],
+                  "c": 1
+                },
+                {
+                  "q": "Athletics includes running, jumping, and ________.",
+                  "a": ["swimming", "throwing", "cycling", "dancing"],
+                  "c": 1
+                },
+                {
+                  "q": "Netball is usually played by ________ players per team.",
+                  "a": ["5", "7", "9", "11"],
+                  "c": 1
+                },
+                {
+                  "q": "Gymnastics requires ________, balance, and flexibility.",
+                  "a": ["speed", "strength", "height", "weight"],
+                  "c": 1
+                }
+              ]
+            },
+            "10.2": {
+              "name": "Sports Equipment and Venues",
+              "revision": "Different sports need different equipment and venues. Badminton uses a racket and shuttlecock on a court. Football uses a ball on a field with goalposts. Hockey uses a stick and ball on a field. Swimming takes place in a pool. Athletics takes place on a track and field. Tennis uses a racket and ball on a court. Safety equipment includes helmets (cycling), pads (hockey), and goggles (swimming). Each venue is designed for a specific sport.",
+              "questions": [
+                {
+                  "q": "Badminton is played on a ________.",
+                  "a": ["track", "field", "court", "pool"],
+                  "c": 2
+                },
+                {
+                  "q": "Football goalposts are located at each ________ of the field.",
+                  "a": ["side", "end", "corner", "middle"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ is used to hit the ball in tennis.",
+                  "a": ["bat", "racket", "stick", "club"],
+                  "c": 1
+                },
+                {
+                  "q": "Swimmers wear ________ to protect their eyes.",
+                  "a": ["helmets", "goggles", "pads", "gloves"],
+                  "c": 1
+                },
+                {
+                  "q": "Athletes run on a ________.",
+                  "a": ["court", "track", "pool", "field"],
+                  "c": 1
+                },
+                {
+                  "q": "Hockey players use a ________ to hit the ball.",
+                  "a": ["racket", "bat", "stick", "club"],
+                  "c": 2
+                },
+                {
+                  "q": "Cyclists must wear a ________ for safety.",
+                  "a": ["helmet", "goggle", "pad", "glove"],
+                  "c": 0
+                }
+              ]
+            },
+            "10.3": {
+              "name": "Making Comparisons",
+              "revision": "We use comparative and superlative forms to compare things. Comparatives compare two things: add '-er' (fast → faster, strong → stronger) or use 'more' for longer words (skilful → more skilful). Always use 'than': 'She is faster than me.' Superlatives compare three or more: add '-est' (fast → fastest) or use 'most' (skilful → most skilful). Use 'the': 'He is the fastest runner.' Some irregular forms: good → better → best, bad → worse → worst.",
+              "questions": [
+                {
+                  "q": "Complete: 'A cheetah runs ________ (fast) than a horse.'",
+                  "a": ["fastest", "faster", "more fast", "fast"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Usain Bolt is one of the ________ (fast) runners in the world.'",
+                  "a": ["faster", "fastest", "more fast", "very fast"],
+                  "c": 1
+                },
+                {
+                  "q": "The comparative form of 'strong' is ________.",
+                  "a": ["strongest", "stronger", "more strong", "strong"],
+                  "c": 1
+                },
+                {
+                  "q": "The superlative form of 'good' is ________.",
+                  "a": ["better", "best", "goodest", "more good"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Football is ________ (exciting) than badminton.'",
+                  "a": ["most exciting", "more exciting", "excitinger", "excitingest"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["She is the more skilful player.", "She is the most skilful player.", "She is the skillfullest player.", "She is very skilfuller."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'This match is ________ (good) than last week's match.'",
+                  "a": ["best", "better", "gooder", "more good"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
