@@ -1,0 +1,2341 @@
+{
+  "subjects": {
+    "math4bm": {
+      "name": "Matematik Tahun 4",
+      "icon": "🔢",
+      "color": "#4a90e2",
+      "units": {
+        "1": {
+          "name": "Nombor Dan Operasi",
+          "topics": {
+            "1.1": {
+              "name": "Nilai Nombor",
+              "questions": [
+                {
+                  "q": "Apakah nilai tempat bagi digit 5 dalam nombor 52 173?",
+                  "a": [
+                    "Ratus",
+                    "Puluh",
+                    "Puluh ribu",
+                    "Ribu"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah nilai digit bagi 8 dalam 14 087?",
+                  "a": [
+                    "80",
+                    "8",
+                    "800",
+                    "8 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, yang manakah mempunyai 3 puluh ribu?",
+                  "a": [
+                    "51 398",
+                    "42 316",
+                    "32 578",
+                    "43 721"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Cerakinkan 62 307 dengan betul.",
+                  "a": [
+                    "60 000 + 2 300 + 7",
+                    "60 000 + 2 000 + 300 + 7",
+                    "62 300 + 7",
+                    "62 000 + 300 + 7"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Yang manakah nombor 5 digit yang paling kecil?",
+                  "a": [
+                    "9 999",
+                    "10 001",
+                    "11 111",
+                    "10 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah nombor yang datang selepas 49 999?",
+                  "a": [
+                    "50 001",
+                    "49 999",
+                    "50 000",
+                    "49 998"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tulis nombor 72 084 dalam perkataan.",
+                  "a": [
+                    "Tujuh puluh dua ribu lapan puluh empat",
+                    "Tujuh puluh dua ribu sifar lapan empat",
+                    "Tujuh puluh dua ribu lapan ratus empat",
+                    "Tujuh puluh dua ribu sifar ratus lapan puluh empat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "80 000 + 400 + 30 + 5 = _____",
+                  "a": [
+                    "80 453",
+                    "80 435",
+                    "84 350",
+                    "84 035"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Digit yang manakah bernilai 7 000 dalam 87 241?",
+                  "a": [
+                    "1",
+                    "7",
+                    "2",
+                    "8"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah nombor yang paling besar? 45 678, 45 876, 45 768, 45 867",
+                  "a": [
+                    "45 678",
+                    "45 876",
+                    "45 768",
+                    "45 867"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Nombor hingga 100 000 mempunyai nilai tempat (puluh ribu, ribu, ratus, puluh, sa). Nombor seperti 52 173 bermaksud 5 puluh ribu + 2 ribu + 1 ratus + 7 puluh + 3 sa. Nombor boleh dibandingkan, disusun secara menaik atau menurun, dan dicerakinkan mengikut nilai digit."
+            },
+            "1.2": {
+              "name": "Banding dan Susun Nombor",
+              "questions": [
+                {
+                  "q": "Antara berikut, nombor yang manakah lebih besar daripada 65 420?",
+                  "a": [
+                    "65 419",
+                    "65 402",
+                    "65 421",
+                    "64 999"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Susun nombor berikut dalam tertib menaik: 34 215, 34 125, 34 512, 34 521",
+                  "a": [
+                    "34 521, 34 512, 34 215, 34 125",
+                    "34 125, 34 215, 34 512, 34 521",
+                    "34 512, 34 521, 34 215, 34 125",
+                    "34 215, 34 125, 34 521, 34 512"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah pola nombor: 12 450, 12 460, 12 470, ____, 12 490?",
+                  "a": [
+                    "12 475",
+                    "12 480",
+                    "12 485",
+                    "12 490"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Nombor yang manakah lebih kecil? 89 000 atau 90 000?",
+                  "a": [
+                    "89 000",
+                    "90 000",
+                    "Sama",
+                    "Tidak dapat dibandingkan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Susun nombor berikut dalam tertib menurun: 56 700, 56 070, 56 007, 57 000",
+                  "a": [
+                    "57 000, 56 700, 56 070, 56 007",
+                    "56 007, 56 070, 56 700, 57 000",
+                    "57 000, 56 007, 56 070, 56 700",
+                    "56 700, 57 000, 56 070, 56 007"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Lengkapkan pola: 25 500, 25 000, 24 500, ______",
+                  "a": [
+                    "24 000",
+                    "23 500",
+                    "24 400",
+                    "23 000"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Untuk membandingkan nombor, bandingkan nilai tempat bermula dari kiri. Susunan menaik bermaksud dari yang terkecil ke yang terbesar. Susunan menurun bermaksud dari yang terbesar ke yang terkecil. Pola nombor boleh bertambah atau berkurang secara tetap."
+            },
+            "1.3": {
+              "name": "Anggaran dan Pembundaran",
+              "questions": [
+                {
+                  "q": "Bundarkan 38 704 kepada puluh ribu yang terdekat.",
+                  "a": [
+                    "40 000",
+                    "38 000",
+                    "39 000",
+                    "30 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bundarkan 19 500 ml kepada ribu ml yang terdekat.",
+                  "a": [
+                    "20 000 ml",
+                    "20 500 ml",
+                    "19 000 ml",
+                    "19 500 ml"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bundarkan RM63 988 kepada puluh ribu ringgit yang terdekat.",
+                  "a": [
+                    "RM63 000",
+                    "RM60 000",
+                    "RM64 000",
+                    "RM70 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bundarkan 51 473 kepada ribu yang terdekat.",
+                  "a": [
+                    "51 000",
+                    "51 500",
+                    "52 000",
+                    "50 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah stadium mempunyai 24 875 tempat duduk. Bundarkan nombor ini kepada ratus yang terdekat.",
+                  "a": [
+                    "25 000",
+                    "24 900",
+                    "24 000",
+                    "24 800"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Anggarkan hasil tambah 48 235 + 32 678 dengan membundarkan kepada ribu terdekat.",
+                  "a": [
+                    "81 000",
+                    "80 000",
+                    "82 000",
+                    "83 000"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Pembundaran menjadikan nombor lebih mudah tetapi kekal hampir dengan nilai asal. Lihat digit di sebelah kanan tempat pembundaran — jika 5 atau lebih, bundar ke atas. Jika 4 atau kurang, bundar ke bawah."
+            },
+            "1.4": {
+              "name": "Operasi Asas",
+              "questions": [
+                {
+                  "q": "8 × 2 915 = ______",
+                  "a": [
+                    "22 320",
+                    "23 230",
+                    "24 320",
+                    "23 320"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "7 560 ÷ 6 = ______",
+                  "a": [
+                    "1 265",
+                    "1 250",
+                    "1 270",
+                    "1 260"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah kilang menghasilkan 1 250 botol sos setiap hari. Berapakah botol yang dihasilkan dalam 5 hari?",
+                  "a": [
+                    "6 000",
+                    "6 200",
+                    "5 250",
+                    "6 250"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Terdapat 48 orang murid di dalam dewan. Mereka dibahagikan sama rata kepada 6 kumpulan. Berapakah murid dalam setiap kumpulan?",
+                  "a": [
+                    "8",
+                    "9",
+                    "6",
+                    "7"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Hitung 12 × 3 046.",
+                  "a": [
+                    "36 525",
+                    "36 256",
+                    "36 552",
+                    "35 652"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Bahagikan 8 424 dengan 8.",
+                  "a": [
+                    "1 073",
+                    "1 063",
+                    "1 053",
+                    "1 053 baki 4"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Seorang tukang kebun menanam 2 016 anak pokok sama rata dalam 7 baris. Berapakah anak pokok dalam setiap baris?",
+                  "a": [
+                    "278",
+                    "298",
+                    "308",
+                    "288"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "38 725 ÷ 5 = ______",
+                  "a": [
+                    "7 475",
+                    "7 765",
+                    "7 745",
+                    "7 745 baki 2"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sebuah kotak mengandungi 7 bungkus. Setiap bungkus ada 125 biji guli. Berapakah jumlah biji guli?",
+                  "a": [
+                    "915",
+                    "875",
+                    "825",
+                    "885"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "9 504 ÷ 9 = ______",
+                  "a": [
+                    "1 065",
+                    "1 046",
+                    "1 056",
+                    "1 056 baki 1"
+                  ],
+                  "c": 2
+                }
+              ],
+              "revision": "Darab adalah penambahan berulang. Apabila mendarab dengan nombor 1 digit, darab setiap nilai tempat bermula dari sa. Bahagi adalah pengongsian sama rata. Apabila membahagi, mulakan dari nilai tempat terbesar dan bekerja dari kiri ke kanan."
+            }
+          }
+        },
+        "2": {
+          "name": "Pecahan, Perpuluhan dan Peratus",
+          "topics": {
+            "2.1": {
+              "name": "Pecahan Wajar dan Setara",
+              "questions": [
+                {
+                  "q": "Antara berikut, yang manakah pecahan wajar?",
+                  "a": [
+                    "7/4",
+                    "5/4",
+                    "9/4",
+                    "3/4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Tukarkan 11/4 kepada nombor bercampur.",
+                  "a": [
+                    "2 1/4",
+                    "2 3/4",
+                    "2 3/5",
+                    "3 1/4"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tukarkan 3 2/5 kepada pecahan tak wajar.",
+                  "a": [
+                    "13/5",
+                    "17/5",
+                    "15/5",
+                    "11/5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tukarkan 9/2 kepada nombor bercampur.",
+                  "a": [
+                    "3 1/2",
+                    "4 1/2",
+                    "4 3/4",
+                    "4 1/4"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ungkapkan 5 1/3 sebagai pecahan tak wajar.",
+                  "a": [
+                    "15/3",
+                    "16/3",
+                    "17/3",
+                    "14/3"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pecahan setara bagi 1/2 ialah",
+                  "a": [
+                    "1/4",
+                    "3/6",
+                    "2/5",
+                    "4/10"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah pecahan setara dengan 2/3?",
+                  "a": [
+                    "4/5",
+                    "4/9",
+                    "4/6",
+                    "6/9"
+                  ],
+                  "c": 2
+                }
+              ],
+              "revision": "Pecahan wajar mempunyai pengangka yang lebih kecil daripada penyebut (contohnya 3/4). Pecahan tak wajar mempunyai pengangka yang sama atau lebih besar daripada penyebut. Nombor bercampur menggabungkan nombor bulat dan pecahan wajar. Pecahan setara ialah pecahan yang mempunyai nilai yang sama."
+            },
+            "2.2": {
+              "name": "Operasi Pecahan",
+              "questions": [
+                {
+                  "q": "Berapakah hasil tambah 3/8 + 2/8?",
+                  "a": [
+                    "5/16",
+                    "1/2",
+                    "5/8",
+                    "6/8"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "7/12 - 3/12 =",
+                  "a": [
+                    "4/12 = 2/6",
+                    "10/12",
+                    "4/12 = 1/3",
+                    "4/12"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tambah: 1/3 + 1/4",
+                  "a": [
+                    "7/12",
+                    "2/7",
+                    "7/24",
+                    "2/12"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebiji kek dipotong kepada 8 bahagian yang sama. Ali makan 3 bahagian dan Mei makan 2 bahagian. Apakah pecahan kek yang telah dimakan?",
+                  "a": [
+                    "2/8",
+                    "5/8",
+                    "3/8",
+                    "5/16"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "2 1/3 + 1 1/3 =",
+                  "a": [
+                    "3 1/3",
+                    "4 2/3",
+                    "3 2/6",
+                    "3 2/3"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5/6 - 1/2 =",
+                  "a": [
+                    "2/6",
+                    "2/3",
+                    "4/6",
+                    "1/3"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mina menggunakan 2/5 daripada segulung reben. Apakah pecahan reben yang tinggal?",
+                  "a": [
+                    "2/5",
+                    "3/5",
+                    "4/5",
+                    "1/5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "3/10 + 2/5 =",
+                  "a": [
+                    "3/10",
+                    "5/15",
+                    "7/10",
+                    "5/10"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Selesaikan: 2 1/2 - 1 1/4",
+                  "a": [
+                    "1 1/2",
+                    "1 3/4",
+                    "1 1/6",
+                    "1 1/4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebiji piza dipotong kepada 6 bahagian sama besar. Ben mengambil 2 bahagian dan Chan mengambil 1 bahagian. Berapakah jumlah pecahan piza yang diambil?",
+                  "a": [
+                    "1/3",
+                    "3/6 = 1/2",
+                    "2/6",
+                    "1/2"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Untuk menambah atau menolak pecahan, penyebut mestilah sama. Cari penyebut sepunya terkecil, tukarkan pecahan, kemudian tambah atau tolak pengangka sahaja. Permudahkan jawapan apabila boleh."
+            },
+            "2.3": {
+              "name": "Perpuluhan",
+              "questions": [
+                {
+                  "q": "2.5 + 1.8 =",
+                  "a": [
+                    "3.3",
+                    "3.13",
+                    "4.3",
+                    "4.13"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "7.65 - 3.42 =",
+                  "a": [
+                    "4.13",
+                    "4.43",
+                    "4.22",
+                    "4.23"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah botol 1.5 liter diisi dengan 0.8 liter air. Berapa banyak lagi air yang diperlukan untuk memenuhkannya?",
+                  "a": [
+                    "0.5 liter",
+                    "0.7 liter",
+                    "0.9 liter",
+                    "0.3 liter"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "5.09 + 3.87 =",
+                  "a": [
+                    "8.97",
+                    "8.86",
+                    "8.96",
+                    "9.96"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "10.0 - 4.56 =",
+                  "a": [
+                    "6.44",
+                    "4.44",
+                    "5.44",
+                    "5.54"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Jumlah jisim tiga beg ialah 1.5 kg, 2.3 kg, dan 0.7 kg. Berapakah jumlah jisim?",
+                  "a": [
+                    "4.5 kg",
+                    "5.5 kg",
+                    "4.0 kg",
+                    "3.5 kg"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "6.24 + 12.76 =",
+                  "a": [
+                    "18.90",
+                    "19.10",
+                    "19.00",
+                    "18.00"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "15.80 - 9.95 =",
+                  "a": [
+                    "5.85",
+                    "6.05",
+                    "5.75",
+                    "5.95"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sehelai kain panjangnya 3.6 m. 1.8 m digunakan untuk membuat baju. Berapakah panjang kain yang tinggal?",
+                  "a": [
+                    "1.6 m",
+                    "2.2 m",
+                    "2.0 m",
+                    "1.8 m"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Tambah: 4.07 + 5.93",
+                  "a": [
+                    "9.00",
+                    "10.00",
+                    "9.90",
+                    "10.10"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Untuk menambah atau menolak perpuluhan, selarikan titik perpuluhan secara menegak. Tambah sifar untuk menjadikan bilangan tempat perpuluhan sama jika perlu. Kemudian tambah atau tolak seperti nombor bulat dan turunkan titik perpuluhan."
+            },
+            "2.4": {
+              "name": "Peratus",
+              "questions": [
+                {
+                  "q": "Ungkapkan 1/2 sebagai peratus.",
+                  "a": [
+                    "75%",
+                    "100%",
+                    "25%",
+                    "50%"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ungkapkan 25% sebagai pecahan dalam bentuk termudah.",
+                  "a": [
+                    "1/4",
+                    "25/100",
+                    "1/2",
+                    "5/20"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah 3/4 sebagai peratus?",
+                  "a": [
+                    "75%",
+                    "25%",
+                    "50%",
+                    "100%"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "30 daripada 100 orang murid menunggang basikal ke sekolah. Berapakah peratus ini?",
+                  "a": [
+                    "70%",
+                    "3%",
+                    "30%",
+                    "13%"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sebuah kelas mempunyai 25 orang kanak-kanak. 60% adalah lelaki. Berapakah bilangan lelaki?",
+                  "a": [
+                    "15",
+                    "10",
+                    "12",
+                    "18"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Tukarkan 0.4 kepada peratus.",
+                  "a": [
+                    "4%",
+                    "40%",
+                    "0.4%",
+                    "14%"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tukarkan 20% kepada perpuluhan.",
+                  "a": [
+                    "20.0",
+                    "2.0",
+                    "0.02",
+                    "0.2"
+                  ],
+                  "c": 3
+                }
+              ],
+              "revision": "Peratus (%) bermaksud daripada 100. 50% = 50/100 = 1/2. Untuk menukar pecahan kepada peratus, darab dengan 100%. Untuk menukar peratus kepada pecahan, tulis atas 100 dan permudahkan."
+            }
+          }
+        },
+        "3": {
+          "name": "Wang",
+          "topics": {
+            "3.1": {
+              "name": "Nilai Wang dan Operasi Wang",
+              "questions": [
+                {
+                  "q": "RM25.50 + RM18.70 =",
+                  "a": [
+                    "RM44.20",
+                    "RM43.70",
+                    "RM44.00",
+                    "RM43.20"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM50.00 - RM27.85 =",
+                  "a": [
+                    "RM22.05",
+                    "RM22.85",
+                    "RM22.15",
+                    "RM23.15"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sebuah buku berharga RM12.50 dan sebatang pen berharga RM3.80. Berapakah jumlah harga?",
+                  "a": [
+                    "RM16.80",
+                    "RM15.30",
+                    "RM15.80",
+                    "RM16.30"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5 × RM24.80 =",
+                  "a": [
+                    "RM124.00",
+                    "RM120.00",
+                    "RM125.00",
+                    "RM134.00"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM85.50 ÷ 3 =",
+                  "a": [
+                    "RM29.50",
+                    "RM28.00",
+                    "RM27.50",
+                    "RM28.50"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah sekolah mengumpul RM756.50 untuk derma. Mereka memerlukan RM1 000. Berapa lagikah wang yang diperlukan?",
+                  "a": [
+                    "RM243.00",
+                    "RM243.50",
+                    "RM253.50",
+                    "RM244.50"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "6 orang rakan berkongsi kos hadiah sama rata. Hadiah itu berharga RM73.80. Berapakah bayaran setiap seorang?",
+                  "a": [
+                    "RM12.30",
+                    "RM13.30",
+                    "RM12.80",
+                    "RM11.80"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "RM100.00 - RM34.90 - RM25.50 =",
+                  "a": [
+                    "RM49.60",
+                    "RM39.60",
+                    "RM40.60",
+                    "RM38.60"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Satu bungkus biskut berharga RM2.40. Berapakah harga 7 bungkus?",
+                  "a": [
+                    "RM17.80",
+                    "RM15.80",
+                    "RM16.80",
+                    "RM14.80"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "RM250.00 ÷ 8 =",
+                  "a": [
+                    "RM32.25",
+                    "RM30.25",
+                    "RM31.25",
+                    "RM31.50"
+                  ],
+                  "c": 2
+                }
+              ],
+              "revision": "Operasi wang dalam Ringgit Malaysia (RM) mengikut peraturan yang sama seperti operasi perpuluhan. Sentiasa selarikan titik perpuluhan dan simbol RM. Apabila memberi baki wang, tolak kos daripada jumlah wang yang dibayar."
+            },
+            "3.2": {
+              "name": "Penyelesaian Masalah Wang",
+              "questions": [
+                {
+                  "q": "Ahmad mempunyai wang saku RM50. Dia membelanjakan RM32.50 untuk makanan dan menyimpan bakinya. Berapa banyak yang dia simpan?",
+                  "a": [
+                    "RM16.50",
+                    "RM27.50",
+                    "RM18.50",
+                    "RM17.50"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah beg sekolah berharga RM45.90. Sebuah dompet berharga RM12.80. Berapakah beza harga?",
+                  "a": [
+                    "RM33.90",
+                    "RM33.10",
+                    "RM34.10",
+                    "RM32.10"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siti mempunyai RM200. Dia ingin membeli 3 helai baju pada harga RM35.90 setiap satu. Adakah wangnya mencukupi?",
+                  "a": [
+                    "Tidak, dia perlukan RM10 lagi",
+                    "Ya, dia ada baki RM92.30",
+                    "Tidak, dia perlukan RM7.70 lagi",
+                    "Ya, dia ada baki RM100"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebuah keluarga membelanjakan RM12.50 untuk sarapan, RM28.90 untuk makan tengah hari, dan RM45.60 untuk makan malam. Berapakah jumlah yang dibelanjakan untuk makanan?",
+                  "a": [
+                    "RM87.00",
+                    "RM86.00",
+                    "RM88.00",
+                    "RM77.00"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Encik Ramli menyimpan RM125.60 setiap bulan. Berapa banyak yang dia simpan dalam 4 bulan?",
+                  "a": [
+                    "RM512.40",
+                    "RM500.00",
+                    "RM492.40",
+                    "RM502.40"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Puan Lisa membeli 5 kg beras pada harga RM3.20 sekilogram. Dia membayar dengan wang RM20.00. Berapakah baki wangnya?",
+                  "a": [
+                    "RM4.00",
+                    "RM3.00",
+                    "RM2.50",
+                    "RM3.50"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Mengurus wang dengan bijak bermaksud merancang perbelanjaan, menyimpan secara tetap, dan membezakan antara keperluan dan kehendak. Sentiasa semak sama ada wang mencukupi sebelum membeli."
+            },
+            "3.3": {
+              "name": "Untung dan Rugi",
+              "questions": [
+                {
+                  "q": "Seorang peniaga membeli barang dengan harga RM80 dan menjualnya dengan harga RM100. Berapakah keuntungan?",
+                  "a": [
+                    "RM20",
+                    "RM10",
+                    "RM30",
+                    "RM180"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Harga kos sebuah kek ialah RM15. Harga jual ialah RM12. Apakah yang berlaku?",
+                  "a": [
+                    "Untung RM3",
+                    "Rugi RM3",
+                    "Untung RM27",
+                    "Tiada untung atau rugi"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ali membeli sebuah basikal dengan harga RM350 dan menjualnya dengan harga RM400. Berapakah peratus keuntungan?",
+                  "a": [
+                    "50%",
+                    "14.3%",
+                    "12.5%",
+                    "25%"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Seorang peniaga menjual 20 biji telur dengan harga RM12. Kos sebiji telur ialah RM0.50. Berapakah jumlah keuntungan?",
+                  "a": [
+                    "RM2.00",
+                    "RM10.00",
+                    "RM5.00",
+                    "RM7.00"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Puan Siti membeli 3 kg mangga dengan harga RM5 sekilogram. Dia menjual semuanya dengan harga RM21. Berapakah keuntungannya?",
+                  "a": [
+                    "RM15",
+                    "RM6",
+                    "RM4",
+                    "RM5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Seorang penjual membeli 10 biji kek cawan dengan harga RM1.50 sebiji. Dia menjual semuanya dengan harga RM20. Berapakah rugi atau untungnya?",
+                  "a": [
+                    "Untung RM5",
+                    "Rugi RM5",
+                    "Untung RM15",
+                    "Rugi RM15"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Untung = Harga jual - Harga kos. Rugi = Harga kos - Harga jual. Jika harga jual lebih tinggi daripada harga kos, peniaga mendapat untung. Jika harga jual lebih rendah, peniaga mengalami kerugian."
+            },
+            "3.4": {
+              "name": "Rekod Kewangan",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan rekod kewangan?",
+                  "a": [
+                    "Senarai barang yang hendak dibeli",
+                    "Catatan tentang wang masuk dan wang keluar",
+                    "Buku cerita tentang wang",
+                    "Resit sahaja"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah contoh wang masuk?",
+                  "a": [
+                    "Membeli buku",
+                    "Membayar bil elektrik",
+                    "Gaji bulanan",
+                    "Membeli makanan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sebuah kedai mencatat jualan harian: Isnin RM450, Selasa RM520, Rabu RM390. Berapakah jumlah jualan?",
+                  "a": [
+                    "RM1 350",
+                    "RM1 360",
+                    "RM1 450",
+                    "RM1 260"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah tujuan menyimpan rekod kewangan?",
+                  "a": [
+                    "Untuk membelanjakan lebih banyak wang",
+                    "Untuk mengetahui ke mana wang dibelanjakan",
+                    "Untuk menyembunyikan wang",
+                    "Untuk meminjam wang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pendapatan Encik Lim ialah RM3 500 sebulan. Perbelanjaannya ialah RM2 800. Berapakah lebihan wangnya?",
+                  "a": [
+                    "RM800",
+                    "RM700",
+                    "RM600",
+                    "RM6 300"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Rekod kewangan ialah catatan wang masuk (pendapatan) dan wang keluar (perbelanjaan). Simpan kira yang baik membantu kita mengurus wang dengan lebih bijak dan mengetahui sama ada kita berbelanja berlebihan."
+            }
+          }
+        },
+        "4": {
+          "name": "Masa Dan Waktu",
+          "topics": {
+            "4.1": {
+              "name": "Hari, Minggu, Bulan dan Tahun",
+              "questions": [
+                {
+                  "q": "Berapa hari dalam seminggu?",
+                  "a": [
+                    "5 hari",
+                    "6 hari",
+                    "7 hari",
+                    "10 hari"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Berapa bulan dalam setahun?",
+                  "a": [
+                    "10 bulan",
+                    "11 bulan",
+                    "12 bulan",
+                    "13 bulan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "2 tahun = ______ bulan",
+                  "a": [
+                    "12 bulan",
+                    "20 bulan",
+                    "36 bulan",
+                    "24 bulan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "4 minggu = ______ hari",
+                  "a": [
+                    "28 hari",
+                    "30 hari",
+                    "21 hari",
+                    "35 hari"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3 tahun + 8 bulan = ______ bulan",
+                  "a": [
+                    "38 bulan",
+                    "44 bulan",
+                    "36 bulan",
+                    "48 bulan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "5 minggu 3 hari = ______ hari",
+                  "a": [
+                    "35 hari",
+                    "38 hari",
+                    "33 hari",
+                    "40 hari"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Hubungan unit masa: 1 minggu = 7 hari, 1 bulan ≈ 4 minggu, 1 tahun = 12 bulan. Untuk menukar unit masa, darab atau bahagi mengikut nilai yang betul. Contoh: 2 tahun = 2 × 12 = 24 bulan."
+            },
+            "4.2": {
+              "name": "Sistem 12 Jam dan 24 Jam",
+              "questions": [
+                {
+                  "q": "Apakah 2:00 petang dalam sistem 24 jam?",
+                  "a": [
+                    "1600 jam",
+                    "1200 jam",
+                    "1400 jam",
+                    "0200 jam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah 2000 jam dalam sistem 12 jam?",
+                  "a": [
+                    "10:00 malam",
+                    "8:00 malam",
+                    "8:00 pagi",
+                    "2:00 petang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah 11:30 pagi dalam sistem 24 jam?",
+                  "a": [
+                    "0130 jam",
+                    "1230 jam",
+                    "1130 jam",
+                    "2330 jam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tukarkan 7:45 petang kepada sistem 24 jam.",
+                  "a": [
+                    "1745 jam",
+                    "0745 jam",
+                    "1945 jam",
+                    "2045 jam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sekolah bermula pada jam 0730. Pukul berapakah itu dalam sistem 12 jam?",
+                  "a": [
+                    "7:30 malam",
+                    "5:30 pagi",
+                    "5:30 petang",
+                    "7:30 pagi"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah program TV bermula pada jam 2100. Pukul berapakah itu dalam sistem 12 jam?",
+                  "a": [
+                    "9:00 malam",
+                    "9:00 pagi",
+                    "10:00 malam",
+                    "8:00 malam"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Tukarkan 0015 jam kepada sistem 12 jam.",
+                  "a": [
+                    "12:15 pagi",
+                    "1:15 petang",
+                    "1:15 pagi",
+                    "12:15 petang"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah 10:10 pagi dalam sistem 24 jam?",
+                  "a": [
+                    "2010 jam",
+                    "1110 jam",
+                    "2210 jam",
+                    "1010 jam"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Tukarkan 2359 jam kepada sistem 12 jam.",
+                  "a": [
+                    "12:59 pagi",
+                    "11:59 pagi",
+                    "11:59 malam",
+                    "1:59 petang"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pukul berapakah 1845 jam dalam sistem 12 jam?",
+                  "a": [
+                    "8:45 pagi",
+                    "6:45 petang",
+                    "6:45 pagi",
+                    "8:45 malam"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Sistem 12 jam menggunakan a.m. (sebelum tengah hari) dan p.m. (selepas tengah hari). Sistem 24 jam berjalan dari 0000 hingga 2359 jam. Untuk menukar waktu petang ke sistem 24 jam, tambah 12 pada jam. Contoh: 2:00 petang = 1400 jam."
+            },
+            "4.3": {
+              "name": "Operasi Masa dan Tempoh",
+              "questions": [
+                {
+                  "q": "Hari persekolahan bermula pada 7:30 pagi dan tamat pada 1:30 petang. Berapa lamakah hari persekolahan?",
+                  "a": [
+                    "4 jam",
+                    "5 jam",
+                    "7 jam",
+                    "6 jam"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Satu perjalanan bermula pada jam 0945 dan tamat pada jam 1345. Berapa lamakah perjalanan itu?",
+                  "a": [
+                    "4 jam 30 minit",
+                    "4 jam",
+                    "3 jam",
+                    "5 jam"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebuah filem bermula pada 2:15 petang dan berlangsung selama 1 jam 45 minit. Pukul berapakah ia tamat?",
+                  "a": [
+                    "3:00 petang",
+                    "4:15 petang",
+                    "3:45 petang",
+                    "4:00 petang"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Jika seorang bayi tidur dari 9:30 malam hingga 6:00 pagi, berapa lamakah dia tidur?",
+                  "a": [
+                    "7 jam 30 minit",
+                    "8 jam 30 minit",
+                    "8 jam",
+                    "9 jam"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebuah bas bertolak pada jam 1100 dan tiba pada jam 1330. Berapa lamakah perjalanan itu?",
+                  "a": [
+                    "3 jam",
+                    "2 jam",
+                    "1 jam 30 minit",
+                    "2 jam 30 minit"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "2 jam 45 minit + 1 jam 30 minit =",
+                  "a": [
+                    "3 jam 75 minit = 4 jam 15 minit",
+                    "4 jam 15 minit",
+                    "3 jam 15 minit",
+                    "3 jam 45 minit"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Tempoh masa ialah panjang masa antara dua peristiwa. Untuk mencari tempoh, tolak masa mula daripada masa tamat. Contoh: 7:30 pagi hingga 1:30 petang ialah 6 jam."
+            },
+            "4.4": {
+              "name": "Penukaran Unit Masa",
+              "questions": [
+                {
+                  "q": "Berapa tahun dalam satu dekad?",
+                  "a": [
+                    "10 tahun",
+                    "100 tahun",
+                    "50 tahun",
+                    "1 000 tahun"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berapa tahun dalam satu abad?",
+                  "a": [
+                    "100 tahun",
+                    "10 tahun",
+                    "50 tahun",
+                    "1 000 tahun"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berapa tahun dalam satu alaf?",
+                  "a": [
+                    "10 tahun",
+                    "100 tahun",
+                    "10 000 tahun",
+                    "1 000 tahun"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Berapa dekad dalam satu abad?",
+                  "a": [
+                    "10 dekad",
+                    "100 dekad",
+                    "5 dekad",
+                    "20 dekad"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah bangunan dibina pada tahun 1990. Berapa dekad usianya pada tahun 2026?",
+                  "a": [
+                    "3 dekad",
+                    "4 dekad",
+                    "2 dekad",
+                    "5 dekad"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "1 abad + 2 dekad = ______ tahun",
+                  "a": [
+                    "120 tahun",
+                    "100 tahun",
+                    "102 tahun",
+                    "12 tahun"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Hubungan masa: 1 dekad = 10 tahun, 1 abad = 100 tahun = 10 dekad, 1 alaf = 1 000 tahun = 10 abad. Tahun 2026 berada dalam alaf ke-3, abad ke-21."
+            }
+          }
+        },
+        "5": {
+          "name": "Panjang, Jisim Dan Isi Padu",
+          "topics": {
+            "5.1": {
+              "name": "Unit Panjang",
+              "questions": [
+                {
+                  "q": "Berapa milimeter dalam 1 sentimeter?",
+                  "a": [
+                    "1 000 mm",
+                    "100 mm",
+                    "5 mm",
+                    "10 mm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Tukarkan 5 km kepada meter.",
+                  "a": [
+                    "50 000 m",
+                    "500 m",
+                    "5 000 m",
+                    "500 cm"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Se batang pensil panjangnya 15 cm. Berapa milimeter panjangnya?",
+                  "a": [
+                    "150 mm",
+                    "15 mm",
+                    "1.5 mm",
+                    "1 500 mm"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Seutas tali panjangnya 3.5 m. Nyatakan dalam sentimeter.",
+                  "a": [
+                    "350 cm",
+                    "3 500 cm",
+                    "3 050 cm",
+                    "35 cm"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Yang manakah lebih panjang? 0.25 km atau 250 m?",
+                  "a": [
+                    "250 m",
+                    "0.25 km",
+                    "Kedua-duanya sama panjang",
+                    "Tidak boleh dibandingkan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tambah: 2.3 km + 1.8 km =",
+                  "a": [
+                    "4.0 km",
+                    "4.1 km",
+                    "3.1 km",
+                    "4.2 km"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Seutas reben panjangnya 80 cm. 35 cm dipotong. Berapakah panjang yang tinggal?",
+                  "a": [
+                    "35 cm",
+                    "55 cm",
+                    "50 cm",
+                    "45 cm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah taman lebarnya 6 m dan panjangnya 8 m. Berapakah jumlah jarak di sekeliling taman?",
+                  "a": [
+                    "24 m",
+                    "14 m",
+                    "28 m",
+                    "48 m"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Berapa sentimeter dalam 2.5 m?",
+                  "a": [
+                    "205 cm",
+                    "250 cm",
+                    "25 cm",
+                    "2 500 cm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebatang jalan panjangnya 2.85 km. Satu lagi jalan panjangnya 3.6 km. Jumlah panjang =",
+                  "a": [
+                    "6.50 km",
+                    "6.45 km",
+                    "5.45 km",
+                    "6.35 km"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Unit panjang: 10 mm = 1 cm, 100 cm = 1 m, 1 000 m = 1 km. Untuk menukar daripada unit besar kepada unit kecil, darab. Untuk menukar daripada unit kecil kepada unit besar, bahagi. Contoh: 3.5 m = 350 cm."
+            },
+            "5.2": {
+              "name": "Unit Jisim",
+              "questions": [
+                {
+                  "q": "Berapa gram dalam 1 kilogram?",
+                  "a": [
+                    "10 g",
+                    "10 000 g",
+                    "1 000 g",
+                    "100 g"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tukarkan 3.5 kg kepada gram.",
+                  "a": [
+                    "305 g",
+                    "35 000 g",
+                    "350 g",
+                    "3 500 g"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sekampit beras beratnya 2 kg. Sekampung tepung beratnya 750 g. Berapakah jumlah jisim dalam gram?",
+                  "a": [
+                    "2 075 g",
+                    "750 g",
+                    "2 750 kg",
+                    "2 750 g"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebiji tembikai beratnya 4.8 kg. Sebiji nanas beratnya 1.2 kg. Berapa kg lebih berat tembikai itu?",
+                  "a": [
+                    "6.0 kg",
+                    "3.6 kg",
+                    "3.0 kg",
+                    "4.0 kg"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "5 beg yang sama berat mempunyai jumlah jisim 12.5 kg. Berapakah jisim setiap beg?",
+                  "a": [
+                    "2.2 kg",
+                    "2.0 kg",
+                    "2.5 kg",
+                    "3.0 kg"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tambah: 2 kg 500 g + 1 kg 750 g =",
+                  "a": [
+                    "4 kg 250 g",
+                    "3 kg 250 g",
+                    "3 kg 750 g",
+                    "4 kg 500 g"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Tukarkan 4 500 g kepada kg.",
+                  "a": [
+                    "4 kg 500 g",
+                    "45 kg",
+                    "4.05 kg",
+                    "0.45 kg"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Unit jisim: 1 000 g = 1 kg. Untuk menukar kg kepada g, darab dengan 1 000. 3.5 kg = 3 500 g. Untuk menukar g kepada kg, bahagi dengan 1 000."
+            },
+            "5.3": {
+              "name": "Isi Padu Cecair",
+              "questions": [
+                {
+                  "q": "Berapa mililiter dalam 1 liter?",
+                  "a": [
+                    "10 000 ml",
+                    "1 000 ml",
+                    "100 ml",
+                    "10 ml"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tukarkan 2.5 liter kepada mililiter.",
+                  "a": [
+                    "2 500 ml",
+                    "250 ml",
+                    "25 000 ml",
+                    "2 050 ml"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah botol mempunyai 750 ml air. 600 ml lagi ditambah. Berapakah jumlah isi padu dalam liter?",
+                  "a": [
+                    "13.5 liter",
+                    "1.35 liter",
+                    "1.5 liter",
+                    "1.35 ml"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebuah baldi berisi 5 liter air. 1.75 liter digunakan untuk menyiram pokok. Berapa banyak air yang tinggal?",
+                  "a": [
+                    "2.25 liter",
+                    "3.25 liter",
+                    "4.25 liter",
+                    "3.75 liter"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tiga botol masing-masing mengandungi 0.8 liter, 1.2 liter, dan 1.5 liter. Jumlah isi padu =",
+                  "a": [
+                    "3.8 liter",
+                    "3.5 liter",
+                    "2.5 liter",
+                    "3.0 liter"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berapa liter dalam 3 500 ml?",
+                  "a": [
+                    "35 liter",
+                    "3.5 liter",
+                    "0.35 liter",
+                    "350 liter"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebuah tangki berisi 12 liter air. 7 liter 500 ml digunakan. Berapakah baki air?",
+                  "a": [
+                    "5 liter 500 ml",
+                    "4 liter 500 ml",
+                    "4 liter",
+                    "5 liter"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Unit isi padu: 1 000 ml = 1 liter. Untuk menukar liter kepada ml, darab dengan 1 000. 2.5 liter = 2 500 ml. Untuk menukar ml kepada liter, bahagi dengan 1 000."
+            },
+            "5.4": {
+              "name": "Penyelesaian Masalah Panjang, Jisim dan Isi Padu",
+              "questions": [
+                {
+                  "q": "Puan Anita membeli 2.5 m kain untuk membuat langsir. Dia memerlukan 4.2 m. Berapa meter lagi kain yang perlu dibeli?",
+                  "a": [
+                    "1.7 m",
+                    "1.5 m",
+                    "2.0 m",
+                    "1.3 m"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Seorang baker menggunakan 1 kg 250 g tepung untuk membuat kek dan 750 g untuk membuat biskut. Berapakah jumlah tepung yang digunakan?",
+                  "a": [
+                    "1 kg 900 g",
+                    "2 kg 000 g",
+                    "2 kg 500 g",
+                    "1 kg 750 g"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Azman minum 500 ml susu setiap hari. Berapa liter susu yang dia minum dalam 6 hari?",
+                  "a": [
+                    "3.5 liter",
+                    "3.0 liter",
+                    "4.0 liter",
+                    "2.5 liter"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Seutas dawai panjangnya 3 m 40 cm. Dawai itu dipotong kepada 4 bahagian yang sama panjang. Berapakah panjang setiap bahagian?",
+                  "a": [
+                    "75 cm",
+                    "85 cm",
+                    "80 cm",
+                    "90 cm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Jumlah jisim seekor kucing dan seekor arnab ialah 7 kg. Jika kucing itu berat 4.5 kg, berapakah berat arnab itu?",
+                  "a": [
+                    "3.5 kg",
+                    "2.0 kg",
+                    "3.0 kg",
+                    "2.5 kg"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sebuah botol mengandungi 1.8 liter jus. Jus itu dituang sama rata ke dalam 6 gelas. Berapa ml jus dalam setiap gelas?",
+                  "a": [
+                    "300 ml",
+                    "250 ml",
+                    "350 ml",
+                    "200 ml"
+                  ],
+                  "c": 0
+                }
+              ],
+              "revision": "Untuk menyelesaikan masalah yang melibatkan panjang, jisim dan isi padu, pastikan unit adalah sama sebelum melakukan operasi. Tukarkan semua unit kepada unit yang sama terlebih dahulu."
+            }
+          }
+        },
+        "6": {
+          "name": "Ruang",
+          "topics": {
+            "6.1": {
+              "name": "Bentuk Dua Matra",
+              "questions": [
+                {
+                  "q": "Berapakah bilangan sisi yang ada pada heksagon?",
+                  "a": [
+                    "8",
+                    "6",
+                    "7",
+                    "5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bentuk yang manakah mempunyai 4 sisi yang sama panjang dan 4 sudut tegak?",
+                  "a": [
+                    "Segi empat sama",
+                    "Segi empat selari",
+                    "Rombus",
+                    "Segi empat tepat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Segi tiga sama kaki mempunyai...",
+                  "a": [
+                    "tiada sisi yang sama",
+                    "empat sisi",
+                    "tiga sisi yang sama",
+                    "dua sisi yang sama"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bentuk yang manakah mempunyai 3 paksi simetri?",
+                  "a": [
+                    "Segi tiga sama kaki",
+                    "Segi empat sama",
+                    "Segi tiga sama sisi",
+                    "Segi empat tepat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pentagon mempunyai berapa bucu?",
+                  "a": [
+                    "7",
+                    "4",
+                    "5",
+                    "6"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Perimeter segi empat sama yang panjang sisinya 5 cm ialah",
+                  "a": [
+                    "10 cm",
+                    "25 cm",
+                    "15 cm",
+                    "20 cm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Luas segi empat tepat yang panjang 8 cm dan lebar 3 cm ialah",
+                  "a": [
+                    "11 cm persegi",
+                    "24 cm persegi",
+                    "22 cm persegi",
+                    "20 cm persegi"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Bentuk 2D: segi tiga (3 sisi), segi empat sama (4 sisi sama, 4 sudut tegak), segi empat tepat (4 sisi, 4 sudut tegak), pentagon (5 sisi), heksagon (6 sisi). Perimeter = jumlah semua sisi. Luas segi empat tepat = panjang × lebar."
+            },
+            "6.2": {
+              "name": "Bentuk Tiga Matra",
+              "questions": [
+                {
+                  "q": "Berapakah bilangan bucu yang ada pada kubus?",
+                  "a": [
+                    "6",
+                    "8",
+                    "12",
+                    "4"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berapakah bilangan sisi pada kuboid?",
+                  "a": [
+                    "6",
+                    "8",
+                    "10",
+                    "12"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bentuk yang manakah mempunyai satu bucu dan satu permukaan melengkung?",
+                  "a": [
+                    "Kubus",
+                    "Kon",
+                    "Silinder",
+                    "Piramid"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sebiji bola berbentuk...",
+                  "a": [
+                    "Kon",
+                    "Kubus",
+                    "Sfera",
+                    "Silinder"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Berapakah bilangan permukaan pada silinder?",
+                  "a": [
+                    "2",
+                    "3",
+                    "4",
+                    "1"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Isi padu kubus yang panjang sisinya 3 cm ialah",
+                  "a": [
+                    "9 cm padu",
+                    "6 cm padu",
+                    "12 cm padu",
+                    "27 cm padu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Piramid mempunyai berapa bucu?",
+                  "a": [
+                    "4",
+                    "5",
+                    "6",
+                    "3"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Bentuk 3D: kubus (6 permukaan, 12 sisi, 8 bucu), kuboid (6 permukaan, 12 sisi, 8 bucu), silinder (3 permukaan - 2 bulatan + 1 melengkung), kon (2 permukaan - 1 bulatan + 1 melengkung, 1 bucu), sfera (1 permukaan melengkung). Isi padu kubus = sisi × sisi × sisi."
+            },
+            "6.3": {
+              "name": "Simetri",
+              "questions": [
+                {
+                  "q": "Berapakah paksi simetri yang ada pada segi empat sama?",
+                  "a": [
+                    "2",
+                    "3",
+                    "4",
+                    "1"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Berapakah paksi simetri yang ada pada segi empat tepat?",
+                  "a": [
+                    "2",
+                    "4",
+                    "1",
+                    "3"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bentuk yang manakah mempunyai paksi simetri paling banyak?",
+                  "a": [
+                    "Segi tiga sama sisi",
+                    "Segi empat sama",
+                    "Bulatan",
+                    "Segi empat tepat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Berapakah paksi simetri pada segi tiga sama sisi?",
+                  "a": [
+                    "1",
+                    "2",
+                    "3",
+                    "0"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Jika sehelai kertas dilipat dan digunting, apakah konsep yang terlibat?",
+                  "a": [
+                    "Luas",
+                    "Perimeter",
+                    "Isi padu",
+                    "Simetri"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Berapakah paksi simetri yang ada pada bulatan?",
+                  "a": [
+                    "4",
+                    "8",
+                    "Tiada had",
+                    "2"
+                  ],
+                  "c": 2
+                }
+              ],
+              "revision": "Simetri bermaksud keseimbangan bentuk. Paksi simetri ialah garisan yang membahagikan bentuk kepada dua bahagian yang sama besar dan sama bentuk. Segi empat sama mempunyai 4 paksi simetri, segi empat tepat mempunyai 2 paksi simetri, dan bulatan mempunyai bilangan paksi simetri yang tidak terhad."
+            }
+          }
+        },
+        "7": {
+          "name": "Koordinat",
+          "topics": {
+            "7.1": {
+              "name": "Koordinat Pada Paksi",
+              "questions": [
+                {
+                  "q": "Dalam grid, titik (3, 5) bermaksud...",
+                  "a": [
+                    "5 unit ke kanan, 3 unit ke atas",
+                    "5 unit ke kanan, 3 unit ke bawah",
+                    "3 unit ke kanan, 5 unit ke atas",
+                    "3 unit ke kanan, 5 unit ke bawah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Titik manakah yang terletak pada asalan (0, 0) pada grid koordinat?",
+                  "a": [
+                    "Penjuru kiri atas",
+                    "Titik mula di mana kedua-dua paksi bertemu",
+                    "Tengah grid",
+                    "Penjuru kanan bawah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Jika titik A berada di (2, 4) dan titik B berada di (2, 7), apakah persamaan antara kedua-duanya?",
+                  "a": [
+                    "Koordinat-x adalah sama",
+                    "Mereka berada di titik yang sama",
+                    "Tiada persamaan",
+                    "Koordinat-y adalah sama"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Satu titik diplot 4 unit ke kanan dan 3 unit ke atas dari asalan. Apakah koordinatnya?",
+                  "a": [
+                    "(4, 3)",
+                    "(3, 3)",
+                    "(4, 4)",
+                    "(3, 4)"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pada grid, paksi-y menghala ke arah mana?",
+                  "a": [
+                    "Serong",
+                    "Menegak (atas dan bawah)",
+                    "Bulatan",
+                    "Melintang (kiri dan kanan)"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah nama paksi mengufuk pada satah Cartes?",
+                  "a": [
+                    "Paksi-y",
+                    "Paksi-z",
+                    "Paksi-x",
+                    "Asalan"
+                  ],
+                  "c": 2
+                }
+              ],
+              "revision": "Koordinat ditulis sebagai (x, y). x ialah jarak mengufuk dari asalan (0, 0). y ialah jarak menegak. Titik (3, 5) bermaksud 3 unit ke kanan dan 5 unit ke atas dari asalan."
+            },
+            "7.2": {
+              "name": "Menentukan Kedudukan",
+              "questions": [
+                {
+                  "q": "Apakah koordinat bagi titik yang terletak 5 unit ke kanan dan 2 unit ke atas dari asalan?",
+                  "a": [
+                    "(2, 5)",
+                    "(5, 2)",
+                    "(5, 5)",
+                    "(2, 2)"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Titik P berada di koordinat (6, 3). Berapakah jarak mengufuk titik P dari asalan?",
+                  "a": [
+                    "3 unit",
+                    "9 unit",
+                    "6 unit",
+                    "2 unit"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Titik Q berada di koordinat (1, 8). Berapakah jarak menegak titik Q dari asalan?",
+                  "a": [
+                    "1 unit",
+                    "9 unit",
+                    "7 unit",
+                    "8 unit"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Titik A (3, 2) dan titik B (7, 2). Berapakah jarak mengufuk antara A dan B?",
+                  "a": [
+                    "3 unit",
+                    "4 unit",
+                    "2 unit",
+                    "7 unit"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Titik C (5, 1) dan titik D (5, 6). Berapakah jarak mencancang antara C dan D?",
+                  "a": [
+                    "4 unit",
+                    "6 unit",
+                    "5 unit",
+                    "1 unit"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Di sukuan pertama satah Cartes, kedua-dua koordinat x dan y adalah...",
+                  "a": [
+                    "Negatif",
+                    "Positif",
+                    "x positif, y negatif",
+                    "x negatif, y positif"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Untuk menentukan kedudukan pada satah Cartes, baca koordinat-x dahulu (mengufuk), kemudian koordinat-y (menegak). Sukuan pertama mempunyai kedua-dua koordinat positif."
+            },
+            "7.3": {
+              "name": "Menyatakan Jarak Antara Dua Koordinat",
+              "questions": [
+                {
+                  "q": "Titik P (2, 3) dan titik Q (6, 3). Berapakah jarak mengufuk antara P dan Q?",
+                  "a": [
+                    "2 unit",
+                    "6 unit",
+                    "4 unit",
+                    "3 unit"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Titik R (4, 1) dan titik S (4, 5). Berapakah jarak mencancang antara R dan S?",
+                  "a": [
+                    "4 unit",
+                    "5 unit",
+                    "1 unit",
+                    "3 unit"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Titik A (1, 1) dan titik B (1, 7). Berapakah jarak di antara A dan B?",
+                  "a": [
+                    "6 unit",
+                    "7 unit",
+                    "1 unit",
+                    "8 unit"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Titik M (3, 4) dan titik N (8, 4). Berapakah jarak di antara M dan N?",
+                  "a": [
+                    "3 unit",
+                    "4 unit",
+                    "5 unit",
+                    "8 unit"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sebuah titik pada satah Cartes mempunyai koordinat (0, 5). Titik ini terletak pada...",
+                  "a": [
+                    "Paksi-x",
+                    "Paksi-y",
+                    "Asalan",
+                    "Tidak pada mana-mana paksi"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Jarak mengufuk antara dua titik dikira dengan menolak koordinat-x (x₂ - x₁). Jarak mencancang dikira dengan menolak koordinat-y (y₂ - y₁). Jika dua titik mempunyai koordinat-x yang sama, jaraknya ialah jarak mencancang. Jika dua titik mempunyai koordinat-y yang sama, jaraknya ialah jarak mengufuk."
+            }
+          }
+        },
+        "8": {
+          "name": "Pengurusan Data",
+          "topics": {
+            "8.1": {
+              "name": "Pengumpulan Data",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan kekerapan dalam pengumpulan data?",
+                  "a": [
+                    "Jumlah data yang dikumpul",
+                    "Bilangan kali sesuatu data muncul",
+                    "Jenis data",
+                    "Purata data"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah cara mengumpul data?",
+                  "a": [
+                    "Meneka",
+                    "Melukis gambar",
+                    "Menjalankan soal selidik",
+                    "Menulis karangan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Dalam satu tinjauan, 5 orang suka warna merah, 8 orang suka warna biru, 3 orang suka warna hijau. Berapakah jumlah responden?",
+                  "a": [
+                    "13",
+                    "8",
+                    "16",
+                    "11"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Data berikut menunjukkan saiz kasut 10 orang murid: 4, 5, 4, 6, 5, 4, 5, 5, 6, 4. Kekerapan saiz 5 ialah",
+                  "a": [
+                    "3",
+                    "4",
+                    "5",
+                    "2"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Jadual kekerapan digunakan untuk...",
+                  "a": [
+                    "Melukis gambar",
+                    "Menyusun data dengan lebih teratur",
+                    "Menulis cerita",
+                    "Membuat ramalan cuaca"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Data: 2, 2, 3, 3, 3, 4, 5. Kekerapan bagi data 3 ialah",
+                  "a": [
+                    "2",
+                    "3",
+                    "4",
+                    "1"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Pengumpulan data ialah proses mengumpul maklumat. Kekerapan ialah bilangan kali sesuatu nilai atau kategori muncul dalam data. Jadual kekerapan membantu menyusun data dengan teratur untuk memudahkan analisis."
+            },
+            "8.2": {
+              "name": "Carta Palang",
+              "questions": [
+                {
+                  "q": "Carta palang menunjukkan jualan aiskrim: Isnin=15, Selasa=20, Rabu=25, Khamis=10. Hari yang manakah mempunyai jualan paling tinggi?",
+                  "a": [
+                    "Selasa",
+                    "Khamis",
+                    "Isnin",
+                    "Rabu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Dalam carta palang, ketinggian satu palang mencapai 8 unit. Setiap unit mewakili 5 orang murid. Berapakah murid yang diwakili oleh palang ini?",
+                  "a": [
+                    "13",
+                    "8",
+                    "45",
+                    "40"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Carta palang menunjukkan 4 palang: Merah=20, Biru=35, Hijau=15, Kuning=30. Berapakah jumlah item?",
+                  "a": [
+                    "80",
+                    "100",
+                    "90",
+                    "110"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Dalam carta palang, ketinggian palang 12 mewakili 60 orang murid. Apakah nilai setiap unit?",
+                  "a": [
+                    "6 orang murid",
+                    "5 orang murid",
+                    "4 orang murid",
+                    "10 orang murid"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Carta palang menunjukkan bilangan buku yang dibaca: Isn=3, Sel=5, Rab=2, Kha=4, Jum=6. Berapa lebih buku yang dibaca pada hari Jumaat berbanding hari Rabu?",
+                  "a": [
+                    "5",
+                    "3",
+                    "2",
+                    "4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah kegunaan carta palang?",
+                  "a": [
+                    "Menyusun nombor mengikut tertib",
+                    "Menunjukkan data secara visual untuk perbandingan",
+                    "Mengira perimeter",
+                    "Melukis bentuk geometri"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Carta palang menggunakan palang segi empat tepat untuk menunjukkan data. Ketinggian atau panjang setiap palang mewakili nilai. Semakin tinggi palang, semakin besar nilainya. Baca skala dengan teliti untuk mentafsir carta palang."
+            },
+            "8.3": {
+              "name": "Carta Pie",
+              "questions": [
+                {
+                  "q": "Carta pie menunjukkan 50% murid suka bola sepak, 25% suka badminton, 25% suka bola keranjang. Sukan yang manakah paling popular?",
+                  "a": [
+                    "Badminton",
+                    "Bola keranjang",
+                    "Bola sepak",
+                    "Tidak dapat ditentukan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Dalam carta pie, satu bulatan penuh mewakili...",
+                  "a": [
+                    "50%",
+                    "75%",
+                    "100%",
+                    "25%"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Carta pie menunjukkan: Makanan kegemaran. Nasi lemak=40%, Roti canai=30%, Mi goreng=20%, Lain-lain=10%. Makanan yang manakah paling kurang popular?",
+                  "a": [
+                    "Roti canai",
+                    "Nasi lemak",
+                    "Lain-lain",
+                    "Mi goreng"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Carta pie tentang hobi: Membaca=35%, Melukis=25%, Sukan=40%. Berapakah jumlah peratus?",
+                  "a": [
+                    "90%",
+                    "100%",
+                    "95%",
+                    "110%"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Jika 25% daripada carta pie mewakili 10 orang murid, berapakah jumlah murid?",
+                  "a": [
+                    "25",
+                    "40",
+                    "10",
+                    "20"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Carta pie ialah bulatan yang dibahagikan kepada sektor untuk menunjukkan bahagian data. Satu bulatan penuh mewakili 100% (keseluruhan data). Saiz setiap sektor menunjukkan peratusan atau bahagian daripada keseluruhan."
+            },
+            "8.4": {
+              "name": "Mod, Median dan Min",
+              "questions": [
+                {
+                  "q": "Data: 4, 7, 5, 7, 6, 7, 8. Apakah mod bagi data ini?",
+                  "a": [
+                    "6",
+                    "7",
+                    "5",
+                    "4"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Data: 3, 6, 2, 8, 5. Apakah median? (Susun data dahulu)",
+                  "a": [
+                    "3",
+                    "6",
+                    "5",
+                    "8"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Data: 2, 4, 6, 8, 10. Apakah min?",
+                  "a": [
+                    "5",
+                    "6",
+                    "7",
+                    "4"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Data: 5, 5, 6, 7, 8, 8, 9. Apakah mod?",
+                  "a": [
+                    "5 dan 8",
+                    "5",
+                    "8",
+                    "Tiada mod"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Data: 10, 12, 15, 18, 20. Apakah median?",
+                  "a": [
+                    "12",
+                    "15",
+                    "18",
+                    "10"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Data: 1, 3, 5, 7, 9, 11. Apakah min?",
+                  "a": [
+                    "5",
+                    "6",
+                    "7",
+                    "4"
+                  ],
+                  "c": 1
+                }
+              ],
+              "revision": "Mod ialah nilai yang paling kerap muncul dalam data. Median ialah nilai tengah setelah data disusun mengikut tertib. Min ialah purata yang dikira dengan menjumlahkan semua data dan membahagikan dengan bilangan data. Min = Jumlah data ÷ Bilangan data."
+            }
+          }
+        }
+      }
+    }
+  }
+}

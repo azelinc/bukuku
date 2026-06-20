@@ -1,0 +1,2229 @@
+{
+  "subjects": {
+    "sci4bm": {
+      "name": "Sains Tahun 4",
+      "icon": "🧪",
+      "color": "#0097a7",
+      "units": {
+        "1": {
+          "name": "Kemahiran Saintifik",
+          "topics": {
+            "1.1": {
+              "name": "Kemahiran Proses Sains",
+              "revision": "Kemahiran proses sains adalah kemahiran asas yang membantu saintis menjalankan penyiasatan. Ini termasuk memerhati (menggunakan deria), mengelas (mengumpulkan), mengukur (menggunakan alatan), meramal (menjangka hasil), membuat inferens, dan berkomunikasi (berkongsi penemuan).",
+              "questions": [
+                {
+                  "q": "Kemahiran proses sains yang manakah melibatkan penggunaan lima deria untuk mengumpul maklumat?",
+                  "a": [
+                    "Meramal",
+                    "Mengelas",
+                    "Membuat inferens",
+                    "Memerhati"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ravi mengumpulkan haiwan kepada yang berbulu dan tidak berbulu. Kemahiran proses sains yang manakah digunakan?",
+                  "a": [
+                    "Mengukur",
+                    "Mengelas",
+                    "Membuat inferens",
+                    "Memerhati"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Selepas melihat awan gelap di langit, Ali berkata 'Akan hujan sebentar lagi.' Kemahiran yang manakah digunakan?",
+                  "a": [
+                    "Meramal",
+                    "Memerhati",
+                    "Mengukur",
+                    "Berkomunikasi"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Seorang murid menggunakan pembaris untuk mengukur panjang sehelai daun. Kemahiran proses sains yang manakah digunakan?",
+                  "a": [
+                    "Meramal",
+                    "Mengelas",
+                    "Mengukur",
+                    "Memerhati"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Membentangkan keputusan eksperimen dalam jadual atau carta adalah contoh kemahiran proses sains yang mana?",
+                  "a": [
+                    "Meramal",
+                    "Mengelas",
+                    "Mengukur",
+                    "Berkomunikasi"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Seorang murid mendapati gula itu manis selepas merasainya. Kemahiran proses sains yang manakah terlibat?",
+                  "a": [
+                    "Memerhati",
+                    "Meramal",
+                    "Mengelas",
+                    "Mengukur"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berdasarkan pemerhatian bahawa semua mamalia yang dilihat mempunyai rambut, Ali membuat kesimpulan bahawa semua mamalia berambut. Ini adalah contoh kemahiran...",
+                  "a": [
+                    "Membuat inferens",
+                    "Meramal",
+                    "Mengelas",
+                    "Mengukur"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Seorang murid menulis laporan tentang eksperimen yang dilakukan. Kemahiran proses sains yang manakah digunakan?",
+                  "a": [
+                    "Memerhati",
+                    "Mengelas",
+                    "Mengukur",
+                    "Berkomunikasi"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Kemahiran Manipulatif",
+              "revision": "Kemahiran manipulatif adalah kemahiran psikomotor yang digunakan semasa menjalankan aktiviti sains. Ini termasuk menggunakan dan mengendalikan alat radas dengan betul, mengendalikan spesimen dengan cermat, melukis rajah dengan tepat, membersihkan peralatan selepas digunakan, dan menyimpan radas dengan selamat.",
+              "questions": [
+                {
+                  "q": "Antara berikut, yang manakah contoh kemahiran manipulatif dalam sains?",
+                  "a": [
+                    "Membuat ramalan",
+                    "Menggunakan mikroskop dengan betul",
+                    "Membaca buku teks",
+                    "Mendengar penerangan guru"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah yang perlu dilakukan selepas menggunakan alat radas kaca?",
+                  "a": [
+                    "Menyimpan terus dalam almari",
+                    "Membiarkan di atas meja",
+                    "Mencuci dan mengeringkan sebelum disimpan",
+                    "Membuang ke dalam tong sampah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Semasa melukis rajah spesimen, murid perlu...",
+                  "a": [
+                    "Melukis dengan cantik dan berwarna",
+                    "Melukis dengan tepat, garis tajam dan label yang betul",
+                    "Melukis secara kasar sahaja",
+                    "Meniru rajah daripada buku"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kemahiran mengendalikan spesimen bermaksud...",
+                  "a": [
+                    "Menyentuh spesimen dengan tangan",
+                    "Menangani spesimen dengan cermat dan berhati-hati",
+                    "Membiarkan spesimen di atas meja",
+                    "Menghidu spesimen dengan kuat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah BUKAN kemahiran manipulatif?",
+                  "a": [
+                    "Membersihkan radas",
+                    "Menggunakan alat radas",
+                    "Meramal keputusan eksperimen",
+                    "Menyimpan radas dengan betul"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Gambar rajah spesimen hendaklah dilukis dengan...",
+                  "a": [
+                    "Garis gemalai dan berwarna",
+                    "Garis tajam, bersih dan tidak berlorek",
+                    "Garis putus-putus",
+                    "Tiada label diperlukan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Alat radas kaca perlu dikendalikan dengan...",
+                  "a": [
+                    "Kasar dan cepat",
+                    "Berhati-hati kerana mudah pecah",
+                    "Dengan sebelah tangan",
+                    "Dengan kayu"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Semasa melukis rajah radas, murid perlu melabel bahagian radas dengan...",
+                  "a": [
+                    "Pensel dan garisan lurus",
+                    "Pen dan warna",
+                    "Tanpa label",
+                    "Garis putus-putus"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Peraturan Bilik Sains",
+          "topics": {
+            "2.1": {
+              "name": "Peraturan Bilik Sains",
+              "revision": "Peraturan bilik sains ditetapkan untuk memastikan keselamatan murid semasa menjalankan aktiviti sains. Antara peraturan penting ialah: dengar dan patuh arahan guru, jangan berlari, jangan makan dan minum, jangan bermain dengan alatan sains, dan laporkan kemalangan kepada guru.",
+              "questions": [
+                {
+                  "q": "Apakah tindakan yang BETUL semasa berada di bilik sains?",
+                  "a": [
+                    "Berlari-lari",
+                    "Mematuhi arahan guru",
+                    "Makan dan minum",
+                    "Bermain dengan alat radas"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Jika berlaku kemalangan, apakah yang perlu anda lakukan?",
+                  "a": [
+                    "Menyembunyikannya",
+                    "Teruskan eksperimen",
+                    "Melaporkan kepada guru dengan segera",
+                    "Bergurau dengan rakan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapa tidak dibenarkan makan dan minum di bilik sains?",
+                  "a": [
+                    "Makanan tidak sedap",
+                    "Bahan kimia boleh mencemari makanan",
+                    "Bilik sains terlalu sejuk",
+                    "Guru akan marah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah PERATURAN keselamatan?",
+                  "a": [
+                    "Menyentuh bahan kimia",
+                    "Memakai kasut terbuka",
+                    "Memakai apron dan gogal",
+                    "Bersiul semasa bekerja"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapa dilarang berlari di bilik sains?",
+                  "a": [
+                    "Mengganggu tumpuan",
+                    "Boleh menyebabkan kemalangan",
+                    "Bilik terlalu kecil",
+                    "Tiada masa"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah yang perlu dipakai semasa eksperimen kimia?",
+                  "a": [
+                    "Pakaian biasa",
+                    "Apron dan gogal keselamatan",
+                    "Topi keledar",
+                    "Selipar"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Selepas eksperimen selesai, apakah tindakan yang betul?",
+                  "a": [
+                    "Terus keluar",
+                    "Membersihkan dan menyusun radas",
+                    "Membiarkan radas di atas meja",
+                    "Membuang semua ke sinki"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah boleh menyebabkan kemalangan di bilik sains?",
+                  "a": [
+                    "Memakai apron",
+                    "Mengikut arahan guru",
+                    "Bermain dengan api",
+                    "Membersihkan radas"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Tanda Keselamatan",
+              "revision": "Tanda keselamatan adalah simbol yang memberi amaran tentang bahaya di bilik sains. Simbol-simbol ini termasuk: mudah terbakar (api), beracun (tengkorak), menghakis (bahan kimia), bahaya elektrik (kilat), dan radiasi. Memahami tanda-tanda ini membantu kita mengenal pasti potensi bahaya.",
+              "questions": [
+                {
+                  "q": "Simbol tengkorak pada botol bahan kimia bermaksud...",
+                  "a": [
+                    "Mudah terbakar",
+                    "Beracun",
+                    "Menghakis",
+                    "Mudah meletup"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Simbol api bermaksud bahan itu...",
+                  "a": [
+                    "Boleh dimakan",
+                    "Mudah terbakar",
+                    "Selamat digunakan",
+                    "Tidak berbahaya"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Simbol yang manakah menunjukkan bahan kimia menghakis?",
+                  "a": [
+                    "Tengkorak",
+                    "Api",
+                    "Tangan terhakis",
+                    "Tanda seru"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apabila melihat simbol bahaya pada bekas kimia, anda perlu...",
+                  "a": [
+                    "Membuka dengan segera",
+                    "Mengabaikannya",
+                    "Mengambil langkah berjaga-jaga",
+                    "Menuang ke sinki"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Simbol kilat memberi amaran tentang...",
+                  "a": [
+                    "Cahaya terang",
+                    "Bunyi kuat",
+                    "Bahaya renjatan elektrik",
+                    "Bahan mudah terbakar"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Warna latar tanda keselamatan biasanya...",
+                  "a": [
+                    "Merah atau kuning terang",
+                    "Biru gelap",
+                    "Hitam",
+                    "Putih sahaja"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Simbol tanda seru pada label kimia bermaksud...",
+                  "a": [
+                    "Bahan sedap",
+                    "Awas, boleh menyebabkan iritasi",
+                    "Bahan selamat",
+                    "Bahan manis"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah tindakan pertama jika terjumpa tumpahan bahan kimia?",
+                  "a": [
+                    "Bersihkan dengan tangan",
+                    "Laporkan kepada guru",
+                    "Biarkan sahaja",
+                    "Tiup bahan tersebut"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Pengelasan Haiwan",
+          "topics": {
+            "3.1": {
+              "name": "Mempunyai Rangka Atau Tidak",
+              "revision": "Haiwan boleh dibahagikan kepada vertebrata (bertulang belakang) dan invertebrata (tidak bertulang belakang). Vertebrata termasuk ikan, amfibia, reptilia, burung, dan mamalia. Invertebrata termasuk serangga, labah-labah, cacing, obor-obor, dan siput.",
+              "questions": [
+                {
+                  "q": "Haiwan bertulang belakang dipanggil...",
+                  "a": [
+                    "Reptilia",
+                    "Vertebrata",
+                    "Mamalia",
+                    "Invertebrata"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah invertebrata?",
+                  "a": [
+                    "Ular",
+                    "Kucing",
+                    "Rama-rama",
+                    "Helang"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Labah-labah tidak bertulang belakang. Ia tergolong dalam kumpulan...",
+                  "a": [
+                    "Reptilia",
+                    "Vertebrata",
+                    "Mamalia",
+                    "Invertebrata"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Antara berikut, yang manakah vertebrata?",
+                  "a": [
+                    "Sotong",
+                    "Semut",
+                    "Cacing tanah",
+                    "Burung murai"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ciri utama vertebrata ialah...",
+                  "a": [
+                    "Tiada tulang belakang",
+                    "Mempunyai tulang belakang",
+                    "Hidup di air",
+                    "Boleh terbang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Peratusan haiwan invertebrata di dunia ialah...",
+                  "a": [
+                    "Sangat sedikit",
+                    "Kira-kira separuh",
+                    "Lebih 95 peratus",
+                    "Sama dengan vertebrata"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara berikut, ciri vertebrata?",
+                  "a": [
+                    "Badan lembut",
+                    "Mempunyai rangka dalam",
+                    "Mempunyai rangka luar",
+                    "Tiada tulang langsung"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Rangka Luar",
+              "revision": "Rangka luar adalah rangka keras di luar badan sesetengah invertebrata, berfungsi melindungi badan dan menyokong otot. Contoh: serangga (belalang, kumbang) dan krustasea (ketam, udang). Rangka luar tidak membesar bersama haiwan, jadi haiwan perlu bersalin kulit.",
+              "questions": [
+                {
+                  "q": "Rangka luar ialah rangka yang terdapat di...",
+                  "a": [
+                    "Dalam badan",
+                    "Luar badan",
+                    "Kepala sahaja",
+                    "Kaki sahaja"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah mempunyai rangka luar?",
+                  "a": [
+                    "Kucing",
+                    "Ikan",
+                    "Belalang",
+                    "Ular"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Fungsi utama rangka luar?",
+                  "a": [
+                    "Membantu berenang",
+                    "Melindungi dan menyokong otot",
+                    "Membantu terbang",
+                    "Menghasilkan makanan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mengapa serangga perlu bersalin kulit?",
+                  "a": [
+                    "Rangka luar tidak membesar bersama badan",
+                    "Mereka sakit",
+                    "Cuaca panas",
+                    "Mereka bosan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, yang manakah mempunyai rangka luar?",
+                  "a": [
+                    "Ketam",
+                    "Katak",
+                    "Burung",
+                    "Cacing"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Rangka luar krustasea seperti ketam diperbuat daripada...",
+                  "a": [
+                    "Kulit lembut",
+                    "Kitin yang keras",
+                    "Tanah liat",
+                    "Plastik"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah BUKAN mempunyai rangka luar?",
+                  "a": [
+                    "Ketam",
+                    "Kumbang",
+                    "Katak",
+                    "Udang"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Mengelas Haiwan",
+              "revision": "Haiwan dikelaskan berdasarkan habitat, jenis makanan, dan cara membiak. Berdasarkan makanan: herbivor (makan tumbuhan), karnivor (makan daging), omnivor (makan kedua-duanya). Berdasarkan habitat: darat, air, darat dan air.",
+              "questions": [
+                {
+                  "q": "Haiwan yang hanya memakan tumbuhan dipanggil...",
+                  "a": [
+                    "Karnivor",
+                    "Omnivor",
+                    "Herbivor",
+                    "Insektivor"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Harimau memakan daging. Ia dikelaskan sebagai...",
+                  "a": [
+                    "Herbivor",
+                    "Omnivor",
+                    "Insektivor",
+                    "Karnivor"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Beruang makan ikan dan buah. Ia dikelaskan sebagai...",
+                  "a": [
+                    "Karnivor",
+                    "Herbivor",
+                    "Omnivor",
+                    "Insektivor"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Haiwan yang hidup di air dan di darat dipanggil...",
+                  "a": [
+                    "Reptilia",
+                    "Mamalia",
+                    "Amfibia",
+                    "Burung"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ayam membiak dengan cara...",
+                  "a": [
+                    "Melahirkan anak",
+                    "Bertelur",
+                    "Beranak dan bertelur",
+                    "Membelah diri"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kucing dikelaskan sebagai mamalia kerana...",
+                  "a": [
+                    "Bertelur",
+                    "Melahirkan dan menyusukan anak",
+                    "Tinggal di darat",
+                    "Mempunyai sayap"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah herbivor?",
+                  "a": [
+                    "Harimau",
+                    "Buaya",
+                    "Arnab",
+                    "Helang"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Proses Hidup Haiwan",
+          "topics": {
+            "4.1": {
+              "name": "Pembiakan Haiwan",
+              "revision": "Haiwan membiak untuk menghasilkan anak bagi memastikan spesies terus hidup. Dua cara utama: bertelur (ayam, penyu, ikan, katak) dan melahirkan anak (kucing, anjing, gajah, manusia). Haiwan bertelur biasanya bertelur banyak, manakala haiwan melahirkan anak biasanya mempunyai sedikit anak.",
+              "questions": [
+                {
+                  "q": "Antara berikut, yang manakah melahirkan anak?",
+                  "a": [
+                    "Penyu",
+                    "Kucing",
+                    "Burung",
+                    "Katak"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Penyu bertelur di...",
+                  "a": [
+                    "Air",
+                    "Pasu bunga",
+                    "Pantai / pasir",
+                    "Pokok"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapa haiwan membiak?",
+                  "a": [
+                    "Untuk bersenang-senang",
+                    "Untuk memastikan spesies terus hidup",
+                    "Mengisi masa lapang",
+                    "Untuk bermain"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah bertelur?",
+                  "a": [
+                    "Lembu",
+                    "Ikan",
+                    "Kambing",
+                    "Anjing"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Anak haiwan yang melahirkan anak biasanya...",
+                  "a": [
+                    "Ramai",
+                    "Bergantung kepada ibu bapa",
+                    "Boleh terbang serta-merta",
+                    "Diletakkan di sarang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ikan paus dan ikan lumba-lumba...",
+                  "a": [
+                    "Bertelur",
+                    "Melahirkan anak",
+                    "Kedua-duanya",
+                    "Tidak membiak"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Telur penyu ditetaskan di bawah...",
+                  "a": [
+                    "Air",
+                    "Pasir panas",
+                    "Batu besar",
+                    "Pokok"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Tumbesaran Haiwan",
+              "revision": "Tumbesaran ialah proses perubahan saiz dan bentuk dari kecil hingga dewasa. Metamorfosis ialah perubahan bentuk ketara. Katak: telur, berudu (insang), tumbuh kaki, hilang ekor, dewasa. Rama-rama: telur, ulat, kepompong, dewasa.",
+              "questions": [
+                {
+                  "q": "Proses perubahan bentuk haiwan semasa tumbesaran dipanggil...",
+                  "a": [
+                    "Pembiakan",
+                    "Metamorfosis",
+                    "Pernafasan",
+                    "Pencernaan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berudu bernafas menggunakan...",
+                  "a": [
+                    "Paru-paru",
+                    "Insang",
+                    "Kulit lembap",
+                    "Ruang udara"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Peringkat akhir tumbesaran rama-rama?",
+                  "a": [
+                    "Telur",
+                    "Ulat",
+                    "Kepompong",
+                    "Rama-rama dewasa"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Katak dewasa bernafas menggunakan...",
+                  "a": [
+                    "Insang",
+                    "Paru-paru dan kulit lembap",
+                    "Trakea",
+                    "Ruang udara"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayam menetas daripada...",
+                  "a": [
+                    "Anak kecil",
+                    "Telur",
+                    "Kepompong",
+                    "Berudu"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Semasa metamorfosis katak, ekor berudu akan...",
+                  "a": [
+                    "Membesar",
+                    "Menghilang secara beransur",
+                    "Bertukar kaki",
+                    "Kekal sama"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Peringkat ulat dalam kitar hidup rama-rama berfungsi untuk...",
+                  "a": [
+                    "Berkawin",
+                    "Makan dan membesar",
+                    "Bertelur",
+                    "Terbang"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Pemakanan Haiwan",
+              "revision": "Herbivor (makan tumbuhan - lembu, arnab), karnivor (makan daging - harimau, helang), omnivor (makan kedua-dua - beruang, ayam, manusia). Gigi herbivor sesuai mengunyah, gigi karnivor tajam mengoyak daging.",
+              "questions": [
+                {
+                  "q": "Arnab hanya makan rumput dan sayur. Ia dikelaskan sebagai...",
+                  "a": [
+                    "Karnivor",
+                    "Omnivor",
+                    "Herbivor",
+                    "Insektivor"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Singa bergigi taring tajam kerana...",
+                  "a": [
+                    "Makan rumput",
+                    "Makan daging dan perlu mengoyak",
+                    "Makan buah",
+                    "Tidak makan apa-apa"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayam makan bijirin, cacing, serangga. Ia dikelaskan sebagai...",
+                  "a": [
+                    "Herbivor",
+                    "Karnivor",
+                    "Omnivor",
+                    "Insektivor"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Gigi herbivor sesuai untuk...",
+                  "a": [
+                    "Mengoyak daging",
+                    "Mengunyah dan mengisar tumbuhan",
+                    "Menusuk mangsa",
+                    "Memotong kayu"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah karnivor?",
+                  "a": [
+                    "Lembu",
+                    "Rusa",
+                    "Helang",
+                    "Kambing"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tikus makan bijirin dan serangga, ia dikelaskan sebagai...",
+                  "a": [
+                    "Herbivor",
+                    "Karnivor",
+                    "Omnivor",
+                    "Insektivor"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Gigi karnivor biasanya...",
+                  "a": [
+                    "Rata untuk mengunyah",
+                    "Tajam untuk mengoyak daging",
+                    "Tidak bergigi",
+                    "Kecil dan halus"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Proses Hidup Tumbuhan",
+          "topics": {
+            "5.1": {
+              "name": "Pembiakan Tumbuhan",
+              "revision": "Tumbuhan membiak melalui biji benih, spora, keratan batang, daun, sulur paut, dan akar. Contoh: betik (biji), pisang (anak pokok), ubi kayu (keratan batang), paku pakis (spora), strawberi (sulur paut).",
+              "questions": [
+                {
+                  "q": "Pokok betik membiak melalui...",
+                  "a": [
+                    "Keratan batang",
+                    "Biji benih",
+                    "Daun",
+                    "Akar"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Paku pakis membiak melalui...",
+                  "a": [
+                    "Biji benih",
+                    "Spora",
+                    "Sulur paut",
+                    "Bunga"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pokok ubi kayu ditanam semula menggunakan...",
+                  "a": [
+                    "Daun",
+                    "Keratan batang",
+                    "Bunga",
+                    "Buah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah membiak melalui sulur paut?",
+                  "a": [
+                    "Pokok kelapa",
+                    "Pokok pisang",
+                    "Pokok strawberi",
+                    "Pokok betik"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pokok pisang membiak melalui...",
+                  "a": [
+                    "Biji benih",
+                    "Anak pokok / tunas",
+                    "Keratan daun",
+                    "Spora"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tumbuhan yang membiak melalui daun ialah...",
+                  "a": [
+                    "Pokok betik",
+                    "Setawar / cocor bebek",
+                    "Pokok kelapa",
+                    "Pokok pisang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah BUKAN melalui biji benih?",
+                  "a": [
+                    "Betik",
+                    "Rambutan",
+                    "Durian",
+                    "Ubi kayu"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Fotosintesis",
+              "revision": "Fotosintesis ialah proses tumbuhan membuat makanan. Tumbuhan memerlukan cahaya matahari, karbon dioksida, air, dan klorofil. Hasil: glukosa (makanan) dan oksigen. Fotosintesis berlaku di daun.",
+              "questions": [
+                {
+                  "q": "Gas yang diserap tumbuhan semasa fotosintesis?",
+                  "a": [
+                    "Oksigen",
+                    "Karbon dioksida",
+                    "Hidrogen",
+                    "Nitrogen"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bahan hijau dalam daun yang menyerap cahaya?",
+                  "a": [
+                    "Klorofil",
+                    "Antosianin",
+                    "Xantofil",
+                    "Karotena"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, yang TIDAK diperlukan untuk fotosintesis?",
+                  "a": [
+                    "Karbon dioksida",
+                    "Cahaya matahari",
+                    "Oksigen",
+                    "Air"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Hasil utama fotosintesis?",
+                  "a": [
+                    "Karbon dioksida dan air",
+                    "Cahaya dan klorofil",
+                    "Glukosa dan oksigen",
+                    "Nitrogen dan mineral"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tumbuhan di almari gelap seminggu menjadi kuning kerana...",
+                  "a": [
+                    "Terlalu sejuk",
+                    "Tidak cukup air",
+                    "Tidak boleh berfotosintesis",
+                    "Diserang perosak"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Di manakah fotosintesis berlaku?",
+                  "a": [
+                    "Akar",
+                    "Batang",
+                    "Daun",
+                    "Bunga"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Peranan klorofil dalam fotosintesis?",
+                  "a": [
+                    "Menyerap air",
+                    "Menyerap cahaya matahari",
+                    "Menghasilkan bunga",
+                    "Menyokong tumbuhan"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Kepentingan Tumbuhan",
+              "revision": "Tumbuhan membekalkan oksigen, makanan, tempat tinggal, dan ubat-ubatan. Tumbuhan membantu mengawal suhu, mencegah hakisan tanah, dan mengekalkan keseimbangan alam. Hutan dipanggil paru-paru dunia kerana membekalkan oksigen.",
+              "questions": [
+                {
+                  "q": "Mengapa tumbuhan penting kepada haiwan?",
+                  "a": [
+                    "Haiwan boleh berfotosintesis",
+                    "Haiwan dapat oksigen dan makanan",
+                    "Tumbuhan memanaskan badan",
+                    "Menjadikan tanah subur"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Jika semua tumbuhan pupus, paras oksigen akan...",
+                  "a": [
+                    "Kekal sama",
+                    "Bertukar nitrogen",
+                    "Berkurangan",
+                    "Bertambah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Hutan dipanggil paru-paru dunia kerana...",
+                  "a": [
+                    "Hasilkan CO2",
+                    "Serap semua gas",
+                    "Bebas wap air",
+                    "Hasilkan oksigen"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Selain makanan, tumbuhan membantu...",
+                  "a": [
+                    "Mencegah hakisan tanah",
+                    "Hasilkan plastik",
+                    "Tambah CO2",
+                    "Jadikan tanah berasid"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sumbangan tumbuhan kepada alam sekitar?",
+                  "a": [
+                    "Hasilkan bunyi",
+                    "Kawal suhu dan cuaca",
+                    "Sebabkan ribut",
+                    "Hasilkan garam"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Penebangan hutan berleluasa berbahaya kerana...",
+                  "a": [
+                    "Hasil lebih oksigen",
+                    "Kurang oksigen dan musnah habitat",
+                    "Udara lebih segar",
+                    "Tambahkan sumber kayu"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tumbuhan seimbangkan CO2 dan O2 dengan cara...",
+                  "a": [
+                    "Bebas CO2 malam",
+                    "Serap CO2 dan bebas O2",
+                    "Tidak serap gas",
+                    "Serap O2"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Sifat Bahan",
+          "topics": {
+            "6.1": {
+              "name": "Bahan Di Sekeliling",
+              "revision": "Bahan seperti kayu, logam, plastik, kaca, dan getah mempunyai sifat berbeza. Kayu untuk perabot, logam untuk periuk (konduktor haba), plastik ringan kalis air, kaca lut sinar, getah kenyal untuk tayar.",
+              "questions": [
+                {
+                  "q": "Antara berikut, diperbuat daripada getah?",
+                  "a": [
+                    "Meja",
+                    "Tayar kereta",
+                    "Pinggan kaca",
+                    "Buku"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mengapa tingkap diperbuat daripada kaca?",
+                  "a": [
+                    "Kuat dan murah",
+                    "Lut sinar, cahaya masuk",
+                    "Ringan dan lembut",
+                    "Tidak mudah pecah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sifat utama plastik?",
+                  "a": [
+                    "Lut sinar dan keras",
+                    "Ringan dan kalis air",
+                    "Kenyal serap air",
+                    "Berat dan rapuh"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Periuk diperbuat daripada logam kerana...",
+                  "a": [
+                    "Penebat haba",
+                    "Konduktor haba baik",
+                    "Lut sinar",
+                    "Ringan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kayu sesuai untuk perabot kerana...",
+                  "a": [
+                    "Lut sinar",
+                    "Kuat, tahan lama, boleh dibentuk",
+                    "Kalis air",
+                    "Kenyal"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bahan yang lut sinar?",
+                  "a": [
+                    "Besi",
+                    "Kaca",
+                    "Kadbod",
+                    "Batu bata"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Botol minum plastik kerana...",
+                  "a": [
+                    "Mudah pecah",
+                    "Ringan dan kalis air",
+                    "Berat",
+                    "Lut sinar"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Sifat Bahan",
+              "revision": "Sifat bahan: keras, lut sinar, kalis air, kenyal, menyerap air. Logam keras, kaca lut sinar, plastik kalis air, getah kenyal, span menyerap air.",
+              "questions": [
+                {
+                  "q": "Bahan yang membenarkan cahaya melaluinya dipanggil...",
+                  "a": [
+                    "Kalis air",
+                    "Lut sinar",
+                    "Kenyal",
+                    "Kedap air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Getah diregang kembali ke bentuk asal. Sifat ini dipanggil...",
+                  "a": [
+                    "Keras",
+                    "Rapuh",
+                    "Kenyal",
+                    "Lut sinar"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Bahan tidak menyerap air dikatakan...",
+                  "a": [
+                    "Lut sinar",
+                    "Kenyal",
+                    "Kalis air",
+                    "Keras"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Span digunakan mengelap air kerana span...",
+                  "a": [
+                    "Kalis air",
+                    "Kenyal",
+                    "Menyerap air",
+                    "Lut sinar"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Batu bata bahan keras kerana...",
+                  "a": [
+                    "Mudah pecah",
+                    "Tidak mudah berubah bentuk",
+                    "Boleh diregang",
+                    "Menyerap air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang bersifat kenyal?",
+                  "a": [
+                    "Kaca",
+                    "Getah",
+                    "Besi",
+                    "Batu"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kertas dan kain adalah contoh bahan yang...",
+                  "a": [
+                    "Kalis air",
+                    "Menyerap air",
+                    "Kenyal",
+                    "Lut sinar"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Pemilihan Bahan Berdasarkan Sifat",
+              "revision": "Pemilihan bahan tepat memastikan keselamatan dan keberkesanan. Baju hujan (kalis air), tayar (getah kenyal), kabel elektrik (logam konduktor + plastik penebat), alas meja panas (kayu penebat).",
+              "questions": [
+                {
+                  "q": "Mengapa baju hujan diperbuat bahan kalis air?",
+                  "a": [
+                    "Nampak cantik",
+                    "Tidak basah apabila hujan",
+                    "Lebih ringan",
+                    "Lut sinar"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mengapa tayar kereta diperbuat daripada getah?",
+                  "a": [
+                    "Keras tak fleksibel",
+                    "Kenyal dan cengkaman baik",
+                    "Konduktor elektrik",
+                    "Lut sinar"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kabel elektrik dibalut plastik kerana plastik...",
+                  "a": [
+                    "Konduktor baik",
+                    "Penebat elektrik baik",
+                    "Lut sinar",
+                    "Menyerap air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Cermin mata diperbuat kaca lut sinar supaya...",
+                  "a": [
+                    "Murah",
+                    "Dapat melihat dengan jelas",
+                    "Keras",
+                    "Kalis air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bahan sesuai untuk alas meja panas?",
+                  "a": [
+                    "Plastik",
+                    "Kaca",
+                    "Kayu",
+                    "Logam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapa sudu masak diperbuat logam?",
+                  "a": [
+                    "Ringan murah",
+                    "Konduktor haba baik",
+                    "Lut sinar",
+                    "Menyerap air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bahan sesuai untuk bot penyelamat?",
+                  "a": [
+                    "Besi berat",
+                    "Getah ringan kalis air",
+                    "Kaca lut sinar",
+                    "Kertas tebal"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Cahaya",
+          "topics": {
+            "7.1": {
+              "name": "Sumber Cahaya",
+              "revision": "Sumber cahaya asli: matahari, kunang-kunang, kilat. Sumber buatan: lampu, lilin, obor. Matahari sumber utama Bumi.",
+              "questions": [
+                {
+                  "q": "Antara berikut, sumber cahaya ASLI?",
+                  "a": [
+                    "Lampu",
+                    "Lilin",
+                    "Matahari",
+                    "Obor"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara berikut, sumber cahaya BUATAN?",
+                  "a": [
+                    "Kunang-kunang",
+                    "Kilat",
+                    "Matahari",
+                    "Lampu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapa tidak nampak waktu malam tanpa cahaya?",
+                  "a": [
+                    "Mata tutup",
+                    "Cahaya diperlukan untuk melihat",
+                    "Tiada udara",
+                    "Terlalu sejuk"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sumber cahaya utama Bumi?",
+                  "a": [
+                    "Bulan",
+                    "Bintang",
+                    "Matahari",
+                    "Api"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kunang-kunang adalah sumber cahaya...",
+                  "a": [
+                    "Buatan",
+                    "Asli",
+                    "Elektrik",
+                    "Kimia"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bulan nampak waktu malam kerana...",
+                  "a": [
+                    "Bulan hasil cahaya sendiri",
+                    "Bulan pantul cahaya matahari",
+                    "Bulan bintang",
+                    "Bulan menyala"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, BUKAN sumber cahaya?",
+                  "a": [
+                    "Lampu suluh",
+                    "Lilin",
+                    "Batu",
+                    "Matahari"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Cahaya Bergerak Lurus",
+              "revision": "Cahaya bergerak garis lurus. Kamera lubang jarum bentuk imej terbalik. Bayang-bayang terbentuk kerana cahaya tidak dapat melalui objek legap.",
+              "questions": [
+                {
+                  "q": "Cahaya bergerak bentuk...",
+                  "a": [
+                    "Lingkaran",
+                    "Zigzag",
+                    "Melengkung",
+                    "Garis lurus"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Imej dalam kamera lubang jarum?",
+                  "a": [
+                    "Kabur",
+                    "Berwarna-warni",
+                    "Tegak sama saiz",
+                    "Terbalik"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Nampak cahaya tiub lurus bukan bengkok kerana...",
+                  "a": [
+                    "Tiub bengkok serap cahaya",
+                    "Cahaya dihalang bengkok",
+                    "Cahaya ubah arah rawak",
+                    "Cahaya garis lurus"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bayang-bayang terbentuk kerana cahaya...",
+                  "a": [
+                    "Diserap udara",
+                    "Bengkok keliling objek",
+                    "Tak dapat melalui objek legap",
+                    "Tukar warna"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kadbod berlubang garis lurus nampak lilin. Ini bukti...",
+                  "a": [
+                    "Cahaya garis lurus",
+                    "Kadbod lut sinar",
+                    "Cahaya bengkok",
+                    "Lubang cerahkan cahaya"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Objek lut sinar seperti kaca...",
+                  "a": [
+                    "Serap semua cahaya",
+                    "Cahaya melalui sebahagian",
+                    "Cahaya melalui sempurna",
+                    "Tiada cahaya melalui"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Objek legap menyebabkan...",
+                  "a": [
+                    "Cahaya melalui",
+                    "Bayang terbentuk",
+                    "Cahaya lebih terang",
+                    "Objek lut sinar"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Pantulan Cahaya",
+              "revision": "Pantulan: cahaya melantun dari permukaan. Cermin (licin berkilat) pantul baik. Permukaan kasar serak cahaya. Periskop guna dua cermin. Hukum pantulan: sudut tuju = sudut pantulan.",
+              "questions": [
+                {
+                  "q": "Cahaya terkena cermin akan...",
+                  "a": [
+                    "Tukar warna",
+                    "Melalui cermin",
+                    "Diserap",
+                    "Dipantulkan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Periskop guna berapa cermin?",
+                  "a": [
+                    "Empat",
+                    "Satu",
+                    "Dua",
+                    "Tiga"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Nampak muka di tasik tenang kerana...",
+                  "a": [
+                    "Air lut sinar",
+                    "Air serap cahaya",
+                    "Cahaya melalui air",
+                    "Cahaya pantul permukaan air"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Permukaan kasar dinding pantul cahaya...",
+                  "a": [
+                    "Pelbagai arah (terserak)",
+                    "Sempurna cermin",
+                    "Satu arah",
+                    "Langsung tidak"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Cermin selekoh jalan untuk...",
+                  "a": [
+                    "Halang cahaya",
+                    "Lihat kenderaan bertentangan",
+                    "Cerah jalan",
+                    "Halang habuk"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Permukaan pantul sempurna?",
+                  "a": [
+                    "Dinding batu",
+                    "Permaidani",
+                    "Cermin",
+                    "Kain baldu"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Hukum pantulan: sudut tuju...",
+                  "a": [
+                    "Lebih besar dari pantul",
+                    "Sama dengan sudut pantul",
+                    "Lebih kecil dari pantul",
+                    "Tak berkaitan"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Haba",
+          "topics": {
+            "8.1": {
+              "name": "Sumber Haba",
+              "revision": "Haba satu bentuk tenaga. Sumber asli: matahari, gunung berapi. Sumber buatan: api (pembakaran), elektrik (alat pemanas), geseran. Matahari sumber haba utama.",
+              "questions": [
+                {
+                  "q": "Antara berikut, sumber haba ASLI?",
+                  "a": [
+                    "Dapur gas",
+                    "Matahari",
+                    "Seterika",
+                    "Ketuhar"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Gosok dua belah tangan rasa panas. Ini haba daripada...",
+                  "a": [
+                    "Matahari",
+                    "Pembakaran",
+                    "Geseran",
+                    "Elektrik"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sumber haba utama Bumi?",
+                  "a": [
+                    "Bulan",
+                    "Bintang",
+                    "Matahari",
+                    "Api"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara berikut, sumber haba BUATAN?",
+                  "a": [
+                    "Gunung berapi",
+                    "Petir",
+                    "Seterika elektrik",
+                    "Air panas semula jadi"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pembakaran kayu hasilkan...",
+                  "a": [
+                    "Cahaya sahaja",
+                    "Haba dan cahaya",
+                    "Udara",
+                    "Air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Geseran dua permukaan hasilkan...",
+                  "a": [
+                    "Cahaya",
+                    "Haba",
+                    "Bunyi sahaja",
+                    "Air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Matahari panaskan Bumi melalui proses...",
+                  "a": [
+                    "Konduksi",
+                    "Konveksi",
+                    "Radiasi",
+                    "Penyejatan"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Kesan Haba",
+              "revision": "Bahan mengembang apabila dipanaskan, mengecut apabila disejukkan. Contoh: rel kereta api ada ruang untuk pengembangan, termometer guna pengembangan cecair, belon panas mengembang.",
+              "questions": [
+                {
+                  "q": "Apabila dipanaskan, bahan akan...",
+                  "a": [
+                    "Mengecut",
+                    "Mengembang",
+                    "Tidak berubah",
+                    "Hilang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Rel kereta api ada ruang kecil kerana...",
+                  "a": [
+                    "Jimat bahan",
+                    "Benarkan pengembangan hari panas",
+                    "Kereta api laju",
+                    "Hiasan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Termometer guna cecair yang...",
+                  "a": [
+                    "Mengecut bila panas",
+                    "Mengembang bila panas",
+                    "Tak berubah",
+                    "Tukar warna"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Belon dekat api akan...",
+                  "a": [
+                    "Mengecut",
+                    "Mengembang mungkin letup",
+                    "Tak berubah",
+                    "Menyusut"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tutup balang ketat sukar buka. Cara buka?",
+                  "a": [
+                    "Sejukkan tutup",
+                    "Panaskan tutup supaya mengembang",
+                    "Pukul balang",
+                    "Tambah air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Air disejukkan jadi ais, isi padu...",
+                  "a": [
+                    "Bertambah",
+                    "Berkurang",
+                    "Tak berubah",
+                    "Hilang"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bola terdedah cahaya matahari panas akan...",
+                  "a": [
+                    "Mengecut",
+                    "Mengembang",
+                    "Pecah",
+                    "Cair"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Bahaya Haba",
+              "revision": "Terbakar (api/objek panas), melecur (cecair panas/wap), strok haba (haba melampau). Langkah keselamatan: jangan main mancis, jauhi dapur panas, guna pemegang periuk.",
+              "questions": [
+                {
+                  "q": "Kecederaan akibat cecair panas dipanggil...",
+                  "a": [
+                    "Terbakar",
+                    "Melecur",
+                    "Luka",
+                    "Patah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, boleh sebabkan terbakar?",
+                  "a": [
+                    "Air sejuk",
+                    "Bermain mancis",
+                    "Baca buku",
+                    "Minum air"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tindakan BETUL angkat periuk panas?",
+                  "a": [
+                    "Tangan kosong",
+                    "Guna pemegang periuk",
+                    "Tiup periuk",
+                    "Biarkan sahaja"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Strok haba berlaku apabila...",
+                  "a": [
+                    "Terlalu sejuk",
+                    "Terdedah haba melampau lama",
+                    "Minum air banyak",
+                    "Makan banyak"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Langkah keselamatan guna seterika?",
+                  "a": [
+                    "Biar menyala tanpa kawalan",
+                    "Letak atas pakaian",
+                    "Matikan selepas guna, jauhkan dari kanak-kanak",
+                    "Guna dalam air"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kebakaran kecil, alat sesuai?",
+                  "a": [
+                    "Air paip",
+                    "Alat pemadam api",
+                    "Kipas",
+                    "Tuala"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tangan terkena air panas, langkah pertama?",
+                  "a": [
+                    "Gosok kuat",
+                    "Rendam air sejuk",
+                    "Sapu minyak",
+                    "Balut kain tebal"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "Bumi",
+          "topics": {
+            "9.1": {
+              "name": "Bentuk Muka Bumi",
+              "revision": "Bentuk muka bumi daratan: gunung, bukit, lembah, tanjung. Bentuk muka bumi lautan: laut, sungai, tasik. Setiap menyokong hidupan berbeza.",
+              "questions": [
+                {
+                  "q": "Tanah tinggi lebih rendah dari gunung dipanggil...",
+                  "a": [
+                    "Bukit",
+                    "Lembah",
+                    "Tasik",
+                    "Sungai"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, bentuk muka bumi DARATAN?",
+                  "a": [
+                    "Laut",
+                    "Sungai",
+                    "Gunung",
+                    "Tasik"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Air tawar bertakung di kawasan rendah dipanggil...",
+                  "a": [
+                    "Sungai",
+                    "Laut",
+                    "Tasik",
+                    "Air terjun"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tanah rendah antara dua bukit dipanggil...",
+                  "a": [
+                    "Lembah",
+                    "Paya",
+                    "Pantai",
+                    "Dataran"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Air masin luas sambung benua?",
+                  "a": [
+                    "Tasik",
+                    "Sungai",
+                    "Laut",
+                    "Kolam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Gunung tertinggi dunia?",
+                  "a": [
+                    "Kinabalu",
+                    "Everest",
+                    "Ledang",
+                    "Tahan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Air terjun terbentuk bila sungai melalui...",
+                  "a": [
+                    "Tanah rata",
+                    "Kawasan tinggi ke rendah tegak",
+                    "Laut",
+                    "Gurun"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Sumber Semula Jadi",
+              "revision": "Sumber boleh diperbaharui: air, angin, matahari, tumbuhan. Sumber tidak boleh diperbaharui: petroleum, gas asli, arang batu, mineral. Guna secara bijaksana.",
+              "questions": [
+                {
+                  "q": "Antara berikut, sumber semula jadi?",
+                  "a": [
+                    "Plastik",
+                    "Kaca",
+                    "Air",
+                    "Kertas"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Petroleum contoh sumber...",
+                  "a": [
+                    "Boleh diperbaharui",
+                    "Tidak boleh diperbaharui",
+                    "Tak habis",
+                    "Boleh buat semula"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, sumber BOLEH diperbaharui?",
+                  "a": [
+                    "Arang batu",
+                    "Petroleum",
+                    "Cahaya matahari",
+                    "Gas asli"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kenapa jimat petroleum?",
+                  "a": [
+                    "Murah",
+                    "Tak akan habis",
+                    "Tidak boleh diperbaharui",
+                    "Tak berguna"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara berikut, BUKAN sumber semula jadi?",
+                  "a": [
+                    "Tanah",
+                    "Air",
+                    "Udara",
+                    "Plastik"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mineral emas dan timah tergolong sumber...",
+                  "a": [
+                    "Boleh diperbaharui",
+                    "Tidak boleh diperbaharui",
+                    "Tidak terhingga",
+                    "Tak habis"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sumber untuk janakan elektrik di empangan?",
+                  "a": [
+                    "Angin",
+                    "Air",
+                    "Matahari",
+                    "Petroleum"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Pemuliharaan Sumber Semula Jadi",
+              "revision": "Pemuliharaan: kitar semula, kurangkan guna, tanam semula pokok, jaga sungai laut. Amalan 3R: Kurangkan, Guna Semula, Kitar Semula.",
+              "questions": [
+                {
+                  "q": "Amalan 3R bermaksud...",
+                  "a": [
+                    "Rehat Renung Rawat",
+                    "Kurangkan Guna Semula Kitar Semula",
+                    "Rancang Reka Rekod",
+                    "Rapat Rapat Rapat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, amalan pemuliharaan?",
+                  "a": [
+                    "Buang sampah ke sungai",
+                    "Tebang semua pokok",
+                    "Kitar semula botol plastik",
+                    "Biar air paip mengalir"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kenapa tanam semula pokok?",
+                  "a": [
+                    "Tanah lapang",
+                    "Ganti pokok ditebang, seimbang alam",
+                    "Buat taman",
+                    "Nampak cantik"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kesan tidak memulihara sumber?",
+                  "a": [
+                    "Sumber sentiasa ada",
+                    "Sumber akan habis",
+                    "Hidupan bertambah",
+                    "Cuaca sejuk"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tindakan jimat air?",
+                  "a": [
+                    "Mandi lama",
+                    "Biar paip bocor",
+                    "Tutup paip semasa gosok gigi",
+                    "Cuci kereta setiap hari"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kitar semula kertas membantu...",
+                  "a": [
+                    "Udara bersih",
+                    "Selamatkan pokok daripada ditebang",
+                    "Tambah sampah",
+                    "Bazir wang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kenapa kurangkan plastik?",
+                  "a": [
+                    "Plastik mahal",
+                    "Sukar urai, cemar alam",
+                    "Ringan",
+                    "Bahaya dimakan"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "10": {
+          "name": "Teknologi",
+          "topics": {
+            "10.1": {
+              "name": "Maksud Teknologi",
+              "revision": "Teknologi ialah aplikasi ilmu sains mencipta alat, mesin, dan sistem yang memudahkan kehidupan. Contoh: telefon pintar, komputer, kereta, pesawat, mesin basuh.",
+              "questions": [
+                {
+                  "q": "Apakah maksud teknologi?",
+                  "a": [
+                    "Ilmu haiwan",
+                    "Aplikasi sains cipta alat mudahkan hidup",
+                    "Ilmu bintang",
+                    "Seni melukis"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, contoh teknologi?",
+                  "a": [
+                    "Batu",
+                    "Pokok",
+                    "Telefon pintar",
+                    "Pasir"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapa teknologi dicipta?",
+                  "a": [
+                    "Susahkan manusia",
+                    "Mudahkan dan tingkat kualiti hidup",
+                    "Bazir wang",
+                    "Panaskan bumi"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, teknologi KOMUNIKASI?",
+                  "a": [
+                    "Mesin basuh",
+                    "Penyaman udara",
+                    "Telefon bimbit",
+                    "Peti sejuk"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Teknologi bantu manusia dalam bidang...",
+                  "a": [
+                    "Hiburan sahaja",
+                    "Komunikasi, pengangkutan, perubatan, pertanian",
+                    "Pertanian sahaja",
+                    "Sukan sahaja"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, BUKAN teknologi?",
+                  "a": [
+                    "Kereta",
+                    "Pesawat",
+                    "Batu sungai",
+                    "Komputer"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Revolusi teknologi terkini AI dipanggil...",
+                  "a": [
+                    "Revolusi Pertanian",
+                    "Revolusi Perindustrian",
+                    "Revolusi Digital Industri 4.0",
+                    "Revolusi Angkasa"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "10.2": {
+              "name": "Kegunaan Teknologi Dalam Kehidupan",
+              "revision": "Perubatan: mesin X-ray. Pertanian: traktor, sistem pengairan. Pengangkutan: kereta, kapal terbang. Komunikasi: telefon, internet. Pendidikan: komputer, projektor.",
+              "questions": [
+                {
+                  "q": "Mesin X-ray guna dalam bidang...",
+                  "a": [
+                    "Pertanian",
+                    "Perubatan",
+                    "Pendidikan",
+                    "Sukan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Traktor teknologi dalam bidang...",
+                  "a": [
+                    "Perubatan",
+                    "Komunikasi",
+                    "Pertanian",
+                    "Pendidikan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Internet penting dalam bidang...",
+                  "a": [
+                    "Komunikasi dan pendidikan",
+                    "Perubatan sahaja",
+                    "Pertanian sahaja",
+                    "Pengangkutan sahaja"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kapal terbang kemajuan bidang...",
+                  "a": [
+                    "Pertanian",
+                    "Perubatan",
+                    "Pengangkutan",
+                    "Pendidikan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Teknologi bantu pertanian tingkat hasil?",
+                  "a": [
+                    "Telefon",
+                    "Komputer",
+                    "Sistem pengairan",
+                    "Kereta"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mesin ultrasound (USG) untuk...",
+                  "a": [
+                    "Diagnos organ dalaman",
+                    "Masak makanan",
+                    "Sapu lantai",
+                    "Cuci pakaian"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Teknologi GPS bantu dalam...",
+                  "a": [
+                    "Cari arah dan lokasi",
+                    "Masak makanan",
+                    "Cuci baju",
+                    "Bermain bola"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "10.3": {
+              "name": "Penciptaan Dan Inovasi",
+              "revision": "Penciptaan: cipta sesuatu baharu. Inovasi: penambahbaikan ciptaan sedia ada. Contoh: telefon talian tetap ke telefon pintar, komputer besar ke ringan mudah bawa.",
+              "questions": [
+                {
+                  "q": "Penciptaan bermaksud...",
+                  "a": [
+                    "Tiru ciptaan orang",
+                    "Cipta sesuatu yang baharu",
+                    "Beli barang kedai",
+                    "Buang barang lama"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Inovasi bermaksud...",
+                  "a": [
+                    "Tiru produk orang",
+                    "Penambahbaikan ciptaan sedia ada",
+                    "Musnahkan ciptaan",
+                    "Lupakan ciptaan lama"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Contoh inovasi?",
+                  "a": [
+                    "Telefon tetap ke telefon pintar",
+                    "Guna batu tulis",
+                    "Bakar kayu cahaya",
+                    "Jalan kaki"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kenapa inovasi penting?",
+                  "a": [
+                    "Bazir wang",
+                    "Produk lebih baik, cekap, murah",
+                    "Susahkan pengguna",
+                    "Elak kemajuan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ciptaan yang alami inovasi ketara?",
+                  "a": [
+                    "Batu",
+                    "Kayu",
+                    "Komputer",
+                    "Tumbuhan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Saintis cipta mentol lampu?",
+                  "a": [
+                    "Einstein",
+                    "Thomas Edison",
+                    "Isaac Newton",
+                    "Marie Curie"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kereta elektrik inovasi dari kereta biasa kerana...",
+                  "a": [
+                    "Lebih mahal",
+                    "Mesra alam, tak hasil asap",
+                    "Lebih besar",
+                    "Lebih berat"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
