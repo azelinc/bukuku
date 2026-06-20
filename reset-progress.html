@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Reset Progress - Bukuku</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #1a1a2e; min-height: 100vh; padding: 20px; display: flex; align-items: center; justify-content: center; }
+        .card { background: white; border-radius: 20px; padding: 30px; max-width: 450px; width: 100%; box-shadow: 0 10px 40px rgba(0,0,0,0.3); text-align: center; }
+        h1 { font-size: 1.5rem; color: #e74c3c; margin-bottom: 10px; }
+        .subtext { color: #666; font-size: 0.9rem; margin-bottom: 25px; line-height: 1.5; }
+        .danger-icon { font-size: 60px; margin-bottom: 15px; }
+        .btn { display: block; width: 100%; padding: 18px; border: none; border-radius: 14px; font-size: 1.1rem; font-weight: 800; cursor: pointer; color: white; transition: 0.2s; margin: 10px 0; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .red-btn { background: #e74c3c; border-bottom: 5px solid #c0392b; }
+        .red-btn:active:not(:disabled) { transform: translateY(4px); border-bottom-width: 1px; }
+        .grey-btn { background: #95a5a6; border-bottom: 5px solid #7f8c8d; }
+        .auth-status { padding: 12px; border-radius: 10px; margin: 15px 0; font-size: 0.9rem; font-weight: 600; }
+        .auth-ok { background: #d4edda; color: #155724; }
+        .auth-pending { background: #fff3cd; color: #856404; }
+        .auth-error { background: #f8d7da; color: #721c24; }
+        #result { margin-top: 15px; padding: 15px; border-radius: 10px; display: none; font-size: 0.9rem; line-height: 1.6; }
+        .result-success { background: #d4edda; color: #155724; display: block !important; }
+        .result-error { background: #f8d7da; color: #721c24; display: block !important; }
+        .spinner { display: inline-block; width: 16px; height: 16px; border: 3px solid #ccc; border-top-color: #e74c3c; border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .step { font-size: 0.85rem; color: #999; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="danger-icon">⚠️</div>
+        <h1>Reset All Progress</h1>
+        <p class="subtext">
+            This will reset <strong>all quiz scores, sifir scores, and train scores</strong> 
+            to zero for <strong>every profile</strong> under your account. Stars will go back to 0%.
+            <br><br>
+            <strong style="color: #e74c3c;">This cannot be undone.</strong>
+        </p>
+
+        <div id="auth-status" class="auth-status auth-pending">
+            🔍 Checking sign-in status...
+        </div>
+
+        <button id="reset-btn" class="btn red-btn" disabled>
+            🔄 Reset All Progress to Zero
+        </button>
+
+        <div id="result"></div>
+
+        <p class="step" id="step-indicator" style="display:none;"></p>
+    </div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getFirestore, doc, getDoc, getDocs, collection, updateDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSy...39cs",
+            authDomain: "af-adventure-hub.firebaseapp.com",
+            projectId: "af-adventure-hub",
+            storageBucket: "af-adventure-hub.firebasestorage.app",
+            messagingSenderId: "440085894217",
+            appId: "1:440085894217:web:74ee3d6a0a9eb377c45b98"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const auth = getAuth(app);
+
+        const authStatus = document.getElementById('auth-status');
+        const resetBtn = document.getElementById('reset-btn');
+        const resultDiv = document.getElementById('result');
+        const stepIndicator = document.getElementById('step-indicator');
+
+        let currentUser = null;
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                currentUser = user;
+                authStatus.className = 'auth-status auth-ok';
+                authStatus.innerHTML = `✅ Signed in as <strong>${user.email}</strong>`;
+                resetBtn.disabled = false;
+            } else {
+                // Try stored auth
+                try {
+                    const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                    if (stored && stored.email) {
+                        authStatus.className = 'auth-status auth-ok';
+                        authStatus.innerHTML = `✅ Signed in as <strong>${stored.email}</strong> (from cache)`;
+                        // Even with cached auth, we need the real user object to proceed
+                        // The Firebase listener might still resolve, so keep checking
+                    }
+                } catch(e) {}
+                if (!currentUser) {
+                    authStatus.className = 'auth-status auth-error';
+                    authStatus.innerHTML = '❌ Not signed in. Go to <a href="login.html" style="color:#e74c3c;">Login</a> first, then come back here.';
+                }
+            }
+        });
+
+        // Also check on page load from localStorage
+        async function tryGetUid() {
+            if (currentUser?.uid) return currentUser.uid;
+            try {
+                // Wait a bit for Firebase auth to resolve
+                await new Promise(r => setTimeout(r, 2000));
+                if (currentUser?.uid) return currentUser.uid;
+                const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                if (stored?.uid) {
+                    // Auth might be cached in localStorage but Firebase SDK not yet ready
+                    // Try using Firestore with this UID anyway
+                    return stored.uid;
+                }
+            } catch(e) {}
+            return null;
+        }
+
+        resetBtn.onclick = async () => {
+            const confirmed = confirm('⚠️ Are you SURE you want to reset ALL progress to zero for ALL profiles?\n\nThis cannot be undone!');
+            if (!confirmed) return;
+
+            const doubleConfirm = confirm('❗ FINAL WARNING: This will delete every quiz score, sifir score, and train score.\n\nYour children will lose all their stars.\n\nProceed?');
+            if (!doubleConfirm) return;
+
+            const uid = await tryGetUid();
+            if (!uid) {
+                showResult('error', '❌ Cannot identify your account. Please sign in first.');
+                return;
+            }
+
+            resetBtn.disabled = true;
+            resetBtn.innerHTML = '<span class="spinner"></span> Resetting...';
+            showResult('', '');
+
+            try {
+                const snap = await getDocs(collection(db, "profiles", uid));
+                const profiles = [];
+                snap.forEach(d => profiles.push(d.id));
+
+                if (profiles.length === 0) {
+                    showResult('error', 'No profiles found under your account.');
+                    resetBtn.disabled = false;
+                    resetBtn.innerHTML = '🔄 Reset All Progress to Zero';
+                    return;
+                }
+
+                stepIndicator.style.display = 'block';
+                let count = 0;
+                for (const name of profiles) {
+                    stepIndicator.innerText = `⏳ Resetting ${name}... (${count + 1}/${profiles.length})`;
+                    const profileRef = doc(db, "profiles", uid, name);
+                    await setDoc(profileRef, { scores: {} }, { merge: true });
+                    count++;
+                }
+
+                stepIndicator.style.display = 'none';
+                showResult('success', `✅ Done! Reset progress for <strong>${count}</strong> profile${count > 1 ? 's' : ''}:
+                    <br>• All quiz scores → 0
+                    <br>• All sifir scores → 0
+                    <br>• All train scores → 0
+                    <br><br>Stars will show 0% from now on.`);
+                resetBtn.innerHTML = '✅ Done — All Progress Reset';
+            } catch (e) {
+                showResult('error', '❌ Error: ' + e.message);
+                resetBtn.disabled = false;
+                resetBtn.innerHTML = '🔄 Retry Reset';
+            }
+        };
+
+        function showResult(type, msg) {
+            resultDiv.className = type === 'success' ? 'result-success' : type === 'error' ? 'result-error' : '';
+            resultDiv.innerHTML = msg;
+        }
+    </script>
+</body>
+</html>
