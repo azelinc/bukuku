@@ -279,11 +279,6 @@
                     throw new Error('No subjects loaded');
                 await loadUserScores();
                 renderSubjects();
-                // Auto-select if only one subject (skips redundant subject list)
-                const subKeys = Object.keys(questionBank.subjects);
-                if (subKeys.length === 1) {
-                    selectSubject(subKeys[0]);
-                }
                 updateStreakDisplay();
             } catch(e) {
                 document.getElementById('subject-list').innerHTML = '<p style="color: #e74c3c;">⚠️ Failed to load questions.</p>';
