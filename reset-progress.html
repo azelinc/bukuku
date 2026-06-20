@@ -15,7 +15,8 @@
         .btn:disabled { opacity: 0.5; cursor: not-allowed; }
         .red-btn { background: #e74c3c; border-bottom: 5px solid #c0392b; }
         .red-btn:active:not(:disabled) { transform: translateY(4px); border-bottom-width: 1px; }
-        .grey-btn { background: #95a5a6; border-bottom: 5px solid #7f8c8d; }
+        .blue-btn { background: #4a90e2; border-bottom: 5px solid #2e6cb5; }
+        .blue-btn:active:not(:disabled) { transform: translateY(4px); border-bottom-width: 1px; }
         .auth-status { padding: 12px; border-radius: 10px; margin: 15px 0; font-size: 0.9rem; font-weight: 600; }
         .auth-ok { background: #d4edda; color: #155724; }
         .auth-pending { background: #fff3cd; color: #856404; }
@@ -26,6 +27,13 @@
         .spinner { display: inline-block; width: 16px; height: 16px; border: 3px solid #ccc; border-top-color: #e74c3c; border-radius: 50%; animation: spin 0.8s linear infinite; margin-right: 8px; vertical-align: middle; }
         @keyframes spin { to { transform: rotate(360deg); } }
         .step { font-size: 0.85rem; color: #999; margin: 5px 0; }
+
+        .login-form { display: none; margin: 15px 0; }
+        .login-form input { width: 100%; padding: 14px 18px; margin: 8px 0; border: 3px solid #eee; border-radius: 14px; font-size: 1rem; outline: none; font-family: inherit; box-sizing: border-box; }
+        .login-form input:focus { border-color: #4a90e2; }
+        .login-form .login-btn { background: #4a90e2; color: white; border: none; padding: 14px; border-radius: 14px; font-size: 1rem; font-weight: 700; cursor: pointer; width: 100%; margin-top: 8px; }
+        .login-form .login-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+        .login-error { color: #e74c3c; font-size: 0.85rem; margin-top: 8px; display: none; }
     </style>
 </head>
 <body>
@@ -43,6 +51,14 @@
             🔍 Checking sign-in status...
         </div>
 
+        <!-- Inline login form (appears if auto-detection fails) -->
+        <div class="login-form" id="login-form">
+            <input type="email" id="login-email" placeholder="Email address" autocomplete="email">
+            <input type="password" id="login-password" placeholder="Password" autocomplete="current-password">
+            <button class="login-btn" id="login-btn">Sign In</button>
+            <div class="login-error" id="login-error"></div>
+        </div>
+
         <button id="reset-btn" class="btn red-btn" disabled>
             🔄 Reset All Progress to Zero
         </button>
@@ -54,8 +70,8 @@
 
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-        import { getFirestore, doc, getDoc, getDocs, collection, updateDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
-        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getFirestore, doc, getDocs, collection, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getAuth, signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
         const firebaseConfig = {
             apiKey: "AIzaSy...39cs",
@@ -74,62 +90,120 @@
         const resetBtn = document.getElementById('reset-btn');
         const resultDiv = document.getElementById('result');
         const stepIndicator = document.getElementById('step-indicator');
+        const loginForm = document.getElementById('login-form');
+        const loginEmail = document.getElementById('login-email');
+        const loginPassword = document.getElementById('login-password');
+        const loginBtn = document.getElementById('login-btn');
+        const loginError = document.getElementById('login-error');
 
+        let cachedUid = null;
         let currentUser = null;
 
-        onAuthStateChanged(auth, async (user) => {
+        // Grab UID from localStorage immediately
+        try {
+            const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+            if (stored?.uid) cachedUid = stored.uid;
+        } catch(e) {}
+
+        function getUid() {
+            return currentUser?.uid || cachedUid;
+        }
+
+        function enableReset() {
+            resetBtn.disabled = false;
+            loginForm.style.display = 'none';
+        }
+
+        function showLoginForm() {
+            loginForm.style.display = 'block';
+            resetBtn.disabled = true;
+            authStatus.className = 'auth-status auth-error';
+            authStatus.innerHTML = '❌ Session expired. Sign in below:';
+        }
+
+        // Firebase Auth auto-detection
+        onAuthStateChanged(auth, (user) => {
             if (user) {
                 currentUser = user;
+                cachedUid = user.uid;
+                localStorage.setItem('bukuku_auth', JSON.stringify({ email: user.email, uid: user.uid }));
                 authStatus.className = 'auth-status auth-ok';
                 authStatus.innerHTML = `✅ Signed in as <strong>${user.email}</strong>`;
-                resetBtn.disabled = false;
-            } else {
-                // Try stored auth
+                enableReset();
+            } else if (cachedUid) {
+                // Check if localStorage has email info
                 try {
                     const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
-                    if (stored && stored.email) {
-                        authStatus.className = 'auth-status auth-ok';
-                        authStatus.innerHTML = `✅ Signed in as <strong>${stored.email}</strong> (from cache)`;
-                        // Even with cached auth, we need the real user object to proceed
-                        // The Firebase listener might still resolve, so keep checking
+                    if (stored?.email) {
+                        authStatus.className = 'auth-status auth-pending';
+                        authStatus.innerHTML = '⏳ Checking cached session...';
+                        // Wait 2s for Firebase to potentially resolve the session
+                        setTimeout(() => {
+                            if (currentUser) return;
+                            // Still no auth — show login form
+                            authStatus.className = 'auth-status auth-error';
+                            authStatus.innerHTML = `Session not found for <strong>${stored.email}</strong>. Please sign in:`;
+                            showLoginForm();
+                            loginEmail.value = stored.email || '';
+                            loginPassword.focus();
+                        }, 2000);
+                    } else {
+                        showLoginForm();
                     }
-                } catch(e) {}
-                if (!currentUser) {
-                    authStatus.className = 'auth-status auth-error';
-                    authStatus.innerHTML = '❌ Not signed in. Go to <a href="login.html" style="color:#e74c3c;">Login</a> first, then come back here.';
+                } catch(e) {
+                    showLoginForm();
                 }
+            } else {
+                showLoginForm();
             }
         });
 
-        // Also check on page load from localStorage
-        async function tryGetUid() {
-            if (currentUser?.uid) return currentUser.uid;
+        // Inline login
+        loginBtn.onclick = async () => {
+            const email = loginEmail.value.trim();
+            const password = loginPassword.value;
+            if (!email || !password) {
+                loginError.textContent = 'Please enter email and password.';
+                loginError.style.display = 'block';
+                return;
+            }
+            loginBtn.disabled = true;
+            loginBtn.textContent = 'Signing in...';
+            loginError.style.display = 'none';
+
             try {
-                // Wait a bit for Firebase auth to resolve
-                await new Promise(r => setTimeout(r, 2000));
-                if (currentUser?.uid) return currentUser.uid;
-                const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
-                if (stored?.uid) {
-                    // Auth might be cached in localStorage but Firebase SDK not yet ready
-                    // Try using Firestore with this UID anyway
-                    return stored.uid;
-                }
-            } catch(e) {}
-            return null;
-        }
+                const cred = await signInWithEmailAndPassword(auth, email, password);
+                currentUser = cred.user;
+                cachedUid = cred.user.uid;
+                localStorage.setItem('bukuku_auth', JSON.stringify({ email: cred.user.email, uid: cred.user.uid }));
+                authStatus.className = 'auth-status auth-ok';
+                authStatus.innerHTML = `✅ Signed in as <strong>${cred.user.email}</strong>`;
+                enableReset();
+            } catch (e) {
+                loginError.textContent = e.message;
+                loginError.style.display = 'block';
+                loginBtn.disabled = false;
+                loginBtn.textContent = 'Sign In';
+            }
+        };
+
+        // Allow pressing Enter in password field
+        loginPassword.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') loginBtn.click();
+        });
 
         resetBtn.onclick = async () => {
+            const uid = getUid();
+            if (!uid) {
+                showResult('error', '❌ Cannot identify your account. Please sign in first.');
+                return;
+            }
+
             const confirmed = confirm('⚠️ Are you SURE you want to reset ALL progress to zero for ALL profiles?\n\nThis cannot be undone!');
             if (!confirmed) return;
 
             const doubleConfirm = confirm('❗ FINAL WARNING: This will delete every quiz score, sifir score, and train score.\n\nYour children will lose all their stars.\n\nProceed?');
             if (!doubleConfirm) return;
-
-            const uid = await tryGetUid();
-            if (!uid) {
-                showResult('error', '❌ Cannot identify your account. Please sign in first.');
-                return;
-            }
 
             resetBtn.disabled = true;
             resetBtn.innerHTML = '<span class="spinner"></span> Resetting...';
@@ -164,7 +238,11 @@
                     <br><br>Stars will show 0% from now on.`);
                 resetBtn.innerHTML = '✅ Done — All Progress Reset';
             } catch (e) {
-                showResult('error', '❌ Error: ' + e.message);
+                if (e.code === 'permission-denied' || e.message.includes('permission')) {
+                    showResult('error', '❌ Permission denied. Your session may have expired. Sign in again above and retry.');
+                } else {
+                    showResult('error', '❌ Error: ' + e.message);
+                }
                 resetBtn.disabled = false;
                 resetBtn.innerHTML = '🔄 Retry Reset';
             }
