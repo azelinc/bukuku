@@ -298,6 +298,30 @@
             </div>
         </div>
 
+        <!-- EDIT PROFILE MODAL -->
+        <div id="edit-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); z-index:999; display:none; align-items:center; justify-content:center; padding:20px;">
+            <div style="background:white; border-radius:24px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+                <h2 id="edit-title" style="margin-bottom:15px;">✏️ Edit Profile</h2>
+
+                <div style="margin-bottom:15px;">
+                    <p style="font-weight:700; font-size:0.95rem; color:#333; margin-bottom:10px; text-align:left;">Tahun:</p>
+                    <div style="display:flex; gap:10px;" id="edit-tahun-pills">
+                        <label data-year="4" style="flex:1; padding:12px; border-radius:12px; border:3px solid #eee; text-align:center; cursor:pointer; font-weight:700; font-size:1.1rem; background:#f8f9fa;" onclick="selectEditTahun(4, this)">Tahun 4</label>
+                        <label data-year="5" style="flex:1; padding:12px; border-radius:12px; border:3px solid #eee; text-align:center; cursor:pointer; font-weight:700; font-size:1.1rem; background:#f8f9fa;" onclick="selectEditTahun(5, this)">Tahun 5</label>
+                        <label data-year="6" style="flex:1; padding:12px; border-radius:12px; border:3px solid #eee; text-align:center; cursor:pointer; font-weight:700; font-size:1.1rem; background:#f8f9fa;" onclick="selectEditTahun(6, this)">Tahun 6</label>
+                    </div>
+                </div>
+
+                <div style="margin-bottom:20px; display:flex; align-items:center; gap:10px; padding:12px 16px; background:#f8f9fa; border-radius:12px; border:2px solid #eee;">
+                    <input type="checkbox" id="edit-dlp-checkbox" style="width:22px; height:22px; cursor:pointer;">
+                    <label for="edit-dlp-checkbox" style="font-weight:600; font-size:1rem; color:#333; cursor:pointer;">DLP (English)</label>
+                </div>
+
+                <button id="save-edit-btn" class="idx-btn blue-btn" style="margin-bottom:10px;" onclick="saveEditProfile()">💾 Save Changes</button>
+                <button onclick="closeEditModal()" style="background:none; border:none; color:#999; cursor:pointer; text-decoration:underline; width:100%; font-size:0.85rem;">Cancel</button>
+            </div>
+        </div>
+
         <!-- MAIN MENU -->
         <div id="main-menu" class="idx-content" style="display: none;">
             <p class="idx-subtext" style="font-weight:bold;">Ready for today's lesson?</p>
@@ -746,6 +770,14 @@
                     const ctrl = document.createElement('div');
                     ctrl.className = "admin-controls";
                     ctrl.style.display = 'flex';
+                    ctrl.style.gap = '6px';
+
+                    const editBtn = document.createElement('button');
+                    editBtn.className = "del-btn";
+                    editBtn.style.background = '#4a90e2';
+                    editBtn.innerHTML = "✏️ Edit";
+                    editBtn.style.display = manageActive && isAdmin ? "block" : "none";
+                    editBtn.onclick = (e) => { e.stopPropagation(); editProfile(name, data); };
 
                     const delBtn = document.createElement('button');
                     delBtn.className = "del-btn";
@@ -753,6 +785,7 @@
                     delBtn.style.display = manageActive && isAdmin ? "block" : "none";
                     delBtn.onclick = (e) => { e.stopPropagation(); deleteProfile(name); };
 
+                    ctrl.appendChild(editBtn);
                     ctrl.appendChild(delBtn);
                     row.appendChild(btn); row.appendChild(ctrl);
                     list.appendChild(row);
@@ -789,6 +822,82 @@
                 }
             }
         }
+
+        // ---- EDIT PROFILE (Manage mode) ----
+        let _editingName = null;
+
+        window.editProfile = (name, data) => {
+            _editingName = name;
+            document.getElementById('edit-title').innerText = `✏️ Edit ${name}`;
+            // Pre-fill tahun
+            const tahun = data.tahun || 4;
+            document.querySelectorAll('#edit-tahun-pills label').forEach(el => {
+                const y = parseInt(el.getAttribute('data-year'));
+                if (y === tahun) {
+                    el.setAttribute('data-selected', 'true');
+                    el.style.borderColor = '#4a90e2';
+                    el.style.background = '#e8f0fe';
+                } else {
+                    el.removeAttribute('data-selected');
+                    el.style.borderColor = '#eee';
+                    el.style.background = '#f8f9fa';
+                }
+            });
+            // Pre-fill DLP
+            document.getElementById('edit-dlp-checkbox').checked = data.dlp !== false;
+            document.getElementById('edit-modal').style.display = 'flex';
+        };
+
+        window.selectEditTahun = (year, el) => {
+            document.querySelectorAll('#edit-tahun-pills label').forEach(label => {
+                label.removeAttribute('data-selected');
+                label.style.borderColor = '#eee';
+                label.style.background = '#f8f9fa';
+            });
+            el.setAttribute('data-selected', 'true');
+            el.style.borderColor = '#4a90e2';
+            el.style.background = '#e8f0fe';
+        };
+
+        window.saveEditProfile = async () => {
+            if (!_editingName) return;
+            let uid = currentUser?.uid;
+            if (!uid) {
+                try {
+                    const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                    uid = stored?.uid;
+                } catch(e) {}
+            }
+            if (!uid) { showToast('Sign in required', 'error'); return; }
+
+            // Read selected tahun from data-year attribute of highlighted pill
+            let tahun = null;
+            document.querySelectorAll('#edit-tahun-pills label').forEach(el => {
+                if (el.getAttribute('data-selected') === 'true') {
+                    tahun = parseInt(el.getAttribute('data-year'));
+                }
+            });
+            if (!tahun) { showToast('Please select a Tahun', 'error'); return; }
+
+            const dlp = document.getElementById('edit-dlp-checkbox').checked;
+
+            try {
+                await setDoc(doc(db, "profiles", uid, "children", _editingName), {
+                    tahun: tahun,
+                    dlp: dlp
+                }, { merge: true });
+                showToast(`✅ ${_editingName} updated`, 'success');
+                closeEditModal();
+                showProfileSelection();
+            } catch (e) {
+                showToast('Failed to update profile', 'error');
+            }
+        };
+
+        window.closeEditModal = () => {
+            document.getElementById('edit-modal').style.display = 'none';
+            _editingName = null;
+        };
 
         let _selectedTahun = 0;
 
