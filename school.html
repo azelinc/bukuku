@@ -105,7 +105,7 @@
             try {
                 const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
                 if (stored && stored.uid) {
-                    return doc(db, "profiles", stored.uid, kidName);
+                    return doc(db, "profiles", stored.uid, "children", kidName);
                 }
             } catch(e) {}
             return doc(db, "users", kidName);

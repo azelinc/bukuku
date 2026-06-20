@@ -360,8 +360,8 @@
                 for (const docSnap of oldSnap.docs) {
                     const name = docSnap.id;
                     const data = docSnap.data();
-                    // Copy to profiles/{uid}/{name}
-                    await setDoc(doc(db, "profiles", uid, name), {
+                    // Copy to profiles/{uid}/children/{name}
+                    await setDoc(doc(db, "profiles", uid, "children", name), {
                         name: name,
                         createdAt: data.createdAt || data.lastLogin || new Date(),
                         lastLogin: data.lastLogin || null,
@@ -646,7 +646,7 @@
                 }
 
                 try {
-                    await setDoc(doc(db, "profiles", currentUser.uid, name), {
+                    await setDoc(doc(db, "profiles", currentUser.uid, "children", name), {
                         name: name,
                         createdAt: new Date(),
                         lastLogin: new Date()
@@ -672,7 +672,7 @@
             try {
                 let userDoc;
                 if (currentUser) {
-                    userDoc = await getDoc(doc(db, "profiles", currentUser.uid, name));
+                    userDoc = await getDoc(doc(db, "profiles", currentUser.uid, "children", name));
                 } else {
                     userDoc = await getDoc(doc(db, "users", name));
                 }

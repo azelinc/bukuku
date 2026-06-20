@@ -409,7 +409,8 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    const profileRef = doc(db, "profiles", uid, name);
+                    // Path: profiles/{uid}/children/{name} (4 segments = valid doc ref)
+                    const profileRef = doc(db, "profiles", uid, "children", name);
                     await setDoc(profileRef, { scores: {} }, { merge: true });
                     // Also reset old path for backward compat
                     await setDoc(doc(db, "users", name), { scores: {} }, { merge: true });
