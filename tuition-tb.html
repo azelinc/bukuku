@@ -213,7 +213,7 @@
             </h2>
             <div id="review-list" class="review-card"></div>
             <div class="action-group" style="margin:0 auto 20px;">
-                <button class="btn green-btn" onclick="startQuiz(currentTopic)">🔄 Try Again</button>
+                <button class="btn green-btn" id="review-retry-btn">🔄 Try Again</button>
                 <button class="btn blue-btn" onclick="goToTopics()">← Back to Topics</button>
             </div>
         </div>
@@ -769,6 +769,7 @@
         document.getElementById('back-to-topics').onclick = goToTopics;
         document.getElementById('back-to-topics-rev').onclick = goToTopics;
         document.getElementById('start-quiz-btn').onclick = beginQuiz;
+        document.getElementById('review-retry-btn').onclick = () => startQuiz(currentTopic);
         // Expose for inline HTML handlers (review area buttons)
         window.goToTopics = goToTopics;
 
