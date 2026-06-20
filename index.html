@@ -280,15 +280,8 @@
         <!-- MAIN MENU -->
         <div id="main-menu" class="idx-content" style="display: none;">
             <p class="idx-subtext" style="font-weight:bold;">Ready for today's lesson?</p>
-            <button class="idx-btn blue-btn" onclick="showYear(4)" style="margin-bottom:8px;">📘 KSSR Tahun 4 (DLP)</button>
-            <button class="idx-btn green-btn" onclick="showYear(5)">📘 KSSR Tahun 5 (DLP)</button>
-        </div>
-
-        <!-- YEAR SUBJECT LIST -->
-        <div id="year-screen" class="idx-content" style="display: none;">
-            <h2 id="year-title" style="margin-bottom:15px; font-size:1.2rem;">KSSR Tahun ?</h2>
-            <div id="year-subjects"></div>
-            <button onclick="showMainMenu()" style="margin-top:30px; background:#f4f4f4; border:none; padding:15px; border-radius:15px; cursor:pointer; font-weight: bold; color: #999; width: 100%;">← Back</button>
+            <a href="tuition-tb.html?year=4" class="idx-btn blue-btn" style="text-decoration:none; display:block; margin-bottom:8px;">📘 KSSR Tahun 4 (DLP)</a>
+            <a href="tuition-tb.html?year=5" class="idx-btn green-btn" style="text-decoration:none; display:block;">📘 KSSR Tahun 5 (DLP)</a>
         </div>
     </div>
 
@@ -825,31 +818,12 @@
                 loading.style.display = 'none';
                 selection.style.display = 'none';
                 setup.style.display = 'none';
-                document.getElementById('year-screen').style.display = 'none';
                 menu.style.display = 'block';
                 header.style.display = 'flex';
                 document.getElementById('user-badge').innerHTML = `👤 ${name} ▾`;
                 return true;
             } catch (e) { return false; }
         }
-
-        window.showYear = (year) => {
-            menu.style.display = 'none';
-            const screen = document.getElementById('year-screen');
-            screen.style.display = 'block';
-            document.getElementById('year-title').innerText = `KSSR Tahun ${year} (DLP)`;
-            const list = document.getElementById('year-subjects');
-            list.innerHTML = `
-                <a href="tuition-tb.html?year=${year}" class="idx-btn orange-btn" style="text-decoration:none; display:block;">
-                    📐 Mathematics Year ${year} DLP
-                </a>
-            `;
-        };
-
-        window.showMainMenu = () => {
-            document.getElementById('year-screen').style.display = 'none';
-            menu.style.display = 'block';
-        };
 
         window.switchUser = () => {
             localStorage.removeItem('fb_current_user');
