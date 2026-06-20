@@ -1011,7 +1011,12 @@
                     sci4bm: { icon: '🧪', color: '#0097a7', name: 'Sains' }
                 };
                 const yearCounts = topicCounts[String(profileTahun)] || {};
-                const subjects = Object.keys(yearCounts);
+                // Filter subjects based on DLP/non-DLP
+                const allSubj = Object.keys(yearCounts);
+                const dlpKeys = ['math', 'sci', 'eng'];
+                const subjects = isDlp
+                    ? allSubj.filter(s => dlpKeys.includes(s))
+                    : allSubj.filter(s => !dlpKeys.includes(s) || s === 'eng');
                 if (profileTahun && subjects.length > 0 && tbScores) {
                     let totalDone = 0, totalAll = 0;
                     let html = `<div class="prog-card"><div class="prog-name">📊 ${name}'s Progress</div>`;
