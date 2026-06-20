@@ -385,22 +385,27 @@
             upgradeModal.style.display = 'flex';
         };
 
-        // ---- AUTO-MIGRATION from old users/{name} to profiles/{uid}/{name} ----
+        // ---- AUTO-MIGRATION from old users/{name} to profiles/{uid}/children/{name} ----
         async function migrateOldProfiles(uid) {
             try {
-                // Check if old users/ collection has any profiles
+                // Read existing profiles in the new path to know which are already migrated
+                const existingNames = new Set();
+                try {
+                    const snap = await getDocs(collection(db, "profiles", uid, "children"));
+                    snap.forEach(d => existingNames.add(d.id));
+                } catch(e) { /* collection might not exist yet */ }
+
+                // Read from old users/ collection
                 const oldSnap = await getDocs(collection(db, "users"));
                 if (oldSnap.empty) return 0;
-
-                // Check if already migrated (profiles exist under this uid)
-                const newSnap = await getDocs(collection(db, "profiles", uid, "children"));
-                if (!newSnap.empty) return 0; // already migrated
 
                 let migrated = 0;
                 for (const docSnap of oldSnap.docs) {
                     const name = docSnap.id;
+                    // Skip already-migrated profiles
+                    if (existingNames.has(name)) continue;
+
                     const data = docSnap.data();
-                    // Copy to profiles/{uid}/children/{name} — include scores if present
                     await setDoc(doc(db, "profiles", uid, "children", name), {
                         name: name,
                         createdAt: data.createdAt || data.lastLogin || new Date(),
@@ -410,10 +415,11 @@
                     });
                     migrated++;
                 }
-                // After migration, populate children list in metadata doc
-                if (migrated > 0) {
+                // Update children list in metadata doc
+                const allChildren = [...existingNames, ...oldSnap.docs.map(d => d.id).filter(n => !existingNames.has(n))];
+                if (allChildren.length > 0) {
                     await setDoc(doc(db, "profiles", uid), {
-                        children: oldSnap.docs.map(d => d.id)
+                        children: allChildren
                     }, { merge: true });
                 }
                 return migrated;
@@ -682,6 +688,14 @@
                     // Read profiles scoped to this user (ONLY authorized path)
                     const snap = await getDocs(collection(db, "profiles", activeUid, "children"));
                     snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+
+                    // Fallback: if no profiles in new path, try old users/ collection
+                    if (profiles.length === 0) {
+                        try {
+                            const oldSnap = await getDocs(collection(db, "users"));
+                            oldSnap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
+                        } catch(e) { /* silently ignore — may not have permission */ }
+                    }
                 } else {
                     // Not authenticated — cannot load profiles
                     fallbackToSignedOut();
