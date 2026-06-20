@@ -272,7 +272,7 @@
                 document.getElementById('page-title').innerHTML = `📘 KSSR Tahun ${selectedYear} (DLP) <span id="streak-display"></span>`;
 
                 // Load ALL subject files for this year and merge
-                const subjectFiles = [`math${selectedYear}-tb.json`, `sci${selectedYear}-tb.json`];
+                const subjectFiles = [`math${selectedYear}-tb.json`, `sci${selectedYear}-tb.json`, `eng${selectedYear}-tb.json`];
                 const merged = { subjects: {} };
                 for (const file of subjectFiles) {
                     try {

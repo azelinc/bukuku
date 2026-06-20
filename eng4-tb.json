@@ -1,0 +1,1061 @@
+{
+  "subjects": {
+    "eng4": {
+      "name": "English Year 4",
+      "icon": "📖",
+      "color": "#8e44ad",
+      "units": {
+        "1": {
+          "name": "Where Are You From?",
+          "topics": {
+            "1.1": {
+              "name": "Countries and Nationalities",
+              "revision": "When introducing yourself, you can say 'I am from Malaysia' or 'I am Malaysian.' Nationalities often end in -an (Malaysian, Indonesian), -ese (Chinese, Japanese), or -ish (English, Turkish). The question 'Where are you from?' asks about your country or hometown.",
+              "questions": [
+                {
+                  "q": "'I am from Indonesia.' What is the nationality?",
+                  "a": ["Indonesian", "Indonesia", "Indonisian", "Indonesian"],
+                  "c": 0
+                },
+                {
+                  "q": "A person from Japan is ________.",
+                  "a": ["Japanian", "Japanese", "Japanish", "Japanean"],
+                  "c": 1
+                },
+                {
+                  "q": "Which question asks about someone's country?",
+                  "a": ["How are you?", "Where are you from?", "What is your name?", "How old are you?"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Ali: Where are you from? Ben: I am from ________. I am Australian.'",
+                  "a": ["America", "India", "Australia", "England"],
+                  "c": 2
+                },
+                {
+                  "q": "Which of these is a nationality?",
+                  "a": ["Kuala Lumpur", "Malaysian", "Malaysia", "Asia"],
+                  "c": 1
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Greetings and Introductions",
+              "revision": "When meeting someone new, we say 'Hello, nice to meet you.' We introduce ourselves with 'My name is...' or 'I am...' We can also ask 'What is your name?' and 'How are you?' to start a conversation politely.",
+              "questions": [
+                {
+                  "q": "What do you say when meeting someone for the first time?",
+                  "a": ["Goodbye!", "Nice to meet you.", "See you later.", "Take care!"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'A: How are you? B: I am ________, thank you.'",
+                  "a": ["ten years old", "from Malaysia", "fine", "Mr. Lee"],
+                  "c": 2
+                },
+                {
+                  "q": "Which response is correct? 'A: Hello, my name is Siti. B: ________'",
+                  "a": ["Goodbye, Siti!", "Hi Siti, I'm Ravi.", "Siti, go away!", "Thank you, Siti."],
+                  "c": 1
+                },
+                {
+                  "q": "What is the polite way to ask someone's name?",
+                  "a": ["What is your name?", "What your name?", "You name what?", "Name what is?"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'Let me ________ myself. I am Mr. Kumar.'",
+                  "a": ["introduce", "meet", "say", "tell"],
+                  "c": 0
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Describing People",
+              "revision": "We describe people using adjectives like tall, short, slim, friendly, and hardworking. The verb 'have/has' is used for features: 'She has long hair.' 'He has brown eyes.' The verb 'is/are' is used for traits: 'She is kind.'",
+              "questions": [
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["She have long hair.", "She has long hair.", "She having long hair.", "She haves long hair."],
+                  "c": 1
+                },
+                {
+                  "q": "My teacher is very ________ because she helps everyone.",
+                  "a": ["lazy", "unkind", "helpful", "angry"],
+                  "c": 2
+                },
+                {
+                  "q": "The opposite of 'tall' is ________.",
+                  "a": ["short", "small", "slim", "young"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'Raj is a very ________ boy. He always shares his food with others.'",
+                  "a": ["selfish", "generous", "lazy", "rude"],
+                  "c": 1
+                },
+                {
+                  "q": "'She has curly hair.' What does 'curly' mean?",
+                  "a": ["Straight hair", "Long hair", "Wavy or coiled hair", "Short hair"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "My Week",
+          "topics": {
+            "2.1": {
+              "name": "Days of the Week",
+              "revision": "There are seven days in a week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday. Weekend days are Saturday and Sunday. Weekdays are Monday to Friday. We use 'on' with days: 'on Monday.' We use 'every' for routines: 'every Tuesday.'",
+              "questions": [
+                {
+                  "q": "What day comes after Tuesday?",
+                  "a": ["Monday", "Thursday", "Wednesday", "Friday"],
+                  "c": 2
+                },
+                {
+                  "q": "Which days are the weekend?",
+                  "a": ["Monday and Tuesday", "Wednesday and Thursday", "Saturday and Sunday", "Friday and Saturday"],
+                  "c": 2
+                },
+                {
+                  "q": "Correct preposition: 'I go to school ________ Mondays.'",
+                  "a": ["in", "on", "at", "by"],
+                  "c": 1
+                },
+                {
+                  "q": "'Friday' is the ________ day of the week.",
+                  "a": ["fourth", "fifth", "sixth", "seventh"],
+                  "c": 1
+                },
+                {
+                  "q": "Which day comes between Wednesday and Friday?",
+                  "a": ["Tuesday", "Thursday", "Saturday", "Monday"],
+                  "c": 1
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Daily Routines",
+              "revision": "Simple present tense is used to describe daily routines. Examples: 'I wake up at 6 am.' 'She brushes her teeth every morning.' 'They go to school by bus.' The 's' or 'es' is added for he/she/it: 'He eats breakfast.'",
+              "questions": [
+                {
+                  "q": "Complete: 'I ________ up at 6 o'clock every morning.'",
+                  "a": ["wake", "wakes", "waking", "woke"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'She ________ breakfast before going to school.'",
+                  "a": ["have", "has", "having", "haves"],
+                  "c": 1
+                },
+                {
+                  "q": "Which activity do you usually do BEFORE going to school?",
+                  "a": ["Eat dinner", "Have breakfast", "Watch TV", "Do homework"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'They ________ to bed at 9 pm every night.'",
+                  "a": ["go", "goes", "going", "went"],
+                  "c": 0
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["He brush his teeth.", "He brushes his teeth.", "He brushing his teeth.", "He brushed his teeth."],
+                  "c": 1
+                },
+                {
+                  "q": "What do you do first in the morning?",
+                  "a": ["Eat lunch", "Wake up", "Go to school", "Do homework"],
+                  "c": 1
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Telling Time",
+              "revision": "We use 'o'clock' for exact hours: 'It is 3 o'clock.' Use 'half past' for 30 minutes past: 'half past seven' = 7:30. Use 'quarter past' for 15 minutes past: 'quarter past eight' = 8:15. Use 'quarter to' for 15 minutes before: 'quarter to nine' = 8:45. We say 'a.m.' for morning and 'p.m.' for afternoon/evening.",
+              "questions": [
+                {
+                  "q": "What time is 7:00?",
+                  "a": ["Quarter past seven", "Half past seven", "Seven o'clock", "Quarter to seven"],
+                  "c": 2
+                },
+                {
+                  "q": "Half past eight means ________.",
+                  "a": ["8:00", "8:15", "8:30", "8:45"],
+                  "c": 2
+                },
+                {
+                  "q": "Quarter to ten means ________.",
+                  "a": ["10:00", "10:15", "10:30", "9:45"],
+                  "c": 3
+                },
+                {
+                  "q": "School starts at 7:30 am. How do you say this?",
+                  "a": ["School starts at half past seven in the morning.", "School starts at quarter past seven.", "School starts at seven o'clock.", "School starts at half past seven at night."],
+                  "c": 0
+                },
+                {
+                  "q": "Quarter past two is ________.",
+                  "a": ["1:45", "2:15", "2:30", "2:45"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "In the Past",
+          "topics": {
+            "3.1": {
+              "name": "Simple Past Tense - 'was' and 'were'",
+              "revision": "We use 'was' for singular subjects (I, he, she, it) and 'were' for plural subjects (you, we, they) to talk about the past. Example: 'I was at the park yesterday.' 'They were happy last night.' 'Was' and 'were' describe states or conditions that existed before now.",
+              "questions": [
+                {
+                  "q": "Complete: 'I ________ at the library yesterday.'",
+                  "a": ["am", "was", "were", "is"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'My friends ________ very happy last week.'",
+                  "a": ["was", "were", "is", "are"],
+                  "c": 1
+                },
+                {
+                  "q": "Where ________ you last night?",
+                  "a": ["was", "were", "are", "is"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The food ________ delicious.'",
+                  "a": ["were", "are", "was", "be"],
+                  "c": 2
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["She were at home.", "She was at home.", "She are at home.", "She be at home."],
+                  "c": 1
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Regular Past Tense Verbs",
+              "revision": "Regular past tense verbs end with '-ed'. Examples: 'walk' becomes 'walked', 'play' becomes 'played', 'visit' becomes 'visited'. If a verb already ends with 'e', just add 'd': 'dance' becomes 'danced'. If a verb ends with consonant + y, change y to i and add 'ed': 'study' becomes 'studied'.",
+              "questions": [
+                {
+                  "q": "What is the past tense of 'play'?",
+                  "a": ["playing", "plays", "played", "playes"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'We ________ football at the field yesterday.'",
+                  "a": ["play", "played", "playing", "plays"],
+                  "c": 1
+                },
+                {
+                  "q": "The past tense of 'dance' is ________.",
+                  "a": ["danceed", "danced", "dancd", "dancing"],
+                  "c": 1
+                },
+                {
+                  "q": "What is the past tense of 'study'?",
+                  "a": ["studied", "studyed", "studyd", "studies"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'She ________ her grandmother last weekend.'",
+                  "a": ["visits", "visited", "visiting", "visit"],
+                  "c": 1
+                },
+                {
+                  "q": "He ________ to school yesterday because he was sick.",
+                  "a": ["walked", "did not walk", "walkes", "not walked"],
+                  "c": 1
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Irregular Past Tense Verbs",
+              "revision": "Some verbs change completely in the past tense. Common irregular verbs: go → went, eat → ate, see → saw, have → had, buy → bought, take → took, make → made, do → did, get → got. You must memorize these because they do not follow the '-ed' rule.",
+              "questions": [
+                {
+                  "q": "The past tense of 'go' is ________.",
+                  "a": ["goed", "went", "gone", "going"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I ________ an apple for breakfast.'",
+                  "a": ["eated", "ate", "eat", "eating"],
+                  "c": 1
+                },
+                {
+                  "q": "What is the past tense of 'buy'?",
+                  "a": ["buyed", "bought", "buys", "buying"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We ________ a beautiful rainbow yesterday.'",
+                  "a": ["see", "seen", "saw", "seeing"],
+                  "c": 2
+                },
+                {
+                  "q": "The past tense of 'take' is ________.",
+                  "a": ["taked", "took", "takes", "taking"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'She ________ a new dress for the party.'",
+                  "a": ["buys", "bought", "buy", "buying"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Celebrations",
+          "topics": {
+            "4.1": {
+              "name": "Festivals in Malaysia",
+              "revision": "Malaysia has many festivals: Hari Raya Aidilfitri (celebrated by Muslims), Chinese New Year (celebrated by Chinese), Deepavali (celebrated by Hindus), and Christmas (celebrated by Christians). Each festival has special foods, clothes, and traditions. We use 'celebrate' to talk about festivals.",
+              "questions": [
+                {
+                  "q": "Which festival do Muslims in Malaysia celebrate?",
+                  "a": ["Deepavali", "Christmas", "Hari Raya Aidilfitri", "Chinese New Year"],
+                  "c": 2
+                },
+                {
+                  "q": "During Chinese New Year, people give ________.",
+                  "a": ["chocolate eggs", "ang pow", "turkey", "kolam"],
+                  "c": 1
+                },
+                {
+                  "q": "Deepavali is known as the Festival of ________.",
+                  "a": ["Food", "Lights", "Flowers", "Music"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We ________ Hari Raya by visiting our family and friends.'",
+                  "a": ["celebrated", "celebrate", "celebrating", "celebrates"],
+                  "c": 1
+                },
+                {
+                  "q": "What traditional food is eaten during Hari Raya?",
+                  "a": ["Rendang", "Pizza", "Sandwich", "Salad"],
+                  "c": 0
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Birthday Celebrations",
+              "revision": "Birthday parties usually include a cake, candles, presents, and decorations. Common activities: singing 'Happy Birthday,' blowing out candles, opening presents, playing games, and eating food. We use 'on' for dates: 'My birthday is on the 5th of June.'",
+              "questions": [
+                {
+                  "q": "What do we sing at a birthday party?",
+                  "a": ["National Anthem", "Happy Birthday", "Lullaby", "School Song"],
+                  "c": 1
+                },
+                {
+                  "q": "Before eating the birthday cake, we ________ the candles.",
+                  "a": ["light", "blow out", "eat", "hide"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'My birthday is ________ the 10th of April.'",
+                  "a": ["in", "at", "on", "by"],
+                  "c": 2
+                },
+                {
+                  "q": "Birthday presents are ________ after the party starts.",
+                  "a": ["bought", "opened", "closed", "hidden"],
+                  "c": 1
+                },
+                {
+                  "q": "What is on top of a birthday cake?",
+                  "a": ["Ice cream", "Candles", "Bread", "Fruit"],
+                  "c": 1
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Invitations",
+              "revision": "When inviting someone, we say 'Would you like to come to my party?' or 'I would like to invite you to...' We can accept by saying 'Yes, I would love to!' or 'Thank you, I'd love to come.' We can decline politely by saying 'I'm sorry, I can't come because...'",
+              "questions": [
+                {
+                  "q": "Which is a polite invitation?",
+                  "a": ["Come to my party!", "You must come!", "Would you like to come to my party?", "Go to my party."],
+                  "c": 2
+                },
+                {
+                  "q": "How do you accept an invitation politely?",
+                  "a": ["No.", "Maybe.", "Yes, I would love to!", "I don't know."],
+                  "c": 2
+                },
+                {
+                  "q": "To decline an invitation politely, you say:",
+                  "a": ["I don't want to.", "No way!", "I'm sorry, I can't come because I have other plans.", "Not interested."],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'I would like to ________ you to my birthday party.'",
+                  "a": ["tell", "invite", "ask", "call"],
+                  "c": 1
+                },
+                {
+                  "q": "A party invitation usually includes the ________, time, and place.",
+                  "a": ["colour", "date", "weather", "food"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Eating Right",
+          "topics": {
+            "5.1": {
+              "name": "Food Vocabulary",
+              "revision": "Different food groups include fruits (apples, bananas), vegetables (carrots, broccoli), proteins (chicken, fish, eggs), grains (rice, bread, pasta), and dairy (milk, cheese, yogurt). A balanced meal has food from different groups. 'Eat right' means choosing healthy food.",
+              "questions": [
+                {
+                  "q": "Which is a fruit?",
+                  "a": ["Carrot", "Apple", "Bread", "Rice"],
+                  "c": 1
+                },
+                {
+                  "q": "Which food gives you protein?",
+                  "a": ["Rice", "Apple", "Fish", "Bread"],
+                  "c": 2
+                },
+                {
+                  "q": "Dairy products are made from ________.",
+                  "a": ["rice", "milk", "fruit", "vegetables"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We should eat ________ food to stay healthy.'",
+                  "a": ["junk", "healthy", "fast", "sweet"],
+                  "c": 1
+                },
+                {
+                  "q": "Which of these is a grain?",
+                  "a": ["Milk", "Chicken", "Rice", "Apple"],
+                  "c": 2
+                },
+                {
+                  "q": "Carrots and broccoli are ________.",
+                  "a": ["fruits", "vegetables", "grains", "dairy"],
+                  "c": 1
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Countable and Uncountable Nouns",
+              "revision": "Countable nouns can be counted (one apple, two apples). Uncountable nouns cannot be counted with numbers (rice, water, milk, bread). We use 'some' for both types: 'some apples,' 'some water.' We use 'a/an' for countable singular nouns: 'an apple,' 'a banana.' We use 'any' in questions and negatives.",
+              "questions": [
+                {
+                  "q": "Which noun is countable?",
+                  "a": ["Rice", "Water", "Banana", "Milk"],
+                  "c": 2
+                },
+                {
+                  "q": "Which noun is uncountable?",
+                  "a": ["Apple", "Egg", "Bread", "Biscuit"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'I would like ________ orange juice, please.'",
+                  "a": ["a", "an", "some", "many"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'There are ________ apples on the table.'",
+                  "a": ["some", "a", "an", "much"],
+                  "c": 0
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["I need a milk.", "I need milks.", "I need some milk.", "I need many milk."],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'There isn't ________ sugar left.'",
+                  "a": ["some", "many", "any", "a"],
+                  "c": 2
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Healthy vs Unhealthy Food",
+              "revision": "Healthy food includes fruits, vegetables, whole grains, and lean proteins. Unhealthy food includes too much sugar, salt, and oil — like candy, chips, and fried food. We should eat 'a balanced diet' with food from all food groups. 'Eat right, stay bright!'",
+              "questions": [
+                {
+                  "q": "Which is an unhealthy snack?",
+                  "a": ["Apple", "Carrot sticks", "Potato chips", "Yogurt"],
+                  "c": 2
+                },
+                {
+                  "q": "Eating too much sugar is bad because it can cause ________.",
+                  "a": ["tooth decay", "good eyesight", "strong bones", "tall height"],
+                  "c": 0
+                },
+                {
+                  "q": "A balanced diet means eating ________.",
+                  "a": ["only fruits", "only vegetables", "different types of food", "only rice"],
+                  "c": 2
+                },
+                {
+                  "q": "We should drink at least ________ glasses of water a day.",
+                  "a": ["1", "2", "8", "20"],
+                  "c": 2
+                },
+                {
+                  "q": "Which meal is the healthiest?",
+                  "a": ["Fried chicken and chips", "Rice with vegetables and fish", "Candy and cake", "Instant noodles and sausage"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Getting Around",
+          "topics": {
+            "6.1": {
+              "name": "Types of Transport",
+              "revision": "Different types of transport: land (car, bus, train, bicycle, motorcycle), water (boat, ship, ferry), and air (aeroplane, helicopter). We use 'by' before the means of transport: 'I go to school by bus.' 'He travels by plane.' For walking, we say 'on foot.'",
+              "questions": [
+                {
+                  "q": "Which transport goes on water?",
+                  "a": ["Car", "Bus", "Boat", "Bicycle"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'I go to school ________ bus.'",
+                  "a": ["on", "in", "by", "at"],
+                  "c": 2
+                },
+                {
+                  "q": "If you walk to a place, you go ________.",
+                  "a": ["by foot", "on foot", "with foot", "in foot"],
+                  "c": 1
+                },
+                {
+                  "q": "Which is the fastest way to travel between countries?",
+                  "a": ["Car", "Aeroplane", "Bicycle", "Ferry"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ flies in the sky and can carry many people.",
+                  "a": ["train", "ship", "aeroplane", "bus"],
+                  "c": 2
+                },
+                {
+                  "q": "A vehicle with two wheels that you pedal is a ________.",
+                  "a": ["car", "motorcycle", "bicycle", "bus"],
+                  "c": 2
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Giving Directions",
+              "revision": "To give directions, we use: 'Go straight,' 'Turn left,' 'Turn right,' 'Go past the...' 'It's on your left/right.' 'It's next to / opposite / between...' Prepositions of place help describe where things are. Example: 'The school is next to the mosque.'",
+              "questions": [
+                {
+                  "q": "If you need to go to the right side, you ________.",
+                  "a": ["go straight", "turn left", "turn right", "go back"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'Go straight ________ the traffic lights, then turn left.'",
+                  "a": ["until", "after", "before", "when"],
+                  "c": 0
+                },
+                {
+                  "q": "The library is ________ the bank and the post office. (between)",
+                  "a": ["between", "next", "opposite", "behind"],
+                  "c": 0
+                },
+                {
+                  "q": "'The hospital is opposite the park.' Means the hospital is ________.",
+                  "a": ["behind the park", "across from the park", "next to the park", "inside the park"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Excuse me, how do I ________ to the train station?'",
+                  "a": ["reach", "get", "arrive", "find"],
+                  "c": 1
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Road Safety",
+              "revision": "Road safety rules: Look left and right before crossing the road. Use the pedestrian crossing (zebra crossing). Wait for the green man signal. Do not play near the road. Wear a helmet when cycling. Always hold an adult's hand when crossing the road.",
+              "questions": [
+                {
+                  "q": "What should you do before crossing the road?",
+                  "a": ["Run quickly", "Look left and right", "Close your eyes", "Jump across"],
+                  "c": 1
+                },
+                {
+                  "q": "Where is the safest place to cross the road?",
+                  "a": ["In the middle of the road", "At the zebra crossing", "Near a corner", "Behind a car"],
+                  "c": 1
+                },
+                {
+                  "q": "What should you wear when riding a bicycle?",
+                  "a": ["A hat", "A helmet", "Sunglasses", "A coat"],
+                  "c": 1
+                },
+                {
+                  "q": "The green man signal means you can ________.",
+                  "a": ["run fast", "cross the road", "stop walking", "play"],
+                  "c": 1
+                },
+                {
+                  "q": "Is it safe to play near the road?",
+                  "a": ["Yes, it is fun.", "No, it is dangerous.", "Yes, if you are careful.", "Only in the morning."],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Helping Out",
+          "topics": {
+            "7.1": {
+              "name": "Household Chores",
+              "revision": "Household chores are tasks we do at home: sweep the floor, mop the floor, wash the dishes, fold the clothes, water the plants, make the bed, set the table, take out the rubbish, and tidy up the room. Helping with chores shows responsibility and helps our family.",
+              "questions": [
+                {
+                  "q": "What chore uses a broom?",
+                  "a": ["Wash dishes", "Sweep the floor", "Fold clothes", "Cook food"],
+                  "c": 1
+                },
+                {
+                  "q": "After eating, we should ________ the dishes.",
+                  "a": ["sweep", "water", "wash", "fold"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'I ________ the plants every evening.'",
+                  "a": ["wash", "water", "sweep", "cook"],
+                  "c": 1
+                },
+                {
+                  "q": "What do you do with dirty clothes?",
+                  "a": ["Fold them", "Wash them", "Throw them", "Hide them"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'After waking up, I ________ my bed.'",
+                  "a": ["make", "wash", "sweep", "fold"],
+                  "c": 0
+                },
+                {
+                  "q": "We should ________ the rubbish when the bin is full.",
+                  "a": ["take out", "bring in", "put away", "throw away"],
+                  "c": 0
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Present Continuous Tense",
+              "revision": "We use present continuous tense to talk about actions happening NOW. Form: subject + am/is/are + verb-ing. Examples: 'I am reading a book.' 'She is cooking dinner.' 'They are playing in the garden.' We often use 'now,' 'at the moment,' or 'right now.'",
+              "questions": [
+                {
+                  "q": "Complete: 'She ________ (sweep) the floor now.'",
+                  "a": ["sweeps", "is sweeping", "sweep", "swept"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'They ________ (play) in the park at the moment.'",
+                  "a": ["are playing", "play", "played", "is playing"],
+                  "c": 0
+                },
+                {
+                  "q": "What is the correct -ing form of 'run'?",
+                  "a": ["runing", "running", "runnning", "runing"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I ________ (do) my homework right now.'",
+                  "a": ["am doing", "is doing", "do", "does"],
+                  "c": 0
+                },
+                {
+                  "q": "'He ________ (read) a book at the moment.' Complete:",
+                  "a": ["reads", "is reading", "read", "are reading"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence describes an action happening now?",
+                  "a": ["I eat breakfast every day.", "I am eating breakfast now.", "I ate breakfast yesterday.", "I will eat breakfast later."],
+                  "c": 1
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Helping Family",
+              "revision": "Helping family is important. You can help your parents by doing chores, caring for younger siblings, and being responsible. 'Can I help you?' is a polite offer. 'May I...' is also polite. 'Thank you for helping me' shows appreciation. Everyone in the family should help out.",
+              "questions": [
+                {
+                  "q": "How can you help your parents at home?",
+                  "a": ["Make a mess", "Do chores", "Watch TV all day", "Sleep"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: '________ I help you with the cooking, Mum?'",
+                  "a": ["Must", "Can", "Do", "Will"],
+                  "c": 1
+                },
+                {
+                  "q": "What should you say when someone helps you?",
+                  "a": ["Go away!", "Thank you!", "Not now!", "I don't need help."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I like to ________ my little sister with her homework.'",
+                  "a": ["help", "watch", "tell", "hear"],
+                  "c": 0
+                },
+                {
+                  "q": "Helping at home shows that you are ________.",
+                  "a": ["lazy", "responsible", "naughty", "selfish"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Amazing Animals",
+          "topics": {
+            "8.1": {
+              "name": "Animal Vocabulary",
+              "revision": "Animals can be grouped: mammals (cats, dogs, elephants - have fur/hair, give birth), birds (eagles, parrots - have feathers, lay eggs), reptiles (snakes, lizards - have scales, cold-blooded), amphibians (frogs - live on land and water), and fish (live in water, have scales and fins).",
+              "questions": [
+                {
+                  "q": "Which animal is a mammal?",
+                  "a": ["Snake", "Eagle", "Elephant", "Fish"],
+                  "c": 2
+                },
+                {
+                  "q": "Birds have ________.",
+                  "a": ["fur", "feathers", "scales", "fins"],
+                  "c": 1
+                },
+                {
+                  "q": "A reptile has ________ on its body.",
+                  "a": ["fur", "feathers", "scales", "hair"],
+                  "c": 2
+                },
+                {
+                  "q": "A frog is an ________ because it lives on land and in water.",
+                  "a": ["reptile", "amphibian", "mammal", "bird"],
+                  "c": 1
+                },
+                {
+                  "q": "Which animal can fly?",
+                  "a": ["Dog", "Cat", "Eagle", "Snake"],
+                  "c": 2
+                },
+                {
+                  "q": "Fish use ________ to breathe underwater.",
+                  "a": ["lungs", "gills", "skin", "nose"],
+                  "c": 1
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Comparatives and Superlatives",
+              "revision": "Comparatives compare two things: add '-er' (fast → faster) or use 'more' for longer words (beautiful → more beautiful). Use 'than': 'A cheetah is faster than a horse.' Superlatives compare three or more: add '-est' (fast → fastest) or use 'most' for longer words (beautiful → most beautiful). Use 'the': 'The cheetah is the fastest animal.'",
+              "questions": [
+                {
+                  "q": "An elephant is ________ (big) than a mouse.",
+                  "a": ["bigger", "more big", "biggest", "big"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'A cheetah is the ________ (fast) land animal.'",
+                  "a": ["faster", "most fast", "fastest", "fast"],
+                  "c": 2
+                },
+                {
+                  "q": "A giraffe is ________ (tall) than a horse.",
+                  "a": ["tallest", "taller", "more tall", "tall"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["A dog is more friendly a cat.", "A dog is friendly than a cat.", "A dog is friendlier than a cat.", "A dog is more friendlier than a cat."],
+                  "c": 2
+                },
+                {
+                  "q": "The blue whale is the ________ (large) animal on Earth.",
+                  "a": ["larger", "most large", "largest", "large"],
+                  "c": 2
+                },
+                {
+                  "q": "A tortoise is ________ (slow) than a rabbit.",
+                  "a": ["slowest", "slower", "more slow", "slow"],
+                  "c": 1
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Animal Habitats",
+              "revision": "Animals live in different habitats: forests (tigers, monkeys), deserts (camels, lizards), oceans (whales, fish), polar regions (polar bears, penguins), grasslands (lions, zebras), and rainforests (parrots, snakes). Each habitat provides food, water, and shelter for the animals that live there.",
+              "questions": [
+                {
+                  "q": "Where do polar bears live?",
+                  "a": ["Desert", "Ocean", "Polar region", "Forest"],
+                  "c": 2
+                },
+                {
+                  "q": "Camels are well-suited to live in the ________.",
+                  "a": ["forest", "desert", "ocean", "polar region"],
+                  "c": 1
+                },
+                {
+                  "q": "A fish lives in ________.",
+                  "a": ["the forest", "the desert", "the water", "the mountain"],
+                  "c": 2
+                },
+                {
+                  "q": "Which animal lives in the rainforest?",
+                  "a": ["Polar bear", "Camel", "Parrot", "Penguin"],
+                  "c": 2
+                },
+                {
+                  "q": "A habitat provides animals with food, water, and ________.",
+                  "a": ["toys", "shelter", "money", "books"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "Get Active!",
+          "topics": {
+            "9.1": {
+              "name": "Sports and Activities",
+              "revision": "Sports vocabulary: football, badminton, swimming, cycling, running, basketball, tennis, volleyball, and hockey. We use 'play' for ball sports (play football), 'go' for activities ending in -ing (go swimming), and 'do' for other sports (do karate). Staying active keeps our body healthy and strong.",
+              "questions": [
+                {
+                  "q": "Complete: 'I ________ badminton every weekend.'",
+                  "a": ["go", "do", "play", "make"],
+                  "c": 2
+                },
+                {
+                  "q": "We use 'go' with which sport?",
+                  "a": ["Football", "Badminton", "Swimming", "Tennis"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'She ________ yoga every morning.'",
+                  "a": ["plays", "goes", "does", "makes"],
+                  "c": 2
+                },
+                {
+                  "q": "Badminton is played with a racket and a ________.",
+                  "a": ["ball", "shuttlecock", "net", "bat"],
+                  "c": 1
+                },
+                {
+                  "q": "How many players are on a football team on the field?",
+                  "a": ["5", "7", "11", "15"],
+                  "c": 2
+                },
+                {
+                  "q": "Cycling helps to strengthen your ________.",
+                  "a": ["arms", "eyes", "legs", "ears"],
+                  "c": 2
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Abilities - 'Can' and 'Can't'",
+              "revision": "We use 'can' to talk about abilities (things we are able to do) and 'can't' (cannot) for things we are not able to do. Examples: 'I can swim.' 'She can't ride a bicycle.' 'Can you play the piano?' 'Yes, I can.' / 'No, I can't.' The verb after 'can' never changes — no 's' or 'ing.'",
+              "questions": [
+                {
+                  "q": "Complete: 'She ________ swim very well.'",
+                  "a": ["can", "cann", "cans", "can to"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'He ________ (cannot) ride a bicycle yet.'",
+                  "a": ["cannot", "can't", "can not", "all of the above"],
+                  "c": 3
+                },
+                {
+                  "q": "Complete: '________ you speak English?'",
+                  "a": ["Are", "Can", "Do", "Have"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["He can plays football.", "He can played football.", "He can play football.", "He can playing football."],
+                  "c": 2
+                },
+                {
+                  "q": "'I can't come to the party.' 'Can't' means ________.",
+                  "a": ["can", "cannot", "will", "must"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'My sister ________ cook delicious food.'",
+                  "a": ["can", "cans", "can to", "canning"],
+                  "c": 0
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Staying Healthy and Active",
+              "revision": "To stay healthy: exercise regularly (at least 60 minutes a day), eat balanced meals, drink enough water (8 glasses a day), get enough sleep (9-11 hours for children), and practise good hygiene. Exercise makes our heart strong, builds muscles, and helps us feel happy.",
+              "questions": [
+                {
+                  "q": "How much exercise should children get each day?",
+                  "a": ["10 minutes", "30 minutes", "60 minutes", "120 minutes"],
+                  "c": 2
+                },
+                {
+                  "q": "Children should sleep about ________ hours every night.",
+                  "a": ["5-6", "9-11", "14-16", "3-4"],
+                  "c": 1
+                },
+                {
+                  "q": "Exercise is good for our ________.",
+                  "a": ["heart", "eyes", "ears", "hair"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'We should ________ our hands before eating.'",
+                  "a": ["wash", "cut", "shake", "raise"],
+                  "c": 0
+                },
+                {
+                  "q": "Watching TV for many hours without moving is called a ________ lifestyle.",
+                  "a": ["healthy", "active", "sedentary", "fun"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "10": {
+          "name": "What's the Matter?",
+          "topics": {
+            "10.1": {
+              "name": "Illnesses and Ailments",
+              "revision": "Common illnesses: fever, cough, cold, headache, stomachache, toothache, flu, and sore throat. We say 'I have a headache' (or 'a fever'/'a cold'). For body parts, we say 'My leg hurts' or 'I have a pain in my leg.' When you are sick, you should see a doctor and rest.",
+              "questions": [
+                {
+                  "q": "Complete: 'I have ________ headache.'",
+                  "a": ["an", "the", "a", "some"],
+                  "c": 2
+                },
+                {
+                  "q": "If your tooth hurts, you have a ________.",
+                  "a": ["headache", "toothache", "stomachache", "fever"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'What's the ________? You look unwell.'",
+                  "a": ["wrong", "matter", "problem", "thing"],
+                  "c": 1
+                },
+                {
+                  "q": "When you have a cold, you might ________ a lot.",
+                  "a": ["laugh", "sneeze", "shout", "jump"],
+                  "c": 1
+                },
+                {
+                  "q": "Where do you go when you are sick?",
+                  "a": ["School", "Library", "Doctor", "Playground"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ is when your body temperature is higher than normal.",
+                  "a": ["cold", "cough", "fever", "headache"],
+                  "c": 2
+                }
+              ]
+            },
+            "10.2": {
+              "name": "Giving Advice - 'should' and 'shouldn't'",
+              "revision": "We use 'should' to give advice (recommend doing something) and 'shouldn't' (= should not) to advise against something. Examples: 'You should drink lots of water.' 'You shouldn't eat too much candy.' 'Should I see a doctor?' 'Yes, you should.' After 'should,' the verb stays in its base form.",
+              "questions": [
+                {
+                  "q": "Complete: 'You ________ drink more water when you have a fever.'",
+                  "a": ["should", "shouldn't", "can't", "mustn't"],
+                  "c": 0
+                },
+                {
+                  "q": "If you have a cough, you ________ eat ice cream.",
+                  "a": ["should", "shouldn't", "must", "can"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'You ________ see a doctor if you feel very sick.'",
+                  "a": ["shouldn't", "should", "don't", "won't"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence gives good advice?",
+                  "a": ["You should play in the rain when you have a fever.", "You should rest when you are sick.", "You should eat spicy food when you have a stomachache.", "You should run when your leg hurts."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'You ________ stay up late on a school night.'",
+                  "a": ["should", "shouldn't", "must", "can"],
+                  "c": 1
+                },
+                {
+                  "q": "'You should wear a jacket.' This means it is ________.",
+                  "a": ["a good idea to wear a jacket", "a bad idea to wear a jacket", "not allowed to wear a jacket", "too late to wear a jacket"],
+                  "c": 0
+                }
+              ]
+            },
+            "10.3": {
+              "name": "At the Pharmacy",
+              "revision": "A pharmacist works at a pharmacy. When you are sick, you can buy medicine. Common phrases: 'I need something for a headache.' 'Do you have medicine for a cough?' 'Take this medicine three times a day.' 'One spoonful after meals.' Always follow the doctor's instructions when taking medicine.",
+              "questions": [
+                {
+                  "q": "Where can you buy medicine?",
+                  "a": ["At a school", "At a pharmacy", "At a park", "At a restaurant"],
+                  "c": 1
+                },
+                {
+                  "q": "The person who prepares medicine at a pharmacy is a ________.",
+                  "a": ["doctor", "nurse", "pharmacist", "teacher"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'Take this medicine three times ________ day.'",
+                  "a": ["a", "an", "the", "per"],
+                  "c": 0
+                },
+                {
+                  "q": "How should you take medicine?",
+                  "a": ["Skip doses if you feel better", "Follow the doctor's instructions", "Take extra to recover faster", "Share with friends"],
+                  "c": 1
+                },
+                {
+                  "q": "What should you ask the pharmacist?",
+                  "a": ["Where is the playground?", "Do you have medicine for a cough?", "What time is it?", "Can I watch TV?"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
