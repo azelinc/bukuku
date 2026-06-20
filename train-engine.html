@@ -103,6 +103,8 @@
                 if (correctCount > (scores[`train-${n}`] || 0)) {
                     scores[`train-${n}`] = correctCount;
                     await setDoc(userRef, { scores: scores }, { merge: true });
+                    // Also write to old path (source of truth for school hub)
+                    await setDoc(doc(db, "users", kidName), { scores: scores }, { merge: true });
                 }
             }
 

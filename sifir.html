@@ -176,6 +176,8 @@
                 if (score > (scores['sifir-master'] || 0)) {
                     scores['sifir-master'] = score;
                     await setDoc(userRef, { scores: scores }, { merge: true });
+                    // Also write to old path (source of truth for school hub)
+                    await setDoc(doc(db, "users", kidName), { scores: scores }, { merge: true });
                 }
                 sync.innerText = "✅ Result Saved!";
             } catch (e) {

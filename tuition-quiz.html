@@ -256,7 +256,7 @@
             
             if (kidName) {
                 try {
-                    // Use profiles/{uid}/{kidName} when authenticated, fallback to users/{kidName}
+                    // Use profiles/{uid}/children/{kidName} when authenticated
                     let userRef;
                     try {
                         const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
@@ -274,7 +274,10 @@
 
                     if (score > (currentScores[firebaseKey] || 0)) {
                         currentScores[firebaseKey] = score;
+                        // Write to new path
                         await setDoc(userRef, { scores: currentScores }, { merge: true });
+                        // Also write to users/{kidName} (source of truth for school hub)
+                        await setDoc(doc(db, "users", kidName), { scores: currentScores }, { merge: true });
                         syncMsg.innerText = "✅ NEW PERSONAL BEST SAVED!";
                     } else {
                         syncMsg.innerText = "✅ Progress Synced to Cloud";

@@ -100,14 +100,10 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
-        // Helper: get profile doc ref (profiles/{uid}/{kidName} when authed, users/{kidName} fallback)
+        // Helper: get profile doc ref — always use users/{kidName} for now
+        // (old path that has all existing data; new path profiles/{uid}/children/{kidName}
+        // is written simultaneously for future migration)
         function getProfileDocRef() {
-            try {
-                const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
-                if (stored && stored.uid) {
-                    return doc(db, "profiles", stored.uid, "children", kidName);
-                }
-            } catch(e) {}
             return doc(db, "users", kidName);
         }
 
