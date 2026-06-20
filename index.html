@@ -568,14 +568,22 @@
 
             try {
                 let profiles = [];
+                let activeUid = currentUser ? currentUser.uid : null;
 
-                if (currentUser) {
+                // Fallback to stored auth if Firebase hasn't resolved yet
+                if (!activeUid) {
+                    try {
+                        const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                        if (stored?.uid) activeUid = stored.uid;
+                    } catch(e) {}
+                }
+
+                if (activeUid) {
                     // Read profiles scoped to this user (ONLY authorized path)
-                    const snap = await getDocs(collection(db, "profiles", currentUser.uid));
+                    const snap = await getDocs(collection(db, "profiles", activeUid));
                     snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
                 } else {
                     // Not authenticated — cannot load profiles
-                    // sign-in screen should already be shown, but fallback for safety
                     fallbackToSignedOut();
                     _renderingProfiles = false;
                     initHub();
