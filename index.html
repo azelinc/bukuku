@@ -737,7 +737,10 @@
                     row.className = "profile-row";
                     const btn = document.createElement('button');
                     btn.className = "idx-btn blue-btn profile-select-btn";
-                    btn.innerHTML = `👤 ${name}`;
+                    const tahun = data.tahun || '';
+                    const dlpLabel = data.dlp ? ' DLP' : '';
+                    const tahunInfo = tahun ? `<span style="display:block;font-size:0.7rem;font-weight:600;opacity:0.7;margin-top:2px;">Tahun ${tahun}${dlpLabel}</span>` : '';
+                    btn.innerHTML = `<span style="display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;"><span>👤 ${name}</span>${tahunInfo}</span>`;
                     btn.onclick = () => selectProfile(name);
 
                     const ctrl = document.createElement('div');
