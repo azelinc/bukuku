@@ -1,0 +1,2399 @@
+{
+  "subjects": {
+    "math6": {
+      "name": "Mathematics Year 6 (DLP)",
+      "icon": "🔢",
+      "color": "#4a90e2",
+      "units": {
+        "1": {
+          "name": "Numbers and Operations",
+          "topics": {
+            "1.1": {
+              "name": "Number Value",
+              "revision": "Numbers up to 10 000 000 are read and written in words and numerals. Each digit has a place value (millions, hundred thousands, ten thousands, thousands, hundreds, tens, ones). Partitioning a number means expressing it as the sum of its digit values.",
+              "questions": [
+                {
+                  "q": "What is 5 000 000 + 300 000 + 20 000 + 4 000 + 100 + 70 + 8?",
+                  "a": [
+                    "5 342 178",
+                    "5 324 718",
+                    "5 324 087",
+                    "5 324 178"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Write 'three million, four hundred fifty thousand, six hundred and two' in numerals.",
+                  "a": [
+                    "3 450 602",
+                    "3 405 602",
+                    "3 540 602",
+                    "3 450 062"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "How is 8 091 005 read in words?",
+                  "a": [
+                    "Eighty million, ninety-one thousand and five",
+                    "Eight million, ninety-one thousand and five",
+                    "Eight million, nine hundred ten thousand and five",
+                    "Eight million, nine hundred one thousand and five"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the value of the digit 6 in 6 245 000?",
+                  "a": [
+                    "6 000 000",
+                    "60 000",
+                    "6 000",
+                    "600 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which number shows 9 million 8 thousand 7 hundred 5 tens?",
+                  "a": [
+                    "9 080 750",
+                    "9 008 750",
+                    "9 008 705",
+                    "9 800 750"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is 7 350 000 + 648 000?",
+                  "a": [
+                    "7 898 000",
+                    "7 988 000",
+                    "8 098 000",
+                    "7 998 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Partition 4 216 309 correctly.",
+                  "a": [
+                    "4 000 000 + 200 000 + 16 000 + 300 + 9",
+                    "4 000 000 + 200 000 + 10 000 + 6 000 + 309",
+                    "4 000 000 + 21 000 + 6 000 + 300 + 9",
+                    "4 000 000 + 200 000 + 10 000 + 6 000 + 300 + 9"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which digit is in the hundred thousands place in 7 853 124?",
+                  "a": [
+                    "7",
+                    "5",
+                    "8",
+                    "3"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Write 2 060 400 in words.",
+                  "a": [
+                    "Two million, six thousand, four hundred",
+                    "Twenty million, sixty thousand, four hundred",
+                    "Two million, sixty thousand, four hundred",
+                    "Two million, six hundred thousand, four hundred"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What number is 10 000 more than 3 490 500?",
+                  "a": [
+                    "3 500 500",
+                    "3 490 600",
+                    "3 500 000",
+                    "3 590 500"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Place Value and Digit Value",
+              "revision": "Every digit in a number has a place value (millions, hundred thousands, ten thousands, etc.) and a digit value (the actual value of that digit). For example, in 5 432 100, the digit 4 is in the hundred thousands place and its digit value is 400 000.",
+              "questions": [
+                {
+                  "q": "In 9 876 543, what is the place value of the digit 7?",
+                  "a": [
+                    "Ten thousands",
+                    "Hundreds",
+                    "Thousands",
+                    "Hundred thousands"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "What is the digit value of 5 in 5 678 901?",
+                  "a": [
+                    "500 000",
+                    "5 000",
+                    "50 000",
+                    "5 000 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "In 2 408 736, which digit is in the hundred thousands place?",
+                  "a": [
+                    "0",
+                    "4",
+                    "2",
+                    "8"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the digit value of 9 in 3 490 256?",
+                  "a": [
+                    "900 000",
+                    "9 000",
+                    "900",
+                    "90 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "In 7 005 300, what is the place value of the digit 5?",
+                  "a": [
+                    "Thousands",
+                    "Ten thousands",
+                    "Tens",
+                    "Hundred thousands"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "What is the digit value of 1 in 1 234 567?",
+                  "a": [
+                    "10 000",
+                    "1 000 000",
+                    "1 000",
+                    "100 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In 6 821 094, which digits are in the millions and ten thousands places?",
+                  "a": [
+                    "8 and 2",
+                    "6 and 1",
+                    "6 and 2",
+                    "6 and 8"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is the place value of the digit 0 in 4 056 200?",
+                  "a": [
+                    "Millions",
+                    "Ten thousands",
+                    "Thousands",
+                    "Hundred thousands"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "In 5 930 821, the digit 3 has a digit value of...",
+                  "a": [
+                    "30 000",
+                    "300",
+                    "300 000",
+                    "3 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "What is the total digit value of the digits 4 and 7 in 4 700 123?",
+                  "a": [
+                    "4 000 700",
+                    "4 007 000",
+                    "4 070 000",
+                    "4 700 000"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Compare and Arrange Numbers",
+              "revision": "Numbers can be compared using place values. Start from the leftmost digit. To arrange in ascending order (smallest to largest) or descending order (largest to smallest), compare the numbers digit by digit from the highest place value.",
+              "questions": [
+                {
+                  "q": "Which is the smallest number? 5 230 000, 5 023 000, 5 203 000, 5 032 000",
+                  "a": [
+                    "5 032 000",
+                    "5 203 000",
+                    "5 023 000",
+                    "5 230 000"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Arrange in ascending order: 3 450 000, 3 405 000, 3 504 000, 3 054 000",
+                  "a": [
+                    "3 054 000, 3 405 000, 3 450 000, 3 504 000",
+                    "3 504 000, 3 450 000, 3 405 000, 3 054 000",
+                    "3 054 000, 3 405 000, 3 504 000, 3 450 000",
+                    "3 405 000, 3 450 000, 3 504 000, 3 054 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which symbol completes: 7 084 300 ___ 7 084 030?",
+                  "a": [
+                    "<",
+                    ">",
+                    "=",
+                    "Cannot tell"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Arrange in descending order: 6 210 000, 6 021 000, 6 201 000, 6 120 000",
+                  "a": [
+                    "6 210 000, 6 120 000, 6 201 000, 6 021 000",
+                    "6 210 000, 6 201 000, 6 120 000, 6 021 000",
+                    "6 021 000, 6 120 000, 6 201 000, 6 210 000",
+                    "6 201 000, 6 210 000, 6 120 000, 6 021 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of these is the largest number?",
+                  "a": [
+                    "9 876 543",
+                    "9 867 543",
+                    "9 786 543",
+                    "9 876 453"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.4": {
+              "name": "Round Off Numbers",
+              "revision": "Rounding off makes a number simpler while keeping its value close. Look at the digit to the right of the rounding place. If it is 5 or more, round up. If it is 4 or less, round down.",
+              "questions": [
+                {
+                  "q": "Round off 2 456 789 to the nearest million.",
+                  "a": [
+                    "2 500 000",
+                    "2 000 000",
+                    "2 400 000",
+                    "3 000 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Round off 5 634 200 to the nearest hundred thousand.",
+                  "a": [
+                    "5 700 000",
+                    "5 630 000",
+                    "5 500 000",
+                    "5 600 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A zoo had 1 825 400 visitors. Round this to the nearest ten thousand.",
+                  "a": [
+                    "1 800 000",
+                    "1 830 000",
+                    "1 820 000",
+                    "1 825 000"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Round off 8 473 650 to the nearest thousand.",
+                  "a": [
+                    "8 470 000",
+                    "8 500 000",
+                    "8 474 000",
+                    "8 473 000"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The population of a state is 3 947 281. What is this rounded to the nearest hundred thousand?",
+                  "a": [
+                    "4 000 000",
+                    "3 940 000",
+                    "3 900 000",
+                    "3 950 000"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "1.5": {
+              "name": "Number Patterns",
+              "revision": "Number patterns follow a rule such as adding, subtracting, multiplying, or dividing by a fixed number. To find the next term, identify the pattern rule and apply it consistently.",
+              "questions": [
+                {
+                  "q": "What is the next number: 2 500 000, 2 600 000, 2 700 000, 2 800 000, ___?",
+                  "a": [
+                    "3 000 000",
+                    "2 850 000",
+                    "2 750 000",
+                    "2 900 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Find the missing number: 5 010 000, 5 030 000, ___, 5 070 000, 5 090 000",
+                  "a": [
+                    "5 020 000",
+                    "5 040 000",
+                    "5 050 000",
+                    "5 060 000"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is the pattern rule: 3 000 000, 3 150 000, 3 300 000, 3 450 000?",
+                  "a": [
+                    "Add 100 000",
+                    "Add 200 000",
+                    "Add 50 000",
+                    "Add 150 000"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Find the next term: 8 000 000, 4 000 000, 2 000 000, 1 000 000, ___",
+                  "a": [
+                    "750 000",
+                    "500 000",
+                    "250 000",
+                    "0"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the 5th term starting at 1 000 000 adding 250 000 each time?",
+                  "a": [
+                    "1 500 000",
+                    "2 250 000",
+                    "1 750 000",
+                    "2 000 000"
+                  ],
+                  "c": 3
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Fractions, Decimals, and Percentages",
+          "topics": {
+            "2.1": {
+              "name": "Mixed Numbers and Improper Fractions",
+              "revision": "A mixed number has a whole number and a proper fraction (e.g. 3 1/2). An improper fraction has a numerator larger than the denominator (e.g. 7/2). To convert a mixed number to an improper fraction, multiply the whole number by the denominator and add the numerator.",
+              "questions": [
+                {
+                  "q": "Convert 13/5 to a mixed number.",
+                  "a": [
+                    "3 2/5",
+                    "2 4/5",
+                    "2 3/5",
+                    "2 2/5"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Convert 4 2/3 to an improper fraction.",
+                  "a": [
+                    "13/3",
+                    "14/3",
+                    "15/3",
+                    "12/3"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of these is an improper fraction?",
+                  "a": [
+                    "2/3",
+                    "9/4",
+                    "3/4",
+                    "4/5"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Convert 19/6 to a mixed number.",
+                  "a": [
+                    "4 1/6",
+                    "3 2/6",
+                    "3 1/6",
+                    "2 7/6"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Convert 5 1/4 to an improper fraction.",
+                  "a": [
+                    "19/4",
+                    "20/4",
+                    "21/4",
+                    "22/4"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which mixed number equals 17/3?",
+                  "a": [
+                    "6 1/3",
+                    "5 2/3",
+                    "4 2/3",
+                    "5 1/3"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Convert 7 3/8 to an improper fraction.",
+                  "a": [
+                    "59/8",
+                    "58/8",
+                    "60/8",
+                    "56/8"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which improper fraction equals 2 5/6?",
+                  "a": [
+                    "12/6",
+                    "18/6",
+                    "17/6",
+                    "15/6"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Convert 22/7 to a mixed number.",
+                  "a": [
+                    "3 2/7",
+                    "4 1/7",
+                    "3 1/7",
+                    "2 1/7"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is 6 1/2 as an improper fraction?",
+                  "a": [
+                    "11/2",
+                    "14/2",
+                    "13/2",
+                    "12/2"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Addition and Subtraction of Fractions",
+              "revision": "To add or subtract fractions, the denominators must be the same. Find the lowest common multiple (LCM), convert the fractions, then add or subtract only the numerators. Simplify the answer when possible.",
+              "questions": [
+                {
+                  "q": "2/5 + 1/5 = ___",
+                  "a": [
+                    "3/5",
+                    "3/10",
+                    "4/5",
+                    "2/10"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "7/9 - 2/9 = ___",
+                  "a": [
+                    "5/18",
+                    "5/9",
+                    "9/9",
+                    "4/9"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1/2 + 1/3 = ___",
+                  "a": [
+                    "5/6",
+                    "2/5",
+                    "2/6",
+                    "3/5"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3/4 - 1/2 = ___",
+                  "a": [
+                    "1/4",
+                    "2/4",
+                    "1/2",
+                    "3/2"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A baker used 2/3 kg flour for bread and 1/4 kg for cakes. How much flour total?",
+                  "a": [
+                    "11/12 kg",
+                    "1 kg",
+                    "3/12 kg",
+                    "3/7 kg"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "2 1/4 + 1 2/4 = ___",
+                  "a": [
+                    "4 1/4",
+                    "3 1/4",
+                    "3 2/4",
+                    "3 3/4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5/6 - 1/3 = ___",
+                  "a": [
+                    "1/2",
+                    "4/6",
+                    "4/3",
+                    "1/3"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3 1/2 - 1 3/4 = ___",
+                  "a": [
+                    "1 3/4",
+                    "1 1/4",
+                    "2 1/4",
+                    "1 1/2"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "2/7 + 3/14 = ___",
+                  "a": [
+                    "5/21",
+                    "1/2",
+                    "5/7",
+                    "5/14"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siti had 2 1/3 m ribbon. She used 1 5/6 m. How much left?",
+                  "a": [
+                    "1/6 m",
+                    "1/2 m",
+                    "5/6 m",
+                    "1/3 m"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Multiplication and Division of Fractions",
+              "revision": "To multiply fractions, multiply the numerators and denominators. To divide fractions, flip the second fraction (reciprocal) and multiply. Always simplify the final answer.",
+              "questions": [
+                {
+                  "q": "2/3 × 1/4 = ___",
+                  "a": [
+                    "3/12 = 1/4",
+                    "3/7",
+                    "2/7",
+                    "2/12 = 1/6"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "3/5 × 10 = ___",
+                  "a": [
+                    "10",
+                    "6",
+                    "30/5 = 5",
+                    "15/5 = 3"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1/2 ÷ 1/4 = ___",
+                  "a": [
+                    "2",
+                    "1/8",
+                    "8",
+                    "4"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "2 1/2 × 3 = ___",
+                  "a": [
+                    "7 1/2",
+                    "5 1/2",
+                    "8",
+                    "6 1/2"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3/4 ÷ 2 = ___",
+                  "a": [
+                    "2/4 = 1/2",
+                    "8/3",
+                    "3/8",
+                    "6/4 = 1 1/2"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A recipe needs 3/4 cup sugar. How much for 3 batches?",
+                  "a": [
+                    "1 3/4 cups",
+                    "2 cups",
+                    "2 1/4 cups",
+                    "3 cups"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "5/8 × 16 = ___",
+                  "a": [
+                    "80/8 = 9",
+                    "20",
+                    "5",
+                    "10"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "2/3 ÷ 4/5 = ___",
+                  "a": [
+                    "6/20 = 3/10",
+                    "15/8",
+                    "10/12 = 5/6",
+                    "8/15"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "1 1/5 × 2 1/2 = ___",
+                  "a": [
+                    "3",
+                    "3 1/2",
+                    "2 1/2",
+                    "2"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A tailor cuts 3/4 m cloth into 6 equal pieces. Each piece?",
+                  "a": [
+                    "1/4 m",
+                    "1/3 m",
+                    "1/6 m",
+                    "1/8 m"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "2.4": {
+              "name": "Decimals up to 3 Decimal Places",
+              "revision": "Decimals with three decimal places represent thousandths (e.g. 0.001). To add, subtract, multiply, or divide decimals, align the decimal points. Zeros can be added at the end to keep the same number of decimal places.",
+              "questions": [
+                {
+                  "q": "What is 3.456 rounded to 2 decimal places?",
+                  "a": [
+                    "3.45",
+                    "3.47",
+                    "3.5",
+                    "3.46"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5.200 + 1.075 = ___",
+                  "a": [
+                    "6.200",
+                    "6.375",
+                    "6.275",
+                    "6.2750"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is the digit value of 7 in 2.037?",
+                  "a": [
+                    "0.07",
+                    "0.7",
+                    "0.007",
+                    "7"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "8.450 - 3.275 = ___",
+                  "a": [
+                    "5.175",
+                    "4.175",
+                    "5.225",
+                    "5.125"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Write 4.5 as a decimal with 3 decimal places.",
+                  "a": [
+                    "4.050",
+                    "4.5000",
+                    "4.500",
+                    "4.005"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which is larger: 0.250 or 0.3?",
+                  "a": [
+                    "They are equal",
+                    "0.3",
+                    "Cannot tell",
+                    "0.250"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "1.75 × 100 = ___",
+                  "a": [
+                    "175",
+                    "1750",
+                    "17.5",
+                    "0.175"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "6.300 ÷ 10 = ___",
+                  "a": [
+                    "63.00",
+                    "630",
+                    "0.630",
+                    "0.063"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Arrange in ascending order: 0.5, 0.055, 0.55, 0.505",
+                  "a": [
+                    "0.5, 0.055, 0.55, 0.505",
+                    "0.55, 0.505, 0.5, 0.055",
+                    "0.055, 0.505, 0.5, 0.55",
+                    "0.055, 0.5, 0.505, 0.55"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Add 2.345 + 1.28 (answer with 3 decimal places).",
+                  "a": [
+                    "3.573",
+                    "3.425",
+                    "3.625",
+                    "2.625"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.5": {
+              "name": "Fractions, Decimals, and Percentages Relationship",
+              "revision": "Percent means 'out of 100'. A fraction can be converted to a percentage by making the denominator 100. A decimal is converted to a percentage by multiplying by 100. Percentages can also be expressed as fractions or decimals.",
+              "questions": [
+                {
+                  "q": "What is 1/4 as a percentage?",
+                  "a": [
+                    "40%",
+                    "75%",
+                    "25%",
+                    "50%"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What is 0.6 as a percentage?",
+                  "a": [
+                    "60%",
+                    "6%",
+                    "600%",
+                    "0.6%"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Express 75% as a fraction in simplest form.",
+                  "a": [
+                    "7/10",
+                    "3/4",
+                    "75/100",
+                    "1/4"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Convert 3/5 to a percentage.",
+                  "a": [
+                    "60%",
+                    "35%",
+                    "65%",
+                    "30%"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "What is 12.5% as a decimal?",
+                  "a": [
+                    "12.5",
+                    "0.125",
+                    "0.0125",
+                    "1.25"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Money",
+          "topics": {
+            "3.1": {
+              "name": "Basic Operations with Money",
+              "revision": "Money in Malaysia uses Ringgit (RM) and sen. 100 sen = RM1. Addition, subtraction, multiplication, and division can be applied to money in real-life situations like shopping, saving, and budgeting.",
+              "questions": [
+                {
+                  "q": "Aminah buys a book for RM12.50 and a pen for RM4.80. How much does she spend?",
+                  "a": [
+                    "RM16.30",
+                    "RM17.80",
+                    "RM17.30",
+                    "RM16.80"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Raj has RM50. He buys a toy for RM21.90. How much change?",
+                  "a": [
+                    "RM28.90",
+                    "RM27.90",
+                    "RM28.10",
+                    "RM29.10"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A packet of biscuits costs RM2.40. Cost of 5 packets?",
+                  "a": [
+                    "RM12.00",
+                    "RM10.00",
+                    "RM13.00",
+                    "RM11.50"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Four friends share a gift costing RM36.80 equally. Each pays?",
+                  "a": [
+                    "RM8.40",
+                    "RM9.50",
+                    "RM9.20",
+                    "RM8.20"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ahmad buys 3 kg rice at RM3.80/kg. Pays RM20. Change?",
+                  "a": [
+                    "RM8.60",
+                    "RM7.60",
+                    "RM8.40",
+                    "RM9.60"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A school collects RM1 250.50. Raises RM380.75 more. Total?",
+                  "a": [
+                    "RM1 531.25",
+                    "RM1 630.25",
+                    "RM1 621.25",
+                    "RM1 631.25"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A pencil costs RM1.20. How many with RM10?",
+                  "a": [
+                    "9",
+                    "8",
+                    "10",
+                    "7"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siti buys 2 kg apples at RM4.50/kg and 1 kg oranges at RM3.80. Total?",
+                  "a": [
+                    "RM12.30",
+                    "RM13.30",
+                    "RM12.80",
+                    "RM13.80"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Movie ticket: child RM8.50, adult RM12.00. Cost of 2 children + 1 adult?",
+                  "a": [
+                    "RM31.00",
+                    "RM28.50",
+                    "RM30.00",
+                    "RM29.00"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Priya had RM50. Spent RM12.90 on lunch, RM8.60 on book. Left?",
+                  "a": [
+                    "RM38.50",
+                    "RM28.50",
+                    "RM28.40",
+                    "RM27.50"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Profit, Loss, and Discount",
+              "revision": "Profit = Selling Price - Cost Price. Loss = Cost Price - Selling Price. Discount = Original Price - Selling Price. A discount is often given as a percentage off the original price.",
+              "questions": [
+                {
+                  "q": "A trader buys a shirt for RM15 and sells for RM22. Profit?",
+                  "a": [
+                    "RM7",
+                    "RM5",
+                    "RM6",
+                    "RM8"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A shop sells a bicycle for RM350. Cost price was RM400. Loss?",
+                  "a": [
+                    "RM100",
+                    "RM25",
+                    "RM75",
+                    "RM50"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A bag originally RM80 is sold at RM56 during a sale. Discount?",
+                  "a": [
+                    "RM30",
+                    "RM24",
+                    "RM16",
+                    "RM20"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A vendor buys 50 oranges for RM20 and sells each at RM0.60. Total profit?",
+                  "a": [
+                    "RM8",
+                    "RM12",
+                    "RM10",
+                    "RM15"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A watch originally RM200 is sold at 15% discount. Sale price?",
+                  "a": [
+                    "RM185",
+                    "RM170",
+                    "RM180",
+                    "RM175"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Dividends and Taxes",
+              "revision": "Dividends are payments made by a company to its shareholders from profits. Tax is a compulsory payment to the government. In Malaysia, taxes include income tax and sales and service tax (SST).",
+              "questions": [
+                {
+                  "q": "A company pays RM0.15 dividend per share. You own 200 shares. Dividend received?",
+                  "a": [
+                    "RM45",
+                    "RM20",
+                    "RM15",
+                    "RM30"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A restaurant bill is RM120. SST of 6% is added. Total bill?",
+                  "a": [
+                    "RM126.00",
+                    "RM127.20",
+                    "RM129.60",
+                    "RM121.20"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mr Tan earns RM4 000/month and pays 3% income tax. Monthly tax?",
+                  "a": [
+                    "RM80",
+                    "RM120",
+                    "RM100",
+                    "RM150"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A company profit is RM500 000. 40% paid as dividends. Amount paid?",
+                  "a": [
+                    "RM150 000",
+                    "RM250 000",
+                    "RM200 000",
+                    "RM100 000"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "An item costs RM50 before SST. After 10% SST, final price?",
+                  "a": [
+                    "RM60",
+                    "RM55",
+                    "RM52",
+                    "RM50.50"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.4": {
+              "name": "Financial Management",
+              "revision": "Financial management involves planning how to earn, save, spend, and invest money wisely. A budget tracks income and expenses. Saving regularly and spending wisely helps achieve financial goals.",
+              "questions": [
+                {
+                  "q": "Ahmad receives RM20 pocket money/week. Saves RM5/week. Saved after 6 weeks?",
+                  "a": [
+                    "RM35",
+                    "RM30",
+                    "RM20",
+                    "RM25"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Family spends: food RM800, transport RM600, housing RM1 200. Total?",
+                  "a": [
+                    "RM2 600",
+                    "RM2 400",
+                    "RM2 800",
+                    "RM2 500"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Mei Mei wants RM200 for a bag. Saves RM10/week. Weeks needed?",
+                  "a": [
+                    "10 weeks",
+                    "25 weeks",
+                    "15 weeks",
+                    "20 weeks"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Household income RM5 000/month, spending RM4 200. Saving per month?",
+                  "a": [
+                    "RM800",
+                    "RM900",
+                    "RM700",
+                    "RM600"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which is a good financial habit?",
+                  "a": [
+                    "Spending all your money immediately",
+                    "Not keeping track of expenses",
+                    "Saving 10% of your income regularly",
+                    "Borrowing for unnecessary items"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Time",
+          "topics": {
+            "4.1": {
+              "name": "Duration and Time Estimation",
+              "revision": "Duration is the amount of time between two events. Time can be measured in seconds, minutes, hours, days, weeks, months, and years. To estimate duration, round the start and end times to the nearest convenient unit.",
+              "questions": [
+                {
+                  "q": "A class starts at 8:15 a.m. and ends at 9:45 a.m. How long?",
+                  "a": [
+                    "1 hour 45 minutes",
+                    "1 hour 15 minutes",
+                    "1 hour",
+                    "1 hour 30 minutes"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "School holiday starts 20 March, ends 28 March. How many days?",
+                  "a": [
+                    "10 days",
+                    "7 days",
+                    "9 days",
+                    "8 days"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A movie starts at 2:50 p.m., lasts 1 hour 40 minutes. End time?",
+                  "a": [
+                    "4:40 p.m.",
+                    "4:30 p.m.",
+                    "4:20 p.m.",
+                    "3:30 p.m."
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A bus journey takes 2 hours 45 minutes. Departs 9:30 a.m. Arrival?",
+                  "a": [
+                    "12:15 p.m.",
+                    "11:45 a.m.",
+                    "12:30 p.m.",
+                    "11:15 a.m."
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Approximately how many hours in a year?",
+                  "a": [
+                    "8 000 hours",
+                    "8 760 hours",
+                    "9 000 hours",
+                    "7 200 hours"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Addition and Subtraction of Time",
+              "revision": "To add or subtract time, work with hours and minutes separately. Remember that 60 minutes = 1 hour. When subtracting, you may need to convert 1 hour to 60 minutes.",
+              "questions": [
+                {
+                  "q": "Add: 3 hours 45 mins + 2 hours 30 mins = ___",
+                  "a": [
+                    "6 hours 15 mins",
+                    "5 hours 15 mins",
+                    "6 hours 30 mins",
+                    "5 hours 75 mins"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Subtract: 7 hours 20 mins - 3 hours 45 mins = ___",
+                  "a": [
+                    "4 hours 25 mins",
+                    "3 hours 25 mins",
+                    "3 hours 35 mins",
+                    "2 hours 45 mins"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Aisha studies 1 hour 45 mins each day. Time in 4 days?",
+                  "a": [
+                    "7 hours 30 mins",
+                    "6 hours 30 mins",
+                    "6 hours",
+                    "7 hours"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A train leaves 10:50 a.m., arrives 1:15 p.m. Journey time?",
+                  "a": [
+                    "2 hours 25 mins",
+                    "1 hour 25 mins",
+                    "3 hours 25 mins",
+                    "2 hours 35 mins"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Add: 5 hours 50 mins + 4 hours 20 mins = ___",
+                  "a": [
+                    "9 hours 70 mins",
+                    "10 hours 10 mins",
+                    "9 hours 10 mins",
+                    "10 hours 20 mins"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Multiplication and Division of Time",
+              "revision": "To multiply time, multiply both hours and minutes by the number. If minutes exceed 60, convert to hours. To divide time, convert everything to minutes first, divide, then convert back.",
+              "questions": [
+                {
+                  "q": "2 hours 30 mins × 3 = ___",
+                  "a": [
+                    "7 hours",
+                    "6 hours 90 mins",
+                    "7 hours 30 mins",
+                    "6 hours 30 mins"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "10 hours ÷ 4 = ___",
+                  "a": [
+                    "2 hours 30 mins",
+                    "2 hours 15 mins",
+                    "2 hours 45 mins",
+                    "2 hours 50 mins"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Factory runs 3 shifts of 8 hours 15 mins each. Total time?",
+                  "a": [
+                    "25 hours",
+                    "24 hours",
+                    "24 hours 15 mins",
+                    "24 hours 45 mins"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "1 day 6 hours ÷ 5 = ___",
+                  "a": [
+                    "5 hours 30 mins",
+                    "6 hours",
+                    "7 hours 12 mins",
+                    "5 hours"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "4 hours 20 mins × 6 = ___",
+                  "a": [
+                    "24 hours 120 mins",
+                    "26 hours",
+                    "25 hours",
+                    "26 hours 20 mins"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.4": {
+              "name": "World Time Zones",
+              "revision": "The world is divided into 24 time zones, each 15 degrees of longitude wide. Malaysia uses Malaysia Time (MYT, UTC+8). When it is noon in Malaysia, it is different times in other parts of the world depending on their time zone.",
+              "questions": [
+                {
+                  "q": "If 3:00 p.m. in Malaysia (UTC+8), what time in London (UTC+0) standard time?",
+                  "a": [
+                    "8:00 a.m.",
+                    "3:00 a.m.",
+                    "7:00 a.m.",
+                    "11:00 a.m."
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "When 10:00 p.m. in Malaysia, what time in Japan (UTC+9)?",
+                  "a": [
+                    "12:00 a.m.",
+                    "9:00 p.m.",
+                    "10:00 p.m.",
+                    "11:00 p.m."
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Malaysia is UTC+8. Perth is also UTC+8. If 9 a.m. in KL, time in Perth?",
+                  "a": [
+                    "8 a.m.",
+                    "9 a.m.",
+                    "10 a.m.",
+                    "11 a.m."
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Flight KL (UTC+8) to Dubai (UTC+4) at 10:00 p.m., 7-hour flight. Local time in Dubai on landing?",
+                  "a": [
+                    "5:00 a.m. (next day)",
+                    "4:00 a.m. (next day)",
+                    "2:00 a.m. (next day)",
+                    "6:00 a.m. (next day)"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "If 6:00 a.m. in New York (UTC-5), what time in Malaysia (UTC+8)?",
+                  "a": [
+                    "7:00 p.m.",
+                    "9:00 p.m.",
+                    "6:00 p.m.",
+                    "8:00 p.m."
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Length, Mass, and Volume of Liquid",
+          "topics": {
+            "5.1": {
+              "name": "Length (Problem Solving)",
+              "revision": "Length is measured in mm, cm, m, and km. 1 cm = 10 mm, 1 m = 100 cm, 1 km = 1 000 m. Problem solving with length involves conversion between units and arithmetic operations.",
+              "questions": [
+                {
+                  "q": "A rope is 3.5 m long. What is its length in cm?",
+                  "a": [
+                    "0.35 cm",
+                    "350 cm",
+                    "3 500 cm",
+                    "35 cm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A race track is 5 km. How many metres?",
+                  "a": [
+                    "5 000 m",
+                    "500 m",
+                    "50 000 m",
+                    "50 m"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ali walks 850 m to school and 850 m home. Distance in 5 days?",
+                  "a": [
+                    "4.25 km",
+                    "7.5 km",
+                    "8.5 km",
+                    "17 km"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Wood 2.8 m long cut into 4 equal pieces. Each piece in cm?",
+                  "a": [
+                    "0.7 cm",
+                    "7 cm",
+                    "70 cm",
+                    "700 cm"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ribbon 4.25 m long, 1.8 m used. Left in cm?",
+                  "a": [
+                    "255 cm",
+                    "235 cm",
+                    "260 cm",
+                    "245 cm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Building height 45 m. Flagpole is 12.5 m shorter. Flagpole height?",
+                  "a": [
+                    "32 m",
+                    "31.5 m",
+                    "33.5 m",
+                    "32.5 m"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Rectangular field 120 m long, 85 m wide. Total distance around?",
+                  "a": [
+                    "410 m",
+                    "420 m",
+                    "390 m",
+                    "205 m"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Convert 0.075 km to metres.",
+                  "a": [
+                    "750 m",
+                    "0.75 m",
+                    "7.5 m",
+                    "75 m"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "String 3 m 45 cm + another 2 m 80 cm. Total in metres?",
+                  "a": [
+                    "5.25 m",
+                    "6.45 m",
+                    "5.85 m",
+                    "6.25 m"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Garden 6.5 m wide. Fencing costs RM12 per metre. Cost to fence the width?",
+                  "a": [
+                    "RM60",
+                    "RM78",
+                    "RM84",
+                    "RM72"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Mass (Problem Solving)",
+              "revision": "Mass is measured in grams (g) and kilograms (kg). 1 kg = 1 000 g. Problem solving with mass involves converting between units and applying the four operations in real-world contexts.",
+              "questions": [
+                {
+                  "q": "A sack of rice weighs 5 kg. What is this in grams?",
+                  "a": [
+                    "500 g",
+                    "5 000 g",
+                    "50 g",
+                    "50 000 g"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A cake recipe needs 250 g flour. How many grams for 4 cakes?",
+                  "a": [
+                    "800 g",
+                    "1 200 g",
+                    "1 000 g",
+                    "750 g"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Bag of potatoes 2.5 kg, onions 1.8 kg. Total mass?",
+                  "a": [
+                    "3.3 kg",
+                    "4.3 kg",
+                    "4.8 kg",
+                    "3.8 kg"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Watermelon 3.2 kg cut into 8 equal slices. Each slice in g?",
+                  "a": [
+                    "350 g",
+                    "320 g",
+                    "400 g",
+                    "500 g"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "250 g cheese costs RM6.50. Cost of 1 kg?",
+                  "a": [
+                    "RM28.00",
+                    "RM25.00",
+                    "RM24.00",
+                    "RM26.00"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Parcel 1.85 kg. Another is 0.65 kg heavier. Second parcel mass?",
+                  "a": [
+                    "2.55 kg",
+                    "2.1 kg",
+                    "2.5 kg",
+                    "2.4 kg"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Avan 42.5 kg. Father is 28.6 kg heavier. Father's mass?",
+                  "a": [
+                    "69.1 kg",
+                    "71.1 kg",
+                    "70.1 kg",
+                    "72.1 kg"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Convert 4 750 g to kg.",
+                  "a": [
+                    "0.475 kg",
+                    "47.5 kg",
+                    "475 kg",
+                    "4.75 kg"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Baker uses 1.2 kg sugar daily. Sugar in 15 days?",
+                  "a": [
+                    "20 kg",
+                    "12 kg",
+                    "15 kg",
+                    "18 kg"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Cat 3.8 kg, dog 12.5 kg. Dog is how many times heavier? (1 decimal)",
+                  "a": [
+                    "2.5 times",
+                    "3.8 times",
+                    "3.3 times",
+                    "4.5 times"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Volume of Liquid (Problem Solving)",
+              "revision": "Volume of liquid is measured in millilitres (mℓ) and litres (ℓ). 1 ℓ = 1 000 mℓ. Problem solving involves conversion between units and real-life applications.",
+              "questions": [
+                {
+                  "q": "A bottle holds 1.5 ℓ water. How many mℓ?",
+                  "a": [
+                    "15 000 mℓ",
+                    "15 mℓ",
+                    "1 500 mℓ",
+                    "150 mℓ"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A tank has 3 ℓ 250 mℓ water. How many mℓ?",
+                  "a": [
+                    "3 250 mℓ",
+                    "325 mℓ",
+                    "32 500 mℓ",
+                    "3 025 mℓ"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A jug has 2 ℓ orange juice. Shared equally by 5 friends. Each gets?",
+                  "a": [
+                    "450 mℓ",
+                    "400 mℓ",
+                    "350 mℓ",
+                    "500 mℓ"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Fish tank holds 12.5 ℓ. How many 500 mℓ bottles fill it?",
+                  "a": [
+                    "20 bottles",
+                    "30 bottles",
+                    "15 bottles",
+                    "25 bottles"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A recipe needs 750 mℓ milk. How many litres?",
+                  "a": [
+                    "0.075 ℓ",
+                    "7.5 ℓ",
+                    "0.75 ℓ",
+                    "75 ℓ"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Bucket has 5 ℓ 600 mℓ water. 1 ℓ 800 mℓ used. Water left in ℓ?",
+                  "a": [
+                    "3.2 ℓ",
+                    "4.8 ℓ",
+                    "3.8 ℓ",
+                    "4.2 ℓ"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Factory produces 2 500 bottles/day. Each holds 250 mℓ. Total volume in ℓ?",
+                  "a": [
+                    "6.25 ℓ",
+                    "625 ℓ",
+                    "6 250 ℓ",
+                    "62.5 ℓ"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Drink stall has 3 ℓ juice. Each cup holds 200 mℓ. How many cups?",
+                  "a": [
+                    "15 cups",
+                    "20 cups",
+                    "12 cups",
+                    "10 cups"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "8 containers, each 0.75 ℓ. Total volume?",
+                  "a": [
+                    "6 ℓ",
+                    "6.5 ℓ",
+                    "7.5 ℓ",
+                    "5.5 ℓ"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bottle holds 1 ℓ. After drinking 340 mℓ, water left in mℓ?",
+                  "a": [
+                    "660 mℓ",
+                    "560 mℓ",
+                    "760 mℓ",
+                    "640 mℓ"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "5.4": {
+              "name": "Mixed Operations with Measurement",
+              "revision": "Mixed operations combine different types of measurements (length, mass, volume). When solving problems, first ensure all values are in the same unit. Then apply the correct order of operations.",
+              "questions": [
+                {
+                  "q": "A box: length 50 cm, mass 2 kg, volume 3 ℓ. Express all in m, kg, ℓ.",
+                  "a": [
+                    "0.5 m, 2 000 g, 3 ℓ",
+                    "50 cm, 2 kg, 3 000 mℓ",
+                    "5 m, 2 kg, 3 ℓ",
+                    "0.5 m, 2 kg, 3 ℓ"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bottle holds 1.5 ℓ water. Empty mass 200 g. Full mass in kg? (1 ℓ water = 1 kg)",
+                  "a": [
+                    "1.5 kg",
+                    "2.0 kg",
+                    "1.7 kg",
+                    "1.3 kg"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Rope 4 m 25 cm cut into 5 equal pieces. Each piece in cm?",
+                  "a": [
+                    "80 cm",
+                    "90 cm",
+                    "85 cm",
+                    "75 cm"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tank has 6.5 ℓ. Water added at 0.5 ℓ/min for 8 mins. Final volume?",
+                  "a": [
+                    "8.5 ℓ",
+                    "10.5 ℓ",
+                    "9.5 ℓ",
+                    "11 ℓ"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Box mass 3.2 kg full, 1.5 kg empty. Contents mass?",
+                  "a": [
+                    "2.3 kg",
+                    "1.7 kg",
+                    "1.5 kg",
+                    "2.7 kg"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Space",
+          "topics": {
+            "6.1": {
+              "name": "3D Shapes (Properties, Nets)",
+              "revision": "3D shapes have faces, edges, and vertices. Common 3D shapes include cubes, cuboids, cylinders, cones, spheres, and pyramids. A net is a 2D shape that folds to form a 3D shape.",
+              "questions": [
+                {
+                  "q": "How many faces does a cube have?",
+                  "a": [
+                    "4",
+                    "8",
+                    "6",
+                    "12"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "How many edges does a cuboid have?",
+                  "a": [
+                    "8",
+                    "10",
+                    "12",
+                    "6"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which 3D shape has 1 curved face, 1 flat circular face, and 1 vertex?",
+                  "a": [
+                    "Cone",
+                    "Pyramid",
+                    "Cylinder",
+                    "Sphere"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "How many vertices does a square-based pyramid have?",
+                  "a": [
+                    "8",
+                    "5",
+                    "4",
+                    "6"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A net of 6 equal squares folds to form which 3D shape?",
+                  "a": [
+                    "Cube",
+                    "Cuboid",
+                    "Square pyramid",
+                    "Triangular prism"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Angles (Estimate, Measure, Draw)",
+              "revision": "An angle is formed by two rays meeting at a common point (vertex). Angles are measured in degrees (°). A right angle is 90°, an acute angle is less than 90°, and an obtuse angle is between 90° and 180°.",
+              "questions": [
+                {
+                  "q": "What type of angle is 120°?",
+                  "a": [
+                    "Right angle",
+                    "Obtuse angle",
+                    "Acute angle",
+                    "Reflex angle"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Estimated size of an angle that looks like a right angle?",
+                  "a": [
+                    "90°",
+                    "45°",
+                    "180°",
+                    "120°"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "An angle of 35° is called...",
+                  "a": [
+                    "A straight angle",
+                    "An obtuse angle",
+                    "A right angle",
+                    "An acute angle"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A straight angle measures how many degrees?",
+                  "a": [
+                    "360°",
+                    "90°",
+                    "270°",
+                    "180°"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The complement of a 35° angle is? (Two angles sum to 90°)",
+                  "a": [
+                    "125°",
+                    "55°",
+                    "145°",
+                    "65°"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Perimeter and Area",
+              "revision": "Perimeter is the total distance around a 2D shape. Area is the space inside a 2D shape. Rectangle: Perimeter = 2 × (length + width), Area = length × width. Square: Perimeter = 4 × side, Area = side × side.",
+              "questions": [
+                {
+                  "q": "Rectangle length 12 cm, width 8 cm. Perimeter?",
+                  "a": [
+                    "48 cm",
+                    "96 cm",
+                    "20 cm",
+                    "40 cm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A square of side 9 cm. Area?",
+                  "a": [
+                    "72 cm²",
+                    "18 cm²",
+                    "81 cm²",
+                    "36 cm²"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Rectangle area 60 cm², width 5 cm. Length?",
+                  "a": [
+                    "15 cm",
+                    "12 cm",
+                    "8 cm",
+                    "10 cm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Rectangular garden 15 m long, 10 m wide. Perimeter?",
+                  "a": [
+                    "150 m",
+                    "25 m",
+                    "100 m",
+                    "50 m"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Square perimeter 36 cm. Side length?",
+                  "a": [
+                    "9 cm",
+                    "8 cm",
+                    "12 cm",
+                    "6 cm"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "6.4": {
+              "name": "Volume of 3D Shapes",
+              "revision": "Volume is the space a 3D shape occupies. Cuboid: Volume = length × width × height. Cube: Volume = side × side × side. Volume is measured in cubic units (cm³, m³).",
+              "questions": [
+                {
+                  "q": "Cuboid: length 6 cm, width 4 cm, height 3 cm. Volume?",
+                  "a": [
+                    "54 cm³",
+                    "72 cm³",
+                    "36 cm³",
+                    "48 cm³"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Cube side 5 cm. Volume?",
+                  "a": [
+                    "100 cm³",
+                    "25 cm³",
+                    "125 cm³",
+                    "50 cm³"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Box volume 96 cm³, length 8 cm, width 4 cm. Height?",
+                  "a": [
+                    "4 cm",
+                    "3 cm",
+                    "6 cm",
+                    "2 cm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tank 10 cm long, 8 cm wide, 5 cm high. Volume in mℓ? (1 cm³ = 1 mℓ)",
+                  "a": [
+                    "400 mℓ",
+                    "80 mℓ",
+                    "4 000 mℓ",
+                    "40 mℓ"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Cube volume 64 cm³. Side length?",
+                  "a": [
+                    "4 cm",
+                    "8 cm",
+                    "16 cm",
+                    "2 cm"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Coordinates, Ratio, and Proportion",
+          "topics": {
+            "7.1": {
+              "name": "Coordinates in Four Quadrants",
+              "revision": "Coordinates (x, y) locate points on a Cartesian plane. The x-axis is horizontal and the y-axis is vertical. The four quadrants are separated by the axes. The origin is (0, 0).",
+              "questions": [
+                {
+                  "q": "In which quadrant is point (-3, 4)?",
+                  "a": [
+                    "Quadrant III",
+                    "Quadrant II",
+                    "Quadrant I",
+                    "Quadrant IV"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What are the coordinates of the origin?",
+                  "a": [
+                    "(0, 0)",
+                    "(1, 1)",
+                    "(1, 0)",
+                    "(0, 1)"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "From (2, 3), move 3 left and 2 down. End point?",
+                  "a": [
+                    "(5, 5)",
+                    "(-1, 1)",
+                    "(-1, 5)",
+                    "(5, 1)"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which point lies in Quadrant IV?",
+                  "a": [
+                    "(-5, 2)",
+                    "(5, 2)",
+                    "(5, -2)",
+                    "(-5, -2)"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A(-2, -3), B(4, -3). Horizontal distance?",
+                  "a": [
+                    "4 units",
+                    "2 units",
+                    "7 units",
+                    "6 units"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Ratio",
+              "revision": "A ratio compares two quantities of the same kind. It is written as a:b. Ratios can be simplified by dividing by a common factor. For example, 4:6 simplifies to 2:3.",
+              "questions": [
+                {
+                  "q": "Class has 12 boys and 8 girls. Ratio of boys to girls?",
+                  "a": [
+                    "12:8",
+                    "4:3",
+                    "3:2",
+                    "2:3"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Simplify 15:25.",
+                  "a": [
+                    "3:5",
+                    "15:25",
+                    "3:4",
+                    "5:3"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Recipe uses 3 cups flour, 2 cups sugar. Ratio flour to sugar?",
+                  "a": [
+                    "2:3",
+                    "5:3",
+                    "3:5",
+                    "3:2"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "18 red marbles, 24 blue marbles. Ratio red:blue in simplest form?",
+                  "a": [
+                    "18:24",
+                    "4:3",
+                    "6:8",
+                    "3:4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Fruit basket apples:oranges = 5:3. 25 apples. How many oranges?",
+                  "a": [
+                    "10",
+                    "20",
+                    "12",
+                    "15"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Proportion",
+              "revision": "Proportion states that two ratios are equal, e.g. 2:3 = 4:6. To solve proportion problems, find the relationship between the numbers and apply it consistently. Cross-multiplication can find unknown values.",
+              "questions": [
+                {
+                  "q": "2 pencils cost RM1.20. Cost of 5 pencils?",
+                  "a": [
+                    "RM3.60",
+                    "RM2.40",
+                    "RM2.50",
+                    "RM3.00"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Car travels 120 km in 2 hours. Distance in 5 hours (same speed)?",
+                  "a": [
+                    "300 km",
+                    "200 km",
+                    "240 km",
+                    "360 km"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "3 eggs cost RM1.50. How many eggs for RM4.50?",
+                  "a": [
+                    "12 eggs",
+                    "6 eggs",
+                    "8 eggs",
+                    "9 eggs"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Complete: 4:7 = ___ : 28",
+                  "a": [
+                    "16",
+                    "12",
+                    "14",
+                    "8"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Map scale 1 cm : 5 km. Map distance 8 cm. Actual distance?",
+                  "a": [
+                    "80 km",
+                    "25 km",
+                    "13 km",
+                    "40 km"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.4": {
+              "name": "Unitary Method",
+              "revision": "The unitary method finds the value of one unit first, then multiplies to find the value of many units. If 5 books cost RM20, then 1 costs RM4, and 8 cost RM32.",
+              "questions": [
+                {
+                  "q": "6 apples cost RM4.80. Cost of 1 apple?",
+                  "a": [
+                    "RM0.60",
+                    "RM0.80",
+                    "RM1.00",
+                    "RM0.90"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "8 notebooks cost RM12. Cost of 3 notebooks?",
+                  "a": [
+                    "RM3.00",
+                    "RM4.50",
+                    "RM4.00",
+                    "RM6.00"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Car uses 8 litres petrol for 100 km. Petrol for 250 km?",
+                  "a": [
+                    "18 litres",
+                    "24 litres",
+                    "16 litres",
+                    "20 litres"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "5 workers paint a house in 12 days. Time for 1 worker?",
+                  "a": [
+                    "48 days",
+                    "60 days",
+                    "12 days",
+                    "5.5 days"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Baker makes 40 cookies/hour. Cookies in 3 hours 30 mins?",
+                  "a": [
+                    "160 cookies",
+                    "130 cookies",
+                    "140 cookies",
+                    "120 cookies"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Data Handling",
+          "topics": {
+            "8.1": {
+              "name": "Pie Charts",
+              "revision": "A pie chart is a circular graph divided into sectors representing proportions of a whole. Each sector's size is proportional to its quantity. The whole pie represents 100% or the total.",
+              "questions": [
+                {
+                  "q": "In a pie chart, football sector is 90°. Fraction who chose football?",
+                  "a": [
+                    "1/3",
+                    "1/2",
+                    "3/4",
+                    "1/4"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "50% walk, 25% take bus, rest cycle. Percentage who cycle?",
+                  "a": [
+                    "50%",
+                    "10%",
+                    "75%",
+                    "25%"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A pie chart has 4 equal sectors. Angle of each sector?",
+                  "a": [
+                    "60°",
+                    "45°",
+                    "180°",
+                    "90°"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Survey of 200 people, 40% prefer tea. How many prefer tea?",
+                  "a": [
+                    "120 people",
+                    "60 people",
+                    "40 people",
+                    "80 people"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Expenses: Food 120°, Transport 90°, Savings 60°, Others 90°. Fraction on food?",
+                  "a": [
+                    "1/6",
+                    "1/4",
+                    "1/2",
+                    "1/3"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Line Graphs",
+              "revision": "A line graph shows how data changes over time. The x-axis usually shows time, and the y-axis shows the quantity. Points are connected with straight lines to show trends.",
+              "questions": [
+                {
+                  "q": "Temp: 8am=25°C, 10am=28°C, 12pm=32°C. Trend?",
+                  "a": [
+                    "Temperature fluctuates",
+                    "Temperature stays the same",
+                    "Temperature is decreasing",
+                    "Temperature is increasing"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Line goes from 20 to 50 over 3 hours. Increase per hour?",
+                  "a": [
+                    "10 per hour",
+                    "20 per hour",
+                    "5 per hour",
+                    "15 per hour"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "X-axis: Jan-Jun, Y-axis: rainfall (mm). What does the graph show?",
+                  "a": [
+                    "Temperature over 6 months",
+                    "Rainfall over 6 months",
+                    "Average temperature",
+                    "Number of rainy days"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Savings: Week1=RM5, Week2=RM10, Week4=RM20. If pattern continues, Week3?",
+                  "a": [
+                    "RM15",
+                    "RM18",
+                    "RM25",
+                    "RM12"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Line from 30°C at 12pm to 26°C at 6pm. Total decrease?",
+                  "a": [
+                    "2°C",
+                    "8°C",
+                    "6°C",
+                    "4°C"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Mean, Mode, Median",
+              "revision": "The mean is the average (total ÷ number of values). The mode is the most frequent value. The median is the middle value when data is arranged in order. These are measures of central tendency.",
+              "questions": [
+                {
+                  "q": "Find the mean: 4, 8, 6, 10, 7",
+                  "a": [
+                    "7",
+                    "6",
+                    "8",
+                    "9"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Mode of: 3, 5, 3, 7, 8, 3, 6?",
+                  "a": [
+                    "5",
+                    "7",
+                    "3",
+                    "8"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Median of: 12, 8, 15, 10, 6?",
+                  "a": [
+                    "12",
+                    "10",
+                    "8",
+                    "15"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Scores: 85, 90, 75, 90. Mode?",
+                  "a": [
+                    "75",
+                    "85",
+                    "80",
+                    "90"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mean of 2, 4, 6, 8, 10?",
+                  "a": [
+                    "5",
+                    "8",
+                    "6",
+                    "7"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

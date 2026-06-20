@@ -271,7 +271,7 @@
                 // Set page title based on year
                 document.getElementById('page-title').innerHTML = `📘 KSSR Tahun ${selectedYear} (DLP) <span id="streak-display"></span>`;
 
-                const jsonFile = selectedYear === 5 ? 'math5-tb.json' : 'math4-tb.json';
+                const jsonFile = `math${selectedYear}-tb.json`;
                 const resp = await fetch(jsonFile);
                 if (!resp || !resp.ok) throw new Error('Failed to load questions');
                 questionBank = await resp.json();
