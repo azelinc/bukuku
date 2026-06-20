@@ -393,7 +393,7 @@
                 if (oldSnap.empty) return 0;
 
                 // Check if already migrated (profiles exist under this uid)
-                const newSnap = await getDocs(collection(db, "profiles", uid));
+                const newSnap = await getDocs(collection(db, "profiles", uid, "children"));
                 if (!newSnap.empty) return 0; // already migrated
 
                 let migrated = 0;
@@ -680,7 +680,7 @@
 
                 if (activeUid) {
                     // Read profiles scoped to this user (ONLY authorized path)
-                    const snap = await getDocs(collection(db, "profiles", activeUid));
+                    const snap = await getDocs(collection(db, "profiles", activeUid, "children"));
                     snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
                 } else {
                     // Not authenticated — cannot load profiles
