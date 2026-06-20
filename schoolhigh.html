@@ -100,6 +100,17 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
+        // Helper: get profile doc ref (profiles/{uid}/{kidName} when authed, users/{kidName} fallback)
+        function getProfileDocRef() {
+            try {
+                const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                if (stored && stored.uid) {
+                    return doc(db, "profiles", stored.uid, kidName);
+                }
+            } catch(e) {}
+            return doc(db, "users", kidName);
+        }
+
         let activeGrade = 'all';
         let activeSubject = 'all';
         let cachedScores = {}; 
@@ -113,7 +124,7 @@
         ];
 
         async function updateBadge() {
-            const userDoc = await getDoc(doc(db, "users", kidName));
+            const userDoc = await getDoc(getProfileDocRef());
             isPremiumUser = userDoc.exists() ? userDoc.data().isPremium : false;
             document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremiumUser ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
         }
@@ -123,7 +134,7 @@
             const container = document.getElementById('matrix-container');
             
             try {
-                const userDoc = await getDoc(doc(db, "users", kidName));
+                const userDoc = await getDoc(getProfileDocRef());
                 if (userDoc.exists()) cachedScores = userDoc.data().scores || {};
             } catch (e) { console.error(e); }
 

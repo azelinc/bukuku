@@ -203,7 +203,19 @@
             
             if (kidName) {
                 try {
-                    const userRef = doc(db, "users", kidName);
+                    // Use profiles/{uid}/{kidName} when authenticated, fallback to users/{kidName}
+                    let userRef;
+                    try {
+                        const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                        if (stored && stored.uid) {
+                            userRef = doc(db, "profiles", stored.uid, kidName);
+                        } else {
+                            userRef = doc(db, "users", kidName);
+                        }
+                    } catch(e) {
+                        userRef = doc(db, "users", kidName);
+                    }
+
                     const userDoc = await getDoc(userRef);
                     let currentScores = userDoc.exists() ? userDoc.data().scores || {} : {};
 
