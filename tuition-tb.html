@@ -700,6 +700,7 @@
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
             document.getElementById('result-area').style.display = 'none';
+            document.getElementById('review-area').style.display = 'none';
             selectUnit(currentUnit);
         }
 
@@ -708,6 +709,8 @@
         document.getElementById('back-to-topics').onclick = goToTopics;
         document.getElementById('back-to-topics-rev').onclick = goToTopics;
         document.getElementById('start-quiz-btn').onclick = beginQuiz;
+        // Expose for inline HTML handlers (review area buttons)
+        window.goToTopics = goToTopics;
 
         // INIT
         loadBank();
