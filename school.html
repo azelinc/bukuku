@@ -100,6 +100,13 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
+        // Bypass old service worker cache
+        if ('caches' in window) {
+            caches.keys().then(keys => {
+                keys.filter(k => k.startsWith('af-hub-v')).forEach(k => caches.delete(k));
+            });
+        }
+
         // Helper: get profile doc ref — always use users/{kidName} for now
         // (old path that has all existing data; new path profiles/{uid}/children/{kidName}
         // is written simultaneously for future migration)

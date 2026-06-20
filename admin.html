@@ -409,18 +409,11 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    // Use updateDoc to directly replace scores field (setDoc+merge does deep merge on maps)
-                    try {
-                        await updateDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
-                    } catch(e) {
-                        // Document might not exist — create it
-                        await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
-                    }
-                    try {
-                        await updateDoc(doc(db, "users", name), { scores: {} });
-                    } catch(e) {
-                        await setDoc(doc(db, "users", name), { scores: {} });
-                    }
+                    // NUCLEAR: overwrite entire doc with only scores={}
+                    // Using setDoc without merge guarantees scores are cleared
+                    // (updateDoc and setDoc+merge both have issues with nested maps)
+                    await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} }).catch(() => {});
+                    await setDoc(doc(db, "users", name), { scores: {} }).catch(() => {});
                 }
 
                 showToast(`✅ Reset ${children.length} profile(s) for ${email}`, 'success');
