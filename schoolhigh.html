@@ -107,8 +107,16 @@
             });
         }
 
-        // Helper: get profile doc ref — always use users/{kidName} for now
+        // Helper: get profile doc ref
+        // When signed in: use profiles/{uid}/children/{kidName} (path that admin reset can write to)
+        // Fallback: users/{kidName} (old path for backward compatibility)
         function getProfileDocRef() {
+            try {
+                const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
+                if (stored && stored.uid) {
+                    return doc(db, "profiles", stored.uid, "children", kidName);
+                }
+            } catch(e) {}
             return doc(db, "users", kidName);
         }
 

@@ -409,11 +409,14 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    // NUCLEAR: overwrite entire doc with only scores={}
-                    // Using setDoc without merge guarantees scores are cleared
-                    // (updateDoc and setDoc+merge both have issues with nested maps)
-                    await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} }).catch(() => {});
-                    await setDoc(doc(db, "users", name), { scores: {} }).catch(() => {});
+                    // Clear scores in both paths
+                    // Use await so errors propagate to the outer catch
+                    await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
+                    try {
+                        await setDoc(doc(db, "users", name), { scores: {} });
+                    } catch(e) {
+                        // users/{name} write might fail per security rules — that's ok
+                    }
                 }
 
                 showToast(`✅ Reset ${children.length} profile(s) for ${email}`, 'success');
