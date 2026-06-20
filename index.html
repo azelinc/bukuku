@@ -979,7 +979,7 @@
                     const isProfileYear = (year === profileTahun && profileTahun > 0 && isDlp);
                     const a = document.createElement('a');
                     a.href = `tuition-tb.html?year=${year}`;
-                    a.className = `idx-btn ${isProfileYear ? 'blue-btn' : (year === 5 ? 'green-btn' : 'orange-btn')}`;
+                    a.className = `idx-btn ${isProfileYear ? 'blue-btn' : 'green-btn'}`;
                     a.style.cssText = 'text-decoration:none; display:block; margin-bottom:8px;' + (isProfileYear ? ' border:3px solid #fff; box-shadow:0 0 0 2px #4a90e2;' : '');
                     a.innerHTML = `${isProfileYear ? '⭐ ' : '📘 '}KSSR Tahun ${year} (DLP)`;
                     container.appendChild(a);
