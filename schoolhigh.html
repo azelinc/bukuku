@@ -100,6 +100,12 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
+        // AUTH CHECK — must be signed in
+        const authCheck = localStorage.getItem('bukuku_auth');
+        if (!authCheck) {
+            window.location.href = 'login.html?_=' + Date.now();
+        }
+
         // Bypass old service worker cache
         if ('caches' in window) {
             caches.keys().then(keys => {
@@ -107,9 +113,7 @@
             });
         }
 
-        // Helper: get profile doc ref
-        // When signed in: use profiles/{uid}/children/{kidName} (path that admin reset can write to)
-        // Fallback: users/{kidName} (old path for backward compatibility)
+        // Helper: get profile doc ref — only scoped path (auth required)
         function getProfileDocRef() {
             try {
                 const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
@@ -117,7 +121,8 @@
                     return doc(db, "profiles", stored.uid, "children", kidName);
                 }
             } catch(e) {}
-            return doc(db, "users", kidName);
+            // If we reach here without auth, redirect was already issued above
+            return null;
         }
 
         let activeGrade = 'all';
@@ -133,7 +138,9 @@
         ];
 
         async function updateBadge() {
-            const userDoc = await getDoc(getProfileDocRef());
+            const ref = getProfileDocRef();
+            if (!ref) return;
+            const userDoc = await getDoc(ref);
             isPremiumUser = userDoc.exists() ? userDoc.data().isPremium : false;
             document.getElementById('user-badge').innerHTML = `👤 ${kidName}${isPremiumUser ? ' <span style="color:#f1c40f">⭐</span>' : ''}`;
         }
@@ -143,8 +150,11 @@
             const container = document.getElementById('matrix-container');
             
             try {
-                const userDoc = await getDoc(getProfileDocRef());
-                if (userDoc.exists()) cachedScores = userDoc.data().scores || {};
+                const ref = getProfileDocRef();
+                if (ref) {
+                    const userDoc = await getDoc(ref);
+                    if (userDoc.exists()) cachedScores = userDoc.data().scores || {};
+                }
             } catch (e) { console.error(e); }
 
             container.innerHTML = '';

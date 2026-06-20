@@ -58,6 +58,12 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
+        // AUTH CHECK — must be signed in
+        const authCheck = localStorage.getItem('bukuku_auth');
+        if (!authCheck) {
+            window.location.href = 'login.html?_=' + Date.now();
+        }
+
         let currentQ = 0; let score = 0; let timerInterval; let timeLeft = 15;
         let currentCorrectAns;
         let gameStartTime;
@@ -159,25 +165,23 @@
                     timestamp: serverTimestamp()
                 });
 
-                // Update personal best in user doc
+                // Update personal best in user doc (scoped path only)
                 let userRef;
                 try {
                     const stored = JSON.parse(localStorage.getItem('bukuku_auth'));
                     if (stored && stored.uid) {
                         userRef = doc(db, "profiles", stored.uid, "children", kidName);
                     } else {
-                        userRef = doc(db, "users", kidName);
+                        return;
                     }
                 } catch(e) {
-                    userRef = doc(db, "users", kidName);
+                    return;
                 }
                 const userDoc = await getDoc(userRef);
                 let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
                 if (score > (scores['sifir-master'] || 0)) {
                     scores['sifir-master'] = score;
                     await setDoc(userRef, { scores: scores }, { merge: true });
-                    // Also write to old path (source of truth for school hub)
-                    await setDoc(doc(db, "users", kidName), { scores: scores }, { merge: true });
                 }
                 sync.innerText = "✅ Result Saved!";
             } catch (e) {

@@ -409,14 +409,8 @@
                 showToast(`⏳ Resetting ${children.length} profile(s) for ${email}...`, 'info');
 
                 for (const name of children) {
-                    // Clear scores in both paths
-                    // Use await so errors propagate to the outer catch
+                    // Clear scores in scoped path only (auth-gated)
                     await setDoc(doc(db, "profiles", uid, "children", name), { scores: {} });
-                    try {
-                        await setDoc(doc(db, "users", name), { scores: {} });
-                    } catch(e) {
-                        // users/{name} write might fail per security rules — that's ok
-                    }
                 }
 
                 showToast(`✅ Reset ${children.length} profile(s) for ${email}`, 'success');

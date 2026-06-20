@@ -47,6 +47,12 @@
         const db = getFirestore(app);
         const kidName = localStorage.getItem('fb_current_user') || "Explorer";
 
+        // AUTH CHECK — must be signed in
+        const authCheck = localStorage.getItem('bukuku_auth');
+        if (!authCheck) {
+            window.location.href = 'login.html?_=' + Date.now();
+        }
+
         const urlParams = new URLSearchParams(window.location.search);
         const n = parseInt(urlParams.get('n')) || 2;
         document.getElementById('title').innerText = `Training Sifir ${n}`;
@@ -83,7 +89,7 @@
                 }
             }
 
-            // Save Progress to Cloud
+            // Save Progress to Cloud (scoped path only)
             if (kidName) {
                 let userRef;
                 try {
@@ -91,10 +97,10 @@
                     if (stored && stored.uid) {
                         userRef = doc(db, "profiles", stored.uid, "children", kidName);
                     } else {
-                        userRef = doc(db, "users", kidName);
+                        return;
                     }
                 } catch(e) {
-                    userRef = doc(db, "users", kidName);
+                    return;
                 }
                 const userDoc = await getDoc(userRef);
                 let scores = userDoc.exists() ? userDoc.data().scores || {} : {};
@@ -103,8 +109,6 @@
                 if (correctCount > (scores[`train-${n}`] || 0)) {
                     scores[`train-${n}`] = correctCount;
                     await setDoc(userRef, { scores: scores }, { merge: true });
-                    // Also write to old path (source of truth for school hub)
-                    await setDoc(doc(db, "users", kidName), { scores: scores }, { merge: true });
                 }
             }
 

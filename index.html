@@ -175,6 +175,21 @@
             <p style="color: #666; margin-top: 10px;">Connecting to Cloud</p>
         </div>
 
+        <!-- SIGN IN REQUIRED -->
+        <div id="signin-screen" class="idx-content" style="display: none;">
+            <div style="padding: 60px 0 30px;">
+                <div style="font-size: 4rem; margin-bottom: 15px;">🔐</div>
+                <h1 style="margin-bottom: 10px;">Sign In Required</h1>
+                <p class="idx-subtext">Please sign in to access your learning profiles</p>
+                <button id="signin-main-btn" class="idx-btn blue-btn" onclick="goToLogin()">
+                    🔑 Sign In / Create Account
+                </button>
+                <p style="color: #999; font-size: 0.8rem; margin-top: 15px;">
+                    Your progress is saved to your account securely
+                </p>
+            </div>
+        </div>
+
         <!-- PROFILE SELECTION -->
         <div id="profile-selection" class="idx-content" style="display: none;">
             <h1 style="margin-bottom:10px;">👋 Welcome!</h1>
@@ -269,6 +284,7 @@
         const db = getFirestore(app);
 
         const loading = document.getElementById('loading-screen');
+        const signinScreen = document.getElementById('signin-screen');
         const selection = document.getElementById('profile-selection');
         const setup = document.getElementById('name-setup');
         const menu = document.getElementById('main-menu');
@@ -360,11 +376,12 @@
                 for (const docSnap of oldSnap.docs) {
                     const name = docSnap.id;
                     const data = docSnap.data();
-                    // Copy to profiles/{uid}/children/{name}
+                    // Copy to profiles/{uid}/children/{name} — include scores if present
                     await setDoc(doc(db, "profiles", uid, "children", name), {
                         name: name,
                         createdAt: data.createdAt || data.lastLogin || new Date(),
                         lastLogin: data.lastLogin || null,
+                        scores: data.scores || {},
                         progress: data.progress || {}
                     });
                     migrated++;
@@ -442,6 +459,8 @@
 
             if (selection.style.display === 'block') {
                 await showProfileSelection();
+            } else if (signinScreen.style.display === 'block') {
+                initHub();
             }
         });
 
@@ -469,6 +488,15 @@
             setup.style.display = 'none';
             menu.style.display = 'none';
             header.style.display = 'none';
+            signinScreen.style.display = 'none';
+
+            // Check authentication — must be signed in to use app
+            const isAuthed = currentUser || localStorage.getItem('bukuku_auth');
+            if (!isAuthed) {
+                loading.style.display = 'none';
+                signinScreen.style.display = 'block';
+                return;
+            }
 
             const activeUser = localStorage.getItem('fb_current_user');
             if (activeUser) {
@@ -482,10 +510,15 @@
             }
         }
 
+        window.goToLogin = () => {
+            window.location.href = 'login.html?_=' + Date.now();
+        };
+
         async function showProfileSelection() {
             if (_renderingProfiles) return;
             _renderingProfiles = true;
             loading.style.display = 'none';
+            signinScreen.style.display = 'none';
             selection.style.display = 'block';
             upgradeModal.style.display = 'none';
 
@@ -537,28 +570,16 @@
                 let profiles = [];
 
                 if (currentUser) {
-                    // Read profiles scoped to this user
+                    // Read profiles scoped to this user (ONLY authorized path)
                     const snap = await getDocs(collection(db, "profiles", currentUser.uid));
                     snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
                 } else {
-                    // Try reading from profiles/{storedUid}/ using localStorage first
-                    const storedAuth = localStorage.getItem('bukuku_auth');
-                    let loadedFromNew = false;
-                    if (storedAuth) {
-                        try {
-                            const { uid } = JSON.parse(storedAuth);
-                            const snap = await getDocs(collection(db, "profiles", uid));
-                            if (!snap.empty) {
-                                snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
-                                loadedFromNew = true;
-                            }
-                        } catch(e) {}
-                    }
-                    if (!loadedFromNew) {
-                        // Fallback: read from old users/ collection (for backward compat)
-                        const oldSnap = await getDocs(collection(db, "users"));
-                        oldSnap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
-                    }
+                    // Not authenticated — cannot load profiles
+                    // sign-in screen should already be shown, but fallback for safety
+                    fallbackToSignedOut();
+                    _renderingProfiles = false;
+                    initHub();
+                    return;
                 }
 
                 profileCount = profiles.length;
@@ -613,18 +634,11 @@
             }
             if (confirm(`Delete explorer "${name}"?`)) {
                 try {
-                    await deleteDoc(doc(db, "profiles", uid, name));
+                    await deleteDoc(doc(db, "profiles", uid, "children", name));
                     showToast(`Profile "${name}" deleted`, "success");
                     showProfileSelection();
                 } catch (e) {
-                    // Fallback: try old users/ collection
-                    try {
-                        await deleteDoc(doc(db, "users", name));
-                        showToast(`Profile "${name}" deleted`, "success");
-                        showProfileSelection();
-                    } catch(e2) {
-                        showToast("Failed to delete profile", "error");
-                    }
+                    showToast("Failed to delete profile", "error");
                 }
             }
         }
@@ -674,7 +688,8 @@
                 if (currentUser) {
                     userDoc = await getDoc(doc(db, "profiles", currentUser.uid, "children", name));
                 } else {
-                    userDoc = await getDoc(doc(db, "users", name));
+                    // Not authenticated — can't load profiles
+                    return false;
                 }
                 if (!userDoc.exists()) return false;
 
@@ -701,7 +716,7 @@
 
         // Safety re-check
         setTimeout(() => {
-            if (selection.style.display === 'block') {
+            if (selection.style.display === 'block' || signinScreen.style.display === 'block') {
                 const storedAuth = localStorage.getItem('bukuku_auth');
                 if (storedAuth && !currentUser) {
                     try {
