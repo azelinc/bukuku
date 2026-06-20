@@ -1,0 +1,1352 @@
+{
+  "subjects": {
+    "eng5": {
+      "name": "English Year 5",
+      "icon": "📖",
+      "color": "#8e44ad",
+      "units": {
+        "1": {
+          "name": "Towns and Cities",
+          "topics": {
+            "1.1": {
+              "name": "Places in a Town",
+              "revision": "A town has many important places. A market is where people buy fresh food. A library is a quiet place to read and borrow books. A museum displays historical objects and art. A hospital treats sick people. A police station keeps the town safe. A bank stores money. A park is a green space for relaxing and playing. We can ask 'Where is the...?' to find these places.",
+              "questions": [
+                {
+                  "q": "Where can you borrow books to read?",
+                  "a": ["Market", "Library", "Hospital", "Bank"],
+                  "c": 1
+                },
+                {
+                  "q": "If you are sick, you should go to the ________.",
+                  "a": ["police station", "museum", "hospital", "bank"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ keeps money safe for people.",
+                  "a": ["market", "library", "park", "bank"],
+                  "c": 3
+                },
+                {
+                  "q": "Children like to play at the ________.",
+                  "a": ["park", "museum", "police station", "hospital"],
+                  "c": 0
+                },
+                {
+                  "q": "You can see old artefacts and historical items at the ________.",
+                  "a": ["market", "library", "museum", "bank"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ sells fresh fruits, vegetables, and meat.",
+                  "a": ["market", "museum", "library", "bank"],
+                  "c": 0
+                },
+                {
+                  "q": "Who works at a police station?",
+                  "a": ["Teachers", "Doctors", "Police officers", "Librarians"],
+                  "c": 2
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Giving Directions",
+              "revision": "To give directions, we use phrases like 'go straight', 'turn left', and 'turn right'. We also use prepositions: 'opposite' means across from something, 'next to' means beside something, 'between' means in the middle of two things, and 'at the crossroads' means where two roads meet. Example: 'The bank is opposite the library.' 'Go straight until you reach the crossroads, then turn right.'",
+              "questions": [
+                {
+                  "q": "Complete: 'Go ________ until you see the traffic lights.'",
+                  "a": ["straight", "left", "right", "back"],
+                  "c": 0
+                },
+                {
+                  "q": "If the school is opposite the park, it means the school is ________.",
+                  "a": ["next to the park", "behind the park", "across from the park", "inside the park"],
+                  "c": 2
+                },
+                {
+                  "q": "The hospital is ________ the bank and the post office. (in the middle)",
+                  "a": ["opposite", "next to", "between", "behind"],
+                  "c": 2
+                },
+                {
+                  "q": "A place where two roads meet is called a ________.",
+                  "a": ["roundabout", "crossroads", "highway", "bridge"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Turn ________ at the next junction and you will see the library on your left.'",
+                  "a": ["left", "straight", "back", "around"],
+                  "c": 0
+                },
+                {
+                  "q": "'The museum is next to the park.' This means the museum is ________ the park.",
+                  "a": ["far from", "beside", "across from", "behind"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Excuse me, how do I ________ to the train station?'",
+                  "a": ["reach", "get", "arrive", "find"],
+                  "c": 1
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Describing a Town",
+              "revision": "We use adjectives to describe towns and cities. A 'busy' town has many people and vehicles. A 'quiet' town has few people and little noise. A 'modern' city has new buildings and technology. A 'historic' town has old, important buildings. A 'crowded' place is full of people. A 'clean' town is tidy and free of rubbish. A 'dirty' town has litter and pollution. Examples: 'My town is busy but clean.' 'This city is modern and crowded.'",
+              "questions": [
+                {
+                  "q": "A town with very few people and little noise is ________.",
+                  "a": ["busy", "quiet", "crowded", "modern"],
+                  "c": 1
+                },
+                {
+                  "q": "Which adjective describes a town with many old, important buildings?",
+                  "a": ["modern", "crowded", "historic", "busy"],
+                  "c": 2
+                },
+                {
+                  "q": "A town that has lots of litter and rubbish is ________.",
+                  "a": ["clean", "dirty", "busy", "quiet"],
+                  "c": 1
+                },
+                {
+                  "q": "Kuala Lumpur is a ________ city with skyscrapers and new buildings.",
+                  "a": ["historic", "quiet", "modern", "dirty"],
+                  "c": 2
+                },
+                {
+                  "q": "The market is very ________ on Sundays because many people go shopping.",
+                  "a": ["quiet", "clean", "crowded", "historic"],
+                  "c": 2
+                },
+                {
+                  "q": "The opposite of 'clean' is ________.",
+                  "a": ["tidy", "dirty", "bright", "nice"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'During rush hour, the streets are very ________ with cars and buses.'",
+                  "a": ["quiet", "empty", "busy", "historic"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Days",
+          "topics": {
+            "2.1": {
+              "name": "Days of the Week",
+              "revision": "There are seven days in a week: Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, and Saturday. Weekend days are Saturday and Sunday. Weekdays are Monday to Friday. We use 'on' with days: 'I have music class on Monday.' We use 'every' to talk about routines: 'We go to the library every Tuesday.' The first day of the week is Sunday or Monday depending on the calendar.",
+              "questions": [
+                {
+                  "q": "What day comes after Thursday?",
+                  "a": ["Wednesday", "Friday", "Saturday", "Sunday"],
+                  "c": 1
+                },
+                {
+                  "q": "How many weekdays are there in a week?",
+                  "a": ["2", "5", "7", "3"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We have English class ________ Wednesdays.'",
+                  "a": ["in", "at", "on", "by"],
+                  "c": 2
+                },
+                {
+                  "q": "Thursday is the ________ day of the week.",
+                  "a": ["third", "fourth", "fifth", "sixth"],
+                  "c": 1
+                },
+                {
+                  "q": "Which day comes between Sunday and Tuesday?",
+                  "a": ["Wednesday", "Thursday", "Saturday", "Monday"],
+                  "c": 3
+                },
+                {
+                  "q": "The weekend includes ________.",
+                  "a": ["Monday and Tuesday", "Thursday and Friday", "Saturday and Sunday", "Wednesday and Thursday"],
+                  "c": 2
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Daily Routines",
+              "revision": "We use the simple present tense to describe daily routines and habits. Examples: 'I wake up at 6 am.' 'She brushes her teeth every morning.' Adverbs of frequency tell us how often we do things: 'always' (100%), 'usually' (90%), 'sometimes' (50%), and 'never' (0%). They go before the main verb: 'I always eat breakfast.' 'She never wakes up late.'",
+              "questions": [
+                {
+                  "q": "Complete: 'I ________ brush my teeth before bed.'",
+                  "a": ["never", "always", "usually", "sometimes"],
+                  "c": 1
+                },
+                {
+                  "q": "If you do something 90% of the time, you ________ do it.",
+                  "a": ["always", "usually", "sometimes", "never"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'He ________ (have) breakfast at 7 o'clock every day.'",
+                  "a": ["have", "has", "having", "haves"],
+                  "c": 1
+                },
+                {
+                  "q": "Which adverb means '0% of the time'?",
+                  "a": ["always", "usually", "sometimes", "never"],
+                  "c": 3
+                },
+                {
+                  "q": "Complete: 'They ________ (go) to school by bus every day.'",
+                  "a": ["go", "goes", "going", "went"],
+                  "c": 0
+                },
+                {
+                  "q": "Where does the adverb go in 'She (always) eats lunch at noon'?",
+                  "a": ["She eats always lunch at noon.", "She always eats lunch at noon.", "She eats lunch always at noon.", "Always she eats lunch at noon."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I ________ (do) my homework after dinner every evening.'",
+                  "a": ["does", "doing", "do", "did"],
+                  "c": 2
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Times of the Day",
+              "revision": "A day is divided into different times. Morning is from sunrise until noon (about 5 am to 12 pm). Afternoon is from noon until evening (12 pm to about 6 pm). Evening is the time when the sun goes down (about 6 pm to 8 pm). Night is the dark hours when most people sleep (about 8 pm to sunrise). We use 'in the' for these times: 'in the morning', 'in the afternoon', 'in the evening'. We say 'at night'.",
+              "questions": [
+                {
+                  "q": "What time of day do we usually have breakfast?",
+                  "a": ["In the morning", "In the afternoon", "In the evening", "At night"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'We eat dinner ________ the evening.'",
+                  "a": ["on", "at", "in", "by"],
+                  "c": 2
+                },
+                {
+                  "q": "Which time of day comes after the afternoon?",
+                  "a": ["Morning", "Night", "Evening", "Noon"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'I go to bed ________ night.'",
+                  "a": ["in", "on", "at", "by"],
+                  "c": 2
+                },
+                {
+                  "q": "The sun rises in the ________.",
+                  "a": ["evening", "morning", "afternoon", "night"],
+                  "c": 1
+                },
+                {
+                  "q": "School usually ends in the ________.",
+                  "a": ["morning", "afternoon", "evening", "night"],
+                  "c": 1
+                },
+                {
+                  "q": "The sun sets in the ________.",
+                  "a": ["morning", "afternoon", "evening", "noon"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Wild Weather",
+          "topics": {
+            "3.1": {
+              "name": "Types of Weather",
+              "revision": "Weather describes the condition of the air outside. Sunny weather means the sun is shining and it is bright. Rainy weather means water is falling from the clouds. Windy weather means the air is moving strongly. Stormy weather includes heavy rain, strong wind, thunder and lightning. Cloudy weather means the sky is covered with clouds. Foggy weather means thick clouds are near the ground, making it hard to see. We answer 'What is the weather like?' to describe it.",
+              "questions": [
+                {
+                  "q": "When the sun is shining brightly, the weather is ________.",
+                  "a": ["rainy", "windy", "sunny", "foggy"],
+                  "c": 2
+                },
+                {
+                  "q": "You need an umbrella when the weather is ________.",
+                  "a": ["sunny", "rainy", "cloudy", "windy"],
+                  "c": 1
+                },
+                {
+                  "q": "When the sky is covered with grey clouds, it is ________.",
+                  "a": ["sunny", "foggy", "cloudy", "stormy"],
+                  "c": 2
+                },
+                {
+                  "q": "On a ________ day, it is difficult to see because of thick low clouds.",
+                  "a": ["windy", "foggy", "sunny", "stormy"],
+                  "c": 1
+                },
+                {
+                  "q": "A windy day is good for flying a ________.",
+                  "a": ["kite", "ball", "car", "book"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'What is the weather ________ today?'",
+                  "a": ["look", "like", "feel", "do"],
+                  "c": 1
+                },
+                {
+                  "q": "Which weather has thunder and lightning?",
+                  "a": ["Sunny", "Windy", "Stormy", "Foggy"],
+                  "c": 2
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Extreme Weather",
+              "revision": "Extreme weather is very powerful and can be dangerous. A thunderstorm has thunder, lightning, heavy rain, and strong wind. A flood happens when too much rain causes water to cover the land. A drought is a long period with very little or no rain, causing water shortage. A typhoon is a very strong storm with powerful winds. The monsoon is a season of heavy rain that lasts for several months, common in countries like Malaysia.",
+              "questions": [
+                {
+                  "q": "Malaysia experiences the ________ season with months of heavy rain.",
+                  "a": ["drought", "monsoon", "typhoon", "flood"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ is a very long period without rain.",
+                  "a": ["flood", "monsoon", "drought", "storm"],
+                  "c": 2
+                },
+                {
+                  "q": "When a river overflows and covers the land with water, it is a ________.",
+                  "a": ["drought", "typhoon", "flood", "monsoon"],
+                  "c": 2
+                },
+                {
+                  "q": "A ________ is a very powerful storm with strong winds.",
+                  "a": ["typhoon", "drought", "flood", "monsoon"],
+                  "c": 0
+                },
+                {
+                  "q": "You should stay indoors during a ________ because of lightning and heavy rain.",
+                  "a": ["sunny day", "thunderstorm", "foggy day", "drought"],
+                  "c": 1
+                },
+                {
+                  "q": "During a drought, people may not have enough ________.",
+                  "a": ["food", "water", "air", "sunlight"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Heavy rain for many days can cause ________.'",
+                  "a": ["drought", "floods", "typhoons", "fog"],
+                  "c": 1
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Weather and Activities",
+              "revision": "The weather decides what activities we can do. On a sunny day, we can go swimming, play football, or have a picnic. On a windy day, we can fly a kite. On a rainy day, we usually stay indoors, read books, or play board games. We wear a raincoat and use an umbrella when it rains. During a storm, it is best to stay indoors for safety. We use 'When it is sunny, I...' to connect weather and activities.",
+              "questions": [
+                {
+                  "q": "What can you do on a windy day?",
+                  "a": ["Fly a kite", "Go swimming", "Have a picnic", "Build a snowman"],
+                  "c": 0
+                },
+                {
+                  "q": "When it is raining, you should wear a ________.",
+                  "a": ["T-shirt", "raincoat", "swimsuit", "jacket"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'If it is stormy, we should ________ indoors.'",
+                  "a": ["play", "stay", "run", "swim"],
+                  "c": 1
+                },
+                {
+                  "q": "A sunny day is perfect for a ________ at the park.",
+                  "a": ["picnic", "storm", "flood", "snowball fight"],
+                  "c": 0
+                },
+                {
+                  "q": "What do you need when it rains?",
+                  "a": ["Sunglasses", "Umbrella", "Swimsuit", "Fan"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'When it is sunny, my family and I ________ to the beach.'",
+                  "a": ["stay", "go", "wear", "fly"],
+                  "c": 1
+                },
+                {
+                  "q": "On a very hot sunny day, you should drink lots of ________.",
+                  "a": ["hot tea", "water", "soup", "juice"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Celebrations Around the World",
+          "topics": {
+            "4.1": {
+              "name": "Festivals in Different Countries",
+              "revision": "People around the world celebrate different festivals. Hari Raya Aidilfitri is celebrated by Muslims after Ramadan. Chinese New Year is celebrated by Chinese communities with family gatherings. Deepavali is the Hindu Festival of Lights. Christmas is celebrated by Christians on 25 December. Halloween is celebrated on 31 October with costumes. Thanksgiving is an American festival for giving thanks. Each festival has its own traditions, foods, and customs.",
+              "questions": [
+                {
+                  "q": "Which festival is known as the Festival of Lights?",
+                  "a": ["Hari Raya", "Christmas", "Deepavali", "Thanksgiving"],
+                  "c": 2
+                },
+                {
+                  "q": "Muslims celebrate ________ after the month of Ramadan.",
+                  "a": ["Chinese New Year", "Hari Raya Aidilfitri", "Deepavali", "Christmas"],
+                  "c": 1
+                },
+                {
+                  "q": "During ________, children wear costumes and go trick-or-treating.",
+                  "a": ["Christmas", "Thanksgiving", "Halloween", "Deepavali"],
+                  "c": 2
+                },
+                {
+                  "q": "Christmas is celebrated on ________.",
+                  "a": ["25th December", "31st October", "1st January", "14th February"],
+                  "c": 0
+                },
+                {
+                  "q": "In America, families eat turkey and give thanks during ________.",
+                  "a": ["Halloween", "Christmas", "Thanksgiving", "Deepavali"],
+                  "c": 2
+                },
+                {
+                  "q": "During Chinese New Year, adults give children red packets called ________.",
+                  "a": ["duit raya", "ang pow", "goodie bags", "presents"],
+                  "c": 1
+                },
+                {
+                  "q": "Which festival involves lighting oil lamps in the house?",
+                  "a": ["Hari Raya", "Christmas", "Deepavali", "Halloween"],
+                  "c": 2
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Festival Activities",
+              "revision": "Festivals include many special activities. People 'decorate' their homes with lights, flowers, and ornaments. A 'feast' is a large, special meal shared with family and friends. 'Fireworks' are colourful explosions in the sky during celebrations. A 'parade' is a public procession with music, floats, and performers. During festivals, people 'visit family' and friends to celebrate together. Each culture has unique ways of celebrating.",
+              "questions": [
+                {
+                  "q": "During Chinese New Year, families have a big ________ dinner together.",
+                  "a": ["feast", "parade", "picnic", "snack"],
+                  "c": 0
+                },
+                {
+                  "q": "People ________ their homes with lights and decorations during festivals.",
+                  "a": ["clean", "decorate", "paint", "build"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ is a colourful show in the sky during celebrations.",
+                  "a": ["parade", "fireworks display", "concert", "movie"],
+                  "c": 1
+                },
+                {
+                  "q": "During ________, people dress up in colourful costumes and walk through the streets.",
+                  "a": ["a parade", "a feast", "a storm", "a meeting"],
+                  "c": 0
+                },
+                {
+                  "q": "During Hari Raya, families ________ their relatives and ask for forgiveness.",
+                  "a": ["visit", "call", "write to", "ignore"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'We ________ the Christmas tree with baubles and a star on top.'",
+                  "a": ["decorate", "eat", "clean", "remove"],
+                  "c": 0
+                },
+                {
+                  "q": "What do people do during Deepavali?",
+                  "a": ["Decorate with lights and make kolam", "Put up a Christmas tree", "Go trick-or-treating", "Eat turkey"],
+                  "c": 0
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Ordinal Numbers",
+              "revision": "Ordinal numbers show the position or order of something. First (1st), second (2nd), third (3rd), fourth (4th), fifth (5th) through to thirty-first (31st). We use ordinal numbers for dates: 'My birthday is on the 10th of June.' 'Hari Raya is on the 1st of May.' Most ordinal numbers add 'th' (fourth, seventh, tenth). Exceptions: first (1st), second (2nd), third (3rd), and numbers ending with these (21st, 22nd, 23rd, 31st).",
+              "questions": [
+                {
+                  "q": "Complete: 'My birthday is on the ________ of March.' (3rd)",
+                  "a": ["three", "threeth", "third", "thirth"],
+                  "c": 2
+                },
+                {
+                  "q": "What is the ordinal form of 12?",
+                  "a": ["twelveth", "twelfth", "twelvth", "twelveeth"],
+                  "c": 1
+                },
+                {
+                  "q": "December is the ________ month of the year.",
+                  "a": ["twelveth", "twelfth", "twelve", "twentieth"],
+                  "c": 1
+                },
+                {
+                  "q": "What is the ordinal form of 21?",
+                  "a": ["twenty-one", "twenty-first", "twenty-oneth", "twenty-firth"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'New Year's Day is on the 1st of January.' 1st means ________.",
+                  "a": ["first", "oneth", "one", "once"],
+                  "c": 0
+                },
+                {
+                  "q": "What is the ordinal number for 30?",
+                  "a": ["thirth", "thirtith", "thirtieth", "thirtyth"],
+                  "c": 2
+                },
+                {
+                  "q": "Wednesday is the ________ day of the week.",
+                  "a": ["third", "fourth", "fifth", "second"],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Food and Health",
+          "topics": {
+            "5.1": {
+              "name": "Types of Food",
+              "revision": "Food can be grouped into categories. Fruits include apples, bananas, oranges, and grapes. Vegetables include carrots, broccoli, spinach, and cabbage. Proteins include chicken, fish, eggs, and tofu. Grains include rice, bread, pasta, and cereal. Dairy includes milk, cheese, and yogurt. A healthy meal contains food from different groups. We also have 'junk food' like chips, candy, and fizzy drinks which are not good for our health if eaten too much.",
+              "questions": [
+                {
+                  "q": "Which food belongs to the dairy group?",
+                  "a": ["Rice", "Apple", "Cheese", "Chicken"],
+                  "c": 2
+                },
+                {
+                  "q": "Spinach and broccoli are types of ________.",
+                  "a": ["fruits", "vegetables", "grains", "dairy"],
+                  "c": 1
+                },
+                {
+                  "q": "Which food is a good source of protein?",
+                  "a": ["Bread", "Eggs", "Rice", "Banana"],
+                  "c": 1
+                },
+                {
+                  "q": "Pasta and rice are examples of ________.",
+                  "a": ["grains", "fruits", "dairy", "vegetables"],
+                  "c": 0
+                },
+                {
+                  "q": "Which of these is considered junk food?",
+                  "a": ["Apple", "Carrot", "Potato chips", "Yogurt"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'A ________ diet includes food from all food groups.'",
+                  "a": ["junk", "balanced", "fast", "sweet"],
+                  "c": 1
+                },
+                {
+                  "q": "Which fruit is yellow and has a curved shape?",
+                  "a": ["Apple", "Orange", "Banana", "Grape"],
+                  "c": 2
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Quantifiers",
+              "revision": "Quantifiers tell us the amount or quantity of something. 'A bottle of' is used for drinks (a bottle of water). 'A packet of' is for small packages (a packet of biscuits). 'A loaf of' is for bread (a loaf of bread). 'A bar of' is for solid, rectangular items (a bar of chocolate). 'A carton of' is for cardboard containers (a carton of milk). 'A bowl of' is for round containers of food (a bowl of rice). These phrases help us count uncountable nouns.",
+              "questions": [
+                {
+                  "q": "Complete: 'I need a ________ of bread for sandwiches.'",
+                  "a": ["bottle", "packet", "loaf", "bar"],
+                  "c": 2
+                },
+                {
+                  "q": "She bought a ________ of milk from the shop.",
+                  "a": ["loaf", "bar", "bottle", "carton"],
+                  "c": 3
+                },
+                {
+                  "q": "He gave me a ________ of chocolate for my birthday.",
+                  "a": ["loaf", "bar", "bowl", "packet"],
+                  "c": 1
+                },
+                {
+                  "q": "I had a ________ of cereal for breakfast.",
+                  "a": ["bottle", "loaf", "bowl", "bar"],
+                  "c": 2
+                },
+                {
+                  "q": "We bought a ________ of orange juice for the picnic.",
+                  "a": ["bottle", "loaf", "bowl", "packet"],
+                  "c": 0
+                },
+                {
+                  "q": "Mum opened a ________ of biscuits for tea time.",
+                  "a": ["bottle", "packet", "loaf", "carton"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I drink a ________ of water after playing football.'",
+                  "a": ["packet", "loaf", "bottle", "bar"],
+                  "c": 2
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Imperatives for Instructions",
+              "revision": "Imperatives are 'command' words used to give instructions or directions. They use the base form of the verb without 'to'. Examples: 'Mix the flour and sugar.' 'Stir the soup.' 'Pour the milk into the bowl.' 'Cut the vegetables into small pieces.' 'Add salt to taste.' We often use imperatives in recipes and cooking instructions. 'First, cut the onions. Then, add them to the pan. Finally, stir for five minutes.'",
+              "questions": [
+                {
+                  "q": "Complete the instruction: '________ the eggs into the bowl.'",
+                  "a": ["Mix", "Stir", "Pour", "Break"],
+                  "c": 3
+                },
+                {
+                  "q": "What does 'stir' mean?",
+                  "a": ["Cut into pieces", "Mix with a spoon in circles", "Pour slowly", "Add to a container"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: '________ the carrots into small pieces before cooking.'",
+                  "a": ["Stir", "Pour", "Cut", "Bake"],
+                  "c": 2
+                },
+                {
+                  "q": "In a recipe, 'First, ________ the flour and sugar together in a bowl.'",
+                  "a": ["cut", "pour", "mix", "bake"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: '________ one teaspoon of salt to the mixture.'",
+                  "a": ["Cut", "Pour", "Add", "Stir"],
+                  "c": 2
+                },
+                {
+                  "q": "The instruction 'Bake for 30 minutes' means to cook in the ________.",
+                  "a": ["pan", "fridge", "oven", "microwave"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: '________ the soup occasionally so it does not burn.'",
+                  "a": ["Cut", "Pour", "Add", "Stir"],
+                  "c": 3
+                }
+              ]
+            },
+            "5.4": {
+              "name": "Healthy Habits",
+              "revision": "Healthy habits keep our body and mind strong. A balanced diet means eating the right amounts of different foods. Exercise helps our heart, muscles, and bones stay strong — at least 60 minutes a day. Good hygiene includes washing hands before eating, brushing teeth twice a day, and bathing daily. Drinking enough water (about 8 glasses a day) keeps our body hydrated. Sleeping 9-11 hours helps our brain rest and grow. 'Health is wealth!'",
+              "questions": [
+                {
+                  "q": "How many glasses of water should you drink each day?",
+                  "a": ["2", "4", "8", "12"],
+                  "c": 2
+                },
+                {
+                  "q": "You should brush your teeth at least ________ a day.",
+                  "a": ["once", "twice", "three times", "once a week"],
+                  "c": 1
+                },
+                {
+                  "q": "Children should exercise for at least ________ every day.",
+                  "a": ["10 minutes", "30 minutes", "60 minutes", "120 minutes"],
+                  "c": 2
+                },
+                {
+                  "q": "Washing your hands before meals is part of good ________.",
+                  "a": ["exercise", "hygiene", "diet", "sleep"],
+                  "c": 1
+                },
+                {
+                  "q": "A balanced diet includes ________.",
+                  "a": ["only vegetables", "only rice", "food from all food groups", "only fruit"],
+                  "c": 2
+                },
+                {
+                  "q": "How many hours should a child sleep each night?",
+                  "a": ["5-6", "7-8", "9-11", "12-14"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: '________ is as important as eating healthy food.'",
+                  "a": ["Watching TV", "Playing video games", "Exercise", "Sleeping late"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Self, Family and Friends",
+          "topics": {
+            "6.1": {
+              "name": "Describing People",
+              "revision": "We describe people by their physical appearance and personality. For appearance: tall/short, curly/straight hair, long/short hair, big/small eyes, fair/dark skin. For personality: kind (helpful and caring), funny (makes people laugh), shy (quiet and nervous with new people), brave (not afraid to do difficult things), honest (always tells the truth). We use 'is' for personality: 'She is kind.' We use 'has' for appearance: 'He has curly hair.'",
+              "questions": [
+                {
+                  "q": "A person who always tells the truth is ________.",
+                  "a": ["shy", "funny", "honest", "brave"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'She ________ long, straight black hair.'",
+                  "a": ["is", "have", "has", "are"],
+                  "c": 2
+                },
+                {
+                  "q": "Someone who is quiet and nervous around new people is ________.",
+                  "a": ["brave", "shy", "funny", "kind"],
+                  "c": 1
+                },
+                {
+                  "q": "The opposite of 'tall' is ________.",
+                  "a": ["slim", "short", "young", "thin"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ person is not afraid to try new things.",
+                  "a": ["shy", "brave", "lazy", "selfish"],
+                  "c": 1
+                },
+                {
+                  "q": "My grandmother is very ________. She always helps people in need.",
+                  "a": ["mean", "shy", "kind", "lazy"],
+                  "c": 2
+                },
+                {
+                  "q": "Hair that goes around in loops is called ________ hair.",
+                  "a": ["straight", "curly", "short", "long"],
+                  "c": 1
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Possessive Pronouns",
+              "revision": "Possessive pronouns show who owns something. 'Mine' = belonging to me. 'Yours' = belonging to you. 'His' = belonging to him. 'Hers' = belonging to her. 'Ours' = belonging to us. 'Theirs' = belonging to them. Unlike possessive adjectives (my, your, his, her, our, their), possessive pronouns stand alone without a noun. Example: 'This book is mine.' 'That bag is yours.' 'The house on the corner is theirs.'",
+              "questions": [
+                {
+                  "q": "Complete: 'This pen belongs to me. It is ________.'",
+                  "a": ["my", "mine", "me", "myself"],
+                  "c": 1
+                },
+                {
+                  "q": "Those shoes belong to Siti. They are ________.",
+                  "a": ["her", "hers", "she", "his"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'This house belongs to our family. It is ________.'",
+                  "a": ["our", "us", "ours", "we"],
+                  "c": 2
+                },
+                {
+                  "q": "That bicycle belongs to Ali. It is ________.",
+                  "a": ["him", "his", "he", "hers"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'These books belong to you. They are ________.'",
+                  "a": ["your", "yours", "you", "yourself"],
+                  "c": 1
+                },
+                {
+                  "q": "The car over there belongs to my parents. It is ________.",
+                  "a": ["their", "them", "theirs", "our"],
+                  "c": 2
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["This is mine book.", "This book is mine.", "This book is my.", "This is me book."],
+                  "c": 1
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Making Comparisons",
+              "revision": "We use comparative adjectives to compare two people or things. For short adjectives, add '-er': tall → taller, short → shorter, friendly → friendlier (y becomes ier). For longer adjectives (3+ syllables), use 'more': beautiful → more beautiful, expensive → more expensive. We use 'than' after the comparative: 'Ravi is taller than Ben.' 'She is friendlier than her sister.' 'This bag is more expensive than that one.'",
+              "questions": [
+                {
+                  "q": "Complete: 'A giraffe is ________ (tall) than a horse.'",
+                  "a": ["tallest", "taller", "more tall", "tall"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'My sister is ________ (friendly) than me.'",
+                  "a": ["friendly", "more friendly", "friendlier", "friendliest"],
+                  "c": 2
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["She is more taller than him.", "She is taller than him.", "She is tall than him.", "She is more tall than him."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'This dress is ________ (beautiful) than that one.'",
+                  "a": ["beautifuller", "more beautiful", "most beautiful", "beautiful"],
+                  "c": 1
+                },
+                {
+                  "q": "A tortoise is ________ (slow) than a rabbit.",
+                  "a": ["slowest", "more slow", "slower", "slow"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'Ah Chong is ________ (brave) than his younger brother.'",
+                  "a": ["braver", "more brave", "bravest", "brave"],
+                  "c": 0
+                },
+                {
+                  "q": "The word 'than' is used in a ________ sentence.",
+                  "a": ["superlative", "comparative", "positive", "negative"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Growing Up",
+          "topics": {
+            "7.1": {
+              "name": "Past Simple Tense",
+              "revision": "The past simple tense describes actions that happened and finished in the past. Regular verbs add '-ed': walk → walked, play → played, visit → visited. If a verb ends in 'e', just add 'd': dance → danced. If it ends in consonant + y, change y to i and add 'ed': study → studied. Some verbs are irregular and change completely: go → went, eat → ate, see → saw, buy → bought, take → took, make → made, have → had. Time words like 'yesterday' and 'last week' signal past tense.",
+              "questions": [
+                {
+                  "q": "What is the past tense of 'play'?",
+                  "a": ["playing", "plays", "played", "playes"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'She ________ (dance) at the party last night.'",
+                  "a": ["danceed", "danced", "dancd", "dancing"],
+                  "c": 1
+                },
+                {
+                  "q": "The past tense of 'study' is ________.",
+                  "a": ["studied", "studyed", "studyd", "studies"],
+                  "c": 0
+                },
+                {
+                  "q": "What is the past tense of 'go'?",
+                  "a": ["goed", "gone", "went", "going"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'We ________ (visit) our grandparents last weekend.'",
+                  "a": ["visits", "visited", "visiting", "visit"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'I ________ (have) a great time at the carnival yesterday.'",
+                  "a": ["haved", "had", "has", "having"],
+                  "c": 1
+                },
+                {
+                  "q": "The past tense of 'see' is ________.",
+                  "a": ["saw", "seen", "see", "seed"],
+                  "c": 0
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Describing Past Events",
+              "revision": "To describe past events, we use the past simple tense with time expressions. 'Yesterday' refers to the day before today. 'Last week' means the week before this week. 'Last year' means the year before this year. 'Ago' is used with a period of time: 'two days ago', 'three years ago', 'a month ago'. Examples: 'I went to the beach yesterday.' 'She moved to Penang two years ago.' 'We visited Langkawi last year.'",
+              "questions": [
+                {
+                  "q": "Complete: 'I ________ (go) to the zoo ________ Sunday.'",
+                  "a": ["go, on", "went, last", "gone, in", "going, at"],
+                  "c": 1
+                },
+                {
+                  "q": "Three days ________ means three days before today.",
+                  "a": ["last", "yesterday", "later", "ago"],
+                  "c": 3
+                },
+                {
+                  "q": "Complete: 'She ________ (finish) her homework an hour ________.'",
+                  "a": ["finishes, later", "finished, ago", "finishing, before", "finish, last"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence describes a past event?",
+                  "a": ["I play football every weekend.", "I am playing football now.", "I played football yesterday.", "I will play football tomorrow."],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'We ________ (have) a picnic at the park last Saturday.'",
+                  "a": ["have", "has", "had", "having"],
+                  "c": 2
+                },
+                {
+                  "q": "What does 'last week' mean?",
+                  "a": ["The day before today", "The week before this week", "The week after this week", "Today"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'My family ________ (move) to this town five years ________.'",
+                  "a": ["moves, later", "moved, ago", "moving, last", "move, yesterday"],
+                  "c": 1
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Biographies",
+              "revision": "A biography tells the story of a person's life using the past simple tense. Common phrases: 'was born' (when and where someone came into the world), 'studied' (what they learned), 'worked' (what job they did), 'married' (who they married), and 'became' (what they became famous for). Example: 'Thomas Edison was born in 1847. He studied science. He invented the light bulb.' We use time expressions to order events: 'first', 'then', 'after that', 'finally'.",
+              "questions": [
+                {
+                  "q": "Complete: 'Our first Prime Minister, Tunku Abdul Rahman, ________ born in 1903.'",
+                  "a": ["is", "was", "were", "are"],
+                  "c": 1
+                },
+                {
+                  "q": "In a biography, we use the ________ tense.",
+                  "a": ["present", "future", "past", "continuous"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'Marie Curie ________ science at university.'",
+                  "a": ["studies", "studied", "studying", "study"],
+                  "c": 1
+                },
+                {
+                  "q": "In a biography, 'He was born in 1990' tells us his ________.",
+                  "a": ["job", "birth year", "school", "hobby"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Dr. M. ________ as a doctor before becoming Prime Minister.'",
+                  "a": ["work", "works", "worked", "working"],
+                  "c": 2
+                },
+                {
+                  "q": "When writing a biography, we use words like 'first', 'then', and 'finally' to show ________.",
+                  "a": ["time order", "comparison", "opinion", "description"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'They ________ (get) married in 2015 and moved to Johor.'",
+                  "a": ["get", "gets", "got", "getting"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Going Away",
+          "topics": {
+            "8.1": {
+              "name": "Travel Vocabulary",
+              "revision": "When travelling, we need to know these words. A 'suitcase' or 'luggage' is a bag for clothes and belongings. A 'passport' is an official document with your photo for travelling to other countries. A 'ticket' is what you buy to travel on a plane, train, or bus. A 'boarding pass' is the document that lets you get on a plane. A 'hotel' is a place where travellers sleep. A 'souvenir' is a small item you buy to remember a place. 'Luggage' is another word for suitcases and bags.",
+              "questions": [
+                {
+                  "q": "What document do you need to travel to another country?",
+                  "a": ["Library card", "Passport", "School ID", "Report card"],
+                  "c": 1
+                },
+                {
+                  "q": "You show your ________ at the gate before getting on the plane.",
+                  "a": ["passport", "ticket", "boarding pass", "ID card"],
+                  "c": 2
+                },
+                {
+                  "q": "A small item you buy to remember your holiday is a ________.",
+                  "a": ["ticket", "passport", "souvenir", "hotel"],
+                  "c": 2
+                },
+                {
+                  "q": "You pack your clothes in a ________ before a trip.",
+                  "a": ["souvenir", "passport", "ticket", "suitcase"],
+                  "c": 3
+                },
+                {
+                  "q": "Complete: 'We stayed at a ________ near the beach during our holiday.'",
+                  "a": ["hotel", "school", "hospital", "library"],
+                  "c": 0
+                },
+                {
+                  "q": "Another word for suitcases and bags when travelling is ________.",
+                  "a": ["luggage", "tickets", "souvenirs", "passports"],
+                  "c": 0
+                },
+                {
+                  "q": "You need a ________ to travel on a train or bus.",
+                  "a": ["passport", "ticket", "souvenir", "hotel"],
+                  "c": 1
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Future Plans with 'going to'",
+              "revision": "We use 'am/is/are going to' + base verb to talk about future plans and intentions. The plan is already decided before speaking. Examples: 'I am going to visit my grandmother next weekend.' 'She is going to study medicine when she grows up.' 'They are going to travel to Japan next year.' Time expressions for future: 'tomorrow', 'next week', 'next month', 'next year', 'this weekend'. 'Going to' is different from 'will' — 'going to' is for planned actions.",
+              "questions": [
+                {
+                  "q": "Complete: 'I ________ going to visit Langkawi next holiday.'",
+                  "a": ["is", "are", "am", "be"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'They ________ going to stay at a hotel by the beach.'",
+                  "a": ["is", "are", "am", "be"],
+                  "c": 1
+                },
+                {
+                  "q": "'She is going to buy souvenirs.' This means she has a ________.",
+                  "a": ["hope", "plan", "guess", "dream"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We ________ going to take the train to Penang.'",
+                  "a": ["is", "am", "are", "be"],
+                  "c": 2
+                },
+                {
+                  "q": "Which sentence talks about a future plan?",
+                  "a": ["I went to the beach yesterday.", "I am going to the beach tomorrow.", "I go to the beach every week.", "I was at the beach."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'My brother ________ going to start university next year.'",
+                  "a": ["is", "are", "am", "be"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'What ________ you going to do this weekend?'",
+                  "a": ["is", "are", "am", "do"],
+                  "c": 1
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Making a Travel Brochure",
+              "revision": "A travel brochure describes a place and tells tourists what they can do there. It includes: the name of the place, interesting sights, activities for tourists, food to try, and accommodation. Descriptive adjectives are used: 'beautiful beaches', 'delicious food', 'exciting activities', 'friendly people'. Common phrases: 'You can visit...', 'Don't miss...', 'You must try...', 'There are many...', 'It is famous for...'. A good brochure makes people want to visit!",
+              "questions": [
+                {
+                  "q": "A travel brochure helps people decide where to ________.",
+                  "a": ["eat", "study", "visit", "work"],
+                  "c": 2
+                },
+                {
+                  "q": "In a travel brochure, you describe a place using ________ adjectives.",
+                  "a": ["negative", "descriptive", "boring", "long"],
+                  "c": 1
+                },
+                {
+                  "q": "Which phrase is good for a travel brochure?",
+                  "a": ["This place is terrible.", "You must visit the beautiful beaches!", "There is nothing to do here.", "Stay away from this city."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Langkawi is famous ________ its beautiful beaches and cable car.'",
+                  "a": ["with", "for", "by", "at"],
+                  "c": 1
+                },
+                {
+                  "q": "A travel brochure might say: '________ miss the sunset at the beach!'",
+                  "a": ["Always", "Never", "Don't", "Do"],
+                  "c": 2
+                },
+                {
+                  "q": "In a brochure, you can recommend ________ for tourists to try.",
+                  "a": ["homework", "local food", "chores", "exams"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'There are many ________ activities for tourists in Penang.'",
+                  "a": ["boring", "exciting", "tiring", "difficult"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "Space Explorers",
+          "topics": {
+            "9.1": {
+              "name": "The Solar System",
+              "revision": "The Solar System is centred around the Sun, which is a star. There are eight planets orbiting the Sun: Mercury (closest to the Sun and smallest), Venus (hottest planet), Earth (our home, the only planet with life we know), Mars (the red planet), Jupiter (largest planet), Saturn (known for its rings), Uranus (a blue-green planet that spins on its side), and Neptune (farthest and coldest). The planets are in order of their distance from the Sun.",
+              "questions": [
+                {
+                  "q": "What is at the centre of the Solar System?",
+                  "a": ["Earth", "The Moon", "The Sun", "Mars"],
+                  "c": 2
+                },
+                {
+                  "q": "Which planet is known as the Red Planet?",
+                  "a": ["Venus", "Mars", "Jupiter", "Saturn"],
+                  "c": 1
+                },
+                {
+                  "q": "The largest planet in the Solar System is ________.",
+                  "a": ["Saturn", "Neptune", "Jupiter", "Uranus"],
+                  "c": 2
+                },
+                {
+                  "q": "Which planet is closest to the Sun?",
+                  "a": ["Venus", "Earth", "Mercury", "Mars"],
+                  "c": 2
+                },
+                {
+                  "q": "________ is famous for its beautiful rings.",
+                  "a": ["Jupiter", "Saturn", "Neptune", "Uranus"],
+                  "c": 1
+                },
+                {
+                  "q": "How many planets are there in the Solar System?",
+                  "a": ["Seven", "Eight", "Nine", "Ten"],
+                  "c": 1
+                },
+                {
+                  "q": "The planet we live on is called ________.",
+                  "a": ["Mars", "Venus", "Earth", "Jupiter"],
+                  "c": 2
+                },
+                {
+                  "q": "Which planet is the farthest from the Sun?",
+                  "a": ["Uranus", "Saturn", "Neptune", "Jupiter"],
+                  "c": 2
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Space Exploration",
+              "revision": "Space exploration is the study of outer space. 'Astronauts' are people who travel to space. They wear special suits to protect themselves. 'Rockets' are powerful machines that launch spacecraft into space. 'Satellites' are objects sent into orbit around Earth to help with communication, weather forecasting, and GPS. A 'space station' is a large spacecraft where astronauts live and work for long periods. The International Space Station (ISS) is a famous space station where astronauts from different countries work together.",
+              "questions": [
+                {
+                  "q": "A person who travels to space is called an ________.",
+                  "a": ["astronomer", "astronaut", "pilot", "driver"],
+                  "c": 1
+                },
+                {
+                  "q": "A ________ is a machine that launches spacecraft into space.",
+                  "a": ["satellite", "rocket", "plane", "balloon"],
+                  "c": 1
+                },
+                {
+                  "q": "________ orbit the Earth and help us with TV, internet, and weather forecasts.",
+                  "a": ["Rockets", "Aeroplanes", "Satellites", "Balloons"],
+                  "c": 2
+                },
+                {
+                  "q": "Where do astronauts live and work in space?",
+                  "a": ["In a rocket", "On a satellite", "In a space station", "On the Moon"],
+                  "c": 2
+                },
+                {
+                  "q": "The first human to walk on the Moon was ________.",
+                  "a": ["Neil Armstrong", "Albert Einstein", "Isaac Newton", "Thomas Edison"],
+                  "c": 0
+                },
+                {
+                  "q": "Astronauts wear special ________ to protect themselves in space.",
+                  "a": ["hats", "suits", "glasses", "shoes"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The International Space Station is a ________ where astronauts from many countries work.'",
+                  "a": ["rocket", "satellite", "laboratory", "planet"],
+                  "c": 2
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Comparative and Superlative Adjectives",
+              "revision": "Comparative adjectives compare two things (add '-er' or use 'more'): 'Mercury is closer to the Sun than Earth.' 'Jupiter is bigger than Mars.' Superlative adjectives compare three or more things (add '-est' or use 'most'): 'Mercury is the closest planet to the Sun.' 'Jupiter is the biggest planet.' 'Neptune is the farthest planet from the Sun.' For short adjectives: big → bigger → biggest (double the g), hot → hotter → hottest. Use 'the' before superlatives.",
+              "questions": [
+                {
+                  "q": "Complete: 'Jupiter is the ________ (big) planet in the Solar System.'",
+                  "a": ["bigger", "biggest", "most big", "big"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Mercury is ________ (close) to the Sun than Earth.'",
+                  "a": ["closest", "closer", "more close", "close"],
+                  "c": 1
+                },
+                {
+                  "q": "Neptune is the ________ (cold) planet.",
+                  "a": ["colder", "coldest", "most cold", "cold"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Venus is the ________ (hot) planet in the Solar System.'",
+                  "a": ["hotter", "hottest", "most hot", "hot"],
+                  "c": 1
+                },
+                {
+                  "q": "Which sentence is correct?",
+                  "a": ["Jupiter is biggest than Saturn.", "Jupiter is bigger than Saturn.", "Jupiter is more big than Saturn.", "Jupiter is the bigger than Saturn."],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'The Sun is the ________ (bright) object in our sky.'",
+                  "a": ["brighter", "brightest", "most bright", "bright"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'Neptune is the ________ (far) planet from the Sun.'",
+                  "a": ["farther", "farthest", "more far", "far"],
+                  "c": 1
+                },
+                {
+                  "q": "We use '________' before superlative adjectives.",
+                  "a": ["a", "an", "the", "some"],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "10": {
+          "name": "Our Environment",
+          "topics": {
+            "10.1": {
+              "name": "Environmental Issues",
+              "revision": "Our environment faces many problems. Pollution comes in three main types: air pollution (from factories and vehicles), water pollution (from waste and chemicals dumped into rivers), and land pollution (from littering and rubbish). Deforestation is when forests are cut down for development, destroying animal habitats. Global warming is the gradual increase in Earth's temperature caused by greenhouse gases. These issues harm animals, plants, and humans. We must take action to protect our planet.",
+              "questions": [
+                {
+                  "q": "Smoke from factories and cars causes ________ pollution.",
+                  "a": ["water", "land", "air", "noise"],
+                  "c": 2
+                },
+                {
+                  "q": "Throwing rubbish into rivers causes ________ pollution.",
+                  "a": ["air", "water", "land", "noise"],
+                  "c": 1
+                },
+                {
+                  "q": "When forests are cut down, it is called ________.",
+                  "a": ["global warming", "deforestation", "pollution", "recycling"],
+                  "c": 1
+                },
+                {
+                  "q": "The increase in Earth's temperature is called ________.",
+                  "a": ["deforestation", "global warming", "air pollution", "the monsoon"],
+                  "c": 1
+                },
+                {
+                  "q": "Dropping rubbish on the ground is called ________.",
+                  "a": ["recycling", "littering", "composting", "cleaning"],
+                  "c": 1
+                },
+                {
+                  "q": "Deforestation is bad because animals lose their ________.",
+                  "a": ["food", "habitats", "water", "friends"],
+                  "c": 1
+                },
+                {
+                  "q": "Which of these causes water pollution?",
+                  "a": ["Planting trees", "Dumping waste into rivers", "Riding a bicycle", "Turning off lights"],
+                  "c": 1
+                },
+                {
+                  "q": "Loud noises from traffic and construction are called ________ pollution.",
+                  "a": ["air", "water", "noise", "land"],
+                  "c": 2
+                }
+              ]
+            },
+            "10.2": {
+              "name": "Recycling and Conservation",
+              "revision": "The 3Rs help protect our environment. 'Reduce' means using less — for example, using fewer plastic bags. 'Reuse' means using something again instead of throwing it away — like using a water bottle many times. 'Recycle' means turning old materials into new products — like making new paper from old newspapers. We can also 'save water' by turning off taps properly and taking shorter showers, and 'save electricity' by turning off lights and fans when not in use. Every small action helps!",
+              "questions": [
+                {
+                  "q": "What does the 'R' in 'Reduce' mean?",
+                  "a": ["Throw away more", "Use less", "Buy more", "Use again"],
+                  "c": 1
+                },
+                {
+                  "q": "Using a water bottle many times is an example of ________.",
+                  "a": ["reducing", "reusing", "recycling", "throwing away"],
+                  "c": 1
+                },
+                {
+                  "q": "Turning old newspapers into new paper is called ________.",
+                  "a": ["reducing", "reusing", "recycling", "rebuilding"],
+                  "c": 2
+                },
+                {
+                  "q": "Complete: 'We should ________ off the lights when we leave a room.'",
+                  "a": ["turn on", "turn off", "leave", "break"],
+                  "c": 1
+                },
+                {
+                  "q": "To save water, we should ________ the tap while brushing our teeth.",
+                  "a": ["leave on", "turn off", "open wide", "cover"],
+                  "c": 1
+                },
+                {
+                  "q": "The 3Rs stand for Reduce, Reuse, and ________.",
+                  "a": ["Reheat", "Recycle", "Remove", "Repair"],
+                  "c": 1
+                },
+                {
+                  "q": "Which item can be recycled?",
+                  "a": ["Plastic bottle", "Broken toy", "Apple core", "Crayon"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'We can ________ electricity by using energy-saving bulbs.'",
+                  "a": ["waste", "save", "use up", "spend"],
+                  "c": 1
+                }
+              ]
+            },
+            "10.3": {
+              "name": "Taking Care of Our Environment",
+              "revision": "Everyone can help take care of the environment. We can 'plant trees' which give us oxygen and provide homes for animals. We can 'clean beaches' by picking up rubbish that washes ashore. We can 'save animals' by protecting their habitats and not buying products made from endangered animals. Other actions: walk or cycle instead of using cars (less air pollution), use reusable bags instead of plastic bags, and compost food scraps. Together, our small actions make a big difference! 'The Earth is our home — let's take care of it!'",
+              "questions": [
+                {
+                  "q": "Planting trees is good because they give us ________.",
+                  "a": ["money", "oxygen", "plastic", "paper"],
+                  "c": 1
+                },
+                {
+                  "q": "What can you do at the beach to help the environment?",
+                  "a": ["Throw more rubbish", "Clean up the beach", "Build sandcastles", "Swim far out"],
+                  "c": 1
+                },
+                {
+                  "q": "Using a reusable bag instead of a plastic bag helps ________ waste.",
+                  "a": ["increase", "reduce", "double", "ignore"],
+                  "c": 1
+                },
+                {
+                  "q": "Walking or cycling to school instead of going by car reduces ________.",
+                  "a": ["exercise", "air pollution", "traffic", "noise"],
+                  "c": 1
+                },
+                {
+                  "q": "Complete: 'We should ________ endangered animals like tigers and orangutans.'",
+                  "a": ["hunt", "ignore", "protect", "sell"],
+                  "c": 2
+                },
+                {
+                  "q": "Food scraps like fruit peels can be turned into ________.",
+                  "a": ["compost", "plastic", "metal", "paper"],
+                  "c": 0
+                },
+                {
+                  "q": "Complete: 'The Earth is our home — let's take ________ of it!'",
+                  "a": ["care", "photo", "note", "part"],
+                  "c": 0
+                },
+                {
+                  "q": "What is one way to help animals?",
+                  "a": ["Cut down forests", "Protect their habitats", "Throw rubbish in rivers", "Use more plastic"],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
