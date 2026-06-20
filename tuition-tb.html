@@ -219,6 +219,27 @@
         </div>
     </div>
 
+    <!-- PREMIUM UPGRADE MODAL -->
+    <div id="premium-modal-tb" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); z-index:999; align-items:center; justify-content:center; padding:20px;">
+        <div style="background:white; border-radius:24px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+            <div style="font-size:3rem; margin-bottom:10px;">🚀</div>
+            <h2 style="margin-bottom:5px;">Upgrade to Premium</h2>
+            <p style="color:#666; margin-bottom:20px; font-size:0.9rem;">Unlock all units & subjects! Premium gives you full access to every topic across all years.</p>
+            <div style="background:#f8f9fa; border-radius:14px; padding:15px; margin-bottom:20px;">
+                <p style="font-weight:700; font-size:1.3rem;">RMXX</p>
+                <p style="color:#666; font-size:0.8rem;">One-time payment • Lifetime access</p>
+            </div>
+            <div style="background:#f5f5f5; border-radius:14px; padding:20px; margin-bottom:20px;">
+                <p style="font-weight:700; margin-bottom:8px;">📱 Scan to pay via TNG</p>
+                <div style="width:160px; height:160px; background:#ddd; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#999; font-size:0.8rem;">
+                    [QR Code Placeholder]
+                </div>
+                <p style="margin-top:8px; font-size:0.8rem; color:#666;">After payment, email <strong>azel.inc@gmail.com</strong> with your account email</p>
+            </div>
+            <button onclick="document.getElementById('premium-modal-tb').style.display='none'" style="background:none; border:none; color:#999; cursor:pointer; font-size:0.85rem;">Close</button>
+        </div>
+    </div>
+
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
@@ -254,6 +275,7 @@
         let wrongQuestions = [];
         let currentUserId = null;
         let userScores = {};
+        let subscriptionPlan = 'free';
         let selectedYear = parseInt(new URLSearchParams(window.location.search).get('year')) || 4;
 
         // Get stored user
@@ -288,7 +310,7 @@
                 if (Object.keys(merged.subjects).length === 0)
                     throw new Error('No subjects loaded');
                 questionBank = merged;
-                await loadUserScores();
+                await Promise.all([loadUserScores(), loadSubscription()]);
                 renderSubjects();
                 updateStreakDisplay();
             } catch(e) {
@@ -304,6 +326,18 @@
                 const ref = doc(db, "profiles", uid, "children", kidName);
                 const snap = await getDoc(ref);
                 if (snap.exists()) userScores = snap.data().tb_scores || {};
+            } catch(e) {}
+        }
+
+        // Load subscription plan from Firestore
+        async function loadSubscription() {
+            const uid = getUserId();
+            if (!uid) return;
+            try {
+                const snap = await getDoc(doc(db, "admins", uid));
+                if (snap.exists()) {
+                    subscriptionPlan = snap.data().subscription?.plan || 'free';
+                }
             } catch(e) {}
         }
 
@@ -422,6 +456,7 @@
             const list = document.getElementById('unit-list');
             list.innerHTML = '';
             const units = s.units;
+            const isPremium = subscriptionPlan === 'premium';
             Object.keys(units).forEach(uk => {
                 const u = units[uk];
                 const topics = Object.keys(u.topics);
@@ -435,18 +470,37 @@
 
                 const card = document.createElement('div');
                 card.className = 'unit-card';
-                card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
-                    <div class="unit-progress-wrap">
-                        <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
-                        <span class="unit-progress-text">${done}/${topics.length}</span>
-                    </div>`;
-                card.onclick = () => selectUnit(uk);
+
+                // Free users: only Unit 1 is accessible
+                const unitNum = parseInt(uk);
+                const locked = !isPremium && unitNum > 1;
+
+                if (locked) {
+                    card.style.opacity = '0.65';
+                    card.style.cursor = 'pointer';
+                    card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name} <span style="font-size:0.85rem; color:#f39c12;">🔒</span>
+                        <div class="unit-progress-wrap">
+                            <span style="color:#f39c12; font-size:0.8rem;">⭐ Premium</span>
+                        </div>`;
+                    card.onclick = showPremiumModal;
+                } else {
+                    card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
+                        <div class="unit-progress-wrap">
+                            <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
+                            <span class="unit-progress-text">${done}/${topics.length}</span>
+                        </div>`;
+                    card.onclick = () => selectUnit(uk);
+                }
                 list.appendChild(card);
             });
 
             document.getElementById('subject-screen').style.display = 'none';
             document.getElementById('unit-screen').style.display = 'block';
             document.getElementById('topic-screen').style.display = 'none';
+        }
+
+        function showPremiumModal() {
+            document.getElementById('premium-modal-tb').style.display = 'flex';
         }
 
         // SELECT UNIT → show topics

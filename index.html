@@ -232,7 +232,7 @@
 
             <!-- UPGRADE BANNER (shown when free user hits profile limit) -->
             <div id="upgrade-banner" class="upgrade-banner" style="display:none;" onclick="showUpgradeInfo()">
-                🚀 Upgrade to Premium — unlimited profiles & advanced features
+                🚀 Upgrade to Premium — unlock all units & advanced features
             </div>
 
             <div style="margin-top: 25px; display: flex; flex-direction: column; gap: 10px;">
@@ -282,7 +282,7 @@
             <div style="background:white; border-radius:24px; padding:30px; max-width:400px; width:100%; text-align:center; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
                 <div style="font-size:3rem; margin-bottom:10px;">🚀</div>
                 <h2 style="margin-bottom:5px;">Upgrade to Premium</h2>
-                <p style="color:#666; margin-bottom:20px; font-size:0.9rem;">Get unlimited profiles, advanced subjects & quizzes, and ad-free experience!</p>
+                <p style="color:#666; margin-bottom:20px; font-size:0.9rem;">Unlock all units across every subject and year. Premium gives you full learning access!</p>
                 <div style="background:#f8f9fa; border-radius:14px; padding:15px; margin-bottom:20px;">
                     <p style="font-weight:700; font-size:1.3rem;">RMXX</p>
                     <p style="color:#666; font-size:0.8rem;">One-time payment • Lifetime access</p>
@@ -367,7 +367,7 @@
         let subscriptionPlan = 'free';
         let profileCount = 0;
         let _renderingProfiles = false;   // Guard against concurrent renders
-        const FREE_PROFILE_LIMIT = 1;
+        const FREE_PROFILE_LIMIT = 6;
 
         function showToast(message, type = 'info') {
             const toast = document.createElement('div');
