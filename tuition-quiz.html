@@ -45,6 +45,23 @@
         .timer-wrapper { width: 90%; margin: 0 auto 20px; background: #eee; height: 12px; border-radius: 10px; overflow: hidden; }
         #timer-bar { height: 100%; width: 100%; transition: width 1s linear; }
         #stats { padding: 0 25px; font-weight: bold; margin-bottom: 10px; color: #666; display: flex; justify-content: space-between; font-size: 0.9rem; }
+
+        /* Action buttons group */
+        .action-group { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px; margin-top: 10px; }
+        .green-btn { background: #2ecc71; border-bottom: 5px solid #27ae60; }
+        .green-btn:active { transform: translateY(4px); border-bottom-width: 1px; }
+        .orange-btn { background: #f39c12; border-bottom: 5px solid #d68910; }
+        .orange-btn:active { transform: translateY(4px); border-bottom-width: 1px; }
+        .red-btn { background: #e74c3c; border-bottom: 5px solid #c0392b; }
+        .red-btn:active { transform: translateY(4px); border-bottom-width: 1px; }
+
+        /* Review Area */
+        .review-card { text-align: left; background: #fff; padding: 20px; border-radius: 20px; margin: 20px; border: 1px solid #eee; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .review-item { padding: 16px 0; border-bottom: 1px solid #eee; }
+        .review-item:last-child { border-bottom: none; }
+        .review-q { font-weight: bold; font-size: 1.05rem; color: #2c3e50; margin-bottom: 8px; }
+        .review-ur-answer { color: #e74c3c; font-size: 0.95rem; }
+        .review-correct { color: #2ecc71; font-size: 0.95rem; }
     </style>
 </head>
 <body>
@@ -66,7 +83,7 @@
             <div id="options-list"></div>
         </div>
 
-        <!-- NEW PROFESSIONAL RESULT AREA -->
+        <!-- RESULT AREA -->
         <div id="result-area" style="display:none;">
             <div class="result-card">
                 <div style="font-size: 50px; margin-bottom: 10px;">🏆</div>
@@ -77,9 +94,29 @@
                     Checking Cloud Sync...
                 </div>
                 
-                <button id="back-to-hub-btn" class="btn blue-btn" onclick="location.href='school.html'">
-                    Back to Hub
-                </button>
+                <div class="action-group">
+                    <button id="review-btn" class="btn orange-btn" onclick="showReview()" style="display:none;">
+                        📝 Review Wrong Answers
+                    </button>
+                    <button class="btn green-btn" onclick="location.reload()">
+                        🔁 Retry Quiz
+                    </button>
+                    <button class="btn blue-btn" onclick="location.href='school.html'">
+                        🏠 Back to Hub
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- REVIEW AREA -->
+        <div id="review-area" style="display:none;">
+            <h1 style="background:#e74c3c; color:white; padding:25px 20px; margin:0; font-size:1.4rem; text-align:left;">
+                📝 Review Your Mistakes
+            </h1>
+            <div id="review-list" class="review-card"></div>
+            <div class="action-group" style="margin:0 auto 20px;">
+                <button class="btn green-btn" onclick="location.reload()">🔁 Retry Quiz</button>
+                <button class="btn blue-btn" onclick="location.href='school.html'">🏠 Back to Hub</button>
             </div>
         </div>
     </div>
@@ -111,6 +148,7 @@
 
         let currentQ = 0; let score = 0; let questions = [];
         let timerInterval; let timeLeft = 30;
+        let wrongQuestions = [];
 
         async function startEngine() {
             try {
@@ -172,6 +210,12 @@
             const correctIdx = questions[currentQ].c;
             for(let b of btns) b.disabled = true;
             btns[correctIdx].classList.add('correct');
+            wrongQuestions.push({
+                q: questions[currentQ].q,
+                options: questions[currentQ].a,
+                correctIdx: correctIdx,
+                chosenIdx: -1 // timeout — no answer chosen
+            });
             setTimeout(goToNext, 2000);
         }
 
@@ -181,7 +225,16 @@
             const correctIdx = questions[currentQ].c;
             for(let b of btns) b.disabled = true;
             if(idx === correctIdx) { btn.classList.add('correct'); score++; }
-            else { btn.classList.add('wrong'); btns[correctIdx].classList.add('correct'); }
+            else {
+                btn.classList.add('wrong');
+                btns[correctIdx].classList.add('correct');
+                wrongQuestions.push({
+                    q: questions[currentQ].q,
+                    options: questions[currentQ].a,
+                    correctIdx: correctIdx,
+                    chosenIdx: idx
+                });
+            }
             setTimeout(goToNext, 1200);
         }
 
@@ -231,6 +284,34 @@
                 }
             }
             document.getElementById('feedback').innerText = score >= 5 ? `Excellent work, ${kidName}!` : `Good try, ${kidName}!`;
+
+            // Show review button only if there were mistakes
+            const reviewBtn = document.getElementById('review-btn');
+            if (wrongQuestions.length > 0) {
+                reviewBtn.style.display = 'block';
+                reviewBtn.innerText = `📝 Review ${wrongQuestions.length} Wrong Answer${wrongQuestions.length > 1 ? 's' : ''}`;
+            }
+        }
+
+        window.showReview = function() {
+            document.getElementById('result-area').style.display = 'none';
+            const list = document.getElementById('review-list');
+            list.innerHTML = '';
+            wrongQuestions.forEach((wq, i) => {
+                const correctAns = wq.options[wq.correctIdx];
+                const div = document.createElement('div');
+                div.className = 'review-item';
+                let chosenTxt = (wq.chosenIdx === -1)
+                    ? '<span class="review-ur-answer">⏱️ You ran out of time</span>'
+                    : `<span class="review-ur-answer">❌ Your answer: ${wq.options[wq.chosenIdx]}</span>`;
+                div.innerHTML = `
+                    <div class="review-q">${i + 1}. ${wq.q}</div>
+                    ${chosenTxt}<br>
+                    <span class="review-correct">✅ Correct answer: ${correctAns}</span>
+                `;
+                list.appendChild(div);
+            });
+            document.getElementById('review-area').style.display = 'block';
         }
 
         startEngine();
