@@ -271,12 +271,23 @@
                 // Set page title based on year
                 document.getElementById('page-title').innerHTML = `📘 KSSR Tahun ${selectedYear} (DLP) <span id="streak-display"></span>`;
 
-                const jsonFile = `math${selectedYear}-tb.json`;
-                const resp = await fetch(jsonFile);
-                if (!resp || !resp.ok) throw new Error('Failed to load questions');
-                questionBank = await resp.json();
-                if (!questionBank.subjects || Object.keys(questionBank.subjects).length === 0)
+                // Load ALL subject files for this year and merge
+                const subjectFiles = [`math${selectedYear}-tb.json`, `sci${selectedYear}-tb.json`];
+                const merged = { subjects: {} };
+                for (const file of subjectFiles) {
+                    try {
+                        const resp = await fetch(file);
+                        if (resp && resp.ok) {
+                            const data = await resp.json();
+                            if (data.subjects) {
+                                Object.assign(merged.subjects, data.subjects);
+                            }
+                        }
+                    } catch(e) { /* file not available for this year */ }
+                }
+                if (Object.keys(merged.subjects).length === 0)
                     throw new Error('No subjects loaded');
+                questionBank = merged;
                 await loadUserScores();
                 renderSubjects();
                 updateStreakDisplay();

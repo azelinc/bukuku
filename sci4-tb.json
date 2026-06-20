@@ -1,0 +1,2525 @@
+{
+  "subjects": {
+    "sci4": {
+      "name": "Science Year 4 (DLP)",
+      "icon": "🧪",
+      "color": "#0097a7",
+      "units": {
+        "1": {
+          "name": "Scientific Skills",
+          "topics": {
+            "1.1": {
+              "name": "Science Process Skills",
+              "revision": "Science process skills are basic skills that help scientists carry out investigations. These include observing (using senses), classifying (grouping), measuring (using tools), predicting (guessing outcomes), and communicating (sharing findings). Mastering these skills helps you think and work like a real scientist.",
+              "questions": [
+                {
+                  "q": "Which science process skill involves using your five senses to gather information about an object?",
+                  "a": [
+                    "Predicting",
+                    "Classifying",
+                    "Inferring",
+                    "Observing"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ravi groups animals into those with fur and those without fur. Which science process skill is he using?",
+                  "a": [
+                    "Measuring",
+                    "Classifying",
+                    "Inferring",
+                    "Observing"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "After seeing dark clouds in the sky, Ali says, 'It will rain soon.' Which skill is he using?",
+                  "a": [
+                    "Predicting",
+                    "Observing",
+                    "Measuring",
+                    "Communicating"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A student uses a ruler to find the length of a leaf. Which science process skill is being used?",
+                  "a": [
+                    "Predicting",
+                    "Classifying",
+                    "Measuring",
+                    "Observing"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Presenting your experiment results in a table or chart is an example of which science process skill?",
+                  "a": [
+                    "Predicting",
+                    "Classifying",
+                    "Measuring",
+                    "Communicating"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Using Space-Time Relationship",
+              "revision": "Space-time relationship describes how objects change position or shape over time. For example, a seed growing into a plant changes in height (space) over days (time). Understanding this helps us describe movements, growth, and changes in the world around us.",
+              "questions": [
+                {
+                  "q": "A plant grows from 10 cm to 25 cm over 2 weeks. What does this change describe?",
+                  "a": [
+                    "A space-time relationship",
+                    "An inference",
+                    "A classification skill",
+                    "A prediction"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A car moves from Kuala Lumpur to Penang in 4 hours. What two things are being related?",
+                  "a": [
+                    "Weight and height",
+                    "Speed and colour",
+                    "Temperature and time",
+                    "Distance and time"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following shows a space-time relationship?",
+                  "a": [
+                    "A ball is red",
+                    "Ice melts in 10 minutes",
+                    "Sugar is sweet",
+                    "Water is wet"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A balloon deflates from 30 cm wide to 10 cm wide in 5 seconds. The change in size over time describes...",
+                  "a": [
+                    "A space-time relationship",
+                    "An observation",
+                    "A measurement",
+                    "A classification"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A shadow moves from the left side of a tree to the right side during the day. This change is due to...",
+                  "a": [
+                    "The sun's position changing over time",
+                    "The tree growing",
+                    "Wind blowing",
+                    "Birds moving"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Interpreting Data",
+              "revision": "Interpreting data means looking at information in tables, charts, or graphs to find patterns and draw conclusions. For example, a bar chart showing rainfall each month helps us see which month is the wettest. Scientists use this skill to make sense of their results.",
+              "questions": [
+                {
+                  "q": "A table shows that plants watered daily grow 15 cm tall, while plants watered once a week grow 5 cm tall. What can you conclude?",
+                  "a": [
+                    "Plants do not need water",
+                    "Watering less helps plants grow",
+                    "More water makes plants grow taller",
+                    "Sunlight is not important"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A bar chart shows temperature from Monday to Friday. Monday is 28°C, Tuesday 29°C, Wednesday 30°C, Thursday 31°C, Friday 32°C. What pattern do you see?",
+                  "a": [
+                    "Temperature stays the same",
+                    "Temperature goes up and down",
+                    "Temperature increases each day",
+                    "Temperature decreases each day"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "After interpreting data from an experiment, what should you do next?",
+                  "a": [
+                    "Make a conclusion based on the pattern",
+                    "Throw the data away",
+                    "Guess randomly",
+                    "Repeat without looking at data"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A pictograph shows 5 books read by Class A, 8 by Class B, and 3 by Class C. Which class read the most books?",
+                  "a": [
+                    "Cannot tell",
+                    "Class C",
+                    "Class A",
+                    "Class B"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Data shows that a rubber band stretches longer when more weight is added. This shows a pattern of...",
+                  "a": [
+                    "No relationship",
+                    "The more weight, the less stretch",
+                    "Weight does not affect stretch",
+                    "The more weight, the more stretch"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "1.4": {
+              "name": "Defining Operationally",
+              "revision": "Defining operationally means describing a variable by how you measure it or what you do in an experiment. For example, 'growth' can be defined operationally as 'the increase in height in centimetres measured with a ruler.' This makes experiments clear and repeatable.",
+              "questions": [
+                {
+                  "q": "In an experiment, 'plant growth' is defined as 'increase in height in cm per week.' This is called...",
+                  "a": [
+                    "An operational definition",
+                    "A conclusion",
+                    "A hypothesis",
+                    "An observation"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A student defines 'hot water' as 'water heated to 80°C.' This is an example of...",
+                  "a": [
+                    "Inferring",
+                    "Classifying",
+                    "Predicting",
+                    "Defining operationally"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following is an operational definition of 'loud sound'?",
+                  "a": [
+                    "Sound measured at 90 decibels using a sound meter",
+                    "Sound that hurts ears",
+                    "A big noise",
+                    "Sound from a drum"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Why do scientists use operational definitions in experiments?",
+                  "a": [
+                    "To make experiments longer",
+                    "So others can repeat the experiment exactly",
+                    "To confuse people",
+                    "To save money"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In an experiment on friction, 'rough surface' is defined as 'sandpaper with grade 80.' This is an example of...",
+                  "a": [
+                    "A conclusion",
+                    "A hypothesis",
+                    "An operational definition",
+                    "A variable"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "1.5": {
+              "name": "Controlling Variables",
+              "revision": "In experiments, variables are things that can change. The manipulated variable is what you change on purpose, the responding variable is what you measure, and the constant variables stay the same. Controlling variables ensures fair tests and accurate results.",
+              "questions": [
+                {
+                  "q": "In an experiment testing how light affects plant growth, what is the manipulated variable?",
+                  "a": [
+                    "Plant height",
+                    "Type of soil",
+                    "Amount of water",
+                    "Amount of light"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "In a fair test, which variables should be kept the same?",
+                  "a": [
+                    "Constant variables",
+                    "Responding variables only",
+                    "Manipulated variables only",
+                    "All variables"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A student wants to test which type of material absorbs water best. What is the responding variable?",
+                  "a": [
+                    "Amount of water absorbed",
+                    "Time taken",
+                    "Type of material",
+                    "Size of material"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "To test how surface affects rolling distance, you change the surface but keep the ramp height and ball the same. What is the constant variable?",
+                  "a": [
+                    "Surface type",
+                    "Ramp height",
+                    "Rolling distance",
+                    "Both B and C are wrong"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Why must you only change ONE variable at a time in an experiment?",
+                  "a": [
+                    "To know which variable caused the result",
+                    "To make it harder",
+                    "It doesn't matter",
+                    "To save time"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.6": {
+              "name": "Making a Hypothesis",
+              "revision": "A hypothesis is an educated guess or prediction based on what you already know. It is written as an 'if... then...' statement, such as 'If a plant gets more sunlight, then it will grow taller.' A hypothesis guides the experiment and can be tested.",
+              "questions": [
+                {
+                  "q": "Which of the following is a correctly written hypothesis?",
+                  "a": [
+                    "If I add more salt, then the water will boil faster",
+                    "I think it might rain",
+                    "Plants need water",
+                    "Sun is hot"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A hypothesis must be...",
+                  "a": [
+                    "Difficult to understand",
+                    "A random guess",
+                    "Testable through experiments",
+                    "Always correct"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A student hypothesises that 'if I use a smoother surface, then the ball will roll further.' What is the manipulated variable?",
+                  "a": [
+                    "Height of ramp",
+                    "Type of surface",
+                    "Size of ball",
+                    "Distance rolled"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What makes a hypothesis different from a simple guess?",
+                  "a": [
+                    "It is random",
+                    "It is always wrong",
+                    "It cannot be tested",
+                    "It is based on prior knowledge"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "After testing a hypothesis, if the results do not match your prediction, what should you do?",
+                  "a": [
+                    "Accept that your hypothesis was wrong and learn from it",
+                    "Change the results",
+                    "Give up on science",
+                    "Ignore it"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.7": {
+              "name": "Experimenting",
+              "revision": "Experimenting is the complete process of carrying out a scientific investigation. The steps include: identifying the problem, making a hypothesis, planning the experiment, conducting the experiment, collecting data, interpreting data, and making a conclusion. A fair test with controlled variables is essential.",
+              "questions": [
+                {
+                  "q": "What is the FIRST step in a scientific experiment?",
+                  "a": [
+                    "Making a conclusion",
+                    "Identifying the problem",
+                    "Writing a report",
+                    "Collecting data"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "After conducting an experiment and collecting data, what is the next step?",
+                  "a": [
+                    "Buy new equipment",
+                    "Throw away the data",
+                    "Change the hypothesis",
+                    "Make a conclusion"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A fair test means...",
+                  "a": [
+                    "You work with a partner",
+                    "Only one variable is changed while others stay the same",
+                    "You do the experiment quickly",
+                    "Everyone gets the same equipment"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Why do scientists repeat experiments several times?",
+                  "a": [
+                    "To get more accurate and reliable results",
+                    "Because it is fun",
+                    "To waste time",
+                    "To use more materials"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "The final step in an experiment is to...",
+                  "a": [
+                    "Write a conclusion and report your findings",
+                    "Clean up only",
+                    "Start a new experiment",
+                    "Forget about it"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Humans",
+          "topics": {
+            "2.1": {
+              "name": "Organs Involved in Human Breathing",
+              "revision": "The human breathing system includes the nose, trachea (windpipe), bronchi, lungs, and diaphragm. Air enters through the nose, travels down the trachea into the bronchi, and reaches the lungs where oxygen is absorbed into the blood. The diaphragm is a muscle below the lungs that helps with breathing.",
+              "questions": [
+                {
+                  "q": "Which organ is the main passage for air to travel from the nose to the lungs?",
+                  "a": [
+                    "Oesophagus",
+                    "Stomach",
+                    "Heart",
+                    "Trachea"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The dome-shaped muscle below the lungs that helps with breathing is called the...",
+                  "a": [
+                    "Rib cage",
+                    "Bronchus",
+                    "Trachea",
+                    "Diaphragm"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Where does the exchange of oxygen and carbon dioxide take place?",
+                  "a": [
+                    "In the trachea",
+                    "In the mouth",
+                    "In the nose",
+                    "In the lungs"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following is NOT part of the human breathing system?",
+                  "a": [
+                    "Trachea",
+                    "Stomach",
+                    "Lungs",
+                    "Nose"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the function of the tiny hairs inside the nose?",
+                  "a": [
+                    "To produce mucus",
+                    "To warm the air only",
+                    "To filter dust and germs from the air",
+                    "To make the nose look bigger"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Human Breathing Process",
+              "revision": "Breathing involves two processes: inhalation (breathing in) and exhalation (breathing out). During inhalation, oxygen from the air enters the lungs and is absorbed into the blood. During exhalation, carbon dioxide is removed from the body. Oxygen is needed by cells to produce energy.",
+              "questions": [
+                {
+                  "q": "During inhalation, which gas enters the body?",
+                  "a": [
+                    "Nitrogen",
+                    "Oxygen",
+                    "Hydrogen",
+                    "Carbon dioxide"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "During exhalation, the body mainly releases...",
+                  "a": [
+                    "Nitrogen",
+                    "Carbon dioxide",
+                    "Helium",
+                    "Oxygen"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What happens to the diaphragm during inhalation?",
+                  "a": [
+                    "It relaxes and moves upward",
+                    "It stays the same",
+                    "It moves sideways",
+                    "It contracts and flattens"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Why do we need oxygen in our body?",
+                  "a": [
+                    "To digest food",
+                    "To grow taller",
+                    "To make blood",
+                    "To produce energy for our cells"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "How many times does an average adult breathe per minute at rest?",
+                  "a": [
+                    "About 30-40 times",
+                    "About 50-60 times",
+                    "About 12-20 times",
+                    "About 5-10 times"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Chest Movement During Breathing",
+              "revision": "During breathing, the chest moves because of the ribs and diaphragm. When we inhale, the rib cage moves up and out and the diaphragm contracts downward, making the chest cavity bigger. When we exhale, the rib cage moves down and in and the diaphragm relaxes upward, making the chest cavity smaller.",
+              "questions": [
+                {
+                  "q": "When you inhale, your rib cage moves...",
+                  "a": [
+                    "Forward only",
+                    "It does not move",
+                    "Up and out",
+                    "Down and in"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What happens to the chest cavity size during inhalation?",
+                  "a": [
+                    "It disappears",
+                    "It stays the same",
+                    "It becomes smaller",
+                    "It becomes larger"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "During a science demonstration, a model using a plastic bottle and balloon shows the diaphragm. When the rubber sheet is pulled down, the balloon inside...",
+                  "a": [
+                    "Pops",
+                    "Stays the same",
+                    "Deflates",
+                    "Inflates"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The space between the ribs contains muscles called...",
+                  "a": [
+                    "Abdominal muscles",
+                    "Bicep muscles",
+                    "Cardiac muscles",
+                    "Intercostal muscles"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "During exhalation, the diaphragm moves...",
+                  "a": [
+                    "Downward",
+                    "Upward",
+                    "It does not move",
+                    "Sideways"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "2.4": {
+              "name": "Excretion and Defecation",
+              "revision": "Excretion is the removal of waste products produced by the body, such as urine (from kidneys), carbon dioxide (from lungs), and sweat (from skin). Defecation is the removal of undigested food (faeces) from the body through the anus. These processes keep the body healthy.",
+              "questions": [
+                {
+                  "q": "Which organ is responsible for removing excess water and waste as urine?",
+                  "a": [
+                    "Lungs",
+                    "Kidneys",
+                    "Anus",
+                    "Skin"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The removal of undigested food from the body is called...",
+                  "a": [
+                    "Respiration",
+                    "Defecation",
+                    "Excretion",
+                    "Digestion"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is an excretory organ?",
+                  "a": [
+                    "Stomach",
+                    "Heart",
+                    "Brain",
+                    "Skin"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Carbon dioxide is removed from the body through which organ?",
+                  "a": [
+                    "Kidneys",
+                    "Intestines",
+                    "Lungs",
+                    "Skin"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The main difference between excretion and defecation is that excretion removes...",
+                  "a": [
+                    "Body waste produced by cells",
+                    "Only salt",
+                    "Undigested food",
+                    "Only water"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "2.5": {
+              "name": "Response to Stimuli",
+              "revision": "Humans respond to stimuli through their five senses: sight (eyes), hearing (ears), touch (skin), taste (tongue), and smell (nose). Each sense organ detects specific stimuli - light, sound, pressure, chemicals, and odours. Our body reacts automatically or deliberately to these stimuli.",
+              "questions": [
+                {
+                  "q": "Which sense organ detects light and allows us to see?",
+                  "a": [
+                    "Eyes",
+                    "Nose",
+                    "Ears",
+                    "Skin"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "When you touch a hot pan, you quickly pull your hand away. This is an example of...",
+                  "a": [
+                    "No response",
+                    "Involuntary response",
+                    "Voluntary response",
+                    "Habit"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The tongue can detect which of the following tastes?",
+                  "a": [
+                    "Only sweet",
+                    "Only sweet and sour",
+                    "Sweet, sour, salty, bitter, umami",
+                    "Only salty and bitter"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The smell of durian can be detected from far away. This is because the nose detects...",
+                  "a": [
+                    "Tiny particles in the air",
+                    "Heat",
+                    "Sound waves",
+                    "Light waves"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "If someone whispers behind you, which stimulus do your ears detect?",
+                  "a": [
+                    "Sound",
+                    "Light",
+                    "Temperature",
+                    "Pressure"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "2.6": {
+              "name": "Habits that Disrupt Human Response",
+              "revision": "Certain habits can damage our sense organs and disrupt our response to stimuli. Smoking damages the lungs and reduces smell and taste. Listening to loud music can damage hearing. Drugs and alcohol affect the brain and slow down responses. Protecting our senses helps us stay healthy and safe.",
+              "questions": [
+                {
+                  "q": "Which habit can damage your hearing?",
+                  "a": [
+                    "Listening to loud music with earphones",
+                    "Eating vegetables",
+                    "Drinking water",
+                    "Reading books"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Smoking can damage which sense the most?",
+                  "a": [
+                    "Sight",
+                    "Smell and taste",
+                    "Hearing",
+                    "Touch"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Drinking alcohol can affect a person's ability to...",
+                  "a": [
+                    "React quickly to danger",
+                    "Taste food",
+                    "See clearly in the dark",
+                    "Hear whispers"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Why should you not look directly at the sun?",
+                  "a": [
+                    "It makes you sneeze",
+                    "It makes your nose bleed",
+                    "It can damage your eyes permanently",
+                    "It gives you a headache"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Using drugs without a doctor's prescription can affect which part of the body the most?",
+                  "a": [
+                    "The nails",
+                    "The brain and nervous system",
+                    "The teeth",
+                    "The hair"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Animals",
+          "topics": {
+            "3.1": {
+              "name": "Breathing Organs of Animals",
+              "revision": "Different animals have different breathing organs. Fish breathe through gills (taking in oxygen from water). Mammals like cats and humans use lungs. Frogs use moist skin and lungs. Insects like grasshoppers use tiny tubes called spiracles. The breathing organ depends on the animal's habitat.",
+              "questions": [
+                {
+                  "q": "What is the breathing organ of a fish?",
+                  "a": [
+                    "Lungs",
+                    "Spiracles",
+                    "Gills",
+                    "Moist skin"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A grasshopper breathes through tiny holes on its body called...",
+                  "a": [
+                    "Gills",
+                    "Spiracles",
+                    "Lungs",
+                    "Pores"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which animal uses both moist skin and lungs to breathe?",
+                  "a": [
+                    "Snake",
+                    "Lizard",
+                    "Bird",
+                    "Frog"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Dolphins live in water but breathe through...",
+                  "a": [
+                    "Spiracles",
+                    "Lungs",
+                    "Gills",
+                    "Skin"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A tadpole breathes through which organ before it becomes a frog?",
+                  "a": [
+                    "Gills",
+                    "Spiracles",
+                    "Lungs",
+                    "Skin"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Vertebrates and Invertebrates",
+              "revision": "Animals can be divided into two main groups: vertebrates (animals with a backbone) and invertebrates (animals without a backbone). Vertebrates include fish, amphibians, reptiles, birds, and mammals. Invertebrates include insects, spiders, worms, jellyfish, and snails. Most animals on Earth are invertebrates.",
+              "questions": [
+                {
+                  "q": "Animals with a backbone are called...",
+                  "a": [
+                    "Reptiles",
+                    "Vertebrates",
+                    "Mammals",
+                    "Invertebrates"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which of the following is an invertebrate?",
+                  "a": [
+                    "Snake",
+                    "Cat",
+                    "Butterfly",
+                    "Eagle"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which group of animals has a backbone and gives birth to live young?",
+                  "a": [
+                    "Reptiles",
+                    "Mammals",
+                    "Birds",
+                    "Fish"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A spider has no backbone. It belongs to the group called...",
+                  "a": [
+                    "Reptiles",
+                    "Vertebrates",
+                    "Mammals",
+                    "Invertebrates"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following is a vertebrate?",
+                  "a": [
+                    "Octopus",
+                    "Ant",
+                    "Earthworm",
+                    "Mynah bird"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Specific Characteristics of Vertebrates",
+              "revision": "Vertebrates are grouped into five classes: fish (live in water, scales, gills, lay eggs), amphibians (moist skin, live on land and water), reptiles (dry scaly skin, lay eggs), birds (feathers, wings, beak, lay eggs), and mammals (fur/hair, feed milk to young, usually give birth). Each class has unique features.",
+              "questions": [
+                {
+                  "q": "Which class of vertebrates has feathers and lays eggs?",
+                  "a": [
+                    "Reptiles",
+                    "Birds",
+                    "Mammals",
+                    "Fish"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A crocodile has dry scaly skin and lays eggs. It belongs to which class?",
+                  "a": [
+                    "Amphibians",
+                    "Reptiles",
+                    "Fish",
+                    "Mammals"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which characteristic is unique to mammals?",
+                  "a": [
+                    "They lay eggs",
+                    "They live in water",
+                    "They have scales",
+                    "They feed their young with milk"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A frog starts life in water with gills but develops lungs as an adult. It is a(n)...",
+                  "a": [
+                    "Mammal",
+                    "Reptile",
+                    "Amphibian",
+                    "Fish"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which vertebrate group has scales, lives in water, and breathes through gills?",
+                  "a": [
+                    "Amphibians",
+                    "Birds",
+                    "Reptiles",
+                    "Fish"
+                  ],
+                  "c": 3
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Plants",
+          "topics": {
+            "4.1": {
+              "name": "Plant Responses to Stimuli",
+              "revision": "Plants respond to stimuli even though they cannot move like animals. Phototropism is growth towards light. Geotropism (gravitropism) is growth in response to gravity — roots grow downward, stems grow upward. Hydrotropism is roots growing towards water. Thigmotropism is response to touch, like a mimosa plant folding its leaves.",
+              "questions": [
+                {
+                  "q": "A pot plant placed near a window grows towards the light. This response is called...",
+                  "a": [
+                    "Phototropism",
+                    "Thigmotropism",
+                    "Geotropism",
+                    "Hydrotropism"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Roots of a plant grow downwards due to gravity. This is called...",
+                  "a": [
+                    "Thigmotropism",
+                    "Hydrotropism",
+                    "Phototropism",
+                    "Geotropism"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The mimosa plant (touch-me-not) folds its leaves when touched. This is an example of...",
+                  "a": [
+                    "Thigmotropism",
+                    "Hydrotropism",
+                    "Geotropism",
+                    "Phototropism"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "When plant roots grow towards a water source, this response is called...",
+                  "a": [
+                    "Phototropism",
+                    "Hydrotropism",
+                    "Thigmotropism",
+                    "Geotropism"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What is the main reason a sunflower turns to face the sun during the day?",
+                  "a": [
+                    "To get more light for photosynthesis",
+                    "To produce more oxygen",
+                    "To stay warm",
+                    "To attract bees"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Photosynthesis",
+              "revision": "Photosynthesis is the process by which plants make their own food. Plants need sunlight, carbon dioxide (from air), water (from soil), and chlorophyll (green pigment in leaves) to carry out photosynthesis. The products are glucose (food for the plant) and oxygen (released into the air). Photosynthesis happens in the leaves.",
+              "questions": [
+                {
+                  "q": "Which gas do plants take in for photosynthesis?",
+                  "a": [
+                    "Carbon dioxide",
+                    "Hydrogen",
+                    "Oxygen",
+                    "Nitrogen"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "What is the green substance in leaves that traps sunlight for photosynthesis?",
+                  "a": [
+                    "Chlorophyll",
+                    "Anthocyanin",
+                    "Xanthophyll",
+                    "Carotene"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which of the following is NOT needed for photosynthesis?",
+                  "a": [
+                    "Carbon dioxide",
+                    "Sunlight",
+                    "Oxygen",
+                    "Water"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "What are the products of photosynthesis?",
+                  "a": [
+                    "Nitrogen and minerals",
+                    "Sunlight and chlorophyll",
+                    "Carbon dioxide and water",
+                    "Glucose and oxygen"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A plant kept in a dark cupboard for a week turns yellow and weak because...",
+                  "a": [
+                    "It was too cold",
+                    "It did not get enough water",
+                    "It could not photosynthesise without light",
+                    "It was attacked by pests"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Importance of Photosynthesis",
+              "revision": "Photosynthesis is vital for life on Earth. It produces food for plants and, indirectly, for animals that eat plants. It releases oxygen into the atmosphere, which animals need to breathe. Photosynthesis also helps maintain the balance of carbon dioxide and oxygen in the air, making Earth habitable for all living things.",
+              "questions": [
+                {
+                  "q": "Why is photosynthesis important for animals?",
+                  "a": [
+                    "It keeps animals warm",
+                    "It makes the soil fertile",
+                    "Animals get oxygen and food from plants",
+                    "Animals can photosynthesise too"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If all plants disappeared, what would happen to the level of oxygen in the air?",
+                  "a": [
+                    "It would stay the same",
+                    "Oxygen would turn into nitrogen",
+                    "It would decrease",
+                    "It would increase"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Forests are called the 'lungs of the Earth' because they...",
+                  "a": [
+                    "Produce carbon dioxide",
+                    "Absorb all gases",
+                    "Release water vapour",
+                    "Produce oxygen through photosynthesis"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following depends on photosynthesis for food?",
+                  "a": [
+                    "Only herbivores (plant-eaters)",
+                    "Only plants",
+                    "Only carnivores (meat-eaters)",
+                    "All living things directly or indirectly"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Besides producing food, photosynthesis also helps to...",
+                  "a": [
+                    "Reduce carbon dioxide in the atmosphere",
+                    "Produce plastic",
+                    "Increase carbon dioxide",
+                    "Make the soil acidic"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Properties of Light",
+          "topics": {
+            "5.1": {
+              "name": "Light Travels in Straight Lines",
+              "revision": "Light travels in straight lines. This property explains many everyday phenomena. For example, when you look through a straight pipe you can see the light, but not through a bent pipe. A pinhole camera works because light travels in straight lines through a tiny hole to form an upside-down image on the screen.",
+              "questions": [
+                {
+                  "q": "Light travels in...",
+                  "a": [
+                    "Spiral lines",
+                    "Zigzag lines",
+                    "Curved lines",
+                    "Straight lines"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The image formed in a pinhole camera is...",
+                  "a": [
+                    "Blurry only",
+                    "Colourful",
+                    "Upright and same size",
+                    "Upside down"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "You can see light through a straight tube but not through a bent tube because...",
+                  "a": [
+                    "Bent tubes absorb light",
+                    "Light is blocked by the bend",
+                    "Light changes direction randomly",
+                    "Light travels in straight lines"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Shadows form because light...",
+                  "a": [
+                    "Is absorbed by air",
+                    "Bends around objects",
+                    "Cannot travel through opaque objects",
+                    "Changes colour"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A student makes a row of cardboard with holes in a straight line and can see a candle through all holes. This proves that...",
+                  "a": [
+                    "Light travels in straight lines",
+                    "Cardboard is transparent",
+                    "Light can bend",
+                    "Holes make light brighter"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Shadows",
+              "revision": "Shadows form when light is blocked by an opaque object. The size and shape of a shadow depend on the position of the light source and the distance between the object and the screen. A shadow is largest when the object is close to the light source and smallest when the object is far from the light source.",
+              "questions": [
+                {
+                  "q": "A shadow is formed when...",
+                  "a": [
+                    "Light passes through an object",
+                    "An object is transparent",
+                    "An object reflects light",
+                    "Light is blocked by an opaque object"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "When you move a torch closer to your hand, the shadow on the wall becomes...",
+                  "a": [
+                    "Bigger",
+                    "Smaller",
+                    "Disappears",
+                    "Darker only"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Why does your shadow change length during the day?",
+                  "a": [
+                    "Because the sun's position changes",
+                    "Because you grow taller",
+                    "Because the ground changes",
+                    "Because of wind"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "If the light source is directly above an object, the shadow will be...",
+                  "a": [
+                    "Short or not visible",
+                    "Coloured",
+                    "Long and thin",
+                    "Fuzzy and big"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A transparent object like glass will...",
+                  "a": [
+                    "Create no shadow at all",
+                    "Create a coloured shadow",
+                    "Let most light pass through, forming a faint shadow",
+                    "Create a dark shadow"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Reflection of Light",
+              "revision": "Reflection occurs when light bounces off a surface. Smooth and shiny surfaces like mirrors reflect light well, allowing us to see clear images. Rough surfaces scatter light in many directions. A periscope uses two mirrors to reflect light so you can see objects that are not directly in your line of sight.",
+              "questions": [
+                {
+                  "q": "When light hits a mirror, it...",
+                  "a": [
+                    "Changes colour",
+                    "Passes through",
+                    "Is absorbed",
+                    "Is reflected"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A periscope uses how many mirrors to see over obstacles?",
+                  "a": [
+                    "Four mirrors",
+                    "One mirror",
+                    "Two mirrors",
+                    "Three mirrors"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Why can you see your face in a calm lake?",
+                  "a": [
+                    "The water is transparent",
+                    "The water absorbs light",
+                    "Light passes through the water",
+                    "Light reflects off the water surface"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A rough surface like a wall reflects light...",
+                  "a": [
+                    "In many directions (scattered)",
+                    "Perfectly like a mirror",
+                    "In one direction only",
+                    "Not at all"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "The angle at which light hits a mirror is called the angle of...",
+                  "a": [
+                    "Diffusion",
+                    "Reflection",
+                    "Refraction",
+                    "Incidence"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "5.4": {
+              "name": "Refraction of Light",
+              "revision": "Refraction is the bending of light when it passes from one medium to another at an angle. For example, a straw in a glass of water looks broken or bent because light travels at different speeds in air and water. Refraction makes objects underwater appear closer or larger than they really are.",
+              "questions": [
+                {
+                  "q": "A straw in a glass of water looks bent. This is due to...",
+                  "a": [
+                    "Refraction",
+                    "Absorption",
+                    "Reflection",
+                    "Diffraction"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Why do fish in a pond appear closer to the surface than they actually are?",
+                  "a": [
+                    "Because of reflection",
+                    "Because of shadows",
+                    "Because of refraction of light",
+                    "Because the water is shallow"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Refraction happens because light travels at different speeds in different...",
+                  "a": [
+                    "Temperatures",
+                    "Pressures",
+                    "Colours",
+                    "Media (materials)"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of these is caused by refraction?",
+                  "a": [
+                    "A rainbow",
+                    "A magnifying glass focusing sunlight",
+                    "A shadow on the wall",
+                    "Seeing your face in a mirror"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "When light passes from air into water, it...",
+                  "a": [
+                    "Slows down and bends",
+                    "Stops completely",
+                    "Speeds up",
+                    "Reflects back"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "5.5": {
+              "name": "Formation of a Rainbow",
+              "revision": "A rainbow forms when sunlight passes through water droplets in the air. The water droplets act like tiny prisms that refract (bend) and disperse (spread out) white light into its seven colours: red, orange, yellow, green, blue, indigo, and violet (ROYGBIV). Rainbows appear after rain when the sun comes out.",
+              "questions": [
+                {
+                  "q": "What causes a rainbow to form?",
+                  "a": [
+                    "Reflection of light from clouds",
+                    "Absorption of light by rain",
+                    "Refraction and dispersion of light by water droplets",
+                    "Shadows in the sky"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The colours of a rainbow are produced when white light is...",
+                  "a": [
+                    "Dispersed (split) into different colours",
+                    "Blocked by clouds",
+                    "Absorbed",
+                    "Reflected evenly"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which is the correct order of colours in a rainbow from the outermost to innermost?",
+                  "a": [
+                    "Blue, green, yellow, orange, red, violet, indigo",
+                    "Red, orange, yellow, green, blue, indigo, violet",
+                    "Violet, indigo, blue, green, yellow, orange, red",
+                    "Red, yellow, orange, green, blue, violet, indigo"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "When is the best time to see a rainbow?",
+                  "a": [
+                    "During a thunderstorm",
+                    "After rain when the sun appears",
+                    "On a cloudy day",
+                    "At midnight"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Water droplets act like tiny... to split white light into colours.",
+                  "a": [
+                    "Prisms",
+                    "Lenses",
+                    "Filters",
+                    "Mirrors"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Sound",
+          "topics": {
+            "6.1": {
+              "name": "Vibrations and Sound",
+              "revision": "Sound is produced when objects vibrate (move back and forth quickly). For example, strumming a guitar string makes it vibrate, producing sound. When an object stops vibrating, the sound stops. The human vocal cords vibrate to produce speech. Louder sounds are produced by larger vibrations.",
+              "questions": [
+                {
+                  "q": "Sound is produced when objects...",
+                  "a": [
+                    "Change colour",
+                    "Stop moving",
+                    "Vibrate",
+                    "Melt"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "When you pluck a guitar string, it vibrates and produces sound. If you hold the string still, the sound...",
+                  "a": [
+                    "Continues forever",
+                    "Changes pitch",
+                    "Stops",
+                    "Gets louder"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The loudness of a sound depends on the...",
+                  "a": [
+                    "Colour of the object",
+                    "Weight of the object",
+                    "Size of the vibration (amplitude)",
+                    "Temperature of the air"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Human vocal cords produce sound when...",
+                  "a": [
+                    "We close our mouth",
+                    "We eat food",
+                    "Air passes through them and they vibrate",
+                    "They are still"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "If you hit a drum harder, the sound becomes louder because the drum skin...",
+                  "a": [
+                    "Vibrates with a bigger amplitude",
+                    "Vibrates faster only",
+                    "Changes shape permanently",
+                    "Stops vibrating"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Sound Travels",
+              "revision": "Sound can travel through solids, liquids, and gases. Sound travels fastest through solids because the particles are packed closely together, allowing vibrations to pass quickly. Sound travels slower through liquids and slowest through gases (air). Sound cannot travel through a vacuum (empty space) because there are no particles to vibrate.",
+              "questions": [
+                {
+                  "q": "Through which medium does sound travel the fastest?",
+                  "a": [
+                    "Gas (air)",
+                    "Vacuum",
+                    "Liquid (water)",
+                    "Solid (metal)"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Can sound travel through a vacuum (empty space)?",
+                  "a": [
+                    "Only high-pitched sounds",
+                    "No, sound needs a medium to travel",
+                    "Yes, but only loud sounds",
+                    "Yes, very fast"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "You can hear sounds underwater because sound travels through...",
+                  "a": [
+                    "Your bones",
+                    "Air bubbles",
+                    "The surface only",
+                    "Water (liquid)"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "When you put your ear on a railway track, you can hear a train from far away. This is because sound travels well through...",
+                  "a": [
+                    "Your ear only",
+                    "The ground only",
+                    "Air",
+                    "The metal tracks (solid)"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Whispering through a long tube allows your friend to hear you because sound travels through the...",
+                  "a": [
+                    "Vibrations in your hand",
+                    "Tube walls only",
+                    "Air inside the tube",
+                    "Vacuum inside"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Sound Can Be Reflected",
+              "revision": "Sound can be reflected by hard surfaces, producing an echo. An echo is the repetition of a sound caused by the reflection of sound waves off a surface like a wall or cliff. Sonar (Sound Navigation and Ranging) uses reflected sound to detect objects underwater, such as fish or shipwrecks.",
+              "questions": [
+                {
+                  "q": "An echo is the result of sound being...",
+                  "a": [
+                    "Reflected",
+                    "Dispersed",
+                    "Absorbed",
+                    "Refracted"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "You shout in a large empty hall and hear your voice repeat. This is because sound...",
+                  "a": [
+                    "Creates new sounds",
+                    "Gets louder in empty spaces",
+                    "Travels slower in halls",
+                    "Bounces off the walls"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which surface would reflect sound the best?",
+                  "a": [
+                    "Foam mattress",
+                    "Soft carpet",
+                    "Curtains",
+                    "Hard concrete wall"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sonar technology uses reflected sound waves to...",
+                  "a": [
+                    "Measure temperature",
+                    "Create music",
+                    "Send messages",
+                    "Detect objects underwater"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "To reduce echoes in a room, you should use...",
+                  "a": [
+                    "Glass windows",
+                    "Hard walls",
+                    "Metal sheets",
+                    "Soft materials like curtains and carpets"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "6.4": {
+              "name": "Useful and Harmful Sounds",
+              "revision": "Sounds can be useful (music, alarms, communication) or harmful (noise pollution). Noise pollution is unwanted loud sound that can damage hearing, cause stress, and disturb sleep. Sources of noise pollution include traffic, construction, and loud machines. We can reduce noise by using earplugs, soundproofing, and keeping volumes low.",
+              "questions": [
+                {
+                  "q": "Which of the following is an example of noise pollution?",
+                  "a": [
+                    "Soft piano music",
+                    "Birds singing",
+                    "A baby cooing",
+                    "Loud construction drilling"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Long-term exposure to loud noise can cause...",
+                  "a": [
+                    "Improved concentration",
+                    "Stronger eardrums",
+                    "Hearing loss",
+                    "Better hearing"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which of the following can help reduce noise pollution?",
+                  "a": [
+                    "Installing soundproof windows",
+                    "Using more machines",
+                    "Playing loud music",
+                    "Honking car horns"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sound that is useful for communication includes...",
+                  "a": [
+                    "Construction drilling",
+                    "Factory machines",
+                    "Traffic noise",
+                    "Fire alarms"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Why should you wear earplugs when operating loud machinery?",
+                  "a": [
+                    "To look professional",
+                    "To protect your hearing from damage",
+                    "To keep ears warm",
+                    "To hear better"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Energy",
+          "topics": {
+            "7.1": {
+              "name": "Energy and Their Sources",
+              "revision": "Energy is the ability to do work or cause change. The main source of energy on Earth is the Sun. Other energy sources include food (chemical energy), fuel (petrol, coal, natural gas), wind, water (hydroelectric), and geothermal heat. Without energy, nothing can move, grow, or change.",
+              "questions": [
+                {
+                  "q": "What is the main source of energy for Earth?",
+                  "a": [
+                    "The Sun",
+                    "The Moon",
+                    "Stars",
+                    "Electricity"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which of these is a source of energy for living things?",
+                  "a": [
+                    "Furniture",
+                    "Clothes",
+                    "Books",
+                    "Food"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Petrol is an energy source for...",
+                  "a": [
+                    "Plants",
+                    "Animals only",
+                    "Humans",
+                    "Cars and vehicles"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Wind can be used to generate electricity using...",
+                  "a": [
+                    "Generators only",
+                    "Batteries",
+                    "Solar panels",
+                    "Wind turbines"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Water flowing in a dam can be used to produce electricity. This energy source is called...",
+                  "a": [
+                    "Solar energy",
+                    "Geothermal energy",
+                    "Wind energy",
+                    "Hydroelectric energy"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Forms of Energy",
+              "revision": "Energy exists in many forms: heat (thermal), light, sound, electrical, kinetic (movement), potential (stored), and chemical (stored in food and fuel). Each form of energy can be used for different purposes. For example, electrical energy powers devices, light energy helps us see, and heat energy cooks food.",
+              "questions": [
+                {
+                  "q": "A moving bicycle has which form of energy?",
+                  "a": [
+                    "Sound energy",
+                    "Potential energy",
+                    "Heat energy",
+                    "Kinetic energy"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The energy stored in a battery is an example of...",
+                  "a": [
+                    "Light energy",
+                    "Chemical energy",
+                    "Sound energy",
+                    "Kinetic energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A toaster converts electrical energy into which form?",
+                  "a": [
+                    "Kinetic energy",
+                    "Sound energy",
+                    "Light energy",
+                    "Heat energy"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A stretched rubber band has which type of energy?",
+                  "a": [
+                    "Sound energy",
+                    "Light energy",
+                    "Kinetic energy",
+                    "Potential energy"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A light bulb mainly converts electrical energy into...",
+                  "a": [
+                    "Kinetic and sound",
+                    "Sound and heat",
+                    "Light and heat",
+                    "Chemical and light"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Transformations of Energy",
+              "revision": "Energy can change from one form to another. This is called energy transformation. For example, a television converts electrical energy into light and sound energy. A fan converts electrical energy into kinetic energy (movement). A plant converts light energy from the sun into chemical energy (food) through photosynthesis.",
+              "questions": [
+                {
+                  "q": "When you turn on a table fan, electrical energy is transformed into...",
+                  "a": [
+                    "Kinetic energy (movement)",
+                    "Sound energy only",
+                    "Heat energy only",
+                    "Light energy"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A solar calculator converts light energy into...",
+                  "a": [
+                    "Electrical energy",
+                    "Heat energy",
+                    "Kinetic energy",
+                    "Sound energy"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "When you eat food, your body converts chemical energy into...",
+                  "a": [
+                    "Sound energy",
+                    "Only light energy",
+                    "Kinetic energy and heat energy",
+                    "Only heat energy"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A microphone converts sound energy into...",
+                  "a": [
+                    "Light energy",
+                    "Electrical energy",
+                    "Kinetic energy",
+                    "Heat energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "In a car engine, chemical energy from petrol is transformed into...",
+                  "a": [
+                    "Potential energy",
+                    "Only electrical energy",
+                    "Kinetic energy and heat",
+                    "Light and sound only"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "7.4": {
+              "name": "Renewable and Non-renewable Energy",
+              "revision": "Renewable energy sources can be replenished naturally and will not run out, such as sunlight (solar), wind, water (hydro), and geothermal. Non-renewable energy sources are limited and will eventually run out, such as coal, petroleum (oil), and natural gas. These are called fossil fuels and take millions of years to form.",
+              "questions": [
+                {
+                  "q": "Which of the following is a renewable energy source?",
+                  "a": [
+                    "Natural gas",
+                    "Wind",
+                    "Coal",
+                    "Petroleum"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Fossil fuels like coal and oil are examples of...",
+                  "a": [
+                    "Inexhaustible energy",
+                    "Non-renewable energy",
+                    "Solar energy",
+                    "Renewable energy"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Why is solar energy considered renewable?",
+                  "a": [
+                    "It cannot be stored",
+                    "The sun will keep shining for billions of years",
+                    "It is expensive",
+                    "It does not exist at night"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "One disadvantage of non-renewable energy is that it...",
+                  "a": [
+                    "Will eventually run out",
+                    "Can be reused",
+                    "Is available everywhere",
+                    "Is clean and safe"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Hydroelectric power uses flowing water to generate electricity. It is a...",
+                  "a": [
+                    "Fossil fuel",
+                    "Nuclear energy source",
+                    "Renewable energy source",
+                    "Non-renewable energy source"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "7.5": {
+              "name": "Using Energy Wisely",
+              "revision": "We must use energy wisely to save resources and reduce pollution. Simple habits can help conserve energy: turning off lights and fans when not in use, using energy-efficient appliances, taking shorter showers, using public transport, and switching off electronic devices at the plug. Saving energy also saves money and protects the environment.",
+              "questions": [
+                {
+                  "q": "Which of the following is a good way to save electricity?",
+                  "a": [
+                    "Watch TV all day",
+                    "Turn off lights when leaving a room",
+                    "Use the air conditioner with windows open",
+                    "Leave lights on all day"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Using energy-efficient LED bulbs instead of regular bulbs helps to...",
+                  "a": [
+                    "Use more energy",
+                    "Save energy and money",
+                    "Produce more heat",
+                    "Make rooms darker"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Which is a responsible way to use energy at home?",
+                  "a": [
+                    "Wash only one piece of clothing",
+                    "Keep the refrigerator door open",
+                    "Set the air conditioner to 16°C all day",
+                    "Unplug chargers when not in use"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Why should we avoid burning too much fossil fuel?",
+                  "a": [
+                    "It makes too much sound",
+                    "It produces light",
+                    "It causes pollution and contributes to global warming",
+                    "It is too expensive to buy"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Taking public transport instead of driving a car helps to...",
+                  "a": [
+                    "Increase traffic jams",
+                    "Use more petrol",
+                    "Save energy and reduce air pollution",
+                    "Make the journey longer"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Materials",
+          "topics": {
+            "8.1": {
+              "name": "Basic Sources of Materials",
+              "revision": "Materials come from natural or synthetic sources. Natural materials come from plants (wood, cotton, rubber), animals (wool, silk, leather), and minerals (metal ores, clay, sand). Synthetic materials are made by humans through chemical processes, such as plastic, nylon, and glass. Understanding where materials come from helps us use them responsibly.",
+              "questions": [
+                {
+                  "q": "Rubber is obtained from which natural source?",
+                  "a": [
+                    "Synthetic chemicals",
+                    "Animals",
+                    "Rubber trees (plants)",
+                    "Minerals"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Plastic is an example of a...",
+                  "a": [
+                    "Natural material",
+                    "Synthetic material",
+                    "Plant-based material",
+                    "Mineral"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Wool comes from which animal?",
+                  "a": [
+                    "Chicken",
+                    "Cow",
+                    "Sheep",
+                    "Horse"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Glass is made by heating which natural material?",
+                  "a": [
+                    "Wood",
+                    "Sand (silica)",
+                    "Plastic",
+                    "Metal"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Leather for bags and shoes comes from...",
+                  "a": [
+                    "Sand",
+                    "Animal skin",
+                    "Plants",
+                    "Plastic bottles"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Properties of Materials",
+              "revision": "Materials have different properties that determine how they are used. These include strength (ability to withstand force), flexibility (ability to bend without breaking), water resistance (ability to repel water), electrical conductivity (ability to conduct electricity), transparency (ability to let light through), and hardness. Each property makes a material suitable for certain uses.",
+              "questions": [
+                {
+                  "q": "A material that can be bent without breaking is said to be...",
+                  "a": [
+                    "Flexible",
+                    "Hard",
+                    "Brittle",
+                    "Transparent"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which property makes metal a good material for electrical wires?",
+                  "a": [
+                    "Flexibility",
+                    "Electrical conductivity",
+                    "Transparency",
+                    "Water resistance"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "An umbrella is made of waterproof fabric because it needs to be...",
+                  "a": [
+                    "Conductive",
+                    "Transparent",
+                    "Flexible",
+                    "Water resistant"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Glass is used for windows because it is...",
+                  "a": [
+                    "Waterproof",
+                    "Opaque",
+                    "Transparent",
+                    "Flexible"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A material that breaks easily when dropped is called...",
+                  "a": [
+                    "Elastic",
+                    "Flexible",
+                    "Brittle",
+                    "Strong"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Applications of Properties of Materials",
+              "revision": "We choose materials based on their properties for specific purposes. For example, rubber is used for tyres because it is flexible and strong. Cotton is used for clothing because it is soft and absorbs sweat. Metal is used for bridges because it is strong and durable. Choosing the right material ensures safety, comfort, and effectiveness.",
+              "questions": [
+                {
+                  "q": "Why are cooking pots usually made of metal?",
+                  "a": [
+                    "Metal is light",
+                    "Metal conducts heat well",
+                    "Metal is flexible",
+                    "Metal is transparent"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Why are car tyres made of rubber?",
+                  "a": [
+                    "Rubber is flexible and provides grip",
+                    "Rubber is hard and brittle",
+                    "Rubber conducts electricity",
+                    "Rubber is transparent"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Why is cotton used to make T-shirts?",
+                  "a": [
+                    "It is waterproof",
+                    "It conducts heat",
+                    "It is shiny",
+                    "It is soft and absorbs sweat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A telescope lens is made of glass because glass is...",
+                  "a": [
+                    "Waterproof and cheap",
+                    "Flexible and light",
+                    "Opaque and strong",
+                    "Transparent and can be shaped into lenses"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Wood is commonly used to make furniture because it is...",
+                  "a": [
+                    "Transparent",
+                    "Strong, durable, and can be shaped",
+                    "A good electrical conductor",
+                    "Easily breakable"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "Earth",
+          "topics": {
+            "9.1": {
+              "name": "Gravity of Earth",
+              "revision": "Gravity is a force that pulls objects towards the centre of the Earth. It is why things fall downwards when dropped. Earth's gravity keeps us on the ground and keeps the Moon in orbit around Earth. The force of gravity depends on mass — the more mass an object has, the stronger its gravitational pull.",
+              "questions": [
+                {
+                  "q": "When you drop a pencil, it falls to the ground because of...",
+                  "a": [
+                    "Gravity",
+                    "Air pressure",
+                    "Magnetism",
+                    "Wind"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Which planet has the strongest gravity in our solar system?",
+                  "a": [
+                    "Venus",
+                    "Jupiter",
+                    "Mars",
+                    "Earth"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Why do astronauts float in space?",
+                  "a": [
+                    "They are in free fall with very weak gravity",
+                    "There is no gravity in space",
+                    "They are lighter",
+                    "The spaceship pushes them up"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Without gravity, what would happen on Earth?",
+                  "a": [
+                    "Everything would float away",
+                    "Plants would grow faster",
+                    "It would always be daytime",
+                    "The air would disappear"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "A feather and a stone are dropped at the same time. In normal air, which hits the ground first?",
+                  "a": [
+                    "The stone",
+                    "They hit at the same time",
+                    "Neither falls",
+                    "The feather"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Rotation of Earth",
+              "revision": "The Earth rotates (spins) around its axis, an imaginary line through the North and South Poles. One complete rotation takes about 24 hours (one day). The Earth rotates from west to east, which is why the Sun appears to rise in the east and set in the west. Rotation causes day and night.",
+              "questions": [
+                {
+                  "q": "How long does it take for Earth to complete one full rotation?",
+                  "a": [
+                    "365 days",
+                    "24 hours",
+                    "12 hours",
+                    "7 days"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The Earth rotates on its...",
+                  "a": [
+                    "Orbit",
+                    "Axis",
+                    "Equator",
+                    "Poles"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The Sun appears to move across the sky from east to west because...",
+                  "a": [
+                    "Earth is flat",
+                    "The Sun is moving around the sky",
+                    "Earth rotates from west to east",
+                    "The Sun orbits Earth"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "When the side of Earth facing the Sun experiences day, the opposite side experiences...",
+                  "a": [
+                    "Dusk only",
+                    "Midnight Sun",
+                    "Noon",
+                    "Night"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The imaginary line around which Earth spins is called the...",
+                  "a": [
+                    "Tropic line",
+                    "Orbit",
+                    "Axis",
+                    "Equator"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Effects of Rotation of Earth",
+              "revision": "Earth's rotation causes several effects: day and night cycles, the apparent movement of the Sun across the sky, and the apparent movement of stars at night. Different parts of Earth face the Sun at different times, so when it is daytime in Malaysia, it is nighttime in Brazil. Rotation also causes the Coriolis effect on wind and ocean currents.",
+              "questions": [
+                {
+                  "q": "What is the main effect of Earth's rotation?",
+                  "a": [
+                    "Eclipses",
+                    "Tides",
+                    "Day and night",
+                    "Seasons"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "At night, stars appear to move across the sky because...",
+                  "a": [
+                    "Clouds are moving",
+                    "Earth is rotating",
+                    "The Moon is pulling them",
+                    "Stars are moving fast"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "If it is 12 noon in Malaysia, what time would it be on the opposite side of Earth?",
+                  "a": [
+                    "12 noon",
+                    "12 midnight",
+                    "6 am",
+                    "6 pm"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The apparent movement of the Sun from east to west is caused by...",
+                  "a": [
+                    "Earth rotating on its axis",
+                    "Wind pushing the Sun",
+                    "The Sun moving fast",
+                    "The Sun rotating around Earth"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "One complete rotation of Earth causes...",
+                  "a": [
+                    "One week",
+                    "One year",
+                    "One month",
+                    "One day"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "9.4": {
+              "name": "Revolution of Earth",
+              "revision": "Revolution is the movement of Earth around the Sun in a fixed path called an orbit. One complete revolution takes about 365 days (one year). Earth's orbit is slightly elliptical (oval-shaped). The combination of Earth's revolution and its tilted axis causes the four seasons: spring, summer, autumn, and winter.",
+              "questions": [
+                {
+                  "q": "How long does Earth take to complete one revolution around the Sun?",
+                  "a": [
+                    "24 hours",
+                    "30 days",
+                    "365 days",
+                    "7 days"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "The path of Earth around the Sun is called its...",
+                  "a": [
+                    "Rotation",
+                    "Orbit",
+                    "Axis",
+                    "Equator"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "What causes the four seasons on Earth?",
+                  "a": [
+                    "The distance from the Sun changing greatly",
+                    "Earth's revolution and tilted axis",
+                    "Earth's rotation speed",
+                    "The Moon's gravity"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "During which season are the days longest in the Northern Hemisphere?",
+                  "a": [
+                    "Summer",
+                    "Winter",
+                    "Spring",
+                    "Autumn"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Countries near the equator, like Malaysia, experience...",
+                  "a": [
+                    "Only summer",
+                    "Four distinct seasons",
+                    "Hot and wet weather all year with no distinct seasons",
+                    "Only winter"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "9.5": {
+              "name": "The Solar System",
+              "revision": "The Solar System consists of the Sun (a star) and everything that orbits it, including eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune (in order from the Sun). The Moon orbits Earth. There are also dwarf planets (like Pluto), asteroids, and comets. The Sun is the centre of the Solar System.",
+              "questions": [
+                {
+                  "q": "What is at the centre of the Solar System?",
+                  "a": [
+                    "Jupiter",
+                    "The Moon",
+                    "The Sun",
+                    "Earth"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which is the largest planet in the Solar System?",
+                  "a": [
+                    "Neptune",
+                    "Saturn",
+                    "Jupiter",
+                    "Uranus"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which planet is closest to the Sun?",
+                  "a": [
+                    "Mars",
+                    "Earth",
+                    "Venus",
+                    "Mercury"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "The Earth's natural satellite is the...",
+                  "a": [
+                    "Sun",
+                    "Mars",
+                    "Moon",
+                    "Venus"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Which planet is known as the 'Red Planet'?",
+                  "a": [
+                    "Mars",
+                    "Venus",
+                    "Saturn",
+                    "Jupiter"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "10": {
+          "name": "Machines",
+          "topics": {
+            "10.1": {
+              "name": "Lever",
+              "revision": "A lever is a simple machine consisting of a rigid bar that pivots at a fixed point called a fulcrum. The three parts of a lever are the load (object being moved), the fulcrum (pivot point), and the force (effort applied). There are three classes of levers depending on the arrangement of load, fulcrum, and force. Examples include see-saws, scissors, and wheelbarrows.",
+              "questions": [
+                {
+                  "q": "The fixed point where a lever pivots is called the...",
+                  "a": [
+                    "Fulcrum",
+                    "Bar",
+                    "Force",
+                    "Load"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "In a see-saw, the children sit on either end and the middle is the...",
+                  "a": [
+                    "Fulcrum",
+                    "Load",
+                    "Bar",
+                    "Force"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Scissors are an example of which class of lever?",
+                  "a": [
+                    "Second class lever",
+                    "Not a lever",
+                    "First class lever",
+                    "Third class lever"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "A wheelbarrow is an example of a second-class lever because the load is between...",
+                  "a": [
+                    "Two forces",
+                    "The fulcrum and the force",
+                    "The force and the load",
+                    "Two fulcrums"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The closer the load is to the fulcrum, the...",
+                  "a": [
+                    "Harder it is to lift the load",
+                    "Easier it is to lift the load",
+                    "The heavier the load becomes",
+                    "The lever does not work"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "10.2": {
+              "name": "Simple Machines",
+              "revision": "Simple machines make work easier by changing the size or direction of force. The six types of simple machines are: lever, pulley (rope over a wheel to lift objects), inclined plane (sloping surface like a ramp), wedge (two inclined planes like a knife), screw (inclined plane wrapped around a cylinder), and wheel and axle (wheel attached to a rod, like a steering wheel).",
+              "questions": [
+                {
+                  "q": "A ramp that helps move heavy objects upward is an example of which simple machine?",
+                  "a": [
+                    "Pulley",
+                    "Screw",
+                    "Lever",
+                    "Inclined plane"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A flag is raised using a rope over a wheel at the top of a pole. This is a...",
+                  "a": [
+                    "Lever",
+                    "Wheel and axle",
+                    "Wedge",
+                    "Pulley"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A knife blade uses which simple machine to cut?",
+                  "a": [
+                    "Inclined plane",
+                    "Screw",
+                    "Pulley",
+                    "Wedge"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "A screw is actually an inclined plane...",
+                  "a": [
+                    "Made of plastic",
+                    "Wrapped around a cylinder (spiral)",
+                    "Straight and flat",
+                    "Cut into pieces"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "The steering wheel of a car is an example of a...",
+                  "a": [
+                    "Lever",
+                    "Wheel and axle",
+                    "Pulley",
+                    "Screw"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "10.3": {
+              "name": "Complex Machines",
+              "revision": "Complex machines are made by combining two or more simple machines. For example, a bicycle combines wheels and axles, levers (brakes and pedals), and pulleys (chain and gears). A car combines many simple machines. Complex machines make tasks easier, faster, and more efficient. Modern technology continues to create new complex machines.",
+              "questions": [
+                {
+                  "q": "A complex machine is made by combining...",
+                  "a": [
+                    "Wood and metal only",
+                    "Two or more simple machines",
+                    "Only electronic parts",
+                    "Only one simple machine"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "A bicycle uses gears and chains, which are combinations of which simple machine?",
+                  "a": [
+                    "Wedge and screw",
+                    "Lever and pulley",
+                    "Lever and inclined plane",
+                    "Pulley and wheel and axle"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Which of the following is a complex machine?",
+                  "a": [
+                    "A pair of scissors",
+                    "A hammer",
+                    "A bicycle",
+                    "A see-saw"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Scissors are a complex machine that combines...",
+                  "a": [
+                    "A screw and a pulley",
+                    "Two levers and a wedge",
+                    "A pulley and a lever",
+                    "A wheel and axle"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Technology has helped humans build complex machines that can...",
+                  "a": [
+                    "Replace human thinking completely",
+                    "Work without any energy",
+                    "Only move small objects",
+                    "Perform difficult tasks more efficiently"
+                  ],
+                  "c": 3
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
