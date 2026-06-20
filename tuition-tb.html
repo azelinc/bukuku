@@ -55,6 +55,15 @@
             display: flex; flex-direction: column; align-items: center;
         }
 
+        /* Review styles */
+        .review-card { text-align: left; background: #fff; padding: 20px; border-radius: 20px; margin: 20px; border: 1px solid #eee; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .review-item { padding: 16px 0; border-bottom: 1px solid #eee; }
+        .review-item:last-child { border-bottom: none; }
+        .review-q { font-weight: bold; font-size: 1.05rem; color: #2c3e50; margin-bottom: 8px; }
+        .review-ur-answer { color: #e74c3c; font-size: 0.95rem; }
+        .review-correct { color: #2ecc71; font-size: 0.95rem; }
+        .action-group { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 300px; margin-top: 10px; }
+
         .back-link { display: inline-block; margin: 10px 20px; color: #4a90e2; cursor: pointer; font-weight: 600; font-size: 0.95rem; text-decoration: none; }
         .back-link:hover { text-decoration: underline; }
         .topic-header { font-size: 0.9rem; color: #999; margin-bottom: 15px; font-weight: 400; }
@@ -189,8 +198,23 @@
                 <div id="sync-status" style="font-size: 0.9rem; color: #2ecc71; font-weight: bold; margin-bottom: 30px;">
                     Checking Cloud Sync...
                 </div>
-                <button id="retry-btn" class="btn orange-btn">🔄 Try Again</button>
-                <button id="back-to-topics-btn" class="btn blue-btn" style="margin-top:5px;">← Back to Topics</button>
+                <button id="review-btn" class="btn orange-btn" onclick="showReview()" style="display:none;">
+                    📝 Review Wrong Answers
+                </button>
+                <button id="retry-btn" class="btn blue-btn" style="margin-top:5px;">🔄 Try Again</button>
+                <button id="back-to-topics-btn" class="btn green-btn" style="margin-top:5px;">← Back to Topics</button>
+            </div>
+        </div>
+
+        <!-- REVIEW AREA -->
+        <div id="review-area" style="display:none;">
+            <h2 style="background:#e74c3c; color:white; padding:20px; margin:0; font-size:1.3rem; text-align:left;">
+                📝 Review Your Mistakes
+            </h2>
+            <div id="review-list" class="review-card"></div>
+            <div class="action-group" style="margin:0 auto 20px;">
+                <button class="btn green-btn" onclick="location.reload()">🔄 Try Again</button>
+                <button class="btn blue-btn" onclick="goToTopics()">← Back to Topics</button>
             </div>
         </div>
     </div>
@@ -227,6 +251,7 @@
         let timerInterval;
         let timeLeft = 30;
         let answered = false;
+        let wrongQuestions = [];
         let currentUserId = null;
         let userScores = {};
 
@@ -464,6 +489,7 @@
         function beginQuiz() {
             currentQ = 0;
             score = 0;
+            wrongQuestions = [];
             answered = false;
 
             const t = questionBank.subjects[currentSubject].units[currentUnit].topics[currentTopic];
@@ -533,6 +559,23 @@
             }
 
             if (idx === q.c) score++;
+            else if (idx === -1) {
+                // Timeout — no answer chosen
+                wrongQuestions.push({
+                    q: q.q,
+                    options: q.a,
+                    correctIdx: q.c,
+                    chosenIdx: -1
+                });
+            } else {
+                // Wrong answer
+                wrongQuestions.push({
+                    q: q.q,
+                    options: q.a,
+                    correctIdx: q.c,
+                    chosenIdx: idx
+                });
+            }
             document.getElementById('current-score').textContent = score;
 
             // Next question or results
@@ -596,8 +639,37 @@
                 setTimeout(() => showCelebration(), 800);
             }
 
+            // Show review button if there were mistakes
+            const reviewBtn = document.getElementById('review-btn');
+            if (wrongQuestions.length > 0) {
+                reviewBtn.style.display = 'block';
+                reviewBtn.innerText = `📝 Review ${wrongQuestions.length} Wrong Answer${wrongQuestions.length > 1 ? 's' : ''}`;
+            }
+
             document.getElementById('retry-btn').onclick = () => startQuiz(currentTopic);
             document.getElementById('back-to-topics-btn').onclick = goToTopics;
+        }
+
+        // SHOW REVIEW
+        window.showReview = function() {
+            document.getElementById('result-area').style.display = 'none';
+            document.getElementById('review-area').style.display = 'block';
+            const list = document.getElementById('review-list');
+            list.innerHTML = '';
+            wrongQuestions.forEach((wq, i) => {
+                const correctAns = wq.options[wq.correctIdx];
+                const div = document.createElement('div');
+                div.className = 'review-item';
+                let chosenTxt = (wq.chosenIdx === -1)
+                    ? '<span class="review-ur-answer">⏱️ You ran out of time</span>'
+                    : `<span class="review-ur-answer">❌ Your answer: ${wq.options[wq.chosenIdx]}</span>`;
+                div.innerHTML = `
+                    <div class="review-q">${i + 1}. ${wq.q}</div>
+                    ${chosenTxt}<br>
+                    <span class="review-correct">✅ Correct answer: ${correctAns}</span>
+                `;
+                list.appendChild(div);
+            });
         }
 
         // NAVIGATION
