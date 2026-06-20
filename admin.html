@@ -171,6 +171,16 @@
                 <input type="text" id="search-input" class="search-input" placeholder="🔍 Search by email..." oninput="renderAccounts()">
                 <div id="account-list"></div>
             </div>
+
+            <!-- DANGER ZONE -->
+            <div class="card" style="border: 3px solid #e74c3c;">
+                <h2 style="color:#e74c3c; font-size:1.1rem; margin-bottom:5px;">⚠️ Danger Zone</h2>
+                <p class="subtext">Reset all quiz progress (scores, sifir, train) to zero for every profile under your account. Stars will go back to 0%.</p>
+                <button id="reset-progress-btn" class="auth-btn" style="background:#e74c3c; width:100%;" onclick="window.resetAllProgress()">
+                    🔄 Reset All Progress to Zero
+                </button>
+                <div id="reset-status" style="font-size:0.85rem; margin-top:10px; color:#666;"></div>
+            </div>
         </div>
     </div>
 
@@ -359,6 +369,57 @@
                 document.getElementById('denied-email').textContent = '';
             }
         });
+
+        // Reset all progress
+        window.resetAllProgress = async () => {
+            const uid = currentUser_?.uid;
+            if (!uid) {
+                showToast('Not authenticated', 'error');
+                return;
+            }
+
+            const confirmed = confirm('⚠️ Are you SURE you want to reset ALL progress to zero for ALL profiles?\n\nThis cannot be undone!');
+            if (!confirmed) return;
+
+            const doubleConfirm = confirm('❗ FINAL WARNING: This will delete every quiz score, sifir score, and train score.\n\nYour children will lose all their stars.\n\nProceed?');
+            if (!doubleConfirm) return;
+
+            const btn = document.getElementById('reset-progress-btn');
+            const status = document.getElementById('reset-status');
+            btn.disabled = true;
+            btn.textContent = '⏳ Resetting...';
+            status.textContent = '';
+
+            try {
+                const snap = await getDocs(collection(db, "profiles", uid));
+                const profiles = [];
+                snap.forEach(d => profiles.push(d.id));
+
+                if (profiles.length === 0) {
+                    status.textContent = '❌ No profiles found under your account.';
+                    btn.disabled = false;
+                    btn.textContent = '🔄 Reset All Progress to Zero';
+                    return;
+                }
+
+                let count = 0;
+                for (const name of profiles) {
+                    status.textContent = `⏳ Resetting ${name}... (${count + 1}/${profiles.length})`;
+                    const profileRef = doc(db, "profiles", uid, name);
+                    await setDoc(profileRef, { scores: {} }, { merge: true });
+                    count++;
+                }
+
+                status.innerHTML = `✅ Done! Reset progress for <strong>${count}</strong> profile${count > 1 ? 's' : ''}. Stars will show 0% from now on.`;
+                btn.textContent = '✅ Done';
+                showToast(`Reset progress for ${count} profiles`, 'success');
+            } catch (e) {
+                status.textContent = '❌ Error: ' + e.message;
+                btn.disabled = false;
+                btn.textContent = '🔄 Retry Reset';
+                showToast('Reset failed', 'error');
+            }
+        };
 
         // Sign out button
         window.handleAdminSignOut = async () => {
