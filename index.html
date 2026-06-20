@@ -520,7 +520,10 @@
             header.style.display = 'none';
             signinScreen.style.display = 'none';
 
-            // Check authentication — must be signed in (use Firebase auth, not stale localStorage)
+            // Wait for Firebase to resolve auth state — prevents flash of login screen
+            try { await auth.authStateReady(); } catch(e) {}
+
+            // Check authentication — must be signed in
             if (!currentUser) {
                 loading.style.display = 'none';
                 signinScreen.style.display = 'block';
@@ -835,23 +838,6 @@
 
         // Start
         initHub();
-
-        // Safety re-check
-        setTimeout(() => {
-            if (selection.style.display === 'block' || signinScreen.style.display === 'block') {
-                const storedAuth = localStorage.getItem('bukuku_auth');
-                if (storedAuth && !currentUser) {
-                    try {
-                        const { email } = JSON.parse(storedAuth);
-                        isAdmin = true;
-                        manageActive = true;
-                        updateAuthUI(email);
-                        updateManageBar();
-                        showProfileSelection();
-                    } catch(e) {}
-                }
-            }
-        }, 500);
     </script>
 </body>
 </html>
