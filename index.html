@@ -1003,25 +1003,38 @@
 
                 // Compute progress for profile's year
                 const progEl = document.getElementById('progress-card');
-                const subjMeta = {
-                    math: { icon: '🔢', color: '#4a90e2', name: 'Mathematics' },
-                    sci: { icon: '🧪', color: '#0097a7', name: 'Science' },
-                    eng: { icon: '📖', color: '#8e44ad', name: 'English' },
-                    math4bm: { icon: '🔢', color: '#4a90e2', name: 'Matematik' },
-                    sci4bm: { icon: '🧪', color: '#0097a7', name: 'Sains' }
-                };
+                // Subject labels: DLP gets English names, non-DLP gets BM names
+                function getSubjMeta(subj, isDlp) {
+                    if (subj === 'eng') return { icon: '📖', color: '#8e44ad', name: 'English' };
+                    if (subj === 'math') return { icon: '🔢', color: '#4a90e2', name: isDlp ? 'Mathematics' : 'Matematik' };
+                    if (subj === 'sci') return { icon: '🧪', color: '#0097a7', name: isDlp ? 'Science' : 'Sains' };
+                    if (subj === 'math4bm') return { icon: '🔢', color: '#4a90e2', name: 'Matematik' };
+                    if (subj === 'sci4bm') return { icon: '🧪', color: '#0097a7', name: 'Sains' };
+                    return { icon: '📘', color: '#666', name: subj };
+                }
                 const yearCounts = topicCounts[String(profileTahun)] || {};
-                // Filter subjects based on DLP/non-DLP
                 const allSubj = Object.keys(yearCounts);
                 const dlpKeys = ['math', 'sci', 'eng'];
-                const subjects = isDlp
-                    ? allSubj.filter(s => dlpKeys.includes(s))
-                    : allSubj.filter(s => !dlpKeys.includes(s) || s === 'eng');
+                let subjects;
+                if (isDlp) {
+                    // DLP: show DLP-named subjects only
+                    subjects = allSubj.filter(s => dlpKeys.includes(s));
+                } else {
+                    // Non-DLP: show BM-named subjects
+                    const nonDlpCandidates = allSubj.filter(s => !dlpKeys.includes(s) || s === 'eng');
+                    if (nonDlpCandidates.length > 1) {
+                        // BM keys exist for this year (e.g. math4bm, sci4bm for Tahun 4)
+                        subjects = nonDlpCandidates;
+                    } else {
+                        // No BM keys for this year — show DLP subjects with BM names
+                        subjects = allSubj.filter(s => dlpKeys.includes(s));
+                    }
+                }
                 if (profileTahun && subjects.length > 0 && tbScores) {
                     let totalDone = 0, totalAll = 0;
                     let html = `<div class="prog-card"><div class="prog-name">📊 ${name}'s Progress</div>`;
                     subjects.forEach(subj => {
-                        const meta = subjMeta[subj] || { icon: '📘', color: '#666', name: subj };
+                        const meta = getSubjMeta(subj, isDlp);
                         const total = yearCounts[subj];
                         let done = 0;
                         // Determine the score key prefix for this subject
