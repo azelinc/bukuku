@@ -1029,9 +1029,9 @@
                             // Keys: tb-{subjectKey}-{unit}-{topic}
                             // DLP: subjectKey = subj + year, e.g. math4, sci4
                             // BM:  subjectKey = the full key from topic-counts, e.g. math4bm, sci4bm
-                            const prefix = subj.endsWith('4') || subj.endsWith('5') || subj.endsWith('6')
-                                ? `tb-${subj}-`          // BM: full key already has year
-                                : `tb-${subj}${profileTahun}-`;  // DLP: add year
+                            const prefix = dlpKeys.includes(subj)
+                                ? `tb-${subj}${profileTahun}-`  // DLP: add year to prefix
+                                : `tb-${subj}-`;               // BM: full key already has year
                             if (k.startsWith(prefix) && tbScores[k]?.score > 0) {
                                 done++;
                             }
