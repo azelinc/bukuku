@@ -1,4 +1,4 @@
-const CACHE_NAME = 'af-hub-v13';
+const CACHE_NAME = 'af-hub-v14';
 
 // Only cache JSON question banks and static assets, NOT HTML pages
 // HTML pages must always load fresh from network to reflect latest code
