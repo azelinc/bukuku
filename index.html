@@ -1024,15 +1024,20 @@
                         const meta = subjMeta[subj] || { icon: '📘', color: '#666', name: subj };
                         const total = yearCounts[subj];
                         let done = 0;
-                        // Count topics with score > 0 for this subject
+                        // Determine the score key prefix for this subject
+                        let scorePrefix;
+                        if (subj === 'eng') {
+                            scorePrefix = 'tb-eng' + profileTahun + '-';
+                        } else if (subj === 'math') {
+                            scorePrefix = 'tb-math' + profileTahun + '-';
+                        } else if (subj === 'sci') {
+                            scorePrefix = 'tb-sci' + profileTahun + '-';
+                        } else {
+                            // BM subjects: subj is already the full key like 'math4bm', 'sci4bm'
+                            scorePrefix = 'tb-' + subj + '-';
+                        }
                         Object.keys(tbScores).forEach(k => {
-                            // Keys: tb-{subjectKey}-{unit}-{topic}
-                            // DLP: subjectKey = subj + year, e.g. math4, sci4
-                            // BM:  subjectKey = the full key from topic-counts, e.g. math4bm, sci4bm
-                            const prefix = dlpKeys.includes(subj)
-                                ? `tb-${subj}${profileTahun}-`  // DLP: add year to prefix
-                                : `tb-${subj}-`;               // BM: full key already has year
-                            if (k.startsWith(prefix) && tbScores[k]?.score > 0) {
+                            if (k.startsWith(scorePrefix) && tbScores[k]?.score > 0) {
                                 done++;
                             }
                         });
