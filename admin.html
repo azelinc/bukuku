@@ -38,21 +38,31 @@
         }
         .search-input:focus { border-color: #f39c12; }
         .account-row {
-            display: flex; align-items: center; justify-content: space-between;
             padding: 14px 0; border-bottom: 1px solid #f0f0f0;
-            gap: 10px;
         }
         .account-row:last-child { border-bottom: none; }
-        .account-email { font-weight: 600; font-size: 0.9rem; word-break: break-all; flex: 1; }
-        .account-meta { font-size: 0.75rem; color: #999; min-width: 60px; text-align: center; }
+        .account-row-top {
+            display: flex; align-items: center; gap: 8px;
+            margin-bottom: 6px;
+        }
+        .account-row-bottom {
+            display: flex; align-items: center; gap: 8px;
+            flex-wrap: wrap;
+        }
+        .account-email {
+            font-weight: 600; font-size: 0.9rem;
+            overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+            flex: 1; min-width: 0;
+        }
+        .account-meta { font-size: 0.75rem; color: #999; white-space: nowrap; }
         .plan-badge {
             font-size: 0.75rem; padding: 4px 12px; border-radius: 20px;
-            font-weight: 700; white-space: nowrap;
+            font-weight: 700; white-space: nowrap; flex-shrink: 0;
         }
         .plan-badge.free { background: #eee; color: #888; }
         .plan-badge.premium { background: #f1c40f; color: #7d6608; }
         .toggle-btn {
-            border: none; padding: 8px 16px; border-radius: 10px;
+            border: none; padding: 6px 14px; border-radius: 10px;
             cursor: pointer; font-size: 0.8rem; font-weight: 700;
             transition: 0.2s; white-space: nowrap;
         }
@@ -275,22 +285,31 @@
                 const row = document.createElement('div');
                 row.className = 'account-row';
 
-                const emailSpan = document.createElement('div');
+                const topLine = document.createElement('div');
+                topLine.className = 'account-row-top';
+
+                const emailSpan = document.createElement('span');
                 emailSpan.className = 'account-email';
                 emailSpan.textContent = acc.email;
                 if (acc.email === PLATFORM_OWNER) {
                     emailSpan.innerHTML += ' <span style="font-size:0.7rem; color:#f39c12;">👑</span>';
                 }
 
-                const metaSpan = document.createElement('div');
+                const badge = document.createElement('span');
+                badge.className = `plan-badge ${acc.plan}`;
+                badge.textContent = acc.plan;
+
+                topLine.appendChild(emailSpan);
+                topLine.appendChild(badge);
+
+                const bottomLine = document.createElement('div');
+                bottomLine.className = 'account-row-bottom';
+
+                const metaSpan = document.createElement('span');
                 metaSpan.className = 'account-meta';
                 metaSpan.textContent = acc.createdAt
                     ? acc.createdAt.toLocaleDateString('en-MY', { day: 'numeric', month: 'short' })
                     : '-';
-
-                const badge = document.createElement('span');
-                badge.className = `plan-badge ${acc.plan}`;
-                badge.textContent = acc.plan;
 
                 const toggleBtn = document.createElement('button');
                 toggleBtn.className = 'toggle-btn';
@@ -311,11 +330,12 @@
                 resetAccBtn.style.color = 'white';
                 resetAccBtn.onclick = () => resetAccountProgress(acc.uid, acc.email);
 
-                row.appendChild(emailSpan);
-                row.appendChild(metaSpan);
-                row.appendChild(badge);
-                row.appendChild(toggleBtn);
-                row.appendChild(resetAccBtn);
+                bottomLine.appendChild(metaSpan);
+                bottomLine.appendChild(toggleBtn);
+                bottomLine.appendChild(resetAccBtn);
+
+                row.appendChild(topLine);
+                row.appendChild(bottomLine);
                 accountList.appendChild(row);
             });
         };
