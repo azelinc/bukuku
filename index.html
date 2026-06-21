@@ -424,14 +424,17 @@
         function updateAuthUI(email) {
             const authBtn = document.getElementById('auth-btn');
             const authStatus = document.getElementById('auth-status');
+            const isOwner = email === 'azel.inc@gmail.com';
             if (email) {
                 authBtn.innerHTML = `🔑 ${email}`;
                 authBtn.className = 'auth-btn signed-in';
-                authStatus.innerHTML = `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
-                // Show admin panel link for platform owner
+                authStatus.innerHTML = isOwner
+                    ? `Admin <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`
+                    : `Parent <span class="sub-badge ${subscriptionPlan}">${subscriptionPlan}</span>`;
+                // Show admin panel link only for platform owner
                 const adminLink = document.getElementById('admin-link');
                 if (adminLink) {
-                    adminLink.style.display = email === 'azel.inc@gmail.com' ? 'inline-block' : 'none';
+                    adminLink.style.display = isOwner ? 'inline-block' : 'none';
                 }
             } else {
                 authBtn.innerHTML = '🔑 Sign In';
@@ -541,10 +544,12 @@
                     subscriptionPlan = 'free';
                 }
 
-                // Auto-migrate old profiles
-                const migrated = await migrateOldProfiles(user.uid);
-                if (migrated > 0) {
-                    showToast(`Migrated ${migrated} profiles!`, 'success');
+                // Auto-migrate old profiles (owner only — one-time migration for pre-auth data)
+                if (user.email === 'azel.inc@gmail.com') {
+                    const migrated = await migrateOldProfiles(user.uid);
+                    if (migrated > 0) {
+                        showToast(`Migrated ${migrated} profiles!`, 'success');
+                    }
                 }
 
                 isAdmin = true;
@@ -570,7 +575,8 @@
 
         window.handleAuthClick = () => {
             if (currentUser) {
-                if (confirm('Sign out of admin account?')) {
+                const label = currentUser.email === 'azel.inc@gmail.com' ? 'admin' : 'parent';
+                if (confirm(`Sign out of ${label} account?`)) {
                     localStorage.removeItem('bukuku_auth');
                     isAdmin = false;
                     manageActive = false;
@@ -765,14 +771,6 @@
                     // Read profiles scoped to this user (ONLY authorized path)
                     const snap = await getDocs(collection(db, "profiles", activeUid, "children"));
                     snap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
-
-                    // Fallback: if no profiles in new path, try old users/ collection
-                    if (profiles.length === 0) {
-                        try {
-                            const oldSnap = await getDocs(collection(db, "users"));
-                            oldSnap.forEach(d => profiles.push({ name: d.id, data: d.data() }));
-                        } catch(e) { /* silently ignore — may not have permission */ }
-                    }
                 } else {
                     // Not authenticated — cannot load profiles
                     fallbackToSignedOut();
