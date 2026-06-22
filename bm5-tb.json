@@ -1,0 +1,2918 @@
+{
+  "subjects": {
+    "bm5": {
+      "name": "Bahasa Melayu Tahun 5",
+      "icon": "📝",
+      "color": "#e67e22",
+      "units": {
+        "1": {
+          "name": "Kekeluargaan",
+          "topics": {
+            "1.1": {
+              "name": "Tanggungjawab Keluarga",
+              "revision": "Setiap ahli keluarga mempunyai tanggungjawab masing-masing. Ibu bapa bertanggungjawab menjaga dan mendidik anak-anak. Anak-anak pula hendaklah menghormati dan mentaati ibu bapa serta membantu kerja-kerja rumah. Keluarga yang bahagia lahir daripada kesedaran setiap ahli melaksanakan tanggungjawab dengan penuh ikhlas.",
+              "questions": [
+                {
+                  "q": "Apakah contoh tanggungjawab seorang anak di rumah?",
+                  "a": [
+                    "Membuang masa",
+                    "Bermalas-malasan",
+                    "Mengabaikan arahan ibu bapa",
+                    "Membantu kerja-kerja rumah"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Siapakah yang bertanggungjawab menjaga keselamatan anak-anak?",
+                  "a": [
+                    "Polis",
+                    "Jiran",
+                    "Ibu bapa",
+                    "Guru"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah yang akan berlaku jika setiap ahli keluarga mengabaikan tanggungjawab?",
+                  "a": [
+                    "Keluarga bertambah bahagia",
+                    "Keluarga disegani orang",
+                    "Keluarga menjadi kaya",
+                    "Keluarga tidak harmoni"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata kerja yang manakah sesuai untuk melengkapkan ayat: 'Kami _____ kerja-kerja rumah bersama-sama.'",
+                  "a": [
+                    "mengambil",
+                    "memakai",
+                    "mengerjakan",
+                    "menulis"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih ayat yang menggunakan kata ganda yang betul.",
+                  "a": [
+                    "Rumah-rumah itu rumah-rumah.",
+                    "Rumah rumah itu cantik.",
+                    "Rumah rumah rumah itu cantik.",
+                    "Rumah-rumah di kampung itu cantik."
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Berat sama dipikul, ringan sama dijinjing.' Apakah maksud peribahasa ini?",
+                  "a": [
+                    "Bersama-sama menjinjing barang",
+                    "Hidup bermasyarakat",
+                    "Menanggung beban yang berat",
+                    "Bekerjasama dalam susah dan senang"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sinonim bagi kata 'taat' ialah ________.",
+                  "a": [
+                    "malas",
+                    "derhaka",
+                    "patuh",
+                    "marah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata hubung yang sesuai: '______ kamu rajin belajar, kamu akan berjaya.'",
+                  "a": [
+                    "Tetapi",
+                    "Kerana",
+                    "Jika",
+                    "Sambil"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Anak umpama ______, ibu bapa sebagai ______.' Lengkapkan peribahasa ini.",
+                  "a": [
+                    "tunas; pokok",
+                    "batu; gunung",
+                    "buah; daun",
+                    "air; laut"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bina ayat pasif yang betul daripada ayat: 'Ali mencuci kasut.'",
+                  "a": [
+                    "Kasut mencuci Ali.",
+                    "Ali mencuci oleh kasut.",
+                    "Kasut dicuci oleh Ali.",
+                    "Ali dicuci oleh kasut."
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Kemesraan Keluarga",
+              "revision": "Kemesraan keluarga dapat dipupuk melalui aktiviti yang dilakukan bersama-sama. Antara aktiviti yang dapat mengeratkan hubungan kekeluargaan ialah makan bersama, berkelah, dan melancong. Ibu bapa yang prihatin sentiasa meluangkan masa berkualiti bersama anak-anak. Kemesraan keluarga menjadikan setiap ahli berasa disayangi dan dihargai.",
+              "questions": [
+                {
+                  "q": "Apakah aktiviti yang dapat mengeratkan hubungan kekeluargaan?",
+                  "a": [
+                    "Menonton televisyen seorang diri",
+                    "Bersendirian di bilik",
+                    "Bermain permainan video seorang diri",
+                    "Makan bersama-sama"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapakah ibu bapa perlu meluangkan masa bersama anak-anak?",
+                  "a": [
+                    "Untuk memarahi anak-anak",
+                    "Untuk menyuruh anak-anak bekerja",
+                    "Untuk meninggalkan anak-anak",
+                    "Untuk mengeratkan hubungan kekeluargaan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata adjektif yang manakah sesuai untuk menggambarkan suasana keluarga yang mesra?",
+                  "a": [
+                    "bosan",
+                    "sedih",
+                    "gembira",
+                    "marah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Hati ______, badan ______.' Lengkapkan peribahasa yang bermaksud kesihatan tubuh berkait dengan emosi.",
+                  "a": [
+                    "marah; ringan",
+                    "kecewa; cergas",
+                    "sedih; kuat",
+                    "gembira; sihat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata nama yang tepat: '______ yang mesra menjadikan keluarga bahagia.'",
+                  "a": [
+                    "Suasana",
+                    "Lari",
+                    "Menulis",
+                    "Cantik"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'mesra'?",
+                  "a": [
+                    "harmoni",
+                    "dingin",
+                    "rapat",
+                    "akrab"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Kami sekeluarga pergi berkelah di pantai.' termasuk dalam jenis ayat ________.",
+                  "a": [
+                    "tanya",
+                    "perintah",
+                    "seruan",
+                    "penyata"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Ayah ______ belikan hadiah untuk ibu.'",
+                  "a": [
+                    "ber",
+                    "di",
+                    "mem",
+                    "ter"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Bagai aur dengan tebing' bermaksud ________.",
+                  "a": [
+                    "tinggi seperti tebing",
+                    "berlari dengan pantas",
+                    "bermusuh-musuhan",
+                    "hubungan yang rapat dan saling membantu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah maksud pantun: 'Pergi ke laut memukat ikan, / Ikan dibawa ke daratan; / Kalau kita hidup sepakat, / Bahagia pastinya ketahuan.'?",
+                  "a": [
+                    "Kesepakatan membawa kebahagiaan",
+                    "Menangkap ikan di laut",
+                    "Berkelah di tepi pantai",
+                    "Hidup bersendirian"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Keluarga Cemerlang",
+              "revision": "Keluarga cemerlang ialah keluarga yang mengamalkan nilai-nilai murni dalam kehidupan seharian. Setiap ahli keluarga saling menghormati, menyayangi, dan membantu antara satu sama lain. Pendidikan agama dan moral menjadi teras pembentukan keluarga yang cemerlang. Kejayaan sesebuah keluarga bermula daripada didikan ibu bapa yang berkesan.",
+              "questions": [
+                {
+                  "q": "Apakah ciri keluarga cemerlang?",
+                  "a": [
+                    "Saling menghormati",
+                    "Mementingkan diri sendiri",
+                    "Tidak bertolak ansur",
+                    "Suka bergaduh"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siapakah yang memainkan peranan utama dalam membentuk keluarga cemerlang?",
+                  "a": [
+                    "Ibu bapa",
+                    "Jiran",
+                    "Kawan",
+                    "Guru"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata kerja 'mendidik' membawa maksud ________.",
+                  "a": [
+                    "memarahi",
+                    "menghukum",
+                    "memukul",
+                    "mengajar dan membimbing"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata adjektif yang betul untuk melengkapkan ayat: 'Anak-anak yang ______ sentiasa membantu ibu bapa.'",
+                  "a": [
+                    "degil",
+                    "pemarah",
+                    "rajin",
+                    "malas"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'cemerlang'?",
+                  "a": [
+                    "gemilang",
+                    "gagal",
+                    "hebat",
+                    "unggul"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Bapa ______, ibu ______.' Lengkapkan dengan kata yang sesuai.",
+                  "a": [
+                    "tidur; lari",
+                    "makan; minum",
+                    "bekerja; memasak",
+                    "main; tidur"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Keluarga itu hidup bahagia ______ mereka saling menyayangi.'",
+                  "a": [
+                    "atau",
+                    "sambil",
+                    "tetapi",
+                    "kerana"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Janganlah kamu bertengkar sesama sendiri.' ialah ayat ________.",
+                  "a": [
+                    "penyata",
+                    "seruan",
+                    "larangan",
+                    "tanya"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Kejayaan keluarga bermula daripada ______ yang kukuh.' Pilih jawapan yang tepat.",
+                  "a": [
+                    "kereta mewah",
+                    "harta benda",
+                    "didikan ibu bapa",
+                    "rumah besar"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Sediakan payung sebelum hujan' bermaksud ________.",
+                  "a": [
+                    "berjaga-jaga sebelum sesuatu berlaku",
+                    "menyediakan payung",
+                    "menunggu hujan",
+                    "mandi hujan"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Kesihatan dan Pemakanan",
+          "topics": {
+            "2.1": {
+              "name": "Amalan Pemakanan Sihat",
+              "revision": "Pemakanan sihat penting untuk pertumbuhan dan perkembangan tubuh badan. Piramid makanan menjadi panduan kepada kita untuk memilih makanan yang seimbang. Kita perlu mengambil karbohidrat, protein, vitamin, dan mineral dalam jumlah yang mencukupi. Amalan pemakanan sihat dapat mencegah pelbagai penyakit.",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan piramid makanan?",
+                  "a": [
+                    "Senarai harga makanan",
+                    "Panduan pemakanan seimbang",
+                    "Tempat menyimpan makanan",
+                    "Cara memasak makanan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kumpulan makanan yang paling banyak diperlukan oleh tubuh ialah ________.",
+                  "a": [
+                    "karbohidrat",
+                    "ais krim",
+                    "kerepek",
+                    "gula-gula"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif yang sesuai untuk menggambarkan makanan yang baik untuk kesihatan ialah ________.",
+                  "a": [
+                    "berhasiat",
+                    "manis",
+                    "masin",
+                    "pedas"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'sihat'?",
+                  "a": [
+                    "kuat",
+                    "segak",
+                    "sakit",
+                    "cergas"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Badan ______ jika makanan ______.' Lengkapkan ayat dengan kata adjektif yang sesuai.",
+                  "a": [
+                    "gemuk; banyak",
+                    "kurus; sedikit",
+                    "sihat; seimbang",
+                    "lembik; manis"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Buah-buahan dan sayur-sayuran kaya dengan ________.",
+                  "a": [
+                    "karbohidrat",
+                    "lemak",
+                    "gula",
+                    "vitamin"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ makanan yang berkhasiat.'",
+                  "a": [
+                    "membuang",
+                    "mengambil",
+                    "membakar",
+                    "menyimpan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Makanan seimbang ______ badan sihat.' Pilih kata hubung yang sesuai.",
+                  "a": [
+                    "menjadikan",
+                    "sambil",
+                    "tetapi",
+                    "atau"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'Biar tubuh berpeluh, asalkan badan sihat.' Maksud peribahasa ini ialah ________.",
+                  "a": [
+                    "mandi setiap hari",
+                    "bekerja keras untuk kesihatan",
+                    "minum air masak",
+                    "bermain dalam hujan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Air ______ penting untuk ______ badan. Pilih perkataan yang sesuai.",
+                  "a": [
+                    "kotor; basuh",
+                    "hujan; mandi",
+                    "masin; laut",
+                    "minum; kesihatan"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Kebersihan Persekitaran",
+              "revision": "Kebersihan persekitaran tanggungjawab semua pihak. Amalan membuang sampah di tempatnya, mengitar semula bahan buangan, dan menjaga kebersihan kawasan kediaman perlu diamalkan. Persekitaran yang bersih menjamin kesihatan dan keselesaan hidup. Masyarakat yang prihatin sentiasa menjaga kebersihan alam sekitar.",
+              "questions": [
+                {
+                  "q": "Apakah kesan jika persekitaran kotor?",
+                  "a": [
+                    "Pemandangan cantik",
+                    "Udara menjadi segar",
+                    "Penyakit mudah berjangkit",
+                    "Hidup selesa"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kegiatan mengitar semula bertujuan untuk ________.",
+                  "a": [
+                    "membakar sampah",
+                    "menambah sampah",
+                    "mengurangkan sampah",
+                    "membuang sampah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kata kerja 'mencemarkan' bermaksud ________.",
+                  "a": [
+                    "menghias",
+                    "membersihkan",
+                    "menyusun",
+                    "mengotorkan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata adjektif yang sesuai: 'Udara di kawasan ini sangat ______ kerana banyak pokok.'",
+                  "a": [
+                    "busuk",
+                    "nyaman",
+                    "kotor",
+                    "panas"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Alam sekitar ______, hidup pun ______.' Lengkapkan ayat.",
+                  "a": [
+                    "kotor; selesa",
+                    "bersih; sihat",
+                    "sunyi; gembira",
+                    "cemar; bahagia"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'bersih'?",
+                  "a": [
+                    "licin",
+                    "kotor",
+                    "cerah",
+                    "suci"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Kawasan perumahan itu perlu di ______ bersihkan.'",
+                  "a": [
+                    "mem",
+                    "ber",
+                    "me",
+                    "per"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Buang yang keruh, ambil yang jernih' bermaksud ________.",
+                  "a": [
+                    "membuang air keruh",
+                    "mengambil air jernih",
+                    "mengambil yang baik dan meninggalkan yang buruk",
+                    "membersihkan kolam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ayat 'Jangan membuang sampah di sungai!' ialah jenis ayat ________.",
+                  "a": [
+                    "seruan",
+                    "larangan",
+                    "penyata",
+                    "tanya"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "______ persekitaran adalah ______ setiap individu. Pilih kata yang sesuai.",
+                  "a": [
+                    "Mencemarkan; hak",
+                    "Mengotori; tugas",
+                    "Membakar; kerja",
+                    "Menjaga; tanggungjawab"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Gaya Hidup Sihat",
+              "revision": "Gaya hidup sihat merangkumi pemakanan seimbang, senaman yang teratur, dan rehat yang mencukupi. Aktiviti rekreasi seperti berenang, berjoging, dan bermain badminton dapat menyihatkan badan. Pengurusan masa yang baik membolehkan kita mengimbangi kerja, rehat, dan riadah. Amalan gaya hidup sihat menjamin kualiti hidup yang lebih baik.",
+              "questions": [
+                {
+                  "q": "Apakah contoh aktiviti fizikal yang menyihatkan?",
+                  "a": [
+                    "Makan",
+                    "Menonton televisyen",
+                    "Tidur",
+                    "Berenang"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Berapa lamakah masa yang disarankan untuk bersenam setiap hari?",
+                  "a": [
+                    "5 minit",
+                    "10 jam",
+                    "2 jam",
+                    "30 minit"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata adjektif 'cergas' membawa maksud ________.",
+                  "a": [
+                    "aktif dan sihat",
+                    "marah dan bengis",
+                    "sedih dan lesu",
+                    "malas dan lemah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Ayah ______ badannya dengan berjoging setiap pagi.'",
+                  "a": [
+                    "menyihatkan",
+                    "melemahkan",
+                    "memudaratkan",
+                    "menyakitkan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'Badan sihat, ______ pun cerdas.' Lengkapkan peribahasa ini.",
+                  "a": [
+                    "mata",
+                    "otak",
+                    "kaki",
+                    "tangan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah sinonim bagi perkataan 'rekreasi'?",
+                  "a": [
+                    "riadah",
+                    "makan",
+                    "kerja",
+                    "tidur"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata hubung yang sesuai: 'Kita perlu makan ______ bersenam untuk kesihatan.'",
+                  "a": [
+                    "dan",
+                    "tetapi",
+                    "kerana",
+                    "jika"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ayat 'Bersukanlah untuk kesihatan!' termasuk dalam jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "tanya",
+                    "perintah",
+                    "seruan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Mencegah lebih baik daripada mengubati' bermaksud ________.",
+                  "a": [
+                    "sakit itu baik",
+                    "rawatan tidak perlu",
+                    "ubat lebih baik daripada pencegahan",
+                    "lebih baik mencegah penyakit daripada merawatnya"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Tidur yang mencukupi untuk orang dewasa ialah sekitar ________ jam sehari.",
+                  "a": [
+                    "4 hingga 5",
+                    "7 hingga 8",
+                    "12 hingga 14",
+                    "2 hingga 3"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Keselamatan",
+          "topics": {
+            "3.1": {
+              "name": "Keselamatan di Rumah",
+              "revision": "Keselamatan di rumah perlu diberi perhatian untuk mengelakkan kemalangan. Alat-alatan elektrik hendaklah digunakan dengan berhati-hati. Benda tajam dan bahan berbahaya perlu disimpan di tempat yang selamat. Ibu bapa perlu mengawasi anak-anak kecil bagi mengelakkan kecederaan.",
+              "questions": [
+                {
+                  "q": "Di manakah sebaiknya pisau dan gunting disimpan?",
+                  "a": [
+                    "Di atas meja makan",
+                    "Di bawah bantal",
+                    "Di dalam laci tanpa pengunci",
+                    "Di tempat yang selamat dan tertutup"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah tindakan yang perlu diambil jika terhidu gas bocor?",
+                  "a": [
+                    "Tekan suis lampu",
+                    "Hidupkan kipas",
+                    "Buka tingkap dan padamkan api",
+                    "Nyalakan api"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kata kerja 'mengelakkan' bermaksud ________.",
+                  "a": [
+                    "mendekati",
+                    "mengikuti",
+                    "menghindari",
+                    "menyertai"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata adjektif yang sesuai: 'Pastikan lantai ______ supaya tidak licin.'",
+                  "a": [
+                    "kering",
+                    "basah",
+                    "licin",
+                    "berminyak"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'Biar lambat, asalkan selamat' bermaksud ________.",
+                  "a": [
+                    "selamat itu lambat",
+                    "keselamatan lebih penting daripada kelajuan",
+                    "cepat itu bahaya",
+                    "lambat itu baik"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah nombor telefon kecemasan bomba?",
+                  "a": [
+                    "991",
+                    "999",
+                    "994",
+                    "997"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih imbuhan yang betul: 'Ibu ______ simpan barang pecah belah di tempat selamat.'",
+                  "a": [
+                    "ber",
+                    "ter",
+                    "me",
+                    "mem"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Jangan ______ api di dalam rumah.' Pilih kata kerja yang sesuai.",
+                  "a": [
+                    "mandi",
+                    "makan",
+                    "tidur",
+                    "bermain"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Jangan menyentuh wayar yang terdedah!' ialah ayat ________.",
+                  "a": [
+                    "larangan",
+                    "tanya",
+                    "penyata",
+                    "seruan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antonim bagi perkataan 'selamat' ialah ________.",
+                  "a": [
+                    "terjamin",
+                    "bahaya",
+                    "aman",
+                    "tenang"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Keselamatan di Sekolah",
+              "revision": "Keselamatan di sekolah adalah tanggungjawab semua warga sekolah. Pelajar hendaklah mematuhi peraturan sekolah semasa berada di dalam kelas, makmal sains, dan padang. Aktiviti di padang perlu diawasi oleh guru untuk mengelakkan kecederaan. Pelajar dilarang berlari di koridor dan tangga untuk mengelakkan kemalangan.",
+              "questions": [
+                {
+                  "q": "Apakah peraturan keselamatan yang perlu dipatuhi di makmal sains?",
+                  "a": [
+                    "Menyentuh bahan kimia tanpa kebenaran",
+                    "Berlari-larian di dalam makmal",
+                    "Bermain dengan alat radas",
+                    "Jangan makan dan minum di dalam makmal"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapakah pelajar tidak boleh berlari di tangga?",
+                  "a": [
+                    "Untuk mengejar masa",
+                    "Untuk bersenam",
+                    "Untuk mengelakkan kemalangan",
+                    "Supaya cepat sampai"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kata adjektif 'berhati-hati' bermaksud ________.",
+                  "a": [
+                    "cepat dan tergesa-gesa",
+                    "berani dan gagah",
+                    "waspada dan cermat",
+                    "cuai dan malas"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata kerja yang tepat: 'Pelajar dilarang ______ di koridor.'",
+                  "a": [
+                    "berdiri",
+                    "berlari",
+                    "duduk",
+                    "berjalan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'______ di sekolah menjamin ______ pelajar.' Pilih kata yang sesuai.",
+                  "a": [
+                    "Kecederaan; kegembiraan",
+                    "Keselamatan; keselesaan",
+                    "Kecelakaan; kesihatan",
+                    "Kemalangan; kesenangan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah yang perlu dilakukan jika berlaku kecemasan di sekolah?",
+                  "a": [
+                    "Lari keluar tanpa arah",
+                    "Sembunyi di dalam tandas",
+                    "Berteriak sekuat hati",
+                    "Bertenang dan ikut arahan guru"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Patuhilah peraturan sekolah ______ kamu ingin selamat.'",
+                  "a": [
+                    "tetapi",
+                    "kerana",
+                    "sambil",
+                    "jika"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Tolong jaga keselamatan adik-adik kamu.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "tanya",
+                    "seruan",
+                    "permintaan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Sedikit-sedikit, lama-lama jadi bukit' mengajar kita tentang ________.",
+                  "a": [
+                    "ketekunan dan kesabaran",
+                    "malas bekerja",
+                    "cepat marah",
+                    "boros berbelanja"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'patuh' ialah ________.",
+                  "a": [
+                    "ingkar",
+                    "taat",
+                    "lawan",
+                    "bantah"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Keselamatan di Tempat Awam",
+              "revision": "Tempat awam seperti pasar raya, stesen bas, dan taman rekreasi memerlukan kita sentiasa berwaspada. Jangan bercakap dengan orang yang tidak dikenali dan jangan mudah percaya dengan pujukan mereka. Sentiasa beritahu ibu bapa ke mana kita pergi. Amalan keselamatan di tempat awam dapat mengelakkan kejadian yang tidak diingini.",
+              "questions": [
+                {
+                  "q": "Apakah yang perlu dilakukan jika tersesat di pasar raya?",
+                  "a": [
+                    "Ikut orang yang tidak dikenali",
+                    "Pergi ke kaunter pertanyaan",
+                    "Duduk di tempat gelap",
+                    "Menangis dengan kuat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mengapakah kita tidak boleh bercakap dengan orang yang tidak dikenali?",
+                  "a": [
+                    "Untuk mengelakkan bahaya",
+                    "Supaya nampak hebat",
+                    "Kerana mereka jahat",
+                    "Kerana tidak sopan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'waspada' bermaksud ________.",
+                  "a": [
+                    "berhati-hati",
+                    "tidak peduli",
+                    "cuai",
+                    "malas"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ barang berharga di tempat awam.'",
+                  "a": [
+                    "memberi",
+                    "meninggalkan",
+                    "menjaga",
+                    "membuang"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'awam'?",
+                  "a": [
+                    "terbuka",
+                    "umum",
+                    "peribadi",
+                    "ramai"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'______ di tempat awam perlu diamalkan.' Pilih kata yang sesuai.",
+                  "a": [
+                    "Kemalangan",
+                    "Kecurian",
+                    "Keselamatan",
+                    "Kebakaran"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Mereka di ______ larang bermain di tepi jalan.'",
+                  "a": [
+                    "ber",
+                    "per",
+                    "me",
+                    "mem"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Awasi barang bawaan anda.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "seruan",
+                    "tanya",
+                    "perintah"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Jangan mengharapkan ______, usahakanlah ______.' Lengkapkan peribahasa.",
+                  "a": [
+                    "rezeki; nasib",
+                    "kawan; lawan",
+                    "belas kasihan; keselamatan sendiri",
+                    "duit; harta"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Bagai pinang dibelah dua' bermaksud ________.",
+                  "a": [
+                    "bermusuhan",
+                    "sama benar dan sepadan",
+                    "bersatu padu",
+                    "bercerai-berai"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Perpaduan",
+          "topics": {
+            "4.1": {
+              "name": "Rakyat Malaysia",
+              "revision": "Malaysia merupakan sebuah negara yang terdiri daripada pelbagai kaum dan etnik. Antara kaum utama di Malaysia ialah Melayu, Cina, India, Kadazan, dan Iban. Walaupun berbeza kaum dan agama, rakyat Malaysia hidup dalam suasana harmoni. Identiti nasional sebagai rakyat Malaysia perlu dipupuk sejak kecil.",
+              "questions": [
+                {
+                  "q": "Apakah kaum utama yang terdapat di Malaysia?",
+                  "a": [
+                    "India dan Arab",
+                    "Melayu, Cina, dan India",
+                    "Cina dan Korea",
+                    "Melayu dan Jepun"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah bahasa kebangsaan Malaysia?",
+                  "a": [
+                    "Bahasa Tamil",
+                    "Bahasa Cina",
+                    "Bahasa Inggeris",
+                    "Bahasa Melayu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata adjektif yang sesuai untuk menggambarkan masyarakat Malaysia ialah ________.",
+                  "a": [
+                    "tunggal",
+                    "seragam",
+                    "pelbagai",
+                    "sama"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ perpaduan antara kaum.'",
+                  "a": [
+                    "memupuk",
+                    "meruntuhkan",
+                    "menghancurkan",
+                    "memutuskan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'Bersatu teguh, bercerai roboh' bermaksud ________.",
+                  "a": [
+                    "perpaduan membawa kekuatan",
+                    "roboh itu bagus",
+                    "bersatu itu lemah",
+                    "bercerai itu baik"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah kepentingan perpaduan kaum di Malaysia?",
+                  "a": [
+                    "Negara mundur",
+                    "Negara aman dan maju",
+                    "Negara bergaduh",
+                    "Negara berpecah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata hubung yang sesuai: 'Rakyat Malaysia hidup aman ______ harmoni.'",
+                  "a": [
+                    "kerana",
+                    "atau",
+                    "tetapi",
+                    "dan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Malaysia sebuah negara yang unik.' ialah jenis ayat ________.",
+                  "a": [
+                    "tanya",
+                    "perintah",
+                    "seruan",
+                    "penyata"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'harmoni' ialah ________.",
+                  "a": [
+                    "ribut",
+                    "kacau",
+                    "aman",
+                    "gaduh"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Berbagai ______, satu ______.' Lengkapkan cogan kata perpaduan.",
+                  "a": [
+                    "warna; corak",
+                    "makanan; rasa",
+                    "agama; cara",
+                    "kaum; negara"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Semarak Perpaduan",
+              "revision": "Semarak perpaduan dapat dilaksanakan melalui aktiviti gotong-royong dan kemasyarakatan. Rakyat Malaysia yang prihatin sentiasa mengamalkan semangat kejiranan. Sambutan hari perayaan bersama dan aktiviti sukan antara kaum dapat mengeratkan hubungan. Semangat perpaduan inilah yang menjadikan Malaysia sebuah negara yang unik dan disegani.",
+              "questions": [
+                {
+                  "q": "Apakah aktiviti yang dapat menyemarakkan perpaduan?",
+                  "a": [
+                    "Tidak bertegur sapa",
+                    "Bersendiri di rumah",
+                    "Gotong-royong membersihkan kawasan",
+                    "Bergaduh dengan jiran"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapakah sambutan hari perayaan bersama penting?",
+                  "a": [
+                    "Untuk bermegah",
+                    "Untuk mengeratkan silaturahim",
+                    "Untuk bersaing",
+                    "Untuk membazir wang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kata kerja 'bergotong-royong' bermaksud ________.",
+                  "a": [
+                    "bekerja seorang diri",
+                    "bekerja bersama-sama",
+                    "bermain",
+                    "berehat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata adjektif yang betul: 'Suasana gotong-royong sangat ______.'",
+                  "a": [
+                    "sepi",
+                    "meriah",
+                    "bosan",
+                    "sunyi"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Bulat air kerana ______, bulat kata kerana ______.' Lengkapkan peribahasa.",
+                  "a": [
+                    "air; batu",
+                    "pipa; kata",
+                    "sungai; laut",
+                    "pembetung; muafakat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah faedah semangat kejiranan yang baik?",
+                  "a": [
+                    "Mementingkan diri",
+                    "Bantu-membantu ketika kesusahan",
+                    "Bermusuh-musuhan",
+                    "Tidak bertegur sapa"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Mereka ______ gotong-royong membersihkan taman.'",
+                  "a": [
+                    "ter",
+                    "me",
+                    "ber",
+                    "di"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ayat 'Mari kita sama-sama menjaga perpaduan.' termasuk jenis ayat ________.",
+                  "a": [
+                    "tanya",
+                    "ajakan",
+                    "penyata",
+                    "seruan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'bersatu'?",
+                  "a": [
+                    "berhimpun",
+                    "bergabung",
+                    "berkumpul",
+                    "bercerai"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Kita ______, kita ______.' Pilih kata yang sesuai untuk semangat perpaduan.",
+                  "a": [
+                    "sama; berpecah",
+                    "bermusuh; berbaik",
+                    "berbeza; bersatu",
+                    "berlainan; bergaduh"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Budaya Harmoni",
+              "revision": "Malaysia kaya dengan kepelbagaian budaya yang harmoni. Setiap kaum mempunyai adat resam, pakaian tradisional, dan tarian yang unik. Toleransi dan saling menghormati antara kaum perlu diamalkan untuk mengekalkan keharmonian. Budaya harmoni merupakan warisan yang perlu dipelihara untuk generasi akan datang.",
+              "questions": [
+                {
+                  "q": "Apakah contoh pakaian tradisional kaum Melayu?",
+                  "a": [
+                    "Sari",
+                    "Kimono",
+                    "Baju kurung dan baju melayu",
+                    "Hanbok"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah tarian tradisional kaum India?",
+                  "a": [
+                    "Bharatanatyam",
+                    "Lion Dance",
+                    "Ngajat",
+                    "Joget"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'harmoni' bermaksud ________.",
+                  "a": [
+                    "kacau dan bising",
+                    "seimbang dan tenteram",
+                    "gaduh dan huru-hara",
+                    "sedih dan murung"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ budaya kaum lain.'",
+                  "a": [
+                    "menghina",
+                    "mencemuh",
+                    "memusuhi",
+                    "menghormati"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Berbeda ______, tetap ______.' Lengkapkan slogan perpaduan budaya.",
+                  "a": [
+                    "sama; serupa",
+                    "kaum; berlainan",
+                    "warna; berbeza",
+                    "budaya; satu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapakah toleransi antara kaum penting?",
+                  "a": [
+                    "Untuk menunjukkan kelebihan",
+                    "Untuk memenangi pertandingan",
+                    "Untuk mengekalkan keharmonian",
+                    "Untuk mendapat hadiah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata nama yang tepat: '______ antara kaum perlu dipelihara.'",
+                  "a": [
+                    "Tidur",
+                    "Keharmonian",
+                    "Bergaduh",
+                    "Memarahi"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Janganlah kita bersikap perkauman.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "seruan",
+                    "larangan",
+                    "tanya"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Bagai isi dengan kuku' bermaksud ________.",
+                  "a": [
+                    "saling membenci",
+                    "bermusuh-musuhan",
+                    "bercerai-berai",
+                    "sangat rapat dan karib"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'toleransi' ialah ________.",
+                  "a": [
+                    "mementingkan diri",
+                    "berprasangka",
+                    "bertolak ansur",
+                    "bermusuhan"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Alam Sekitar",
+          "topics": {
+            "5.1": {
+              "name": "Sayangi Alam",
+              "revision": "Alam sekitar merupakan anugerah Tuhan yang perlu disayangi dan dipelihara. Hutan, sungai, dan laut perlu dijaga kebersihannya. Penebangan hutan secara liar dan pencemaran industri mengancam alam sekitar. Setiap individu perlu memainkan peranan dalam usaha pemuliharaan alam semula jadi.",
+              "questions": [
+                {
+                  "q": "Apakah kepentingan hutan kepada hidupan?",
+                  "a": [
+                    "Kawasan perumahan",
+                    "Sumber oksigen dan habitat haiwan",
+                    "Tapak pembakaran",
+                    "Tempat membuang sampah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah kesan penebangan hutan secara berleluasa?",
+                  "a": [
+                    "Banjir dan tanah runtuh",
+                    "Cantik dipandang",
+                    "Hidup selesa",
+                    "Udara segar"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'indah' sesuai untuk menggambarkan ________.",
+                  "a": [
+                    "sampah yang bertimbun",
+                    "alam semula jadi yang cantik",
+                    "sungai yang kotor",
+                    "udara yang tercemar"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ alam sekitar.'",
+                  "a": [
+                    "merosakkan",
+                    "mengotor",
+                    "memelihara",
+                    "mencemarkan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Alam ______, hidup ______.' Lengkapkan dengan kata yang sesuai.",
+                  "a": [
+                    "kotor; baik",
+                    "rosak; selesa",
+                    "terjaga; sejahtera",
+                    "cemar; senang"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah maksud pemuliharaan alam?",
+                  "a": [
+                    "Memusnahkan hutan",
+                    "Membuang sampah merata-rata",
+                    "Menjaga dan melindungi alam sekitar",
+                    "Mencemarkan alam sekitar"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Kita perlu menjaga alam ______ kita mahu hidup selesa.'",
+                  "a": [
+                    "jika",
+                    "kerana",
+                    "tetapi",
+                    "sambil"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Sayangilah alam sekitar kita.' termasuk jenis ayat ________.",
+                  "a": [
+                    "perintah",
+                    "tanya",
+                    "seruan",
+                    "penyata"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Bumi ______, kita ______.' Lengkapkan slogan alam sekitar.",
+                  "a": [
+                    "sejahtera; bahagia",
+                    "kotor; sakit",
+                    "panas; sejuk",
+                    "rosak; derita"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'lestari' ialah ________.",
+                  "a": [
+                    "lenyap",
+                    "hilang",
+                    "musnah",
+                    "kekal"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Flora dan Fauna",
+              "revision": "Flora merujuk kepada tumbuh-tumbuhan manakala fauna merujuk kepada haiwan di sesebuah kawasan. Malaysia kaya dengan pelbagai spesies flora dan fauna yang unik. Harimau Malaya, Orang Utan, dan Bunga Raya antara khazanah negara yang perlu dilindungi. Kepupusan flora dan fauna akan mengganggu keseimbangan ekosistem.",
+              "questions": [
+                {
+                  "q": "Apakah maksud flora?",
+                  "a": [
+                    "Tumbuh-tumbuhan",
+                    "Haiwan",
+                    "Batu-batan",
+                    "Manusia"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Haiwan yang manakah menjadi lambang kebangsaan Malaysia?",
+                  "a": [
+                    "Penyu",
+                    "Orang Utan",
+                    "Burung Kenyalang",
+                    "Harimau Malaya"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata adjektif 'unik' bermaksud ________.",
+                  "a": [
+                    "lain daripada yang lain",
+                    "tidak istimewa",
+                    "sama seperti yang lain",
+                    "biasa-biasa sahaja"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ hidupan liar yang dilindungi.'",
+                  "a": [
+                    "menangkap",
+                    "memburu",
+                    "membunuh",
+                    "memelihara"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bunga kebangsaan Malaysia ialah ________.",
+                  "a": [
+                    "Bunga Raya",
+                    "Bunga Orkid",
+                    "Bunga Teratai",
+                    "Bunga Melati"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah kesan jika spesies haiwan pupus?",
+                  "a": [
+                    "Alam menjadi indah",
+                    "Ekosistem tidak seimbang",
+                    "Manusia gembira",
+                    "Udara menjadi bersih"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Haiwan langka perlu di ______ lindungi.'",
+                  "a": [
+                    "ber",
+                    "per",
+                    "me",
+                    "mem"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Jangan memburu haiwan yang dilindungi.' ialah jenis ayat ________.",
+                  "a": [
+                    "seruan",
+                    "penyata",
+                    "larangan",
+                    "tanya"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Harimau mati meninggalkan ______, manusia mati meninggalkan ______.'",
+                  "a": [
+                    "kuku; harta",
+                    "kulit; rumah",
+                    "taring; wang",
+                    "belang; nama"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'pupus'?",
+                  "a": [
+                    "hilang",
+                    "berkembang",
+                    "lenyap",
+                    "musnah"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Cegah Pencemaran",
+              "revision": "Pencemaran alam sekitar berlaku akibat perbuatan manusia yang tidak bertanggungjawab. Pencemaran udara, air, dan tanah mengancam kesihatan manusia dan hidupan lain. Amalan kitar semula, penggunaan bahan mesra alam, dan pengurangan plastik dapat mengurangkan pencemaran. Setiap individu perlu memainkan peranan untuk mencegah pencemaran.",
+              "questions": [
+                {
+                  "q": "Apakah punca utama pencemaran udara?",
+                  "a": [
+                    "Asap kilang dan kenderaan",
+                    "Pokok-pokok hijau",
+                    "Angin kencang",
+                    "Hujan lebat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah amalan yang dapat mengurangkan pencemaran?",
+                  "a": [
+                    "Menebang pokok",
+                    "Membakar sampah",
+                    "Membuang sampah ke sungai",
+                    "Kitar semula bahan buangan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata adjektif 'tercemar' bermaksud ________.",
+                  "a": [
+                    "kotor dan tidak suci lagi",
+                    "bersih dan suci",
+                    "cantik dan indah",
+                    "nyaman dan segar"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ pencemaran alam.'",
+                  "a": [
+                    "mencegah",
+                    "menggalakkan",
+                    "menyebabkan",
+                    "membiarkan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'______ hari ini untuk ______ esok.' Lengkapkan slogan kitar semula.",
+                  "a": [
+                    "Rosakkan; kemajuan",
+                    "Guna plastik; keselesaan",
+                    "Kitar semula; masa depan",
+                    "Buang sampah; kebersihan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kelas bahan yang boleh dikitar semula ialah ________.",
+                  "a": [
+                    "bateri dan racun",
+                    "kaca, plastik, dan kertas",
+                    "sisa makanan",
+                    "kotoran haiwan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata hubung yang sesuai: 'Kita boleh mengitar semula ______ mengurangkan sampah.'",
+                  "a": [
+                    "sambil",
+                    "untuk",
+                    "tetapi",
+                    "kerana"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Amalkan 3R: Reduce, Reuse, Recycle!' termasuk jenis ayat ________.",
+                  "a": [
+                    "larangan",
+                    "seruan",
+                    "penyata",
+                    "tanya"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Cegah ______, jaga ______.' Pilih kata yang sesuai untuk ayat ini.",
+                  "a": [
+                    "pencemaran; kebersihan",
+                    "sakit; kesihatan",
+                    "marah; hati",
+                    "malas; semangat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'cegah'?",
+                  "a": [
+                    "biarkan",
+                    "tahan",
+                    "halang",
+                    "tegah"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Patriotisme dan Kewarganegaraan",
+          "topics": {
+            "6.1": {
+              "name": "Semangat Patriotisme",
+              "revision": "Patriotisme bermaksud semangat cinta akan negara. Rakyat yang patriotik sanggup berkorban untuk mempertahankan kedaulatan negara. Semangat patriotisme dapat dipupuk melalui penghayatan lagu kebangsaan, menghormati bendera negara, dan menyertai aktiviti kemasyarakatan. Rasa bangga menjadi rakyat Malaysia perlu ada dalam diri setiap warganegara.",
+              "questions": [
+                {
+                  "q": "Apakah maksud patriotisme?",
+                  "a": [
+                    "Cinta akan negara",
+                    "Cinta akan kuasa",
+                    "Cinta akan wang",
+                    "Cinta akan diri sendiri"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah lagu kebangsaan Malaysia?",
+                  "a": [
+                    "Malaysia Berjaya",
+                    "Negaraku",
+                    "Tanah Pusaka",
+                    "Jalur Gemilang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kata adjektif 'patriotik' bermaksud ________.",
+                  "a": [
+                    "bersemangat cinta akan negara",
+                    "malas dan tidak peduli",
+                    "tidak bertanggungjawab",
+                    "mementingkan diri"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ bendera negara dengan megah.'",
+                  "a": [
+                    "membuang",
+                    "mengoyakkan",
+                    "memijak",
+                    "mengibarkan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'______ bangsa, ______ negara.' Lengkapkan slogan patriotik.",
+                  "a": [
+                    "Tinggalkan; musnah",
+                    "Binasa; mundur",
+                    "Hidup; gemilang",
+                    "Lupakan; hancurkan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah warna yang terdapat pada Jalur Gemilang?",
+                  "a": [
+                    "Merah dan putih sahaja",
+                    "Hitam dan putih",
+                    "Hijau dan kuning",
+                    "Merah, putih, biru, kuning"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Kita perlu cinta akan negara ______ kita rakyat Malaysia.'",
+                  "a": [
+                    "tetapi",
+                    "kerana",
+                    "sambil",
+                    "atau"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Ayat 'Tegakkan negaraku!' termasuk jenis ayat ________.",
+                  "a": [
+                    "tanya",
+                    "seruan",
+                    "penyata",
+                    "larangan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Jangan ______ negara sendiri.' Pilih kata kerja yang sesuai.",
+                  "a": [
+                    "menghina",
+                    "menghormati",
+                    "memuji",
+                    "mencintai"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'berkorban' ialah ________.",
+                  "a": [
+                    "membeli",
+                    "menjual",
+                    "memberi",
+                    "mengambil"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Tokoh Negara",
+              "revision": "Tokoh negara ialah individu yang berjasa dan memberi sumbangan besar kepada negara. Tunku Abdul Rahman merupakan Bapa Kemerdekaan yang menuntut kemerdekaan Tanah Melayu. Tun Dr. Mahathir Mohamad dikenali sebagai Bapa Pemodenan Malaysia. Tokoh-tokoh negara perlu dihormati dan dicontohi semangat perjuangan mereka.",
+              "questions": [
+                {
+                  "q": "Siapakah Bapa Kemerdekaan Malaysia?",
+                  "a": [
+                    "Tun Abdul Razak",
+                    "Tun Hussein Onn",
+                    "Tun Dr. Mahathir",
+                    "Tunku Abdul Rahman"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah jasa Tunku Abdul Rahman kepada negara?",
+                  "a": [
+                    "Menuntut kemerdekaan Tanah Melayu",
+                    "Mencipta bendera",
+                    "Menulis lagu kebangsaan",
+                    "Membina bangunan tinggi"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif yang sesuai untuk menggambarkan tokoh negara ialah ________.",
+                  "a": [
+                    "malas",
+                    "degil",
+                    "sombrong",
+                    "berjasa"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ jasa tokoh negara.'",
+                  "a": [
+                    "menghina",
+                    "mengabaikan",
+                    "melupakan",
+                    "mengenang"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'______ pemimpin, ______ negara.' Lengkapkan ayat.",
+                  "a": [
+                    "Hormati; maju",
+                    "Hina; mundur",
+                    "Lawan; hancur",
+                    "Tentang; rosak"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siapakah Perdana Menteri Malaysia yang pertama?",
+                  "a": [
+                    "Tunku Abdul Rahman",
+                    "Tun Abdul Razak",
+                    "Tun Hussein Onn",
+                    "Tun Dr. Mahathir Mohamad"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Jasa tokoh negara perlu di ______ kenang.'",
+                  "a": [
+                    "mengenangkan",
+                    "mengenang",
+                    "peringati",
+                    "berkenang"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ayat 'Tokoh negara berjuang untuk kemerdekaan.' ialah jenis ayat ________.",
+                  "a": [
+                    "seruan",
+                    "penyata",
+                    "tanya",
+                    "perintah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Gajah mati meninggalkan gading, harimau mati meninggalkan belang, manusia mati meninggalkan ________.'",
+                  "a": [
+                    "nama",
+                    "harta",
+                    "duit",
+                    "rumah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'berjasa'?",
+                  "a": [
+                    "berdosa",
+                    "berbakti",
+                    "berkorban",
+                    "berbudi"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Tanggungjawab Rakyat",
+              "revision": "Setiap rakyat Malaysia mempunyai tanggungjawab terhadap negara. Antara tanggungjawab tersebut ialah mematuhi undang-undang, membayar cukai, dan mengundi pada pilihan raya. Rakyat yang bertanggungjawab akan menjaga harta awam dan tidak melakukan jenayah. Dengan melaksanakan tanggungjawab, negara akan menjadi aman dan makmur.",
+              "questions": [
+                {
+                  "q": "Apakah tanggungjawab rakyat terhadap negara?",
+                  "a": [
+                    "Membuang sampah merata-rata",
+                    "Melanggar peraturan",
+                    "Mencemarkan alam",
+                    "Mematuhi undang-undang"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapakah kita perlu membayar cukai?",
+                  "a": [
+                    "Untuk pembangunan negara",
+                    "Untuk kawan",
+                    "Untuk keluarga",
+                    "Untuk diri sendiri"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'bertanggungjawab' bermaksud ________.",
+                  "a": [
+                    "suka melanggar peraturan",
+                    "dapat dipercayai",
+                    "cuai",
+                    "tidak peduli"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Rakyat perlu ______ pada pilihan raya.'",
+                  "a": [
+                    "merusuh",
+                    "memprotes",
+                    "mengundi",
+                    "tidak peduli"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'______ undang-undang, ______ negara.' Lengkapkan ayat.",
+                  "a": [
+                    "Langgar; maju",
+                    "Patuh; aman",
+                    "Cabut; hancur",
+                    "Tentang; makmur"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah hak asasi rakyat Malaysia?",
+                  "a": [
+                    "Mencemarkan sungai",
+                    "Menebang hutan",
+                    "Mendapat pendidikan",
+                    "Membuang sampah merata-rata"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Kita perlu menjaga harta awam ______ kita rakyat yang bertanggungjawab.'",
+                  "a": [
+                    "kerana",
+                    "sambil",
+                    "tetapi",
+                    "jika"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ayat 'Buktikanlah cinta kamu kepada negara.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "tanya",
+                    "perintah",
+                    "larangan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Di mana bumi dipijak, di situ ______ dijunjung.' Lengkapkan peribahasa.",
+                  "a": [
+                    "tangan",
+                    "langit",
+                    "kaki",
+                    "kepala"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'patuh'?",
+                  "a": [
+                    "setia",
+                    "ingkar",
+                    "taat",
+                    "tunduk"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Sains, Teknologi dan Inovasi",
+          "topics": {
+            "7.1": {
+              "name": "Keajaiban Teknologi",
+              "revision": "Teknologi moden telah membawa pelbagai kemudahan dalam kehidupan manusia. Telefon pintar, komputer, dan internet memudahkan komunikasi dan pencarian maklumat. Inovasi dalam bidang perubatan, pengangkutan, dan pertanian telah meningkatkan kualiti hidup. Walau bagaimanapun, teknologi perlu digunakan dengan bijak dan bertanggungjawab.",
+              "questions": [
+                {
+                  "q": "Apakah contoh ciptaan teknologi yang memudahkan komunikasi?",
+                  "a": [
+                    "Telefon pintar",
+                    "Daun",
+                    "Batu",
+                    "Kayu"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah kepentingan internet dalam pembelajaran?",
+                  "a": [
+                    "Membuang masa",
+                    "Mencari maklumat dengan cepat",
+                    "Meniru kerja orang lain",
+                    "Bermain permainan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kata adjektif 'moden' bermaksud ________.",
+                  "a": [
+                    "kuno",
+                    "lama dan usang",
+                    "baharu dan canggih",
+                    "purba"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Teknologi telah ______ kehidupan manusia.'",
+                  "a": [
+                    "merumitkan",
+                    "memudahkan",
+                    "menyusahkan",
+                    "memburukkan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Teknologi ______, hidup ______.' Lengkapkan ayat.",
+                  "a": [
+                    "maju; selesa",
+                    "mundur; senang",
+                    "lama; baik",
+                    "usang; bahagia"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah maksud inovasi?",
+                  "a": [
+                    "Benda kuno",
+                    "Ciptaan atau idea baharu",
+                    "Alat traditional",
+                    "Barang lama"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih imbuhan yang betul: 'Telefon pintar ______ revolusi dalam komunikasi.'",
+                  "a": [
+                    "terbawa",
+                    "dibawa",
+                    "berbawa",
+                    "membawa"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Gunakan teknologi dengan bijak.' termasuk jenis ayat ________.",
+                  "a": [
+                    "seruan",
+                    "penyata",
+                    "tanya",
+                    "perintah"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'______ canggih, ______ selamat.' Pilih perkataan yang sesuai.",
+                  "a": [
+                    "Internet; resah",
+                    "Teknologi; masa depan",
+                    "Gajet; murung",
+                    "Komputer; bahaya"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'canggih'?",
+                  "a": [
+                    "unggul",
+                    "agung",
+                    "hebat",
+                    "kuno"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Komputer dan Internet",
+              "revision": "Komputer dan internet merupakan alat penting dalam era digital. Kita boleh menggunakan internet untuk mencari maklumat, berkomunikasi, dan belajar secara dalam talian. Walau bagaimanapun, pengguna internet perlu berhati-hati dengan kandungan yang tidak sesuai dan ancaman siber. Literasi digital penting untuk melindungi diri dalam dunia maya.",
+              "questions": [
+                {
+                  "q": "Apakah kegunaan utama komputer di sekolah?",
+                  "a": [
+                    "Mendengar muzik",
+                    "Bermain permainan",
+                    "Pembelajaran dan penyelidikan",
+                    "Menonton video"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah yang dimaksudkan dengan laman web?",
+                  "a": [
+                    "Halaman di internet yang mengandungi maklumat",
+                    "Papan kenyataan",
+                    "Buku yang tebal",
+                    "Kertas kerja"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'digital' bermaksud ________.",
+                  "a": [
+                    "berkaitan dengan teknologi komputer",
+                    "berkaitan dengan surat",
+                    "berkaitan dengan buku",
+                    "berkaitan dengan tulisan tangan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu melayari internet secara ________.'",
+                  "a": [
+                    "cuai",
+                    "berisiko",
+                    "bahaya",
+                    "selamat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Internet ______, maklumat ______.' Lengkapkan ayat.",
+                  "a": [
+                    "lambat; terhadap",
+                    "mahal; kurang",
+                    "sempit; sikit",
+                    "luas; banyak"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapakah kita perlu berhati-hati di internet?",
+                  "a": [
+                    "Supaya nampak hebat",
+                    "Untuk menunjuk-nunjuk",
+                    "Kerana seronok",
+                    "Mengelakkan ancaman siber"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata hubung yang sesuai: 'Kita boleh belajar secara dalam talian ______ menggunakan internet.'",
+                  "a": [
+                    "tetapi",
+                    "kerana",
+                    "atau",
+                    "dengan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Jangan berkongsi kata laluan dengan orang lain.' ialah jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "seruan",
+                    "tanya",
+                    "larangan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'______ siber perlu ______ oleh semua pengguna internet.' Pilih kata yang sesuai.",
+                  "a": [
+                    "Ancaman; dibiarkan",
+                    "Virus; disebarkan",
+                    "Keselamatan; diamalkan",
+                    "Jenayah; dipuji"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'melayari' dalam konteks internet ialah ________.",
+                  "a": [
+                    "berenang",
+                    "mendaki",
+                    "memancing",
+                    "melawati"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Masa Depan Inovasi",
+              "revision": "Inovasi pada masa depan akan lebih tertumpu kepada kecerdasan buatan (AI), robotik, dan automasi. Robot sudah digunakan dalam bidang perkilangan, perubatan, dan penerokaan angkasa. Inovasi hijau pula memberi tumpuan kepada tenaga boleh baharu seperti solar dan angin. Generasi muda perlu bersedia dengan kemahiran sains dan teknologi untuk menghadapi cabaran masa depan.",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan kecerdasan buatan (AI)?",
+                  "a": [
+                    "Mesin yang boleh berfikir seperti manusia",
+                    "Robot yang boleh makan",
+                    "Komputer yang tidur",
+                    "Alat yang boleh bercakap"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Di manakah robot digunakan dalam bidang perubatan?",
+                  "a": [
+                    "Memasak",
+                    "Menari",
+                    "Pembedahan",
+                    "Menyanyi"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kata adjektif 'automatik' bermaksud ________.",
+                  "a": [
+                    "lambat",
+                    "berjalan sendiri tanpa kawalan manusia",
+                    "manual",
+                    "dikawal sepenuhnya oleh manusia"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Inovasi ______ kualiti kehidupan manusia.'",
+                  "a": [
+                    "memburukkan",
+                    "merendahkan",
+                    "menurunkan",
+                    "meningkatkan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Inovasi ______, negara ______.' Lengkapkan ayat.",
+                  "a": [
+                    "lama; mundur",
+                    "maju; gemilang",
+                    "buruk; rosak",
+                    "lemah; hancur"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah contoh tenaga boleh baharu?",
+                  "a": [
+                    "Arang batu",
+                    "Gas petroleum",
+                    "Minyak diesel",
+                    "Tenaga suria"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Robot digunakan untuk ______ lakukan tugasan berulang.'",
+                  "a": [
+                    "ter",
+                    "ber",
+                    "di",
+                    "men"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Mari kita mencipta inovasi baharu.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "larangan",
+                    "tanya",
+                    "ajakan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'______ hijau untuk ______ lestari.' Pilih kata yang sesuai.",
+                  "a": [
+                    "Teknologi; masa depan",
+                    "Pencemaran; bumi",
+                    "Industri; udara",
+                    "Pembalakan; hutan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah sinonim bagi perkataan 'inovasi'?",
+                  "a": [
+                    "kerosakan",
+                    "ketinggalan",
+                    "pembaharuan",
+                    "kemunduran"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "8": {
+          "name": "Ekonomi, Kewangan dan Keusahawanan",
+          "topics": {
+            "8.1": {
+              "name": "Wang dan Simpanan",
+              "revision": "Wang merupakan alat pertukaran yang digunakan dalam urusan jual beli. Menabung adalah amalan bijak untuk masa depan. Kita perlu bijak menguruskan wang belanja dan tidak berbelanja secara boros. Amalan menabung sejak kecil akan mendatangkan faedah pada masa hadapan.",
+              "questions": [
+                {
+                  "q": "Apakah kegunaan utama wang?",
+                  "a": [
+                    "Kertas biasa",
+                    "Hiasan dinding",
+                    "Alat untuk bermain",
+                    "Alat pertukaran dalam urusan jual beli"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Mengapakah kita perlu menabung?",
+                  "a": [
+                    "Untuk dibuang",
+                    "Untuk dipamerkan",
+                    "Untuk membazir",
+                    "Untuk kegunaan masa depan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kata adjektif 'boros' bermaksud ________.",
+                  "a": [
+                    "suka menabung",
+                    "suka berbelanja berlebih-lebihan",
+                    "suka bekerja",
+                    "suka berehat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ wang dengan bijak.'",
+                  "a": [
+                    "membuang",
+                    "membazir",
+                    "mengurus",
+                    "menghabiskan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Menabung ______, menghabiskan ______.' Lengkapkan ayat.",
+                  "a": [
+                    "baik; rugi",
+                    "lama; cepat",
+                    "buruk; untung",
+                    "banyak; sikit"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah tempat yang selamat untuk menyimpan wang?",
+                  "a": [
+                    "Di poket baju",
+                    "Bank",
+                    "Di bawah bantal",
+                    "Dalam kotak"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Kita perlu menabung ______ masa depan.'",
+                  "a": [
+                    "sambil",
+                    "kerana",
+                    "tetapi",
+                    "untuk"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Simpanlah wang di bank.' termasuk jenis ayat ________.",
+                  "a": [
+                    "perintah",
+                    "tanya",
+                    "seruan",
+                    "penyata"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'Sedikit-sedikit, lama-lama menjadi ______.' Lengkapkan peribahasa tentang menabung.",
+                  "a": [
+                    "sungai",
+                    "laut",
+                    "bukit",
+                    "gunung"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'simpan'?",
+                  "a": [
+                    "letak",
+                    "tahan",
+                    "keluarkan",
+                    "pegang"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "8.2": {
+              "name": "Sumber Pendapatan",
+              "revision": "Sumber pendapatan merujuk kepada cara seseorang memperoleh wang. Antara sumber pendapatan ialah gaji daripada pekerjaan, hasil perniagaan, dan dividen pelaburan. Setiap pekerjaan adalah mulia dan memberi sumbangan kepada masyarakat. Kita perlu menghargai rezeki yang diperoleh dan tidak membezakan pekerjaan antara satu sama lain.",
+              "questions": [
+                {
+                  "q": "Apakah contoh sumber pendapatan?",
+                  "a": [
+                    "Gaji daripada pekerjaan",
+                    "Duit pinjaman",
+                    "Sedekah orang lain",
+                    "Wang daripada jiran"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pekerjaan yang manakah termasuk dalam sektor perkhidmatan?",
+                  "a": [
+                    "Guru",
+                    "Pelombong",
+                    "Petani",
+                    "Nelayan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'mulia' bermaksud ________.",
+                  "a": [
+                    "hina dan rendah",
+                    "jahat dan kejam",
+                    "buruk dan keji",
+                    "terhormat dan baik"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Ibu bapa ______ rezeki untuk keluarga.'",
+                  "a": [
+                    "menghabiskan",
+                    "membuang",
+                    "menyia-nyiakan",
+                    "mencari"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Rezeki ______, jangan ______.' Lengkapkan ayat.",
+                  "a": [
+                    "buang; cari",
+                    "cari; sia-siakan",
+                    "habis; simpan",
+                    "tunggu; usahakan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah yang dimaksudkan dengan usahawan?",
+                  "a": [
+                    "Orang yang menjalankan perniagaan",
+                    "Orang yang menganggur",
+                    "Orang yang bersekolah",
+                    "Orang yang bersara"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih imbuhan yang sesuai: 'Beliau ______ niaga secara kecil-kecilan.'",
+                  "a": [
+                    "me",
+                    "di",
+                    "ber",
+                    "ter"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ayat 'Hormatilah setiap pekerjaan.' termasuk jenis ayat ________.",
+                  "a": [
+                    "seruan",
+                    "penyata",
+                    "perintah",
+                    "tanya"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Rajin ______, malas ______.' Lengkapkan peribahasa.",
+                  "a": [
+                    "mencari; makan",
+                    "bekerja; berehat",
+                    "belajar; main",
+                    "belanja; simpan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'pendapatan' ialah ________.",
+                  "a": [
+                    "hasil",
+                    "perbelanjaan",
+                    "hutang",
+                    "kerugian"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "8.3": {
+              "name": "Usahawan Muda",
+              "revision": "Usahawan muda merupakan individu yang memulakan perniagaan pada usia muda. Ciri-ciri usahawan yang berjaya termasuklah kreatif, inovatif, rajin, dan tidak mudah putus asa. Perniagaan kecil seperti menjual kuih muih, tanaman hiasan, atau kraf tangan boleh dimulakan di rumah. Menjadi usahawan muda dapat menyemai nilai kemandirian dan keyakinan diri.",
+              "questions": [
+                {
+                  "q": "Apakah ciri utama seorang usahawan yang berjaya?",
+                  "a": [
+                    "Kreatif dan inovatif",
+                    "Malas dan suka menunggu",
+                    "Pendiam dan pemalu",
+                    "Cepat berputus asa"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah contoh perniagaan yang boleh dilakukan oleh murid?",
+                  "a": [
+                    "Menjual kuih muih",
+                    "Meminjam wang",
+                    "Memandu teksi",
+                    "Membeli rumah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'inovatif' bermaksud ________.",
+                  "a": [
+                    "berdaya cipta",
+                    "cepat berputus asa",
+                    "malas berfikir",
+                    "suka meniru"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Seorang usahawan perlu ______ peluang perniagaan.'",
+                  "a": [
+                    "mengelak",
+                    "menunggu",
+                    "mencari",
+                    "membuang"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Usahawan ______, ekonomi ______.' Lengkapkan ayat.",
+                  "a": [
+                    "malas; mundur",
+                    "lemah; kuat",
+                    "berjaya; maju",
+                    "gagal; kukuh"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapakah kita perlu memupuk semangat keusahawanan sejak muda?",
+                  "a": [
+                    "Untuk membuang masa",
+                    "Untuk meminjam wang",
+                    "Untuk menyemai nilai kemandirian",
+                    "Untuk bermain-main"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata hubung yang sesuai: 'Mereka berniaga ______ mendapat keuntungan.'",
+                  "a": [
+                    "untuk",
+                    "tetapi",
+                    "sambil",
+                    "kerana"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ayat 'Jangan takut untuk mencuba perniagaan.' ialah jenis ayat ________.",
+                  "a": [
+                    "tanya",
+                    "penyata",
+                    "seruan",
+                    "larangan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'______ sambil ______.' Maksud peribahasa ini adalah melakukan dua perkara serentak.",
+                  "a": [
+                    "Makan; tidur",
+                    "Menunggu; memancing",
+                    "lari; kerja",
+                    "Berenang; tidur"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'maju'?",
+                  "a": [
+                    "cemerlang",
+                    "hebat",
+                    "mundur",
+                    "gemilang"
+                  ],
+                  "c": 2
+                }
+              ]
+            }
+          }
+        },
+        "9": {
+          "name": "Warisan dan Kebudayaan",
+          "topics": {
+            "9.1": {
+              "name": "Warisan Bangsa",
+              "revision": "Warisan bangsa merangkumi tarian tradisional, muzik, pakaian, dan adat resam yang diwarisi turun-temurun. Tarian seperti Joget, Zapin, dan Ngajat merupakan khazanah budaya Malaysia. Alat muzik tradisional seperti kompang, gamelan, dan sape perlu dipelihara. Warisan bangsa mencerminkan identiti dan jati diri sesebuah masyarakat.",
+              "questions": [
+                {
+                  "q": "Apakah tarian tradisional kaum Melayu?",
+                  "a": [
+                    "Ngajat",
+                    "Sumazau",
+                    "Joget",
+                    "Bharatanatyam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Alat muzik tradisional yang dipalu dan sering digunakan dalam majlis keramaian Melayu ialah ________.",
+                  "a": [
+                    "sape",
+                    "kompang",
+                    "piano",
+                    "violin"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kata adjektif 'tradisional' bermaksud ________.",
+                  "a": [
+                    "baharu dan moden",
+                    "ciptaan terkini",
+                    "turun-temurun dari zaman dahulu",
+                    "import dari luar negara"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Kita perlu ______ warisan bangsa.'",
+                  "a": [
+                    "memelihara",
+                    "melupakan",
+                    "memusnahkan",
+                    "membuang"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "'Warisan ______, budaya ______.' Lengkapkan ayat.",
+                  "a": [
+                    "musnah; hancur",
+                    "kekal; lestari",
+                    "hilang; lenyap",
+                    "pupus; binasa"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah pakaian tradisional kaum Kadazan?",
+                  "a": [
+                    "Baju kurung",
+                    "Sari",
+                    "Cheongsam",
+                    "Kain dongki / Kadazan traditional attire"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih imbuhan yang betul: 'Tarian tradisional perlu di ______ warisi.'",
+                  "a": [
+                    "me",
+                    "ber",
+                    "mem",
+                    "per"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Ayat 'Peliharalah warisan bangsa kita.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "tanya",
+                    "seruan",
+                    "larangan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'______ budaya, ______ jati diri.' Pilih kata yang sesuai.",
+                  "a": [
+                    "Lupa; hancurkan",
+                    "Buang; musnahkan",
+                    "Pupuk; bentukkan",
+                    "Hapus; binasakan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'warisan' ialah ________.",
+                  "a": [
+                    "lupaan",
+                    "buangan",
+                    "hilangan",
+                    "pusaka"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "9.2": {
+              "name": "Makanan Warisan",
+              "revision": "Malaysia terkenal dengan kepelbagaian makanan warisan yang lazat dan unik. Nasi lemak, rendang, satay, dan laksa merupakan antara makanan tradisional yang popular. Setiap kaum mempunyai makanan tradisional tersendiri yang mencerminkan budaya mereka. Makanan warisan perlu dipertahankan agar tidak lenyap ditelan zaman.",
+              "questions": [
+                {
+                  "q": "Apakah makanan tradisional yang sering dihidangkan pada majlis kenduri Melayu?",
+                  "a": [
+                    "Pizza",
+                    "Rendang",
+                    "Sushi",
+                    "Spaghetti"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kuih tradisional yang dibuat daripada tepung beras dan santan, dibungkus dalam daun pisang ialah ________.",
+                  "a": [
+                    "kuih ketayap",
+                    "kuih seri muka",
+                    "kuih lapis",
+                    "kuih dadar"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kata adjektif 'enak' bermaksud ________.",
+                  "a": [
+                    "sedap dan menyelerakan",
+                    "pahit dan masam",
+                    "busuk dan basi",
+                    "hambar dan tawar"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Nenek ______ kuih tradisional untuk cucu-cucunya.'",
+                  "a": [
+                    "membuang",
+                    "membuat",
+                    "melupakan",
+                    "memusnahkan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "'Makanan ______, tradisi ______.' Lengkapkan ayat.",
+                  "a": [
+                    "segera; kekal",
+                    "sejuk; hilang",
+                    "panas; lenyap",
+                    "warisan; kekal"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah bahan utama dalam pembuatan ketupat?",
+                  "a": [
+                    "Gandum",
+                    "Pulut / beras pulut",
+                    "Ubi kayu",
+                    "Jagung"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata hubung yang betul: 'Nasi lemak sedap ______ dimakan dengan sambal dan ikan bilis.'",
+                  "a": [
+                    "kerana",
+                    "sambil",
+                    "apabila",
+                    "tetapi"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Ayat 'Cubalah makanan tradisional ini.' termasuk jenis ayat ________.",
+                  "a": [
+                    "penyata",
+                    "tanya",
+                    "larangan",
+                    "ajakan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "'Dimakan ______, dibuang ______.' Lengkapkan pepatah tentang makanan.",
+                  "a": [
+                    "sayang; rugi",
+                    "banyak; sikit",
+                    "lambat; cepat",
+                    "panas; busuk"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah antonim bagi perkataan 'manis'?",
+                  "a": [
+                    "sedap",
+                    "enak",
+                    "pahit",
+                    "lazat"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "9.3": {
+              "name": "Permainan Rakyat",
+              "revision": "Permainan rakyat merupakan permainan tradisional yang dimainkan sejak zaman dahulu. Wau bulan, gasing, congkak, dan batu seremban antara permainan rakyat yang popular. Permainan ini bukan sahaja menghiburkan tetapi juga melatih minda dan kemahiran fizikal. Generasi muda perlu mengenali permainan rakyat agar tidak dilupakan.",
+              "questions": [
+                {
+                  "q": "Apakah permainan tradisional yang menggunakan buah congkak sebagai alatnya?",
+                  "a": [
+                    "Congkak",
+                    "Batu seremban",
+                    "Wau",
+                    "Gasing"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Permainan wau dimainkan dengan cara ________.",
+                  "a": [
+                    "memusingkan gasing",
+                    "melompat tali",
+                    "menerbangkan layang-layang",
+                    "menyepak bulu ayam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kata adjektif 'tradisional' sesuai digandingkan dengan kata ________.",
+                  "a": [
+                    "komputer",
+                    "permainan",
+                    "kereta",
+                    "telefon"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pilih kata kerja yang betul: 'Mereka ______ congkak di serambi rumah.'",
+                  "a": [
+                    "membaca",
+                    "menulis",
+                    "bermain",
+                    "melukis"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Permainan ______, minda ______.' Lengkapkan ayat.",
+                  "a": [
+                    "video; malas",
+                    "rakyat; cerdas",
+                    "digital; beku",
+                    "moden; cetek"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah alat yang digunakan untuk bermain gasing?",
+                  "a": [
+                    "Buah congkak",
+                    "Batu seremban",
+                    "Wau",
+                    "Gasing (sejenis alat yang dipusingkan)"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pilih imbuhan yang tepat: 'Permainan rakyat perlu di ______ hidupkan semula.'",
+                  "a": [
+                    "per",
+                    "ber",
+                    "mem",
+                    "me"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ayat 'Bermain congkak sangat menyeronokkan.' ialah jenis ayat ________.",
+                  "a": [
+                    "seruan",
+                    "tanya",
+                    "penyata",
+                    "perintah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "'Menjulang layang-layang, ______ tinggi ______ jauh.'",
+                  "a": [
+                    "terbang; melayang",
+                    "gasing; pusing",
+                    "seremban; jatuh",
+                    "congkak; kalah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sinonim bagi perkataan 'rakyat' dalam konteks 'permainan rakyat' ialah ________.",
+                  "a": [
+                    "tradisional",
+                    "moden",
+                    "global",
+                    "antarabangsa"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

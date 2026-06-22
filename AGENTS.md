@@ -41,8 +41,9 @@ Firebase Firestore + Auth for persistence.
 **Textbook content (newer format):**
 - `math4-tb.json` through `math6-tb.json` — DLP Maths Years 4-6
 - `sci4-tb.json` through `sci6-tb.json` — DLP Science Years 4-6
-- `eng4-tb.json` through `eng6-tb.json` — English
-- `math4-bm.json`, `sci4-bm.json` — BM (Bahasa Melayu) versions
+- `eng4-tb.json` through `eng6-tb.json` — English (common subject)
+- `bm4-tb.json` through `bm6-tb.json` — Bahasa Melayu (common subject)
+- `math4-bm.json`, `sci4-bm.json` — BM (Bahasa Melayu) versions of Math/Science
 - `topic-counts.json` — metadata for all topics
 
 **Activities (archived — not linked in UI):** `book-dragon.html`, `book-space.html`, `book-squirrel.html`, `book-solar.html`, `buku-tenaga-air.html` (buku cerita / storybooks); `game-dragon-dash.html`, `game-memory-match.html`, `games.html`, `sifir.html`, `storybook.html`, `train-engine.html`, `tuition-quiz.html`, `mathhigh.html`, `school.html`, `schoolhigh.html`

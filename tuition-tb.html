@@ -314,8 +314,8 @@
 
                 // Load ALL subject files for this year and merge
                 const subjectFiles = isDlp
-                    ? [`math${selectedYear}-tb.json`, `sci${selectedYear}-tb.json`, `eng${selectedYear}-tb.json`]
-                    : [`math${selectedYear}-bm.json`, `sci${selectedYear}-bm.json`, `eng${selectedYear}-tb.json`];
+                    ? [`math${selectedYear}-tb.json`, `sci${selectedYear}-tb.json`, `eng${selectedYear}-tb.json`, `bm${selectedYear}-tb.json`]
+                    : [`math${selectedYear}-bm.json`, `sci${selectedYear}-bm.json`, `eng${selectedYear}-tb.json`, `bm${selectedYear}-tb.json`];
                 const merged = { subjects: {} };
                 for (const file of subjectFiles) {
                     try {

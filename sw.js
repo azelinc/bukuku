@@ -1,4 +1,4 @@
-const CACHE_NAME = 'af-hub-v14';
+const CACHE_NAME = 'af-hub-v15';
 
 // Only cache JSON question banks and static assets, NOT HTML pages
 // HTML pages must always load fresh from network to reflect latest code
@@ -17,7 +17,10 @@ const ASSETS = [
   '/math5-tb.json',
   '/eng4-tb.json',
   '/eng5-tb.json',
-  '/eng6-tb.json'
+  '/eng6-tb.json',
+  '/bm4-tb.json',
+  '/bm5-tb.json',
+  '/bm6-tb.json'
 ];
 
 // Install Service Worker

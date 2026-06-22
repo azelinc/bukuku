@@ -1005,16 +1005,17 @@
                     math: { icon: '🔢', color: '#4a90e2', name: 'Mathematics' },
                     sci: { icon: '🧪', color: '#0097a7', name: 'Science' },
                     eng: { icon: '📖', color: '#8e44ad', name: 'English' },
+                    bm: { icon: '📝', color: '#e67e22', name: 'Bahasa Melayu' },
                     math4bm: { icon: '🔢', color: '#4a90e2', name: 'Matematik' },
                     sci4bm: { icon: '🧪', color: '#0097a7', name: 'Sains' }
                 };
                 const yearCounts = topicCounts[String(profileTahun)] || {};
                 // Filter subjects based on DLP/non-DLP
                 const allSubj = Object.keys(yearCounts);
-                const dlpKeys = ['math', 'sci', 'eng'];
+                const dlpKeys = ['math', 'sci', 'eng', 'bm'];
                 const subjects = isDlp
                     ? allSubj.filter(s => dlpKeys.includes(s))
-                    : allSubj.filter(s => !dlpKeys.includes(s) || s === 'eng');
+                    : allSubj.filter(s => !dlpKeys.includes(s) || s === 'eng' || s === 'bm');
                 if (profileTahun && subjects.length > 0 && tbScores) {
                     let totalDone = 0, totalAll = 0;
                     let html = `<div class="prog-card"><div class="prog-name">📊 ${name}'s Progress</div>`;
@@ -1024,8 +1025,8 @@
                         let done = 0;
                         // Determine the score key prefix for this subject
                         let scorePrefix;
-                        if (subj === 'eng') {
-                            scorePrefix = 'tb-eng' + profileTahun + '-';
+                        if (subj === 'eng' || subj === 'bm') {
+                            scorePrefix = 'tb-' + subj + profileTahun + '-';
                         } else if (subj === 'math') {
                             scorePrefix = 'tb-math' + profileTahun + '-';
                         } else if (subj === 'sci') {
