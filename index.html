@@ -195,11 +195,14 @@
         .prog-empty { text-align: center; font-size: 0.85rem; color: #94a3b8; padding: 8px 0; }
         .prog-empty span { font-size: 1.5rem; display: block; margin-bottom: 4px; }
         .prog-share-btn {
-            cursor: pointer; font-size: 1rem; opacity: 0.6;
-            transition: opacity 0.2s; padding: 2px 6px; border-radius: 8px;
-            user-select: none;
+            cursor: pointer; font-size: 0.8rem; font-weight: 700;
+            color: #2563eb; background: rgba(37,99,235,0.08);
+            padding: 4px 12px; border-radius: 20px;
+            transition: all 0.2s; user-select: none;
+            white-space: nowrap;
         }
-        .prog-share-btn:hover { opacity: 1; background: rgba(0,0,0,0.05); }
+        .prog-share-btn:hover { background: rgba(37,99,235,0.15); transform: scale(1.03); }
+        .prog-share-btn:active { transform: scale(0.97); }
         .share-btn {
             display: block; width: 100%; padding: 12px; border: none;
             border-radius: 12px; color: white; font-weight: 700; font-size: 0.95rem;
@@ -1053,7 +1056,7 @@
                 const subjects = Object.keys(yearCounts);
                 if (profileTahun && subjects.length > 0 && tbScores) {
                     let totalDone = 0, totalAll = 0;
-                    let html = `<div class="prog-card"><div class="prog-name" style="display:flex;justify-content:space-between;align-items:center;">📊 ${name}'s Progress<span class="prog-share-btn" id="share-progress-btn">📤</span></div>`;
+                    let html = `<div class="prog-card"><div class="prog-name" style="display:flex;justify-content:space-between;align-items:center;">📊 ${name}'s Progress<span class="prog-share-btn" id="share-progress-btn">Share this!</span></div>`;
                     subjects.forEach(subj => {
                         const meta = subjMeta[subj] || { icon: '📘', color: '#666', name: subj };
                         const total = yearCounts[subj];
