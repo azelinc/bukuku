@@ -187,7 +187,7 @@
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
-        import { getFirestore, doc, getDoc, getDocs, collection, setDoc, updateDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+        import { getFirestore, doc, getDoc, getDocs, collection, setDoc, updateDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
         const PLATFORM_OWNER = "azel.inc@gmail.com";
 
@@ -334,6 +334,23 @@
                 bottomLine.appendChild(toggleBtn);
                 bottomLine.appendChild(resetAccBtn);
 
+                // Delete button — disabled for owner
+                const deleteBtn = document.createElement('button');
+                deleteBtn.className = 'toggle-btn';
+                if (acc.email === PLATFORM_OWNER) {
+                    deleteBtn.textContent = '🔒 Owner';
+                    deleteBtn.style.background = '#ccc';
+                    deleteBtn.style.cursor = 'not-allowed';
+                    deleteBtn.title = 'Cannot delete the platform owner';
+                } else {
+                    deleteBtn.textContent = '❌ Delete';
+                    deleteBtn.style.background = '#c0392b';
+                    deleteBtn.style.color = 'white';
+                    deleteBtn.onclick = () => deleteAccount(acc.uid, acc.email);
+                }
+
+                bottomLine.appendChild(deleteBtn);
+
                 row.appendChild(topLine);
                 row.appendChild(bottomLine);
                 accountList.appendChild(row);
@@ -438,6 +455,43 @@
                 showToast(`❌ Failed to reset ${email}: ${e.message}`, 'error');
             }
         }
+
+        // Delete an entire account (Firestore data only — auth user becomes orphan)
+        window.deleteAccount = async (uid, email) => {
+            const confirmed = confirm(`⚠️ Delete ENTIRE account for "${email}"?\n\nThis will PERMANENTLY delete:\n• All profiles and quiz scores\n• All progress data\n• Admin record\n\nThe user will lose ALL access.\n\nThis CANNOT be undone!`);
+            if (!confirmed) return;
+
+            const doubleConfirm = confirm(`❗ FINAL WARNING\n\nAccount: "${email}"\nUID: ${uid}\n\nEverything will be permanently deleted.\n\nProceed?`);
+            if (!doubleConfirm) return;
+
+            try {
+                showToast(`⏳ Deleting ${email}...`, 'info');
+
+                // Read children list
+                const metaDoc = await getDoc(doc(db, "profiles", uid));
+                let children = [];
+                if (metaDoc.exists() && Array.isArray(metaDoc.data().children)) {
+                    children = metaDoc.data().children;
+                }
+
+                // Delete all child profiles
+                for (const name of children) {
+                    await deleteDoc(doc(db, "profiles", uid, "children", name));
+                }
+
+                // Delete profiles metadata doc
+                await deleteDoc(doc(db, "profiles", uid));
+
+                // Delete admin record
+                await deleteDoc(doc(db, "admins", uid));
+
+                showToast(`✅ Account ${email} deleted`, 'success');
+                await loadAccounts();
+                renderAccounts();
+            } catch (e) {
+                showToast(`❌ Failed to delete: ${e.message}`, 'error');
+            }
+        };
 
         // Sign out button
         window.handleAdminSignOut = async () => {

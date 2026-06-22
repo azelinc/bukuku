@@ -45,7 +45,7 @@ Firebase Firestore + Auth for persistence.
 - `math4-bm.json`, `sci4-bm.json` — BM (Bahasa Melayu) versions
 - `topic-counts.json` — metadata for all topics
 
-**Activities:** `book-dragon.html`, `book-space.html`, `book-squirrel.html`, `book-solar.html`, `buku-tenaga-air.html` (buku cerita / storybooks); `game-dragon-dash.html`, `game-memory-match.html`, `games.html`, `sifir.html`, `storybook.html`, `train-engine.html`
+**Activities (archived — not linked in UI):** `book-dragon.html`, `book-space.html`, `book-squirrel.html`, `book-solar.html`, `buku-tenaga-air.html` (buku cerita / storybooks); `game-dragon-dash.html`, `game-memory-match.html`, `games.html`, `sifir.html`, `storybook.html`, `train-engine.html`, `tuition-quiz.html`, `mathhigh.html`, `school.html`, `schoolhigh.html`
 
 ## Firestore Schema
 
@@ -114,6 +114,8 @@ cd /opt/data/bukuku && git diff --stat
 - **New sign-ups** start with ZERO profiles (migration only runs for owner)
 - **Admin label:** Non-owners see "Parent" not "Admin"
 - **SW version:** Bump cache version in sw.js when deploying asset changes
+- **Archived content:** Old features (storybooks, games, sifir, school.html, tuition-quiz.html, etc.) exist on filesystem but have zero navigation links in index.html. Only KSSR textbook practice (tuition-tb.html) is active. Don't relink dead content without confirmation.
+- **Admin: Delete Account** — admin.html: Delete button removes all Firestore data (admin doc + profiles + children), but cannot delete the Firebase Auth user itself from client-side JS. Auth account becomes orphan. Owner account (azel.inc@gmail.com) is protected from deletion.
 
 ## AGENTS.md conventions for this repo
 - Keep this file focused on project structure and conventions.
