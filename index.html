@@ -1187,17 +1187,10 @@
             const d = _shareProgressData;
             if (!d) return;
             const lines = [];
-            lines.push("📊 " + d.name + "'s Progress on Bukuku");
-            lines.push("━".repeat(22));
-            d.subjects.forEach(s => {
-                const bar = "█".repeat(Math.min(Math.round(s.pct / 10), 10)) + "░".repeat(Math.max(0, 10 - Math.round(s.pct / 10)));
-                lines.push(s.icon + " " + s.name + ": " + s.done + "/" + s.total + " " + bar + " " + s.pct + "%");
-            });
-            lines.push("━".repeat(22));
-            lines.push("Total: " + d.totalDone + "/" + d.totalAll + " topics · " + d.overallPct + "%");
-            if (d.streak > 0) lines.push("🔥 " + d.streak + " day streak");
+            lines.push("📊 " + d.name + " achieved " + d.overallPct + "% progress on Bukuku!");
+            lines.push("I'm enjoying learning here. You could too!");
             lines.push("");
-            lines.push("Practice at bukuku.my");
+            lines.push("Join me at bukuku.my 🚀");
             document.getElementById("share-preview").textContent = lines.join("\n");
             document.getElementById("share-modal").style.display = "flex";
         };
