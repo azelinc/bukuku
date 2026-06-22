@@ -20,7 +20,10 @@ const ASSETS = [
   '/eng6-tb.json',
   '/bm4-tb.json',
   '/bm5-tb.json',
-  '/bm6-tb.json'
+  '/bm6-tb.json',
+  '/pi4-tb.json',
+  '/pi5-tb.json',
+  '/pi6-tb.json'
 ];
 
 // Install Service Worker

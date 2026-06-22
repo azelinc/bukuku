@@ -1,0 +1,2208 @@
+{
+  "subjects": {
+    "pi4": {
+      "name": "Pendidikan Islam Tahun 4",
+      "icon": "🕌",
+      "color": "#2e7d32",
+      "units": {
+        "1": {
+          "name": "Al-Quran",
+          "topics": {
+            "1.1": {
+              "name": "Surah at-Takathur — Bacaan dan Hafazan",
+              "revision": "Surah at-Takathur ialah surah ke-102 dalam Al-Quran yang mengandungi 8 ayat. Surah ini menegur sikap manusia yang suka bermegah-megah dengan harta dan keturunan sehingga melalaikan mereka daripada mengingati Allah dan akhirat. Surah ini mengingatkan bahawa segala nikmat akan dipersoalkan di akhirat kelak.",
+              "questions": [
+                {
+                  "q": "Apakah maksud surah at-Takathur?",
+                  "a": [
+                    "Golongan yang celaka",
+                    "Bermegah-megah",
+                    "Pengumpat",
+                    "Hari Kiamat"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berapakah bilangan ayat dalam surah at-Takathur?",
+                  "a": [
+                    "7 ayat",
+                    "9 ayat",
+                    "6 ayat",
+                    "8 ayat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Surah at-Takathur menegur sikap manusia yang suka...",
+                  "a": [
+                    "Bersedekah",
+                    "Beribadah",
+                    "Bertawakal",
+                    "Bermegah-megah"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah yang akan dipersoalkan di akhirat menurut surah at-Takathur?",
+                  "a": [
+                    "Setiap nikmat",
+                    "Setiap harta",
+                    "Setiap ibadah",
+                    "Setiap dosa"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah huruf pertama pada ayat pertama surah at-Takathur?",
+                  "a": [
+                    "Ta",
+                    "Ba",
+                    "Alif",
+                    "Ha"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah pengajaran utama daripada surah at-Takathur?",
+                  "a": [
+                    "Bersedekahlah setiap hari",
+                    "Jangan bermegah-megah kerana melalaikan",
+                    "Banyakkan membaca Al-Quran",
+                    "Berpuasalah pada bulan Ramadan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Frasa 'hatta zurtumul maqabir' dalam surah at-Takathur bermaksud...",
+                  "a": [
+                    "Sehingga kamu melihat neraka",
+                    "Sehingga kamu masuk ke dalam kubur",
+                    "Sehingga kamu masuk syurga",
+                    "Sehingga kamu diberi rezeki"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah surah ke-102 dalam Al-Quran?",
+                  "a": [
+                    "Surah al-Asr",
+                    "Surah al-Humazah",
+                    "Surah al-Qari'ah",
+                    "Surah at-Takathur"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Surah al-Qari'ah — Bacaan dan Hafazan",
+              "revision": "Surah al-Qari'ah ialah surah ke-101 dalam Al-Quran yang mengandungi 11 ayat. Surah ini menggambarkan dahsyatnya hari kiamat yang menggegarkan hati manusia. Pada hari itu, amalan manusia akan ditimbang dan mereka yang berat timbangan amal baiknya akan menikmati kehidupan yang memuaskan, manakala yang ringan timbangannya akan berada di neraka Hawiyah.",
+              "questions": [
+                {
+                  "q": "Apakah maksud al-Qari'ah?",
+                  "a": [
+                    "Pengumpat",
+                    "Hari Kiamat",
+                    "Golongan yang celaka",
+                    "Bermegah-megah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berapakah bilangan ayat dalam surah al-Qari'ah?",
+                  "a": [
+                    "12 ayat",
+                    "9 ayat",
+                    "10 ayat",
+                    "11 ayat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah nama neraka yang disebut dalam surah al-Qari'ah?",
+                  "a": [
+                    "Hawiyah",
+                    "Hutamah",
+                    "Saqar",
+                    "Jahannam"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pada hari kiamat, manusia bagaikan...",
+                  "a": [
+                    "Anai-anai yang beterbangan",
+                    "Belalang yang berterbangan",
+                    "Rama-rama yang terbang",
+                    "Sesumpah yang melompat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah yang menimbang amalan manusia pada hari kiamat?",
+                  "a": [
+                    "Rasulullah SAW",
+                    "Malaikat",
+                    "Mizaan (timbangan)",
+                    "Kitab amalan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Siapakah yang dikategorikan sebagai penghuni neraka Hawiyah?",
+                  "a": [
+                    "Orang yang kaya raya",
+                    "Orang yang berat timbangan amal baiknya",
+                    "Orang yang ringan timbangan amal baiknya",
+                    "Orang yang miskin"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Gunung-ganang pada hari kiamat menjadi seperti...",
+                  "a": [
+                    "Batu yang hancur",
+                    "Debu yang berterbangan",
+                    "Pasir di pantai",
+                    "Bulu yang dihamburkan"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "1.3": {
+              "name": "Surah al-Humazah — Bacaan dan Hafazan",
+              "revision": "Surah al-Humazah ialah surah ke-104 dalam Al-Quran yang mengandungi 9 ayat. Surah ini mengecam sikap manusia yang suka mencela, mengumpat, dan mengumpul harta tanpa henti. Allah mengancam mereka dengan neraka Hutamah yang memusnahkan segala-galanya. Surah ini mengajar kita supaya tidak menghina orang lain dan tidak mencintai harta secara keterlaluan.",
+              "questions": [
+                {
+                  "q": "Apakah maksud al-Humazah?",
+                  "a": [
+                    "Bermegah-megah",
+                    "Hari Kiamat",
+                    "Pengumpat dan pencela",
+                    "Golongan yang celaka"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Berapakah bilangan ayat dalam surah al-Humazah?",
+                  "a": [
+                    "7 ayat",
+                    "8 ayat",
+                    "9 ayat",
+                    "10 ayat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah nama neraka yang disebut dalam surah al-Humazah?",
+                  "a": [
+                    "Hawiyah",
+                    "Saqar",
+                    "Jahannam",
+                    "Hutamah"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sikap yang dikecam dalam surah al-Humazah ialah...",
+                  "a": [
+                    "Berbuat baik kepada ibu bapa",
+                    "Mengumpat dan mencela",
+                    "Bersedekah dan berpuasa",
+                    "Solat dan berzikir"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah maksud 'alladzi jama'a maalaw wa'addadah'?",
+                  "a": [
+                    "Yang mengumpulkan harta dan menghitung-hitungnya",
+                    "Yang membelanjakan hartanya",
+                    "Yang menyembunyikan hartanya",
+                    "Yang bersedekah dengan hartanya"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Neraka Hutamah ialah neraka yang...",
+                  "a": [
+                    "Gelap gelita",
+                    "Sangat sejuk",
+                    "Penuh dengan ular",
+                    "Memusnahkan dan membakar segala-galanya"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pengajaran daripada surah al-Humazah ialah kita hendaklah...",
+                  "a": [
+                    "Membanggakan kekayaan",
+                    "Menghormati orang lain dan tidak menghina",
+                    "Mengumpul harta sebanyak mungkin",
+                    "Mencela orang yang bersalah"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "1.4": {
+              "name": "Tadabbur Al-Quran",
+              "revision": "Tadabbur bermaksud merenung, memahami, dan menghayati ayat-ayat Al-Quran dengan mendalam. Ia melibatkan pembacaan dengan penuh penghayatan, memahami maksud ayat, mengambil pengajaran, dan mengamalkannya dalam kehidupan. Tadabbur membantu kita mendekatkan diri kepada Allah dan menjadikan Al-Quran sebagai panduan hidup.",
+              "questions": [
+                {
+                  "q": "Apakah maksud tadabbur?",
+                  "a": [
+                    "Membaca Al-Quran dengan cepat",
+                    "Menulis ayat Al-Quran",
+                    "Menghafal Al-Quran",
+                    "Merenung dan menghayati ayat Al-Quran"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Antara berikut, yang manakah contoh amalan tadabbur Al-Quran?",
+                  "a": [
+                    "Mendengar bacaan Al-Quran sambil bermain",
+                    "Hanya melihat tulisan Al-Quran",
+                    "Membaca Al-Quran sambil memahami maksudnya",
+                    "Membaca Al-Quran tanpa menghayati"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah kepentingan bertadabbur Al-Quran?",
+                  "a": [
+                    "Mendekatkan diri kepada Allah",
+                    "Menambah kekayaan",
+                    "Mendapat populariti",
+                    "Menjadi terkenal"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Langkah pertama dalam bertadabbur Al-Quran ialah...",
+                  "a": [
+                    "Membaca dengan tartil dan bertajwid",
+                    "Menghafal tanpa memahami",
+                    "Mendengar tanpa membaca",
+                    "Terus mengamalkan tanpa membaca"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ayat Al-Quran yang dibaca dengan tadabbur akan memberi kesan kepada...",
+                  "a": [
+                    "Harta benda",
+                    "Kedudukan sosial",
+                    "Hati dan perbuatan",
+                    "Nama baik"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Allah menyuruh kita bertadabbur Al-Quran supaya kita...",
+                  "a": [
+                    "Mencari kelemahan orang lain",
+                    "Berbangga dengan bacaan kita",
+                    "Berdebat dengan orang lain",
+                    "Mengambil pengajaran dan mengamalkannya"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Siapakah yang mendapat manfaat daripada tadabbur Al-Quran?",
+                  "a": [
+                    "Orang yang kaya sahaja",
+                    "Orang yang miskin sahaja",
+                    "Orang yang berakal dan beriman",
+                    "Orang yang pandai sahaja"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "1.5": {
+              "name": "Hukum Tajwid — Mim Sakinah",
+              "revision": "Mim sakinah ialah mim mati (مْ) yang berdiri sendiri. Terdapat tiga hukum mim sakinah: 1. Ikhfa' Syafawi — apabila mim sakinah bertemu ba (ب), dibaca dengan dengung. 2. Idgham Mimi (Idgham Mutamathilain) — apabila mim sakinah bertemu mim (م), dibaca dengan dengung dan dimasukkan. 3. Izhar Syafawi — apabila mim sakinah bertemu huruf selain ba dan mim, dibaca dengan jelas tanpa dengung.",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan mim sakinah?",
+                  "a": [
+                    "Mim mati (مْ)",
+                    "Mim bertasydid",
+                    "Mim berbaris dua",
+                    "Mim berbaris satu"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah hukum bacaan apabila mim sakinah bertemu dengan huruf ba (ب)?",
+                  "a": [
+                    "Idgham Mimi",
+                    "Idgham Maal Ghunnah",
+                    "Ikhfa' Syafawi",
+                    "Izhar Syafawi"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah hukum bacaan apabila mim sakinah bertemu dengan huruf mim (م)?",
+                  "a": [
+                    "Idgham Mimi",
+                    "Izhar Syafawi",
+                    "Ikhfa' Syafawi",
+                    "Idgham Bila Ghunnah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah cara bacaan Idgham Mimi?",
+                  "a": [
+                    "Dibaca dengan panjang dua harakat",
+                    "Dibaca dengan samar-samar",
+                    "Dibaca dengan dengung dan dimasukkan",
+                    "Dibaca dengan jelas tanpa dengung"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Bilakah bacaan Izhar Syafawi berlaku?",
+                  "a": [
+                    "Apabila mim sakinah bertemu huruf selain ba dan mim",
+                    "Apabila mim sakinah bertemu mim sahaja",
+                    "Apabila mim sakinah bertemu ba sahaja",
+                    "Apabila mim sakinah bertemu alif"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ikhfa' Syafawi dibaca dengan cara...",
+                  "a": [
+                    "Jelas tanpa dengung",
+                    "Dimasukkan tanpa dengung",
+                    "Samar-samar dengan dengung",
+                    "Dipanjangkan dua harakat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara huruf berikut, yang manakah menyebabkan bacaan Izhar Syafawi?",
+                  "a": [
+                    "Ba (ب)",
+                    "Kaf (ك)",
+                    "Mim (م)",
+                    "Wau (و)"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "1.6": {
+              "name": "Hukum Tajwid — Qalqalah",
+              "revision": "Qalqalah bermaksud pantulan bunyi apabila membaca huruf qalqalah yang berbaris mati. Huruf qalqalah ada lima iaitu ق (qaf), ط (tha), ب (ba), ج (jim), د (dal) — mudah diingat dengan rangkai kata 'قُطْبُ جَدٍ'. Qalqalah terbahagi kepada dua: Qalqalah Sughra (kecil) apabila huruf qalqalah di tengah kata, dan Qalqalah Kubra (besar) apabila huruf qalqalah di hujung kata atau waqaf.",
+              "questions": [
+                {
+                  "q": "Apakah maksud qalqalah?",
+                  "a": [
+                    "Peleburan huruf",
+                    "Pantulan bunyi pada huruf tertentu",
+                    "Pemanjangan bacaan",
+                    "Dengungan pada huruf nun"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berikut adalah huruf qalqalah kecuali...",
+                  "a": [
+                    "Sin (س)",
+                    "Ba (ب)",
+                    "Qaf (ق)",
+                    "Dal (د)"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah Qalqalah Sughra?",
+                  "a": [
+                    "Qalqalah di hujung kata",
+                    "Qalqalah ketika waqaf",
+                    "Qalqalah di tengah kata",
+                    "Qalqalah di awal kata"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah Qalqalah Kubra?",
+                  "a": [
+                    "Qalqalah ketika wasal",
+                    "Qalqalah di awal ayat",
+                    "Qalqalah di tengah kata",
+                    "Qalqalah di hujung kata atau ketika waqaf"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Berapakah jumlah huruf qalqalah?",
+                  "a": [
+                    "6 huruf",
+                    "5 huruf",
+                    "7 huruf",
+                    "4 huruf"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Manakah antara berikut yang paling mudah mengingati huruf qalqalah?",
+                  "a": [
+                    "تَبَّتْ يَدَا",
+                    "أَبْجَدْ هَوَزْ",
+                    "كَلِمُنْ سَعْفَصْ",
+                    "قُطْبُ جَدٍ"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Dalam bacaan Qalqalah Kubra, pantulan bunyi lebih...",
+                  "a": [
+                    "Kuat dan jelas",
+                    "Perlahan dan samar",
+                    "Panjang dan berlagu",
+                    "Pendek dan cepat"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.7": {
+              "name": "Hukum Tajwid — Tanda Waqaf",
+              "revision": "Waqaf bermaksud berhenti seketika ketika membaca Al-Quran. Terdapat beberapa tanda waqaf: م (Waqaf Lazim — WAJIB berhenti), ط (Waqaf Mutlaq — lebih utama berhenti), ج (Waqaf Jaiz — harus berhenti atau sambung), ص (Waqaf Murakhkhas — harus berhenti kerana terpaksa), dan ق (Qila Alaihil Waqf — sebaiknya berhenti). Tanda وَفْ (Waqaf) atau لا (La) bermaksud JANGAN berhenti. Memahami tanda waqaf penting untuk memelihara makna ayat.",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan waqaf?",
+                  "a": [
+                    "Mempercepatkan bacaan",
+                    "Berhenti seketika ketika membaca Al-Quran",
+                    "Memanjangkan bacaan",
+                    "Menyambung bacaan tanpa henti"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah maksud tanda waqaf م (Mim)?",
+                  "a": [
+                    "Sebaiknya berhenti",
+                    "Waqaf Jaiz — harus berhenti",
+                    "Jangan berhenti",
+                    "Waqaf Lazim — WAJIB berhenti"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah maksud tanda waqaf ج (Jim)?",
+                  "a": [
+                    "Jangan berhenti",
+                    "Waqaf Jaiz — harus berhenti atau sambung",
+                    "WAJIB berhenti",
+                    "Lebih utama berhenti"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah maksud tanda لا (Lam Alif)?",
+                  "a": [
+                    "Sebaiknya berhenti",
+                    "JANGAN berhenti, sambungkan bacaan",
+                    "Harus berhenti",
+                    "WAJIB berhenti"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mengapakah kita perlu memahami tanda waqaf?",
+                  "a": [
+                    "Untuk mempercepatkan bacaan",
+                    "Untuk mengelakkan kesalahan sebutan",
+                    "Untuk memelihara makna ayat Al-Quran",
+                    "Untuk menambah ilmu tajwid"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tanda waqaf ط (Tha) bermaksud...",
+                  "a": [
+                    "Harus berhenti",
+                    "WAJIB berhenti",
+                    "Jangan berhenti",
+                    "Waqaf Mutlaq — lebih utama berhenti"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Tanda waqaf ص (Sad) dikenali sebagai...",
+                  "a": [
+                    "Waqaf Murakhkhas — harus berhenti kerana terpaksa",
+                    "Waqaf Mutlaq",
+                    "Waqaf Jaiz",
+                    "Waqaf Lazim"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "2": {
+          "name": "Hadith",
+          "topics": {
+            "2.1": {
+              "name": "Hadith tentang Kelebihan Membaca Al-Quran",
+              "revision": "Hadith daripada Uthman bin Affan RA, Rasulullah SAW bersabda: 'Sebaik-baik kamu ialah orang yang mempelajari Al-Quran dan mengajarkannya.' (Riwayat al-Bukhari). Hadith ini menunjukkan betapa tingginya kedudukan orang yang belajar dan mengajarkan Al-Quran. Membaca Al-Quran membawa ganjaran pahala yang berlipat ganda dan menjadi syafaat di hari kiamat.",
+              "questions": [
+                {
+                  "q": "Siapakah perawi hadith tentang sebaik-baik manusia?",
+                  "a": [
+                    "Uthman bin Affan RA",
+                    "Aisyah RA",
+                    "Abu Hurairah RA",
+                    "Umar bin al-Khattab RA"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah maksud hadith 'Sebaik-baik kamu ialah orang yang mempelajari Al-Quran dan mengajarkannya'?",
+                  "a": [
+                    "Membaca Al-Quran tanpa memahami tidak berguna",
+                    "Belajar dan mengajar Al-Quran adalah amalan mulia",
+                    "Hanya menghafal Al-Quran sudah mencukupi",
+                    "Mengajar Al-Quran hanya untuk guru agama"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siapakah yang dianggap sebaik-baik manusia menurut hadith?",
+                  "a": [
+                    "Orang yang belajar dan mengajar Al-Quran",
+                    "Orang yang kaya raya",
+                    "Orang yang berpangkat tinggi",
+                    "Orang yang kuat beribadah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah ganjaran bagi orang yang membaca Al-Quran?",
+                  "a": [
+                    "Setiap huruf diganjari 10 kebaikan",
+                    "Setiap ayat diganjari 1 kebaikan",
+                    "Setiap surah diganjari syurga",
+                    "Setiap muka surat diganjari pahala haji"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah pengajaran daripada hadith tentang kelebihan membaca Al-Quran?",
+                  "a": [
+                    "Al-Quran hanya dibaca pada waktu tertentu",
+                    "Hanya orang dewasa boleh membaca Al-Quran",
+                    "Umat Islam digalakkan mempelajari dan mengajarkan Al-Quran",
+                    "Mengajar Al-Quran hanya untuk imam"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Kitap hadith yang meriwayatkan hadith ini ialah...",
+                  "a": [
+                    "Sunan al-Tirmizi",
+                    "Sunan Abu Daud",
+                    "Sahih al-Bukhari",
+                    "Sahih Muslim"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Seorang murid yang membaca Al-Quran mendapat pahala kerana...",
+                  "a": [
+                    "Dia boleh bersaing dalam pertandingan",
+                    "Dia dipandang hebat oleh kawan-kawan",
+                    "Setiap huruf Al-Quran adalah kebaikan",
+                    "Dia dipuji oleh guru"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.2": {
+              "name": "Hadith tentang Niat",
+              "revision": "Hadith daripada Umar bin al-Khattab RA, Rasulullah SAW bersabda: 'Sesungguhnya setiap amalan itu bergantung pada niatnya, dan setiap orang akan mendapat apa yang diniatkannya.' (Riwayat al-Bukhari dan Muslim). Hadith ini menekankan bahawa niat menentukan nilai dan penerimaan sesuatu amalan di sisi Allah. Niat yang ikhlas kerana Allah akan mendapat ganjaran pahala.",
+              "questions": [
+                {
+                  "q": "Siapakah perawi hadith tentang niat?",
+                  "a": [
+                    "Umar bin al-Khattab RA",
+                    "Uthman bin Affan RA",
+                    "Abu Hurairah RA",
+                    "Ali bin Abi Talib RA"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah maksud hadith 'Innamal a'malu binniyat'?",
+                  "a": [
+                    "Sesungguhnya niat yang buruk akan dihukum",
+                    "Sesungguhnya amalan yang baik mendapat pahala",
+                    "Sesungguhnya setiap amalan bergantung pada niat",
+                    "Sesungguhnya amalan tanpa niat adalah sia-sia"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah yang menentukan nilai sesuatu amalan di sisi Allah?",
+                  "a": [
+                    "Banyaknya amalan",
+                    "Tempat dilakukan amalan",
+                    "Cepatnya amalan dilakukan",
+                    "Niat"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Seseorang yang bersedekah kerana ingin dipuji akan...",
+                  "a": [
+                    "Mendapat pahala seperti biasa",
+                    "Mendapat pahala berganda",
+                    "Tidak mendapat pahala kerana niat tidak ikhlas",
+                    "Dicatat sebagai dosa"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah pengajaran daripada hadith tentang niat?",
+                  "a": [
+                    "Niat tidak penting asalkan amalan dilakukan",
+                    "Niat hanya penting untuk ibadah wajib",
+                    "Niat boleh diubah selepas amalan selesai",
+                    "Niat yang ikhlas kerana Allah adalah syarat diterima amalan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Hadith tentang niat diriwayatkan oleh imam-imam hadith berikut kecuali...",
+                  "a": [
+                    "Imam Malik",
+                    "Imam Muslim",
+                    "Imam al-Bukhari",
+                    "Imam Abu Daud"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebaiknya niat kita dalam melakukan sesuatu amalan adalah...",
+                  "a": [
+                    "Kerana ingin mendapat ganjaran dunia",
+                    "Kerana ingin dipuji manusia",
+                    "Kerana Allah SWT semata-mata",
+                    "Kerana terpaksa"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Hadith 'Innamal a'malu binniyat' mengajar kita supaya...",
+                  "a": [
+                    "Banyakkan amalan walau niat buruk",
+                    "Bersaing sesama muslim",
+                    "Meluruskan niat kerana Allah dalam setiap amalan",
+                    "Meninggalkan amalan jika sukar"
+                  ],
+                  "c": 2
+                }
+              ]
+            },
+            "2.3": {
+              "name": "Hadith tentang Silaturahim",
+              "revision": "Hadith daripada Abu Hurairah RA, Rasulullah SAW bersabda: 'Barangsiapa yang beriman kepada Allah dan hari akhirat, maka hendaklah dia menyambung silaturahim.' (Riwayat al-Bukhari dan Muslim). Silaturahim bermaksud menjalin dan memelihara hubungan kekeluargaan dan persaudaraan. Amalan ini memanjangkan umur, meluaskan rezeki, dan mengeratkan kasih sayang sesama manusia.",
+              "questions": [
+                {
+                  "q": "Apakah maksud silaturahim?",
+                  "a": [
+                    "Menjalin dan memelihara hubungan kekeluargaan",
+                    "Memberi sedekah kepada fakir miskin",
+                    "Menunaikan ibadah haji",
+                    "Berpuasa pada bulan Ramadan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siapakah perawi hadith tentang silaturahim?",
+                  "a": [
+                    "Aisyah RA",
+                    "Anas bin Malik RA",
+                    "Umar bin al-Khattab RA",
+                    "Abu Hurairah RA"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Antara berikut, yang manakah merupakan amalan silaturahim?",
+                  "a": [
+                    "Bermusuhan dengan jiran",
+                    "Menyendiri di rumah",
+                    "Melawat saudara-mara dan bertanya khabar",
+                    "Memutuskan hubungan dengan keluarga"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah ganjaran orang yang menyambung silaturahim?",
+                  "a": [
+                    "Dijauhkan daripada keluarga",
+                    "Dimiskinkan hartanya",
+                    "Dipanjangkan umur dan diluaskan rezeki",
+                    "Dipandang rendah oleh masyarakat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Siapakah yang diperintahkan untuk menjaga silaturahim?",
+                  "a": [
+                    "Hanya golongan kaya",
+                    "Setiap orang yang beriman kepada Allah dan hari akhirat",
+                    "Hanya orang dewasa",
+                    "Hanya ketua keluarga"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Memutuskan silaturahim adalah perbuatan yang...",
+                  "a": [
+                    "Tidak berdosa jika jauh",
+                    "Kadang-kadang perlu dilakukan",
+                    "Dosa dan dilarang dalam Islam",
+                    "Harus dilakukan jika ada masalah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara cara menyambung silaturahim ialah...",
+                  "a": [
+                    "Menelefon atau melawat saudara-mara",
+                    "Bergaduh dengan adik-beradik",
+                    "Menghindari pertemuan keluarga",
+                    "Mengabaikan panggilan keluarga"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "3": {
+          "name": "Jawi",
+          "topics": {
+            "3.1": {
+              "name": "Kenali Saya — Perkenalan Jawi",
+              "revision": "Tulisan Jawi ialah tulisan yang menggunakan huruf-huruf Arab untuk menulis bahasa Melayu. Ia mula digunakan di Nusantara sejak kedatangan Islam pada abad ke-13. Huruf Jawi mempunyai 37 huruf yang terdiri daripada huruf Arab asas dan beberapa huruf tambahan seperti چ, ݢ, ڤ, dan ڠ. Tulisan Jawi menjadi alat penting dalam penyebaran ilmu dan agama Islam di Alam Melayu.",
+              "questions": [
+                {
+                  "q": "Apakah yang dimaksudkan dengan tulisan Jawi?",
+                  "a": [
+                    "Tulisan yang menggunakan huruf Arab untuk bahasa Melayu",
+                    "Tulisan yang berasal dari Jepun",
+                    "Tulisan Cina untuk bahasa Melayu",
+                    "Tulisan rumi yang diubah suai"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bilakah tulisan Jawi mula digunakan di Nusantara?",
+                  "a": [
+                    "Abad ke-13 Masihi",
+                    "Abad ke-15 Masihi",
+                    "Abad ke-17 Masihi",
+                    "Abad ke-10 Masihi"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berapakah jumlah huruf Jawi?",
+                  "a": [
+                    "28 huruf",
+                    "30 huruf",
+                    "37 huruf",
+                    "35 huruf"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara berikut, yang manakah huruf tambahan dalam tulisan Jawi?",
+                  "a": [
+                    "چ (ca)",
+                    "ث (tsa)",
+                    "ب (ba)",
+                    "ت (ta)"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah kepentingan tulisan Jawi pada masa dahulu?",
+                  "a": [
+                    "Tulisan golongan bangsawan",
+                    "Tulisan rasmi penjajah",
+                    "Tulisan untuk perdagangan sahaja",
+                    "Alat penyebaran ilmu dan agama Islam"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Huruf Jawi berasal daripada huruf...",
+                  "a": [
+                    "Tamil",
+                    "Arab",
+                    "Rumi",
+                    "Cina"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara huruf Jawi berikut, yang manakah bunyi 'ng'?",
+                  "a": [
+                    "ڠ",
+                    "چ",
+                    "ݢ",
+                    "ڤ"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "3.2": {
+              "name": "Cintailah Tulisan Jawi",
+              "revision": "Tulisan Jawi adalah warisan budaya dan agama yang perlu kita cintai dan pelihara. Ia menghubungkan kita dengan khazanah ilmu ulama silam yang banyak menulis kitab dalam tulisan Jawi. Mempelajari Jawi memudahkan kita membaca Al-Quran dan kitab-kitab agama. Sebagai generasi muda, kita bertanggungjawab memastikan tulisan Jawi tidak dilupakan dan terus diamalkan.",
+              "questions": [
+                {
+                  "q": "Mengapakah kita perlu mencintai tulisan Jawi?",
+                  "a": [
+                    "Ia adalah tulisan moden",
+                    "Ia adalah warisan budaya dan agama",
+                    "Ia digunakan di seluruh dunia",
+                    "Ia lebih mudah daripada tulisan rumi"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah manfaat mempelajari tulisan Jawi?",
+                  "a": [
+                    "Dapat bercakap bahasa Arab",
+                    "Dapat menulis dengan lebih laju",
+                    "Dapat membaca kitab-kitab ulama silam",
+                    "Dapat memahami bahasa Inggeris"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Siapakah yang bertanggungjawab memelihara tulisan Jawi?",
+                  "a": [
+                    "Guru sahaja",
+                    "Semua generasi muda Islam",
+                    "Orang tua sahaja",
+                    "Kerajaan sahaja"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Tulisan Jawi digunakan dalam penulisan...",
+                  "a": [
+                    "Kitab agama dan karya sastera Melayu",
+                    "Dokumen undang-undang antarabangsa",
+                    "Buku teks sains moden",
+                    "Majalah fesyen"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara cara menunjukkan cinta kepada tulisan Jawi ialah...",
+                  "a": [
+                    "Tidak mempedulikan tulisan Jawi",
+                    "Menghapuskan tulisan Jawi",
+                    "Belajar membaca dan menulis Jawi",
+                    "Menukar semua ke rumi"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Tulisan Jawi juga dikenali sebagai...",
+                  "a": [
+                    "Tulisan Melayu",
+                    "Tulisan Sanskrit",
+                    "Tulisan Latin",
+                    "Tulisan Arab"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Di manakah kita sering melihat tulisan Jawi pada hari ini?",
+                  "a": [
+                    "Papan tanda jalan dan sekolah agama",
+                    "Majalah fesyen barat",
+                    "Akhbar bahasa Cina",
+                    "Buku cerita kanak-kanak Inggeris"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah antara usaha untuk memelihara tulisan Jawi pada masa kini?",
+                  "a": [
+                    "Melupakan tulisan Jawi dan guna rumi sahaja",
+                    "Mempelajari dan mengamalkan tulisan Jawi dalam kehidupan",
+                    "Menghapuskan tulisan Jawi daripada papan tanda",
+                    "Mengubah tulisan Jawi menjadi rumi"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "3.3": {
+              "name": "Membaca dan Menulis Jawi",
+              "revision": "Membaca dan menulis Jawi memerlukan pemahaman tentang huruf-huruf Jawi, cara menyambung huruf, dan sistem ejaan Jawi yang telah dimurnikan. Perkataan dalam Jawi ditulis dari kanan ke kiri. Terdapat huruf yang boleh disambung di kedua-dua belah, dan ada yang hanya boleh disambung di sebelah kanan. Ejaan Jawi menggunakan sistem pedoman ejaan Jawi yang telah disempurnakan (PUEJ).",
+              "questions": [
+                {
+                  "q": "Tulisan Jawi ditulis dari arah...",
+                  "a": [
+                    "Kanan ke kiri",
+                    "Bawah ke atas",
+                    "Kiri ke kanan",
+                    "Atas ke bawah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara huruf berikut, yang manakah TIDAK boleh disambung di sebelah kiri?",
+                  "a": [
+                    "ب (ba)",
+                    "ن (nun)",
+                    "د (dal)",
+                    "ت (ta)"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah kepanjangan PUEJ?",
+                  "a": [
+                    "Panduan Umum Ejaan Jawi",
+                    "Pedoman Umum Ejaan Jawi",
+                    "Pedoman Unggul Ejaan Jawi",
+                    "Peraturan Umum Ejaan Jawi"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Perkataan 'سايو' dalam Jawi bermaksud...",
+                  "a": [
+                    "Saya",
+                    "Satu",
+                    "Saya-saya",
+                    "Sawah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bilakah huruf alif (ا) digunakan dalam tulisan Jawi?",
+                  "a": [
+                    "Untuk melambangkan vokal 'u'",
+                    "Untuk melambangkan vokal 'a' di awal kata",
+                    "Untuk melambangkan konsonan 'k'",
+                    "Untuk melambangkan vokal 'i'"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Perkataan 'كتاب' dalam Jawi bermaksud...",
+                  "a": [
+                    "Ketab (sabar)",
+                    "Kitab (buku)",
+                    "Katib (penulis)",
+                    "Kita"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara kemahiran asas menulis Jawi ialah...",
+                  "a": [
+                    "Mengenal bentuk huruf dan cara menyambungnya",
+                    "Menulis dengan cepat tanpa melihat",
+                    "Menulis dalam bentuk kursif",
+                    "Menulis dengan tangan kiri"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "4": {
+          "name": "Aqidah",
+          "topics": {
+            "4.1": {
+              "name": "Agung dan Mulianya Tuhanku — Sifat Allah",
+              "revision": "Aqidah Islam mengajarkan tentang sifat-sifat Allah yang wajib diketahui. Sifat wajib bagi Allah ada 20 yang terbahagi kepada empat bahagian: Sifat Nafsiah (Wujud), Sifat Salbiah (Qidam, Baqa', Mukhalafatuhu lilhawadith, Qiyamuhu binafsihi), Sifat Ma'ani (Qudrat, Iradat, Ilmu, Hayat, Sama', Basar, Kalam), dan Sifat Ma'nawiyah (Kaunuhu Qadiran, Kaunuhu Muridan, dll). Memahami sifat-sifat Allah menguatkan keimanan dan ketaqwaan.",
+              "questions": [
+                {
+                  "q": "Apakah sifat wajib bagi Allah yang pertama?",
+                  "a": [
+                    "Mukhalafatuhu lilhawadith (Berbeza dengan makhluk)",
+                    "Qidam (Sedia Ada)",
+                    "Wujud (Ada)",
+                    "Baqa' (Kekal)"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah maksud sifat Allah 'Qidam'?",
+                  "a": [
+                    "Allah Maha Kekal",
+                    "Allah Maha Mengetahui",
+                    "Allah sedia ada tanpa permulaan",
+                    "Allah Maha Berkuasa"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Allah bersifat 'Baqa'' yang bermaksud...",
+                  "a": [
+                    "Allah Maha Esa",
+                    "Allah kekal selama-lamanya dan tidak akan binasa",
+                    "Allah Maha Agung",
+                    "Allah Maha Suci"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah maksud 'Mukhalafatuhu lilhawadith'?",
+                  "a": [
+                    "Allah berbeza dengan semua makhluk ciptaan-Nya",
+                    "Allah menyerupai alam",
+                    "Allah sama dengan manusia",
+                    "Allah serupa dengan malaikat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Allah bersifat 'Qiyamuhu binafsihi' yang bermaksud...",
+                  "a": [
+                    "Allah memerlukan bantuan malaikat",
+                    "Allah bergantung kepada manusia",
+                    "Allah berdiri dengan sendiri-Nya, tidak memerlukan makhluk",
+                    "Allah memerlukan tempat tinggal"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah maksud sifat Allah 'Sama''?",
+                  "a": [
+                    "Allah Maha Mengetahui",
+                    "Allah Maha Melihat",
+                    "Allah Maha Berkuasa",
+                    "Allah Maha Mendengar"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Berapakah jumlah sifat wajib bagi Allah yang perlu diketahui?",
+                  "a": [
+                    "20 sifat",
+                    "25 sifat",
+                    "15 sifat",
+                    "10 sifat"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sifat 'Basar' bagi Allah bermaksud...",
+                  "a": [
+                    "Allah Maha Mengetahui",
+                    "Allah Maha Melihat",
+                    "Allah Maha Berkuasa",
+                    "Allah Maha Mendengar"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "4.2": {
+              "name": "Utusan yang Mulia — Nabi dan Rasul",
+              "revision": "Nabi dan Rasul adalah utusan Allah yang dipilih untuk menyampaikan wahyu kepada manusia. Nabi menerima wahyu untuk dirinya sendiri, manakala Rasul menerima wahyu untuk disampaikan kepada umatnya. Terdapat 25 Nabi dan Rasul yang wajib diketahui. Semua nabi dan rasul mempunyai sifat wajib: Siddiq (benar), Amanah (dipercayai), Tabligh (menyampaikan), Fatanah (bijaksana). Beriman kepada nabi dan rasul adalah rukun iman yang keempat.",
+              "questions": [
+                {
+                  "q": "Apakah perbezaan antara Nabi dan Rasul?",
+                  "a": [
+                    "Nabi lebih hebat daripada Rasul",
+                    "Rasul diutus kepada umat, Nabi hanya untuk dirinya",
+                    "Rasul tidak menerima wahyu",
+                    "Rasul hanya lelaki, Nabi boleh perempuan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Berapakah jumlah nabi dan rasul yang wajib diketahui?",
+                  "a": [
+                    "25 orang",
+                    "20 orang",
+                    "30 orang",
+                    "15 orang"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah sifat wajib bagi nabi dan rasul yang bermaksud 'benar'?",
+                  "a": [
+                    "Tabligh",
+                    "Siddiq",
+                    "Fatanah",
+                    "Amanah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Sifat 'Amanah' pada nabi dan rasul bermaksud...",
+                  "a": [
+                    "Mereka gagah perkasa",
+                    "Mereka pandai berdagang",
+                    "Mereka sangat kaya",
+                    "Mereka dipercayai dan tidak mengkhianati amanah Allah"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Sifat 'Tabligh' bermaksud nabi dan rasul...",
+                  "a": [
+                    "Menambah wahyu sesuka hati",
+                    "Menyampaikan wahyu daripada Allah kepada umat",
+                    "Menyembunyikan ajaran Allah",
+                    "Memilih wahyu yang sesuai"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Nabi dan rasul yang pertama ialah...",
+                  "a": [
+                    "Nabi Ibrahim AS",
+                    "Nabi Muhammad SAW",
+                    "Nabi Nuh AS",
+                    "Nabi Adam AS"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Nabi dan rasul yang terakhir ialah...",
+                  "a": [
+                    "Nabi Musa AS",
+                    "Nabi Ibrahim AS",
+                    "Nabi Isa AS",
+                    "Nabi Muhammad SAW"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Beriman kepada nabi dan rasul adalah rukun iman yang ke...",
+                  "a": [
+                    "Dua",
+                    "Tiga",
+                    "Lima",
+                    "Empat"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "4.3": {
+              "name": "Kufur — Pengertian dan Akibat",
+              "revision": "Kufur dari segi bahasa bermaksud menutup atau menyembunyikan. Dari segi istilah, kufur ialah perbuatan mengingkari atau tidak percaya kepada Allah, rasul, dan ajaran Islam dengan sengaja. Orang yang melakukan kufur disebut kafir. Kufur terbahagi kepada beberapa jenis: Kufur Akbar (besar) yang mengeluarkan seseorang daripada Islam, dan Kufur Asghar (kecil) yang tidak mengeluarkan daripada Islam tetapi tetap berdosa. Akibat kufur ialah mendapat kemurkaan Allah dan azab yang kekal di akhirat.",
+              "questions": [
+                {
+                  "q": "Apakah maksud kufur dari segi bahasa?",
+                  "a": [
+                    "Mencintai dan menyukai",
+                    "Membuka dan menzahirkan",
+                    "Menerima dan mengakui",
+                    "Menutup atau menyembunyikan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah maksud kufur dari segi istilah?",
+                  "a": [
+                    "Mengingkari Allah, rasul, dan ajaran Islam",
+                    "Beribadah kepada Allah",
+                    "Bersyukur kepada Allah",
+                    "Berbuat baik kepada manusia"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah akibat kufur di akhirat?",
+                  "a": [
+                    "Diampunkan tanpa hisab",
+                    "Diberi nikmat yang banyak",
+                    "Dimasukkan ke syurga",
+                    "Azab yang kekal di neraka"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Kufur Akbar bermaksud...",
+                  "a": [
+                    "Perbuatan maksiat biasa",
+                    "Kufur besar yang mengeluarkan seseorang daripada Islam",
+                    "Kufur kecil yang tidak mengeluarkan daripada Islam",
+                    "Dosa kecil yang mudah diampunkan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara berikut, yang manakah tergolong dalam perbuatan kufur?",
+                  "a": [
+                    "Meninggalkan solat kerana sakit",
+                    "Tidak dapat mengawal marah",
+                    "Terlambat membayar zakat",
+                    "Menghina Allah dan rasul"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Orang yang melakukan kufur disebut...",
+                  "a": [
+                    "Murtad",
+                    "Munafik",
+                    "Kafir",
+                    "Fasiq"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Agar terhindar daripada kufur, kita hendaklah...",
+                  "a": [
+                    "Memperkukuh iman dan taat kepada Allah",
+                    "Menjauhi ilmu pengetahuan",
+                    "Banyak bercakap tentang agama",
+                    "Bergaul dengan semua orang tanpa batas"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "4.4": {
+              "name": "Nifak — Pengertian dan Akibat",
+              "revision": "Nifak dari segi bahasa bermaksud berpura-pura. Dari segi istilah, nifak ialah perbuatan menzahirkan keimanan tetapi menyembunyikan kekufuran di dalam hati. Orang munafik menunjukkan sikap baik di hadapan orang Islam tetapi sebenarnya tidak beriman. Ciri-ciri munafik antaranya: berdusta, mengkhianati amanah, dan ingkar janji. Nifak terbahagi kepada Nifak I'tiqadi (besar) dan Nifak 'Amali (kecil). Akibat nifak ialah mendapat azab yang pedih di akhirat.",
+              "questions": [
+                {
+                  "q": "Apakah maksud nifak dari segi bahasa?",
+                  "a": [
+                    "Menutup",
+                    "Menerima",
+                    "Berpura-pura",
+                    "Mengingkari"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah maksud nifak dari segi istilah?",
+                  "a": [
+                    "Meninggalkan solat dengan sengaja",
+                    "Terang-terangan mengingkari Allah",
+                    "Menunjukkan iman di luar tetapi kufur di dalam hati",
+                    "Berbuat maksiat secara sembunyi"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Orang yang melakukan nifak disebut...",
+                  "a": [
+                    "Munafik",
+                    "Murtad",
+                    "Fasiq",
+                    "Kafir"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara ciri-ciri orang munafik ialah...",
+                  "a": [
+                    "Jujur dalam setiap perkataan",
+                    "Berdusta apabila bercakap",
+                    "Menepati janji",
+                    "Amanah dalam perkara"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah akibat orang munafik di akhirat?",
+                  "a": [
+                    "Diampunkan terus dosanya",
+                    "Dibangkitkan bersama orang beriman",
+                    "Azab yang pedih di neraka",
+                    "Syurga yang penuh nikmat"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Nifak 'Amali bermaksud...",
+                  "a": [
+                    "Nifak dalam keyakinan — kufur sepenuhnya",
+                    "Nifak dalam perbuatan — masih beriman tetapi ada sifat munafik",
+                    "Nifak yang diampunkan Allah",
+                    "Nifak yang tidak berdosa"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bagaimanakah cara mengelakkan sifat munafik?",
+                  "a": [
+                    "Berkata benar, menepati janji, dan amanah",
+                    "Berdiam diri di rumah",
+                    "Menyendiri daripada masyarakat",
+                    "Banyak berharta"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "5": {
+          "name": "Ibadah",
+          "topics": {
+            "5.1": {
+              "name": "Tutuplah Auratmu — Aurat Lelaki dan Perempuan",
+              "revision": "Menutup aurat adalah kewajipan bagi setiap muslim dan muslimah. Aurat lelaki ialah antara pusat hingga lutut. Aurat perempuan pula berbeza mengikut situasi: di hadapan lelaki bukan mahram, seluruh tubuh kecuali muka dan tapak tangan; di hadapan mahram, antara pusat hingga lutut; di hadapan suami, tiada batas aurat. Menutup aurat adalah perintah Allah yang menjaga maruah dan kehormatan diri.",
+              "questions": [
+                {
+                  "q": "Apakah hukum menutup aurat bagi umat Islam?",
+                  "a": [
+                    "Harus",
+                    "Wajib",
+                    "Sunat",
+                    "Makruh"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah batas aurat lelaki?",
+                  "a": [
+                    "Antara pusat hingga lutut",
+                    "Seluruh tubuh",
+                    "Antara dada hingga lutut",
+                    "Seluruh tubuh kecuali muka"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah batas aurat perempuan di hadapan lelaki bukan mahram?",
+                  "a": [
+                    "Seluruh tubuh bertutup",
+                    "Seluruh tubuh kecuali muka dan tapak tangan",
+                    "Hanya rambut sahaja",
+                    "Antara pusat hingga lutut"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siapakah mahram bagi seorang perempuan?",
+                  "a": [
+                    "Sepupu lelaki",
+                    "Abang ipar",
+                    "Ayah, abang, anak lelaki, bapa saudara",
+                    "Guru lelaki"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapakah Islam mewajibkan menutup aurat?",
+                  "a": [
+                    "Untuk kelihatan cantik",
+                    "Untuk membezakan orang kaya dan miskin",
+                    "Untuk mengikut trend fesyen",
+                    "Untuk menjaga maruah dan kehormatan diri"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Pakaian yang menutup aurat hendaklah...",
+                  "a": [
+                    "Longgar dan tidak menampakkan bentuk tubuh",
+                    "Ketat dan mengikut bentuk badan",
+                    "Berwarna terang dan mencolok",
+                    "Tipis dan jarang"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah hukum perempuan yang tidak menutup aurat?",
+                  "a": [
+                    "Harus jika di rumah sendiri",
+                    "Berdosa kerana melanggar perintah Allah",
+                    "Sunat sahaja tidak wajib",
+                    "Tidak berdosa kerana bukan kewajipan"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.2": {
+              "name": "Mari Beriadah — Solat Sunat",
+              "revision": "Solat sunat adalah solat yang dituntut tetapi tidak diwajibkan. Terdapat pelbagai jenis solat sunat seperti Solat Sunat Rawatib (yang mengiringi solat fardu), Solat Sunat Dhuha, Solat Sunat Tahajjud, Solat Sunat Witir, dan Solat Sunat Tarawih. Solat sunat menambah pahala, mendekatkan diri kepada Allah, dan menutup kekurangan dalam solat fardu. Umat Islam digalakkan untuk memperbanyakkan solat sunat.",
+              "questions": [
+                {
+                  "q": "Apakah hukum solat sunat?",
+                  "a": [
+                    "Harus — boleh buat boleh tinggal",
+                    "Makruh — lebih baik ditinggalkan",
+                    "Wajib — mesti dilakukan",
+                    "Sunat — dituntut tetapi tidak diwajibkan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah yang dimaksudkan dengan Solat Sunat Rawatib?",
+                  "a": [
+                    "Solat sunat pada hari raya",
+                    "Solat sunat yang mengiringi solat fardu",
+                    "Solat sunat pada waktu malam",
+                    "Solat sunat ketika musafir"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Solat Sunat Dhuha dilakukan pada waktu...",
+                  "a": [
+                    "Tengah malam",
+                    "Ketika masuk waktu Zuhur",
+                    "Pagi ketika matahari naik",
+                    "Selepas Isyak"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Solat Sunat Tahajjud dilakukan pada waktu...",
+                  "a": [
+                    "Malam selepas tidur",
+                    "Petang sebelum Maghrib",
+                    "Pagi selepas Subuh",
+                    "Tengah hari"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah hikmah mengerjakan solat sunat?",
+                  "a": [
+                    "Menjadikan kita kaya",
+                    "Menutup kekurangan dalam solat fardu",
+                    "Menggantikan solat fardu yang tertinggal",
+                    "Menyembuhkan penyakit"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Solat Sunat Tarawih dilakukan pada bulan...",
+                  "a": [
+                    "Muharam",
+                    "Syawal",
+                    "Zulhijah",
+                    "Ramadan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Solat Sunat Witir biasanya dilakukan selepas...",
+                  "a": [
+                    "Solat Isyak dan solat sunat lain pada malam hari",
+                    "Solat Asar",
+                    "Solat Zuhur",
+                    "Solat Subuh"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bilangan rakaat Solat Sunat Dhuha yang paling minimum ialah...",
+                  "a": [
+                    "2 rakaat",
+                    "4 rakaat",
+                    "6 rakaat",
+                    "8 rakaat"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "5.3": {
+              "name": "Jiran Sepakat Membawa Berkat — Adab Berjiran",
+              "revision": "Islam sangat menitikberatkan adab berjiran. Jiran mempunyai hak ke atas kita seperti: tidak mengganggu mereka, membantu ketika kesusahan, menjenguk ketika sakit, dan meraikan ketika gembira. Rasulullah SAW bersabda bahawa Jibril selalu berpesan tentang hak jiran sehingga baginda menyangka jiran akan mewarisi harta. Berbuat baik kepada jiran adalah tanda kesempurnaan iman dan membawa keberkatan dalam kehidupan.",
+              "questions": [
+                {
+                  "q": "Apakah hak jiran ke atas kita?",
+                  "a": [
+                    "Memberi hadiah setiap hari",
+                    "Tidak mengganggu dan membantu ketika susah",
+                    "Menjamu setiap hari",
+                    "Menziarahi setiap minggu"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Bagaimanakah cara berbuat baik kepada jiran?",
+                  "a": [
+                    "Bercakap kuat pada waktu malam",
+                    "Menjenguk apabila sakit dan membantu kesusahan",
+                    "Membuat bising sehingga mengganggu",
+                    "Membuang sampah di depan rumah jiran"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Rasulullah SAW bersabda bahawa Jibril selalu berpesan tentang jiran sehingga baginda menyangka...",
+                  "a": [
+                    "Jiran adalah saudara",
+                    "Jiran mendapat syurga",
+                    "Jiran menjadi keluarga",
+                    "Jiran akan mewarisi harta"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Antara berikut, yang manakah perbuatan yang dilarang terhadap jiran?",
+                  "a": [
+                    "Menolong jiran yang kemalangan",
+                    "Mengganggu ketenteraman jiran",
+                    "Memberi makanan kepada jiran",
+                    "Menjenguk jiran yang sakit"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah ganjaran berbuat baik kepada jiran?",
+                  "a": [
+                    "Dipilih menjadi pemimpin",
+                    "Menjadi orang ternama",
+                    "Dikurniakan harta yang banyak",
+                    "Mendapat keberkatan dan pahala"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apabila jiran kita sakit, kita sepatutnya...",
+                  "a": [
+                    "Menunggu dia sembuh baru melawat",
+                    "Menjenguk dan mendoakan kesembuhannya",
+                    "Mengabaikannya",
+                    "Tidak perlu ambil peduli"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Memuliakan jiran adalah tanda...",
+                  "a": [
+                    "Kekayaan harta",
+                    "Kesempurnaan iman",
+                    "Kedudukan tinggi",
+                    "Kecerdasan akal"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "5.4": {
+              "name": "Guruku Sayang — Adab terhadap Guru",
+              "revision": "Guru adalah orang yang mendidik dan menyampaikan ilmu kepada kita. Islam mengajar kita untuk menghormati guru dengan adab yang mulia seperti: bercakap dengan sopan, merendah diri, mendengar dengan teliti, tidak memotong percakapan guru, menunaikan hajat guru, dan mendoakan kebaikan untuk guru. Menghormati guru adalah tanda berilmu dan membawa keberkatan dalam menuntut ilmu.",
+              "questions": [
+                {
+                  "q": "Bagaimanakah cara bercakap dengan guru?",
+                  "a": [
+                    "Dengan sopan dan menggunakan bahasa yang halus",
+                    "Menyampuk ketika guru bercakap",
+                    "Dengan suara yang kuat",
+                    "Bercakap sambil bermain"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah yang perlu kita lakukan apabila guru memberikan penjelasan?",
+                  "a": [
+                    "Mendengar dengan teliti dan fokus",
+                    "Bercakap dengan kawan",
+                    "Membuat kerja lain",
+                    "Tidur di dalam kelas"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara adab terhadap guru ialah...",
+                  "a": [
+                    "Mencari kesalahan guru",
+                    "Bersaing dengan guru",
+                    "Menganggap guru sama seperti kawan",
+                    "Merendah diri dan tidak sombong"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apabila berjalan di hadapan guru, kita hendaklah...",
+                  "a": [
+                    "Berjalan dengan sopan dan mendahulukan guru",
+                    "Berlari-lari",
+                    "Menolak guru",
+                    "Berkelip-kelip di depan guru"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Doa untuk guru yang baik ialah...",
+                  "a": [
+                    "Ya Allah, jauhkanlah guru dariku",
+                    "Ya Allah, jadikanlah guru susah",
+                    "Ya Allah, rahmatilah guru-guruku",
+                    "Ya Allah, ambillah nyawa guru"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Mengapakah kita perlu menghormati guru?",
+                  "a": [
+                    "Kerana guru berpangkat tinggi",
+                    "Kerana guru terkenal",
+                    "Kerana guru kaya raya",
+                    "Kerana guru mendidik dan menyampaikan ilmu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah akibat jika kita tidak menghormati guru?",
+                  "a": [
+                    "Kita akan disayangi semua orang",
+                    "Ilmu yang dipelajari tidak berkat",
+                    "Kita akan mendapat hadiah",
+                    "Kita akan menjadi kaya"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Cara terbaik menghargai guru adalah dengan...",
+                  "a": [
+                    "Memuji guru di hadapan orang ramai",
+                    "Mengamalkan ilmu yang diajar dan berakhlak mulia",
+                    "Memberi hadiah mahal setiap hari",
+                    "Menjadi pembantu peribadi guru"
+                  ],
+                  "c": 1
+                }
+              ]
+            }
+          }
+        },
+        "6": {
+          "name": "Sirah",
+          "topics": {
+            "6.1": {
+              "name": "Peristiwa Isra' Mikraj",
+              "revision": "Isra' Mikraj ialah peristiwa agung di mana Rasulullah SAW diperjalankan oleh Allah dari Masjid al-Haram di Mekah ke Masjid al-Aqsa di Palestin (Isra'), kemudian dinaikkan ke langit hingga ke Sidratul Muntaha (Mikraj) dalam satu malam. Peristiwa ini berlaku pada tahun ke-11 kenabian. Dalam peristiwa ini, Rasulullah SAW menerima perintah solat lima waktu secara langsung daripada Allah. Peristiwa ini menguji keimanan umat Islam dan menjadi bukti kekuasaan Allah.",
+              "questions": [
+                {
+                  "q": "Apakah maksud Isra'?",
+                  "a": [
+                    "Kenaikan ke langit",
+                    "Perjalanan ke Madinah",
+                    "Perjalanan malam dari Masjid al-Haram ke Masjid al-Aqsa",
+                    "Perjalanan ke Thaif"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah maksud Mikraj?",
+                  "a": [
+                    "Perjalanan ke bumi",
+                    "Perjalanan ke Madinah",
+                    "Perjalanan ke Masjid al-Aqsa",
+                    "Kenaikan ke langit hingga Sidratul Muntaha"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah ibadah yang diwajibkan secara langsung dalam peristiwa Isra' Mikraj?",
+                  "a": [
+                    "Solat lima waktu",
+                    "Zakat",
+                    "Haji",
+                    "Puasa Ramadan"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Di manakah Rasulullah SAW memulakan perjalanan Isra'?",
+                  "a": [
+                    "Masjid al-Haram di Mekah",
+                    "Masjid al-Aqsa",
+                    "Masjid Quba",
+                    "Masjid Nabawi di Madinah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siapakah yang menemani Rasulullah SAW dalam peristiwa Isra' Mikraj?",
+                  "a": [
+                    "Malaikat Munkar",
+                    "Malaikat Jibril AS",
+                    "Malaikat Israfil AS",
+                    "Malaikat Mikail AS"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah kenderaan yang digunakan oleh Rasulullah SAW dalam peristiwa Isra' Mikraj?",
+                  "a": [
+                    "Unta",
+                    "Gajah",
+                    "Buraq",
+                    "Kuda"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Pada peringkat awal, solat diwajibkan sebanyak...",
+                  "a": [
+                    "20 waktu",
+                    "3 waktu",
+                    "10 waktu",
+                    "50 waktu kemudian dikurangkan kepada 5 waktu"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah pengajaran daripada peristiwa Isra' Mikraj?",
+                  "a": [
+                    "Solat adalah ibadah yang sangat penting di sisi Allah",
+                    "Kita tidak perlu bersolat",
+                    "Solat boleh ditinggalkan ketika sibuk",
+                    "Solat hanya untuk nabi"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "6.2": {
+              "name": "Perjuangan Rasulullah di Mekah",
+              "revision": "Perjuangan Rasulullah SAW di Mekah berlangsung selama 13 tahun. Baginda berdakwah secara sembunyi selama 3 tahun, kemudian secara terbuka. Baginda menghadapi pelbagai tentangan daripada kaum Quraisy seperti ejekan, ancaman, sekatan ekonomi, dan cubaan membunuh. Dakwah di Mekah tertumpu kepada mengajak manusia mentauhidkan Allah dan meninggalkan penyembahan berhala. Ramai sahabat yang beriman dan berkorban demi Islam, termasuk Bilal, Sumayyah, dan Yasir yang dizalimi.",
+              "questions": [
+                {
+                  "q": "Berapa lamakah Rasulullah SAW berdakwah di Mekah?",
+                  "a": [
+                    "20 tahun",
+                    "15 tahun",
+                    "10 tahun",
+                    "13 tahun"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bagaimanakah cara dakwah Rasulullah SAW pada peringkat awal di Mekah?",
+                  "a": [
+                    "Melalui peperangan",
+                    "Secara sembunyi selama 3 tahun",
+                    "Secara terbuka terus",
+                    "Melalui surat kepada raja"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah tentangan yang dihadapi oleh Rasulullah SAW di Mekah?",
+                  "a": [
+                    "Bantuan daripada kerajaan",
+                    "Kemudahan berdakwah",
+                    "Sambutan baik daripada semua pihak",
+                    "Ejekan, ancaman, sekatan ekonomi, dan cubaan bunuh"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Siapakah sahabat yang pertama beriman daripada kalangan lelaki dewasa?",
+                  "a": [
+                    "Umar bin al-Khattab RA",
+                    "Ali bin Abi Talib RA",
+                    "Abu Bakar as-Siddiq RA",
+                    "Uthman bin Affan RA"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Siapakah sahabat yang pertama beriman daripada kalangan kanak-kanak?",
+                  "a": [
+                    "Abdullah bin Umar RA",
+                    "Anas bin Malik RA",
+                    "Zaid bin Harithah RA",
+                    "Ali bin Abi Talib RA"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah fokus utama dakwah Rasulullah SAW di Mekah?",
+                  "a": [
+                    "Mengajak manusia berniaga",
+                    "Mengajak manusia mentauhidkan Allah",
+                    "Mengajak manusia berpolitik",
+                    "Mengajak manusia berperang"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Siapakah yang telah dizalimi oleh kaum Quraisy kerana beriman kepada Allah?",
+                  "a": [
+                    "Abu Bakar, Umar, dan Uthman",
+                    "Hamzah, Abbas, dan Abu Talib",
+                    "Bilal bin Rabah, Sumayyah, dan Yasir",
+                    "Khadijah, Aisyah, dan Fatimah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah pengajaran daripada perjuangan Rasulullah di Mekah?",
+                  "a": [
+                    "Berputus asa apabila mendapat tentangan",
+                    "Tetap sabar dan istiqamah dalam berdakwah walaupun dicabar",
+                    "Meninggalkan dakwah jika susah",
+                    "Membalas kejahatan dengan kejahatan"
+                  ],
+                  "c": 1
+                }
+              ]
+            },
+            "6.3": {
+              "name": "Perjuangan Rasulullah di Madinah",
+              "revision": "Perjuangan Rasulullah SAW di Madinah berlangsung selama 10 tahun. Setelah berhijrah ke Madinah, Rasulullah SAW membina masjid, mempersaudarakan kaum Muhajirin dan Ansar, dan mewujudkan Piagam Madinah yang menjamin hak semua penduduk. Di Madinah, dakwah berkembang pesat dan Islam menjadi teras pemerintahan. Pelbagai peperangan berlaku seperti Perang Badar, Uhud, dan Khandak untuk mempertahankan Islam. Rasulullah SAW wafat pada tahun 11 Hijrah dalam usia 63 tahun.",
+              "questions": [
+                {
+                  "q": "Berapa lamakah Rasulullah SAW berdakwah di Madinah?",
+                  "a": [
+                    "8 tahun",
+                    "15 tahun",
+                    "13 tahun",
+                    "10 tahun"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah tindakan pertama Rasulullah SAW setelah tiba di Madinah?",
+                  "a": [
+                    "Mengadakan majlis kenduri",
+                    "Membina Masjid Nabawi",
+                    "Berdagang di pasar",
+                    "Berperang dengan musuh"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah yang dimaksudkan dengan persaudaraan Muhajirin dan Ansar?",
+                  "a": [
+                    "Persaudaraan politik",
+                    "Mempersaudarakan orang Mekah dan Madinah sebagai ikatan akidah",
+                    "Persaudaraan perniagaan",
+                    "Persaudaraan berdasarkan keturunan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah Piagam Madinah?",
+                  "a": [
+                    "Perlembagaan yang menjamin hak semua penduduk Madinah",
+                    "Perjanjian perdagangan dengan Quraisy",
+                    "Dokumen dakwah kepada raja",
+                    "Surat kepada kabilah Arab"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Perang Badar berlaku pada tahun...",
+                  "a": [
+                    "2 Hijrah",
+                    "7 Hijrah",
+                    "5 Hijrah",
+                    "3 Hijrah"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Siapakah golongan Ansar?",
+                  "a": [
+                    "Orang Arab yang tinggal di padang pasir",
+                    "Orang bukan Islam di Madinah",
+                    "Orang Islam dari Mekah yang berhijrah",
+                    "Penduduk Madinah yang membantu dan menyambut Muhajirin"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Bilakah Rasulullah SAW wafat?",
+                  "a": [
+                    "Tahun 10 Hijrah",
+                    "Tahun 12 Hijrah",
+                    "Tahun 11 Hijrah",
+                    "Tahun 13 Hijrah"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah pengajaran daripada perjuangan Rasulullah di Madinah?",
+                  "a": [
+                    "Persaudaraan dan perpaduan adalah kunci kekuatan umat",
+                    "Mementingkan diri sendiri lebih baik",
+                    "Berpecah belah adalah kekuatan",
+                    "Bersaing sesama muslim adalah utama"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        },
+        "7": {
+          "name": "Adab",
+          "topics": {
+            "7.1": {
+              "name": "Mari Bersuci — Istinjak dan Kebersihan",
+              "revision": "Kebersihan adalah sebahagian daripada iman. Istinjak ialah membersihkan najis dari qubul dan dubur selepas buang air kecil atau besar. Alat untuk istinjak boleh menggunakan air, tisu, batu, atau apa-apa yang suci dan kesat. Cara beristinjak yang betul: guna tangan kiri, bersihkan sehingga tiada kesan najis, dan basuh dengan air. Islam sangat mementingkan kebersihan diri kerana ia mempengaruhi kesempurnaan ibadah seperti solat.",
+              "questions": [
+                {
+                  "q": "Apakah maksud istinjak?",
+                  "a": [
+                    "Membersihkan najis dari qubul dan dubur",
+                    "Berwuduk",
+                    "Membersihkan pakaian",
+                    "Mandi wajib"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Tangan yang manakah digunakan untuk beristinjak?",
+                  "a": [
+                    "Tangan yang bersih",
+                    "Tangan kiri",
+                    "Tangan kanan",
+                    "Kedua-dua belah tangan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah alat yang boleh digunakan untuk istinjak?",
+                  "a": [
+                    "Batu bata",
+                    "Air, tisu, atau batu yang suci",
+                    "Kertas surat khabar",
+                    "Daun yang beracun"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Mengapakah kebersihan penting dalam Islam?",
+                  "a": [
+                    "Kerana untuk dipuji orang",
+                    "Kerana untuk kelihatan cantik",
+                    "Kerana untuk bergaya",
+                    "Kerana kebersihan sebahagian daripada iman"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Berapa kalikah bilangan minimum istinjak menggunakan batu?",
+                  "a": [
+                    "2 kali sapuan",
+                    "5 kali sapuan",
+                    "1 kali sapuan",
+                    "3 kali sapuan secara ganjil"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah yang perlu dilakukan selepas buang air kecil bagi memastikan solat sah?",
+                  "a": [
+                    "Terus berwuduk",
+                    "Beristinjak dengan sempurna",
+                    "Terus solat",
+                    "Memakai pakaian baru"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Adab ketika masuk ke tandas ialah membaca doa...",
+                  "a": [
+                    "Allahu Akbar",
+                    "Bismillah",
+                    "Alhamdulillah",
+                    "Allahumma inni a'uzubika minal khubusi wal khaba'is"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.2": {
+              "name": "Menyambut Seruan Ilahi — Adab Mendengar Azan",
+              "revision": "Azan adalah seruan untuk menunaikan solat fardu. Apabila mendengar azan, kita hendaklah: diam dan mendengar dengan penuh penghayatan, menjawab seruan azan dengan lafaz yang sama, berselawat ke atas Rasulullah SAW selepas azan, dan berdoa. Azan mengingatkan kita bahawa waktu solat telah tiba. Menjawab azan adalah sunat muakkad dan mendatangkan ganjaran pahala yang besar.",
+              "questions": [
+                {
+                  "q": "Apakah yang perlu kita lakukan apabila mendengar azan?",
+                  "a": [
+                    "Berlari-lari",
+                    "Meninggalkan masjid",
+                    "Terus bercakap-cakap",
+                    "Diam dan menjawab seruan azan"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah lafaz jawapan ketika muazzin mengucapkan 'Allahu Akbar, Allahu Akbar'?",
+                  "a": [
+                    "Subhanallah",
+                    "Allahu Akbar, Allahu Akbar",
+                    "Alhamdulillah",
+                    "La ilaha illallah"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah yang disunatkan selepas azan?",
+                  "a": [
+                    "Makan dan minum",
+                    "Berselawat dan berdoa",
+                    "Terus pulang ke rumah",
+                    "Bercakap dengan kawan"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Hukum menjawab azan ialah...",
+                  "a": [
+                    "Harus",
+                    "Sunat Muakkad (sangat dituntut)",
+                    "Wajib",
+                    "Makruh"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Apakah doa yang dibaca selepas azan?",
+                  "a": [
+                    "Allahumma inni zalamtu nafsi...",
+                    "Rabbana atina fid dunya hasanah...",
+                    "Subhanaka Allahumma wa bihamdika...",
+                    "Allahumma rabba hadzihid da'watit tammah..."
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Orang yang melaungkan azan dipanggil...",
+                  "a": [
+                    "Khatib",
+                    "Bilal",
+                    "Imam",
+                    "Muazzin"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apabila mendengar azan, kita hendaklah segera...",
+                  "a": [
+                    "Sambung tidur",
+                    "Melambat-lambatkan solat",
+                    "Meninggalkan solat",
+                    "Menyahut seruan untuk solat"
+                  ],
+                  "c": 3
+                }
+              ]
+            },
+            "7.3": {
+              "name": "Adab di Masjid",
+              "revision": "Masjid adalah rumah Allah dan tempat yang sangat dimuliakan. Adab-adab di masjid antaranya: berpakaian sopan dan menutup aurat, masuk dengan kaki kanan dan membaca doa masuk masjid, tidak berniaga atau bertengkar, menjaga kebersihan, mendengar khutbah dengan khusyuk, solat dengan tertib, keluar dengan kaki kiri dan membaca doa keluar masjid. Memuliakan masjid adalah tanda keimanan seseorang.",
+              "questions": [
+                {
+                  "q": "Kaki yang manakah didahulukan ketika masuk masjid?",
+                  "a": [
+                    "Melompat masuk",
+                    "Kaki kanan",
+                    "Kedua-dua kaki",
+                    "Kaki kiri"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Kaki yang manakah didahulukan ketika keluar masjid?",
+                  "a": [
+                    "Kaki kanan",
+                    "Kedua-dua kaki",
+                    "Melompat keluar",
+                    "Kaki kiri"
+                  ],
+                  "c": 3
+                },
+                {
+                  "q": "Apakah yang perlu dibaca ketika masuk masjid?",
+                  "a": [
+                    "Doa keluar masjid",
+                    "Surah Yasin",
+                    "Doa masuk masjid",
+                    "Doa qunut"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Antara berikut, yang manakah dilarang dilakukan di dalam masjid?",
+                  "a": [
+                    "Membaca Al-Quran",
+                    "Berniaga dan bertengkar",
+                    "Mendengar ceramah",
+                    "Bersolat dan berzikir"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Pakaian yang sesuai ketika ke masjid ialah...",
+                  "a": [
+                    "Pakaian tidur",
+                    "Pakaian yang menjolok mata",
+                    "Sopan dan menutup aurat",
+                    "Pakaian sukan"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Apakah solat yang disunatkan sebelum duduk di masjid?",
+                  "a": [
+                    "Solat Sunat Dhuha",
+                    "Solat Sunat Rawatib",
+                    "Solat Sunat Tahiyyatul Masjid",
+                    "Solat Sunat Witir"
+                  ],
+                  "c": 2
+                },
+                {
+                  "q": "Memuliakan masjid adalah tanda...",
+                  "a": [
+                    "Kedudukan sosial",
+                    "Keimanan dan ketaqwaan",
+                    "Kekayaan harta",
+                    "Kepandaian"
+                  ],
+                  "c": 1
+                },
+                {
+                  "q": "Antara adab ketika khutbah Jumaat ialah...",
+                  "a": [
+                    "Diam dan mendengar dengan khusyuk",
+                    "Tidur",
+                    "Bercakap dengan kawan",
+                    "Bermain telefon bimbit"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
