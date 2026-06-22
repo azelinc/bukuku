@@ -392,6 +392,7 @@
         <!-- MAIN MENU -->
         <div id="main-menu" class="idx-content" style="display: none;">
             <div id="progress-card" style="margin-bottom: 12px;"></div>
+            <div id="referral-card" style="display:none; margin-bottom: 12px;"></div>
             <p id="menu-subtitle" class="idx-subtext" style="font-weight:bold;">Ready for today's lesson?</p>
             <div id="year-btn-container"></div>
         </div>
@@ -1104,11 +1105,38 @@
                 const shareBtn = document.getElementById('share-progress-btn');
                 if (shareBtn) shareBtn.onclick = showShareModal;
             } else {
-                    // No progress data yet — show invitation
-                    progEl.innerHTML = `<div class="prog-card prog-empty"><span>👋</span>Start a topic to track progress!</div>`;
-                }
+                // No progress data yet — show invitation
+                progEl.innerHTML = `<div class="prog-card prog-empty"><span>👋</span>Start a topic to track progress!</div>`;
+            }
 
-                // Build year buttons
+            // Build referral card
+            (function() {
+                const uid = currentUser?.uid || '';
+                const refCode = uid.slice(-6).toUpperCase();
+                const refEl = document.getElementById('referral-card');
+                if (!refEl) return;
+                refEl.style.display = 'block';
+                refEl.innerHTML = `<div class="prog-card" style="background:#fff7ed;border-color:#fed7aa;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;">
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <span style="font-size:1.2rem;">🎁</span>
+                            <div>
+                                <div style="font-weight:700;font-size:0.9rem;color:#9a3412;">Refer a Friend</div>
+                                <div style="font-size:0.75rem;color:#c2410c;">Code: <strong>${refCode}</strong></div>
+                            </div>
+                        </div>
+                        <span class="prog-share-btn" id="referral-share-btn" style="color:#c2410c;background:rgba(194,65,12,0.08);border-radius:20px;">Share</span>
+                    </div>
+                </div>`;
+                const refShareBtn = document.getElementById('referral-share-btn');
+                if (refShareBtn) refShareBtn.onclick = function() {
+                    const text = "🎁 Join me on Bukuku! Use my referral code " + refCode + " to start learning KSSR subjects the fun way. Download at bukuku.my!";
+                    document.getElementById("share-preview").textContent = text;
+                    document.getElementById("share-modal").style.display = "flex";
+                };
+            })();
+
+            // Build year buttons
                 const allYears = [4, 5, 6];
                 // DLP profiles with content: profile's tahun on top with divider
                 // Non-DLP profiles (no BM content yet): all years listed normally
