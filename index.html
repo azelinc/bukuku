@@ -194,6 +194,25 @@
         .prog-streak { color: #f39c12; font-size: 0.8rem; }
         .prog-empty { text-align: center; font-size: 0.85rem; color: #94a3b8; padding: 8px 0; }
         .prog-empty span { font-size: 1.5rem; display: block; margin-bottom: 4px; }
+        .prog-share-btn {
+            cursor: pointer; font-size: 1rem; opacity: 0.6;
+            transition: opacity 0.2s; padding: 2px 6px; border-radius: 8px;
+            user-select: none;
+        }
+        .prog-share-btn:hover { opacity: 1; background: rgba(0,0,0,0.05); }
+        .share-btn {
+            display: block; width: 100%; padding: 12px; border: none;
+            border-radius: 12px; color: white; font-weight: 700; font-size: 0.95rem;
+            cursor: pointer; transition: opacity 0.2s; text-align: center;
+        }
+        .share-btn:hover { opacity: 0.85; }
+        .share-btn:active { transform: scale(0.98); }
+        #share-preview {
+            background: #f0f7ff; border: 2px solid #dbeafe;
+            border-radius: 12px; padding: 14px; font-size: 0.85rem;
+            line-height: 1.6; margin-bottom: 16px; white-space: pre-wrap;
+            font-family: "SF Mono", "Courier New", monospace; color: #1e3a5f;
+        }
     </style>
 </head>
 <body>
@@ -327,6 +346,23 @@
                     <p style="margin-top:8px; font-size:0.8rem; color:#666;">After payment, email <strong>azel.inc@gmail.com</strong> with your account email</p>
                 </div>
                 <button onclick="document.getElementById('upgrade-modal').style.display='none'" style="background:none; border:none; color:#999; cursor:pointer; font-size:0.85rem;">Close</button>
+            </div>
+        </div>
+
+        <!-- SHARE PROGRESS MODAL -->
+        <div id="share-modal" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.6); z-index:999; align-items:center; justify-content:center; padding:20px;">
+            <div style="background:white; border-radius:24px; max-width:380px; width:100%; padding:24px; box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+                    <h3 style="margin:0; font-size:1.15rem;">📤 Share Progress</h3>
+                    <button onclick="closeShareModal()" style="background:none; border:none; font-size:1.3rem; cursor:pointer; color:#999; padding:4px;">✕</button>
+                </div>
+                <div id="share-preview">📊 Loading...</div>
+                <div style="display:flex; flex-direction:column; gap:8px;">
+                    <button onclick="shareVia('whatsapp')" class="share-btn" style="background:#25D366;">📱 WhatsApp</button>
+                    <button onclick="shareVia('telegram')" class="share-btn" style="background:#0088cc;">✈️ Telegram</button>
+                    <button onclick="shareVia('copy')" class="share-btn" style="background:#6b7280;">📋 Copy Text</button>
+                    <button onclick="shareVia('native')" class="share-btn" style="background:#4a90e2;">📤 More Options</button>
+                </div>
             </div>
         </div>
 
@@ -1017,7 +1053,7 @@
                 const subjects = Object.keys(yearCounts);
                 if (profileTahun && subjects.length > 0 && tbScores) {
                     let totalDone = 0, totalAll = 0;
-                    let html = `<div class="prog-card"><div class="prog-name">📊 ${name}'s Progress</div>`;
+                    let html = `<div class="prog-card"><div class="prog-name" style="display:flex;justify-content:space-between;align-items:center;">📊 ${name}'s Progress<span class="prog-share-btn" id="share-progress-btn">📤</span></div>`;
                     subjects.forEach(subj => {
                         const meta = subjMeta[subj] || { icon: '📘', color: '#666', name: subj };
                         const total = yearCounts[subj];
@@ -1047,7 +1083,27 @@
                     html += `<div class="prog-overall"><span>${totalDone}/${totalAll} topics · ${overallPct}%</span>${streakHtml}</div>`;
                     html += '</div>';
                     progEl.innerHTML = html;
-                } else {
+
+                // Wire up share button with collected progress data
+                _shareProgressData = {
+                    name: name,
+                    subjects: subjects.map(s => {
+                        const meta = subjMeta[s] || { icon: '📘', color: '#666', name: s };
+                        const total = yearCounts[s];
+                        let done = 0;
+                        const isBmVariant = /^[a-z]+\d+bm$/.test(s);
+                        const sp = isBmVariant ? 'tb-' + s + '-' : 'tb-' + s + profileTahun + '-';
+                        Object.keys(tbScores).forEach(k => {
+                            if (k.startsWith(sp) && tbScores[k]?.score > 0) done++;
+                        });
+                        return { icon: meta.icon, name: meta.name, done, total, pct: total > 0 ? Math.round(done/total*100) : 0 };
+                    }),
+                    totalDone, totalAll, overallPct,
+                    streak: tbScores._streak?.count || 0
+                };
+                const shareBtn = document.getElementById('share-progress-btn');
+                if (shareBtn) shareBtn.onclick = showShareModal;
+            } else {
                     // No progress data yet — show invitation
                     progEl.innerHTML = `<div class="prog-card prog-empty"><span>👋</span>Start a topic to track progress!</div>`;
                 }
@@ -1123,6 +1179,66 @@
 
         // Start
         initHub();
+
+        // --- Share Progress ---
+        let _shareProgressData = null;
+
+        window.showShareModal = function() {
+            const d = _shareProgressData;
+            if (!d) return;
+            const lines = [];
+            lines.push("📊 " + d.name + "'s Progress on Bukuku");
+            lines.push("━".repeat(22));
+            d.subjects.forEach(s => {
+                const bar = "█".repeat(Math.min(Math.round(s.pct / 10), 10)) + "░".repeat(Math.max(0, 10 - Math.round(s.pct / 10)));
+                lines.push(s.icon + " " + s.name + ": " + s.done + "/" + s.total + " " + bar + " " + s.pct + "%");
+            });
+            lines.push("━".repeat(22));
+            lines.push("Total: " + d.totalDone + "/" + d.totalAll + " topics · " + d.overallPct + "%");
+            if (d.streak > 0) lines.push("🔥 " + d.streak + " day streak");
+            lines.push("");
+            lines.push("Practice at bukuku.my");
+            document.getElementById("share-preview").textContent = lines.join("\n");
+            document.getElementById("share-modal").style.display = "flex";
+        };
+
+        window.closeShareModal = function() {
+            document.getElementById("share-modal").style.display = "none";
+        };
+
+        window.shareVia = function(method) {
+            const text = document.getElementById("share-preview").textContent;
+            const url = "https://bukuku.my";
+            const fullText = text + "\n\n" + url;
+
+            if (method === "whatsapp") {
+                window.open("https://wa.me/?text=" + encodeURIComponent(fullText), "_blank");
+            } else if (method === "telegram") {
+                window.open("https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(text), "_blank");
+            } else if (method === "copy") {
+                navigator.clipboard.writeText(fullText).then(function() {
+                    var btns = document.querySelectorAll(".share-btn");
+                    for (var i = 0; i < btns.length; i++) {
+                        if (btns[i].textContent === "📋 Copy Text") {
+                            btns[i].textContent = "✅ Copied!";
+                            setTimeout(function() { btns[i].textContent = "📋 Copy Text"; }, 2000);
+                            break;
+                        }
+                    }
+                });
+            } else if (method === "native") {
+                if (navigator.share) {
+                    navigator.share({ title: _shareProgressData.name + "'s Progress", text: text, url: url });
+                } else {
+                    navigator.clipboard.writeText(fullText);
+                }
+            }
+        };
+
+        // Close on backdrop click
+        document.addEventListener("click", function(e) {
+            if (e.target.id === "share-modal") closeShareModal();
+        });
     </script>
 </body>
 </html>
