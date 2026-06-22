@@ -360,12 +360,8 @@
                     <button onclick="closeShareModal()" style="background:none; border:none; font-size:1.3rem; cursor:pointer; color:#999; padding:4px;">✕</button>
                 </div>
                 <div id="share-preview">📊 Loading...</div>
-                <div style="display:flex; flex-direction:column; gap:8px;">
-                    <button onclick="shareVia('whatsapp')" class="share-btn" style="background:#25D366;">📱 WhatsApp</button>
-                    <button onclick="shareVia('telegram')" class="share-btn" style="background:#0088cc;">✈️ Telegram</button>
-                    <button onclick="shareVia('copy')" class="share-btn" style="background:#6b7280;">📋 Copy Text</button>
-                    <button onclick="shareVia('native')" class="share-btn" style="background:#4a90e2;">📤 More Options</button>
-                </div>
+                <button onclick="shareVia()" class="share-btn" style="background:#4a90e2; margin-bottom:8px;">📤 Share</button>
+                <button onclick="copyShareText()" class="share-btn" style="background:#6b7280;">📋 Copy Text</button>
             </div>
         </div>
 
@@ -1209,33 +1205,32 @@
             document.getElementById("share-modal").style.display = "none";
         };
 
-        window.shareVia = function(method) {
+        window.shareVia = function() {
             const text = document.getElementById("share-preview").textContent;
             const url = "https://bukuku.my";
-            const fullText = text + "\n\n" + url;
-
-            if (method === "whatsapp") {
-                window.open("https://wa.me/?text=" + encodeURIComponent(fullText), "_blank");
-            } else if (method === "telegram") {
-                window.open("https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(text), "_blank");
-            } else if (method === "copy") {
-                navigator.clipboard.writeText(fullText).then(function() {
-                    var btns = document.querySelectorAll(".share-btn");
-                    for (var i = 0; i < btns.length; i++) {
-                        if (btns[i].textContent === "📋 Copy Text") {
-                            btns[i].textContent = "✅ Copied!";
-                            setTimeout(function() { btns[i].textContent = "📋 Copy Text"; }, 2000);
-                            break;
-                        }
+            if (navigator.share) {
+                navigator.share({ title: _shareProgressData.name + "'s Progress", text: text, url: url });
+            } else {
+                navigator.clipboard.writeText(text + "\n\n" + url).then(function() {
+                    var btn = document.querySelector(".share-btn");
+                    if (btn && btn.textContent.indexOf("Share") >= 0) {
+                        btn.textContent = "✅ Copied!";
+                        setTimeout(function() { btn.textContent = "📤 Share"; }, 2000);
                     }
                 });
-            } else if (method === "native") {
-                if (navigator.share) {
-                    navigator.share({ title: _shareProgressData.name + "'s Progress", text: text, url: url });
-                } else {
-                    navigator.clipboard.writeText(fullText);
-                }
             }
+        };
+
+        window.copyShareText = function() {
+            const text = document.getElementById("share-preview").textContent;
+            const url = "https://bukuku.my";
+            navigator.clipboard.writeText(text + "\n\n" + url).then(function() {
+                var btn = document.querySelectorAll(".share-btn")[1];
+                if (btn && btn.textContent.indexOf("Copy") >= 0) {
+                    btn.textContent = "✅ Copied!";
+                    setTimeout(function() { btn.textContent = "📋 Copy Text"; }, 2000);
+                }
+            });
         };
 
         // Close on backdrop click
