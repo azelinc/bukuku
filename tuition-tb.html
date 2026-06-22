@@ -47,6 +47,11 @@
 
         .timer-wrapper { width: 90%; margin: 0 auto 20px; background: #eee; height: 12px; border-radius: 10px; overflow: hidden; }
         #timer-bar { height: 100%; width: 100%; transition: width 1s linear; }
+        #timer-bar.blink { animation: blinkRed 0.5s ease-in-out infinite; }
+        @keyframes blinkRed {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
         #stats { padding: 0 25px; font-weight: bold; margin-bottom: 10px; color: #666; display: flex; justify-content: space-between; font-size: 0.9rem; }
 
         .result-card {
@@ -595,7 +600,7 @@
             });
 
             // Timer
-            timeLeft = 30;
+            timeLeft = 60;
             updateTimerBar();
             clearInterval(timerInterval);
             timerInterval = setInterval(() => {
@@ -609,12 +614,22 @@
         }
 
         function updateTimerBar() {
-            const pct = (timeLeft / 30) * 100;
+            const pct = (timeLeft / 60) * 100;
             const bar = document.getElementById('timer-bar');
             bar.style.width = pct + '%';
-            if (timeLeft <= 10) bar.style.backgroundColor = '#e74c3c';
-            else if (timeLeft <= 20) bar.style.backgroundColor = '#f39c12';
-            else bar.style.backgroundColor = '#2ecc71';
+            if (timeLeft <= 5) {
+                bar.style.backgroundColor = '#e74c3c';
+                bar.classList.add('blink');
+            } else if (timeLeft <= 10) {
+                bar.style.backgroundColor = '#e74c3c';
+                bar.classList.remove('blink');
+            } else if (timeLeft <= 30) {
+                bar.style.backgroundColor = '#f39c12';
+                bar.classList.remove('blink');
+            } else {
+                bar.style.backgroundColor = '#2ecc71';
+                bar.classList.remove('blink');
+            }
         }
 
         // SELECT ANSWER
