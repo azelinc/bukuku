@@ -49,7 +49,8 @@
                     "40 010",
                     "4 010"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - \"47 010\" not in options"
                 },
                 {
                   "q": "Cerakinkan 34 001 =",
@@ -89,7 +90,8 @@
                     "25 008 dan 25 015",
                     "25 009 dan 25 016"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - needs diagram (number line)"
                 },
                 {
                   "q": "Nyatakan nilai tempat bagi digit 5 dalam nombor 12 532 ?",
@@ -109,7 +111,8 @@
                     "5 000",
                     "50 000 25 003  25 005   P    25 012     Q 34 641, 39 562, 30 521, 34 726, 39 894"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - unclear which digit underlined"
                 },
                 {
                   "q": "Yang manakah antara berikut tidak benar? Nombor Nilai tempat bagi digit bergaris",
@@ -119,7 +122,8 @@
                     "88 650 Puluh ribu",
                     "99 062 Puluh ribu"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - unclear digit in table"
                 },
                 {
                   "q": "5 806 + 21 345 =",
@@ -169,7 +173,8 @@
                     "2 075",
                     "2 007 62 475"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - needs number with underline"
                 },
                 {
                   "q": "Berdasarkan petikan di atas yang manakah mewakili anu dalam penambahan.",
@@ -179,7 +184,7 @@
                     "beberapa batang aiskrim durian.",
                     "Jumlah aiskrim yang dijual ialah 260 batang."
                   ],
-                  "c": 0
+                  "c": 2
                 },
                 {
                   "q": "Dengan menggunakan petikan di atas, apakah ayat matematik yang sesuai?",
@@ -189,7 +194,7 @@
                     "30 800 = 14 530 +",
                     "30 800 =                        +"
                   ],
-                  "c": 0
+                  "c": 2
                 },
                 {
                   "q": "Rajah 2 menunjukkan garis nombor. RAJAH 2 Nyatakan jumlah nombor bagi x dan y ?",
@@ -199,7 +204,8 @@
                     "46 060",
                     "46 120"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - needs diagram (number line)"
                 },
                 {
                   "q": "Bentukkan nombor terbesar dan terkecil, kemudian jumlah kedua-dua nombor. Di antara nombor di bawah yang manakah jawapan yang tepat?",
@@ -259,7 +265,8 @@
                     "79 500",
                     "80 500"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - unclear digit underlined"
                 },
                 {
                   "q": "“ Sebuah kotak boleh diisi dengan 80 000 keping penanda buku. Ahmad telah mengisi sebanyak 52 000 keping penanda buku dan bakinya pada keesokkan harinya” Berdasarkan petikan di atas, apakah anu dalam ayat tersebut?",
@@ -454,7 +461,8 @@
                     "ratus",
                     "ribu"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - needs diagram (number card)"
                 },
                 {
                   "q": "Antara berikut nombor manakah nilai tempat 4 adalah puluh?",
@@ -464,7 +472,8 @@
                     "24 350",
                     "45 230"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - needs manual checking"
                 },
                 {
                   "q": "Kesemua nombor berikut apabila dibundarkan kepada ratus terdekat menjadi 24 400 kecuali",
@@ -514,7 +523,8 @@
                     "81 000",
                     "90 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - unclear rounding target"
                 },
                 {
                   "q": "Dalam satu tabung ada 9 459 biji kekacang. Bundarkan jumlah kekacang itu kepada ratus terdekat.",
@@ -524,7 +534,8 @@
                     "9 460",
                     "9 500"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - unclear which place to round"
                 },
                 {
                   "q": "Apakah nilai tempat bagi digit yang bergaris dalam nombor 78 352?",
@@ -534,7 +545,8 @@
                     "ribu",
                     "puluh ribu"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - unclear digit underlined"
                 },
                 {
                   "q": "Bentukkan nombor 5 digit yang terbesar daripada kesemua digit 3, 8, 8, 0 dan 5.",
@@ -544,7 +556,8 @@
                     "8 530",
                     ""
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - needs exact digits"
                 },
                 {
                   "q": "15   Apakah nilai tempat digit 2 dalam nombor 42 503?",
@@ -604,7 +617,8 @@
                     "28 265",
                     "28 365"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "note": "estimated"
                 },
                 {
                   "q": "Puan Aina mempunyai 10 640 biji manik hijau, 8 240 biji manik biru dan 986 biji manik merah. Berapakah jumlah manik Puan Aina?",
@@ -634,7 +648,8 @@
                     "4 889",
                     "4 888"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - complex word problem"
                 },
                 {
                   "q": "Antara berikut, yang manakah mempunyai hasil tambah yang bernilai 80 065.",
@@ -644,7 +659,8 @@
                     "800 + 65",
                     "80 + 65"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - comparison, needs all options"
                 },
                 {
                   "q": "Cari selisih antara 6 482 dengan 3 126 ialah",
@@ -694,7 +710,8 @@
                     "37 500 - 2 084",
                     "30 000 - 645"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - comparison, needs all options"
                 },
                 {
                   "q": "Encik Lee membeli 10 000 biji telur. Didapati 398 biji telur telah pecah. Berapa biji telurkah yang tidak pecah?",
@@ -714,7 +731,8 @@
                     "8 700",
                     "3 300"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - multi-step, needs diagram"
                 },
                 {
                   "q": "Antara hasil tolak berikut yang manakah nilainya terbesar?",
@@ -724,7 +742,8 @@
                     "4 900 - 1 082 - 64 =",
                     "3 975 - 197 - 428 ="
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - comparison, needs all options"
                 },
                 {
                   "q": "Ahmad ada 8 968 biji manggis. Sebanyak 486 biji manggis telah diberikan kepada kawannya. Hitungkan jumlah manggis yang masih ada pada Ahmad.",
@@ -784,7 +803,8 @@
                     "3 500",
                     "3 472"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "note": "unknown - word problem, needs extra steps"
                 },
                 {
                   "q": "Darabkan 34 ratus dengan 8.",
