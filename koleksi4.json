@@ -112,8 +112,9 @@
                     "5 000",
                     "50 000 25 003  25 005   P    25 012     Q 34 641, 39 562, 30 521, 34 726, 39 894"
                   ],
-                  "c": 0,
-                  "note": "unknown - unclear which digit underlined"
+                  "c": 3,
+                  "note": "unknown - unclear which digit underlined",
+                  "img": "img/koleksi/math_q10_bergaris.png"
                 },
                 {
                   "q": "Yang manakah antara berikut tidak benar? Nombor Nilai tempat bagi digit bergaris",
@@ -124,7 +125,7 @@
                     "99 062 Puluh ribu"
                   ],
                   "c": 0,
-                  "note": "unknown - unclear digit in table"
+                  "img": "img/koleksi/math_q11_table.png"
                 },
                 {
                   "q": "5 806 + 21 345 =",
@@ -174,8 +175,8 @@
                     "2 075",
                     "2 007 62 475"
                   ],
-                  "c": 0,
-                  "note": "unknown - needs number with underline"
+                  "c": 1,
+                  "img": "img/koleksi/math_q16_bergaris.png"
                 },
                 {
                   "q": "Berdasarkan petikan di atas yang manakah mewakili anu dalam penambahan.",
@@ -270,7 +271,7 @@
                     "80 500"
                   ],
                   "c": 0,
-                  "note": "unknown - unclear digit underlined"
+                  "img": "img/koleksi/math_q25_bergaris.png"
                 },
                 {
                   "q": "“ Sebuah kotak boleh diisi dengan 80 000 keping penanda buku. Ahmad telah mengisi sebanyak 52 000 keping penanda buku dan bakinya pada keesokkan harinya” Berdasarkan petikan di atas, apakah anu dalam ayat tersebut?",
@@ -553,7 +554,7 @@
                     "puluh ribu"
                   ],
                   "c": 0,
-                  "note": "unknown - unclear digit underlined"
+                  "img": "img/koleksi/math_q52_bergaris.png"
                 },
                 {
                   "q": "Bentukkan nombor 5 digit yang terbesar daripada kesemua digit 3, 8, 8, 0 dan 5.",
