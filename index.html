@@ -1048,15 +1048,20 @@
                     koleksi: { icon: '📚', color: '#8B4513', name: 'Koleksi Soalan' }
                 };
                 const yearCounts = topicCounts[String(profileTahun)] || {};
-                // Show ALL subjects from topic-counts.json — no hardcoded filter.
+                // Show subjects from topic-counts.json, filtered by DLP status
                 // Score prefix determined by pattern, not if/else chain:
                 //   Keys like 'math4bm' (digits+bm suffix) already encode the year
                 //   Plain keys (math, sci, eng, bm) get year appended
                 const subjects = Object.keys(yearCounts);
-                if (profileTahun && subjects.length > 0 && tbScores) {
+                // Filter by DLP: DLP students see math/sci (English), not matematik/sains (BM)
+                // Non-DLP students see matematik/sains (BM), not math/sci (English)
+                const filteredSubjects = isDlp
+                    ? subjects.filter(s => s !== 'math4bm' && s !== 'sci4bm')
+                    : subjects.filter(s => s !== 'math' && s !== 'sci');
+                if (profileTahun && filteredSubjects.length > 0 && tbScores) {
                     let totalDone = 0, totalAll = 0;
                     let html = `<div class="prog-card"><div class="prog-name" style="display:flex;justify-content:space-between;align-items:center;">📊 ${name}'s Progress<span class="prog-share-btn" id="share-progress-btn">Share this!</span></div>`;
-                    subjects.forEach(subj => {
+                    filteredSubjects.forEach(subj => {
                         const meta = subjMeta[subj] || { icon: '📘', color: '#666', name: subj };
                         const total = yearCounts[subj];
                         let done = 0;
@@ -1089,7 +1094,7 @@
                 // Wire up share button with collected progress data
                 _shareProgressData = {
                     name: name,
-                    subjects: subjects.map(s => {
+                    subjects: filteredSubjects.map(s => {
                         const meta = subjMeta[s] || { icon: '📘', color: '#666', name: s };
                         const total = yearCounts[s];
                         let done = 0;
