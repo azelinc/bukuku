@@ -1,0 +1,806 @@
+{
+  "subjects": {
+    "koleksi": {
+      "name": "Koleksi Soalan dan Latihan",
+      "icon": "📚",
+      "color": "#8B4513",
+      "units": {
+        "1": {
+          "name": "Matematik Tahun 4",
+          "topics": {
+            "1.1": {
+              "name": "Ujian Pertengahan Tahun (Set 1)",
+              "questions": [
+                {
+                  "q": "25 096 ditulis dalam perkataan ialah",
+                  "a": [
+                    "Dua puluh ribu lima ratus enam puluh sembilan.",
+                    "Dua puluh lima ribu sembilan ratus enam.",
+                    "Dua puluh lima ribu sembilan puluh enam.",
+                    "Dua puluh ribu Sembilan ratus enam."
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, nombor manakah yang digit 8 adalah 8 000?",
+                  "a": [
+                    "82 506",
+                    "48 317",
+                    "19 841",
+                    "10 283"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "7 puluh ribu + 4 ribu + 0 ratus + 3 puluh + 1 sa =",
+                  "a": [
+                    "7 431",
+                    "70 431",
+                    "74 031",
+                    "74 310"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "“Empat puluh tujuh ribu sepuluh” ditulis dalam angka",
+                  "a": [
+                    "41 000",
+                    "40 100",
+                    "40 010",
+                    "4 010"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Cerakinkan 34 001 =",
+                  "a": [
+                    "34 000 + 1",
+                    "30 000 + 4000 + 100",
+                    "30 000 + 4000 + 10",
+                    "30 000 + 4000 + 1"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Yang manakah antara berikut nombor, apabila dibundarkan ribu terdekat menjadi 50 000?",
+                  "a": [
+                    "48 505",
+                    "49 580",
+                    "50 540",
+                    "50 805"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, yang manakah susunan nombor adalah dalam tertib menaik?",
+                  "a": [
+                    "39 894, 39 562, 34 641, 34 726, 30 521",
+                    "39 562, 39 894, 34 641, 34 726, 30 521",
+                    "30 521, 34 726, 34 641, 39 562, 39 894,",
+                    "30 521, 34 641, 34 726, 39 562, 39 894"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Rajah 1menunjukkan satu garis nombor. RAJAH 1 Apakah nombor bagi P dan Q?",
+                  "a": [
+                    "25 006 dan 25 013",
+                    "25 007 dan 25 014",
+                    "25 008 dan 25 015",
+                    "25 009 dan 25 016"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Nyatakan nilai tempat bagi digit 5 dalam nombor 12 532 ?",
+                  "a": [
+                    "Ribu",
+                    "Ratus",
+                    "Puluh",
+                    "Sa"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah nilai digit bagi digit bergaris dalam nombor  54 284 ?",
+                  "a": [
+                    "",
+                    "500",
+                    "5 000",
+                    "50 000 25 003  25 005   P    25 012     Q 34 641, 39 562, 30 521, 34 726, 39 894"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Yang manakah antara berikut tidak benar? Nombor Nilai tempat bagi digit bergaris",
+                  "a": [
+                    "56 742 Ratus",
+                    "78 302 Ribu",
+                    "88 650 Puluh ribu",
+                    "99 062 Puluh ribu"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "5 806 + 21 345 =",
+                  "a": [
+                    "71 141",
+                    "28 151",
+                    "27 151",
+                    "26 151"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "41 045 + 24 011 + 89 + 3 955 =",
+                  "a": [
+                    "45 000",
+                    "24 100",
+                    "68 000",
+                    "69 100"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara nombor berikut, yang manakah nombor yang lebih 1000 daripada 56 821.",
+                  "a": [
+                    "55 821",
+                    "57 821",
+                    "66 821",
+                    "67 821"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "5 342 +             + 28 107 = 90 146 Apakah nombor yang perlu diisi di dalam kotak tersebut?",
+                  "a": [
+                    "56 697",
+                    "55 497",
+                    "52 697",
+                    "50 697"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah jumlah nilai bagi digit yang bergaris",
+                  "a": [
+                    "2 470",
+                    "2 070",
+                    "2 075",
+                    "2 007 62 475"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berdasarkan petikan di atas yang manakah mewakili anu dalam penambahan.",
+                  "a": [
+                    "Pak Din menjual 40 batang aiskrim coklat.",
+                    "Pak Din menjual 40 batang aiskrim durian.",
+                    "beberapa batang aiskrim durian.",
+                    "Jumlah aiskrim yang dijual ialah 260 batang."
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Dengan menggunakan petikan di atas, apakah ayat matematik yang sesuai?",
+                  "a": [
+                    "30 800 + 14 530 =",
+                    "14530 = 30 800 +",
+                    "30 800 = 14 530 +",
+                    "30 800 =                        +"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Rajah 2 menunjukkan garis nombor. RAJAH 2 Nyatakan jumlah nombor bagi x dan y ?",
+                  "a": [
+                    "42 060",
+                    "42 120",
+                    "46 060",
+                    "46 120"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bentukkan nombor terbesar dan terkecil, kemudian jumlah kedua-dua nombor. Di antara nombor di bawah yang manakah jawapan yang tepat?",
+                  "a": [
+                    "99 900",
+                    "96 678",
+                    "95 678",
+                    "87 678 Pak Din menjual 40 batang aiskrim coklat dan beberapa batang aiskrim durian. Jumlah aiskrim yang dijual ialah 260 batang. Sebuah syarikat mencetak 30 800 naskhah surat khabar. 14 530 naskhah ialah surat khabar Bahasa Malaysia dan selebihnya ialah surat khabar Bahasa Inggeris. 20 960  21 060   x y"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "24 396 – 9 990 = _____________",
+                  "a": [
+                    "14 406",
+                    "24 406",
+                    "25 386",
+                    "34 386"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Cari beza antara 61 245 dengan 85 609.",
+                  "a": [
+                    "24 244",
+                    "24 364",
+                    "24 436",
+                    "24 634"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kira 56 207 – 578 – 21 514 =",
+                  "a": [
+                    "77 143",
+                    "35 271",
+                    "34 115",
+                    "33 045"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "41 000  – 5 395 =",
+                  "a": [
+                    "36 605",
+                    "35 715",
+                    "35 605",
+                    "30.19"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Nyatakan hasil tolak bagi nilai digit bergaris bagi nombor  80 515?",
+                  "a": [
+                    "30 000",
+                    "75 000",
+                    "79 500",
+                    "80 500"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "“ Sebuah kotak boleh diisi dengan 80 000 keping penanda buku. Ahmad telah mengisi sebanyak 52 000 keping penanda buku dan bakinya pada keesokkan harinya” Berdasarkan petikan di atas, apakah anu dalam ayat tersebut?",
+                  "a": [
+                    "Sebuah kotak boleh diisi dengan 80 000 keping penanda buku",
+                    "Ahmad telah mengisi sebanyak 52 000 keping penanda buku.",
+                    "bakinya pada keesokkan harinya.",
+                    "Bilangan kesemuanya ialah 60 000 keping penanda buku."
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "“ Seorang penjual buah-buahan ada 68 406 biji epal. Pada hari Isnin, dia menjual sebanyak 5 579 biji epal dan bakinya pada hari Selasa”. Bentukkkan ayat matematik bagi situasi yang diberikan.",
+                  "a": [
+                    "68 406 + 5 579 =",
+                    "68 406 – 5 579 =",
+                    "- 5 579 = 68 406",
+                    "5 579 -                              = 68 406"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Pada Hari Raya yang lalu, Puan Hanani telah membuat 24 500 biji kuih tart. Dia menjual 15 690 biji kuih tart. Kawan-kawannya menolong Puan Hanani menjual sebanyak 8 200 biji kuih tart lagi. Berapa bijikah kuih tart yang masih belum dijual?",
+                  "a": [
+                    "8 200",
+                    "8 810",
+                    "7 490",
+                    "610"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "4 123 x 4 =",
+                  "a": [
+                    "16 492",
+                    "16 482",
+                    "8 482",
+                    "4 127"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "2 193 x 100 =",
+                  "a": [
+                    "2 193 000",
+                    "219 300",
+                    "21 930",
+                    "2 193"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "67 x 23 =",
+                  "a": [
+                    "201",
+                    "335",
+                    "1 340",
+                    "1 541"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "182 x 45 =",
+                  "a": [
+                    "8 190",
+                    "8 100",
+                    "8 090",
+                    "7 100"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "68 901 ÷ 7 =",
+                  "a": [
+                    "7 713",
+                    "8 743",
+                    "9 843",
+                    "9 443"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "6 950 ÷ 30 =",
+                  "a": [
+                    "695",
+                    "595",
+                    "231",
+                    "115"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "93 201 ÷ 1000 =",
+                  "a": [
+                    "93 baki 21",
+                    "93 baki 201",
+                    "93 baki 210",
+                    "93 baki 211"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "÷ 52 = 431",
+                  "a": [
+                    "22 412",
+                    "21 412",
+                    "21 312",
+                    "21 212"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah nombor yang apabila dibundarkan kepada ratus yang hampir adalah 2 700",
+                  "a": [
+                    "2 628",
+                    "2 699",
+                    "2 761",
+                    "2 780"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah kilang mengeluarkan 16 920 pen biru, 15 806 pen hitam dan 11 700 pen merah. Berapakah jumlah pen kesemuanya yamg kilang tersebut hasilkan?",
+                  "a": [
+                    "42 246",
+                    "42 446",
+                    "44 426",
+                    "44 624"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah lori dapat mengangkut 2 300 ekor ayam dalam suatu masa. Berapa ekor ayamkah yang dapat diangkut oleh 21 buah lori yang sama.",
+                  "a": [
+                    "483",
+                    "4 830",
+                    "48 300",
+                    "58 300"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Seorang chef membuat 8 100 keping tart dalam masa satu minggu. Berapakah jumlah tart nanas yang dibuat setiap hari jika chef tersebut bercuti pada hari Isnin?",
+                  "a": [
+                    "1 350",
+                    "1 250",
+                    "1 123",
+                    "1100"
+                  ],
+                  "c": 0
+                }
+              ]
+            },
+            "1.2": {
+              "name": "Ujian Pertengahan Tahun (Set 2)",
+              "questions": [
+                {
+                  "q": "Rajah 1 menunjukkan sekeping kad perkataan. ENAM BELAS RIBU TIGA PULUH SATU Angka bagi perkataan nombor di atas ialah",
+                  "a": [
+                    "1 631",
+                    "10 631",
+                    "16 031",
+                    "16 310"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Tuliskan nombor 24 806 dalam perkataan.",
+                  "a": [
+                    "Dua puluh empat ribu lapan ratus enam",
+                    "Dua puluh lapan ribu empat ratus enam",
+                    "Dua puluh empat ribu lapan puluh enam",
+                    "Dua puluh empat ribu lapan ratus enam puluh"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Tuliskan tiga puluh ribu lapan puluh dalam bentuk angka.",
+                  "a": [
+                    "3 080",
+                    "30 008",
+                    "30 080",
+                    "30 800"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Rajah 2 menunjukkan satu kad angka. 23 867 Nilai tempat bagi digit yang bergaris ialah",
+                  "a": [
+                    "sa",
+                    "puluh",
+                    "ratus",
+                    "ribu"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut nombor manakah nilai tempat 4 adalah puluh?",
+                  "a": [
+                    "23 504",
+                    "23 540",
+                    "24 350",
+                    "45 230"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Kesemua nombor berikut apabila dibundarkan kepada ratus terdekat menjadi 24 400 kecuali",
+                  "a": [
+                    "23 395",
+                    "24 372",
+                    "24 362",
+                    "24 358"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah stadium mempunyai 58 198 tempat duduk. Bundarkan jumlah tempat duduk kepada puluh terdekat.",
+                  "a": [
+                    "58 000",
+                    "58 180",
+                    "58 190",
+                    "58 200"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut yang manakah benar apabila dibundarkan kepada ribu terdekat.",
+                  "a": [
+                    "24 517 = 24 500",
+                    "83 294 = 83 300",
+                    "5 927 = 6 000",
+                    "6 841 = 6 900"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara nombor berikut, yang manakah apabila dibundar kepada ratus yang terdekat menjadi 45 800?",
+                  "a": [
+                    "45 864",
+                    "45 862",
+                    "45 769",
+                    "45 748"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Dalam pesta buku yang telah diadakan, seramai 80 955 orang pengunjung telah hadir. Bundarkan jumlah pengunjung itu kepada ratus yang hampir.",
+                  "a": [
+                    "80 900",
+                    "80 950",
+                    "81 000",
+                    "90 000"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Dalam satu tabung ada 9 459 biji kekacang. Bundarkan jumlah kekacang itu kepada ratus terdekat.",
+                  "a": [
+                    "9 000",
+                    "9 450",
+                    "9 460",
+                    "9 500"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Apakah nilai tempat bagi digit yang bergaris dalam nombor 78 352?",
+                  "a": [
+                    "puluh",
+                    "ratus",
+                    "ribu",
+                    "puluh ribu"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Bentukkan nombor 5 digit yang terbesar daripada kesemua digit 3, 8, 8, 0 dan 5.",
+                  "a": [
+                    "88 853",
+                    "88 530",
+                    "8 530",
+                    ""
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "15   Apakah nilai tempat digit 2 dalam nombor 42 503?",
+                  "a": [
+                    "Puluh",
+                    "Ratus",
+                    "Ribu",
+                    "Puluh ribu"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "4 126 + 42 822 =",
+                  "a": [
+                    "45 848",
+                    "46 846",
+                    "46 948",
+                    "46 958"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Jumlahkan 890 dan 66 808.",
+                  "a": [
+                    "67 699",
+                    "67 698",
+                    "66 690",
+                    "66 698"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "37 425 + 65 + 2 928 =",
+                  "a": [
+                    "30 418",
+                    "40 318",
+                    "40 418",
+                    "40 518"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ali membeli 3 645 biji mangga. Keesokannya, dia membeli lagi sebanyak 1 240 biji. Hitungkan jumlah mangga yang ada pada Ali sekarang.",
+                  "a": [
+                    "4 885",
+                    "4 880",
+                    "2 405",
+                    "2 400"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Lori A dimuatkan dengan 15 385 kotak air minuman. Lori B dimuatkan dengan 12 980 kotak. Hitungkan jumlah kotak air minuman yang ada dalam kedua-dua lori itu.",
+                  "a": [
+                    "27 265",
+                    "27 365",
+                    "28 265",
+                    "28 365"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Puan Aina mempunyai 10 640 biji manik hijau, 8 240 biji manik biru dan 986 biji manik merah. Berapakah jumlah manik Puan Aina?",
+                  "a": [
+                    "19 900 biji",
+                    "19 866 biji",
+                    "18 880 biji",
+                    "18 800 biji"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "55 483 + 4 203 =",
+                  "a": [
+                    "58 686",
+                    "59 686",
+                    "59 696",
+                    "59 786"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Seorang penternak ayam telur telah menjual 2 462 biji telur pada hari Ahad dan 2 526 biji pada hari Isnin. Berapa biji telur ayam bagi kedua-dua hari itu?",
+                  "a": [
+                    "4 988",
+                    "4 898",
+                    "4 889",
+                    "4 888"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara berikut, yang manakah mempunyai hasil tambah yang bernilai 80 065.",
+                  "a": [
+                    "80 000 + 65",
+                    "8 000 + 65",
+                    "800 + 65",
+                    "80 + 65"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Cari selisih antara 6 482 dengan 3 126 ialah",
+                  "a": [
+                    "3 356",
+                    "3 456",
+                    "4 408",
+                    "4 428"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "65 000 - 425 =",
+                  "a": [
+                    "64 570",
+                    "64 575",
+                    "65 425",
+                    "65 685"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "20 503 - 13 258 =",
+                  "a": [
+                    "7 245",
+                    "7 345",
+                    "13 355",
+                    "17 245"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Sebuah kilang mancis dapat menghasilkan 53 472 batang anak mancis pada minggu pertama. Sebanyak 40 321 batang pula pada minggu kedua. Kirakan perbezaannya.",
+                  "a": [
+                    "13 161",
+                    "13 151",
+                    "13 141",
+                    "12 151"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara hasil tolak berikut, yang manakah paling besar nilainya?",
+                  "a": [
+                    "16 060 - 4 978",
+                    "20 000 - 1 847",
+                    "37 500 - 2 084",
+                    "30 000 - 645"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Encik Lee membeli 10 000 biji telur. Didapati 398 biji telur telah pecah. Berapa biji telurkah yang tidak pecah?",
+                  "a": [
+                    "9 600 biji",
+                    "9 602 biji",
+                    "10 389 biji",
+                    "10 398 biji"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berapakah selisih antara 42 ribu dengan hasil tolak 10 000 dengan 6 700?",
+                  "a": [
+                    "38 700",
+                    "38 300",
+                    "8 700",
+                    "3 300"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Antara hasil tolak berikut yang manakah nilainya terbesar?",
+                  "a": [
+                    "6 085 - 2 110 - 20 =",
+                    "5 678 - 2 340 - 10 =",
+                    "4 900 - 1 082 - 64 =",
+                    "3 975 - 197 - 428 ="
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Ahmad ada 8 968 biji manggis. Sebanyak 486 biji manggis telah diberikan kepada kawannya. Hitungkan jumlah manggis yang masih ada pada Ahmad.",
+                  "a": [
+                    "9 454",
+                    "9 450",
+                    "8 582",
+                    "8 482"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Berapakah hasil darab antara 376 dengan 80?",
+                  "a": [
+                    "24 080",
+                    "29 680",
+                    "30 080",
+                    "32 880"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "1 413 x 6 =",
+                  "a": [
+                    "6 478",
+                    "8 478",
+                    "8 488",
+                    "9 478"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "6 238 x 13 =",
+                  "a": [
+                    "80 074",
+                    "80 094",
+                    "80 994",
+                    "81 094"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Harun mempunyai 16 buah album setem. Setiap album boleh memuatkan 1 205 keping setem. Berapa jumlah setem yang ada pada Harun?",
+                  "a": [
+                    "19 240",
+                    "19 280",
+                    "19 310",
+                    "19 340"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Setiap hari Pak Ali dapat memungut sebanyak 3 486 biji telur dari ladangnya. Berapa biji telurkah yang dapat dipungut dalam masa 2 mingggu?",
+                  "a": [
+                    "48 804",
+                    "48 800",
+                    "3 500",
+                    "3 472"
+                  ],
+                  "c": 0
+                },
+                {
+                  "q": "Darabkan 34 ratus dengan 8.",
+                  "a": [
+                    "27 300",
+                    "27 200",
+                    "3 408",
+                    "3 392"
+                  ],
+                  "c": 0
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
