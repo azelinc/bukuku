@@ -126,6 +126,43 @@
         .celebration-card h2 { font-size: 1.8rem; color: #f39c12; margin: 10px 0; }
         .celebration-card p { color: #666; margin: 0 0 20px; }
         .celebration-card button { background: #f39c12; border: none; color: white; padding: 14px 40px; border-radius: 50px; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
+    
+        /* Nav buttons */
+        .nav-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        .nav-row .nav-btn {
+            flex: 1;
+            padding: 14px 20px;
+            border: 2px solid #4a90e2;
+            background: white;
+            color: #4a90e2;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+        .nav-row .nav-btn:hover:not(:disabled) {
+            background: #4a90e2;
+            color: white;
+        }
+        .nav-row .nav-btn:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            border-color: #ccc;
+            color: #999;
+        }
+        .nav-row .nav-count {
+            font-size: 0.85rem;
+            color: #999;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body>
@@ -193,8 +230,12 @@
                 <div id="question" class="q-text">Loading...</div>
                 <div id="options-list"></div>
             </div>
-        </div>
-
+                    <div class="nav-row">
+                <button class="nav-btn" id="prev-btn" onclick="prevQ()" disabled>◀ Previous</button>
+                <span class="nav-count">Question <span id="nav-q">1</span> of <span id="nav-total">0</span></span>
+                <button class="nav-btn" id="next-btn" onclick="nextQ()">Next ▶</button>
+            </div>
+        
         <!-- RESULT SCREEN -->
         <div id="result-area" style="display:none;">
             <div class="result-card">
@@ -240,13 +281,13 @@
                 <div style="width:160px; height:160px; background:#ddd; margin:0 auto; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#999; font-size:0.8rem;">
                     [QR Code Placeholder]
                 </div>
-                <p style="margin-top:8px; font-size:0.8rem; color:#666;">After payment, email <strong>azel.inc@gmail.com</strong> with your account email</p>
+                <p style="margin-top:8px; font-size:0.8rem; color:#666;">After payment, email <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4d5ced1d89adddad7f4d3d9d5ddd89ad7dbd9">[email&#160;protected]</a></strong> with your account email</p>
             </div>
             <button onclick="document.getElementById('premium-modal-tb').style.display='none'" style="background:none; border:none; color:#999; cursor:pointer; font-size:0.85rem;">Close</button>
         </div>
     </div>
 
-    <script type="module">
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
         import { getFirestore, doc, getDoc, setDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
 
@@ -645,6 +686,38 @@
                 optList.appendChild(btn);
             });
 
+            // Update nav buttons
+            document.getElementById('nav-q').textContent = currentQ + 1;
+            document.getElementById('nav-total').textContent = questions.length;
+            document.getElementById('prev-btn').disabled = (currentQ === 0);
+            document.getElementById('next-btn').textContent = (currentQ === questions.length - 1) ? 'Finish ▶' : 'Next ▶';
+
+            // Restore answered state when navigating back
+            if (answeredMap.hasOwnProperty(currentQ)) {
+                const prevIdx = answeredMap[currentQ];
+                clearInterval(timerInterval);
+                const btns = optList.querySelectorAll('.option-btn');
+                for (let i = 0; i < btns.length; i++) {
+                    btns[i].style.pointerEvents = 'none';
+                    if (i === q.c) btns[i].classList.add('correct');
+                    else if (i === prevIdx && prevIdx !== q.c) btns[i].classList.add('wrong');
+                }
+                // Collapse timer bar — already answered
+                document.getElementById('timer-bar').style.width = '0%';
+            } else {
+                timeLeft = 60;
+                updateTimerBar();
+                clearInterval(timerInterval);
+                timerInterval = setInterval(() => {
+                    timeLeft--;
+                    updateTimerBar();
+                    if (timeLeft <= 0) {
+                        clearInterval(timerInterval);
+                        if (!answered) selectAnswer(-1);
+                    }
+                }, 1000);
+            }
+
             // Admin: show correction controls
             if (isAdmin && q.id) {
                 const corrBar = document.createElement('div');
@@ -681,19 +754,7 @@
                 optList.after(corrBar);
             }
 
-            // Timer
-            timeLeft = 60;
-            updateTimerBar();
-            clearInterval(timerInterval);
-            timerInterval = setInterval(() => {
-                timeLeft--;
-                updateTimerBar();
-                if (timeLeft <= 0) {
-                    clearInterval(timerInterval);
-                    if (!answered) selectAnswer(-1);
-                }
-            }, 1000);
-        }
+
 
         function updateTimerBar() {
             const pct = (timeLeft / 60) * 100;
@@ -715,6 +776,25 @@
         }
 
         // SELECT ANSWER
+        
+        // Track answered questions for navigation
+        let answeredMap = {};
+
+        function prevQ() {
+            if (currentQ > 0) {
+                currentQ--;
+                showQuestion();
+            }
+        }
+        function nextQ() {
+            if (currentQ < questions.length - 1) {
+                currentQ++;
+                showQuestion();
+            } else {
+                showResults();
+            }
+        }
+
         function selectAnswer(idx) {
             if (answered) return;
             answered = true;
@@ -729,6 +809,8 @@
                 if (i === q.c) btns[i].classList.add('correct');
                 else if (i === idx && idx !== q.c) btns[i].classList.add('wrong');
             }
+
+            answeredMap[currentQ] = idx;
 
             if (idx === q.c) score++;
             else if (idx === -1) {
