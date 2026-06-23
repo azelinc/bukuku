@@ -20,7 +20,8 @@
                     "Inferring",
                     "Observing"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.1-0"
                 },
                 {
                   "q": "Ravi groups animals into those with fur and those without fur. Which science process skill is he using?",
@@ -30,7 +31,8 @@
                     "Inferring",
                     "Observing"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.1-1"
                 },
                 {
                   "q": "After seeing dark clouds in the sky, Ali says, 'It will rain soon.' Which skill is he using?",
@@ -40,7 +42,8 @@
                     "Measuring",
                     "Communicating"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.1-2"
                 },
                 {
                   "q": "A student uses a ruler to find the length of a leaf. Which science process skill is being used?",
@@ -50,7 +53,8 @@
                     "Measuring",
                     "Observing"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-1-1.1-3"
                 },
                 {
                   "q": "Presenting your experiment results in a table or chart is an example of which science process skill?",
@@ -60,7 +64,8 @@
                     "Measuring",
                     "Communicating"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.1-4"
                 }
               ]
             },
@@ -76,7 +81,8 @@
                     "A classification skill",
                     "A prediction"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.2-0"
                 },
                 {
                   "q": "A car moves from Kuala Lumpur to Penang in 4 hours. What two things are being related?",
@@ -86,7 +92,8 @@
                     "Temperature and time",
                     "Distance and time"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.2-1"
                 },
                 {
                   "q": "Which of the following shows a space-time relationship?",
@@ -96,7 +103,8 @@
                     "Sugar is sweet",
                     "Water is wet"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.2-2"
                 },
                 {
                   "q": "A balloon deflates from 30 cm wide to 10 cm wide in 5 seconds. The change in size over time describes...",
@@ -106,7 +114,8 @@
                     "A measurement",
                     "A classification"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.2-3"
                 },
                 {
                   "q": "A shadow moves from the left side of a tree to the right side during the day. This change is due to...",
@@ -116,7 +125,8 @@
                     "Wind blowing",
                     "Birds moving"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.2-4"
                 }
               ]
             },
@@ -132,7 +142,8 @@
                     "More water makes plants grow taller",
                     "Sunlight is not important"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-1-1.3-0"
                 },
                 {
                   "q": "A bar chart shows temperature from Monday to Friday. Monday is 28°C, Tuesday 29°C, Wednesday 30°C, Thursday 31°C, Friday 32°C. What pattern do you see?",
@@ -142,7 +153,8 @@
                     "Temperature increases each day",
                     "Temperature decreases each day"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-1-1.3-1"
                 },
                 {
                   "q": "After interpreting data from an experiment, what should you do next?",
@@ -152,7 +164,8 @@
                     "Guess randomly",
                     "Repeat without looking at data"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.3-2"
                 },
                 {
                   "q": "A pictograph shows 5 books read by Class A, 8 by Class B, and 3 by Class C. Which class read the most books?",
@@ -162,7 +175,8 @@
                     "Class A",
                     "Class B"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.3-3"
                 },
                 {
                   "q": "Data shows that a rubber band stretches longer when more weight is added. This shows a pattern of...",
@@ -172,7 +186,8 @@
                     "Weight does not affect stretch",
                     "The more weight, the more stretch"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.3-4"
                 }
               ]
             },
@@ -188,7 +203,8 @@
                     "A hypothesis",
                     "An observation"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.4-0"
                 },
                 {
                   "q": "A student defines 'hot water' as 'water heated to 80°C.' This is an example of...",
@@ -198,7 +214,8 @@
                     "Predicting",
                     "Defining operationally"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.4-1"
                 },
                 {
                   "q": "Which of the following is an operational definition of 'loud sound'?",
@@ -208,7 +225,8 @@
                     "A big noise",
                     "Sound from a drum"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.4-2"
                 },
                 {
                   "q": "Why do scientists use operational definitions in experiments?",
@@ -218,7 +236,8 @@
                     "To confuse people",
                     "To save money"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.4-3"
                 },
                 {
                   "q": "In an experiment on friction, 'rough surface' is defined as 'sandpaper with grade 80.' This is an example of...",
@@ -228,7 +247,8 @@
                     "An operational definition",
                     "A variable"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-1-1.4-4"
                 }
               ]
             },
@@ -244,7 +264,8 @@
                     "Amount of water",
                     "Amount of light"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.5-0"
                 },
                 {
                   "q": "In a fair test, which variables should be kept the same?",
@@ -254,7 +275,8 @@
                     "Manipulated variables only",
                     "All variables"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.5-1"
                 },
                 {
                   "q": "A student wants to test which type of material absorbs water best. What is the responding variable?",
@@ -264,7 +286,8 @@
                     "Type of material",
                     "Size of material"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.5-2"
                 },
                 {
                   "q": "To test how surface affects rolling distance, you change the surface but keep the ramp height and ball the same. What is the constant variable?",
@@ -274,7 +297,8 @@
                     "Rolling distance",
                     "Both B and C are wrong"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.5-3"
                 },
                 {
                   "q": "Why must you only change ONE variable at a time in an experiment?",
@@ -284,7 +308,8 @@
                     "It doesn't matter",
                     "To save time"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.5-4"
                 }
               ]
             },
@@ -300,7 +325,8 @@
                     "Plants need water",
                     "Sun is hot"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.6-0"
                 },
                 {
                   "q": "A hypothesis must be...",
@@ -310,7 +336,8 @@
                     "Testable through experiments",
                     "Always correct"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-1-1.6-1"
                 },
                 {
                   "q": "A student hypothesises that 'if I use a smoother surface, then the ball will roll further.' What is the manipulated variable?",
@@ -320,7 +347,8 @@
                     "Size of ball",
                     "Distance rolled"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.6-2"
                 },
                 {
                   "q": "What makes a hypothesis different from a simple guess?",
@@ -330,7 +358,8 @@
                     "It cannot be tested",
                     "It is based on prior knowledge"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.6-3"
                 },
                 {
                   "q": "After testing a hypothesis, if the results do not match your prediction, what should you do?",
@@ -340,7 +369,8 @@
                     "Give up on science",
                     "Ignore it"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.6-4"
                 }
               ]
             },
@@ -356,7 +386,8 @@
                     "Writing a report",
                     "Collecting data"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.7-0"
                 },
                 {
                   "q": "After conducting an experiment and collecting data, what is the next step?",
@@ -366,7 +397,8 @@
                     "Change the hypothesis",
                     "Make a conclusion"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-1-1.7-1"
                 },
                 {
                   "q": "A fair test means...",
@@ -376,7 +408,8 @@
                     "You do the experiment quickly",
                     "Everyone gets the same equipment"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-1-1.7-2"
                 },
                 {
                   "q": "Why do scientists repeat experiments several times?",
@@ -386,7 +419,8 @@
                     "To waste time",
                     "To use more materials"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.7-3"
                 },
                 {
                   "q": "The final step in an experiment is to...",
@@ -396,7 +430,8 @@
                     "Start a new experiment",
                     "Forget about it"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-1-1.7-4"
                 }
               ]
             }
@@ -417,7 +452,8 @@
                     "Heart",
                     "Trachea"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.1-0"
                 },
                 {
                   "q": "The dome-shaped muscle below the lungs that helps with breathing is called the...",
@@ -427,7 +463,8 @@
                     "Trachea",
                     "Diaphragm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.1-1"
                 },
                 {
                   "q": "Where does the exchange of oxygen and carbon dioxide take place?",
@@ -437,7 +474,8 @@
                     "In the nose",
                     "In the lungs"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.1-2"
                 },
                 {
                   "q": "Which of the following is NOT part of the human breathing system?",
@@ -447,7 +485,8 @@
                     "Lungs",
                     "Nose"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.1-3"
                 },
                 {
                   "q": "What is the function of the tiny hairs inside the nose?",
@@ -457,7 +496,8 @@
                     "To filter dust and germs from the air",
                     "To make the nose look bigger"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-2-2.1-4"
                 }
               ]
             },
@@ -473,7 +513,8 @@
                     "Hydrogen",
                     "Carbon dioxide"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.2-0"
                 },
                 {
                   "q": "During exhalation, the body mainly releases...",
@@ -483,7 +524,8 @@
                     "Helium",
                     "Oxygen"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.2-1"
                 },
                 {
                   "q": "What happens to the diaphragm during inhalation?",
@@ -493,7 +535,8 @@
                     "It moves sideways",
                     "It contracts and flattens"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.2-2"
                 },
                 {
                   "q": "Why do we need oxygen in our body?",
@@ -503,7 +546,8 @@
                     "To make blood",
                     "To produce energy for our cells"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.2-3"
                 },
                 {
                   "q": "How many times does an average adult breathe per minute at rest?",
@@ -513,7 +557,8 @@
                     "About 12-20 times",
                     "About 5-10 times"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-2-2.2-4"
                 }
               ]
             },
@@ -529,7 +574,8 @@
                     "Up and out",
                     "Down and in"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-2-2.3-0"
                 },
                 {
                   "q": "What happens to the chest cavity size during inhalation?",
@@ -539,7 +585,8 @@
                     "It becomes smaller",
                     "It becomes larger"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.3-1"
                 },
                 {
                   "q": "During a science demonstration, a model using a plastic bottle and balloon shows the diaphragm. When the rubber sheet is pulled down, the balloon inside...",
@@ -549,7 +596,8 @@
                     "Deflates",
                     "Inflates"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.3-2"
                 },
                 {
                   "q": "The space between the ribs contains muscles called...",
@@ -559,7 +607,8 @@
                     "Cardiac muscles",
                     "Intercostal muscles"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.3-3"
                 },
                 {
                   "q": "During exhalation, the diaphragm moves...",
@@ -569,7 +618,8 @@
                     "It does not move",
                     "Sideways"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.3-4"
                 }
               ]
             },
@@ -585,7 +635,8 @@
                     "Anus",
                     "Skin"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.4-0"
                 },
                 {
                   "q": "The removal of undigested food from the body is called...",
@@ -595,7 +646,8 @@
                     "Excretion",
                     "Digestion"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.4-1"
                 },
                 {
                   "q": "Which of the following is an excretory organ?",
@@ -605,7 +657,8 @@
                     "Brain",
                     "Skin"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-2-2.4-2"
                 },
                 {
                   "q": "Carbon dioxide is removed from the body through which organ?",
@@ -615,7 +668,8 @@
                     "Lungs",
                     "Skin"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-2-2.4-3"
                 },
                 {
                   "q": "The main difference between excretion and defecation is that excretion removes...",
@@ -625,7 +679,8 @@
                     "Undigested food",
                     "Only water"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-2-2.4-4"
                 }
               ]
             },
@@ -641,7 +696,8 @@
                     "Ears",
                     "Skin"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-2-2.5-0"
                 },
                 {
                   "q": "When you touch a hot pan, you quickly pull your hand away. This is an example of...",
@@ -651,7 +707,8 @@
                     "Voluntary response",
                     "Habit"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.5-1"
                 },
                 {
                   "q": "The tongue can detect which of the following tastes?",
@@ -661,7 +718,8 @@
                     "Sweet, sour, salty, bitter, umami",
                     "Only salty and bitter"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-2-2.5-2"
                 },
                 {
                   "q": "The smell of durian can be detected from far away. This is because the nose detects...",
@@ -671,7 +729,8 @@
                     "Sound waves",
                     "Light waves"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-2-2.5-3"
                 },
                 {
                   "q": "If someone whispers behind you, which stimulus do your ears detect?",
@@ -681,7 +740,8 @@
                     "Temperature",
                     "Pressure"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-2-2.5-4"
                 }
               ]
             },
@@ -697,7 +757,8 @@
                     "Drinking water",
                     "Reading books"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-2-2.6-0"
                 },
                 {
                   "q": "Smoking can damage which sense the most?",
@@ -707,7 +768,8 @@
                     "Hearing",
                     "Touch"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.6-1"
                 },
                 {
                   "q": "Drinking alcohol can affect a person's ability to...",
@@ -717,7 +779,8 @@
                     "See clearly in the dark",
                     "Hear whispers"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-2-2.6-2"
                 },
                 {
                   "q": "Why should you not look directly at the sun?",
@@ -727,7 +790,8 @@
                     "It can damage your eyes permanently",
                     "It gives you a headache"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-2-2.6-3"
                 },
                 {
                   "q": "Using drugs without a doctor's prescription can affect which part of the body the most?",
@@ -737,7 +801,8 @@
                     "The teeth",
                     "The hair"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-2-2.6-4"
                 }
               ]
             }
@@ -758,7 +823,8 @@
                     "Gills",
                     "Moist skin"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-3-3.1-0"
                 },
                 {
                   "q": "A grasshopper breathes through tiny holes on its body called...",
@@ -768,7 +834,8 @@
                     "Lungs",
                     "Pores"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-3-3.1-1"
                 },
                 {
                   "q": "Which animal uses both moist skin and lungs to breathe?",
@@ -778,7 +845,8 @@
                     "Bird",
                     "Frog"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-3-3.1-2"
                 },
                 {
                   "q": "Dolphins live in water but breathe through...",
@@ -788,7 +856,8 @@
                     "Gills",
                     "Skin"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-3-3.1-3"
                 },
                 {
                   "q": "A tadpole breathes through which organ before it becomes a frog?",
@@ -798,7 +867,8 @@
                     "Lungs",
                     "Skin"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-3-3.1-4"
                 }
               ]
             },
@@ -814,7 +884,8 @@
                     "Mammals",
                     "Invertebrates"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-3-3.2-0"
                 },
                 {
                   "q": "Which of the following is an invertebrate?",
@@ -824,7 +895,8 @@
                     "Butterfly",
                     "Eagle"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-3-3.2-1"
                 },
                 {
                   "q": "Which group of animals has a backbone and gives birth to live young?",
@@ -834,7 +906,8 @@
                     "Birds",
                     "Fish"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-3-3.2-2"
                 },
                 {
                   "q": "A spider has no backbone. It belongs to the group called...",
@@ -844,7 +917,8 @@
                     "Mammals",
                     "Invertebrates"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-3-3.2-3"
                 },
                 {
                   "q": "Which of the following is a vertebrate?",
@@ -854,7 +928,8 @@
                     "Earthworm",
                     "Mynah bird"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-3-3.2-4"
                 }
               ]
             },
@@ -870,7 +945,8 @@
                     "Mammals",
                     "Fish"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-3-3.3-0"
                 },
                 {
                   "q": "A crocodile has dry scaly skin and lays eggs. It belongs to which class?",
@@ -880,7 +956,8 @@
                     "Fish",
                     "Mammals"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-3-3.3-1"
                 },
                 {
                   "q": "Which characteristic is unique to mammals?",
@@ -890,7 +967,8 @@
                     "They have scales",
                     "They feed their young with milk"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-3-3.3-2"
                 },
                 {
                   "q": "A frog starts life in water with gills but develops lungs as an adult. It is a(n)...",
@@ -900,7 +978,8 @@
                     "Amphibian",
                     "Fish"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-3-3.3-3"
                 },
                 {
                   "q": "Which vertebrate group has scales, lives in water, and breathes through gills?",
@@ -910,7 +989,8 @@
                     "Reptiles",
                     "Fish"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-3-3.3-4"
                 }
               ]
             }
@@ -931,7 +1011,8 @@
                     "Geotropism",
                     "Hydrotropism"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-4-4.1-0"
                 },
                 {
                   "q": "Roots of a plant grow downwards due to gravity. This is called...",
@@ -941,7 +1022,8 @@
                     "Phototropism",
                     "Geotropism"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-4-4.1-1"
                 },
                 {
                   "q": "The mimosa plant (touch-me-not) folds its leaves when touched. This is an example of...",
@@ -951,7 +1033,8 @@
                     "Geotropism",
                     "Phototropism"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-4-4.1-2"
                 },
                 {
                   "q": "When plant roots grow towards a water source, this response is called...",
@@ -961,7 +1044,8 @@
                     "Thigmotropism",
                     "Geotropism"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-4-4.1-3"
                 },
                 {
                   "q": "What is the main reason a sunflower turns to face the sun during the day?",
@@ -971,7 +1055,8 @@
                     "To stay warm",
                     "To attract bees"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-4-4.1-4"
                 }
               ]
             },
@@ -987,7 +1072,8 @@
                     "Oxygen",
                     "Nitrogen"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-4-4.2-0"
                 },
                 {
                   "q": "What is the green substance in leaves that traps sunlight for photosynthesis?",
@@ -997,7 +1083,8 @@
                     "Xanthophyll",
                     "Carotene"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-4-4.2-1"
                 },
                 {
                   "q": "Which of the following is NOT needed for photosynthesis?",
@@ -1007,7 +1094,8 @@
                     "Oxygen",
                     "Water"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-4-4.2-2"
                 },
                 {
                   "q": "What are the products of photosynthesis?",
@@ -1017,7 +1105,8 @@
                     "Carbon dioxide and water",
                     "Glucose and oxygen"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-4-4.2-3"
                 },
                 {
                   "q": "A plant kept in a dark cupboard for a week turns yellow and weak because...",
@@ -1027,7 +1116,8 @@
                     "It could not photosynthesise without light",
                     "It was attacked by pests"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-4-4.2-4"
                 }
               ]
             },
@@ -1043,7 +1133,8 @@
                     "Animals get oxygen and food from plants",
                     "Animals can photosynthesise too"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-4-4.3-0"
                 },
                 {
                   "q": "If all plants disappeared, what would happen to the level of oxygen in the air?",
@@ -1053,7 +1144,8 @@
                     "It would decrease",
                     "It would increase"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-4-4.3-1"
                 },
                 {
                   "q": "Forests are called the 'lungs of the Earth' because they...",
@@ -1063,7 +1155,8 @@
                     "Release water vapour",
                     "Produce oxygen through photosynthesis"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-4-4.3-2"
                 },
                 {
                   "q": "Which of the following depends on photosynthesis for food?",
@@ -1073,7 +1166,8 @@
                     "Only carnivores (meat-eaters)",
                     "All living things directly or indirectly"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-4-4.3-3"
                 },
                 {
                   "q": "Besides producing food, photosynthesis also helps to...",
@@ -1083,7 +1177,8 @@
                     "Increase carbon dioxide",
                     "Make the soil acidic"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-4-4.3-4"
                 }
               ]
             }
@@ -1104,7 +1199,8 @@
                     "Curved lines",
                     "Straight lines"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.1-0"
                 },
                 {
                   "q": "The image formed in a pinhole camera is...",
@@ -1114,7 +1210,8 @@
                     "Upright and same size",
                     "Upside down"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.1-1"
                 },
                 {
                   "q": "You can see light through a straight tube but not through a bent tube because...",
@@ -1124,7 +1221,8 @@
                     "Light changes direction randomly",
                     "Light travels in straight lines"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.1-2"
                 },
                 {
                   "q": "Shadows form because light...",
@@ -1134,7 +1232,8 @@
                     "Cannot travel through opaque objects",
                     "Changes colour"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-5-5.1-3"
                 },
                 {
                   "q": "A student makes a row of cardboard with holes in a straight line and can see a candle through all holes. This proves that...",
@@ -1144,7 +1243,8 @@
                     "Light can bend",
                     "Holes make light brighter"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.1-4"
                 }
               ]
             },
@@ -1160,7 +1260,8 @@
                     "An object reflects light",
                     "Light is blocked by an opaque object"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.2-0"
                 },
                 {
                   "q": "When you move a torch closer to your hand, the shadow on the wall becomes...",
@@ -1170,7 +1271,8 @@
                     "Disappears",
                     "Darker only"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.2-1"
                 },
                 {
                   "q": "Why does your shadow change length during the day?",
@@ -1180,7 +1282,8 @@
                     "Because the ground changes",
                     "Because of wind"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.2-2"
                 },
                 {
                   "q": "If the light source is directly above an object, the shadow will be...",
@@ -1190,7 +1293,8 @@
                     "Long and thin",
                     "Fuzzy and big"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.2-3"
                 },
                 {
                   "q": "A transparent object like glass will...",
@@ -1200,7 +1304,8 @@
                     "Let most light pass through, forming a faint shadow",
                     "Create a dark shadow"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-5-5.2-4"
                 }
               ]
             },
@@ -1216,7 +1321,8 @@
                     "Is absorbed",
                     "Is reflected"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.3-0"
                 },
                 {
                   "q": "A periscope uses how many mirrors to see over obstacles?",
@@ -1226,7 +1332,8 @@
                     "Two mirrors",
                     "Three mirrors"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-5-5.3-1"
                 },
                 {
                   "q": "Why can you see your face in a calm lake?",
@@ -1236,7 +1343,8 @@
                     "Light passes through the water",
                     "Light reflects off the water surface"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.3-2"
                 },
                 {
                   "q": "A rough surface like a wall reflects light...",
@@ -1246,7 +1354,8 @@
                     "In one direction only",
                     "Not at all"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.3-3"
                 },
                 {
                   "q": "The angle at which light hits a mirror is called the angle of...",
@@ -1256,7 +1365,8 @@
                     "Refraction",
                     "Incidence"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.3-4"
                 }
               ]
             },
@@ -1272,7 +1382,8 @@
                     "Reflection",
                     "Diffraction"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.4-0"
                 },
                 {
                   "q": "Why do fish in a pond appear closer to the surface than they actually are?",
@@ -1282,7 +1393,8 @@
                     "Because of refraction of light",
                     "Because the water is shallow"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-5-5.4-1"
                 },
                 {
                   "q": "Refraction happens because light travels at different speeds in different...",
@@ -1292,7 +1404,8 @@
                     "Colours",
                     "Media (materials)"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-5-5.4-2"
                 },
                 {
                   "q": "Which of these is caused by refraction?",
@@ -1302,7 +1415,8 @@
                     "A shadow on the wall",
                     "Seeing your face in a mirror"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.4-3"
                 },
                 {
                   "q": "When light passes from air into water, it...",
@@ -1312,7 +1426,8 @@
                     "Speeds up",
                     "Reflects back"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.4-4"
                 }
               ]
             },
@@ -1328,7 +1443,8 @@
                     "Refraction and dispersion of light by water droplets",
                     "Shadows in the sky"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-5-5.5-0"
                 },
                 {
                   "q": "The colours of a rainbow are produced when white light is...",
@@ -1338,7 +1454,8 @@
                     "Absorbed",
                     "Reflected evenly"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.5-1"
                 },
                 {
                   "q": "Which is the correct order of colours in a rainbow from the outermost to innermost?",
@@ -1348,7 +1465,8 @@
                     "Violet, indigo, blue, green, yellow, orange, red",
                     "Red, yellow, orange, green, blue, violet, indigo"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-5-5.5-2"
                 },
                 {
                   "q": "When is the best time to see a rainbow?",
@@ -1358,7 +1476,8 @@
                     "On a cloudy day",
                     "At midnight"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-5-5.5-3"
                 },
                 {
                   "q": "Water droplets act like tiny... to split white light into colours.",
@@ -1368,7 +1487,8 @@
                     "Filters",
                     "Mirrors"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-5-5.5-4"
                 }
               ]
             }
@@ -1389,7 +1509,8 @@
                     "Vibrate",
                     "Melt"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-6-6.1-0"
                 },
                 {
                   "q": "When you pluck a guitar string, it vibrates and produces sound. If you hold the string still, the sound...",
@@ -1399,7 +1520,8 @@
                     "Stops",
                     "Gets louder"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-6-6.1-1"
                 },
                 {
                   "q": "The loudness of a sound depends on the...",
@@ -1409,7 +1531,8 @@
                     "Size of the vibration (amplitude)",
                     "Temperature of the air"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-6-6.1-2"
                 },
                 {
                   "q": "Human vocal cords produce sound when...",
@@ -1419,7 +1542,8 @@
                     "Air passes through them and they vibrate",
                     "They are still"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-6-6.1-3"
                 },
                 {
                   "q": "If you hit a drum harder, the sound becomes louder because the drum skin...",
@@ -1429,7 +1553,8 @@
                     "Changes shape permanently",
                     "Stops vibrating"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-6-6.1-4"
                 }
               ]
             },
@@ -1445,7 +1570,8 @@
                     "Liquid (water)",
                     "Solid (metal)"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.2-0"
                 },
                 {
                   "q": "Can sound travel through a vacuum (empty space)?",
@@ -1455,7 +1581,8 @@
                     "Yes, but only loud sounds",
                     "Yes, very fast"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-6-6.2-1"
                 },
                 {
                   "q": "You can hear sounds underwater because sound travels through...",
@@ -1465,7 +1592,8 @@
                     "The surface only",
                     "Water (liquid)"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.2-2"
                 },
                 {
                   "q": "When you put your ear on a railway track, you can hear a train from far away. This is because sound travels well through...",
@@ -1475,7 +1603,8 @@
                     "Air",
                     "The metal tracks (solid)"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.2-3"
                 },
                 {
                   "q": "Whispering through a long tube allows your friend to hear you because sound travels through the...",
@@ -1485,7 +1614,8 @@
                     "Air inside the tube",
                     "Vacuum inside"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-6-6.2-4"
                 }
               ]
             },
@@ -1501,7 +1631,8 @@
                     "Absorbed",
                     "Refracted"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-6-6.3-0"
                 },
                 {
                   "q": "You shout in a large empty hall and hear your voice repeat. This is because sound...",
@@ -1511,7 +1642,8 @@
                     "Travels slower in halls",
                     "Bounces off the walls"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.3-1"
                 },
                 {
                   "q": "Which surface would reflect sound the best?",
@@ -1521,7 +1653,8 @@
                     "Curtains",
                     "Hard concrete wall"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.3-2"
                 },
                 {
                   "q": "Sonar technology uses reflected sound waves to...",
@@ -1531,7 +1664,8 @@
                     "Send messages",
                     "Detect objects underwater"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.3-3"
                 },
                 {
                   "q": "To reduce echoes in a room, you should use...",
@@ -1541,7 +1675,8 @@
                     "Metal sheets",
                     "Soft materials like curtains and carpets"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.3-4"
                 }
               ]
             },
@@ -1557,7 +1692,8 @@
                     "A baby cooing",
                     "Loud construction drilling"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.4-0"
                 },
                 {
                   "q": "Long-term exposure to loud noise can cause...",
@@ -1567,7 +1703,8 @@
                     "Hearing loss",
                     "Better hearing"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-6-6.4-1"
                 },
                 {
                   "q": "Which of the following can help reduce noise pollution?",
@@ -1577,7 +1714,8 @@
                     "Playing loud music",
                     "Honking car horns"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-6-6.4-2"
                 },
                 {
                   "q": "Sound that is useful for communication includes...",
@@ -1587,7 +1725,8 @@
                     "Traffic noise",
                     "Fire alarms"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-6-6.4-3"
                 },
                 {
                   "q": "Why should you wear earplugs when operating loud machinery?",
@@ -1597,7 +1736,8 @@
                     "To keep ears warm",
                     "To hear better"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-6-6.4-4"
                 }
               ]
             }
@@ -1618,7 +1758,8 @@
                     "Stars",
                     "Electricity"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-7-7.1-0"
                 },
                 {
                   "q": "Which of these is a source of energy for living things?",
@@ -1628,7 +1769,8 @@
                     "Books",
                     "Food"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.1-1"
                 },
                 {
                   "q": "Petrol is an energy source for...",
@@ -1638,7 +1780,8 @@
                     "Humans",
                     "Cars and vehicles"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.1-2"
                 },
                 {
                   "q": "Wind can be used to generate electricity using...",
@@ -1648,7 +1791,8 @@
                     "Solar panels",
                     "Wind turbines"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.1-3"
                 },
                 {
                   "q": "Water flowing in a dam can be used to produce electricity. This energy source is called...",
@@ -1658,7 +1802,8 @@
                     "Wind energy",
                     "Hydroelectric energy"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.1-4"
                 }
               ]
             },
@@ -1674,7 +1819,8 @@
                     "Heat energy",
                     "Kinetic energy"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.2-0"
                 },
                 {
                   "q": "The energy stored in a battery is an example of...",
@@ -1684,7 +1830,8 @@
                     "Sound energy",
                     "Kinetic energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.2-1"
                 },
                 {
                   "q": "A toaster converts electrical energy into which form?",
@@ -1694,7 +1841,8 @@
                     "Light energy",
                     "Heat energy"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.2-2"
                 },
                 {
                   "q": "A stretched rubber band has which type of energy?",
@@ -1704,7 +1852,8 @@
                     "Kinetic energy",
                     "Potential energy"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.2-3"
                 },
                 {
                   "q": "A light bulb mainly converts electrical energy into...",
@@ -1714,7 +1863,8 @@
                     "Light and heat",
                     "Chemical and light"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-7-7.2-4"
                 }
               ]
             },
@@ -1730,7 +1880,8 @@
                     "Heat energy only",
                     "Light energy"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-7-7.3-0"
                 },
                 {
                   "q": "A solar calculator converts light energy into...",
@@ -1740,7 +1891,8 @@
                     "Kinetic energy",
                     "Sound energy"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-7-7.3-1"
                 },
                 {
                   "q": "When you eat food, your body converts chemical energy into...",
@@ -1750,7 +1902,8 @@
                     "Kinetic energy and heat energy",
                     "Only heat energy"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-7-7.3-2"
                 },
                 {
                   "q": "A microphone converts sound energy into...",
@@ -1760,7 +1913,8 @@
                     "Kinetic energy",
                     "Heat energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.3-3"
                 },
                 {
                   "q": "In a car engine, chemical energy from petrol is transformed into...",
@@ -1770,7 +1924,8 @@
                     "Kinetic energy and heat",
                     "Light and sound only"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-7-7.3-4"
                 }
               ]
             },
@@ -1786,7 +1941,8 @@
                     "Coal",
                     "Petroleum"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.4-0"
                 },
                 {
                   "q": "Fossil fuels like coal and oil are examples of...",
@@ -1796,7 +1952,8 @@
                     "Solar energy",
                     "Renewable energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.4-1"
                 },
                 {
                   "q": "Why is solar energy considered renewable?",
@@ -1806,7 +1963,8 @@
                     "It is expensive",
                     "It does not exist at night"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.4-2"
                 },
                 {
                   "q": "One disadvantage of non-renewable energy is that it...",
@@ -1816,7 +1974,8 @@
                     "Is available everywhere",
                     "Is clean and safe"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-7-7.4-3"
                 },
                 {
                   "q": "Hydroelectric power uses flowing water to generate electricity. It is a...",
@@ -1826,7 +1985,8 @@
                     "Renewable energy source",
                     "Non-renewable energy source"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-7-7.4-4"
                 }
               ]
             },
@@ -1842,7 +2002,8 @@
                     "Use the air conditioner with windows open",
                     "Leave lights on all day"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.5-0"
                 },
                 {
                   "q": "Using energy-efficient LED bulbs instead of regular bulbs helps to...",
@@ -1852,7 +2013,8 @@
                     "Produce more heat",
                     "Make rooms darker"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-7-7.5-1"
                 },
                 {
                   "q": "Which is a responsible way to use energy at home?",
@@ -1862,7 +2024,8 @@
                     "Set the air conditioner to 16°C all day",
                     "Unplug chargers when not in use"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-7-7.5-2"
                 },
                 {
                   "q": "Why should we avoid burning too much fossil fuel?",
@@ -1872,7 +2035,8 @@
                     "It causes pollution and contributes to global warming",
                     "It is too expensive to buy"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-7-7.5-3"
                 },
                 {
                   "q": "Taking public transport instead of driving a car helps to...",
@@ -1882,7 +2046,8 @@
                     "Save energy and reduce air pollution",
                     "Make the journey longer"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-7-7.5-4"
                 }
               ]
             }
@@ -1903,7 +2068,8 @@
                     "Rubber trees (plants)",
                     "Minerals"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-8-8.1-0"
                 },
                 {
                   "q": "Plastic is an example of a...",
@@ -1913,7 +2079,8 @@
                     "Plant-based material",
                     "Mineral"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-8-8.1-1"
                 },
                 {
                   "q": "Wool comes from which animal?",
@@ -1923,7 +2090,8 @@
                     "Sheep",
                     "Horse"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-8-8.1-2"
                 },
                 {
                   "q": "Glass is made by heating which natural material?",
@@ -1933,7 +2101,8 @@
                     "Plastic",
                     "Metal"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-8-8.1-3"
                 },
                 {
                   "q": "Leather for bags and shoes comes from...",
@@ -1943,7 +2112,8 @@
                     "Plants",
                     "Plastic bottles"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-8-8.1-4"
                 }
               ]
             },
@@ -1959,7 +2129,8 @@
                     "Brittle",
                     "Transparent"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-8-8.2-0"
                 },
                 {
                   "q": "Which property makes metal a good material for electrical wires?",
@@ -1969,7 +2140,8 @@
                     "Transparency",
                     "Water resistance"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-8-8.2-1"
                 },
                 {
                   "q": "An umbrella is made of waterproof fabric because it needs to be...",
@@ -1979,7 +2151,8 @@
                     "Flexible",
                     "Water resistant"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-8-8.2-2"
                 },
                 {
                   "q": "Glass is used for windows because it is...",
@@ -1989,7 +2162,8 @@
                     "Transparent",
                     "Flexible"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-8-8.2-3"
                 },
                 {
                   "q": "A material that breaks easily when dropped is called...",
@@ -1999,7 +2173,8 @@
                     "Brittle",
                     "Strong"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-8-8.2-4"
                 }
               ]
             },
@@ -2015,7 +2190,8 @@
                     "Metal is flexible",
                     "Metal is transparent"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-8-8.3-0"
                 },
                 {
                   "q": "Why are car tyres made of rubber?",
@@ -2025,7 +2201,8 @@
                     "Rubber conducts electricity",
                     "Rubber is transparent"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-8-8.3-1"
                 },
                 {
                   "q": "Why is cotton used to make T-shirts?",
@@ -2035,7 +2212,8 @@
                     "It is shiny",
                     "It is soft and absorbs sweat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-8-8.3-2"
                 },
                 {
                   "q": "A telescope lens is made of glass because glass is...",
@@ -2045,7 +2223,8 @@
                     "Opaque and strong",
                     "Transparent and can be shaped into lenses"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-8-8.3-3"
                 },
                 {
                   "q": "Wood is commonly used to make furniture because it is...",
@@ -2055,7 +2234,8 @@
                     "A good electrical conductor",
                     "Easily breakable"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-8-8.3-4"
                 }
               ]
             }
@@ -2076,7 +2256,8 @@
                     "Magnetism",
                     "Wind"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.1-0"
                 },
                 {
                   "q": "Which planet has the strongest gravity in our solar system?",
@@ -2086,7 +2267,8 @@
                     "Mars",
                     "Earth"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.1-1"
                 },
                 {
                   "q": "Why do astronauts float in space?",
@@ -2096,7 +2278,8 @@
                     "They are lighter",
                     "The spaceship pushes them up"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.1-2"
                 },
                 {
                   "q": "Without gravity, what would happen on Earth?",
@@ -2106,7 +2289,8 @@
                     "It would always be daytime",
                     "The air would disappear"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.1-3"
                 },
                 {
                   "q": "A feather and a stone are dropped at the same time. In normal air, which hits the ground first?",
@@ -2116,7 +2300,8 @@
                     "Neither falls",
                     "The feather"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.1-4"
                 }
               ]
             },
@@ -2132,7 +2317,8 @@
                     "12 hours",
                     "7 days"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.2-0"
                 },
                 {
                   "q": "The Earth rotates on its...",
@@ -2142,7 +2328,8 @@
                     "Equator",
                     "Poles"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.2-1"
                 },
                 {
                   "q": "The Sun appears to move across the sky from east to west because...",
@@ -2152,7 +2339,8 @@
                     "Earth rotates from west to east",
                     "The Sun orbits Earth"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.2-2"
                 },
                 {
                   "q": "When the side of Earth facing the Sun experiences day, the opposite side experiences...",
@@ -2162,7 +2350,8 @@
                     "Noon",
                     "Night"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-9-9.2-3"
                 },
                 {
                   "q": "The imaginary line around which Earth spins is called the...",
@@ -2172,7 +2361,8 @@
                     "Axis",
                     "Equator"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.2-4"
                 }
               ]
             },
@@ -2188,7 +2378,8 @@
                     "Day and night",
                     "Seasons"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.3-0"
                 },
                 {
                   "q": "At night, stars appear to move across the sky because...",
@@ -2198,7 +2389,8 @@
                     "The Moon is pulling them",
                     "Stars are moving fast"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.3-1"
                 },
                 {
                   "q": "If it is 12 noon in Malaysia, what time would it be on the opposite side of Earth?",
@@ -2208,7 +2400,8 @@
                     "6 am",
                     "6 pm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.3-2"
                 },
                 {
                   "q": "The apparent movement of the Sun from east to west is caused by...",
@@ -2218,7 +2411,8 @@
                     "The Sun moving fast",
                     "The Sun rotating around Earth"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.3-3"
                 },
                 {
                   "q": "One complete rotation of Earth causes...",
@@ -2228,7 +2422,8 @@
                     "One month",
                     "One day"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-9-9.3-4"
                 }
               ]
             },
@@ -2244,7 +2439,8 @@
                     "365 days",
                     "7 days"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.4-0"
                 },
                 {
                   "q": "The path of Earth around the Sun is called its...",
@@ -2254,7 +2450,8 @@
                     "Axis",
                     "Equator"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.4-1"
                 },
                 {
                   "q": "What causes the four seasons on Earth?",
@@ -2264,7 +2461,8 @@
                     "Earth's rotation speed",
                     "The Moon's gravity"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-9-9.4-2"
                 },
                 {
                   "q": "During which season are the days longest in the Northern Hemisphere?",
@@ -2274,7 +2472,8 @@
                     "Spring",
                     "Autumn"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.4-3"
                 },
                 {
                   "q": "Countries near the equator, like Malaysia, experience...",
@@ -2284,7 +2483,8 @@
                     "Hot and wet weather all year with no distinct seasons",
                     "Only winter"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.4-4"
                 }
               ]
             },
@@ -2300,7 +2500,8 @@
                     "The Sun",
                     "Earth"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.5-0"
                 },
                 {
                   "q": "Which is the largest planet in the Solar System?",
@@ -2310,7 +2511,8 @@
                     "Jupiter",
                     "Uranus"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.5-1"
                 },
                 {
                   "q": "Which planet is closest to the Sun?",
@@ -2320,7 +2522,8 @@
                     "Venus",
                     "Mercury"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-9-9.5-2"
                 },
                 {
                   "q": "The Earth's natural satellite is the...",
@@ -2330,7 +2533,8 @@
                     "Moon",
                     "Venus"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-9-9.5-3"
                 },
                 {
                   "q": "Which planet is known as the 'Red Planet'?",
@@ -2340,7 +2544,8 @@
                     "Saturn",
                     "Jupiter"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-9-9.5-4"
                 }
               ]
             }
@@ -2361,7 +2566,8 @@
                     "Force",
                     "Load"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-10-10.1-0"
                 },
                 {
                   "q": "In a see-saw, the children sit on either end and the middle is the...",
@@ -2371,7 +2577,8 @@
                     "Bar",
                     "Force"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4-10-10.1-1"
                 },
                 {
                   "q": "Scissors are an example of which class of lever?",
@@ -2381,7 +2588,8 @@
                     "First class lever",
                     "Third class lever"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-10-10.1-2"
                 },
                 {
                   "q": "A wheelbarrow is an example of a second-class lever because the load is between...",
@@ -2391,7 +2599,8 @@
                     "The force and the load",
                     "Two fulcrums"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-10-10.1-3"
                 },
                 {
                   "q": "The closer the load is to the fulcrum, the...",
@@ -2401,7 +2610,8 @@
                     "The heavier the load becomes",
                     "The lever does not work"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-10-10.1-4"
                 }
               ]
             },
@@ -2417,7 +2627,8 @@
                     "Lever",
                     "Inclined plane"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-10-10.2-0"
                 },
                 {
                   "q": "A flag is raised using a rope over a wheel at the top of a pole. This is a...",
@@ -2427,7 +2638,8 @@
                     "Wedge",
                     "Pulley"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-10-10.2-1"
                 },
                 {
                   "q": "A knife blade uses which simple machine to cut?",
@@ -2437,7 +2649,8 @@
                     "Pulley",
                     "Wedge"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-10-10.2-2"
                 },
                 {
                   "q": "A screw is actually an inclined plane...",
@@ -2447,7 +2660,8 @@
                     "Straight and flat",
                     "Cut into pieces"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-10-10.2-3"
                 },
                 {
                   "q": "The steering wheel of a car is an example of a...",
@@ -2457,7 +2671,8 @@
                     "Pulley",
                     "Screw"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-10-10.2-4"
                 }
               ]
             },
@@ -2473,7 +2688,8 @@
                     "Only electronic parts",
                     "Only one simple machine"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-10-10.3-0"
                 },
                 {
                   "q": "A bicycle uses gears and chains, which are combinations of which simple machine?",
@@ -2483,7 +2699,8 @@
                     "Lever and inclined plane",
                     "Pulley and wheel and axle"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-10-10.3-1"
                 },
                 {
                   "q": "Which of the following is a complex machine?",
@@ -2493,7 +2710,8 @@
                     "A bicycle",
                     "A see-saw"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4-10-10.3-2"
                 },
                 {
                   "q": "Scissors are a complex machine that combines...",
@@ -2503,7 +2721,8 @@
                     "A pulley and a lever",
                     "A wheel and axle"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4-10-10.3-3"
                 },
                 {
                   "q": "Technology has helped humans build complex machines that can...",
@@ -2513,7 +2732,8 @@
                     "Only move small objects",
                     "Perform difficult tasks more efficiently"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4-10-10.3-4"
                 }
               ]
             }

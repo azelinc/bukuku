@@ -14,33 +14,69 @@
               "questions": [
                 {
                   "q": "Which science process skill involves using your senses to describe the colour, shape, and texture of an object?",
-                  "a": ["Classifying", "Measuring", "Predicting", "Observing"],
-                  "c": 3
+                  "a": [
+                    "Classifying",
+                    "Measuring",
+                    "Predicting",
+                    "Observing"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-1-1.1-0"
                 },
                 {
                   "q": "A student groups different leaves by their shape and vein patterns. Which science process skill is being used?",
-                  "a": ["Observing", "Classifying", "Measuring", "Communicating"],
-                  "c": 1
+                  "a": [
+                    "Observing",
+                    "Classifying",
+                    "Measuring",
+                    "Communicating"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.1-1"
                 },
                 {
                   "q": "Ali uses a stopwatch to record how long it takes for sugar to dissolve in water. Which skill is he demonstrating?",
-                  "a": ["Predicting", "Classifying", "Measuring", "Inferring"],
-                  "c": 2
+                  "a": [
+                    "Predicting",
+                    "Classifying",
+                    "Measuring",
+                    "Inferring"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.1-2"
                 },
                 {
                   "q": "After noticing dark clouds in the sky, Amin says, 'I think it will rain this evening.' Which science process skill is he using?",
-                  "a": ["Observing", "Predicting", "Measuring", "Communicating"],
-                  "c": 1
+                  "a": [
+                    "Observing",
+                    "Predicting",
+                    "Measuring",
+                    "Communicating"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.1-3"
                 },
                 {
                   "q": "Presenting data from an experiment using a bar chart is an example of which science process skill?",
-                  "a": ["Classifying", "Measuring", "Predicting", "Communicating"],
-                  "c": 3
+                  "a": [
+                    "Classifying",
+                    "Measuring",
+                    "Predicting",
+                    "Communicating"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-1-1.1-4"
                 },
                 {
                   "q": "A student notices that a metal spoon feels colder than a wooden spoon at the same temperature. Which skill is being used?",
-                  "a": ["Classifying", "Observing", "Predicting", "Measuring"],
-                  "c": 1
+                  "a": [
+                    "Classifying",
+                    "Observing",
+                    "Predicting",
+                    "Measuring"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.1-5"
                 }
               ]
             },
@@ -50,33 +86,69 @@
               "questions": [
                 {
                   "q": "When using a microscope, which part should you look through to observe a specimen?",
-                  "a": ["Stage", "Mirror", "Eyepiece", "Objective lens"],
-                  "c": 2
+                  "a": [
+                    "Stage",
+                    "Mirror",
+                    "Eyepiece",
+                    "Objective lens"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.2-0"
                 },
                 {
                   "q": "What is the correct way to hold a test tube when heating a liquid?",
-                  "a": ["Pointing it towards yourself", "Holding it with bare hands", "Using a test tube holder and pointing away from yourself and others", "Laying it flat on the table"],
-                  "c": 2
+                  "a": [
+                    "Pointing it towards yourself",
+                    "Holding it with bare hands",
+                    "Using a test tube holder and pointing away from yourself and others",
+                    "Laying it flat on the table"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.2-1"
                 },
                 {
                   "q": "When drawing a scientific diagram of a specimen, you should...",
-                  "a": ["Use coloured pencils and shade heavily", "Draw only the outline with a pencil and label parts", "Use a pen and draw quickly", "Copy from a book without observing"],
-                  "c": 1
+                  "a": [
+                    "Use coloured pencils and shade heavily",
+                    "Draw only the outline with a pencil and label parts",
+                    "Use a pen and draw quickly",
+                    "Copy from a book without observing"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.2-2"
                 },
                 {
                   "q": "After finishing an experiment, the proper procedure is to...",
-                  "a": ["Leave the equipment on the table", "Throw everything in the bin", "Clean, dry, and store the apparatus properly", "Wash only the glass items"],
-                  "c": 2
+                  "a": [
+                    "Leave the equipment on the table",
+                    "Throw everything in the bin",
+                    "Clean, dry, and store the apparatus properly",
+                    "Wash only the glass items"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.2-3"
                 },
                 {
                   "q": "Which of the following is a correct manipulative skill when handling a live earthworm?",
-                  "a": ["Squeeze it tightly", "Use forceps gently and keep it moist", "Pull it apart", "Leave it in direct sunlight"],
-                  "c": 1
+                  "a": [
+                    "Squeeze it tightly",
+                    "Use forceps gently and keep it moist",
+                    "Pull it apart",
+                    "Leave it in direct sunlight"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.2-4"
                 },
                 {
                   "q": "Why should you wear safety goggles during a science experiment?",
-                  "a": ["To look more professional", "To keep your hair neat", "To protect your eyes from splashes or flying objects", "To help you see better"],
-                  "c": 2
+                  "a": [
+                    "To look more professional",
+                    "To keep your hair neat",
+                    "To protect your eyes from splashes or flying objects",
+                    "To help you see better"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.2-5"
                 }
               ]
             },
@@ -86,33 +158,69 @@
               "questions": [
                 {
                   "q": "In a fair experiment, which variable should you change on purpose?",
-                  "a": ["Responding variable", "Manipulated variable", "Constant variable", "All variables"],
-                  "c": 1
+                  "a": [
+                    "Responding variable",
+                    "Manipulated variable",
+                    "Constant variable",
+                    "All variables"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.3-0"
                 },
                 {
                   "q": "A student wants to test if the amount of water affects plant growth. What is the responding variable?",
-                  "a": ["Amount of water given", "Type of plant used", "Height of the plant", "Amount of sunlight"],
-                  "c": 2
+                  "a": [
+                    "Amount of water given",
+                    "Type of plant used",
+                    "Height of the plant",
+                    "Amount of sunlight"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.3-1"
                 },
                 {
                   "q": "Why is it important to keep all constant variables the same in an experiment?",
-                  "a": ["To make the experiment faster", "To ensure the results are due to the manipulated variable only", "To use more equipment", "To confuse other scientists"],
-                  "c": 1
+                  "a": [
+                    "To make the experiment faster",
+                    "To ensure the results are due to the manipulated variable only",
+                    "To use more equipment",
+                    "To confuse other scientists"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.3-2"
                 },
                 {
                   "q": "What is the first step when designing a simple experiment?",
-                  "a": ["Collect data", "Make a conclusion", "Identify the problem or question", "Buy equipment"],
-                  "c": 2
+                  "a": [
+                    "Collect data",
+                    "Make a conclusion",
+                    "Identify the problem or question",
+                    "Buy equipment"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.3-3"
                 },
                 {
                   "q": "After conducting an experiment, you find that your results do not support your hypothesis. What should you do?",
-                  "a": ["Change the results to match your hypothesis", "Ignore the results", "Accept the results and revise your hypothesis", "Repeat the experiment until it matches"],
-                  "c": 2
+                  "a": [
+                    "Change the results to match your hypothesis",
+                    "Ignore the results",
+                    "Accept the results and revise your hypothesis",
+                    "Repeat the experiment until it matches"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-1-1.3-4"
                 },
                 {
                   "q": "A student tests how the type of surface affects the distance a ball rolls. Which is the manipulated variable?",
-                  "a": ["Distance the ball rolls", "Type of surface", "Height of the ramp", "Size of the ball"],
-                  "c": 1
+                  "a": [
+                    "Distance the ball rolls",
+                    "Type of surface",
+                    "Height of the ramp",
+                    "Size of the ball"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-1-1.3-5"
                 }
               ]
             }
@@ -127,33 +235,69 @@
               "questions": [
                 {
                   "q": "What is the main function of the human skeleton?",
-                  "a": ["To produce blood cells only", "To store fat only", "To support the body, protect organs, and help movement", "To digest food"],
-                  "c": 2
+                  "a": [
+                    "To produce blood cells only",
+                    "To store fat only",
+                    "To support the body, protect organs, and help movement",
+                    "To digest food"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.1-0"
                 },
                 {
                   "q": "Which bones protect the heart and lungs?",
-                  "a": ["Skull", "Rib cage", "Backbone", "Femur"],
-                  "c": 1
+                  "a": [
+                    "Skull",
+                    "Rib cage",
+                    "Backbone",
+                    "Femur"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.1-1"
                 },
                 {
                   "q": "The skull protects which organ?",
-                  "a": ["Heart", "Lungs", "Brain", "Stomach"],
-                  "c": 2
+                  "a": [
+                    "Heart",
+                    "Lungs",
+                    "Brain",
+                    "Stomach"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.1-2"
                 },
                 {
                   "q": "The backbone (spine) is also known as the...",
-                  "a": ["Femur", "Vertebral column", "Sternum", "Pelvis"],
-                  "c": 1
+                  "a": [
+                    "Femur",
+                    "Vertebral column",
+                    "Sternum",
+                    "Pelvis"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.1-3"
                 },
                 {
                   "q": "Which of the following is NOT a function of the skeleton?",
-                  "a": ["Supporting the body", "Protecting internal organs", "Producing vitamins", "Allowing movement"],
-                  "c": 2
+                  "a": [
+                    "Supporting the body",
+                    "Protecting internal organs",
+                    "Producing vitamins",
+                    "Allowing movement"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.1-4"
                 },
                 {
                   "q": "The longest bone in the human body is the...",
-                  "a": ["Skull", "Rib", "Femur (thigh bone)", "Spine"],
-                  "c": 2
+                  "a": [
+                    "Skull",
+                    "Rib",
+                    "Femur (thigh bone)",
+                    "Spine"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.1-5"
                 }
               ]
             },
@@ -163,33 +307,69 @@
               "questions": [
                 {
                   "q": "What happens to a muscle when it contracts?",
-                  "a": ["It becomes longer", "It becomes shorter and thicker", "It stays the same", "It disappears"],
-                  "c": 1
+                  "a": [
+                    "It becomes longer",
+                    "It becomes shorter and thicker",
+                    "It stays the same",
+                    "It disappears"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.2-0"
                 },
                 {
                   "q": "Muscles that work in pairs to move a bone are called...",
-                  "a": ["Opposing pairs", "Twin muscles", "Identical muscles", "Parallel muscles"],
-                  "c": 0
+                  "a": [
+                    "Opposing pairs",
+                    "Twin muscles",
+                    "Identical muscles",
+                    "Parallel muscles"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-2-2.2-1"
                 },
                 {
                   "q": "When you bend your arm, the biceps muscle...",
-                  "a": ["Relaxes", "Contracts and becomes shorter", "Stays the same", "Lengthens"],
-                  "c": 1
+                  "a": [
+                    "Relaxes",
+                    "Contracts and becomes shorter",
+                    "Stays the same",
+                    "Lengthens"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.2-2"
                 },
                 {
                   "q": "Which type of muscle is found in the heart?",
-                  "a": ["Skeletal muscle", "Smooth muscle", "Cardiac muscle", "Voluntary muscle"],
-                  "c": 2
+                  "a": [
+                    "Skeletal muscle",
+                    "Smooth muscle",
+                    "Cardiac muscle",
+                    "Voluntary muscle"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.2-3"
                 },
                 {
                   "q": "When you straighten your arm, the triceps muscle contracts and the biceps muscle...",
-                  "a": ["Also contracts", "Relaxes", "Does nothing", "Shortens"],
-                  "c": 1
+                  "a": [
+                    "Also contracts",
+                    "Relaxes",
+                    "Does nothing",
+                    "Shortens"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.2-4"
                 },
                 {
                   "q": "Smooth muscles are found in which part of the body?",
-                  "a": ["Arms and legs", "Stomach and intestines", "Skull", "Fingers"],
-                  "c": 1
+                  "a": [
+                    "Arms and legs",
+                    "Stomach and intestines",
+                    "Skull",
+                    "Fingers"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.2-5"
                 }
               ]
             },
@@ -199,33 +379,69 @@
               "questions": [
                 {
                   "q": "Which type of joint allows movement in only one direction?",
-                  "a": ["Ball-and-socket joint", "Hinge joint", "Fixed joint", "Pivot joint"],
-                  "c": 1
+                  "a": [
+                    "Ball-and-socket joint",
+                    "Hinge joint",
+                    "Fixed joint",
+                    "Pivot joint"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.3-0"
                 },
                 {
                   "q": "The elbow is an example of which type of joint?",
-                  "a": ["Ball-and-socket joint", "Fixed joint", "Hinge joint", "Pivot joint"],
-                  "c": 2
+                  "a": [
+                    "Ball-and-socket joint",
+                    "Fixed joint",
+                    "Hinge joint",
+                    "Pivot joint"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.3-1"
                 },
                 {
                   "q": "The shoulder joint allows movement in many directions because it is a...",
-                  "a": ["Hinge joint", "Fixed joint", "Ball-and-socket joint", "Gliding joint"],
-                  "c": 2
+                  "a": [
+                    "Hinge joint",
+                    "Fixed joint",
+                    "Ball-and-socket joint",
+                    "Gliding joint"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.3-2"
                 },
                 {
                   "q": "The joints between the bones of the skull are examples of...",
-                  "a": ["Hinge joints", "Ball-and-socket joints", "Fixed joints", "Pivot joints"],
-                  "c": 2
+                  "a": [
+                    "Hinge joints",
+                    "Ball-and-socket joints",
+                    "Fixed joints",
+                    "Pivot joints"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.3-3"
                 },
                 {
                   "q": "Which joint allows you to swing your arm in a circle?",
-                  "a": ["Elbow joint", "Knee joint", "Shoulder joint", "Wrist joint"],
-                  "c": 2
+                  "a": [
+                    "Elbow joint",
+                    "Knee joint",
+                    "Shoulder joint",
+                    "Wrist joint"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.3-4"
                 },
                 {
                   "q": "The knee joint is an example of a hinge joint. What movement does it allow?",
-                  "a": ["Rotating in circles", "Bending and straightening in one direction", "Moving sideways only", "No movement at all"],
-                  "c": 1
+                  "a": [
+                    "Rotating in circles",
+                    "Bending and straightening in one direction",
+                    "Moving sideways only",
+                    "No movement at all"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.3-5"
                 }
               ]
             },
@@ -235,33 +451,69 @@
               "questions": [
                 {
                   "q": "What is good posture?",
-                  "a": ["Slouching while sitting", "Lying down all day", "Keeping your back straight when sitting or standing", "Bending forward when walking"],
-                  "c": 2
+                  "a": [
+                    "Slouching while sitting",
+                    "Lying down all day",
+                    "Keeping your back straight when sitting or standing",
+                    "Bending forward when walking"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.4-0"
                 },
                 {
                   "q": "Why is regular exercise important for the skeleton and muscles?",
-                  "a": ["It makes you taller", "It weakens the bones", "It strengthens bones and muscles", "It has no effect on bones"],
-                  "c": 2
+                  "a": [
+                    "It makes you taller",
+                    "It weakens the bones",
+                    "It strengthens bones and muscles",
+                    "It has no effect on bones"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.4-1"
                 },
                 {
                   "q": "Which nutrient is important for keeping bones strong and healthy?",
-                  "a": ["Vitamin C", "Iron", "Calcium", "Protein only"],
-                  "c": 2
+                  "a": [
+                    "Vitamin C",
+                    "Iron",
+                    "Calcium",
+                    "Protein only"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.4-2"
                 },
                 {
                   "q": "What could happen if you have poor posture for a long time?",
-                  "a": ["You become stronger", "Your bones become thicker", "You may develop back and neck pain", "Nothing happens"],
-                  "c": 2
+                  "a": [
+                    "You become stronger",
+                    "Your bones become thicker",
+                    "You may develop back and neck pain",
+                    "Nothing happens"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-2-2.4-3"
                 },
                 {
                   "q": "Why should you stretch before exercise?",
-                  "a": ["To make exercise harder", "To warm up muscles and prevent injuries", "To cool down the body", "To grow taller"],
-                  "c": 1
+                  "a": [
+                    "To make exercise harder",
+                    "To warm up muscles and prevent injuries",
+                    "To cool down the body",
+                    "To grow taller"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.4-4"
                 },
                 {
                   "q": "Carrying a heavy school bag on one shoulder can cause...",
-                  "a": ["Stronger shoulder muscles", "Curved spine and back pain", "Better balance", "No problems at all"],
-                  "c": 1
+                  "a": [
+                    "Stronger shoulder muscles",
+                    "Curved spine and back pain",
+                    "Better balance",
+                    "No problems at all"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-2-2.4-5"
                 }
               ]
             }
@@ -276,33 +528,69 @@
               "questions": [
                 {
                   "q": "Which food preservation method involves removing water from food to prevent bacterial growth?",
-                  "a": ["Freezing", "Drying", "Pickling", "Canning"],
-                  "c": 1
+                  "a": [
+                    "Freezing",
+                    "Drying",
+                    "Pickling",
+                    "Canning"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.1-0"
                 },
                 {
                   "q": "Salt is used in food preservation because it...",
-                  "a": ["Adds colour to food", "Makes food taste sweet", "Draws out moisture from food, preventing bacterial growth", "Makes food harder"],
-                  "c": 2
+                  "a": [
+                    "Adds colour to food",
+                    "Makes food taste sweet",
+                    "Draws out moisture from food, preventing bacterial growth",
+                    "Makes food harder"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-3-3.1-1"
                 },
                 {
                   "q": "Which preservation method uses vinegar or a salty solution to preserve vegetables?",
-                  "a": ["Freezing", "Drying", "Boiling", "Pickling"],
-                  "c": 3
+                  "a": [
+                    "Freezing",
+                    "Drying",
+                    "Boiling",
+                    "Pickling"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-3-3.1-2"
                 },
                 {
                   "q": "Canned food lasts a long time because...",
-                  "a": ["The can is made of plastic", "It is sealed airtight after heating, which kills bacteria", "The can is colourful", "It is kept in the dark"],
-                  "c": 1
+                  "a": [
+                    "The can is made of plastic",
+                    "It is sealed airtight after heating, which kills bacteria",
+                    "The can is colourful",
+                    "It is kept in the dark"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.1-3"
                 },
                 {
                   "q": "Which of the following foods is preserved by freezing?",
-                  "a": ["Dried fish", "Pickled onions", "Frozen vegetables", "Canned sardines"],
-                  "c": 2
+                  "a": [
+                    "Dried fish",
+                    "Pickled onions",
+                    "Frozen vegetables",
+                    "Canned sardines"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-3-3.1-4"
                 },
                 {
                   "q": "Boiling milk before storing it helps to...",
-                  "a": ["Make it taste sweeter", "Change its colour", "Kill harmful bacteria and preserve it longer", "Turn it into cheese"],
-                  "c": 2
+                  "a": [
+                    "Make it taste sweeter",
+                    "Change its colour",
+                    "Kill harmful bacteria and preserve it longer",
+                    "Turn it into cheese"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-3-3.1-5"
                 }
               ]
             },
@@ -312,33 +600,69 @@
               "questions": [
                 {
                   "q": "What causes food to spoil?",
-                  "a": ["Too much light", "Growth of microorganisms like bacteria and mould", "The container it is kept in", "The colour of the food"],
-                  "c": 1
+                  "a": [
+                    "Too much light",
+                    "Growth of microorganisms like bacteria and mould",
+                    "The container it is kept in",
+                    "The colour of the food"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.2-0"
                 },
                 {
                   "q": "Why does bread left out for several days grow green mould?",
-                  "a": ["Because it turns into a new food", "Because mould spores land on it and grow in suitable conditions", "Because it changes colour naturally", "Because it was cooked too long"],
-                  "c": 1
+                  "a": [
+                    "Because it turns into a new food",
+                    "Because mould spores land on it and grow in suitable conditions",
+                    "Because it changes colour naturally",
+                    "Because it was cooked too long"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.2-1"
                 },
                 {
                   "q": "Eating spoiled food can cause...",
-                  "a": ["Stronger bones", "Better eyesight", "Food poisoning", "Faster growth"],
-                  "c": 2
+                  "a": [
+                    "Stronger bones",
+                    "Better eyesight",
+                    "Food poisoning",
+                    "Faster growth"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-3-3.2-2"
                 },
                 {
                   "q": "One of the main reasons to preserve food is to...",
-                  "a": ["Make food more expensive", "Extend its shelf life and reduce waste", "Change its flavour completely", "Make it harder to eat"],
-                  "c": 1
+                  "a": [
+                    "Make food more expensive",
+                    "Extend its shelf life and reduce waste",
+                    "Change its flavour completely",
+                    "Make it harder to eat"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.2-3"
                 },
                 {
                   "q": "Which of the following conditions do microorganisms need to grow on food?",
-                  "a": ["Cold and dry conditions only", "Warmth, moisture, and air", "Complete darkness only", "Very high pressure"],
-                  "c": 1
+                  "a": [
+                    "Cold and dry conditions only",
+                    "Warmth, moisture, and air",
+                    "Complete darkness only",
+                    "Very high pressure"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.2-4"
                 },
                 {
                   "q": "Why do we put leftover food in the refrigerator?",
-                  "a": ["To make it taste better", "To keep it warm", "To slow down the growth of microorganisms", "To dry it out"],
-                  "c": 2
+                  "a": [
+                    "To make it taste better",
+                    "To keep it warm",
+                    "To slow down the growth of microorganisms",
+                    "To dry it out"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-3-3.2-5"
                 }
               ]
             },
@@ -348,33 +672,69 @@
               "questions": [
                 {
                   "q": "Where does digestion begin?",
-                  "a": ["Stomach", "Small intestine", "Large intestine", "Mouth"],
-                  "c": 3
+                  "a": [
+                    "Stomach",
+                    "Small intestine",
+                    "Large intestine",
+                    "Mouth"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-3-3.3-0"
                 },
                 {
                   "q": "The tube that carries food from the mouth to the stomach is called the...",
-                  "a": ["Trachea", "Oesophagus", "Intestine", "Bronchus"],
-                  "c": 1
+                  "a": [
+                    "Trachea",
+                    "Oesophagus",
+                    "Intestine",
+                    "Bronchus"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.3-1"
                 },
                 {
                   "q": "In which organ is food mixed with digestive juices and broken down into a soupy mixture?",
-                  "a": ["Mouth", "Oesophagus", "Stomach", "Large intestine"],
-                  "c": 2
+                  "a": [
+                    "Mouth",
+                    "Oesophagus",
+                    "Stomach",
+                    "Large intestine"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-3-3.3-2"
                 },
                 {
                   "q": "Where are most nutrients absorbed into the blood?",
-                  "a": ["Stomach", "Small intestine", "Large intestine", "Mouth"],
-                  "c": 1
+                  "a": [
+                    "Stomach",
+                    "Small intestine",
+                    "Large intestine",
+                    "Mouth"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.3-3"
                 },
                 {
                   "q": "What is the main function of the large intestine?",
-                  "a": ["Break down proteins", "Absorb water from undigested food", "Chew food", "Produce digestive juices"],
-                  "c": 1
+                  "a": [
+                    "Break down proteins",
+                    "Absorb water from undigested food",
+                    "Chew food",
+                    "Produce digestive juices"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.3-4"
                 },
                 {
                   "q": "Saliva in the mouth helps to...",
-                  "a": ["Kill all bacteria immediately", "Break down starch into sugar", "Make food taste salty", "Chew the food"],
-                  "c": 1
+                  "a": [
+                    "Kill all bacteria immediately",
+                    "Break down starch into sugar",
+                    "Make food taste salty",
+                    "Chew the food"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-3-3.3-5"
                 }
               ]
             }
@@ -389,33 +749,69 @@
               "questions": [
                 {
                   "q": "What is needed to make a complete electrical circuit?",
-                  "a": ["Only a battery and a bulb", "A complete path for current to flow from the battery through the bulb and back", "Only wires and a switch", "A bulb and a switch only"],
-                  "c": 1
+                  "a": [
+                    "Only a battery and a bulb",
+                    "A complete path for current to flow from the battery through the bulb and back",
+                    "Only wires and a switch",
+                    "A bulb and a switch only"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.1-0"
                 },
                 {
                   "q": "What happens when the switch in a circuit is open?",
-                  "a": ["The bulb becomes brighter", "The circuit is broken and the bulb does not light up", "The battery charges faster", "The wires get hot"],
-                  "c": 1
+                  "a": [
+                    "The bulb becomes brighter",
+                    "The circuit is broken and the bulb does not light up",
+                    "The battery charges faster",
+                    "The wires get hot"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.1-1"
                 },
                 {
                   "q": "What is the function of a battery in an electrical circuit?",
-                  "a": ["To slow down the current", "To provide the energy for current to flow", "To make the bulb colorful", "To store water"],
-                  "c": 1
+                  "a": [
+                    "To slow down the current",
+                    "To provide the energy for current to flow",
+                    "To make the bulb colorful",
+                    "To store water"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.1-2"
                 },
                 {
                   "q": "In a simple circuit, wires are used to...",
-                  "a": ["Connect the components and carry electric current", "Decorate the circuit", "Hold the battery in place", "Insulate the circuit"],
-                  "c": 0
+                  "a": [
+                    "Connect the components and carry electric current",
+                    "Decorate the circuit",
+                    "Hold the battery in place",
+                    "Insulate the circuit"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-4-4.1-3"
                 },
                 {
                   "q": "If a bulb in a simple circuit does not light up, a possible reason is...",
-                  "a": ["The wires are too short", "There is a loose connection or gap in the circuit", "The switch is turned on", "There are too many bulbs"],
-                  "c": 1
+                  "a": [
+                    "The wires are too short",
+                    "There is a loose connection or gap in the circuit",
+                    "The switch is turned on",
+                    "There are too many bulbs"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.1-4"
                 },
                 {
                   "q": "The symbol for a battery in a circuit diagram has a long line and a short line. The long line represents the...",
-                  "a": ["Negative terminal", "Positive terminal", "Wire connection", "Bulb"],
-                  "c": 1
+                  "a": [
+                    "Negative terminal",
+                    "Positive terminal",
+                    "Wire connection",
+                    "Bulb"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.1-5"
                 }
               ]
             },
@@ -425,33 +821,69 @@
               "questions": [
                 {
                   "q": "In a series circuit with two bulbs, what happens if one bulb blows?",
-                  "a": ["The other bulb stays lit", "The other bulb becomes brighter", "The other bulb also goes out", "Nothing changes"],
-                  "c": 2
+                  "a": [
+                    "The other bulb stays lit",
+                    "The other bulb becomes brighter",
+                    "The other bulb also goes out",
+                    "Nothing changes"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.2-0"
                 },
                 {
                   "q": "In which type of circuit are components connected in separate branches?",
-                  "a": ["Series circuit", "Parallel circuit", "Simple circuit", "Open circuit"],
-                  "c": 1
+                  "a": [
+                    "Series circuit",
+                    "Parallel circuit",
+                    "Simple circuit",
+                    "Open circuit"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.2-1"
                 },
                 {
                   "q": "Two bulbs are connected in series with one battery. Compared to a single bulb connected to the same battery, the bulbs in series will be...",
-                  "a": ["Brighter", "Dimmer", "The same brightness", "Not lit at all"],
-                  "c": 1
+                  "a": [
+                    "Brighter",
+                    "Dimmer",
+                    "The same brightness",
+                    "Not lit at all"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.2-2"
                 },
                 {
                   "q": "Why are houses wired using parallel circuits?",
-                  "a": ["It uses less wire", "Each appliance can be turned on and off independently", "It is cheaper", "The bulbs are dimmer"],
-                  "c": 1
+                  "a": [
+                    "It uses less wire",
+                    "Each appliance can be turned on and off independently",
+                    "It is cheaper",
+                    "The bulbs are dimmer"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.2-3"
                 },
                 {
                   "q": "In a parallel circuit with three bulbs, if one bulb is removed, the other bulbs will...",
-                  "a": ["Go out", "Become dimmer", "Stay lit as normal", "Become hotter"],
-                  "c": 2
+                  "a": [
+                    "Go out",
+                    "Become dimmer",
+                    "Stay lit as normal",
+                    "Become hotter"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.2-4"
                 },
                 {
                   "q": "Which circuit gives brighter bulbs when using the same battery and bulbs?",
-                  "a": ["Series circuit", "Parallel circuit", "Both are equally bright", "Neither lights up"],
-                  "c": 1
+                  "a": [
+                    "Series circuit",
+                    "Parallel circuit",
+                    "Both are equally bright",
+                    "Neither lights up"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.2-5"
                 }
               ]
             },
@@ -461,33 +893,69 @@
               "questions": [
                 {
                   "q": "Which of the following materials is a good conductor of electricity?",
-                  "a": ["Rubber", "Plastic", "Copper", "Wood"],
-                  "c": 2
+                  "a": [
+                    "Rubber",
+                    "Plastic",
+                    "Copper",
+                    "Wood"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.3-0"
                 },
                 {
                   "q": "Why are electrical wires covered with rubber or plastic?",
-                  "a": ["To make them look nice", "To make them heavier", "To insulate them and prevent electric shock", "To help electricity flow better"],
-                  "c": 2
+                  "a": [
+                    "To make them look nice",
+                    "To make them heavier",
+                    "To insulate them and prevent electric shock",
+                    "To help electricity flow better"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.3-1"
                 },
                 {
                   "q": "Which of the following is an electrical insulator?",
-                  "a": ["Iron nail", "Aluminium foil", "Copper wire", "Glass rod"],
-                  "c": 3
+                  "a": [
+                    "Iron nail",
+                    "Aluminium foil",
+                    "Copper wire",
+                    "Glass rod"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-4-4.3-2"
                 },
                 {
                   "q": "A student tests different materials in a circuit. Which material would cause the bulb to light up?",
-                  "a": ["Pencil lead (graphite)", "Rubber eraser", "Plastic ruler", "Wooden block"],
-                  "c": 0
+                  "a": [
+                    "Pencil lead (graphite)",
+                    "Rubber eraser",
+                    "Plastic ruler",
+                    "Wooden block"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-4-4.3-3"
                 },
                 {
                   "q": "Silver is an excellent conductor, but it is not commonly used in household wiring because...",
-                  "a": ["It is too expensive", "It does not conduct well", "It melts easily", "It is too heavy"],
-                  "c": 0
+                  "a": [
+                    "It is too expensive",
+                    "It does not conduct well",
+                    "It melts easily",
+                    "It is too heavy"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-4-4.3-4"
                 },
                 {
                   "q": "Why do electricians use tools with plastic or rubber handles?",
-                  "a": ["To make the tools lighter", "For a better grip only", "Plastic and rubber are insulators that protect from electric shock", "To make the tools colourful"],
-                  "c": 2
+                  "a": [
+                    "To make the tools lighter",
+                    "For a better grip only",
+                    "Plastic and rubber are insulators that protect from electric shock",
+                    "To make the tools colourful"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.3-5"
                 }
               ]
             },
@@ -497,33 +965,69 @@
               "questions": [
                 {
                   "q": "Why should you never touch electrical switches with wet hands?",
-                  "a": ["Water will damage the switch", "Water conducts electricity and can cause electric shock", "Your hand will slip off", "The switch will rust"],
-                  "c": 1
+                  "a": [
+                    "Water will damage the switch",
+                    "Water conducts electricity and can cause electric shock",
+                    "Your hand will slip off",
+                    "The switch will rust"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.4-0"
                 },
                 {
                   "q": "What should you do if you see a damaged electrical wire?",
-                  "a": ["Cover it with tape yourself", "Ignore it", "Tell an adult immediately", "Pull it out"],
-                  "c": 2
+                  "a": [
+                    "Cover it with tape yourself",
+                    "Ignore it",
+                    "Tell an adult immediately",
+                    "Pull it out"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.4-1"
                 },
                 {
                   "q": "Overloading a socket with too many plugs can cause...",
-                  "a": ["The plugs to stop working only", "The socket to overheat and possibly cause a fire", "The electricity to be stronger", "The bulbs to be brighter"],
-                  "c": 1
+                  "a": [
+                    "The plugs to stop working only",
+                    "The socket to overheat and possibly cause a fire",
+                    "The electricity to be stronger",
+                    "The bulbs to be brighter"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.4-2"
                 },
                 {
                   "q": "Which of the following is a safety rule when using electricity?",
-                  "a": ["Use electrical appliances near water", "Pull the plug by holding the cord", "Never poke objects into electrical sockets", "Touch bare wires to see if they are live"],
-                  "c": 2
+                  "a": [
+                    "Use electrical appliances near water",
+                    "Pull the plug by holding the cord",
+                    "Never poke objects into electrical sockets",
+                    "Touch bare wires to see if they are live"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-4-4.4-3"
                 },
                 {
                   "q": "The correct way to remove a plug from a socket is to...",
-                  "a": ["Pull the cord", "Hold the plug firmly and pull it out", "Use a pair of pliers", "Cut the wire"],
-                  "c": 1
+                  "a": [
+                    "Pull the cord",
+                    "Hold the plug firmly and pull it out",
+                    "Use a pair of pliers",
+                    "Cut the wire"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.4-4"
                 },
                 {
                   "q": "Why should electrical appliances be kept away from water sources like sinks and bathtubs?",
-                  "a": ["The appliances will rust", "Water can conduct electricity and cause serious shock", "The water will boil", "The appliances will float away"],
-                  "c": 1
+                  "a": [
+                    "The appliances will rust",
+                    "Water can conduct electricity and cause serious shock",
+                    "The water will boil",
+                    "The appliances will float away"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-4-4.4-5"
                 }
               ]
             }
@@ -538,33 +1042,69 @@
               "questions": [
                 {
                   "q": "Which of the following is a natural source of light?",
-                  "a": ["Torch", "Lamp", "Candle", "Sun"],
-                  "c": 3
+                  "a": [
+                    "Torch",
+                    "Lamp",
+                    "Candle",
+                    "Sun"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-5-5.1-0"
                 },
                 {
                   "q": "The Moon is not a source of light because it...",
-                  "a": ["Produces its own light at night only", "Reflects light from the Sun", "Is made of rock", "Is too far away"],
-                  "c": 1
+                  "a": [
+                    "Produces its own light at night only",
+                    "Reflects light from the Sun",
+                    "Is made of rock",
+                    "Is too far away"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.1-1"
                 },
                 {
                   "q": "Which of the following is an artificial source of light?",
-                  "a": ["Star", "Firefly", "Electric lamp", "Lightning"],
-                  "c": 2
+                  "a": [
+                    "Star",
+                    "Firefly",
+                    "Electric lamp",
+                    "Lightning"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.1-2"
                 },
                 {
                   "q": "Fireflies produce light through a chemical reaction in their bodies. This is an example of a...",
-                  "a": ["Artificial light source", "Natural light source", "Reflected light", "Electric light"],
-                  "c": 1
+                  "a": [
+                    "Artificial light source",
+                    "Natural light source",
+                    "Reflected light",
+                    "Electric light"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.1-3"
                 },
                 {
                   "q": "Why can we see a book in a dark room only after we turn on a light?",
-                  "a": ["The book produces its own light only in the dark", "Light from the lamp bounces off the book into our eyes", "The book becomes transparent", "The room absorbs all darkness"],
-                  "c": 1
+                  "a": [
+                    "The book produces its own light only in the dark",
+                    "Light from the lamp bounces off the book into our eyes",
+                    "The book becomes transparent",
+                    "The room absorbs all darkness"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.1-4"
                 },
                 {
                   "q": "Which of these objects is NOT a light source?",
-                  "a": ["Candle flame", "LED bulb", "Mirror", "Sun"],
-                  "c": 2
+                  "a": [
+                    "Candle flame",
+                    "LED bulb",
+                    "Mirror",
+                    "Sun"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.1-5"
                 }
               ]
             },
@@ -574,33 +1114,69 @@
               "questions": [
                 {
                   "q": "Light travels in...",
-                  "a": ["Curved lines", "Zigzag lines", "Straight lines", "Spiral lines"],
-                  "c": 2
+                  "a": [
+                    "Curved lines",
+                    "Zigzag lines",
+                    "Straight lines",
+                    "Spiral lines"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.2-0"
                 },
                 {
                   "q": "A shadow is formed when...",
-                  "a": ["Light passes through an object", "An object reflects all light", "Light is blocked by an opaque object", "The object is transparent"],
-                  "c": 2
+                  "a": [
+                    "Light passes through an object",
+                    "An object reflects all light",
+                    "Light is blocked by an opaque object",
+                    "The object is transparent"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.2-1"
                 },
                 {
                   "q": "When you move a torch closer to your hand, the shadow on the wall becomes...",
-                  "a": ["Smaller", "Bigger", "Disappears", "Changes colour"],
-                  "c": 1
+                  "a": [
+                    "Smaller",
+                    "Bigger",
+                    "Disappears",
+                    "Changes colour"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.2-2"
                 },
                 {
                   "q": "You can see a candle flame through three holes in a straight line on three pieces of cardboard. This shows that...",
-                  "a": ["Light can bend around cardboard", "Light travels in straight lines", "Cardboard is transparent", "The holes make light brighter"],
-                  "c": 1
+                  "a": [
+                    "Light can bend around cardboard",
+                    "Light travels in straight lines",
+                    "Cardboard is transparent",
+                    "The holes make light brighter"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.2-3"
                 },
                 {
                   "q": "When the Sun is directly overhead at noon, shadows are...",
-                  "a": ["Very long", "Short or not visible", "Coloured", "Wider"],
-                  "c": 1
+                  "a": [
+                    "Very long",
+                    "Short or not visible",
+                    "Coloured",
+                    "Wider"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.2-4"
                 },
                 {
                   "q": "Why does your shadow change direction and length during the day?",
-                  "a": ["Because you move", "Because the Sun's position in the sky changes", "Because the ground changes", "Because your height changes"],
-                  "c": 1
+                  "a": [
+                    "Because you move",
+                    "Because the Sun's position in the sky changes",
+                    "Because the ground changes",
+                    "Because your height changes"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.2-5"
                 }
               ]
             },
@@ -610,33 +1186,69 @@
               "questions": [
                 {
                   "q": "When light hits a mirror, what happens to it?",
-                  "a": ["It is absorbed", "It passes through", "It is reflected", "It is refracted"],
-                  "c": 2
+                  "a": [
+                    "It is absorbed",
+                    "It passes through",
+                    "It is reflected",
+                    "It is refracted"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.3-0"
                 },
                 {
                   "q": "Why can you see your face in a calm lake but not in a rough sea?",
-                  "a": ["The calm lake absorbs light", "The calm water surface is smooth and reflects light well", "The rough sea has no water", "The calm lake is deeper"],
-                  "c": 1
+                  "a": [
+                    "The calm lake absorbs light",
+                    "The calm water surface is smooth and reflects light well",
+                    "The rough sea has no water",
+                    "The calm lake is deeper"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.3-1"
                 },
                 {
                   "q": "A periscope uses mirrors to help you...",
-                  "a": ["See in the dark", "See objects that are above or behind an obstacle", "Magnify small objects", "Measure distance"],
-                  "c": 1
+                  "a": [
+                    "See in the dark",
+                    "See objects that are above or behind an obstacle",
+                    "Magnify small objects",
+                    "Measure distance"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.3-2"
                 },
                 {
                   "q": "A rough surface like a piece of paper reflects light...",
-                  "a": ["In one direction only like a mirror", "In many directions (scattered)", "Not at all", "Only in straight lines"],
-                  "c": 1
+                  "a": [
+                    "In one direction only like a mirror",
+                    "In many directions (scattered)",
+                    "Not at all",
+                    "Only in straight lines"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.3-3"
                 },
                 {
                   "q": "The law of reflection states that the angle of incidence is...",
-                  "a": ["Always greater than the angle of reflection", "Always less than the angle of reflection", "Equal to the angle of reflection", "Not related to the angle of reflection"],
-                  "c": 2
+                  "a": [
+                    "Always greater than the angle of reflection",
+                    "Always less than the angle of reflection",
+                    "Equal to the angle of reflection",
+                    "Not related to the angle of reflection"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.3-4"
                 },
                 {
                   "q": "A periscope in a submarine uses how many mirrors to see above the water surface?",
-                  "a": ["One", "Two", "Three", "Four"],
-                  "c": 1
+                  "a": [
+                    "One",
+                    "Two",
+                    "Three",
+                    "Four"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.3-5"
                 }
               ]
             },
@@ -646,33 +1258,69 @@
               "questions": [
                 {
                   "q": "A straw in a glass of water appears bent or broken. This is due to...",
-                  "a": ["Reflection", "Refraction", "Absorption", "Shadow formation"],
-                  "c": 1
+                  "a": [
+                    "Reflection",
+                    "Refraction",
+                    "Absorption",
+                    "Shadow formation"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.4-0"
                 },
                 {
                   "q": "Refraction of light happens because light travels at different speeds in different...",
-                  "a": ["Colours", "Directions", "Temperatures", "Media (materials)"],
-                  "c": 3
+                  "a": [
+                    "Colours",
+                    "Directions",
+                    "Temperatures",
+                    "Media (materials)"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-5-5.4-1"
                 },
                 {
                   "q": "When light passes from air into water, it...",
-                  "a": ["Speeds up", "Slows down and bends", "Stops completely", "Reflects back"],
-                  "c": 1
+                  "a": [
+                    "Speeds up",
+                    "Slows down and bends",
+                    "Stops completely",
+                    "Reflects back"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.4-2"
                 },
                 {
                   "q": "A pool of water looks shallower than it really is because of...",
-                  "a": ["Reflection of light", "Refraction of light", "The colour of the water", "The tiles at the bottom"],
-                  "c": 1
+                  "a": [
+                    "Reflection of light",
+                    "Refraction of light",
+                    "The colour of the water",
+                    "The tiles at the bottom"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.4-3"
                 },
                 {
                   "q": "A magnifying glass focuses sunlight using...",
-                  "a": ["Reflection", "Shadows", "Refraction through a convex lens", "Absorption"],
-                  "c": 2
+                  "a": [
+                    "Reflection",
+                    "Shadows",
+                    "Refraction through a convex lens",
+                    "Absorption"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-5-5.4-4"
                 },
                 {
                   "q": "Which of the following is caused by refraction?",
-                  "a": ["Seeing your face in a mirror", "A rainbow", "A shadow on the wall", "Light passing through a straight tube"],
-                  "c": 1
+                  "a": [
+                    "Seeing your face in a mirror",
+                    "A rainbow",
+                    "A shadow on the wall",
+                    "Light passing through a straight tube"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-5-5.4-5"
                 }
               ]
             }
@@ -687,33 +1335,69 @@
               "questions": [
                 {
                   "q": "What is the main natural source of heat on Earth?",
-                  "a": ["The Moon", "The Sun", "Stars", "Volcanoes"],
-                  "c": 1
+                  "a": [
+                    "The Moon",
+                    "The Sun",
+                    "Stars",
+                    "Volcanoes"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.1-0"
                 },
                 {
                   "q": "When you rub your hands together quickly, they feel warm. This is because...",
-                  "a": ["The air around is warm", "Friction produces heat", "Your hands absorb heat from the floor", "Your blood stops flowing"],
-                  "c": 1
+                  "a": [
+                    "The air around is warm",
+                    "Friction produces heat",
+                    "Your hands absorb heat from the floor",
+                    "Your blood stops flowing"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.1-1"
                 },
                 {
                   "q": "Which of the following produces heat through electricity?",
-                  "a": ["A candle", "A battery", "An electric iron", "A magnifying glass"],
-                  "c": 2
+                  "a": [
+                    "A candle",
+                    "A battery",
+                    "An electric iron",
+                    "A magnifying glass"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.1-2"
                 },
                 {
                   "q": "Burning wood in a campfire produces which forms of energy?",
-                  "a": ["Light only", "Heat only", "Light and heat", "Sound and electricity"],
-                  "c": 2
+                  "a": [
+                    "Light only",
+                    "Heat only",
+                    "Light and heat",
+                    "Sound and electricity"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.1-3"
                 },
                 {
                   "q": "Which of the following is NOT a source of heat?",
-                  "a": ["Fire", "Electric toaster", "A book", "The Sun"],
-                  "c": 2
+                  "a": [
+                    "Fire",
+                    "Electric toaster",
+                    "A book",
+                    "The Sun"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.1-4"
                 },
                 {
                   "q": "A petrol engine produces heat because of...",
-                  "a": ["The colour of the petrol", "The burning of fuel", "The metal parts", "The tyres"],
-                  "c": 1
+                  "a": [
+                    "The colour of the petrol",
+                    "The burning of fuel",
+                    "The metal parts",
+                    "The tyres"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.1-5"
                 }
               ]
             },
@@ -723,33 +1407,69 @@
               "questions": [
                 {
                   "q": "When you hold a metal rod that is being heated at one end, the other end also gets hot. This is due to...",
-                  "a": ["Convection", "Radiation", "Conduction", "Evaporation"],
-                  "c": 2
+                  "a": [
+                    "Convection",
+                    "Radiation",
+                    "Conduction",
+                    "Evaporation"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.2-0"
                 },
                 {
                   "q": "In a pot of boiling water, hot water rises to the top and cool water sinks. This type of heat transfer is called...",
-                  "a": ["Conduction", "Convection", "Radiation", "Expansion"],
-                  "c": 1
+                  "a": [
+                    "Conduction",
+                    "Convection",
+                    "Radiation",
+                    "Expansion"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.2-1"
                 },
                 {
                   "q": "Heat from the Sun reaches the Earth through...",
-                  "a": ["Conduction", "Convection", "Radiation", "Air currents"],
-                  "c": 2
+                  "a": [
+                    "Conduction",
+                    "Convection",
+                    "Radiation",
+                    "Air currents"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.2-2"
                 },
                 {
                   "q": "Which type of heat transfer does NOT need a medium (material) to travel through?",
-                  "a": ["Conduction only", "Convection only", "Radiation only", "Both conduction and convection"],
-                  "c": 2
+                  "a": [
+                    "Conduction only",
+                    "Convection only",
+                    "Radiation only",
+                    "Both conduction and convection"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.2-3"
                 },
                 {
                   "q": "When you place your hand near a hot stove without touching it, you feel warmth. This heat reaches your hand through...",
-                  "a": ["Conduction", "Convection", "Radiation", "Evaporation"],
-                  "c": 2
+                  "a": [
+                    "Conduction",
+                    "Convection",
+                    "Radiation",
+                    "Evaporation"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.2-4"
                 },
                 {
                   "q": "In a liquid, convection currents form because...",
-                  "a": ["Liquid particles are fixed in place", "Hot liquid becomes denser and sinks", "Hot liquid becomes less dense and rises", "Liquid does not transfer heat"],
-                  "c": 2
+                  "a": [
+                    "Liquid particles are fixed in place",
+                    "Hot liquid becomes denser and sinks",
+                    "Hot liquid becomes less dense and rises",
+                    "Liquid does not transfer heat"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.2-5"
                 }
               ]
             },
@@ -759,33 +1479,69 @@
               "questions": [
                 {
                   "q": "Which of the following is a good conductor of heat?",
-                  "a": ["Plastic", "Wood", "Iron", "Rubber"],
-                  "c": 2
+                  "a": [
+                    "Plastic",
+                    "Wood",
+                    "Iron",
+                    "Rubber"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.3-0"
                 },
                 {
                   "q": "Why do cooking pots have handles made of plastic or wood?",
-                  "a": ["To make them look nice", "Plastic and wood are good heat insulators that stay cool", "To make them lighter", "Plastic and wood are good heat conductors"],
-                  "c": 1
+                  "a": [
+                    "To make them look nice",
+                    "Plastic and wood are good heat insulators that stay cool",
+                    "To make them lighter",
+                    "Plastic and wood are good heat conductors"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.3-1"
                 },
                 {
                   "q": "Which material would be the best for keeping a hot drink warm?",
-                  "a": ["Metal cup", "Glass cup", "Styrofoam cup", "Paper cup with no coating"],
-                  "c": 2
+                  "a": [
+                    "Metal cup",
+                    "Glass cup",
+                    "Styrofoam cup",
+                    "Paper cup with no coating"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.3-2"
                 },
                 {
                   "q": "Spoons in a hot soup. Which spoon would feel hottest to touch first?",
-                  "a": ["Plastic spoon", "Wooden spoon", "Metal spoon", "Ceramic spoon"],
-                  "c": 2
+                  "a": [
+                    "Plastic spoon",
+                    "Wooden spoon",
+                    "Metal spoon",
+                    "Ceramic spoon"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.3-3"
                 },
                 {
                   "q": "Which of the following is a good heat insulator?",
-                  "a": ["Aluminium", "Copper", "Air", "Iron"],
-                  "c": 2
+                  "a": [
+                    "Aluminium",
+                    "Copper",
+                    "Air",
+                    "Iron"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-6-6.3-4"
                 },
                 {
                   "q": "Why do we wear woollen clothes in cold weather?",
-                  "a": ["Wool absorbs cold from the air", "Wool traps air, which is a good insulator, keeping body heat in", "Wool produces heat by itself", "Wool is a good conductor of heat"],
-                  "c": 1
+                  "a": [
+                    "Wool absorbs cold from the air",
+                    "Wool traps air, which is a good insulator, keeping body heat in",
+                    "Wool produces heat by itself",
+                    "Wool is a good conductor of heat"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.3-5"
                 }
               ]
             },
@@ -795,33 +1551,69 @@
               "questions": [
                 {
                   "q": "What happens to most materials when they are heated?",
-                  "a": ["They contract (become smaller)", "They expand (become larger)", "They stay the same size", "They dissolve"],
-                  "c": 1
+                  "a": [
+                    "They contract (become smaller)",
+                    "They expand (become larger)",
+                    "They stay the same size",
+                    "They dissolve"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.4-0"
                 },
                 {
                   "q": "Railway tracks have small gaps between them to allow for...",
-                  "a": ["Train wheels to fit", "Expansion on hot days", "Water drainage", "Better sound"],
-                  "c": 1
+                  "a": [
+                    "Train wheels to fit",
+                    "Expansion on hot days",
+                    "Water drainage",
+                    "Better sound"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.4-1"
                 },
                 {
                   "q": "A tightly closed metal lid can be opened more easily by running it under hot water because...",
-                  "a": ["The lid contracts and becomes smaller", "The lid expands and becomes looser", "The water makes it slippery", "The metal becomes magnetic"],
-                  "c": 1
+                  "a": [
+                    "The lid contracts and becomes smaller",
+                    "The lid expands and becomes looser",
+                    "The water makes it slippery",
+                    "The metal becomes magnetic"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.4-2"
                 },
                 {
                   "q": "A thermometer works because the liquid inside...",
-                  "a": ["Changes colour with temperature", "Expands when heated and contracts when cooled", "Disappears when hot", "Becomes solid when cold"],
-                  "c": 1
+                  "a": [
+                    "Changes colour with temperature",
+                    "Expands when heated and contracts when cooled",
+                    "Disappears when hot",
+                    "Becomes solid when cold"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.4-3"
                 },
                 {
                   "q": "A balloon left in a hot car may burst because...",
-                  "a": ["The rubber becomes weak", "The air inside expands when heated", "The balloon shrinks", "The colour fades"],
-                  "c": 1
+                  "a": [
+                    "The rubber becomes weak",
+                    "The air inside expands when heated",
+                    "The balloon shrinks",
+                    "The colour fades"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.4-4"
                 },
                 {
                   "q": "Electric power lines are hung loosely between poles because...",
-                  "a": ["It looks better", "The wires contract in cold weather and could snap if too tight", "To let birds sit on them", "To save on materials"],
-                  "c": 1
+                  "a": [
+                    "It looks better",
+                    "The wires contract in cold weather and could snap if too tight",
+                    "To let birds sit on them",
+                    "To save on materials"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-6-6.4-5"
                 }
               ]
             }
@@ -836,33 +1628,69 @@
               "questions": [
                 {
                   "q": "Which state of matter has a fixed shape and a fixed volume?",
-                  "a": ["Solid", "Liquid", "Gas", "Plasma"],
-                  "c": 0
+                  "a": [
+                    "Solid",
+                    "Liquid",
+                    "Gas",
+                    "Plasma"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-7-7.1-0"
                 },
                 {
                   "q": "Water takes the shape of the container it is poured into. This shows that water is a...",
-                  "a": ["Solid", "Liquid", "Gas", "Powder"],
-                  "c": 1
+                  "a": [
+                    "Solid",
+                    "Liquid",
+                    "Gas",
+                    "Powder"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.1-1"
                 },
                 {
                   "q": "Which state of matter has particles that are far apart and move freely in all directions?",
-                  "a": ["Solid", "Liquid", "Gas", "Ice"],
-                  "c": 2
+                  "a": [
+                    "Solid",
+                    "Liquid",
+                    "Gas",
+                    "Ice"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.1-2"
                 },
                 {
                   "q": "The particles in a solid are arranged...",
-                  "a": ["Far apart and moving freely", "Loosely packed", "Closely packed in a fixed pattern", "Randomly with no pattern"],
-                  "c": 2
+                  "a": [
+                    "Far apart and moving freely",
+                    "Loosely packed",
+                    "Closely packed in a fixed pattern",
+                    "Randomly with no pattern"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.1-3"
                 },
                 {
                   "q": "Which of the following correctly describes the particles in a liquid?",
-                  "a": ["Particles are fixed in position", "Particles are loosely packed and can slide past each other", "Particles are far apart and move very fast", "Particles do not exist"],
-                  "c": 1
+                  "a": [
+                    "Particles are fixed in position",
+                    "Particles are loosely packed and can slide past each other",
+                    "Particles are far apart and move very fast",
+                    "Particles do not exist"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.1-4"
                 },
                 {
                   "q": "A gas does not have a fixed volume because...",
-                  "a": ["It is invisible", "Its particles spread out to fill the available space", "It is lighter than air", "It changes colour"],
-                  "c": 1
+                  "a": [
+                    "It is invisible",
+                    "Its particles spread out to fill the available space",
+                    "It is lighter than air",
+                    "It changes colour"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.1-5"
                 }
               ]
             },
@@ -872,33 +1700,69 @@
               "questions": [
                 {
                   "q": "The change of a solid into a liquid when heated is called...",
-                  "a": ["Freezing", "Melting", "Evaporation", "Condensation"],
-                  "c": 1
+                  "a": [
+                    "Freezing",
+                    "Melting",
+                    "Evaporation",
+                    "Condensation"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.2-0"
                 },
                 {
                   "q": "When water is placed in a freezer, it turns into ice. This process is called...",
-                  "a": ["Melting", "Condensation", "Freezing", "Evaporation"],
-                  "c": 2
+                  "a": [
+                    "Melting",
+                    "Condensation",
+                    "Freezing",
+                    "Evaporation"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.2-1"
                 },
                 {
                   "q": "A puddle of water disappears after a sunny day. The water has undergone...",
-                  "a": ["Melting", "Freezing", "Condensation", "Evaporation"],
-                  "c": 3
+                  "a": [
+                    "Melting",
+                    "Freezing",
+                    "Condensation",
+                    "Evaporation"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-7-7.2-2"
                 },
                 {
                   "q": "Water droplets form on the outside of a cold glass of water. This is due to...",
-                  "a": ["Evaporation", "Melting", "Condensation", "Freezing"],
-                  "c": 2
+                  "a": [
+                    "Evaporation",
+                    "Melting",
+                    "Condensation",
+                    "Freezing"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.2-3"
                 },
                 {
                   "q": "During melting, the particles in a solid...",
-                  "a": ["Stop moving completely", "Gain heat energy and start moving more freely", "Lose heat energy", "Turn into a gas directly"],
-                  "c": 1
+                  "a": [
+                    "Stop moving completely",
+                    "Gain heat energy and start moving more freely",
+                    "Lose heat energy",
+                    "Turn into a gas directly"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.2-4"
                 },
                 {
                   "q": "Butter left in a hot pan changes from solid to liquid. This change of state is called...",
-                  "a": ["Freezing", "Condensation", "Evaporation", "Melting"],
-                  "c": 3
+                  "a": [
+                    "Freezing",
+                    "Condensation",
+                    "Evaporation",
+                    "Melting"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-7-7.2-5"
                 }
               ]
             },
@@ -908,33 +1772,69 @@
               "questions": [
                 {
                   "q": "Which process in the water cycle turns liquid water into water vapour?",
-                  "a": ["Condensation", "Precipitation", "Evaporation", "Collection"],
-                  "c": 2
+                  "a": [
+                    "Condensation",
+                    "Precipitation",
+                    "Evaporation",
+                    "Collection"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.3-0"
                 },
                 {
                   "q": "Clouds are formed when water vapour in the air cools and turns into tiny water droplets. This process is called...",
-                  "a": ["Evaporation", "Condensation", "Precipitation", "Collection"],
-                  "c": 1
+                  "a": [
+                    "Evaporation",
+                    "Condensation",
+                    "Precipitation",
+                    "Collection"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.3-1"
                 },
                 {
                   "q": "Rain, snow, and hail are all forms of...",
-                  "a": ["Evaporation", "Condensation", "Precipitation", "Collection"],
-                  "c": 2
+                  "a": [
+                    "Evaporation",
+                    "Condensation",
+                    "Precipitation",
+                    "Collection"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.3-2"
                 },
                 {
                   "q": "What provides the energy that drives the water cycle?",
-                  "a": ["The Moon", "The wind", "The Sun", "Earth's rotation"],
-                  "c": 2
+                  "a": [
+                    "The Moon",
+                    "The wind",
+                    "The Sun",
+                    "Earth's rotation"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-7-7.3-3"
                 },
                 {
                   "q": "After rain falls on land, some water flows into rivers and eventually back to the sea. This part of the water cycle is called...",
-                  "a": ["Condensation", "Evaporation", "Precipitation", "Collection or runoff"],
-                  "c": 3
+                  "a": [
+                    "Condensation",
+                    "Evaporation",
+                    "Precipitation",
+                    "Collection or runoff"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-7-7.3-4"
                 },
                 {
                   "q": "In the water cycle, water changes from a gas to a liquid during...",
-                  "a": ["Evaporation", "Condensation", "Precipitation", "Freezing"],
-                  "c": 1
+                  "a": [
+                    "Evaporation",
+                    "Condensation",
+                    "Precipitation",
+                    "Freezing"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-7-7.3-5"
                 }
               ]
             }
@@ -949,33 +1849,69 @@
               "questions": [
                 {
                   "q": "How many stages are there in the life cycle of a butterfly?",
-                  "a": ["Three", "Four", "Five", "Two"],
-                  "c": 1
+                  "a": [
+                    "Three",
+                    "Four",
+                    "Five",
+                    "Two"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.1-0"
                 },
                 {
                   "q": "What is the correct order of the butterfly life cycle?",
-                  "a": ["Egg, pupa, larva, adult", "Larva, egg, pupa, adult", "Egg, larva, pupa, adult", "Adult, egg, larva, pupa"],
-                  "c": 2
+                  "a": [
+                    "Egg, pupa, larva, adult",
+                    "Larva, egg, pupa, adult",
+                    "Egg, larva, pupa, adult",
+                    "Adult, egg, larva, pupa"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-8-8.1-1"
                 },
                 {
                   "q": "A tadpole breathes through which organ?",
-                  "a": ["Lungs", "Gills", "Skin only", "Spiracles"],
-                  "c": 1
+                  "a": [
+                    "Lungs",
+                    "Gills",
+                    "Skin only",
+                    "Spiracles"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.1-2"
                 },
                 {
                   "q": "The stage between caterpillar and adult butterfly is called the...",
-                  "a": ["Egg", "Larva", "Pupa (chrysalis)", "Nymph"],
-                  "c": 2
+                  "a": [
+                    "Egg",
+                    "Larva",
+                    "Pupa (chrysalis)",
+                    "Nymph"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-8-8.1-3"
                 },
                 {
                   "q": "A mosquito larva is also known as a...",
-                  "a": ["Tumbler", "Wriggler", "Caterpillar", "Tadpole"],
-                  "c": 1
+                  "a": [
+                    "Tumbler",
+                    "Wriggler",
+                    "Caterpillar",
+                    "Tadpole"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.1-4"
                 },
                 {
                   "q": "A froglet differs from an adult frog because the froglet still has...",
-                  "a": ["Gills only", "A tail", "No legs", "Wings"],
-                  "c": 1
+                  "a": [
+                    "Gills only",
+                    "A tail",
+                    "No legs",
+                    "Wings"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.1-5"
                 }
               ]
             },
@@ -985,33 +1921,69 @@
               "questions": [
                 {
                   "q": "The process by which a seed begins to grow and develop is called...",
-                  "a": ["Pollination", "Germination", "Fertilisation", "Dispersal"],
-                  "c": 1
+                  "a": [
+                    "Pollination",
+                    "Germination",
+                    "Fertilisation",
+                    "Dispersal"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.2-0"
                 },
                 {
                   "q": "What are the first parts to emerge from a germinating seed?",
-                  "a": ["Leaves and flowers", "Root and shoot", "Fruit and seeds", "Stem and branches"],
-                  "c": 1
+                  "a": [
+                    "Leaves and flowers",
+                    "Root and shoot",
+                    "Fruit and seeds",
+                    "Stem and branches"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.2-1"
                 },
                 {
                   "q": "After flowering, which part of the plant develops into a fruit?",
-                  "a": ["The root", "The leaf", "The stem", "The flower"],
-                  "c": 3
+                  "a": [
+                    "The root",
+                    "The leaf",
+                    "The stem",
+                    "The flower"
+                  ],
+                  "c": 3,
+                  "id": "tb-sci5-8-8.2-2"
                 },
                 {
                   "q": "Seeds need which of the following to germinate?",
-                  "a": ["Soil only", "Water, air, and suitable temperature", "Sunlight and fertiliser only", "Sand and rocks"],
-                  "c": 1
+                  "a": [
+                    "Soil only",
+                    "Water, air, and suitable temperature",
+                    "Sunlight and fertiliser only",
+                    "Sand and rocks"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.2-3"
                 },
                 {
                   "q": "The function of a fruit in the plant life cycle is to...",
-                  "a": ["Make food for the plant", "Protect and help disperse seeds", "Absorb water from the soil", "Provide shade"],
-                  "c": 1
+                  "a": [
+                    "Make food for the plant",
+                    "Protect and help disperse seeds",
+                    "Absorb water from the soil",
+                    "Provide shade"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.2-4"
                 },
                 {
                   "q": "A young plant that has just grown its first leaves is called a...",
-                  "a": ["Seed", "Seedling", "Mature plant", "Sapling"],
-                  "c": 1
+                  "a": [
+                    "Seed",
+                    "Seedling",
+                    "Mature plant",
+                    "Sapling"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.2-5"
                 }
               ]
             },
@@ -1021,33 +1993,69 @@
               "questions": [
                 {
                   "q": "Which animal undergoes complete metamorphosis with four distinct stages?",
-                  "a": ["Chicken", "Cat", "Butterfly", "Snake"],
-                  "c": 2
+                  "a": [
+                    "Chicken",
+                    "Cat",
+                    "Butterfly",
+                    "Snake"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-8-8.3-0"
                 },
                 {
                   "q": "A chicken hatches from an egg looking like a small chicken. This type of development is called...",
-                  "a": ["Metamorphosis", "Direct development", "Germination", "Complete change"],
-                  "c": 1
+                  "a": [
+                    "Metamorphosis",
+                    "Direct development",
+                    "Germination",
+                    "Complete change"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.3-1"
                 },
                 {
                   "q": "Both butterflies and frogs undergo metamorphosis. What is a key difference?",
-                  "a": ["Butterflies have four stages, frogs have three stages", "Butterflies change in water, frogs change on land", "Frogs go through a tadpole stage that lives in water", "There is no difference"],
-                  "c": 2
+                  "a": [
+                    "Butterflies have four stages, frogs have three stages",
+                    "Butterflies change in water, frogs change on land",
+                    "Frogs go through a tadpole stage that lives in water",
+                    "There is no difference"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-8-8.3-2"
                 },
                 {
                   "q": "An annual plant completes its life cycle in...",
-                  "a": ["One day", "One week", "One year", "Many years"],
-                  "c": 2
+                  "a": [
+                    "One day",
+                    "One week",
+                    "One year",
+                    "Many years"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-8-8.3-3"
                 },
                 {
                   "q": "Animals that give birth to live young that look like small adults are said to have...",
-                  "a": ["Metamorphosis", "Direct development", "Indirect development", "Germination"],
-                  "c": 1
+                  "a": [
+                    "Metamorphosis",
+                    "Direct development",
+                    "Indirect development",
+                    "Germination"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.3-4"
                 },
                 {
                   "q": "Which of the following has the shortest life cycle?",
-                  "a": ["Elephant", "Butterfly", "Oak tree", "Human"],
-                  "c": 1
+                  "a": [
+                    "Elephant",
+                    "Butterfly",
+                    "Oak tree",
+                    "Human"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-8-8.3-5"
                 }
               ]
             }
@@ -1062,33 +2070,69 @@
               "questions": [
                 {
                   "q": "Why does the Moon appear to shine at night?",
-                  "a": ["It produces its own light", "It reflects light from the Sun", "It reflects light from the stars", "It is on fire"],
-                  "c": 1
+                  "a": [
+                    "It produces its own light",
+                    "It reflects light from the Sun",
+                    "It reflects light from the stars",
+                    "It is on fire"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.1-0"
                 },
                 {
                   "q": "How long does it take for the Moon to complete one orbit around Earth?",
-                  "a": ["365 days", "24 hours", "About 29.5 days", "7 days"],
-                  "c": 2
+                  "a": [
+                    "365 days",
+                    "24 hours",
+                    "About 29.5 days",
+                    "7 days"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-9-9.1-1"
                 },
                 {
                   "q": "The dark, flat areas on the Moon are called...",
-                  "a": ["Craters", "Maria (seas)", "Mountains", "Oceans"],
-                  "c": 1
+                  "a": [
+                    "Craters",
+                    "Maria (seas)",
+                    "Mountains",
+                    "Oceans"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.1-2"
                 },
                 {
                   "q": "When the Moon is between the Sun and Earth, the side facing Earth is dark. This phase is called...",
-                  "a": ["Full Moon", "Crescent Moon", "New Moon", "Half Moon"],
-                  "c": 2
+                  "a": [
+                    "Full Moon",
+                    "Crescent Moon",
+                    "New Moon",
+                    "Half Moon"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-9-9.1-3"
                 },
                 {
                   "q": "The circular hollows on the Moon's surface are caused by...",
-                  "a": ["Volcanic eruptions only", "Meteor impacts", "Flowing water", "Earthquakes"],
-                  "c": 1
+                  "a": [
+                    "Volcanic eruptions only",
+                    "Meteor impacts",
+                    "Flowing water",
+                    "Earthquakes"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.1-4"
                 },
                 {
                   "q": "During a full Moon, the Moon appears completely lit because...",
-                  "a": ["Earth is between the Sun and the Moon", "The Moon is between the Sun and Earth", "The Sun is directly behind Earth from the Moon's perspective", "The Moon is closest to Earth"],
-                  "c": 2
+                  "a": [
+                    "Earth is between the Sun and the Moon",
+                    "The Moon is between the Sun and Earth",
+                    "The Sun is directly behind Earth from the Moon's perspective",
+                    "The Moon is closest to Earth"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-9-9.1-5"
                 }
               ]
             },
@@ -1098,33 +2142,69 @@
               "questions": [
                 {
                   "q": "A constellation is a...",
-                  "a": ["Single bright star", "Group of stars forming a recognisable pattern", "Group of planets", "Galaxy far away"],
-                  "c": 1
+                  "a": [
+                    "Single bright star",
+                    "Group of stars forming a recognisable pattern",
+                    "Group of planets",
+                    "Galaxy far away"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.2-0"
                 },
                 {
                   "q": "Orion the Hunter is a constellation known for its...",
-                  "a": ["Three stars in a row forming a belt", "Five stars forming a cross", "Seven stars forming a ladle", "Two stars close together"],
-                  "c": 0
+                  "a": [
+                    "Three stars in a row forming a belt",
+                    "Five stars forming a cross",
+                    "Seven stars forming a ladle",
+                    "Two stars close together"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-9-9.2-1"
                 },
                 {
                   "q": "The Southern Cross constellation is also known as...",
-                  "a": ["Orion", "Ursa Major", "Crux", "Cassiopeia"],
-                  "c": 2
+                  "a": [
+                    "Orion",
+                    "Ursa Major",
+                    "Crux",
+                    "Cassiopeia"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-9-9.2-2"
                 },
                 {
                   "q": "The Big Dipper is part of which larger constellation?",
-                  "a": ["Orion", "Ursa Major (Great Bear)", "Crux", "Leo"],
-                  "c": 1
+                  "a": [
+                    "Orion",
+                    "Ursa Major (Great Bear)",
+                    "Crux",
+                    "Leo"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.2-3"
                 },
                 {
                   "q": "Why are different constellations visible at different times of the year?",
-                  "a": ["The stars move away", "Earth revolves around the Sun, changing our view of the night sky", "The Moon blocks some stars", "Clouds hide some constellations"],
-                  "c": 1
+                  "a": [
+                    "The stars move away",
+                    "Earth revolves around the Sun, changing our view of the night sky",
+                    "The Moon blocks some stars",
+                    "Clouds hide some constellations"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.2-4"
                 },
                 {
                   "q": "How many main stars form the Big Dipper?",
-                  "a": ["Three", "Five", "Seven", "Nine"],
-                  "c": 2
+                  "a": [
+                    "Three",
+                    "Five",
+                    "Seven",
+                    "Nine"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-9-9.2-5"
                 }
               ]
             },
@@ -1134,33 +2214,69 @@
               "questions": [
                 {
                   "q": "In the Northern Hemisphere, which star always points north?",
-                  "a": ["Sirius", "North Star (Polaris)", "Betelgeuse", "The brightest star in Orion"],
-                  "c": 1
+                  "a": [
+                    "Sirius",
+                    "North Star (Polaris)",
+                    "Betelgeuse",
+                    "The brightest star in Orion"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.3-0"
                 },
                 {
                   "q": "How can the Big Dipper help you find the North Star?",
-                  "a": ["The Big Dipper points directly north", "The two end stars of the Big Dipper's bowl point to the North Star", "All seven stars of the Big Dipper point north", "The Big Dipper is the North Star"],
-                  "c": 1
+                  "a": [
+                    "The Big Dipper points directly north",
+                    "The two end stars of the Big Dipper's bowl point to the North Star",
+                    "All seven stars of the Big Dipper point north",
+                    "The Big Dipper is the North Star"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.3-1"
                 },
                 {
                   "q": "In the Southern Hemisphere, the Southern Cross helps you find the direction to the...",
-                  "a": ["North", "South", "East", "West"],
-                  "c": 1
+                  "a": [
+                    "North",
+                    "South",
+                    "East",
+                    "West"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.3-2"
                 },
                 {
                   "q": "Sailors in the past used constellations to...",
-                  "a": ["Tell the time only", "Navigate and find directions at night", "Predict the weather", "Find food"],
-                  "c": 1
+                  "a": [
+                    "Tell the time only",
+                    "Navigate and find directions at night",
+                    "Predict the weather",
+                    "Find food"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.3-3"
                 },
                 {
                   "q": "The North Star appears to stay in one position in the sky because...",
-                  "a": ["It is the brightest star", "It is directly above Earth's North Pole", "It does not move in space", "It is the closest star to Earth"],
-                  "c": 1
+                  "a": [
+                    "It is the brightest star",
+                    "It is directly above Earth's North Pole",
+                    "It does not move in space",
+                    "It is the closest star to Earth"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-9-9.3-4"
                 },
                 {
                   "q": "Which constellation is most useful for finding south in Malaysia?",
-                  "a": ["Orion", "Big Dipper", "Southern Cross (Crux)", "Cassiopeia"],
-                  "c": 2
+                  "a": [
+                    "Orion",
+                    "Big Dipper",
+                    "Southern Cross (Crux)",
+                    "Cassiopeia"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-9-9.3-5"
                 }
               ]
             }
@@ -1175,33 +2291,69 @@
               "questions": [
                 {
                   "q": "Which natural disaster is caused by the shaking of the ground due to tectonic plate movements?",
-                  "a": ["Flood", "Earthquake", "Tsunami", "Landslide"],
-                  "c": 1
+                  "a": [
+                    "Flood",
+                    "Earthquake",
+                    "Tsunami",
+                    "Landslide"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.1-0"
                 },
                 {
                   "q": "A tsunami is a series of large waves caused by...",
-                  "a": ["Heavy rainfall", "Strong winds only", "Underwater earthquakes or volcanic eruptions", "The Moon's gravity"],
-                  "c": 2
+                  "a": [
+                    "Heavy rainfall",
+                    "Strong winds only",
+                    "Underwater earthquakes or volcanic eruptions",
+                    "The Moon's gravity"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-10-10.1-1"
                 },
                 {
                   "q": "Which natural disaster involves the overflow of water onto land that is usually dry?",
-                  "a": ["Earthquake", "Volcanic eruption", "Flood", "Landslide"],
-                  "c": 2
+                  "a": [
+                    "Earthquake",
+                    "Volcanic eruption",
+                    "Flood",
+                    "Landslide"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-10-10.1-2"
                 },
                 {
                   "q": "A volcanic eruption can release which of the following?",
-                  "a": ["Only water vapour", "Lava, ash, and gases", "Only hot rocks", "Only smoke"],
-                  "c": 1
+                  "a": [
+                    "Only water vapour",
+                    "Lava, ash, and gases",
+                    "Only hot rocks",
+                    "Only smoke"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.1-3"
                 },
                 {
                   "q": "A landslide is most likely to happen in areas with...",
-                  "a": ["Flat ground with no trees", "Steep slopes and heavy rainfall", "Deserts with no vegetation", "Low-lying coastal areas"],
-                  "c": 1
+                  "a": [
+                    "Flat ground with no trees",
+                    "Steep slopes and heavy rainfall",
+                    "Deserts with no vegetation",
+                    "Low-lying coastal areas"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.1-4"
                 },
                 {
                   "q": "Which natural disaster is MOST likely to affect Malaysia?",
-                  "a": ["Volcanic eruption", "Blizzard", "Flood", "Tornado"],
-                  "c": 2
+                  "a": [
+                    "Volcanic eruption",
+                    "Blizzard",
+                    "Flood",
+                    "Tornado"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-10-10.1-5"
                 }
               ]
             },
@@ -1211,33 +2363,69 @@
               "questions": [
                 {
                   "q": "What is the main geological cause of earthquakes?",
-                  "a": ["Strong winds", "Movement of tectonic plates", "Heavy rainfall", "The Moon's gravity"],
-                  "c": 1
+                  "a": [
+                    "Strong winds",
+                    "Movement of tectonic plates",
+                    "Heavy rainfall",
+                    "The Moon's gravity"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.2-0"
                 },
                 {
                   "q": "Which human activity can increase the risk of floods and landslides?",
-                  "a": ["Planting more trees", "Building houses on hillsides after cutting down forests", "Recycling waste", "Using solar energy"],
-                  "c": 1
+                  "a": [
+                    "Planting more trees",
+                    "Building houses on hillsides after cutting down forests",
+                    "Recycling waste",
+                    "Using solar energy"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.2-1"
                 },
                 {
                   "q": "A tsunami is triggered by...",
-                  "a": ["Underwater disturbances like earthquakes or volcanic eruptions", "Strong surface winds only", "The high tide", "Heavy rainfall at sea"],
-                  "c": 0
+                  "a": [
+                    "Underwater disturbances like earthquakes or volcanic eruptions",
+                    "Strong surface winds only",
+                    "The high tide",
+                    "Heavy rainfall at sea"
+                  ],
+                  "c": 0,
+                  "id": "tb-sci5-10-10.2-2"
                 },
                 {
                   "q": "Volcanic eruptions occur when...",
-                  "a": ["Rain falls into a mountain", "Magma from inside Earth rises to the surface", "The ground gets too hot", "Wind blows dust from a mountain"],
-                  "c": 1
+                  "a": [
+                    "Rain falls into a mountain",
+                    "Magma from inside Earth rises to the surface",
+                    "The ground gets too hot",
+                    "Wind blows dust from a mountain"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.2-3"
                 },
                 {
                   "q": "Why does deforestation increase the risk of landslides?",
-                  "a": ["Trees attract more rain", "Tree roots help hold soil together, so removing them makes slopes unstable", "Trees block the wind", "Trees make the ground softer"],
-                  "c": 1
+                  "a": [
+                    "Trees attract more rain",
+                    "Tree roots help hold soil together, so removing them makes slopes unstable",
+                    "Trees block the wind",
+                    "Trees make the ground softer"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.2-4"
                 },
                 {
                   "q": "Climate change is believed to increase the frequency of which natural disaster?",
-                  "a": ["Earthquakes", "Volcanic eruptions", "Floods", "Tsunamis"],
-                  "c": 2
+                  "a": [
+                    "Earthquakes",
+                    "Volcanic eruptions",
+                    "Floods",
+                    "Tsunamis"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-10-10.2-5"
                 }
               ]
             },
@@ -1247,33 +2435,69 @@
               "questions": [
                 {
                   "q": "What is the first thing you should do during an earthquake?",
-                  "a": ["Run outside immediately", "Drop, cover, and hold on under a sturdy table", "Stand near a window", "Keep using electrical appliances"],
-                  "c": 1
+                  "a": [
+                    "Run outside immediately",
+                    "Drop, cover, and hold on under a sturdy table",
+                    "Stand near a window",
+                    "Keep using electrical appliances"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.3-0"
                 },
                 {
                   "q": "What should an emergency kit contain?",
-                  "a": ["Toys and games only", "Food, water, medicine, torch, and first aid supplies", "Only clothes", "Books and stationery"],
-                  "c": 1
+                  "a": [
+                    "Toys and games only",
+                    "Food, water, medicine, torch, and first aid supplies",
+                    "Only clothes",
+                    "Books and stationery"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.3-1"
                 },
                 {
                   "q": "If you receive a tsunami warning while near the coast, you should...",
-                  "a": ["Go to the beach to watch", "Move immediately to higher ground", "Stay where you are", "Get into a boat"],
-                  "c": 1
+                  "a": [
+                    "Go to the beach to watch",
+                    "Move immediately to higher ground",
+                    "Stay where you are",
+                    "Get into a boat"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.3-2"
                 },
                 {
                   "q": "During a flood, you should NEVER...",
-                  "a": ["Move to higher ground", "Turn off electricity at the main switch", "Walk or swim in floodwater", "Listen to official announcements"],
-                  "c": 2
+                  "a": [
+                    "Move to higher ground",
+                    "Turn off electricity at the main switch",
+                    "Walk or swim in floodwater",
+                    "Listen to official announcements"
+                  ],
+                  "c": 2,
+                  "id": "tb-sci5-10-10.3-3"
                 },
                 {
                   "q": "During a volcanic eruption, it is important to protect your...",
-                  "a": ["Feet from getting wet", "Mouth and nose from inhaling ash", "Eyes from sunlight", "Hair from getting dusty"],
-                  "c": 1
+                  "a": [
+                    "Feet from getting wet",
+                    "Mouth and nose from inhaling ash",
+                    "Eyes from sunlight",
+                    "Hair from getting dusty"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.3-4"
                 },
                 {
                   "q": "Knowing the evacuation routes in your area is important because it helps you...",
-                  "a": ["Go sightseeing", "Reach a safe place quickly during a disaster", "Find the nearest shop", "Shorten your daily commute"],
-                  "c": 1
+                  "a": [
+                    "Go sightseeing",
+                    "Reach a safe place quickly during a disaster",
+                    "Find the nearest shop",
+                    "Shorten your daily commute"
+                  ],
+                  "c": 1,
+                  "id": "tb-sci5-10-10.3-5"
                 }
               ]
             }

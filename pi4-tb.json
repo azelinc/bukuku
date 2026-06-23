@@ -20,7 +20,8 @@
                     "Pengumpat",
                     "Hari Kiamat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.1-0"
                 },
                 {
                   "q": "Berapakah bilangan ayat dalam surah at-Takathur?",
@@ -30,7 +31,8 @@
                     "6 ayat",
                     "8 ayat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.1-1"
                 },
                 {
                   "q": "Surah at-Takathur menegur sikap manusia yang suka...",
@@ -40,7 +42,8 @@
                     "Bertawakal",
                     "Bermegah-megah"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.1-2"
                 },
                 {
                   "q": "Apakah yang akan dipersoalkan di akhirat menurut surah at-Takathur?",
@@ -50,7 +53,8 @@
                     "Setiap ibadah",
                     "Setiap dosa"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.1-3"
                 },
                 {
                   "q": "Apakah huruf pertama pada ayat pertama surah at-Takathur?",
@@ -60,7 +64,8 @@
                     "Alif",
                     "Ha"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.1-4"
                 },
                 {
                   "q": "Apakah pengajaran utama daripada surah at-Takathur?",
@@ -70,7 +75,8 @@
                     "Banyakkan membaca Al-Quran",
                     "Berpuasalah pada bulan Ramadan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.1-5"
                 },
                 {
                   "q": "Frasa 'hatta zurtumul maqabir' dalam surah at-Takathur bermaksud...",
@@ -80,7 +86,8 @@
                     "Sehingga kamu masuk syurga",
                     "Sehingga kamu diberi rezeki"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.1-6"
                 },
                 {
                   "q": "Apakah surah ke-102 dalam Al-Quran?",
@@ -90,7 +97,8 @@
                     "Surah al-Qari'ah",
                     "Surah at-Takathur"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.1-7"
                 }
               ]
             },
@@ -106,7 +114,8 @@
                     "Golongan yang celaka",
                     "Bermegah-megah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.2-0"
                 },
                 {
                   "q": "Berapakah bilangan ayat dalam surah al-Qari'ah?",
@@ -116,7 +125,8 @@
                     "10 ayat",
                     "11 ayat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.2-1"
                 },
                 {
                   "q": "Apakah nama neraka yang disebut dalam surah al-Qari'ah?",
@@ -126,7 +136,8 @@
                     "Saqar",
                     "Jahannam"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.2-2"
                 },
                 {
                   "q": "Pada hari kiamat, manusia bagaikan...",
@@ -136,7 +147,8 @@
                     "Rama-rama yang terbang",
                     "Sesumpah yang melompat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.2-3"
                 },
                 {
                   "q": "Apakah yang menimbang amalan manusia pada hari kiamat?",
@@ -146,7 +158,8 @@
                     "Mizaan (timbangan)",
                     "Kitab amalan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.2-4"
                 },
                 {
                   "q": "Siapakah yang dikategorikan sebagai penghuni neraka Hawiyah?",
@@ -156,7 +169,8 @@
                     "Orang yang ringan timbangan amal baiknya",
                     "Orang yang miskin"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.2-5"
                 },
                 {
                   "q": "Gunung-ganang pada hari kiamat menjadi seperti...",
@@ -166,7 +180,8 @@
                     "Pasir di pantai",
                     "Bulu yang dihamburkan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.2-6"
                 }
               ]
             },
@@ -182,7 +197,8 @@
                     "Pengumpat dan pencela",
                     "Golongan yang celaka"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.3-0"
                 },
                 {
                   "q": "Berapakah bilangan ayat dalam surah al-Humazah?",
@@ -192,7 +208,8 @@
                     "9 ayat",
                     "10 ayat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.3-1"
                 },
                 {
                   "q": "Apakah nama neraka yang disebut dalam surah al-Humazah?",
@@ -202,7 +219,8 @@
                     "Jahannam",
                     "Hutamah"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.3-2"
                 },
                 {
                   "q": "Sikap yang dikecam dalam surah al-Humazah ialah...",
@@ -212,7 +230,8 @@
                     "Bersedekah dan berpuasa",
                     "Solat dan berzikir"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.3-3"
                 },
                 {
                   "q": "Apakah maksud 'alladzi jama'a maalaw wa'addadah'?",
@@ -222,7 +241,8 @@
                     "Yang menyembunyikan hartanya",
                     "Yang bersedekah dengan hartanya"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.3-4"
                 },
                 {
                   "q": "Neraka Hutamah ialah neraka yang...",
@@ -232,7 +252,8 @@
                     "Penuh dengan ular",
                     "Memusnahkan dan membakar segala-galanya"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.3-5"
                 },
                 {
                   "q": "Pengajaran daripada surah al-Humazah ialah kita hendaklah...",
@@ -242,7 +263,8 @@
                     "Mengumpul harta sebanyak mungkin",
                     "Mencela orang yang bersalah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.3-6"
                 }
               ]
             },
@@ -258,7 +280,8 @@
                     "Menghafal Al-Quran",
                     "Merenung dan menghayati ayat Al-Quran"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.4-0"
                 },
                 {
                   "q": "Antara berikut, yang manakah contoh amalan tadabbur Al-Quran?",
@@ -268,7 +291,8 @@
                     "Membaca Al-Quran sambil memahami maksudnya",
                     "Membaca Al-Quran tanpa menghayati"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.4-1"
                 },
                 {
                   "q": "Apakah kepentingan bertadabbur Al-Quran?",
@@ -278,7 +302,8 @@
                     "Mendapat populariti",
                     "Menjadi terkenal"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.4-2"
                 },
                 {
                   "q": "Langkah pertama dalam bertadabbur Al-Quran ialah...",
@@ -288,7 +313,8 @@
                     "Mendengar tanpa membaca",
                     "Terus mengamalkan tanpa membaca"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.4-3"
                 },
                 {
                   "q": "Ayat Al-Quran yang dibaca dengan tadabbur akan memberi kesan kepada...",
@@ -298,7 +324,8 @@
                     "Hati dan perbuatan",
                     "Nama baik"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.4-4"
                 },
                 {
                   "q": "Allah menyuruh kita bertadabbur Al-Quran supaya kita...",
@@ -308,7 +335,8 @@
                     "Berdebat dengan orang lain",
                     "Mengambil pengajaran dan mengamalkannya"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.4-5"
                 },
                 {
                   "q": "Siapakah yang mendapat manfaat daripada tadabbur Al-Quran?",
@@ -318,7 +346,8 @@
                     "Orang yang berakal dan beriman",
                     "Orang yang pandai sahaja"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.4-6"
                 }
               ]
             },
@@ -334,7 +363,8 @@
                     "Mim berbaris dua",
                     "Mim berbaris satu"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.5-0"
                 },
                 {
                   "q": "Apakah hukum bacaan apabila mim sakinah bertemu dengan huruf ba (ب)?",
@@ -344,7 +374,8 @@
                     "Ikhfa' Syafawi",
                     "Izhar Syafawi"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.5-1"
                 },
                 {
                   "q": "Apakah hukum bacaan apabila mim sakinah bertemu dengan huruf mim (م)?",
@@ -354,7 +385,8 @@
                     "Ikhfa' Syafawi",
                     "Idgham Bila Ghunnah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.5-2"
                 },
                 {
                   "q": "Apakah cara bacaan Idgham Mimi?",
@@ -364,7 +396,8 @@
                     "Dibaca dengan dengung dan dimasukkan",
                     "Dibaca dengan jelas tanpa dengung"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.5-3"
                 },
                 {
                   "q": "Bilakah bacaan Izhar Syafawi berlaku?",
@@ -374,7 +407,8 @@
                     "Apabila mim sakinah bertemu ba sahaja",
                     "Apabila mim sakinah bertemu alif"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.5-4"
                 },
                 {
                   "q": "Ikhfa' Syafawi dibaca dengan cara...",
@@ -384,7 +418,8 @@
                     "Samar-samar dengan dengung",
                     "Dipanjangkan dua harakat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.5-5"
                 },
                 {
                   "q": "Antara huruf berikut, yang manakah menyebabkan bacaan Izhar Syafawi?",
@@ -394,7 +429,8 @@
                     "Mim (م)",
                     "Wau (و)"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.5-6"
                 }
               ]
             },
@@ -410,7 +446,8 @@
                     "Pemanjangan bacaan",
                     "Dengungan pada huruf nun"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.6-0"
                 },
                 {
                   "q": "Berikut adalah huruf qalqalah kecuali...",
@@ -420,7 +457,8 @@
                     "Qaf (ق)",
                     "Dal (د)"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.6-1"
                 },
                 {
                   "q": "Apakah Qalqalah Sughra?",
@@ -430,7 +468,8 @@
                     "Qalqalah di tengah kata",
                     "Qalqalah di awal kata"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.6-2"
                 },
                 {
                   "q": "Apakah Qalqalah Kubra?",
@@ -440,7 +479,8 @@
                     "Qalqalah di tengah kata",
                     "Qalqalah di hujung kata atau ketika waqaf"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.6-3"
                 },
                 {
                   "q": "Berapakah jumlah huruf qalqalah?",
@@ -450,7 +490,8 @@
                     "7 huruf",
                     "4 huruf"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.6-4"
                 },
                 {
                   "q": "Manakah antara berikut yang paling mudah mengingati huruf qalqalah?",
@@ -460,7 +501,8 @@
                     "كَلِمُنْ سَعْفَصْ",
                     "قُطْبُ جَدٍ"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.6-5"
                 },
                 {
                   "q": "Dalam bacaan Qalqalah Kubra, pantulan bunyi lebih...",
@@ -470,7 +512,8 @@
                     "Panjang dan berlagu",
                     "Pendek dan cepat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.6-6"
                 }
               ]
             },
@@ -486,7 +529,8 @@
                     "Memanjangkan bacaan",
                     "Menyambung bacaan tanpa henti"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.7-0"
                 },
                 {
                   "q": "Apakah maksud tanda waqaf م (Mim)?",
@@ -496,7 +540,8 @@
                     "Jangan berhenti",
                     "Waqaf Lazim — WAJIB berhenti"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.7-1"
                 },
                 {
                   "q": "Apakah maksud tanda waqaf ج (Jim)?",
@@ -506,7 +551,8 @@
                     "WAJIB berhenti",
                     "Lebih utama berhenti"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.7-2"
                 },
                 {
                   "q": "Apakah maksud tanda لا (Lam Alif)?",
@@ -516,7 +562,8 @@
                     "Harus berhenti",
                     "WAJIB berhenti"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-1-1.7-3"
                 },
                 {
                   "q": "Mengapakah kita perlu memahami tanda waqaf?",
@@ -526,7 +573,8 @@
                     "Untuk memelihara makna ayat Al-Quran",
                     "Untuk menambah ilmu tajwid"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-1-1.7-4"
                 },
                 {
                   "q": "Tanda waqaf ط (Tha) bermaksud...",
@@ -536,7 +584,8 @@
                     "Jangan berhenti",
                     "Waqaf Mutlaq — lebih utama berhenti"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-1-1.7-5"
                 },
                 {
                   "q": "Tanda waqaf ص (Sad) dikenali sebagai...",
@@ -546,7 +595,8 @@
                     "Waqaf Jaiz",
                     "Waqaf Lazim"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-1-1.7-6"
                 }
               ]
             }
@@ -567,7 +617,8 @@
                     "Abu Hurairah RA",
                     "Umar bin al-Khattab RA"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.1-0"
                 },
                 {
                   "q": "Apakah maksud hadith 'Sebaik-baik kamu ialah orang yang mempelajari Al-Quran dan mengajarkannya'?",
@@ -577,7 +628,8 @@
                     "Hanya menghafal Al-Quran sudah mencukupi",
                     "Mengajar Al-Quran hanya untuk guru agama"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-2-2.1-1"
                 },
                 {
                   "q": "Siapakah yang dianggap sebaik-baik manusia menurut hadith?",
@@ -587,7 +639,8 @@
                     "Orang yang berpangkat tinggi",
                     "Orang yang kuat beribadah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.1-2"
                 },
                 {
                   "q": "Apakah ganjaran bagi orang yang membaca Al-Quran?",
@@ -597,7 +650,8 @@
                     "Setiap surah diganjari syurga",
                     "Setiap muka surat diganjari pahala haji"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.1-3"
                 },
                 {
                   "q": "Apakah pengajaran daripada hadith tentang kelebihan membaca Al-Quran?",
@@ -607,7 +661,8 @@
                     "Umat Islam digalakkan mempelajari dan mengajarkan Al-Quran",
                     "Mengajar Al-Quran hanya untuk imam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.1-4"
                 },
                 {
                   "q": "Kitap hadith yang meriwayatkan hadith ini ialah...",
@@ -617,7 +672,8 @@
                     "Sahih al-Bukhari",
                     "Sahih Muslim"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.1-5"
                 },
                 {
                   "q": "Seorang murid yang membaca Al-Quran mendapat pahala kerana...",
@@ -627,7 +683,8 @@
                     "Setiap huruf Al-Quran adalah kebaikan",
                     "Dia dipuji oleh guru"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.1-6"
                 }
               ]
             },
@@ -643,7 +700,8 @@
                     "Abu Hurairah RA",
                     "Ali bin Abi Talib RA"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.2-0"
                 },
                 {
                   "q": "Apakah maksud hadith 'Innamal a'malu binniyat'?",
@@ -653,7 +711,8 @@
                     "Sesungguhnya setiap amalan bergantung pada niat",
                     "Sesungguhnya amalan tanpa niat adalah sia-sia"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.2-1"
                 },
                 {
                   "q": "Apakah yang menentukan nilai sesuatu amalan di sisi Allah?",
@@ -663,7 +722,8 @@
                     "Cepatnya amalan dilakukan",
                     "Niat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-2-2.2-2"
                 },
                 {
                   "q": "Seseorang yang bersedekah kerana ingin dipuji akan...",
@@ -673,7 +733,8 @@
                     "Tidak mendapat pahala kerana niat tidak ikhlas",
                     "Dicatat sebagai dosa"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.2-3"
                 },
                 {
                   "q": "Apakah pengajaran daripada hadith tentang niat?",
@@ -683,7 +744,8 @@
                     "Niat boleh diubah selepas amalan selesai",
                     "Niat yang ikhlas kerana Allah adalah syarat diterima amalan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-2-2.2-4"
                 },
                 {
                   "q": "Hadith tentang niat diriwayatkan oleh imam-imam hadith berikut kecuali...",
@@ -693,7 +755,8 @@
                     "Imam al-Bukhari",
                     "Imam Abu Daud"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.2-5"
                 },
                 {
                   "q": "Sebaiknya niat kita dalam melakukan sesuatu amalan adalah...",
@@ -703,7 +766,8 @@
                     "Kerana Allah SWT semata-mata",
                     "Kerana terpaksa"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.2-6"
                 },
                 {
                   "q": "Hadith 'Innamal a'malu binniyat' mengajar kita supaya...",
@@ -713,7 +777,8 @@
                     "Meluruskan niat kerana Allah dalam setiap amalan",
                     "Meninggalkan amalan jika sukar"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.2-7"
                 }
               ]
             },
@@ -729,7 +794,8 @@
                     "Menunaikan ibadah haji",
                     "Berpuasa pada bulan Ramadan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.3-0"
                 },
                 {
                   "q": "Siapakah perawi hadith tentang silaturahim?",
@@ -739,7 +805,8 @@
                     "Umar bin al-Khattab RA",
                     "Abu Hurairah RA"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-2-2.3-1"
                 },
                 {
                   "q": "Antara berikut, yang manakah merupakan amalan silaturahim?",
@@ -749,7 +816,8 @@
                     "Melawat saudara-mara dan bertanya khabar",
                     "Memutuskan hubungan dengan keluarga"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.3-2"
                 },
                 {
                   "q": "Apakah ganjaran orang yang menyambung silaturahim?",
@@ -759,7 +827,8 @@
                     "Dipanjangkan umur dan diluaskan rezeki",
                     "Dipandang rendah oleh masyarakat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.3-3"
                 },
                 {
                   "q": "Siapakah yang diperintahkan untuk menjaga silaturahim?",
@@ -769,7 +838,8 @@
                     "Hanya orang dewasa",
                     "Hanya ketua keluarga"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-2-2.3-4"
                 },
                 {
                   "q": "Memutuskan silaturahim adalah perbuatan yang...",
@@ -779,7 +849,8 @@
                     "Dosa dan dilarang dalam Islam",
                     "Harus dilakukan jika ada masalah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-2-2.3-5"
                 },
                 {
                   "q": "Antara cara menyambung silaturahim ialah...",
@@ -789,7 +860,8 @@
                     "Menghindari pertemuan keluarga",
                     "Mengabaikan panggilan keluarga"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-2-2.3-6"
                 }
               ]
             }
@@ -810,7 +882,8 @@
                     "Tulisan Cina untuk bahasa Melayu",
                     "Tulisan rumi yang diubah suai"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.1-0"
                 },
                 {
                   "q": "Bilakah tulisan Jawi mula digunakan di Nusantara?",
@@ -820,7 +893,8 @@
                     "Abad ke-17 Masihi",
                     "Abad ke-10 Masihi"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.1-1"
                 },
                 {
                   "q": "Berapakah jumlah huruf Jawi?",
@@ -830,7 +904,8 @@
                     "37 huruf",
                     "35 huruf"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-3-3.1-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah huruf tambahan dalam tulisan Jawi?",
@@ -840,7 +915,8 @@
                     "ب (ba)",
                     "ت (ta)"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.1-3"
                 },
                 {
                   "q": "Apakah kepentingan tulisan Jawi pada masa dahulu?",
@@ -850,7 +926,8 @@
                     "Tulisan untuk perdagangan sahaja",
                     "Alat penyebaran ilmu dan agama Islam"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-3-3.1-4"
                 },
                 {
                   "q": "Huruf Jawi berasal daripada huruf...",
@@ -860,7 +937,8 @@
                     "Rumi",
                     "Cina"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.1-5"
                 },
                 {
                   "q": "Antara huruf Jawi berikut, yang manakah bunyi 'ng'?",
@@ -870,7 +948,8 @@
                     "ݢ",
                     "ڤ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.1-6"
                 }
               ]
             },
@@ -886,7 +965,8 @@
                     "Ia digunakan di seluruh dunia",
                     "Ia lebih mudah daripada tulisan rumi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.2-0"
                 },
                 {
                   "q": "Apakah manfaat mempelajari tulisan Jawi?",
@@ -896,7 +976,8 @@
                     "Dapat membaca kitab-kitab ulama silam",
                     "Dapat memahami bahasa Inggeris"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-3-3.2-1"
                 },
                 {
                   "q": "Siapakah yang bertanggungjawab memelihara tulisan Jawi?",
@@ -906,7 +987,8 @@
                     "Orang tua sahaja",
                     "Kerajaan sahaja"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.2-2"
                 },
                 {
                   "q": "Tulisan Jawi digunakan dalam penulisan...",
@@ -916,7 +998,8 @@
                     "Buku teks sains moden",
                     "Majalah fesyen"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.2-3"
                 },
                 {
                   "q": "Antara cara menunjukkan cinta kepada tulisan Jawi ialah...",
@@ -926,7 +1009,8 @@
                     "Belajar membaca dan menulis Jawi",
                     "Menukar semua ke rumi"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-3-3.2-4"
                 },
                 {
                   "q": "Tulisan Jawi juga dikenali sebagai...",
@@ -936,7 +1020,8 @@
                     "Tulisan Latin",
                     "Tulisan Arab"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.2-5"
                 },
                 {
                   "q": "Di manakah kita sering melihat tulisan Jawi pada hari ini?",
@@ -946,7 +1031,8 @@
                     "Akhbar bahasa Cina",
                     "Buku cerita kanak-kanak Inggeris"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.2-6"
                 },
                 {
                   "q": "Apakah antara usaha untuk memelihara tulisan Jawi pada masa kini?",
@@ -956,7 +1042,8 @@
                     "Menghapuskan tulisan Jawi daripada papan tanda",
                     "Mengubah tulisan Jawi menjadi rumi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.2-7"
                 }
               ]
             },
@@ -972,7 +1059,8 @@
                     "Kiri ke kanan",
                     "Atas ke bawah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.3-0"
                 },
                 {
                   "q": "Antara huruf berikut, yang manakah TIDAK boleh disambung di sebelah kiri?",
@@ -982,7 +1070,8 @@
                     "د (dal)",
                     "ت (ta)"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-3-3.3-1"
                 },
                 {
                   "q": "Apakah kepanjangan PUEJ?",
@@ -992,7 +1081,8 @@
                     "Pedoman Unggul Ejaan Jawi",
                     "Peraturan Umum Ejaan Jawi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.3-2"
                 },
                 {
                   "q": "Perkataan 'سايو' dalam Jawi bermaksud...",
@@ -1002,7 +1092,8 @@
                     "Saya-saya",
                     "Sawah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.3-3"
                 },
                 {
                   "q": "Bilakah huruf alif (ا) digunakan dalam tulisan Jawi?",
@@ -1012,7 +1103,8 @@
                     "Untuk melambangkan konsonan 'k'",
                     "Untuk melambangkan vokal 'i'"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.3-4"
                 },
                 {
                   "q": "Perkataan 'كتاب' dalam Jawi bermaksud...",
@@ -1022,7 +1114,8 @@
                     "Katib (penulis)",
                     "Kita"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-3-3.3-5"
                 },
                 {
                   "q": "Antara kemahiran asas menulis Jawi ialah...",
@@ -1032,7 +1125,8 @@
                     "Menulis dalam bentuk kursif",
                     "Menulis dengan tangan kiri"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-3-3.3-6"
                 }
               ]
             }
@@ -1053,7 +1147,8 @@
                     "Wujud (Ada)",
                     "Baqa' (Kekal)"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.1-0"
                 },
                 {
                   "q": "Apakah maksud sifat Allah 'Qidam'?",
@@ -1063,7 +1158,8 @@
                     "Allah sedia ada tanpa permulaan",
                     "Allah Maha Berkuasa"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.1-1"
                 },
                 {
                   "q": "Allah bersifat 'Baqa'' yang bermaksud...",
@@ -1073,7 +1169,8 @@
                     "Allah Maha Agung",
                     "Allah Maha Suci"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.1-2"
                 },
                 {
                   "q": "Apakah maksud 'Mukhalafatuhu lilhawadith'?",
@@ -1083,7 +1180,8 @@
                     "Allah sama dengan manusia",
                     "Allah serupa dengan malaikat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.1-3"
                 },
                 {
                   "q": "Allah bersifat 'Qiyamuhu binafsihi' yang bermaksud...",
@@ -1093,7 +1191,8 @@
                     "Allah berdiri dengan sendiri-Nya, tidak memerlukan makhluk",
                     "Allah memerlukan tempat tinggal"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.1-4"
                 },
                 {
                   "q": "Apakah maksud sifat Allah 'Sama''?",
@@ -1103,7 +1202,8 @@
                     "Allah Maha Berkuasa",
                     "Allah Maha Mendengar"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.1-5"
                 },
                 {
                   "q": "Berapakah jumlah sifat wajib bagi Allah yang perlu diketahui?",
@@ -1113,7 +1213,8 @@
                     "15 sifat",
                     "10 sifat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.1-6"
                 },
                 {
                   "q": "Sifat 'Basar' bagi Allah bermaksud...",
@@ -1123,7 +1224,8 @@
                     "Allah Maha Berkuasa",
                     "Allah Maha Mendengar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.1-7"
                 }
               ]
             },
@@ -1139,7 +1241,8 @@
                     "Rasul tidak menerima wahyu",
                     "Rasul hanya lelaki, Nabi boleh perempuan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.2-0"
                 },
                 {
                   "q": "Berapakah jumlah nabi dan rasul yang wajib diketahui?",
@@ -1149,7 +1252,8 @@
                     "30 orang",
                     "15 orang"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.2-1"
                 },
                 {
                   "q": "Apakah sifat wajib bagi nabi dan rasul yang bermaksud 'benar'?",
@@ -1159,7 +1263,8 @@
                     "Fatanah",
                     "Amanah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.2-2"
                 },
                 {
                   "q": "Sifat 'Amanah' pada nabi dan rasul bermaksud...",
@@ -1169,7 +1274,8 @@
                     "Mereka sangat kaya",
                     "Mereka dipercayai dan tidak mengkhianati amanah Allah"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.2-3"
                 },
                 {
                   "q": "Sifat 'Tabligh' bermaksud nabi dan rasul...",
@@ -1179,7 +1285,8 @@
                     "Menyembunyikan ajaran Allah",
                     "Memilih wahyu yang sesuai"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.2-4"
                 },
                 {
                   "q": "Nabi dan rasul yang pertama ialah...",
@@ -1189,7 +1296,8 @@
                     "Nabi Nuh AS",
                     "Nabi Adam AS"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.2-5"
                 },
                 {
                   "q": "Nabi dan rasul yang terakhir ialah...",
@@ -1199,7 +1307,8 @@
                     "Nabi Isa AS",
                     "Nabi Muhammad SAW"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.2-6"
                 },
                 {
                   "q": "Beriman kepada nabi dan rasul adalah rukun iman yang ke...",
@@ -1209,7 +1318,8 @@
                     "Lima",
                     "Empat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.2-7"
                 }
               ]
             },
@@ -1225,7 +1335,8 @@
                     "Menerima dan mengakui",
                     "Menutup atau menyembunyikan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.3-0"
                 },
                 {
                   "q": "Apakah maksud kufur dari segi istilah?",
@@ -1235,7 +1346,8 @@
                     "Bersyukur kepada Allah",
                     "Berbuat baik kepada manusia"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.3-1"
                 },
                 {
                   "q": "Apakah akibat kufur di akhirat?",
@@ -1245,7 +1357,8 @@
                     "Dimasukkan ke syurga",
                     "Azab yang kekal di neraka"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.3-2"
                 },
                 {
                   "q": "Kufur Akbar bermaksud...",
@@ -1255,7 +1368,8 @@
                     "Kufur kecil yang tidak mengeluarkan daripada Islam",
                     "Dosa kecil yang mudah diampunkan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.3-3"
                 },
                 {
                   "q": "Antara berikut, yang manakah tergolong dalam perbuatan kufur?",
@@ -1265,7 +1379,8 @@
                     "Terlambat membayar zakat",
                     "Menghina Allah dan rasul"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-4-4.3-4"
                 },
                 {
                   "q": "Orang yang melakukan kufur disebut...",
@@ -1275,7 +1390,8 @@
                     "Kafir",
                     "Fasiq"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.3-5"
                 },
                 {
                   "q": "Agar terhindar daripada kufur, kita hendaklah...",
@@ -1285,7 +1401,8 @@
                     "Banyak bercakap tentang agama",
                     "Bergaul dengan semua orang tanpa batas"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.3-6"
                 }
               ]
             },
@@ -1301,7 +1418,8 @@
                     "Berpura-pura",
                     "Mengingkari"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.4-0"
                 },
                 {
                   "q": "Apakah maksud nifak dari segi istilah?",
@@ -1311,7 +1429,8 @@
                     "Menunjukkan iman di luar tetapi kufur di dalam hati",
                     "Berbuat maksiat secara sembunyi"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.4-1"
                 },
                 {
                   "q": "Orang yang melakukan nifak disebut...",
@@ -1321,7 +1440,8 @@
                     "Fasiq",
                     "Kafir"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.4-2"
                 },
                 {
                   "q": "Antara ciri-ciri orang munafik ialah...",
@@ -1331,7 +1451,8 @@
                     "Menepati janji",
                     "Amanah dalam perkara"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.4-3"
                 },
                 {
                   "q": "Apakah akibat orang munafik di akhirat?",
@@ -1341,7 +1462,8 @@
                     "Azab yang pedih di neraka",
                     "Syurga yang penuh nikmat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-4-4.4-4"
                 },
                 {
                   "q": "Nifak 'Amali bermaksud...",
@@ -1351,7 +1473,8 @@
                     "Nifak yang diampunkan Allah",
                     "Nifak yang tidak berdosa"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-4-4.4-5"
                 },
                 {
                   "q": "Bagaimanakah cara mengelakkan sifat munafik?",
@@ -1361,7 +1484,8 @@
                     "Menyendiri daripada masyarakat",
                     "Banyak berharta"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-4-4.4-6"
                 }
               ]
             }
@@ -1382,7 +1506,8 @@
                     "Sunat",
                     "Makruh"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.1-0"
                 },
                 {
                   "q": "Apakah batas aurat lelaki?",
@@ -1392,7 +1517,8 @@
                     "Antara dada hingga lutut",
                     "Seluruh tubuh kecuali muka"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.1-1"
                 },
                 {
                   "q": "Apakah batas aurat perempuan di hadapan lelaki bukan mahram?",
@@ -1402,7 +1528,8 @@
                     "Hanya rambut sahaja",
                     "Antara pusat hingga lutut"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.1-2"
                 },
                 {
                   "q": "Siapakah mahram bagi seorang perempuan?",
@@ -1412,7 +1539,8 @@
                     "Ayah, abang, anak lelaki, bapa saudara",
                     "Guru lelaki"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-5-5.1-3"
                 },
                 {
                   "q": "Mengapakah Islam mewajibkan menutup aurat?",
@@ -1422,7 +1550,8 @@
                     "Untuk mengikut trend fesyen",
                     "Untuk menjaga maruah dan kehormatan diri"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.1-4"
                 },
                 {
                   "q": "Pakaian yang menutup aurat hendaklah...",
@@ -1432,7 +1561,8 @@
                     "Berwarna terang dan mencolok",
                     "Tipis dan jarang"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.1-5"
                 },
                 {
                   "q": "Apakah hukum perempuan yang tidak menutup aurat?",
@@ -1442,7 +1572,8 @@
                     "Sunat sahaja tidak wajib",
                     "Tidak berdosa kerana bukan kewajipan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.1-6"
                 }
               ]
             },
@@ -1458,7 +1589,8 @@
                     "Wajib — mesti dilakukan",
                     "Sunat — dituntut tetapi tidak diwajibkan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.2-0"
                 },
                 {
                   "q": "Apakah yang dimaksudkan dengan Solat Sunat Rawatib?",
@@ -1468,7 +1600,8 @@
                     "Solat sunat pada waktu malam",
                     "Solat sunat ketika musafir"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.2-1"
                 },
                 {
                   "q": "Solat Sunat Dhuha dilakukan pada waktu...",
@@ -1478,7 +1611,8 @@
                     "Pagi ketika matahari naik",
                     "Selepas Isyak"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-5-5.2-2"
                 },
                 {
                   "q": "Solat Sunat Tahajjud dilakukan pada waktu...",
@@ -1488,7 +1622,8 @@
                     "Pagi selepas Subuh",
                     "Tengah hari"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.2-3"
                 },
                 {
                   "q": "Apakah hikmah mengerjakan solat sunat?",
@@ -1498,7 +1633,8 @@
                     "Menggantikan solat fardu yang tertinggal",
                     "Menyembuhkan penyakit"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.2-4"
                 },
                 {
                   "q": "Solat Sunat Tarawih dilakukan pada bulan...",
@@ -1508,7 +1644,8 @@
                     "Zulhijah",
                     "Ramadan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.2-5"
                 },
                 {
                   "q": "Solat Sunat Witir biasanya dilakukan selepas...",
@@ -1518,7 +1655,8 @@
                     "Solat Zuhur",
                     "Solat Subuh"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.2-6"
                 },
                 {
                   "q": "Bilangan rakaat Solat Sunat Dhuha yang paling minimum ialah...",
@@ -1528,7 +1666,8 @@
                     "6 rakaat",
                     "8 rakaat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.2-7"
                 }
               ]
             },
@@ -1544,7 +1683,8 @@
                     "Menjamu setiap hari",
                     "Menziarahi setiap minggu"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.3-0"
                 },
                 {
                   "q": "Bagaimanakah cara berbuat baik kepada jiran?",
@@ -1554,7 +1694,8 @@
                     "Membuat bising sehingga mengganggu",
                     "Membuang sampah di depan rumah jiran"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.3-1"
                 },
                 {
                   "q": "Rasulullah SAW bersabda bahawa Jibril selalu berpesan tentang jiran sehingga baginda menyangka...",
@@ -1564,7 +1705,8 @@
                     "Jiran menjadi keluarga",
                     "Jiran akan mewarisi harta"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.3-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah perbuatan yang dilarang terhadap jiran?",
@@ -1574,7 +1716,8 @@
                     "Memberi makanan kepada jiran",
                     "Menjenguk jiran yang sakit"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.3-3"
                 },
                 {
                   "q": "Apakah ganjaran berbuat baik kepada jiran?",
@@ -1584,7 +1727,8 @@
                     "Dikurniakan harta yang banyak",
                     "Mendapat keberkatan dan pahala"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.3-4"
                 },
                 {
                   "q": "Apabila jiran kita sakit, kita sepatutnya...",
@@ -1594,7 +1738,8 @@
                     "Mengabaikannya",
                     "Tidak perlu ambil peduli"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.3-5"
                 },
                 {
                   "q": "Memuliakan jiran adalah tanda...",
@@ -1604,7 +1749,8 @@
                     "Kedudukan tinggi",
                     "Kecerdasan akal"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.3-6"
                 }
               ]
             },
@@ -1620,7 +1766,8 @@
                     "Dengan suara yang kuat",
                     "Bercakap sambil bermain"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.4-0"
                 },
                 {
                   "q": "Apakah yang perlu kita lakukan apabila guru memberikan penjelasan?",
@@ -1630,7 +1777,8 @@
                     "Membuat kerja lain",
                     "Tidur di dalam kelas"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.4-1"
                 },
                 {
                   "q": "Antara adab terhadap guru ialah...",
@@ -1640,7 +1788,8 @@
                     "Menganggap guru sama seperti kawan",
                     "Merendah diri dan tidak sombong"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.4-2"
                 },
                 {
                   "q": "Apabila berjalan di hadapan guru, kita hendaklah...",
@@ -1650,7 +1799,8 @@
                     "Menolak guru",
                     "Berkelip-kelip di depan guru"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-5-5.4-3"
                 },
                 {
                   "q": "Doa untuk guru yang baik ialah...",
@@ -1660,7 +1810,8 @@
                     "Ya Allah, rahmatilah guru-guruku",
                     "Ya Allah, ambillah nyawa guru"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-5-5.4-4"
                 },
                 {
                   "q": "Mengapakah kita perlu menghormati guru?",
@@ -1670,7 +1821,8 @@
                     "Kerana guru kaya raya",
                     "Kerana guru mendidik dan menyampaikan ilmu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-5-5.4-5"
                 },
                 {
                   "q": "Apakah akibat jika kita tidak menghormati guru?",
@@ -1680,7 +1832,8 @@
                     "Kita akan mendapat hadiah",
                     "Kita akan menjadi kaya"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.4-6"
                 },
                 {
                   "q": "Cara terbaik menghargai guru adalah dengan...",
@@ -1690,7 +1843,8 @@
                     "Memberi hadiah mahal setiap hari",
                     "Menjadi pembantu peribadi guru"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-5-5.4-7"
                 }
               ]
             }
@@ -1711,7 +1865,8 @@
                     "Perjalanan malam dari Masjid al-Haram ke Masjid al-Aqsa",
                     "Perjalanan ke Thaif"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-6-6.1-0"
                 },
                 {
                   "q": "Apakah maksud Mikraj?",
@@ -1721,7 +1876,8 @@
                     "Perjalanan ke Masjid al-Aqsa",
                     "Kenaikan ke langit hingga Sidratul Muntaha"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.1-1"
                 },
                 {
                   "q": "Apakah ibadah yang diwajibkan secara langsung dalam peristiwa Isra' Mikraj?",
@@ -1731,7 +1887,8 @@
                     "Haji",
                     "Puasa Ramadan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-6-6.1-2"
                 },
                 {
                   "q": "Di manakah Rasulullah SAW memulakan perjalanan Isra'?",
@@ -1741,7 +1898,8 @@
                     "Masjid Quba",
                     "Masjid Nabawi di Madinah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-6-6.1-3"
                 },
                 {
                   "q": "Siapakah yang menemani Rasulullah SAW dalam peristiwa Isra' Mikraj?",
@@ -1751,7 +1909,8 @@
                     "Malaikat Israfil AS",
                     "Malaikat Mikail AS"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-6-6.1-4"
                 },
                 {
                   "q": "Apakah kenderaan yang digunakan oleh Rasulullah SAW dalam peristiwa Isra' Mikraj?",
@@ -1761,7 +1920,8 @@
                     "Buraq",
                     "Kuda"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-6-6.1-5"
                 },
                 {
                   "q": "Pada peringkat awal, solat diwajibkan sebanyak...",
@@ -1771,7 +1931,8 @@
                     "10 waktu",
                     "50 waktu kemudian dikurangkan kepada 5 waktu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.1-6"
                 },
                 {
                   "q": "Apakah pengajaran daripada peristiwa Isra' Mikraj?",
@@ -1781,7 +1942,8 @@
                     "Solat boleh ditinggalkan ketika sibuk",
                     "Solat hanya untuk nabi"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-6-6.1-7"
                 }
               ]
             },
@@ -1797,7 +1959,8 @@
                     "10 tahun",
                     "13 tahun"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.2-0"
                 },
                 {
                   "q": "Bagaimanakah cara dakwah Rasulullah SAW pada peringkat awal di Mekah?",
@@ -1807,7 +1970,8 @@
                     "Secara terbuka terus",
                     "Melalui surat kepada raja"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-6-6.2-1"
                 },
                 {
                   "q": "Apakah tentangan yang dihadapi oleh Rasulullah SAW di Mekah?",
@@ -1817,7 +1981,8 @@
                     "Sambutan baik daripada semua pihak",
                     "Ejekan, ancaman, sekatan ekonomi, dan cubaan bunuh"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.2-2"
                 },
                 {
                   "q": "Siapakah sahabat yang pertama beriman daripada kalangan lelaki dewasa?",
@@ -1827,7 +1992,8 @@
                     "Abu Bakar as-Siddiq RA",
                     "Uthman bin Affan RA"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-6-6.2-3"
                 },
                 {
                   "q": "Siapakah sahabat yang pertama beriman daripada kalangan kanak-kanak?",
@@ -1837,7 +2003,8 @@
                     "Zaid bin Harithah RA",
                     "Ali bin Abi Talib RA"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.2-4"
                 },
                 {
                   "q": "Apakah fokus utama dakwah Rasulullah SAW di Mekah?",
@@ -1847,7 +2014,8 @@
                     "Mengajak manusia berpolitik",
                     "Mengajak manusia berperang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-6-6.2-5"
                 },
                 {
                   "q": "Siapakah yang telah dizalimi oleh kaum Quraisy kerana beriman kepada Allah?",
@@ -1857,7 +2025,8 @@
                     "Bilal bin Rabah, Sumayyah, dan Yasir",
                     "Khadijah, Aisyah, dan Fatimah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-6-6.2-6"
                 },
                 {
                   "q": "Apakah pengajaran daripada perjuangan Rasulullah di Mekah?",
@@ -1867,7 +2036,8 @@
                     "Meninggalkan dakwah jika susah",
                     "Membalas kejahatan dengan kejahatan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-6-6.2-7"
                 }
               ]
             },
@@ -1883,7 +2053,8 @@
                     "13 tahun",
                     "10 tahun"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.3-0"
                 },
                 {
                   "q": "Apakah tindakan pertama Rasulullah SAW setelah tiba di Madinah?",
@@ -1893,7 +2064,8 @@
                     "Berdagang di pasar",
                     "Berperang dengan musuh"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-6-6.3-1"
                 },
                 {
                   "q": "Apakah yang dimaksudkan dengan persaudaraan Muhajirin dan Ansar?",
@@ -1903,7 +2075,8 @@
                     "Persaudaraan perniagaan",
                     "Persaudaraan berdasarkan keturunan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-6-6.3-2"
                 },
                 {
                   "q": "Apakah Piagam Madinah?",
@@ -1913,7 +2086,8 @@
                     "Dokumen dakwah kepada raja",
                     "Surat kepada kabilah Arab"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-6-6.3-3"
                 },
                 {
                   "q": "Perang Badar berlaku pada tahun...",
@@ -1923,7 +2097,8 @@
                     "5 Hijrah",
                     "3 Hijrah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-6-6.3-4"
                 },
                 {
                   "q": "Siapakah golongan Ansar?",
@@ -1933,7 +2108,8 @@
                     "Orang Islam dari Mekah yang berhijrah",
                     "Penduduk Madinah yang membantu dan menyambut Muhajirin"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-6-6.3-5"
                 },
                 {
                   "q": "Bilakah Rasulullah SAW wafat?",
@@ -1943,7 +2119,8 @@
                     "Tahun 11 Hijrah",
                     "Tahun 13 Hijrah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-6-6.3-6"
                 },
                 {
                   "q": "Apakah pengajaran daripada perjuangan Rasulullah di Madinah?",
@@ -1953,7 +2130,8 @@
                     "Berpecah belah adalah kekuatan",
                     "Bersaing sesama muslim adalah utama"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-6-6.3-7"
                 }
               ]
             }
@@ -1974,7 +2152,8 @@
                     "Membersihkan pakaian",
                     "Mandi wajib"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-7-7.1-0"
                 },
                 {
                   "q": "Tangan yang manakah digunakan untuk beristinjak?",
@@ -1984,7 +2163,8 @@
                     "Tangan kanan",
                     "Kedua-dua belah tangan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.1-1"
                 },
                 {
                   "q": "Apakah alat yang boleh digunakan untuk istinjak?",
@@ -1994,7 +2174,8 @@
                     "Kertas surat khabar",
                     "Daun yang beracun"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.1-2"
                 },
                 {
                   "q": "Mengapakah kebersihan penting dalam Islam?",
@@ -2004,7 +2185,8 @@
                     "Kerana untuk bergaya",
                     "Kerana kebersihan sebahagian daripada iman"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.1-3"
                 },
                 {
                   "q": "Berapa kalikah bilangan minimum istinjak menggunakan batu?",
@@ -2014,7 +2196,8 @@
                     "1 kali sapuan",
                     "3 kali sapuan secara ganjil"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.1-4"
                 },
                 {
                   "q": "Apakah yang perlu dilakukan selepas buang air kecil bagi memastikan solat sah?",
@@ -2024,7 +2207,8 @@
                     "Terus solat",
                     "Memakai pakaian baru"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.1-5"
                 },
                 {
                   "q": "Adab ketika masuk ke tandas ialah membaca doa...",
@@ -2034,7 +2218,8 @@
                     "Alhamdulillah",
                     "Allahumma inni a'uzubika minal khubusi wal khaba'is"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.1-6"
                 }
               ]
             },
@@ -2050,7 +2235,8 @@
                     "Terus bercakap-cakap",
                     "Diam dan menjawab seruan azan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.2-0"
                 },
                 {
                   "q": "Apakah lafaz jawapan ketika muazzin mengucapkan 'Allahu Akbar, Allahu Akbar'?",
@@ -2060,7 +2246,8 @@
                     "Alhamdulillah",
                     "La ilaha illallah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.2-1"
                 },
                 {
                   "q": "Apakah yang disunatkan selepas azan?",
@@ -2070,7 +2257,8 @@
                     "Terus pulang ke rumah",
                     "Bercakap dengan kawan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.2-2"
                 },
                 {
                   "q": "Hukum menjawab azan ialah...",
@@ -2080,7 +2268,8 @@
                     "Wajib",
                     "Makruh"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.2-3"
                 },
                 {
                   "q": "Apakah doa yang dibaca selepas azan?",
@@ -2090,7 +2279,8 @@
                     "Subhanaka Allahumma wa bihamdika...",
                     "Allahumma rabba hadzihid da'watit tammah..."
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.2-4"
                 },
                 {
                   "q": "Orang yang melaungkan azan dipanggil...",
@@ -2100,7 +2290,8 @@
                     "Imam",
                     "Muazzin"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.2-5"
                 },
                 {
                   "q": "Apabila mendengar azan, kita hendaklah segera...",
@@ -2110,7 +2301,8 @@
                     "Meninggalkan solat",
                     "Menyahut seruan untuk solat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.2-6"
                 }
               ]
             },
@@ -2126,7 +2318,8 @@
                     "Kedua-dua kaki",
                     "Kaki kiri"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.3-0"
                 },
                 {
                   "q": "Kaki yang manakah didahulukan ketika keluar masjid?",
@@ -2136,7 +2329,8 @@
                     "Melompat keluar",
                     "Kaki kiri"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-pi4-7-7.3-1"
                 },
                 {
                   "q": "Apakah yang perlu dibaca ketika masuk masjid?",
@@ -2146,7 +2340,8 @@
                     "Doa masuk masjid",
                     "Doa qunut"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-7-7.3-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah dilarang dilakukan di dalam masjid?",
@@ -2156,7 +2351,8 @@
                     "Mendengar ceramah",
                     "Bersolat dan berzikir"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.3-3"
                 },
                 {
                   "q": "Pakaian yang sesuai ketika ke masjid ialah...",
@@ -2166,7 +2362,8 @@
                     "Sopan dan menutup aurat",
                     "Pakaian sukan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-7-7.3-4"
                 },
                 {
                   "q": "Apakah solat yang disunatkan sebelum duduk di masjid?",
@@ -2176,7 +2373,8 @@
                     "Solat Sunat Tahiyyatul Masjid",
                     "Solat Sunat Witir"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-pi4-7-7.3-5"
                 },
                 {
                   "q": "Memuliakan masjid adalah tanda...",
@@ -2186,7 +2384,8 @@
                     "Kekayaan harta",
                     "Kepandaian"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-pi4-7-7.3-6"
                 },
                 {
                   "q": "Antara adab ketika khutbah Jumaat ialah...",
@@ -2196,7 +2395,8 @@
                     "Bercakap dengan kawan",
                     "Bermain telefon bimbit"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-pi4-7-7.3-7"
                 }
               ]
             }

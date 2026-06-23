@@ -20,7 +20,8 @@
                     "5 324 087",
                     "5 324 178"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.1-0"
                 },
                 {
                   "q": "Write 'three million, four hundred fifty thousand, six hundred and two' in numerals.",
@@ -30,7 +31,8 @@
                     "3 540 602",
                     "3 450 062"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.1-1"
                 },
                 {
                   "q": "How is 8 091 005 read in words?",
@@ -40,7 +42,8 @@
                     "Eight million, nine hundred ten thousand and five",
                     "Eight million, nine hundred one thousand and five"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.1-2"
                 },
                 {
                   "q": "What is the value of the digit 6 in 6 245 000?",
@@ -50,7 +53,8 @@
                     "6 000",
                     "600 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.1-3"
                 },
                 {
                   "q": "Which number shows 9 million 8 thousand 7 hundred 5 tens?",
@@ -60,7 +64,8 @@
                     "9 008 705",
                     "9 800 750"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.1-4"
                 },
                 {
                   "q": "What is 7 350 000 + 648 000?",
@@ -70,7 +75,8 @@
                     "8 098 000",
                     "7 998 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.1-5"
                 },
                 {
                   "q": "Partition 4 216 309 correctly.",
@@ -80,7 +86,8 @@
                     "4 000 000 + 21 000 + 6 000 + 300 + 9",
                     "4 000 000 + 200 000 + 10 000 + 6 000 + 300 + 9"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.1-6"
                 },
                 {
                   "q": "Which digit is in the hundred thousands place in 7 853 124?",
@@ -90,7 +97,8 @@
                     "8",
                     "3"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.1-7"
                 },
                 {
                   "q": "Write 2 060 400 in words.",
@@ -100,7 +108,8 @@
                     "Two million, sixty thousand, four hundred",
                     "Two million, six hundred thousand, four hundred"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.1-8"
                 },
                 {
                   "q": "What number is 10 000 more than 3 490 500?",
@@ -110,7 +119,8 @@
                     "3 500 000",
                     "3 590 500"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.1-9"
                 }
               ]
             },
@@ -126,7 +136,8 @@
                     "Thousands",
                     "Hundred thousands"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.2-0"
                 },
                 {
                   "q": "What is the digit value of 5 in 5 678 901?",
@@ -136,7 +147,8 @@
                     "50 000",
                     "5 000 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.2-1"
                 },
                 {
                   "q": "In 2 408 736, which digit is in the hundred thousands place?",
@@ -146,7 +158,8 @@
                     "2",
                     "8"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.2-2"
                 },
                 {
                   "q": "What is the digit value of 9 in 3 490 256?",
@@ -156,7 +169,8 @@
                     "900",
                     "90 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.2-3"
                 },
                 {
                   "q": "In 7 005 300, what is the place value of the digit 5?",
@@ -166,7 +180,8 @@
                     "Tens",
                     "Hundred thousands"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.2-4"
                 },
                 {
                   "q": "What is the digit value of 1 in 1 234 567?",
@@ -176,7 +191,8 @@
                     "1 000",
                     "100 000"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.2-5"
                 },
                 {
                   "q": "In 6 821 094, which digits are in the millions and ten thousands places?",
@@ -186,7 +202,8 @@
                     "6 and 2",
                     "6 and 8"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.2-6"
                 },
                 {
                   "q": "What is the place value of the digit 0 in 4 056 200?",
@@ -196,7 +213,8 @@
                     "Thousands",
                     "Hundred thousands"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.2-7"
                 },
                 {
                   "q": "In 5 930 821, the digit 3 has a digit value of...",
@@ -206,7 +224,8 @@
                     "300 000",
                     "3 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.2-8"
                 },
                 {
                   "q": "What is the total digit value of the digits 4 and 7 in 4 700 123?",
@@ -216,7 +235,8 @@
                     "4 070 000",
                     "4 700 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.2-9"
                 }
               ]
             },
@@ -232,7 +252,8 @@
                     "5 023 000",
                     "5 230 000"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.3-0"
                 },
                 {
                   "q": "Arrange in ascending order: 3 450 000, 3 405 000, 3 504 000, 3 054 000",
@@ -242,7 +263,8 @@
                     "3 054 000, 3 405 000, 3 504 000, 3 450 000",
                     "3 405 000, 3 450 000, 3 504 000, 3 054 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.3-1"
                 },
                 {
                   "q": "Which symbol completes: 7 084 300 ___ 7 084 030?",
@@ -252,7 +274,8 @@
                     "=",
                     "Cannot tell"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.3-2"
                 },
                 {
                   "q": "Arrange in descending order: 6 210 000, 6 021 000, 6 201 000, 6 120 000",
@@ -262,7 +285,8 @@
                     "6 021 000, 6 120 000, 6 201 000, 6 210 000",
                     "6 201 000, 6 210 000, 6 120 000, 6 021 000"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.3-3"
                 },
                 {
                   "q": "Which of these is the largest number?",
@@ -272,7 +296,8 @@
                     "9 786 543",
                     "9 876 453"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-1-1.3-4"
                 }
               ]
             },
@@ -288,7 +313,8 @@
                     "2 400 000",
                     "3 000 000"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.4-0"
                 },
                 {
                   "q": "Round off 5 634 200 to the nearest hundred thousand.",
@@ -298,7 +324,8 @@
                     "5 500 000",
                     "5 600 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.4-1"
                 },
                 {
                   "q": "A zoo had 1 825 400 visitors. Round this to the nearest ten thousand.",
@@ -308,7 +335,8 @@
                     "1 820 000",
                     "1 825 000"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.4-2"
                 },
                 {
                   "q": "Round off 8 473 650 to the nearest thousand.",
@@ -318,7 +346,8 @@
                     "8 474 000",
                     "8 473 000"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.4-3"
                 },
                 {
                   "q": "The population of a state is 3 947 281. What is this rounded to the nearest hundred thousand?",
@@ -328,7 +357,8 @@
                     "3 900 000",
                     "3 950 000"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.4-4"
                 }
               ]
             },
@@ -344,7 +374,8 @@
                     "2 750 000",
                     "2 900 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.5-0"
                 },
                 {
                   "q": "Find the missing number: 5 010 000, 5 030 000, ___, 5 070 000, 5 090 000",
@@ -354,7 +385,8 @@
                     "5 050 000",
                     "5 060 000"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-1-1.5-1"
                 },
                 {
                   "q": "What is the pattern rule: 3 000 000, 3 150 000, 3 300 000, 3 450 000?",
@@ -364,7 +396,8 @@
                     "Add 50 000",
                     "Add 150 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.5-2"
                 },
                 {
                   "q": "Find the next term: 8 000 000, 4 000 000, 2 000 000, 1 000 000, ___",
@@ -374,7 +407,8 @@
                     "250 000",
                     "0"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-1-1.5-3"
                 },
                 {
                   "q": "What is the 5th term starting at 1 000 000 adding 250 000 each time?",
@@ -384,7 +418,8 @@
                     "1 750 000",
                     "2 000 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-1-1.5-4"
                 }
               ]
             }
@@ -405,7 +440,8 @@
                     "2 3/5",
                     "2 2/5"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.1-0"
                 },
                 {
                   "q": "Convert 4 2/3 to an improper fraction.",
@@ -415,7 +451,8 @@
                     "15/3",
                     "12/3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.1-1"
                 },
                 {
                   "q": "Which of these is an improper fraction?",
@@ -425,7 +462,8 @@
                     "3/4",
                     "4/5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.1-2"
                 },
                 {
                   "q": "Convert 19/6 to a mixed number.",
@@ -435,7 +473,8 @@
                     "3 1/6",
                     "2 7/6"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.1-3"
                 },
                 {
                   "q": "Convert 5 1/4 to an improper fraction.",
@@ -445,7 +484,8 @@
                     "21/4",
                     "22/4"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.1-4"
                 },
                 {
                   "q": "Which mixed number equals 17/3?",
@@ -455,7 +495,8 @@
                     "4 2/3",
                     "5 1/3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.1-5"
                 },
                 {
                   "q": "Convert 7 3/8 to an improper fraction.",
@@ -465,7 +506,8 @@
                     "60/8",
                     "56/8"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.1-6"
                 },
                 {
                   "q": "Which improper fraction equals 2 5/6?",
@@ -475,7 +517,8 @@
                     "17/6",
                     "15/6"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.1-7"
                 },
                 {
                   "q": "Convert 22/7 to a mixed number.",
@@ -485,7 +528,8 @@
                     "3 1/7",
                     "2 1/7"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.1-8"
                 },
                 {
                   "q": "What is 6 1/2 as an improper fraction?",
@@ -495,7 +539,8 @@
                     "13/2",
                     "12/2"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.1-9"
                 }
               ]
             },
@@ -511,7 +556,8 @@
                     "4/5",
                     "2/10"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.2-0"
                 },
                 {
                   "q": "7/9 - 2/9 = ___",
@@ -521,7 +567,8 @@
                     "9/9",
                     "4/9"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.2-1"
                 },
                 {
                   "q": "1/2 + 1/3 = ___",
@@ -531,7 +578,8 @@
                     "2/6",
                     "3/5"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.2-2"
                 },
                 {
                   "q": "3/4 - 1/2 = ___",
@@ -541,7 +589,8 @@
                     "1/2",
                     "3/2"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.2-3"
                 },
                 {
                   "q": "A baker used 2/3 kg flour for bread and 1/4 kg for cakes. How much flour total?",
@@ -551,7 +600,8 @@
                     "3/12 kg",
                     "3/7 kg"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.2-4"
                 },
                 {
                   "q": "2 1/4 + 1 2/4 = ___",
@@ -561,7 +611,8 @@
                     "3 2/4",
                     "3 3/4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-2-2.2-5"
                 },
                 {
                   "q": "5/6 - 1/3 = ___",
@@ -571,7 +622,8 @@
                     "4/3",
                     "1/3"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.2-6"
                 },
                 {
                   "q": "3 1/2 - 1 3/4 = ___",
@@ -581,7 +633,8 @@
                     "2 1/4",
                     "1 1/2"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.2-7"
                 },
                 {
                   "q": "2/7 + 3/14 = ___",
@@ -591,7 +644,8 @@
                     "5/7",
                     "5/14"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.2-8"
                 },
                 {
                   "q": "Siti had 2 1/3 m ribbon. She used 1 5/6 m. How much left?",
@@ -601,7 +655,8 @@
                     "5/6 m",
                     "1/3 m"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.2-9"
                 }
               ]
             },
@@ -617,7 +672,8 @@
                     "2/7",
                     "2/12 = 1/6"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-2-2.3-0"
                 },
                 {
                   "q": "3/5 × 10 = ___",
@@ -627,7 +683,8 @@
                     "30/5 = 5",
                     "15/5 = 3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.3-1"
                 },
                 {
                   "q": "1/2 ÷ 1/4 = ___",
@@ -637,7 +694,8 @@
                     "8",
                     "4"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.3-2"
                 },
                 {
                   "q": "2 1/2 × 3 = ___",
@@ -647,7 +705,8 @@
                     "8",
                     "6 1/2"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.3-3"
                 },
                 {
                   "q": "3/4 ÷ 2 = ___",
@@ -657,7 +716,8 @@
                     "3/8",
                     "6/4 = 1 1/2"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.3-4"
                 },
                 {
                   "q": "A recipe needs 3/4 cup sugar. How much for 3 batches?",
@@ -667,7 +727,8 @@
                     "2 1/4 cups",
                     "3 cups"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.3-5"
                 },
                 {
                   "q": "5/8 × 16 = ___",
@@ -677,7 +738,8 @@
                     "5",
                     "10"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-2-2.3-6"
                 },
                 {
                   "q": "2/3 ÷ 4/5 = ___",
@@ -687,7 +749,8 @@
                     "10/12 = 5/6",
                     "8/15"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.3-7"
                 },
                 {
                   "q": "1 1/5 × 2 1/2 = ___",
@@ -697,7 +760,8 @@
                     "2 1/2",
                     "2"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.3-8"
                 },
                 {
                   "q": "A tailor cuts 3/4 m cloth into 6 equal pieces. Each piece?",
@@ -707,7 +771,8 @@
                     "1/6 m",
                     "1/8 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-2-2.3-9"
                 }
               ]
             },
@@ -723,7 +788,8 @@
                     "3.5",
                     "3.46"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-2-2.4-0"
                 },
                 {
                   "q": "5.200 + 1.075 = ___",
@@ -733,7 +799,8 @@
                     "6.275",
                     "6.2750"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.4-1"
                 },
                 {
                   "q": "What is the digit value of 7 in 2.037?",
@@ -743,7 +810,8 @@
                     "0.007",
                     "7"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.4-2"
                 },
                 {
                   "q": "8.450 - 3.275 = ___",
@@ -753,7 +821,8 @@
                     "5.225",
                     "5.125"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.4-3"
                 },
                 {
                   "q": "Write 4.5 as a decimal with 3 decimal places.",
@@ -763,7 +832,8 @@
                     "4.500",
                     "4.005"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.4-4"
                 },
                 {
                   "q": "Which is larger: 0.250 or 0.3?",
@@ -773,7 +843,8 @@
                     "Cannot tell",
                     "0.250"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.4-5"
                 },
                 {
                   "q": "1.75 × 100 = ___",
@@ -783,7 +854,8 @@
                     "17.5",
                     "0.175"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.4-6"
                 },
                 {
                   "q": "6.300 ÷ 10 = ___",
@@ -793,7 +865,8 @@
                     "0.630",
                     "0.063"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.4-7"
                 },
                 {
                   "q": "Arrange in ascending order: 0.5, 0.055, 0.55, 0.505",
@@ -803,7 +876,8 @@
                     "0.055, 0.505, 0.5, 0.55",
                     "0.055, 0.5, 0.505, 0.55"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-2-2.4-8"
                 },
                 {
                   "q": "Add 2.345 + 1.28 (answer with 3 decimal places).",
@@ -813,7 +887,8 @@
                     "3.625",
                     "2.625"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.4-9"
                 }
               ]
             },
@@ -829,7 +904,8 @@
                     "25%",
                     "50%"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-2-2.5-0"
                 },
                 {
                   "q": "What is 0.6 as a percentage?",
@@ -839,7 +915,8 @@
                     "600%",
                     "0.6%"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.5-1"
                 },
                 {
                   "q": "Express 75% as a fraction in simplest form.",
@@ -849,7 +926,8 @@
                     "75/100",
                     "1/4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.5-2"
                 },
                 {
                   "q": "Convert 3/5 to a percentage.",
@@ -859,7 +937,8 @@
                     "65%",
                     "30%"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-2-2.5-3"
                 },
                 {
                   "q": "What is 12.5% as a decimal?",
@@ -869,7 +948,8 @@
                     "0.0125",
                     "1.25"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-2-2.5-4"
                 }
               ]
             }
@@ -890,7 +970,8 @@
                     "RM17.30",
                     "RM16.80"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.1-0"
                 },
                 {
                   "q": "Raj has RM50. He buys a toy for RM21.90. How much change?",
@@ -900,7 +981,8 @@
                     "RM28.10",
                     "RM29.10"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.1-1"
                 },
                 {
                   "q": "A packet of biscuits costs RM2.40. Cost of 5 packets?",
@@ -910,7 +992,8 @@
                     "RM13.00",
                     "RM11.50"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-3-3.1-2"
                 },
                 {
                   "q": "Four friends share a gift costing RM36.80 equally. Each pays?",
@@ -920,7 +1003,8 @@
                     "RM9.20",
                     "RM8.20"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.1-3"
                 },
                 {
                   "q": "Ahmad buys 3 kg rice at RM3.80/kg. Pays RM20. Change?",
@@ -930,7 +1014,8 @@
                     "RM8.40",
                     "RM9.60"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-3-3.1-4"
                 },
                 {
                   "q": "A school collects RM1 250.50. Raises RM380.75 more. Total?",
@@ -940,7 +1025,8 @@
                     "RM1 621.25",
                     "RM1 631.25"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-3-3.1-5"
                 },
                 {
                   "q": "A pencil costs RM1.20. How many with RM10?",
@@ -950,7 +1036,8 @@
                     "10",
                     "7"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.1-6"
                 },
                 {
                   "q": "Siti buys 2 kg apples at RM4.50/kg and 1 kg oranges at RM3.80. Total?",
@@ -960,7 +1047,8 @@
                     "RM12.80",
                     "RM13.80"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.1-7"
                 },
                 {
                   "q": "Movie ticket: child RM8.50, adult RM12.00. Cost of 2 children + 1 adult?",
@@ -970,7 +1058,8 @@
                     "RM30.00",
                     "RM29.00"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-3-3.1-8"
                 },
                 {
                   "q": "Priya had RM50. Spent RM12.90 on lunch, RM8.60 on book. Left?",
@@ -980,7 +1069,8 @@
                     "RM28.40",
                     "RM27.50"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.1-9"
                 }
               ]
             },
@@ -996,7 +1086,8 @@
                     "RM6",
                     "RM8"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-3-3.2-0"
                 },
                 {
                   "q": "A shop sells a bicycle for RM350. Cost price was RM400. Loss?",
@@ -1006,7 +1097,8 @@
                     "RM75",
                     "RM50"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-3-3.2-1"
                 },
                 {
                   "q": "A bag originally RM80 is sold at RM56 during a sale. Discount?",
@@ -1016,7 +1108,8 @@
                     "RM16",
                     "RM20"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.2-2"
                 },
                 {
                   "q": "A vendor buys 50 oranges for RM20 and sells each at RM0.60. Total profit?",
@@ -1026,7 +1119,8 @@
                     "RM10",
                     "RM15"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.2-3"
                 },
                 {
                   "q": "A watch originally RM200 is sold at 15% discount. Sale price?",
@@ -1036,7 +1130,8 @@
                     "RM180",
                     "RM175"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.2-4"
                 }
               ]
             },
@@ -1052,7 +1147,8 @@
                     "RM15",
                     "RM30"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-3-3.3-0"
                 },
                 {
                   "q": "A restaurant bill is RM120. SST of 6% is added. Total bill?",
@@ -1062,7 +1158,8 @@
                     "RM129.60",
                     "RM121.20"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.3-1"
                 },
                 {
                   "q": "Mr Tan earns RM4 000/month and pays 3% income tax. Monthly tax?",
@@ -1072,7 +1169,8 @@
                     "RM100",
                     "RM150"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.3-2"
                 },
                 {
                   "q": "A company profit is RM500 000. 40% paid as dividends. Amount paid?",
@@ -1082,7 +1180,8 @@
                     "RM200 000",
                     "RM100 000"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.3-3"
                 },
                 {
                   "q": "An item costs RM50 before SST. After 10% SST, final price?",
@@ -1092,7 +1191,8 @@
                     "RM52",
                     "RM50.50"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.3-4"
                 }
               ]
             },
@@ -1108,7 +1208,8 @@
                     "RM20",
                     "RM25"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-3-3.4-0"
                 },
                 {
                   "q": "Family spends: food RM800, transport RM600, housing RM1 200. Total?",
@@ -1118,7 +1219,8 @@
                     "RM2 800",
                     "RM2 500"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-3-3.4-1"
                 },
                 {
                   "q": "Mei Mei wants RM200 for a bag. Saves RM10/week. Weeks needed?",
@@ -1128,7 +1230,8 @@
                     "15 weeks",
                     "20 weeks"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-3-3.4-2"
                 },
                 {
                   "q": "Household income RM5 000/month, spending RM4 200. Saving per month?",
@@ -1138,7 +1241,8 @@
                     "RM700",
                     "RM600"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-3-3.4-3"
                 },
                 {
                   "q": "Which is a good financial habit?",
@@ -1148,7 +1252,8 @@
                     "Saving 10% of your income regularly",
                     "Borrowing for unnecessary items"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-3-3.4-4"
                 }
               ]
             }
@@ -1169,7 +1274,8 @@
                     "1 hour",
                     "1 hour 30 minutes"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-4-4.1-0"
                 },
                 {
                   "q": "School holiday starts 20 March, ends 28 March. How many days?",
@@ -1179,7 +1285,8 @@
                     "9 days",
                     "8 days"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-4-4.1-1"
                 },
                 {
                   "q": "A movie starts at 2:50 p.m., lasts 1 hour 40 minutes. End time?",
@@ -1189,7 +1296,8 @@
                     "4:20 p.m.",
                     "3:30 p.m."
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-4-4.1-2"
                 },
                 {
                   "q": "A bus journey takes 2 hours 45 minutes. Departs 9:30 a.m. Arrival?",
@@ -1199,7 +1307,8 @@
                     "12:30 p.m.",
                     "11:15 a.m."
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-4-4.1-3"
                 },
                 {
                   "q": "Approximately how many hours in a year?",
@@ -1209,7 +1318,8 @@
                     "9 000 hours",
                     "7 200 hours"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-4-4.1-4"
                 }
               ]
             },
@@ -1225,7 +1335,8 @@
                     "6 hours 30 mins",
                     "5 hours 75 mins"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-4-4.2-0"
                 },
                 {
                   "q": "Subtract: 7 hours 20 mins - 3 hours 45 mins = ___",
@@ -1235,7 +1346,8 @@
                     "3 hours 35 mins",
                     "2 hours 45 mins"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-4-4.2-1"
                 },
                 {
                   "q": "Aisha studies 1 hour 45 mins each day. Time in 4 days?",
@@ -1245,7 +1357,8 @@
                     "6 hours",
                     "7 hours"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-4-4.2-2"
                 },
                 {
                   "q": "A train leaves 10:50 a.m., arrives 1:15 p.m. Journey time?",
@@ -1255,7 +1368,8 @@
                     "3 hours 25 mins",
                     "2 hours 35 mins"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-4-4.2-3"
                 },
                 {
                   "q": "Add: 5 hours 50 mins + 4 hours 20 mins = ___",
@@ -1265,7 +1379,8 @@
                     "9 hours 10 mins",
                     "10 hours 20 mins"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-4-4.2-4"
                 }
               ]
             },
@@ -1281,7 +1396,8 @@
                     "7 hours 30 mins",
                     "6 hours 30 mins"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-4-4.3-0"
                 },
                 {
                   "q": "10 hours ÷ 4 = ___",
@@ -1291,7 +1407,8 @@
                     "2 hours 45 mins",
                     "2 hours 50 mins"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-4-4.3-1"
                 },
                 {
                   "q": "Factory runs 3 shifts of 8 hours 15 mins each. Total time?",
@@ -1301,7 +1418,8 @@
                     "24 hours 15 mins",
                     "24 hours 45 mins"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-4-4.3-2"
                 },
                 {
                   "q": "1 day 6 hours ÷ 5 = ___",
@@ -1311,7 +1429,8 @@
                     "7 hours 12 mins",
                     "5 hours"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-4-4.3-3"
                 },
                 {
                   "q": "4 hours 20 mins × 6 = ___",
@@ -1321,7 +1440,8 @@
                     "25 hours",
                     "26 hours 20 mins"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-4-4.3-4"
                 }
               ]
             },
@@ -1337,7 +1457,8 @@
                     "7:00 a.m.",
                     "11:00 a.m."
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-4-4.4-0"
                 },
                 {
                   "q": "When 10:00 p.m. in Malaysia, what time in Japan (UTC+9)?",
@@ -1347,7 +1468,8 @@
                     "10:00 p.m.",
                     "11:00 p.m."
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-4-4.4-1"
                 },
                 {
                   "q": "Malaysia is UTC+8. Perth is also UTC+8. If 9 a.m. in KL, time in Perth?",
@@ -1357,7 +1479,8 @@
                     "10 a.m.",
                     "11 a.m."
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-4-4.4-2"
                 },
                 {
                   "q": "Flight KL (UTC+8) to Dubai (UTC+4) at 10:00 p.m., 7-hour flight. Local time in Dubai on landing?",
@@ -1367,7 +1490,8 @@
                     "2:00 a.m. (next day)",
                     "6:00 a.m. (next day)"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-4-4.4-3"
                 },
                 {
                   "q": "If 6:00 a.m. in New York (UTC-5), what time in Malaysia (UTC+8)?",
@@ -1377,7 +1501,8 @@
                     "6:00 p.m.",
                     "8:00 p.m."
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-4-4.4-4"
                 }
               ]
             }
@@ -1398,7 +1523,8 @@
                     "3 500 cm",
                     "35 cm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.1-0"
                 },
                 {
                   "q": "A race track is 5 km. How many metres?",
@@ -1408,7 +1534,8 @@
                     "50 000 m",
                     "50 m"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-5-5.1-1"
                 },
                 {
                   "q": "Ali walks 850 m to school and 850 m home. Distance in 5 days?",
@@ -1418,7 +1545,8 @@
                     "8.5 km",
                     "17 km"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.1-2"
                 },
                 {
                   "q": "Wood 2.8 m long cut into 4 equal pieces. Each piece in cm?",
@@ -1428,7 +1556,8 @@
                     "70 cm",
                     "700 cm"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.1-3"
                 },
                 {
                   "q": "Ribbon 4.25 m long, 1.8 m used. Left in cm?",
@@ -1438,7 +1567,8 @@
                     "260 cm",
                     "245 cm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.1-4"
                 },
                 {
                   "q": "Building height 45 m. Flagpole is 12.5 m shorter. Flagpole height?",
@@ -1448,7 +1578,8 @@
                     "33.5 m",
                     "32.5 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.1-5"
                 },
                 {
                   "q": "Rectangular field 120 m long, 85 m wide. Total distance around?",
@@ -1458,7 +1589,8 @@
                     "390 m",
                     "205 m"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-5-5.1-6"
                 },
                 {
                   "q": "Convert 0.075 km to metres.",
@@ -1468,7 +1600,8 @@
                     "7.5 m",
                     "75 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.1-7"
                 },
                 {
                   "q": "String 3 m 45 cm + another 2 m 80 cm. Total in metres?",
@@ -1478,7 +1611,8 @@
                     "5.85 m",
                     "6.25 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.1-8"
                 },
                 {
                   "q": "Garden 6.5 m wide. Fencing costs RM12 per metre. Cost to fence the width?",
@@ -1488,7 +1622,8 @@
                     "RM84",
                     "RM72"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.1-9"
                 }
               ]
             },
@@ -1504,7 +1639,8 @@
                     "50 g",
                     "50 000 g"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.2-0"
                 },
                 {
                   "q": "A cake recipe needs 250 g flour. How many grams for 4 cakes?",
@@ -1514,7 +1650,8 @@
                     "1 000 g",
                     "750 g"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.2-1"
                 },
                 {
                   "q": "Bag of potatoes 2.5 kg, onions 1.8 kg. Total mass?",
@@ -1524,7 +1661,8 @@
                     "4.8 kg",
                     "3.8 kg"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.2-2"
                 },
                 {
                   "q": "Watermelon 3.2 kg cut into 8 equal slices. Each slice in g?",
@@ -1534,7 +1672,8 @@
                     "400 g",
                     "500 g"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.2-3"
                 },
                 {
                   "q": "250 g cheese costs RM6.50. Cost of 1 kg?",
@@ -1544,7 +1683,8 @@
                     "RM24.00",
                     "RM26.00"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.2-4"
                 },
                 {
                   "q": "Parcel 1.85 kg. Another is 0.65 kg heavier. Second parcel mass?",
@@ -1554,7 +1694,8 @@
                     "2.5 kg",
                     "2.4 kg"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.2-5"
                 },
                 {
                   "q": "Avan 42.5 kg. Father is 28.6 kg heavier. Father's mass?",
@@ -1564,7 +1705,8 @@
                     "70.1 kg",
                     "72.1 kg"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.2-6"
                 },
                 {
                   "q": "Convert 4 750 g to kg.",
@@ -1574,7 +1716,8 @@
                     "475 kg",
                     "4.75 kg"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.2-7"
                 },
                 {
                   "q": "Baker uses 1.2 kg sugar daily. Sugar in 15 days?",
@@ -1584,7 +1727,8 @@
                     "15 kg",
                     "18 kg"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.2-8"
                 },
                 {
                   "q": "Cat 3.8 kg, dog 12.5 kg. Dog is how many times heavier? (1 decimal)",
@@ -1594,7 +1738,8 @@
                     "3.3 times",
                     "4.5 times"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.2-9"
                 }
               ]
             },
@@ -1610,7 +1755,8 @@
                     "1 500 mℓ",
                     "150 mℓ"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.3-0"
                 },
                 {
                   "q": "A tank has 3 ℓ 250 mℓ water. How many mℓ?",
@@ -1620,7 +1766,8 @@
                     "32 500 mℓ",
                     "3 025 mℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-5-5.3-1"
                 },
                 {
                   "q": "A jug has 2 ℓ orange juice. Shared equally by 5 friends. Each gets?",
@@ -1630,7 +1777,8 @@
                     "350 mℓ",
                     "500 mℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.3-2"
                 },
                 {
                   "q": "Fish tank holds 12.5 ℓ. How many 500 mℓ bottles fill it?",
@@ -1640,7 +1788,8 @@
                     "15 bottles",
                     "25 bottles"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.3-3"
                 },
                 {
                   "q": "A recipe needs 750 mℓ milk. How many litres?",
@@ -1650,7 +1799,8 @@
                     "0.75 ℓ",
                     "75 ℓ"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.3-4"
                 },
                 {
                   "q": "Bucket has 5 ℓ 600 mℓ water. 1 ℓ 800 mℓ used. Water left in ℓ?",
@@ -1660,7 +1810,8 @@
                     "3.8 ℓ",
                     "4.2 ℓ"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.3-5"
                 },
                 {
                   "q": "Factory produces 2 500 bottles/day. Each holds 250 mℓ. Total volume in ℓ?",
@@ -1670,7 +1821,8 @@
                     "6 250 ℓ",
                     "62.5 ℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.3-6"
                 },
                 {
                   "q": "Drink stall has 3 ℓ juice. Each cup holds 200 mℓ. How many cups?",
@@ -1680,7 +1832,8 @@
                     "12 cups",
                     "10 cups"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-5-5.3-7"
                 },
                 {
                   "q": "8 containers, each 0.75 ℓ. Total volume?",
@@ -1690,7 +1843,8 @@
                     "7.5 ℓ",
                     "5.5 ℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-5-5.3-8"
                 },
                 {
                   "q": "Bottle holds 1 ℓ. After drinking 340 mℓ, water left in mℓ?",
@@ -1700,7 +1854,8 @@
                     "760 mℓ",
                     "640 mℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-5-5.3-9"
                 }
               ]
             },
@@ -1716,7 +1871,8 @@
                     "5 m, 2 kg, 3 ℓ",
                     "0.5 m, 2 kg, 3 ℓ"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-5-5.4-0"
                 },
                 {
                   "q": "Bottle holds 1.5 ℓ water. Empty mass 200 g. Full mass in kg? (1 ℓ water = 1 kg)",
@@ -1726,7 +1882,8 @@
                     "1.7 kg",
                     "1.3 kg"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.4-1"
                 },
                 {
                   "q": "Rope 4 m 25 cm cut into 5 equal pieces. Each piece in cm?",
@@ -1736,7 +1893,8 @@
                     "85 cm",
                     "75 cm"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-5-5.4-2"
                 },
                 {
                   "q": "Tank has 6.5 ℓ. Water added at 0.5 ℓ/min for 8 mins. Final volume?",
@@ -1746,7 +1904,8 @@
                     "9.5 ℓ",
                     "11 ℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.4-3"
                 },
                 {
                   "q": "Box mass 3.2 kg full, 1.5 kg empty. Contents mass?",
@@ -1756,7 +1915,8 @@
                     "1.5 kg",
                     "2.7 kg"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-5-5.4-4"
                 }
               ]
             }
@@ -1777,7 +1937,8 @@
                     "6",
                     "12"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-6-6.1-0"
                 },
                 {
                   "q": "How many edges does a cuboid have?",
@@ -1787,7 +1948,8 @@
                     "12",
                     "6"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-6-6.1-1"
                 },
                 {
                   "q": "Which 3D shape has 1 curved face, 1 flat circular face, and 1 vertex?",
@@ -1797,7 +1959,8 @@
                     "Cylinder",
                     "Sphere"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-6-6.1-2"
                 },
                 {
                   "q": "How many vertices does a square-based pyramid have?",
@@ -1807,7 +1970,8 @@
                     "4",
                     "6"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-6-6.1-3"
                 },
                 {
                   "q": "A net of 6 equal squares folds to form which 3D shape?",
@@ -1817,7 +1981,8 @@
                     "Square pyramid",
                     "Triangular prism"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-6-6.1-4"
                 }
               ]
             },
@@ -1833,7 +1998,8 @@
                     "Acute angle",
                     "Reflex angle"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-6-6.2-0"
                 },
                 {
                   "q": "Estimated size of an angle that looks like a right angle?",
@@ -1843,7 +2009,8 @@
                     "180°",
                     "120°"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-6-6.2-1"
                 },
                 {
                   "q": "An angle of 35° is called...",
@@ -1853,7 +2020,8 @@
                     "A right angle",
                     "An acute angle"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-6-6.2-2"
                 },
                 {
                   "q": "A straight angle measures how many degrees?",
@@ -1863,7 +2031,8 @@
                     "270°",
                     "180°"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-6-6.2-3"
                 },
                 {
                   "q": "The complement of a 35° angle is? (Two angles sum to 90°)",
@@ -1873,7 +2042,8 @@
                     "145°",
                     "65°"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-6-6.2-4"
                 }
               ]
             },
@@ -1889,7 +2059,8 @@
                     "20 cm",
                     "40 cm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-6-6.3-0"
                 },
                 {
                   "q": "A square of side 9 cm. Area?",
@@ -1899,7 +2070,8 @@
                     "81 cm²",
                     "36 cm²"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-6-6.3-1"
                 },
                 {
                   "q": "Rectangle area 60 cm², width 5 cm. Length?",
@@ -1909,7 +2081,8 @@
                     "8 cm",
                     "10 cm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-6-6.3-2"
                 },
                 {
                   "q": "Rectangular garden 15 m long, 10 m wide. Perimeter?",
@@ -1919,7 +2092,8 @@
                     "100 m",
                     "50 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-6-6.3-3"
                 },
                 {
                   "q": "Square perimeter 36 cm. Side length?",
@@ -1929,7 +2103,8 @@
                     "12 cm",
                     "6 cm"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-6-6.3-4"
                 }
               ]
             },
@@ -1945,7 +2120,8 @@
                     "36 cm³",
                     "48 cm³"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-6-6.4-0"
                 },
                 {
                   "q": "Cube side 5 cm. Volume?",
@@ -1955,7 +2131,8 @@
                     "125 cm³",
                     "50 cm³"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-6-6.4-1"
                 },
                 {
                   "q": "Box volume 96 cm³, length 8 cm, width 4 cm. Height?",
@@ -1965,7 +2142,8 @@
                     "6 cm",
                     "2 cm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-6-6.4-2"
                 },
                 {
                   "q": "Tank 10 cm long, 8 cm wide, 5 cm high. Volume in mℓ? (1 cm³ = 1 mℓ)",
@@ -1975,7 +2153,8 @@
                     "4 000 mℓ",
                     "40 mℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-6-6.4-3"
                 },
                 {
                   "q": "Cube volume 64 cm³. Side length?",
@@ -1985,7 +2164,8 @@
                     "16 cm",
                     "2 cm"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-6-6.4-4"
                 }
               ]
             }
@@ -2006,7 +2186,8 @@
                     "Quadrant I",
                     "Quadrant IV"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-7-7.1-0"
                 },
                 {
                   "q": "What are the coordinates of the origin?",
@@ -2016,7 +2197,8 @@
                     "(1, 0)",
                     "(0, 1)"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-7-7.1-1"
                 },
                 {
                   "q": "From (2, 3), move 3 left and 2 down. End point?",
@@ -2026,7 +2208,8 @@
                     "(-1, 5)",
                     "(5, 1)"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-7-7.1-2"
                 },
                 {
                   "q": "Which point lies in Quadrant IV?",
@@ -2036,7 +2219,8 @@
                     "(5, -2)",
                     "(-5, -2)"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-7-7.1-3"
                 },
                 {
                   "q": "A(-2, -3), B(4, -3). Horizontal distance?",
@@ -2046,7 +2230,8 @@
                     "7 units",
                     "6 units"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.1-4"
                 }
               ]
             },
@@ -2062,7 +2247,8 @@
                     "3:2",
                     "2:3"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-7-7.2-0"
                 },
                 {
                   "q": "Simplify 15:25.",
@@ -2072,7 +2258,8 @@
                     "3:4",
                     "5:3"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-7-7.2-1"
                 },
                 {
                   "q": "Recipe uses 3 cups flour, 2 cups sugar. Ratio flour to sugar?",
@@ -2082,7 +2269,8 @@
                     "3:5",
                     "3:2"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.2-2"
                 },
                 {
                   "q": "18 red marbles, 24 blue marbles. Ratio red:blue in simplest form?",
@@ -2092,7 +2280,8 @@
                     "6:8",
                     "3:4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.2-3"
                 },
                 {
                   "q": "Fruit basket apples:oranges = 5:3. 25 apples. How many oranges?",
@@ -2102,7 +2291,8 @@
                     "12",
                     "15"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.2-4"
                 }
               ]
             },
@@ -2118,7 +2308,8 @@
                     "RM2.50",
                     "RM3.00"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.3-0"
                 },
                 {
                   "q": "Car travels 120 km in 2 hours. Distance in 5 hours (same speed)?",
@@ -2128,7 +2319,8 @@
                     "240 km",
                     "360 km"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-7-7.3-1"
                 },
                 {
                   "q": "3 eggs cost RM1.50. How many eggs for RM4.50?",
@@ -2138,7 +2330,8 @@
                     "8 eggs",
                     "9 eggs"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.3-2"
                 },
                 {
                   "q": "Complete: 4:7 = ___ : 28",
@@ -2148,7 +2341,8 @@
                     "14",
                     "8"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-7-7.3-3"
                 },
                 {
                   "q": "Map scale 1 cm : 5 km. Map distance 8 cm. Actual distance?",
@@ -2158,7 +2352,8 @@
                     "13 km",
                     "40 km"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.3-4"
                 }
               ]
             },
@@ -2174,7 +2369,8 @@
                     "RM1.00",
                     "RM0.90"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-7-7.4-0"
                 },
                 {
                   "q": "8 notebooks cost RM12. Cost of 3 notebooks?",
@@ -2184,7 +2380,8 @@
                     "RM4.00",
                     "RM6.00"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-7-7.4-1"
                 },
                 {
                   "q": "Car uses 8 litres petrol for 100 km. Petrol for 250 km?",
@@ -2194,7 +2391,8 @@
                     "16 litres",
                     "20 litres"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-7-7.4-2"
                 },
                 {
                   "q": "5 workers paint a house in 12 days. Time for 1 worker?",
@@ -2204,7 +2402,8 @@
                     "12 days",
                     "5.5 days"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-7-7.4-3"
                 },
                 {
                   "q": "Baker makes 40 cookies/hour. Cookies in 3 hours 30 mins?",
@@ -2214,7 +2413,8 @@
                     "140 cookies",
                     "120 cookies"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-7-7.4-4"
                 }
               ]
             }
@@ -2235,7 +2435,8 @@
                     "3/4",
                     "1/4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.1-0"
                 },
                 {
                   "q": "50% walk, 25% take bus, rest cycle. Percentage who cycle?",
@@ -2245,7 +2446,8 @@
                     "75%",
                     "25%"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.1-1"
                 },
                 {
                   "q": "A pie chart has 4 equal sectors. Angle of each sector?",
@@ -2255,7 +2457,8 @@
                     "180°",
                     "90°"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.1-2"
                 },
                 {
                   "q": "Survey of 200 people, 40% prefer tea. How many prefer tea?",
@@ -2265,7 +2468,8 @@
                     "40 people",
                     "80 people"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.1-3"
                 },
                 {
                   "q": "Expenses: Food 120°, Transport 90°, Savings 60°, Others 90°. Fraction on food?",
@@ -2275,7 +2479,8 @@
                     "1/2",
                     "1/3"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.1-4"
                 }
               ]
             },
@@ -2291,7 +2496,8 @@
                     "Temperature is decreasing",
                     "Temperature is increasing"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.2-0"
                 },
                 {
                   "q": "Line goes from 20 to 50 over 3 hours. Increase per hour?",
@@ -2301,7 +2507,8 @@
                     "5 per hour",
                     "15 per hour"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-8-8.2-1"
                 },
                 {
                   "q": "X-axis: Jan-Jun, Y-axis: rainfall (mm). What does the graph show?",
@@ -2311,7 +2518,8 @@
                     "Average temperature",
                     "Number of rainy days"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-8-8.2-2"
                 },
                 {
                   "q": "Savings: Week1=RM5, Week2=RM10, Week4=RM20. If pattern continues, Week3?",
@@ -2321,7 +2529,8 @@
                     "RM25",
                     "RM12"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-8-8.2-3"
                 },
                 {
                   "q": "Line from 30°C at 12pm to 26°C at 6pm. Total decrease?",
@@ -2331,7 +2540,8 @@
                     "6°C",
                     "4°C"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.2-4"
                 }
               ]
             },
@@ -2347,7 +2557,8 @@
                     "8",
                     "9"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math6-8-8.3-0"
                 },
                 {
                   "q": "Mode of: 3, 5, 3, 7, 8, 3, 6?",
@@ -2357,7 +2568,8 @@
                     "3",
                     "8"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-8-8.3-1"
                 },
                 {
                   "q": "Median of: 12, 8, 15, 10, 6?",
@@ -2367,7 +2579,8 @@
                     "8",
                     "15"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math6-8-8.3-2"
                 },
                 {
                   "q": "Scores: 85, 90, 75, 90. Mode?",
@@ -2377,7 +2590,8 @@
                     "80",
                     "90"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math6-8-8.3-3"
                 },
                 {
                   "q": "Mean of 2, 4, 6, 8, 10?",
@@ -2387,7 +2601,8 @@
                     "6",
                     "7"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math6-8-8.3-4"
                 }
               ]
             }

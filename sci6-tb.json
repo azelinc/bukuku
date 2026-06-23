@@ -20,7 +20,8 @@
                     "Responding variable",
                     "Controlled variable"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-1-1.1-0"
                 },
                 {
                   "q": "In a fair test, which variables should be kept the same throughout?",
@@ -30,7 +31,8 @@
                     "Constant variables",
                     "All variables"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-1-1.1-1"
                 },
                 {
                   "q": "A student wants to test how the type of fertiliser affects plant growth. What is the responding variable?",
@@ -40,7 +42,8 @@
                     "Amount of sunlight",
                     "Height of plant"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-1-1.1-2"
                 },
                 {
                   "q": "Which of the following is NOT one of the basic science process skills?",
@@ -50,7 +53,8 @@
                     "Playing",
                     "Predicting"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-1-1.1-3"
                 },
                 {
                   "q": "Siti notices that a metal spoon feels colder than a wooden spoon even though both are at the same temperature. Which skill is she using?",
@@ -60,7 +64,8 @@
                     "Observing",
                     "Inferring"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-1-1.1-4"
                 },
                 {
                   "q": "Drawing a specimen exactly as you see it under a microscope is an example of which manipulative skill?",
@@ -70,7 +75,8 @@
                     "Drawing specimens accurately",
                     "Cleaning equipment"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-1-1.1-5"
                 },
                 {
                   "q": "Which of the following is the correct order of the scientific method?",
@@ -80,7 +86,8 @@
                     "Conclusion, hypothesis, experiment, problem",
                     "Experiment, problem, hypothesis, conclusion"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-1-1.1-6"
                 },
                 {
                   "q": "In a fair test, why must only one variable be changed at a time?",
@@ -90,7 +97,8 @@
                     "Because it is easier",
                     "To use less equipment"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-1-1.1-7"
                 }
               ]
             },
@@ -106,7 +114,8 @@
                     "A conical flask",
                     "A test tube"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-1-1.2-0"
                 },
                 {
                   "q": "When using a microscope, which part should you use to focus the image clearly?",
@@ -116,7 +125,8 @@
                     "The fine adjustment knob",
                     "The stage"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-1-1.2-1"
                 },
                 {
                   "q": "Why should you always wear safety goggles during a science experiment?",
@@ -126,7 +136,8 @@
                     "To look like a scientist",
                     "To prevent dust from getting in your eyes"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-1-1.2-2"
                 },
                 {
                   "q": "When drawing a scientific diagram of a specimen, you should...",
@@ -136,7 +147,8 @@
                     "Use a sharp pencil and draw clean lines",
                     "Draw quickly without details"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-1-1.2-3"
                 },
                 {
                   "q": "Which of the following is the correct way to smell a chemical in the lab?",
@@ -146,7 +158,8 @@
                     "Pour it out and smell it",
                     "Shake the container and then smell"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-1-1.2-4"
                 },
                 {
                   "q": "What is the correct way to hold a test tube when heating it over a Bunsen burner?",
@@ -156,7 +169,8 @@
                     "Use a test tube holder and point it away from yourself and others",
                     "Hold it at a 90-degree angle pointing up"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-1-1.2-5"
                 }
               ]
             }
@@ -177,7 +191,8 @@
                     "In the ovaries",
                     "In the vagina"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.1-0"
                 },
                 {
                   "q": "The organ where a baby develops and grows during pregnancy is the...",
@@ -187,7 +202,8 @@
                     "Vagina",
                     "Uterus"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-2-2.1-1"
                 },
                 {
                   "q": "Where does fertilisation typically take place?",
@@ -197,7 +213,8 @@
                     "In the uterus",
                     "In the vagina"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.1-2"
                 },
                 {
                   "q": "The male reproductive cell is called a...",
@@ -207,7 +224,8 @@
                     "Zygote",
                     "Foetus"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-2-2.1-3"
                 },
                 {
                   "q": "Which organ in the male reproductive system produces sperm cells?",
@@ -217,7 +235,8 @@
                     "The scrotum",
                     "The testes"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-2-2.1-4"
                 },
                 {
                   "q": "Fertilisation occurs when...",
@@ -227,7 +246,8 @@
                     "The baby is born",
                     "The sperm is produced in the testes"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.1-5"
                 },
                 {
                   "q": "What is produced by the testes in the male reproductive system?",
@@ -237,7 +257,8 @@
                     "Blood cells",
                     "Nerve cells"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.1-6"
                 }
               ]
             },
@@ -253,7 +274,8 @@
                     "Menarche",
                     "Menopause"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.2-0"
                 },
                 {
                   "q": "Which of the following is a physical change that happens to boys during puberty?",
@@ -263,7 +285,8 @@
                     "Voice deepens",
                     "Menstruation begins"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.2-1"
                 },
                 {
                   "q": "Which of the following is a physical change that happens to girls during puberty?",
@@ -273,7 +296,8 @@
                     "Hips widen",
                     "Facial hair grows"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.2-2"
                 },
                 {
                   "q": "During puberty, boys' bodies produce more of the hormone called...",
@@ -283,7 +307,8 @@
                     "Insulin",
                     "Adrenaline"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.2-3"
                 },
                 {
                   "q": "During puberty, girls' bodies produce more of the hormone called...",
@@ -293,7 +318,8 @@
                     "Oestrogen",
                     "Cortisol"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.2-4"
                 },
                 {
                   "q": "The age at which puberty typically begins in most children is between...",
@@ -303,7 +329,8 @@
                     "15 and 18 years old",
                     "18 and 21 years old"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.2-5"
                 },
                 {
                   "q": "Which of the following is a change that occurs in BOTH boys and girls during puberty?",
@@ -313,7 +340,8 @@
                     "Shoulders broaden",
                     "Menstruation begins"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.2-6"
                 }
               ]
             },
@@ -329,7 +357,8 @@
                     "Facial hair growth",
                     "Menstruation"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.3-0"
                 },
                 {
                   "q": "Which change is unique to girls during puberty?",
@@ -339,7 +368,8 @@
                     "Broadening of shoulders",
                     "Growth of facial hair"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.3-1"
                 },
                 {
                   "q": "Both boys and girls experience which of the following during puberty?",
@@ -349,7 +379,8 @@
                     "Menstruation",
                     "Voice deepening"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.3-2"
                 },
                 {
                   "q": "Body odour becomes more noticeable during puberty because...",
@@ -359,7 +390,8 @@
                     "The skin becomes thicker",
                     "The body produces less sweat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-2-2.3-3"
                 },
                 {
                   "q": "Acne during puberty is caused by...",
@@ -369,7 +401,8 @@
                     "Hormonal changes that increase oil production in the skin",
                     "Not drinking enough water"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.3-4"
                 },
                 {
                   "q": "The changes during puberty are triggered by...",
@@ -379,7 +412,8 @@
                     "Hormones",
                     "Diet"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-2-2.3-5"
                 }
               ]
             }
@@ -400,7 +434,8 @@
                     "Herbivores",
                     "Mammals"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.1-0"
                 },
                 {
                   "q": "Animals that give birth to live young are called...",
@@ -410,7 +445,8 @@
                     "Viviparous",
                     "Carnivores"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-3-3.1-1"
                 },
                 {
                   "q": "Which of the following is an oviparous animal?",
@@ -420,7 +456,8 @@
                     "Eagle",
                     "Dolphin"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-3-3.1-2"
                 },
                 {
                   "q": "Which of the following is a viviparous animal?",
@@ -430,7 +467,8 @@
                     "Butterfly",
                     "Elephant"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-3-3.1-3"
                 },
                 {
                   "q": "A duck is an oviparous animal because it...",
@@ -440,7 +478,8 @@
                     "Has fur",
                     "Breathes with lungs"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.1-4"
                 },
                 {
                   "q": "Viviparous animals have an advantage because their young are...",
@@ -450,7 +489,8 @@
                     "Born with fully grown fur",
                     "Immediately independent at birth"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.1-5"
                 },
                 {
                   "q": "Which animal is both oviparous and can also give birth to live young in some species?",
@@ -460,7 +500,8 @@
                     "Frog",
                     "Cat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.1-6"
                 }
               ]
             },
@@ -476,7 +517,8 @@
                     "Leaf reproduction",
                     "Spore reproduction"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.2-0"
                 },
                 {
                   "q": "Which plant reproduces by suckers?",
@@ -486,7 +528,8 @@
                     "Potato",
                     "Fern"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.2-1"
                 },
                 {
                   "q": "A new begonia plant can grow from a broken leaf placed on soil. This is an example of...",
@@ -496,7 +539,8 @@
                     "Leaf reproduction",
                     "Underground stem"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-3-3.2-2"
                 },
                 {
                   "q": "Potatoes and ginger reproduce through...",
@@ -506,7 +550,8 @@
                     "Leaves",
                     "Underground stems"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-3-3.2-3"
                 },
                 {
                   "q": "Ferns reproduce by releasing tiny structures called...",
@@ -516,7 +561,8 @@
                     "Spores",
                     "Pollen"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-3-3.2-4"
                 },
                 {
                   "q": "Which of the following reproduces through bulbs?",
@@ -526,7 +572,8 @@
                     "Banana",
                     "Rose"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.2-5"
                 },
                 {
                   "q": "The part of a flower that develops into a seed after fertilisation is the...",
@@ -536,7 +583,8 @@
                     "Stamen",
                     "Sepal"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.2-6"
                 }
               ]
             },
@@ -552,7 +600,8 @@
                     "Seeds can be produced in larger numbers",
                     "Seeds do not need water"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.3-0"
                 },
                 {
                   "q": "A farmer wants plants that grow quickly and are identical to the parent. Which method should they use?",
@@ -562,7 +611,8 @@
                     "Growing from stem cuttings",
                     "Growing from wind dispersal"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-3-3.3-1"
                 },
                 {
                   "q": "Why are suckers considered a fast way for plants to reproduce?",
@@ -572,7 +622,8 @@
                     "They need a lot of sunlight",
                     "They produce flowers quickly"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-3-3.3-2"
                 },
                 {
                   "q": "Which of the following best describes how spores are dispersed?",
@@ -582,7 +633,8 @@
                     "By sticking to fur",
                     "By falling straight to the ground"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.3-3"
                 },
                 {
                   "q": "Underground stems like potato tubers have the advantage of...",
@@ -592,7 +644,8 @@
                     "Producing flowers year-round",
                     "Attracting more pollinators"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.3-4"
                 },
                 {
                   "q": "Which method of reproduction produces offspring that are genetically identical to the parent?",
@@ -602,7 +655,8 @@
                     "Pollination by bees",
                     "Fertilisation"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-3-3.3-5"
                 }
               ]
             }
@@ -623,7 +677,8 @@
                     "Trees",
                     "Water"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.1-0"
                 },
                 {
                   "q": "Which of the following is an abiotic component of an ecosystem?",
@@ -633,7 +688,8 @@
                     "Plants",
                     "Temperature"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-4-4.1-1"
                 },
                 {
                   "q": "A pond ecosystem includes fish, water plants, and...",
@@ -643,7 +699,8 @@
                     "Both living and non-living components",
                     "Only water"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.1-2"
                 },
                 {
                   "q": "Why is sunlight important in an ecosystem?",
@@ -653,7 +710,8 @@
                     "It scares away predators",
                     "It helps animals sleep"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.1-3"
                 },
                 {
                   "q": "A large area with a community of living things interacting with their environment is called a(n)...",
@@ -663,7 +721,8 @@
                     "Community",
                     "Habitat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.1-4"
                 },
                 {
                   "q": "Which of the following is an example of an ecosystem?",
@@ -673,7 +732,8 @@
                     "A pile of sand",
                     "A glass of water"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.1-5"
                 }
               ]
             },
@@ -689,7 +749,8 @@
                     "Producers",
                     "Decomposers"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.2-0"
                 },
                 {
                   "q": "A rabbit eats grass. The rabbit is a...",
@@ -699,7 +760,8 @@
                     "Carnivore",
                     "Decomposer"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.2-1"
                 },
                 {
                   "q": "Which of the following is a correct food chain?",
@@ -709,7 +771,8 @@
                     "Rabbit → Grass → Sun → Eagle",
                     "Grass → Eagle → Rabbit → Sun"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-4-4.2-2"
                 },
                 {
                   "q": "An animal that eats both plants and meat is called a(n)...",
@@ -719,7 +782,8 @@
                     "Omnivore",
                     "Producer"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.2-3"
                 },
                 {
                   "q": "What is the role of decomposers in a food web?",
@@ -729,7 +793,8 @@
                     "They break down dead organisms and return nutrients to the soil",
                     "They eat only plants"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.2-4"
                 },
                 {
                   "q": "If all the grass in a field dies, what will most likely happen to the herbivores?",
@@ -739,7 +804,8 @@
                     "They will struggle to find food and numbers may decrease",
                     "They will start eating meat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.2-5"
                 },
                 {
                   "q": "In the food chain 'Grass → Grasshopper → Frog → Snake', which is the secondary consumer?",
@@ -749,7 +815,8 @@
                     "Snake",
                     "Grass"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.2-6"
                 }
               ]
             },
@@ -765,7 +832,8 @@
                     "Commensalism",
                     "Parasitism"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.3-0"
                 },
                 {
                   "q": "Bees collect nectar from flowers and help pollinate them. Both benefit. This is...",
@@ -775,7 +843,8 @@
                     "Mutualism",
                     "Commensalism"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-4-4.3-1"
                 },
                 {
                   "q": "A tick attaches to a dog's skin and feeds on its blood. This is an example of...",
@@ -785,7 +854,8 @@
                     "Predator-prey",
                     "Parasitism"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-4-4.3-2"
                 },
                 {
                   "q": "Barnacles attach themselves to a whale's skin. The barnacles get a ride to food sources, and the whale is not affected. This is...",
@@ -795,7 +865,8 @@
                     "Mutualism",
                     "Competition"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.3-3"
                 },
                 {
                   "q": "Two male deer fight for the same female to mate. This interaction is...",
@@ -805,7 +876,8 @@
                     "Mutualism",
                     "Parasitism"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.3-4"
                 },
                 {
                   "q": "In mutualism, the relationship between the two organisms is...",
@@ -815,7 +887,8 @@
                     "Beneficial to one and harmful to the other",
                     "Beneficial to one and neutral to the other"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.3-5"
                 },
                 {
                   "q": "Two species of birds living in the same tree and eating the same insects are in...",
@@ -825,7 +898,8 @@
                     "Commensalism",
                     "Predator-prey"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-4-4.3-6"
                 }
               ]
             }
@@ -846,7 +920,8 @@
                     "Wind",
                     "Coal"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.1-0"
                 },
                 {
                   "q": "Which of the following is a non-renewable energy source?",
@@ -856,7 +931,8 @@
                     "Coal",
                     "Biomass"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.1-1"
                 },
                 {
                   "q": "Fossil fuels are called non-renewable because...",
@@ -866,7 +942,8 @@
                     "They can be made quickly in factories",
                     "They produce clean energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.1-2"
                 },
                 {
                   "q": "Solar panels convert energy from the Sun into...",
@@ -876,7 +953,8 @@
                     "Electrical energy",
                     "Sound energy"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.1-3"
                 },
                 {
                   "q": "Geothermal energy comes from...",
@@ -886,7 +964,8 @@
                     "Heat inside the Earth",
                     "Moving water"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.1-4"
                 },
                 {
                   "q": "Which renewable energy source uses moving air to generate electricity?",
@@ -896,7 +975,8 @@
                     "Geothermal power",
                     "Hydroelectric power"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.1-5"
                 },
                 {
                   "q": "Which type of renewable energy uses the flow of rivers and dams to generate electricity?",
@@ -906,7 +986,8 @@
                     "Hydroelectric",
                     "Geothermal"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.1-6"
                 }
               ]
             },
@@ -922,7 +1003,8 @@
                     "Kinetic energy",
                     "Heat energy"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.2-0"
                 },
                 {
                   "q": "Batteries store which form of energy?",
@@ -932,7 +1014,8 @@
                     "Light energy",
                     "Heat energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.2-1"
                 },
                 {
                   "q": "A wound-up spring in a toy has which type of energy?",
@@ -942,7 +1025,8 @@
                     "Sound energy",
                     "Light energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.2-2"
                 },
                 {
                   "q": "A light bulb converts electrical energy into...",
@@ -952,7 +1036,8 @@
                     "Light and heat energy",
                     "Sound energy"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.2-3"
                 },
                 {
                   "q": "The food we eat contains which type of energy?",
@@ -962,7 +1047,8 @@
                     "Potential energy",
                     "Chemical energy"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-5-5.2-4"
                 },
                 {
                   "q": "A drum being struck produces which form of energy?",
@@ -972,7 +1058,8 @@
                     "Heat energy",
                     "Chemical energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.2-5"
                 },
                 {
                   "q": "A stretched rubber band has which type of energy?",
@@ -982,7 +1069,8 @@
                     "Chemical energy",
                     "Thermal energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.2-6"
                 }
               ]
             },
@@ -998,7 +1086,8 @@
                     "Sound energy",
                     "Kinetic energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.3-0"
                 },
                 {
                   "q": "When we eat food and run, what energy conversion happens?",
@@ -1008,7 +1097,8 @@
                     "Heat to chemical",
                     "Light to chemical"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-5-5.3-1"
                 },
                 {
                   "q": "A television converts electrical energy into...",
@@ -1018,7 +1108,8 @@
                     "Chemical energy",
                     "Kinetic energy only"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-5-5.3-2"
                 },
                 {
                   "q": "A solar-powered calculator uses which energy conversion?",
@@ -1028,7 +1119,8 @@
                     "Electrical energy to light energy",
                     "Chemical energy to electrical energy"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-5-5.3-3"
                 },
                 {
                   "q": "In a hydroelectric dam, the kinetic energy of falling water is converted into...",
@@ -1038,7 +1130,8 @@
                     "Electrical energy",
                     "Sound energy"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.3-4"
                 },
                 {
                   "q": "The Law of Conservation of Energy states that energy...",
@@ -1048,7 +1141,8 @@
                     "Cannot be created or destroyed, only converted",
                     "Can be created and destroyed"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-5-5.3-5"
                 }
               ]
             }
@@ -1069,7 +1163,8 @@
                     "The connecting wires",
                     "The dry cell"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-6-6.1-0"
                 },
                 {
                   "q": "What happens when a switch is open in a circuit?",
@@ -1079,7 +1174,8 @@
                     "The bulb gets dimmer",
                     "The battery charges"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.1-1"
                 },
                 {
                   "q": "What is the function of connecting wires in a circuit?",
@@ -1089,7 +1185,8 @@
                     "To control the brightness of the bulb",
                     "To store electricity"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.1-2"
                 },
                 {
                   "q": "Electric current in a circuit flows from the...",
@@ -1099,7 +1196,8 @@
                     "Bulb to the battery",
                     "Switch to the bulb"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.1-3"
                 },
                 {
                   "q": "A complete circuit is needed for a bulb to light up because...",
@@ -1109,7 +1207,8 @@
                     "The bulb works without electricity",
                     "The switch does not matter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.1-4"
                 },
                 {
                   "q": "If one wire is disconnected from a circuit with one bulb and one battery, the bulb will...",
@@ -1119,7 +1218,8 @@
                     "Not light up at all",
                     "Flash on and off"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.1-5"
                 }
               ]
             },
@@ -1135,7 +1235,8 @@
                     "Both bulbs go out",
                     "The other bulb flashes"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.2-0"
                 },
                 {
                   "q": "In a parallel circuit with two bulbs, what happens if one bulb blows?",
@@ -1145,7 +1246,8 @@
                     "The other bulb gets brighter",
                     "The circuit stops working"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.2-1"
                 },
                 {
                   "q": "Which type of circuit is commonly used for household lighting?",
@@ -1155,7 +1257,8 @@
                     "Magnetic circuit",
                     "Static circuit"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.2-2"
                 },
                 {
                   "q": "Two bulbs in a series circuit will be...",
@@ -1165,7 +1268,8 @@
                     "The same brightness as a single bulb",
                     "Not lit at all"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.2-3"
                 },
                 {
                   "q": "In a parallel circuit, each bulb has its own...",
@@ -1175,7 +1279,8 @@
                     "Path or branch",
                     "Wire colour"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.2-4"
                 },
                 {
                   "q": "Which circuit arrangement allows you to turn off one light while keeping others on?",
@@ -1185,7 +1290,8 @@
                     "A circuit with no switch",
                     "A single-loop circuit"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.2-5"
                 }
               ]
             },
@@ -1201,7 +1307,8 @@
                     "Have no effect",
                     "Stick together"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.3-0"
                 },
                 {
                   "q": "Which of the following materials is attracted to a magnet?",
@@ -1211,7 +1318,8 @@
                     "Paper",
                     "Aluminium foil"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.3-1"
                 },
                 {
                   "q": "The strongest part of a magnet is at its...",
@@ -1221,7 +1329,8 @@
                     "Poles",
                     "Surface"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.3-2"
                 },
                 {
                   "q": "A north pole and a south pole of two magnets will...",
@@ -1231,7 +1340,8 @@
                     "Have no effect on each other",
                     "Destroy each other"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.3-3"
                 },
                 {
                   "q": "Which of the following is NOT attracted to a magnet?",
@@ -1241,7 +1351,8 @@
                     "A copper coin",
                     "A nickel coin"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.3-4"
                 },
                 {
                   "q": "A magnetic field is...",
@@ -1251,7 +1362,8 @@
                     "The weight of the magnet",
                     "The shape of the magnet"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-6-6.3-5"
                 },
                 {
                   "q": "A magnet can attract an object from a distance because of its...",
@@ -1261,7 +1373,8 @@
                     "Magnetic field",
                     "Size"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.3-6"
                 },
                 {
                   "q": "A paperclip can be turned into a temporary magnet by...",
@@ -1271,7 +1384,8 @@
                     "Dropping it",
                     "Painting it"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.3-7"
                 }
               ]
             },
@@ -1287,7 +1401,8 @@
                     "Plastic, aluminium, and a battery",
                     "A steel bar and a bulb"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.4-0"
                 },
                 {
                   "q": "How can you increase the strength of an electromagnet?",
@@ -1297,7 +1412,8 @@
                     "Increase the number of coils",
                     "Use a plastic core"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.4-1"
                 },
                 {
                   "q": "An electromagnet loses its magnetism when...",
@@ -1307,7 +1423,8 @@
                     "The electric current is switched off",
                     "The wire is made longer"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.4-2"
                 },
                 {
                   "q": "Which of the following devices uses an electromagnet?",
@@ -1317,7 +1434,8 @@
                     "An electric doorbell",
                     "A paper towel"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-6-6.4-3"
                 },
                 {
                   "q": "What is the function of the iron core in an electromagnet?",
@@ -1327,7 +1445,8 @@
                     "To protect the wire from breaking",
                     "To make the electromagnet colourful"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.4-4"
                 },
                 {
                   "q": "A student wraps 20 coils of wire around an iron nail and connects it to one battery. To make the electromagnet stronger, she should...",
@@ -1337,7 +1456,8 @@
                     "Remove the iron core",
                     "Use a copper nail instead"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-6-6.4-5"
                 }
               ]
             }
@@ -1358,7 +1478,8 @@
                     "Wedge",
                     "Screw"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.1-0"
                 },
                 {
                   "q": "A flag is raised to the top of a pole using a wheel and rope. This uses which simple machine?",
@@ -1368,7 +1489,8 @@
                     "Pulley",
                     "Inclined plane"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-7-7.1-1"
                 },
                 {
                   "q": "A knife uses which simple machine to cut through objects?",
@@ -1378,7 +1500,8 @@
                     "Pulley",
                     "Wedge"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-7-7.1-2"
                 },
                 {
                   "q": "A screw is a simple machine that is actually an inclined plane...",
@@ -1388,7 +1511,8 @@
                     "Standing on its end",
                     "Pushed into a slope"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.1-3"
                 },
                 {
                   "q": "The steering wheel of a car is an example of which simple machine?",
@@ -1398,7 +1522,8 @@
                     "Screw",
                     "Wheel and axle"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-7-7.1-4"
                 },
                 {
                   "q": "Which simple machine consists of a bar that rotates around a fixed point called a fulcrum?",
@@ -1408,7 +1533,8 @@
                     "Lever",
                     "Screw"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-7-7.1-5"
                 },
                 {
                   "q": "Interlocking toothed wheels that transfer motion are called...",
@@ -1418,7 +1544,8 @@
                     "Gears",
                     "Levers"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-7-7.1-6"
                 }
               ]
             },
@@ -1434,7 +1561,8 @@
                     "It reduces the force needed by using leverage",
                     "It uses electricity to lift the rock"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-7-7.2-0"
                 },
                 {
                   "q": "Using a ramp to move a heavy box into a lorry is easier because...",
@@ -1444,7 +1572,8 @@
                     "Gravity stops pulling the box",
                     "The ramp pushes the box up"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.2-1"
                 },
                 {
                   "q": "Pulling a rope downward to raise a flag upward shows that a pulley...",
@@ -1454,7 +1583,8 @@
                     "Speeds up the movement",
                     "Increases the weight of the flag"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-7-7.2-2"
                 },
                 {
                   "q": "Screws are used to hold two pieces of wood together because...",
@@ -1464,7 +1594,8 @@
                     "They melt into the wood",
                     "They expand when heated"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.2-3"
                 },
                 {
                   "q": "An axe splits wood because the wedge shape...",
@@ -1474,7 +1605,8 @@
                     "Is very heavy",
                     "Creates heat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-7-7.2-4"
                 },
                 {
                   "q": "Scissors make cutting easier because they combine two...",
@@ -1484,7 +1616,8 @@
                     "Levers",
                     "Wheels and axles"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-7-7.2-5"
                 },
                 {
                   "q": "Using a longer ramp to reach a higher level requires...",
@@ -1494,7 +1627,8 @@
                     "The same force",
                     "No force at all"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.2-6"
                 }
               ]
             },
@@ -1510,7 +1644,8 @@
                     "Screw and lever",
                     "Inclined plane and pulley"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.3-0"
                 },
                 {
                   "q": "A wheelbarrow combines which two simple machines?",
@@ -1520,7 +1655,8 @@
                     "Screw and wedge",
                     "Inclined plane and wheel and axle"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.3-1"
                 },
                 {
                   "q": "A bicycle uses gears and a chain. These are combinations of which simple machines?",
@@ -1530,7 +1666,8 @@
                     "Pulley and wheel and axle",
                     "Lever and screw"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-7-7.3-2"
                 },
                 {
                   "q": "What simple machine is used in the pedal system of a bicycle?",
@@ -1540,7 +1677,8 @@
                     "Screw",
                     "Lever"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-7-7.3-3"
                 },
                 {
                   "q": "A can opener uses a combination of which simple machines?",
@@ -1550,7 +1688,8 @@
                     "A wheel and axle only",
                     "An inclined plane and a pulley"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-7-7.3-4"
                 },
                 {
                   "q": "Why are complex machines that combine simple machines better than single simple machines?",
@@ -1560,7 +1699,8 @@
                     "They never break down",
                     "They use less material"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-7-7.3-5"
                 }
               ]
             }
@@ -1581,7 +1721,8 @@
                     "The study of the Earth",
                     "The practice of cooking"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.1-0"
                 },
                 {
                   "q": "Which of the following is an example of technology used for communication?",
@@ -1591,7 +1732,8 @@
                     "A smartphone",
                     "A pencil"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.1-1"
                 },
                 {
                   "q": "Which of the following is NOT an example of technology?",
@@ -1601,7 +1743,8 @@
                     "A river",
                     "A car"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.1-2"
                 },
                 {
                   "q": "Medical technology helps doctors to...",
@@ -1611,7 +1754,8 @@
                     "Build houses",
                     "Grow crops"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.1-3"
                 },
                 {
                   "q": "How has transportation technology improved our lives?",
@@ -1621,7 +1765,8 @@
                     "It has made travel more dangerous",
                     "It has reduced the number of roads"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.1-4"
                 },
                 {
                   "q": "Which of the following shows how technology helps in agriculture?",
@@ -1631,7 +1776,8 @@
                     "Using a pencil to write notes",
                     "Using a clock to tell time"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.1-5"
                 },
                 {
                   "q": "Which of the following best describes the relationship between science and technology?",
@@ -1641,7 +1787,8 @@
                     "Technology only uses electricity",
                     "Science only involves experiments"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.1-6"
                 }
               ]
             },
@@ -1657,7 +1804,8 @@
                     "Nikola Tesla",
                     "Albert Einstein"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.2-0"
                 },
                 {
                   "q": "The invention of the light bulb is credited to...",
@@ -1667,7 +1815,8 @@
                     "Thomas Edison",
                     "Marie Curie"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.2-1"
                 },
                 {
                   "q": "Which invention allowed information to spread quickly across the world?",
@@ -1677,7 +1826,8 @@
                     "The Internet",
                     "The compass"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.2-2"
                 },
                 {
                   "q": "The wheel was first invented approximately how long ago?",
@@ -1687,7 +1837,8 @@
                     "Over 5,500 years ago",
                     "100 years ago"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.2-3"
                 },
                 {
                   "q": "Penicillin, an antibiotic that fights bacterial infections, was discovered by...",
@@ -1697,7 +1848,8 @@
                     "Joseph Lister",
                     "Edward Jenner"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.2-4"
                 },
                 {
                   "q": "The printing press was important because it...",
@@ -1707,7 +1859,8 @@
                     "Made knowledge accessible to more people",
                     "Reduced the number of libraries"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.2-5"
                 }
               ]
             },
@@ -1723,7 +1876,8 @@
                     "Only rich people can communicate",
                     "Communication has become more expensive"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.3-0"
                 },
                 {
                   "q": "Vaccines are a medical technology that helps...",
@@ -1733,7 +1887,8 @@
                     "Make people grow taller",
                     "Improve eyesight"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.3-1"
                 },
                 {
                   "q": "Modern farming machines like tractors and harvesters help farmers by...",
@@ -1743,7 +1898,8 @@
                     "Increasing food production with less labour",
                     "Using more water"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-8-8.3-2"
                 },
                 {
                   "q": "GPS navigation technology helps drivers by...",
@@ -1753,7 +1909,8 @@
                     "Making the car go faster",
                     "Finding parking spots automatically"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.3-3"
                 },
                 {
                   "q": "Renewable energy technology like solar panels helps the environment by...",
@@ -1763,7 +1920,8 @@
                     "Using more coal",
                     "Making electricity more expensive"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-8-8.3-4"
                 },
                 {
                   "q": "Robotic surgery in healthcare allows doctors to...",
@@ -1773,7 +1931,8 @@
                     "Operate on patients from home",
                     "Replace all nurses"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-8-8.3-5"
                 },
                 {
                   "q": "Air conditioning technology works by...",
@@ -1783,7 +1942,8 @@
                     "Creating cold from nothing",
                     "Using ice"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci6-8-8.3-6"
                 }
               ]
             }
@@ -1804,7 +1964,8 @@
                     "Earth",
                     "The Sun"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-9-9.1-0"
                 },
                 {
                   "q": "Which planet is closest to the Sun?",
@@ -1814,7 +1975,8 @@
                     "Mercury",
                     "Mars"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.1-1"
                 },
                 {
                   "q": "Which is the largest planet in the Solar System?",
@@ -1824,7 +1986,8 @@
                     "Jupiter",
                     "Uranus"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.1-2"
                 },
                 {
                   "q": "Earth is the... planet from the Sun.",
@@ -1834,7 +1997,8 @@
                     "Third",
                     "Fourth"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.1-3"
                 },
                 {
                   "q": "Mars is also known as the...",
@@ -1844,7 +2008,8 @@
                     "Green Planet",
                     "Morning Star"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.1-4"
                 },
                 {
                   "q": "Which planet is known for its prominent rings made of ice and rock?",
@@ -1854,7 +2019,8 @@
                     "Uranus",
                     "Saturn"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-9-9.1-5"
                 },
                 {
                   "q": "Which is the farthest planet from the Sun in our Solar System?",
@@ -1864,7 +2030,8 @@
                     "Neptune",
                     "Pluto"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.1-6"
                 },
                 {
                   "q": "Why is Venus sometimes called Earth's 'sister planet'?",
@@ -1874,7 +2041,8 @@
                     "It has the same atmosphere",
                     "It orbits at the same speed"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.1-7"
                 }
               ]
             },
@@ -1890,7 +2058,8 @@
                     "365 days",
                     "30 days"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.2-0"
                 },
                 {
                   "q": "How long does Earth take to complete one revolution around the Sun?",
@@ -1900,7 +2069,8 @@
                     "365 days (approximately one year)",
                     "7 days"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.2-1"
                 },
                 {
                   "q": "What causes day and night on Earth?",
@@ -1910,7 +2080,8 @@
                     "Earth's rotation on its axis",
                     "The Sun moving around Earth"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.2-2"
                 },
                 {
                   "q": "The imaginary line around which Earth spins is called its...",
@@ -1920,7 +2091,8 @@
                     "Axis",
                     "Tropic line"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.2-3"
                 },
                 {
                   "q": "The Sun appears to rise in the east because Earth rotates from...",
@@ -1930,7 +2102,8 @@
                     "East to west",
                     "West to east"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-9-9.2-4"
                 },
                 {
                   "q": "The path Earth takes around the Sun is called its...",
@@ -1940,7 +2113,8 @@
                     "Orbit",
                     "Cycle"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.2-5"
                 },
                 {
                   "q": "If Earth rotated more slowly, what would happen to the length of a day?",
@@ -1950,7 +2124,8 @@
                     "Days would stay the same",
                     "There would be no day or night"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.2-6"
                 }
               ]
             },
@@ -1966,7 +2141,8 @@
                     "We see different amounts of the Moon's lit side as it orbits Earth",
                     "The Earth's shadow falls on the Moon"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.3-0"
                 },
                 {
                   "q": "When the Moon is completely lit by the Sun and appears as a full circle, it is called a...",
@@ -1976,7 +2152,8 @@
                     "Crescent Moon",
                     "Quarter Moon"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.3-1"
                 },
                 {
                   "q": "The Moon phase that comes just before a full Moon is called...",
@@ -1986,7 +2163,8 @@
                     "First quarter",
                     "Waxing gibbous"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-9-9.3-2"
                 },
                 {
                   "q": "How long does the Moon take to complete all its phases?",
@@ -1996,7 +2174,8 @@
                     "24 hours",
                     "7 days"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.3-3"
                 },
                 {
                   "q": "When the Moon is between Earth and the Sun, the side facing Earth is dark. This phase is called...",
@@ -2006,7 +2185,8 @@
                     "New Moon",
                     "Crescent"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.3-4"
                 },
                 {
                   "q": "After a full Moon, the Moon appears to get smaller. This is called...",
@@ -2016,7 +2196,8 @@
                     "Eclipsing",
                     "Orbiting"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.3-5"
                 }
               ]
             },
@@ -2032,7 +2213,8 @@
                     "The Sun comes between Earth and the Moon",
                     "The Moon moves behind the Sun"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.4-0"
                 },
                 {
                   "q": "A lunar eclipse occurs when...",
@@ -2042,7 +2224,8 @@
                     "The Sun comes between Earth and the Moon",
                     "The Moon moves away from Earth"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.4-1"
                 },
                 {
                   "q": "During a lunar eclipse, the Moon appears reddish because...",
@@ -2052,7 +2235,8 @@
                     "The Moon is on fire",
                     "The Moon moves closer to Mars"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.4-2"
                 },
                 {
                   "q": "Why should you never look directly at a solar eclipse without special glasses?",
@@ -2062,7 +2246,8 @@
                     "You might get sunburned",
                     "It is bad luck"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.4-3"
                 },
                 {
                   "q": "During which phase of the Moon can a solar eclipse occur?",
@@ -2072,7 +2257,8 @@
                     "New Moon",
                     "Waxing crescent"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-9-9.4-4"
                 },
                 {
                   "q": "During which phase of the Moon can a lunar eclipse occur?",
@@ -2082,7 +2268,8 @@
                     "Crescent",
                     "First quarter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-9-9.4-5"
                 }
               ]
             }
@@ -2103,7 +2290,8 @@
                     "Underwater earthquakes or volcanic eruptions",
                     "The Moon's gravity"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.1-0"
                 },
                 {
                   "q": "A powerful rotating storm that forms over warm ocean waters is called a...",
@@ -2113,7 +2301,8 @@
                     "Volcanic eruption",
                     "Typhoon"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci6-10-10.1-1"
                 },
                 {
                   "q": "Magma that reaches the Earth's surface during a volcanic eruption is called...",
@@ -2123,7 +2312,8 @@
                     "Smoke",
                     "Rock"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.1-2"
                 },
                 {
                   "q": "Earthquakes are usually caused by...",
@@ -2133,7 +2323,8 @@
                     "Tectonic plates shifting and releasing energy",
                     "Animals digging underground"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.1-3"
                 },
                 {
                   "q": "The instrument used to measure the strength of an earthquake is called a...",
@@ -2143,7 +2334,8 @@
                     "Seismograph",
                     "Spectrometer"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.1-4"
                 },
                 {
                   "q": "Which of the following natural phenomena is most likely to occur in Malaysia?",
@@ -2153,7 +2345,8 @@
                     "Earthquake",
                     "Volcanic eruption"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.1-5"
                 },
                 {
                   "q": "Which scale is used to measure the magnitude of an earthquake?",
@@ -2163,7 +2356,8 @@
                     "pH scale",
                     "Decibel scale"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.1-6"
                 }
               ]
             },
@@ -2179,7 +2373,8 @@
                     "Cooling",
                     "Seasonal change"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.2-0"
                 },
                 {
                   "q": "Which gas is a major contributor to global warming?",
@@ -2189,7 +2384,8 @@
                     "Carbon dioxide",
                     "Hydrogen"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.2-1"
                 },
                 {
                   "q": "Deforestation contributes to global warming because...",
@@ -2199,7 +2395,8 @@
                     "Forests block sunlight",
                     "Trees produce oxygen only"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.2-2"
                 },
                 {
                   "q": "What is a major cause of water pollution?",
@@ -2209,7 +2406,8 @@
                     "Fish swimming in water",
                     "Rain falling into rivers"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.2-3"
                 },
                 {
                   "q": "Air pollution from factories and vehicles can cause...",
@@ -2219,7 +2417,8 @@
                     "Cleaner air",
                     "Healthier lungs"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.2-4"
                 },
                 {
                   "q": "Plastic waste in the ocean is harmful because...",
@@ -2229,7 +2428,8 @@
                     "Plastic helps fish breathe",
                     "Plastic adds nutrients to water"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.2-5"
                 },
                 {
                   "q": "Eutrophication in lakes is caused by...",
@@ -2239,7 +2439,8 @@
                     "Too much sunlight",
                     "Natural plant decay"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.2-6"
                 }
               ]
             },
@@ -2255,7 +2456,8 @@
                     "Remove, Return, Restore",
                     "Repair, Replace, Refund"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.3-0"
                 },
                 {
                   "q": "Using a reusable water bottle instead of buying disposable plastic bottles is an example of...",
@@ -2265,7 +2467,8 @@
                     "Reusing",
                     "Rotting"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.3-1"
                 },
                 {
                   "q": "Turning off lights when leaving a room helps conserve...",
@@ -2275,7 +2478,8 @@
                     "Paper",
                     "Food"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.3-2"
                 },
                 {
                   "q": "Putting used paper, glass, and plastic into separate collection bins is an example of...",
@@ -2285,7 +2489,8 @@
                     "Recycling",
                     "Removing"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.3-3"
                 },
                 {
                   "q": "Planting more trees helps the environment because trees...",
@@ -2295,7 +2500,8 @@
                     "Use up all the water",
                     "Block all sunlight"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.3-4"
                 },
                 {
                   "q": "Which action helps to protect wildlife?",
@@ -2305,7 +2511,8 @@
                     "Creating wildlife reserves and protected areas",
                     "Collecting rare animals as pets"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci6-10-10.3-5"
                 },
                 {
                   "q": "Using energy-efficient LED bulbs instead of regular bulbs is an example of...",
@@ -2315,7 +2522,8 @@
                     "Recycling",
                     "Replacing"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci6-10-10.3-6"
                 }
               ]
             }

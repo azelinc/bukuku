@@ -20,7 +20,8 @@
                     "Membuat inferens",
                     "Memerhati"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-1-1.1-0"
                 },
                 {
                   "q": "Ravi mengumpulkan haiwan kepada yang berbulu dan tidak berbulu. Kemahiran proses sains yang manakah digunakan?",
@@ -30,7 +31,8 @@
                     "Membuat inferens",
                     "Memerhati"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-1-1.1-1"
                 },
                 {
                   "q": "Selepas melihat awan gelap di langit, Ali berkata 'Akan hujan sebentar lagi.' Kemahiran yang manakah digunakan?",
@@ -40,7 +42,8 @@
                     "Mengukur",
                     "Berkomunikasi"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-1-1.1-2"
                 },
                 {
                   "q": "Seorang murid menggunakan pembaris untuk mengukur panjang sehelai daun. Kemahiran proses sains yang manakah digunakan?",
@@ -50,7 +53,8 @@
                     "Mengukur",
                     "Memerhati"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-1-1.1-3"
                 },
                 {
                   "q": "Membentangkan keputusan eksperimen dalam jadual atau carta adalah contoh kemahiran proses sains yang mana?",
@@ -60,7 +64,8 @@
                     "Mengukur",
                     "Berkomunikasi"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-1-1.1-4"
                 },
                 {
                   "q": "Seorang murid mendapati gula itu manis selepas merasainya. Kemahiran proses sains yang manakah terlibat?",
@@ -70,7 +75,8 @@
                     "Mengelas",
                     "Mengukur"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-1-1.1-5"
                 },
                 {
                   "q": "Berdasarkan pemerhatian bahawa semua mamalia yang dilihat mempunyai rambut, Ali membuat kesimpulan bahawa semua mamalia berambut. Ini adalah contoh kemahiran...",
@@ -80,7 +86,8 @@
                     "Mengelas",
                     "Mengukur"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-1-1.1-6"
                 },
                 {
                   "q": "Seorang murid menulis laporan tentang eksperimen yang dilakukan. Kemahiran proses sains yang manakah digunakan?",
@@ -90,7 +97,8 @@
                     "Mengukur",
                     "Berkomunikasi"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-1-1.1-7"
                 }
               ]
             },
@@ -106,7 +114,8 @@
                     "Membaca buku teks",
                     "Mendengar penerangan guru"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-1-1.2-0"
                 },
                 {
                   "q": "Apakah yang perlu dilakukan selepas menggunakan alat radas kaca?",
@@ -116,7 +125,8 @@
                     "Mencuci dan mengeringkan sebelum disimpan",
                     "Membuang ke dalam tong sampah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-1-1.2-1"
                 },
                 {
                   "q": "Semasa melukis rajah spesimen, murid perlu...",
@@ -126,7 +136,8 @@
                     "Melukis secara kasar sahaja",
                     "Meniru rajah daripada buku"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-1-1.2-2"
                 },
                 {
                   "q": "Kemahiran mengendalikan spesimen bermaksud...",
@@ -136,7 +147,8 @@
                     "Membiarkan spesimen di atas meja",
                     "Menghidu spesimen dengan kuat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-1-1.2-3"
                 },
                 {
                   "q": "Antara berikut, yang manakah BUKAN kemahiran manipulatif?",
@@ -146,7 +158,8 @@
                     "Meramal keputusan eksperimen",
                     "Menyimpan radas dengan betul"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-1-1.2-4"
                 },
                 {
                   "q": "Gambar rajah spesimen hendaklah dilukis dengan...",
@@ -156,7 +169,8 @@
                     "Garis putus-putus",
                     "Tiada label diperlukan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-1-1.2-5"
                 },
                 {
                   "q": "Alat radas kaca perlu dikendalikan dengan...",
@@ -166,7 +180,8 @@
                     "Dengan sebelah tangan",
                     "Dengan kayu"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-1-1.2-6"
                 },
                 {
                   "q": "Semasa melukis rajah radas, murid perlu melabel bahagian radas dengan...",
@@ -176,7 +191,8 @@
                     "Tanpa label",
                     "Garis putus-putus"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-1-1.2-7"
                 }
               ]
             }
@@ -197,7 +213,8 @@
                     "Makan dan minum",
                     "Bermain dengan alat radas"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.1-0"
                 },
                 {
                   "q": "Jika berlaku kemalangan, apakah yang perlu anda lakukan?",
@@ -207,7 +224,8 @@
                     "Melaporkan kepada guru dengan segera",
                     "Bergurau dengan rakan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-2-2.1-1"
                 },
                 {
                   "q": "Mengapa tidak dibenarkan makan dan minum di bilik sains?",
@@ -217,7 +235,8 @@
                     "Bilik sains terlalu sejuk",
                     "Guru akan marah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.1-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah PERATURAN keselamatan?",
@@ -227,7 +246,8 @@
                     "Memakai apron dan gogal",
                     "Bersiul semasa bekerja"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-2-2.1-3"
                 },
                 {
                   "q": "Mengapa dilarang berlari di bilik sains?",
@@ -237,7 +257,8 @@
                     "Bilik terlalu kecil",
                     "Tiada masa"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.1-4"
                 },
                 {
                   "q": "Apakah yang perlu dipakai semasa eksperimen kimia?",
@@ -247,7 +268,8 @@
                     "Topi keledar",
                     "Selipar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.1-5"
                 },
                 {
                   "q": "Selepas eksperimen selesai, apakah tindakan yang betul?",
@@ -257,7 +279,8 @@
                     "Membiarkan radas di atas meja",
                     "Membuang semua ke sinki"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.1-6"
                 },
                 {
                   "q": "Antara berikut, yang manakah boleh menyebabkan kemalangan di bilik sains?",
@@ -267,7 +290,8 @@
                     "Bermain dengan api",
                     "Membersihkan radas"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-2-2.1-7"
                 }
               ]
             },
@@ -283,7 +307,8 @@
                     "Menghakis",
                     "Mudah meletup"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.2-0"
                 },
                 {
                   "q": "Simbol api bermaksud bahan itu...",
@@ -293,7 +318,8 @@
                     "Selamat digunakan",
                     "Tidak berbahaya"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.2-1"
                 },
                 {
                   "q": "Simbol yang manakah menunjukkan bahan kimia menghakis?",
@@ -303,7 +329,8 @@
                     "Tangan terhakis",
                     "Tanda seru"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-2-2.2-2"
                 },
                 {
                   "q": "Apabila melihat simbol bahaya pada bekas kimia, anda perlu...",
@@ -313,7 +340,8 @@
                     "Mengambil langkah berjaga-jaga",
                     "Menuang ke sinki"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-2-2.2-3"
                 },
                 {
                   "q": "Simbol kilat memberi amaran tentang...",
@@ -323,7 +351,8 @@
                     "Bahaya renjatan elektrik",
                     "Bahan mudah terbakar"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-2-2.2-4"
                 },
                 {
                   "q": "Warna latar tanda keselamatan biasanya...",
@@ -333,7 +362,8 @@
                     "Hitam",
                     "Putih sahaja"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-2-2.2-5"
                 },
                 {
                   "q": "Simbol tanda seru pada label kimia bermaksud...",
@@ -343,7 +373,8 @@
                     "Bahan selamat",
                     "Bahan manis"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.2-6"
                 },
                 {
                   "q": "Apakah tindakan pertama jika terjumpa tumpahan bahan kimia?",
@@ -353,7 +384,8 @@
                     "Biarkan sahaja",
                     "Tiup bahan tersebut"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-2-2.2-7"
                 }
               ]
             }
@@ -374,7 +406,8 @@
                     "Mamalia",
                     "Invertebrata"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.1-0"
                 },
                 {
                   "q": "Antara berikut, yang manakah invertebrata?",
@@ -384,7 +417,8 @@
                     "Rama-rama",
                     "Helang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.1-1"
                 },
                 {
                   "q": "Labah-labah tidak bertulang belakang. Ia tergolong dalam kumpulan...",
@@ -394,7 +428,8 @@
                     "Mamalia",
                     "Invertebrata"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-3-3.1-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah vertebrata?",
@@ -404,7 +439,8 @@
                     "Cacing tanah",
                     "Burung murai"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-3-3.1-3"
                 },
                 {
                   "q": "Ciri utama vertebrata ialah...",
@@ -414,7 +450,8 @@
                     "Hidup di air",
                     "Boleh terbang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.1-4"
                 },
                 {
                   "q": "Peratusan haiwan invertebrata di dunia ialah...",
@@ -424,7 +461,8 @@
                     "Lebih 95 peratus",
                     "Sama dengan vertebrata"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.1-5"
                 },
                 {
                   "q": "Antara berikut, ciri vertebrata?",
@@ -434,7 +472,8 @@
                     "Mempunyai rangka luar",
                     "Tiada tulang langsung"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.1-6"
                 }
               ]
             },
@@ -450,7 +489,8 @@
                     "Kepala sahaja",
                     "Kaki sahaja"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.2-0"
                 },
                 {
                   "q": "Antara berikut, yang manakah mempunyai rangka luar?",
@@ -460,7 +500,8 @@
                     "Belalang",
                     "Ular"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.2-1"
                 },
                 {
                   "q": "Fungsi utama rangka luar?",
@@ -470,7 +511,8 @@
                     "Membantu terbang",
                     "Menghasilkan makanan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.2-2"
                 },
                 {
                   "q": "Mengapa serangga perlu bersalin kulit?",
@@ -480,7 +522,8 @@
                     "Cuaca panas",
                     "Mereka bosan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-3-3.2-3"
                 },
                 {
                   "q": "Antara berikut, yang manakah mempunyai rangka luar?",
@@ -490,7 +533,8 @@
                     "Burung",
                     "Cacing"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-3-3.2-4"
                 },
                 {
                   "q": "Rangka luar krustasea seperti ketam diperbuat daripada...",
@@ -500,7 +544,8 @@
                     "Tanah liat",
                     "Plastik"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.2-5"
                 },
                 {
                   "q": "Antara berikut, yang manakah BUKAN mempunyai rangka luar?",
@@ -510,7 +555,8 @@
                     "Katak",
                     "Udang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.2-6"
                 }
               ]
             },
@@ -526,7 +572,8 @@
                     "Herbivor",
                     "Insektivor"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.3-0"
                 },
                 {
                   "q": "Harimau memakan daging. Ia dikelaskan sebagai...",
@@ -536,7 +583,8 @@
                     "Insektivor",
                     "Karnivor"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-3-3.3-1"
                 },
                 {
                   "q": "Beruang makan ikan dan buah. Ia dikelaskan sebagai...",
@@ -546,7 +594,8 @@
                     "Omnivor",
                     "Insektivor"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.3-2"
                 },
                 {
                   "q": "Haiwan yang hidup di air dan di darat dipanggil...",
@@ -556,7 +605,8 @@
                     "Amfibia",
                     "Burung"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.3-3"
                 },
                 {
                   "q": "Ayam membiak dengan cara...",
@@ -566,7 +616,8 @@
                     "Beranak dan bertelur",
                     "Membelah diri"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.3-4"
                 },
                 {
                   "q": "Kucing dikelaskan sebagai mamalia kerana...",
@@ -576,7 +627,8 @@
                     "Tinggal di darat",
                     "Mempunyai sayap"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-3-3.3-5"
                 },
                 {
                   "q": "Antara berikut, yang manakah herbivor?",
@@ -586,7 +638,8 @@
                     "Arnab",
                     "Helang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-3-3.3-6"
                 }
               ]
             }
@@ -607,7 +660,8 @@
                     "Burung",
                     "Katak"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.1-0"
                 },
                 {
                   "q": "Penyu bertelur di...",
@@ -617,7 +671,8 @@
                     "Pantai / pasir",
                     "Pokok"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-4-4.1-1"
                 },
                 {
                   "q": "Mengapa haiwan membiak?",
@@ -627,7 +682,8 @@
                     "Mengisi masa lapang",
                     "Untuk bermain"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.1-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah bertelur?",
@@ -637,7 +693,8 @@
                     "Kambing",
                     "Anjing"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.1-3"
                 },
                 {
                   "q": "Anak haiwan yang melahirkan anak biasanya...",
@@ -647,7 +704,8 @@
                     "Boleh terbang serta-merta",
                     "Diletakkan di sarang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.1-4"
                 },
                 {
                   "q": "Ikan paus dan ikan lumba-lumba...",
@@ -657,7 +715,8 @@
                     "Kedua-duanya",
                     "Tidak membiak"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.1-5"
                 },
                 {
                   "q": "Telur penyu ditetaskan di bawah...",
@@ -667,7 +726,8 @@
                     "Batu besar",
                     "Pokok"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.1-6"
                 }
               ]
             },
@@ -683,7 +743,8 @@
                     "Pernafasan",
                     "Pencernaan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.2-0"
                 },
                 {
                   "q": "Berudu bernafas menggunakan...",
@@ -693,7 +754,8 @@
                     "Kulit lembap",
                     "Ruang udara"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.2-1"
                 },
                 {
                   "q": "Peringkat akhir tumbesaran rama-rama?",
@@ -703,7 +765,8 @@
                     "Kepompong",
                     "Rama-rama dewasa"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-4-4.2-2"
                 },
                 {
                   "q": "Katak dewasa bernafas menggunakan...",
@@ -713,7 +776,8 @@
                     "Trakea",
                     "Ruang udara"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.2-3"
                 },
                 {
                   "q": "Ayam menetas daripada...",
@@ -723,7 +787,8 @@
                     "Kepompong",
                     "Berudu"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.2-4"
                 },
                 {
                   "q": "Semasa metamorfosis katak, ekor berudu akan...",
@@ -733,7 +798,8 @@
                     "Bertukar kaki",
                     "Kekal sama"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.2-5"
                 },
                 {
                   "q": "Peringkat ulat dalam kitar hidup rama-rama berfungsi untuk...",
@@ -743,7 +809,8 @@
                     "Bertelur",
                     "Terbang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.2-6"
                 }
               ]
             },
@@ -759,7 +826,8 @@
                     "Herbivor",
                     "Insektivor"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-4-4.3-0"
                 },
                 {
                   "q": "Singa bergigi taring tajam kerana...",
@@ -769,7 +837,8 @@
                     "Makan buah",
                     "Tidak makan apa-apa"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.3-1"
                 },
                 {
                   "q": "Ayam makan bijirin, cacing, serangga. Ia dikelaskan sebagai...",
@@ -779,7 +848,8 @@
                     "Omnivor",
                     "Insektivor"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-4-4.3-2"
                 },
                 {
                   "q": "Gigi herbivor sesuai untuk...",
@@ -789,7 +859,8 @@
                     "Menusuk mangsa",
                     "Memotong kayu"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.3-3"
                 },
                 {
                   "q": "Antara berikut, yang manakah karnivor?",
@@ -799,7 +870,8 @@
                     "Helang",
                     "Kambing"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-4-4.3-4"
                 },
                 {
                   "q": "Tikus makan bijirin dan serangga, ia dikelaskan sebagai...",
@@ -809,7 +881,8 @@
                     "Omnivor",
                     "Insektivor"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-4-4.3-5"
                 },
                 {
                   "q": "Gigi karnivor biasanya...",
@@ -819,7 +892,8 @@
                     "Tidak bergigi",
                     "Kecil dan halus"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-4-4.3-6"
                 }
               ]
             }
@@ -840,7 +914,8 @@
                     "Daun",
                     "Akar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.1-0"
                 },
                 {
                   "q": "Paku pakis membiak melalui...",
@@ -850,7 +925,8 @@
                     "Sulur paut",
                     "Bunga"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.1-1"
                 },
                 {
                   "q": "Pokok ubi kayu ditanam semula menggunakan...",
@@ -860,7 +936,8 @@
                     "Bunga",
                     "Buah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.1-2"
                 },
                 {
                   "q": "Antara berikut, yang manakah membiak melalui sulur paut?",
@@ -870,7 +947,8 @@
                     "Pokok strawberi",
                     "Pokok betik"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-5-5.1-3"
                 },
                 {
                   "q": "Pokok pisang membiak melalui...",
@@ -880,7 +958,8 @@
                     "Keratan daun",
                     "Spora"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.1-4"
                 },
                 {
                   "q": "Tumbuhan yang membiak melalui daun ialah...",
@@ -890,7 +969,8 @@
                     "Pokok kelapa",
                     "Pokok pisang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.1-5"
                 },
                 {
                   "q": "Antara berikut, yang manakah BUKAN melalui biji benih?",
@@ -900,7 +980,8 @@
                     "Durian",
                     "Ubi kayu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-5-5.1-6"
                 }
               ]
             },
@@ -916,7 +997,8 @@
                     "Hidrogen",
                     "Nitrogen"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.2-0"
                 },
                 {
                   "q": "Bahan hijau dalam daun yang menyerap cahaya?",
@@ -926,7 +1008,8 @@
                     "Xantofil",
                     "Karotena"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-5-5.2-1"
                 },
                 {
                   "q": "Antara berikut, yang TIDAK diperlukan untuk fotosintesis?",
@@ -936,7 +1019,8 @@
                     "Oksigen",
                     "Air"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-5-5.2-2"
                 },
                 {
                   "q": "Hasil utama fotosintesis?",
@@ -946,7 +1030,8 @@
                     "Glukosa dan oksigen",
                     "Nitrogen dan mineral"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-5-5.2-3"
                 },
                 {
                   "q": "Tumbuhan di almari gelap seminggu menjadi kuning kerana...",
@@ -956,7 +1041,8 @@
                     "Tidak boleh berfotosintesis",
                     "Diserang perosak"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-5-5.2-4"
                 },
                 {
                   "q": "Di manakah fotosintesis berlaku?",
@@ -966,7 +1052,8 @@
                     "Daun",
                     "Bunga"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-5-5.2-5"
                 },
                 {
                   "q": "Peranan klorofil dalam fotosintesis?",
@@ -976,7 +1063,8 @@
                     "Menghasilkan bunga",
                     "Menyokong tumbuhan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.2-6"
                 }
               ]
             },
@@ -992,7 +1080,8 @@
                     "Tumbuhan memanaskan badan",
                     "Menjadikan tanah subur"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.3-0"
                 },
                 {
                   "q": "Jika semua tumbuhan pupus, paras oksigen akan...",
@@ -1002,7 +1091,8 @@
                     "Berkurangan",
                     "Bertambah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-5-5.3-1"
                 },
                 {
                   "q": "Hutan dipanggil paru-paru dunia kerana...",
@@ -1012,7 +1102,8 @@
                     "Bebas wap air",
                     "Hasilkan oksigen"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-5-5.3-2"
                 },
                 {
                   "q": "Selain makanan, tumbuhan membantu...",
@@ -1022,7 +1113,8 @@
                     "Tambah CO2",
                     "Jadikan tanah berasid"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-5-5.3-3"
                 },
                 {
                   "q": "Sumbangan tumbuhan kepada alam sekitar?",
@@ -1032,7 +1124,8 @@
                     "Sebabkan ribut",
                     "Hasilkan garam"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.3-4"
                 },
                 {
                   "q": "Penebangan hutan berleluasa berbahaya kerana...",
@@ -1042,7 +1135,8 @@
                     "Udara lebih segar",
                     "Tambahkan sumber kayu"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.3-5"
                 },
                 {
                   "q": "Tumbuhan seimbangkan CO2 dan O2 dengan cara...",
@@ -1052,7 +1146,8 @@
                     "Tidak serap gas",
                     "Serap O2"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-5-5.3-6"
                 }
               ]
             }
@@ -1073,7 +1168,8 @@
                     "Pinggan kaca",
                     "Buku"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-0"
                 },
                 {
                   "q": "Mengapa tingkap diperbuat daripada kaca?",
@@ -1083,7 +1179,8 @@
                     "Ringan dan lembut",
                     "Tidak mudah pecah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-1"
                 },
                 {
                   "q": "Sifat utama plastik?",
@@ -1093,7 +1190,8 @@
                     "Kenyal serap air",
                     "Berat dan rapuh"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-2"
                 },
                 {
                   "q": "Periuk diperbuat daripada logam kerana...",
@@ -1103,7 +1201,8 @@
                     "Lut sinar",
                     "Ringan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-3"
                 },
                 {
                   "q": "Kayu sesuai untuk perabot kerana...",
@@ -1113,7 +1212,8 @@
                     "Kalis air",
                     "Kenyal"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-4"
                 },
                 {
                   "q": "Bahan yang lut sinar?",
@@ -1123,7 +1223,8 @@
                     "Kadbod",
                     "Batu bata"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-5"
                 },
                 {
                   "q": "Botol minum plastik kerana...",
@@ -1133,7 +1234,8 @@
                     "Berat",
                     "Lut sinar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.1-6"
                 }
               ]
             },
@@ -1149,7 +1251,8 @@
                     "Kenyal",
                     "Kedap air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.2-0"
                 },
                 {
                   "q": "Getah diregang kembali ke bentuk asal. Sifat ini dipanggil...",
@@ -1159,7 +1262,8 @@
                     "Kenyal",
                     "Lut sinar"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-6-6.2-1"
                 },
                 {
                   "q": "Bahan tidak menyerap air dikatakan...",
@@ -1169,7 +1273,8 @@
                     "Kalis air",
                     "Keras"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-6-6.2-2"
                 },
                 {
                   "q": "Span digunakan mengelap air kerana span...",
@@ -1179,7 +1284,8 @@
                     "Menyerap air",
                     "Lut sinar"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-6-6.2-3"
                 },
                 {
                   "q": "Batu bata bahan keras kerana...",
@@ -1189,7 +1295,8 @@
                     "Boleh diregang",
                     "Menyerap air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.2-4"
                 },
                 {
                   "q": "Antara berikut, yang bersifat kenyal?",
@@ -1199,7 +1306,8 @@
                     "Besi",
                     "Batu"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.2-5"
                 },
                 {
                   "q": "Kertas dan kain adalah contoh bahan yang...",
@@ -1209,7 +1317,8 @@
                     "Kenyal",
                     "Lut sinar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.2-6"
                 }
               ]
             },
@@ -1225,7 +1334,8 @@
                     "Lebih ringan",
                     "Lut sinar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.3-0"
                 },
                 {
                   "q": "Mengapa tayar kereta diperbuat daripada getah?",
@@ -1235,7 +1345,8 @@
                     "Konduktor elektrik",
                     "Lut sinar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.3-1"
                 },
                 {
                   "q": "Kabel elektrik dibalut plastik kerana plastik...",
@@ -1245,7 +1356,8 @@
                     "Lut sinar",
                     "Menyerap air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.3-2"
                 },
                 {
                   "q": "Cermin mata diperbuat kaca lut sinar supaya...",
@@ -1255,7 +1367,8 @@
                     "Keras",
                     "Kalis air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.3-3"
                 },
                 {
                   "q": "Bahan sesuai untuk alas meja panas?",
@@ -1265,7 +1378,8 @@
                     "Kayu",
                     "Logam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-6-6.3-4"
                 },
                 {
                   "q": "Mengapa sudu masak diperbuat logam?",
@@ -1275,7 +1389,8 @@
                     "Lut sinar",
                     "Menyerap air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.3-5"
                 },
                 {
                   "q": "Bahan sesuai untuk bot penyelamat?",
@@ -1285,7 +1400,8 @@
                     "Kaca lut sinar",
                     "Kertas tebal"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-6-6.3-6"
                 }
               ]
             }
@@ -1306,7 +1422,8 @@
                     "Matahari",
                     "Obor"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-7-7.1-0"
                 },
                 {
                   "q": "Antara berikut, sumber cahaya BUATAN?",
@@ -1316,7 +1433,8 @@
                     "Matahari",
                     "Lampu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-7-7.1-1"
                 },
                 {
                   "q": "Mengapa tidak nampak waktu malam tanpa cahaya?",
@@ -1326,7 +1444,8 @@
                     "Tiada udara",
                     "Terlalu sejuk"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.1-2"
                 },
                 {
                   "q": "Sumber cahaya utama Bumi?",
@@ -1336,7 +1455,8 @@
                     "Matahari",
                     "Api"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-7-7.1-3"
                 },
                 {
                   "q": "Kunang-kunang adalah sumber cahaya...",
@@ -1346,7 +1466,8 @@
                     "Elektrik",
                     "Kimia"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.1-4"
                 },
                 {
                   "q": "Bulan nampak waktu malam kerana...",
@@ -1356,7 +1477,8 @@
                     "Bulan bintang",
                     "Bulan menyala"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.1-5"
                 },
                 {
                   "q": "Antara berikut, BUKAN sumber cahaya?",
@@ -1366,7 +1488,8 @@
                     "Batu",
                     "Matahari"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-7-7.1-6"
                 }
               ]
             },
@@ -1382,7 +1505,8 @@
                     "Melengkung",
                     "Garis lurus"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-7-7.2-0"
                 },
                 {
                   "q": "Imej dalam kamera lubang jarum?",
@@ -1392,7 +1516,8 @@
                     "Tegak sama saiz",
                     "Terbalik"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-7-7.2-1"
                 },
                 {
                   "q": "Nampak cahaya tiub lurus bukan bengkok kerana...",
@@ -1402,7 +1527,8 @@
                     "Cahaya ubah arah rawak",
                     "Cahaya garis lurus"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-7-7.2-2"
                 },
                 {
                   "q": "Bayang-bayang terbentuk kerana cahaya...",
@@ -1412,7 +1538,8 @@
                     "Tak dapat melalui objek legap",
                     "Tukar warna"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-7-7.2-3"
                 },
                 {
                   "q": "Kadbod berlubang garis lurus nampak lilin. Ini bukti...",
@@ -1422,7 +1549,8 @@
                     "Cahaya bengkok",
                     "Lubang cerahkan cahaya"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-7-7.2-4"
                 },
                 {
                   "q": "Objek lut sinar seperti kaca...",
@@ -1432,7 +1560,8 @@
                     "Cahaya melalui sempurna",
                     "Tiada cahaya melalui"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.2-5"
                 },
                 {
                   "q": "Objek legap menyebabkan...",
@@ -1442,7 +1571,8 @@
                     "Cahaya lebih terang",
                     "Objek lut sinar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.2-6"
                 }
               ]
             },
@@ -1458,7 +1588,8 @@
                     "Diserap",
                     "Dipantulkan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-7-7.3-0"
                 },
                 {
                   "q": "Periskop guna berapa cermin?",
@@ -1468,7 +1599,8 @@
                     "Dua",
                     "Tiga"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-7-7.3-1"
                 },
                 {
                   "q": "Nampak muka di tasik tenang kerana...",
@@ -1478,7 +1610,8 @@
                     "Cahaya melalui air",
                     "Cahaya pantul permukaan air"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-7-7.3-2"
                 },
                 {
                   "q": "Permukaan kasar dinding pantul cahaya...",
@@ -1488,7 +1621,8 @@
                     "Satu arah",
                     "Langsung tidak"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-7-7.3-3"
                 },
                 {
                   "q": "Cermin selekoh jalan untuk...",
@@ -1498,7 +1632,8 @@
                     "Cerah jalan",
                     "Halang habuk"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.3-4"
                 },
                 {
                   "q": "Permukaan pantul sempurna?",
@@ -1508,7 +1643,8 @@
                     "Cermin",
                     "Kain baldu"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-7-7.3-5"
                 },
                 {
                   "q": "Hukum pantulan: sudut tuju...",
@@ -1518,7 +1654,8 @@
                     "Lebih kecil dari pantul",
                     "Tak berkaitan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-7-7.3-6"
                 }
               ]
             }
@@ -1539,7 +1676,8 @@
                     "Seterika",
                     "Ketuhar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.1-0"
                 },
                 {
                   "q": "Gosok dua belah tangan rasa panas. Ini haba daripada...",
@@ -1549,7 +1687,8 @@
                     "Geseran",
                     "Elektrik"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-8-8.1-1"
                 },
                 {
                   "q": "Sumber haba utama Bumi?",
@@ -1559,7 +1698,8 @@
                     "Matahari",
                     "Api"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-8-8.1-2"
                 },
                 {
                   "q": "Antara berikut, sumber haba BUATAN?",
@@ -1569,7 +1709,8 @@
                     "Seterika elektrik",
                     "Air panas semula jadi"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-8-8.1-3"
                 },
                 {
                   "q": "Pembakaran kayu hasilkan...",
@@ -1579,7 +1720,8 @@
                     "Udara",
                     "Air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.1-4"
                 },
                 {
                   "q": "Geseran dua permukaan hasilkan...",
@@ -1589,7 +1731,8 @@
                     "Bunyi sahaja",
                     "Air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.1-5"
                 },
                 {
                   "q": "Matahari panaskan Bumi melalui proses...",
@@ -1599,7 +1742,8 @@
                     "Radiasi",
                     "Penyejatan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-8-8.1-6"
                 }
               ]
             },
@@ -1615,7 +1759,8 @@
                     "Tidak berubah",
                     "Hilang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.2-0"
                 },
                 {
                   "q": "Rel kereta api ada ruang kecil kerana...",
@@ -1625,7 +1770,8 @@
                     "Kereta api laju",
                     "Hiasan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.2-1"
                 },
                 {
                   "q": "Termometer guna cecair yang...",
@@ -1635,7 +1781,8 @@
                     "Tak berubah",
                     "Tukar warna"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.2-2"
                 },
                 {
                   "q": "Belon dekat api akan...",
@@ -1645,7 +1792,8 @@
                     "Tak berubah",
                     "Menyusut"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.2-3"
                 },
                 {
                   "q": "Tutup balang ketat sukar buka. Cara buka?",
@@ -1655,7 +1803,8 @@
                     "Pukul balang",
                     "Tambah air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.2-4"
                 },
                 {
                   "q": "Air disejukkan jadi ais, isi padu...",
@@ -1665,7 +1814,8 @@
                     "Tak berubah",
                     "Hilang"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-8-8.2-5"
                 },
                 {
                   "q": "Bola terdedah cahaya matahari panas akan...",
@@ -1675,7 +1825,8 @@
                     "Pecah",
                     "Cair"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.2-6"
                 }
               ]
             },
@@ -1691,7 +1842,8 @@
                     "Luka",
                     "Patah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.3-0"
                 },
                 {
                   "q": "Antara berikut, boleh sebabkan terbakar?",
@@ -1701,7 +1853,8 @@
                     "Baca buku",
                     "Minum air"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.3-1"
                 },
                 {
                   "q": "Tindakan BETUL angkat periuk panas?",
@@ -1711,7 +1864,8 @@
                     "Tiup periuk",
                     "Biarkan sahaja"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.3-2"
                 },
                 {
                   "q": "Strok haba berlaku apabila...",
@@ -1721,7 +1875,8 @@
                     "Minum air banyak",
                     "Makan banyak"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.3-3"
                 },
                 {
                   "q": "Langkah keselamatan guna seterika?",
@@ -1731,7 +1886,8 @@
                     "Matikan selepas guna, jauhkan dari kanak-kanak",
                     "Guna dalam air"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-8-8.3-4"
                 },
                 {
                   "q": "Kebakaran kecil, alat sesuai?",
@@ -1741,7 +1897,8 @@
                     "Kipas",
                     "Tuala"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.3-5"
                 },
                 {
                   "q": "Tangan terkena air panas, langkah pertama?",
@@ -1751,7 +1908,8 @@
                     "Sapu minyak",
                     "Balut kain tebal"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-8-8.3-6"
                 }
               ]
             }
@@ -1772,7 +1930,8 @@
                     "Tasik",
                     "Sungai"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-9-9.1-0"
                 },
                 {
                   "q": "Antara berikut, bentuk muka bumi DARATAN?",
@@ -1782,7 +1941,8 @@
                     "Gunung",
                     "Tasik"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.1-1"
                 },
                 {
                   "q": "Air tawar bertakung di kawasan rendah dipanggil...",
@@ -1792,7 +1952,8 @@
                     "Tasik",
                     "Air terjun"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.1-2"
                 },
                 {
                   "q": "Tanah rendah antara dua bukit dipanggil...",
@@ -1802,7 +1963,8 @@
                     "Pantai",
                     "Dataran"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-9-9.1-3"
                 },
                 {
                   "q": "Air masin luas sambung benua?",
@@ -1812,7 +1974,8 @@
                     "Laut",
                     "Kolam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.1-4"
                 },
                 {
                   "q": "Gunung tertinggi dunia?",
@@ -1822,7 +1985,8 @@
                     "Ledang",
                     "Tahan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.1-5"
                 },
                 {
                   "q": "Air terjun terbentuk bila sungai melalui...",
@@ -1832,7 +1996,8 @@
                     "Laut",
                     "Gurun"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.1-6"
                 }
               ]
             },
@@ -1848,7 +2013,8 @@
                     "Air",
                     "Kertas"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.2-0"
                 },
                 {
                   "q": "Petroleum contoh sumber...",
@@ -1858,7 +2024,8 @@
                     "Tak habis",
                     "Boleh buat semula"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.2-1"
                 },
                 {
                   "q": "Antara berikut, sumber BOLEH diperbaharui?",
@@ -1868,7 +2035,8 @@
                     "Cahaya matahari",
                     "Gas asli"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.2-2"
                 },
                 {
                   "q": "Kenapa jimat petroleum?",
@@ -1878,7 +2046,8 @@
                     "Tidak boleh diperbaharui",
                     "Tak berguna"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.2-3"
                 },
                 {
                   "q": "Antara berikut, BUKAN sumber semula jadi?",
@@ -1888,7 +2057,8 @@
                     "Udara",
                     "Plastik"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-sci4bm-9-9.2-4"
                 },
                 {
                   "q": "Mineral emas dan timah tergolong sumber...",
@@ -1898,7 +2068,8 @@
                     "Tidak terhingga",
                     "Tak habis"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.2-5"
                 },
                 {
                   "q": "Sumber untuk janakan elektrik di empangan?",
@@ -1908,7 +2079,8 @@
                     "Matahari",
                     "Petroleum"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.2-6"
                 }
               ]
             },
@@ -1924,7 +2096,8 @@
                     "Rancang Reka Rekod",
                     "Rapat Rapat Rapat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.3-0"
                 },
                 {
                   "q": "Antara berikut, amalan pemuliharaan?",
@@ -1934,7 +2107,8 @@
                     "Kitar semula botol plastik",
                     "Biar air paip mengalir"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.3-1"
                 },
                 {
                   "q": "Kenapa tanam semula pokok?",
@@ -1944,7 +2118,8 @@
                     "Buat taman",
                     "Nampak cantik"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.3-2"
                 },
                 {
                   "q": "Kesan tidak memulihara sumber?",
@@ -1954,7 +2129,8 @@
                     "Hidupan bertambah",
                     "Cuaca sejuk"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.3-3"
                 },
                 {
                   "q": "Tindakan jimat air?",
@@ -1964,7 +2140,8 @@
                     "Tutup paip semasa gosok gigi",
                     "Cuci kereta setiap hari"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-9-9.3-4"
                 },
                 {
                   "q": "Kitar semula kertas membantu...",
@@ -1974,7 +2151,8 @@
                     "Tambah sampah",
                     "Bazir wang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.3-5"
                 },
                 {
                   "q": "Kenapa kurangkan plastik?",
@@ -1984,7 +2162,8 @@
                     "Ringan",
                     "Bahaya dimakan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-9-9.3-6"
                 }
               ]
             }
@@ -2005,7 +2184,8 @@
                     "Ilmu bintang",
                     "Seni melukis"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.1-0"
                 },
                 {
                   "q": "Antara berikut, contoh teknologi?",
@@ -2015,7 +2195,8 @@
                     "Telefon pintar",
                     "Pasir"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.1-1"
                 },
                 {
                   "q": "Mengapa teknologi dicipta?",
@@ -2025,7 +2206,8 @@
                     "Bazir wang",
                     "Panaskan bumi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.1-2"
                 },
                 {
                   "q": "Antara berikut, teknologi KOMUNIKASI?",
@@ -2035,7 +2217,8 @@
                     "Telefon bimbit",
                     "Peti sejuk"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.1-3"
                 },
                 {
                   "q": "Teknologi bantu manusia dalam bidang...",
@@ -2045,7 +2228,8 @@
                     "Pertanian sahaja",
                     "Sukan sahaja"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.1-4"
                 },
                 {
                   "q": "Antara berikut, BUKAN teknologi?",
@@ -2055,7 +2239,8 @@
                     "Batu sungai",
                     "Komputer"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.1-5"
                 },
                 {
                   "q": "Revolusi teknologi terkini AI dipanggil...",
@@ -2065,7 +2250,8 @@
                     "Revolusi Digital Industri 4.0",
                     "Revolusi Angkasa"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.1-6"
                 }
               ]
             },
@@ -2081,7 +2267,8 @@
                     "Pendidikan",
                     "Sukan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.2-0"
                 },
                 {
                   "q": "Traktor teknologi dalam bidang...",
@@ -2091,7 +2278,8 @@
                     "Pertanian",
                     "Pendidikan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.2-1"
                 },
                 {
                   "q": "Internet penting dalam bidang...",
@@ -2101,7 +2289,8 @@
                     "Pertanian sahaja",
                     "Pengangkutan sahaja"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-10-10.2-2"
                 },
                 {
                   "q": "Kapal terbang kemajuan bidang...",
@@ -2111,7 +2300,8 @@
                     "Pengangkutan",
                     "Pendidikan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.2-3"
                 },
                 {
                   "q": "Teknologi bantu pertanian tingkat hasil?",
@@ -2121,7 +2311,8 @@
                     "Sistem pengairan",
                     "Kereta"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.2-4"
                 },
                 {
                   "q": "Mesin ultrasound (USG) untuk...",
@@ -2131,7 +2322,8 @@
                     "Sapu lantai",
                     "Cuci pakaian"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-10-10.2-5"
                 },
                 {
                   "q": "Teknologi GPS bantu dalam...",
@@ -2141,7 +2333,8 @@
                     "Cuci baju",
                     "Bermain bola"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-10-10.2-6"
                 }
               ]
             },
@@ -2157,7 +2350,8 @@
                     "Beli barang kedai",
                     "Buang barang lama"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.3-0"
                 },
                 {
                   "q": "Inovasi bermaksud...",
@@ -2167,7 +2361,8 @@
                     "Musnahkan ciptaan",
                     "Lupakan ciptaan lama"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.3-1"
                 },
                 {
                   "q": "Contoh inovasi?",
@@ -2177,7 +2372,8 @@
                     "Bakar kayu cahaya",
                     "Jalan kaki"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-sci4bm-10-10.3-2"
                 },
                 {
                   "q": "Kenapa inovasi penting?",
@@ -2187,7 +2383,8 @@
                     "Susahkan pengguna",
                     "Elak kemajuan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.3-3"
                 },
                 {
                   "q": "Ciptaan yang alami inovasi ketara?",
@@ -2197,7 +2394,8 @@
                     "Komputer",
                     "Tumbuhan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-sci4bm-10-10.3-4"
                 },
                 {
                   "q": "Saintis cipta mentol lampu?",
@@ -2207,7 +2405,8 @@
                     "Isaac Newton",
                     "Marie Curie"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.3-5"
                 },
                 {
                   "q": "Kereta elektrik inovasi dari kereta biasa kerana...",
@@ -2217,7 +2416,8 @@
                     "Lebih besar",
                     "Lebih berat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-sci4bm-10-10.3-6"
                 }
               ]
             }

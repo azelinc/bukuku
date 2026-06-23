@@ -2,7 +2,7 @@
   "subjects": {
     "math4": {
       "name": "Mathematics Year 4 (DLP)",
-      "icon": "\ud83d\udd22",
+      "icon": "🔢",
       "color": "#4a90e2",
       "units": {
         "1": {
@@ -19,7 +19,8 @@
                     "Ten thousands",
                     "Thousands"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.1-0"
                 },
                 {
                   "q": "What is the digit value of 8 in 14 087?",
@@ -29,7 +30,8 @@
                     "800",
                     "8 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.1-1"
                 },
                 {
                   "q": "Which of the following numbers has 3 ten thousands?",
@@ -39,7 +41,8 @@
                     "32 578",
                     "43 721"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.1-2"
                 },
                 {
                   "q": "Partition 62 307 correctly.",
@@ -49,7 +52,8 @@
                     "62 300 + 7",
                     "62 000 + 300 + 7"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.1-3"
                 },
                 {
                   "q": "Which is the smallest 5-digit number?",
@@ -59,7 +63,8 @@
                     "11 111",
                     "10 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.1-4"
                 },
                 {
                   "q": "What number comes after 49 999?",
@@ -69,7 +74,8 @@
                     "50 000",
                     "49 998"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.1-5"
                 },
                 {
                   "q": "Arrange in ascending order: 45 321, 45 231, 45 312, 45 123",
@@ -79,7 +85,8 @@
                     "45 321, 45 312, 45 231, 45 123",
                     "45 231, 45 123, 45 312, 45 321"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.1-6"
                 },
                 {
                   "q": "The number pattern increases by sevens: 26 418, 26 425, 26 432, ____. What is the next number?",
@@ -89,7 +96,8 @@
                     "26 439",
                     "26 429"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.1-7"
                 },
                 {
                   "q": "80 000 + 400 + 30 + 5 = _____",
@@ -99,7 +107,8 @@
                     "84 350",
                     "84 035"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.1-8"
                 },
                 {
                   "q": "Which digit has the value 7 000 in 87 241?",
@@ -109,7 +118,8 @@
                     "2",
                     "8"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.1-9"
                 }
               ],
               "revision": "Numbers up to 100 000 have place values (ten thousands, thousands, hundreds, tens, ones). A number like 52 173 means 5 ten thousands + 2 thousands + 1 hundred + 7 tens + 3 ones. Numbers can be compared, arranged in ascending or descending order, and partitioned into digit values."
@@ -125,7 +135,8 @@
                     "52 424",
                     "36 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.2-0"
                 },
                 {
                   "q": "State all odd numbers from 520 to 531.",
@@ -135,7 +146,8 @@
                     "521, 523, 525, 527, 529, 531",
                     "521, 523, 525, 527, 529"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.2-1"
                 },
                 {
                   "q": "Which month has an odd number of days?",
@@ -145,7 +157,8 @@
                     "April (30)",
                     "November (30)"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.2-2"
                 },
                 {
                   "q": "If a number ends with 0, 2, 4, 6, or 8, it is...",
@@ -155,7 +168,8 @@
                     "a prime number",
                     "a decimal number"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.2-3"
                 },
                 {
                   "q": "Add the smallest even number and the largest odd number from this set: 15, 18, 21, 24, 27. What is the sum?",
@@ -165,7 +179,8 @@
                     "33",
                     "42"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.2-4"
                 }
               ],
               "revision": "Even numbers end with 0, 2, 4, 6, or 8 and can be divided equally by 2. Odd numbers end with 1, 3, 5, 7, or 9 and leave a remainder of 1 when divided by 2."
@@ -181,7 +196,8 @@
                     "About 900",
                     "About 600"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.3-0"
                 },
                 {
                   "q": "A classroom has 12 rows of chairs with 8 chairs in each row. Estimate the total number of chairs.",
@@ -191,17 +207,19 @@
                     "About 150",
                     "About 120"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.3-1"
                 },
                 {
                   "q": "Which of these is the best estimate for the volume of water in a 25-m pool if a 1-litre bottle fills about 10 cm of the pool's depth?",
                   "a": [
-                    "About 250 \u2113",
-                    "About 2 500 \u2113",
-                    "About 25 \u2113",
-                    "About 25 000 \u2113"
+                    "About 250 ℓ",
+                    "About 2 500 ℓ",
+                    "About 25 ℓ",
+                    "About 25 000 ℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.3-2"
                 },
                 {
                   "q": "A book has 198 pages. Estimate the number of pages in 6 similar books.",
@@ -211,7 +229,8 @@
                     "About 1 200",
                     "About 1 400"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.3-3"
                 },
                 {
                   "q": "A school has 485 pupils. Estimate the number of pupils in 4 similar schools.",
@@ -221,7 +240,8 @@
                     "About 2 400",
                     "About 1 600"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.3-4"
                 }
               ],
               "revision": "Estimation means finding a close approximate value without calculating exactly. Round numbers to the nearest ten, hundred, or thousand before estimating to make calculations faster and easier."
@@ -237,17 +257,19 @@
                     "39 000",
                     "30 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.4-0"
                 },
                 {
-                  "q": "Round off 19 500 m\u2113 to the nearest thousand m\u2113.",
+                  "q": "Round off 19 500 mℓ to the nearest thousand mℓ.",
                   "a": [
-                    "20 000 m\u2113",
-                    "20 500 m\u2113",
-                    "19 000 m\u2113",
-                    "19 500 m\u2113"
+                    "20 000 mℓ",
+                    "20 500 mℓ",
+                    "19 000 mℓ",
+                    "19 500 mℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.4-1"
                 },
                 {
                   "q": "Round off RM63 988 to the nearest ten thousand ringgit.",
@@ -257,7 +279,8 @@
                     "RM64 000",
                     "RM70 000"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.4-2"
                 },
                 {
                   "q": "Round off 51 473 to the nearest thousand.",
@@ -267,7 +290,8 @@
                     "52 000",
                     "50 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.4-3"
                 },
                 {
                   "q": "A stadium seats 24 875 people. Round off this number to the nearest hundred.",
@@ -277,33 +301,36 @@
                     "24 000",
                     "24 800"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.4-4"
                 }
               ],
-              "revision": "Rounding off makes a number simpler but keeps it close to the original value. Look at the digit to the right of the rounding place \u2014 if it is 5 or more, round up. If it is 4 or less, round down."
+              "revision": "Rounding off makes a number simpler but keeps it close to the original value. Look at the digit to the right of the rounding place — if it is 5 or more, round up. If it is 4 or less, round down."
             },
             "1.5": {
               "name": "Multiplication and Division",
               "questions": [
                 {
-                  "q": "8 \u00d7 2 915 = ______",
+                  "q": "8 × 2 915 = ______",
                   "a": [
                     "22 320",
                     "23 230",
                     "24 320",
                     "23 320"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.5-0"
                 },
                 {
-                  "q": "7 560 \u00f7 6 = ______",
+                  "q": "7 560 ÷ 6 = ______",
                   "a": [
                     "1 265",
                     "1 250",
                     "1 270",
                     "1 260"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.5-1"
                 },
                 {
                   "q": "A factory produces 1 250 bottles of sauce per day. How many bottles are produced in 5 days?",
@@ -313,7 +340,8 @@
                     "5 250",
                     "6 250"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.5-2"
                 },
                 {
                   "q": "There are 48 pupils in a hall. They are divided equally into 6 groups. How many pupils are in each group?",
@@ -323,17 +351,19 @@
                     "6",
                     "7"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-1-1.5-3"
                 },
                 {
-                  "q": "Calculate 12 \u00d7 3 046.",
+                  "q": "Calculate 12 × 3 046.",
                   "a": [
                     "36 525",
                     "36 256",
                     "36 552",
                     "35 652"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.5-4"
                 },
                 {
                   "q": "Divide 8 424 by 8.",
@@ -343,7 +373,8 @@
                     "1 053",
                     "1 053 remainder 4"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.5-5"
                 },
                 {
                   "q": "A gardener plants 2 016 seedlings equally in 7 rows. How many seedlings are in each row?",
@@ -353,17 +384,19 @@
                     "308",
                     "288"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-1-1.5-6"
                 },
                 {
-                  "q": "38 725 \u00f7 5 = ______",
+                  "q": "38 725 ÷ 5 = ______",
                   "a": [
                     "7 475",
                     "7 765",
                     "7 745",
                     "7 745 remainder 2"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.5-7"
                 },
                 {
                   "q": "A box contains 7 packets. Each packet has 125 marbles. How many marbles in total?",
@@ -373,17 +406,19 @@
                     "825",
                     "885"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-1-1.5-8"
                 },
                 {
-                  "q": "9 504 \u00f7 9 = ______",
+                  "q": "9 504 ÷ 9 = ______",
                   "a": [
                     "1 065",
                     "1 046",
                     "1 056",
                     "1 056 remainder 1"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-1-1.5-9"
                 }
               ],
               "revision": "Multiplication is repeated addition. When multiplying by a 1-digit number, multiply each place value starting from ones. Division is sharing equally. When dividing, start from the largest place value and work left to right."
@@ -404,7 +439,8 @@
                     "2 3/5",
                     "3 1/4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.1-0"
                 },
                 {
                   "q": "Convert to improper fraction: 3 2/5",
@@ -414,7 +450,8 @@
                     "15/5",
                     "11/5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.1-1"
                 },
                 {
                   "q": "Which of these is a proper fraction?",
@@ -424,7 +461,8 @@
                     "9/4",
                     "3/4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.1-2"
                 },
                 {
                   "q": "Convert 9/2 to a mixed number.",
@@ -434,7 +472,8 @@
                     "4 3/4",
                     "4 1/4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.1-3"
                 },
                 {
                   "q": "Express 5 1/3 as an improper fraction.",
@@ -444,7 +483,8 @@
                     "17/3",
                     "14/3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.1-4"
                 }
               ],
               "revision": "A proper fraction has a numerator smaller than the denominator (e.g. 3/4). An improper fraction has a numerator equal to or larger than the denominator (e.g. 11/4). A mixed number combines a whole number and a proper fraction (e.g. 2 3/4)."
@@ -460,7 +500,8 @@
                     "5/8",
                     "6/8"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.2-0"
                 },
                 {
                   "q": "7/12 - 3/12 =",
@@ -470,7 +511,8 @@
                     "4/12 = 1/3",
                     "4/12"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.2-1"
                 },
                 {
                   "q": "Add: 1/3 + 1/4",
@@ -480,7 +522,8 @@
                     "7/24",
                     "2/12"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-2-2.2-2"
                 },
                 {
                   "q": "A cake is cut into 8 equal slices. Ali eats 3 slices and Mei eats 2 slices. What fraction of cake was eaten?",
@@ -490,7 +533,8 @@
                     "3/8",
                     "5/16"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.2-3"
                 },
                 {
                   "q": "2 1/3 + 1 1/3 =",
@@ -500,7 +544,8 @@
                     "3 2/6",
                     "3 2/3"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.2-4"
                 },
                 {
                   "q": "5/6 - 1/2 =",
@@ -510,7 +555,8 @@
                     "4/6",
                     "1/3"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.2-5"
                 },
                 {
                   "q": "Mina used 2/5 of a roll of ribbon. What fraction of the ribbon is left?",
@@ -520,7 +566,8 @@
                     "4/5",
                     "1/5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.2-6"
                 },
                 {
                   "q": "3/10 + 2/5 =",
@@ -530,7 +577,8 @@
                     "7/10",
                     "5/10"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.2-7"
                 },
                 {
                   "q": "Solve: 2 1/2 - 1 1/4",
@@ -540,7 +588,8 @@
                     "1 1/6",
                     "1 1/4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.2-8"
                 },
                 {
                   "q": "A pizza was cut into 6 equal slices. Ben took 2 slices and Chan took 1 slice. What is the total fraction of pizza taken?",
@@ -550,7 +599,8 @@
                     "2/6",
                     "1/2"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.2-9"
                 }
               ],
               "revision": "To add or subtract fractions, the denominators must be the same. Find the smallest common denominator, convert the fractions, then add or subtract only the numerators. Simplify the answer when possible."
@@ -566,7 +616,8 @@
                     "4.3",
                     "4.13"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.3-0"
                 },
                 {
                   "q": "7.65 - 3.42 =",
@@ -576,17 +627,19 @@
                     "4.22",
                     "4.23"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.3-1"
                 },
                 {
-                  "q": "A 1.5 \u2113 bottle is filled with 0.8 \u2113 of water. How much more water is needed to fill it?",
+                  "q": "A 1.5 ℓ bottle is filled with 0.8 ℓ of water. How much more water is needed to fill it?",
                   "a": [
-                    "0.5 \u2113",
-                    "0.7 \u2113",
-                    "0.9 \u2113",
-                    "0.3 \u2113"
+                    "0.5 ℓ",
+                    "0.7 ℓ",
+                    "0.9 ℓ",
+                    "0.3 ℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.3-2"
                 },
                 {
                   "q": "5.09 + 3.87 =",
@@ -596,7 +649,8 @@
                     "8.96",
                     "9.96"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.3-3"
                 },
                 {
                   "q": "10.0 - 4.56 =",
@@ -606,7 +660,8 @@
                     "5.44",
                     "5.54"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.3-4"
                 },
                 {
                   "q": "The total mass of three bags is 1.5 kg, 2.3 kg, and 0.7 kg. What is the total mass?",
@@ -616,7 +671,8 @@
                     "4.0 kg",
                     "3.5 kg"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-2-2.3-5"
                 },
                 {
                   "q": "6.24 + 12.76 =",
@@ -626,7 +682,8 @@
                     "19.00",
                     "18.00"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.3-6"
                 },
                 {
                   "q": "15.80 - 9.95 =",
@@ -636,7 +693,8 @@
                     "5.75",
                     "5.95"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-2-2.3-7"
                 },
                 {
                   "q": "A piece of cloth is 3.6 m long. 1.8 m is used to make a shirt. What length is left?",
@@ -646,7 +704,8 @@
                     "2.0 m",
                     "1.8 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.3-8"
                 },
                 {
                   "q": "Add: 4.07 + 5.93",
@@ -656,7 +715,8 @@
                     "9.90",
                     "10.10"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.3-9"
                 }
               ],
               "revision": "To add or subtract decimals, line up the decimal points vertically. Add zeros to make the same number of decimal places if needed. Then add or subtract as with whole numbers and bring the decimal point straight down."
@@ -665,54 +725,59 @@
               "name": "Multiplication and Division of Decimals",
               "questions": [
                 {
-                  "q": "3 \u00d7 2.5 =",
+                  "q": "3 × 2.5 =",
                   "a": [
                     "6.5",
                     "7.5",
                     "7.0",
                     "8.5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.4-0"
                 },
                 {
-                  "q": "4.8 \u00f7 4 =",
+                  "q": "4.8 ÷ 4 =",
                   "a": [
                     "1.4",
                     "1.6",
                     "1.2",
                     "1.0"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.4-1"
                 },
                 {
-                  "q": "A bottle contains 1.75 \u2113 of juice. How many \u2113 are there in 6 such bottles?",
+                  "q": "A bottle contains 1.75 ℓ of juice. How many ℓ are there in 6 such bottles?",
                   "a": [
-                    "9.5 \u2113",
-                    "10.0 \u2113",
-                    "10.5 \u2113",
-                    "11.0 \u2113"
+                    "9.5 ℓ",
+                    "10.0 ℓ",
+                    "10.5 ℓ",
+                    "11.0 ℓ"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.4-2"
                 },
                 {
-                  "q": "6.4 \u00f7 8 =",
+                  "q": "6.4 ÷ 8 =",
                   "a": [
                     "0.9",
                     "0.8",
                     "0.7",
                     "1.0"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-2-2.4-3"
                 },
                 {
-                  "q": "5 \u00d7 0.63 =",
+                  "q": "5 × 0.63 =",
                   "a": [
                     "3.00",
                     "3.25",
                     "2.85",
                     "3.15"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.4-4"
                 }
               ],
               "revision": "To multiply a decimal by a whole number, multiply as with whole numbers, then place the decimal point with the same number of decimal places. To divide a decimal, divide as with whole numbers and bring the decimal point straight up."
@@ -728,7 +793,8 @@
                     "25%",
                     "50%"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-2-2.5-0"
                 },
                 {
                   "q": "Express 25% as a fraction in its simplest form.",
@@ -738,7 +804,8 @@
                     "1/2",
                     "5/20"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-2-2.5-1"
                 },
                 {
                   "q": "What is 3/4 as a percentage?",
@@ -748,7 +815,8 @@
                     "50%",
                     "100%"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-2-2.5-2"
                 },
                 {
                   "q": "30 out of 100 pupils cycle to school. What percentage is this?",
@@ -758,7 +826,8 @@
                     "30%",
                     "13%"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-2-2.5-3"
                 },
                 {
                   "q": "A class has 25 children. 60% are boys. How many boys are there?",
@@ -768,7 +837,8 @@
                     "12",
                     "18"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-2-2.5-4"
                 }
               ],
               "revision": "A percentage (%) means out of 100. 50% = 50/100 = 1/2. To convert a fraction to a percentage, multiply by 100%. To convert a percentage to a fraction, write it over 100 and simplify."
@@ -789,7 +859,8 @@
                     "RM44.00",
                     "RM43.20"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-3-3.1-0"
                 },
                 {
                   "q": "RM50.00 - RM27.85 =",
@@ -799,7 +870,8 @@
                     "RM22.15",
                     "RM23.15"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-3-3.1-1"
                 },
                 {
                   "q": "A book costs RM12.50 and a pen costs RM3.80. What is the total cost?",
@@ -809,27 +881,30 @@
                     "RM15.80",
                     "RM16.30"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-3-3.1-2"
                 },
                 {
-                  "q": "5 \u00d7 RM24.80 =",
+                  "q": "5 × RM24.80 =",
                   "a": [
                     "RM124.00",
                     "RM120.00",
                     "RM125.00",
                     "RM134.00"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-3-3.1-3"
                 },
                 {
-                  "q": "RM85.50 \u00f7 3 =",
+                  "q": "RM85.50 ÷ 3 =",
                   "a": [
                     "RM29.50",
                     "RM28.00",
                     "RM27.50",
                     "RM28.50"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-3-3.1-4"
                 },
                 {
                   "q": "A school collects RM756.50 for a charity. They need RM1 000. How much more money do they need?",
@@ -839,7 +914,8 @@
                     "RM253.50",
                     "RM244.50"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-3-3.1-5"
                 },
                 {
                   "q": "6 friends share the cost of a gift equally. The gift costs RM73.80. How much does each pay?",
@@ -849,7 +925,8 @@
                     "RM12.80",
                     "RM11.80"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-3-3.1-6"
                 },
                 {
                   "q": "RM100.00 - RM34.90 - RM25.50 =",
@@ -859,7 +936,8 @@
                     "RM40.60",
                     "RM38.60"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-3-3.1-7"
                 },
                 {
                   "q": "A packet of biscuits costs RM2.40. How much do 7 packets cost?",
@@ -869,17 +947,19 @@
                     "RM16.80",
                     "RM14.80"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-3-3.1-8"
                 },
                 {
-                  "q": "RM250.00 \u00f7 8 =",
+                  "q": "RM250.00 ÷ 8 =",
                   "a": [
                     "RM32.25",
                     "RM30.25",
                     "RM31.25",
                     "RM31.50"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-3-3.1-9"
                 }
               ],
               "revision": "Money operations in Ringgit Malaysia (RM) follow the same rules as decimal operations. Always align the decimal point and the RM symbol. When giving change, subtract the cost from the amount paid."
@@ -895,7 +975,8 @@
                     "RM18.50",
                     "RM17.50"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-3-3.2-0"
                 },
                 {
                   "q": "A school bag costs RM45.90. A wallet costs RM12.80. What is the price difference?",
@@ -905,7 +986,8 @@
                     "RM34.10",
                     "RM32.10"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-3-3.2-1"
                 },
                 {
                   "q": "Siti has RM200. She wants to buy 3 shirts at RM35.90 each. Does she have enough money?",
@@ -915,7 +997,8 @@
                     "No, she needs RM7.70 more",
                     "Yes, she has RM100 left"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-3-3.2-2"
                 },
                 {
                   "q": "A family spends RM12.50 on breakfast, RM28.90 on lunch, and RM45.60 on dinner. What is the total spent on meals?",
@@ -925,7 +1008,8 @@
                     "RM88.00",
                     "RM77.00"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-3-3.2-3"
                 },
                 {
                   "q": "Encik Ramli saves RM125.60 per month. How much does he save in 4 months?",
@@ -935,7 +1019,8 @@
                     "RM492.40",
                     "RM502.40"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-3-3.2-4"
                 }
               ],
               "revision": "Managing money wisely means planning your spending, saving regularly, and differentiating between needs and wants. Always check if you have enough money before buying and try to save a portion of your money."
@@ -951,7 +1036,8 @@
                     "Online banking",
                     "Credit card"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-3-3.3-0"
                 },
                 {
                   "q": "The currency used in Singapore is called...",
@@ -961,7 +1047,8 @@
                     "Singapore Dollar",
                     "Ringgit"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-3-3.3-1"
                 },
                 {
                   "q": "A cheque is considered a...",
@@ -971,7 +1058,8 @@
                     "bank account",
                     "payment instrument"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-3-3.3-2"
                 },
                 {
                   "q": "Which currency is used in Japan?",
@@ -981,7 +1069,8 @@
                     "Yen",
                     "Won"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-3-3.3-3"
                 },
                 {
                   "q": "The safest way to carry a large amount of money when travelling abroad is...",
@@ -991,7 +1080,8 @@
                     "Gold",
                     "Cash"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-3-3.3-4"
                 }
               ],
               "revision": "Different countries use different currencies. Malaysia uses Ringgit (RM), Singapore uses Dollar (SGD), Japan uses Yen (JPY), and the US uses Dollar (USD). Payment instruments include cash, credit cards, debit cards, cheques, and online banking."
@@ -1012,7 +1102,8 @@
                     "1400 hours",
                     "0200 hours"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-4-4.1-0"
                 },
                 {
                   "q": "What is 2000 hours in the 12-hour system?",
@@ -1022,7 +1113,8 @@
                     "8:00 a.m.",
                     "2:00 p.m."
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-4-4.1-1"
                 },
                 {
                   "q": "What is 11:30 a.m. in the 24-hour system?",
@@ -1032,7 +1124,8 @@
                     "1130 hours",
                     "2330 hours"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-4-4.1-2"
                 },
                 {
                   "q": "Convert 7:45 p.m. to the 24-hour system.",
@@ -1042,7 +1135,8 @@
                     "1945 hours",
                     "2045 hours"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-4-4.1-3"
                 },
                 {
                   "q": "School starts at 0730 hours. What time is this in the 12-hour system?",
@@ -1052,7 +1146,8 @@
                     "5:30 p.m.",
                     "7:30 a.m."
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-4-4.1-4"
                 },
                 {
                   "q": "A TV programme starts at 2100 hours. What time is this in the 12-hour system?",
@@ -1062,7 +1157,8 @@
                     "10:00 p.m.",
                     "8:00 p.m."
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-4-4.1-5"
                 },
                 {
                   "q": "Which time is later: 1530 hours or 3:30 p.m.?",
@@ -1072,7 +1168,8 @@
                     "Cannot compare",
                     "3:30 p.m."
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-4-4.1-6"
                 },
                 {
                   "q": "Convert 0015 hours to the 12-hour system.",
@@ -1082,7 +1179,8 @@
                     "1:15 a.m.",
                     "12:15 p.m."
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-4-4.1-7"
                 },
                 {
                   "q": "What is 10:10 a.m. in the 24-hour system?",
@@ -1092,7 +1190,8 @@
                     "2210 hours",
                     "1010 hours"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-4-4.1-8"
                 },
                 {
                   "q": "Convert 2359 hours to the 12-hour system.",
@@ -1102,7 +1201,8 @@
                     "11:59 p.m.",
                     "1:59 p.m."
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-4-4.1-9"
                 }
               ],
               "revision": "The 12-hour system uses a.m. (before noon) and p.m. (after noon). The 24-hour system runs from 0000 to 2359 hours. To convert p.m. to 24-hour, add 12 to the hour. 2:00 p.m. = 1400 hours, 8:00 p.m. = 2000 hours."
@@ -1118,7 +1218,8 @@
                     "7 hours",
                     "6 hours"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-4-4.2-0"
                 },
                 {
                   "q": "A journey starts at 0945 hours and ends at 1345 hours. How long is the journey?",
@@ -1128,7 +1229,8 @@
                     "3 hours",
                     "5 hours"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-4-4.2-1"
                 },
                 {
                   "q": "A movie starts at 2:15 p.m. and lasts 1 hour 45 minutes. What time does it end?",
@@ -1138,7 +1240,8 @@
                     "3:45 p.m.",
                     "4:00 p.m."
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-4-4.2-2"
                 },
                 {
                   "q": "If a baby sleeps from 9:30 p.m. to 6:00 a.m., how long does he sleep?",
@@ -1148,7 +1251,8 @@
                     "8 hours",
                     "9 hours"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-4-4.2-3"
                 },
                 {
                   "q": "A bus leaves at 1100 hours and arrives at 1330 hours. How long is the journey?",
@@ -1158,7 +1262,8 @@
                     "1 hour 30 minutes",
                     "2 hours 30 minutes"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-4-4.2-4"
                 }
               ],
               "revision": "Duration is the length of time between two events. To find duration, subtract the start time from the end time. A school day from 7:30 a.m. to 1:30 p.m. is 6 hours."
@@ -1174,7 +1279,8 @@
                     "50 years",
                     "1 000 years"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-4-4.3-0"
                 },
                 {
                   "q": "How many years are in one century?",
@@ -1184,7 +1290,8 @@
                     "50 years",
                     "1 000 years"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-4-4.3-1"
                 },
                 {
                   "q": "How many years are in a millennium?",
@@ -1194,7 +1301,8 @@
                     "10 000 years",
                     "1 000 years"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-4-4.3-2"
                 },
                 {
                   "q": "How many decades are there in one century?",
@@ -1204,7 +1312,8 @@
                     "5 decades",
                     "20 decades"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-4-4.3-3"
                 },
                 {
                   "q": "If a building was built in 1990, how many decades old is it in 2026?",
@@ -1214,7 +1323,8 @@
                     "2 decades",
                     "5 decades"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-4-4.3-4"
                 }
               ],
               "revision": "Time relationships: 1 decade = 10 years, 1 century = 100 years = 10 decades, 1 millennium = 1 000 years = 10 centuries. The year 2026 is in the 3rd millennium, 21st century."
@@ -1235,7 +1345,8 @@
                     "5 mm",
                     "10 mm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-5-5.1-0"
                 },
                 {
                   "q": "Convert 5 km to metres.",
@@ -1245,7 +1356,8 @@
                     "5 000 m",
                     "500 cm"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-5-5.1-1"
                 },
                 {
                   "q": "A pencil is 15 cm long. How many millimetres is that?",
@@ -1255,7 +1367,8 @@
                     "1.5 mm",
                     "1 500 mm"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-5-5.1-2"
                 },
                 {
                   "q": "A rope is 3.5 m long. Express this in centimetres.",
@@ -1265,7 +1378,8 @@
                     "3 050 cm",
                     "35 cm"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-5-5.1-3"
                 },
                 {
                   "q": "Which is longer? 0.25 km or 250 m?",
@@ -1275,7 +1389,8 @@
                     "They are the same length",
                     "Cannot compare"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-5-5.1-4"
                 },
                 {
                   "q": "Add: 2.3 km + 1.8 km =",
@@ -1285,7 +1400,8 @@
                     "3.1 km",
                     "4.2 km"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.1-5"
                 },
                 {
                   "q": "A ribbon is 80 cm long. 35 cm is cut off. What length is left?",
@@ -1295,7 +1411,8 @@
                     "50 cm",
                     "45 cm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-5-5.1-6"
                 },
                 {
                   "q": "A garden is 6 m wide and 8 m long. What is the total distance around the garden?",
@@ -1305,7 +1422,8 @@
                     "28 m",
                     "48 m"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-5-5.1-7"
                 },
                 {
                   "q": "How many centimetres are in 2.5 m?",
@@ -1315,7 +1433,8 @@
                     "25 cm",
                     "2 500 cm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.1-8"
                 },
                 {
                   "q": "A road is 2.85 km long. Another road is 3.6 km long. Total length =",
@@ -1325,7 +1444,8 @@
                     "5.45 km",
                     "6.35 km"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.1-9"
                 }
               ],
               "revision": "Length units: 10 mm = 1 cm, 100 cm = 1 m, 1 000 m = 1 km. To convert from larger to smaller units, multiply. To convert from smaller to larger, divide. A 3.5 m rope = 350 cm."
@@ -1341,7 +1461,8 @@
                     "1 000 g",
                     "100 g"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-5-5.2-0"
                 },
                 {
                   "q": "Convert 3.5 kg to grams.",
@@ -1351,7 +1472,8 @@
                     "350 g",
                     "3 500 g"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-5-5.2-1"
                 },
                 {
                   "q": "A bag of rice weighs 2 kg. A bag of flour weighs 750 g. What is the total mass in grams?",
@@ -1361,7 +1483,8 @@
                     "2 750 kg",
                     "2 750 g"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-5-5.2-2"
                 },
                 {
                   "q": "A watermelon weighs 4.8 kg. A pineapple weighs 1.2 kg. How much heavier is the watermelon?",
@@ -1371,7 +1494,8 @@
                     "3.0 kg",
                     "4.0 kg"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.2-3"
                 },
                 {
                   "q": "5 identical bags have a total mass of 12.5 kg. What is the mass of each bag?",
@@ -1381,66 +1505,72 @@
                     "2.5 kg",
                     "3.0 kg"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-5-5.2-4"
                 }
               ],
               "revision": "Mass units: 1 000 g = 1 kg. To convert kg to g, multiply by 1 000. 3.5 kg = 3 500 g. To convert g to kg, divide by 1 000."
             },
             "5.3": {
-              "name": "Volume of Liquid (ml and \u2113)",
+              "name": "Volume of Liquid (ml and ℓ)",
               "questions": [
                 {
                   "q": "How many millilitres are in 1 litre?",
                   "a": [
-                    "10 000 m\u2113",
-                    "1 000 m\u2113",
-                    "100 m\u2113",
-                    "10 m\u2113"
+                    "10 000 mℓ",
+                    "1 000 mℓ",
+                    "100 mℓ",
+                    "10 mℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.3-0"
                 },
                 {
-                  "q": "Convert 2.5 \u2113 to millilitres.",
+                  "q": "Convert 2.5 ℓ to millilitres.",
                   "a": [
-                    "2 500 m\u2113",
-                    "250 m\u2113",
-                    "25 000 m\u2113",
-                    "2 050 m\u2113"
+                    "2 500 mℓ",
+                    "250 mℓ",
+                    "25 000 mℓ",
+                    "2 050 mℓ"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-5-5.3-1"
                 },
                 {
-                  "q": "A bottle has 750 m\u2113 of water. Another 600 m\u2113 is added. What is the total volume in \u2113?",
+                  "q": "A bottle has 750 mℓ of water. Another 600 mℓ is added. What is the total volume in ℓ?",
                   "a": [
-                    "13.5 \u2113",
-                    "1.35 \u2113",
-                    "1.5 \u2113",
-                    "1.35 m\u2113"
+                    "13.5 ℓ",
+                    "1.35 ℓ",
+                    "1.5 ℓ",
+                    "1.35 mℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.3-2"
                 },
                 {
-                  "q": "A pail holds 5 \u2113 of water. 1.75 \u2113 is used to water plants. How much water is left?",
+                  "q": "A pail holds 5 ℓ of water. 1.75 ℓ is used to water plants. How much water is left?",
                   "a": [
-                    "2.25 \u2113",
-                    "3.25 \u2113",
-                    "4.25 \u2113",
-                    "3.75 \u2113"
+                    "2.25 ℓ",
+                    "3.25 ℓ",
+                    "4.25 ℓ",
+                    "3.75 ℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.3-3"
                 },
                 {
-                  "q": "Three bottles contain 0.8 \u2113, 1.2 \u2113, and 1.5 \u2113 respectively. Total volume =",
+                  "q": "Three bottles contain 0.8 ℓ, 1.2 ℓ, and 1.5 ℓ respectively. Total volume =",
                   "a": [
-                    "3.8 \u2113",
-                    "3.5 \u2113",
-                    "2.5 \u2113",
-                    "3.0 \u2113"
+                    "3.8 ℓ",
+                    "3.5 ℓ",
+                    "2.5 ℓ",
+                    "3.0 ℓ"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-5-5.3-4"
                 }
               ],
-              "revision": "Volume units: 1 000 m\u2113 = 1 \u2113. To convert \u2113 to m\u2113, multiply by 1 000. 2.5 \u2113 = 2 500 m\u2113. To convert m\u2113 to \u2113, divide by 1 000."
+              "revision": "Volume units: 1 000 mℓ = 1 ℓ. To convert ℓ to mℓ, multiply by 1 000. 2.5 ℓ = 2 500 mℓ. To convert mℓ to ℓ, divide by 1 000."
             }
           }
         },
@@ -1453,12 +1583,13 @@
                 {
                   "q": "A right angle is equal to...",
                   "a": [
-                    "45\u00b0",
-                    "90\u00b0",
-                    "60\u00b0",
-                    "180\u00b0"
+                    "45°",
+                    "90°",
+                    "60°",
+                    "180°"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-6-6.1-0"
                 },
                 {
                   "q": "Which angle is smaller than a right angle?",
@@ -1468,17 +1599,19 @@
                     "Acute angle",
                     "Reflex angle"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-6-6.1-1"
                 },
                 {
                   "q": "Which of these angles is obtuse?",
                   "a": [
-                    "90\u00b0",
-                    "40\u00b0",
-                    "80\u00b0",
-                    "120\u00b0"
+                    "90°",
+                    "40°",
+                    "80°",
+                    "120°"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-6-6.1-2"
                 },
                 {
                   "q": "How many right angles make a straight line?",
@@ -1488,7 +1621,8 @@
                     "3",
                     "1"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-6-6.1-3"
                 },
                 {
                   "q": "A triangle has a right angle and two equal angles. What type of triangle is it?",
@@ -1498,7 +1632,8 @@
                     "Right-angled isosceles triangle",
                     "Obtuse triangle"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-6-6.1-4"
                 }
               ],
               "revision": "An angle measures the turn between two lines. A right angle = 90 degrees. An acute angle is smaller than 90 degrees. An obtuse angle is larger than 90 but smaller than 180. A straight line = 180 degrees = 2 right angles."
@@ -1514,7 +1649,8 @@
                     "7",
                     "5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-6-6.2-0"
                 },
                 {
                   "q": "Which shape has 4 equal sides and 4 right angles?",
@@ -1524,7 +1660,8 @@
                     "Rhombus",
                     "Rectangle"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-6-6.2-1"
                 },
                 {
                   "q": "An isosceles triangle has...",
@@ -1534,7 +1671,8 @@
                     "three equal sides",
                     "two equal sides"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-6-6.2-2"
                 },
                 {
                   "q": "Which shape has exactly 3 lines of symmetry?",
@@ -1544,7 +1682,8 @@
                     "Equilateral triangle",
                     "Rectangle"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-6-6.2-3"
                 },
                 {
                   "q": "A pentagon has how many vertices?",
@@ -1554,7 +1693,8 @@
                     "5",
                     "6"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-6-6.2-4"
                 }
               ],
               "revision": "2D shapes: triangle (3 sides), square (4 equal sides, 4 right angles), rectangle (4 sides, 4 right angles), pentagon (5 sides), hexagon (6 sides). An isosceles triangle has 2 equal sides."
@@ -1575,7 +1715,8 @@
                     "3 units across, 5 units up",
                     "3 units across, 5 units down"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-7-7.1-0"
                 },
                 {
                   "q": "Which point is at the origin (0, 0) on a coordinate grid?",
@@ -1585,7 +1726,8 @@
                     "The middle of the grid",
                     "The bottom right corner"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-7-7.1-1"
                 },
                 {
                   "q": "If point A is at (2, 4) and point B is at (2, 7), what is the same about them?",
@@ -1595,7 +1737,8 @@
                     "Nothing",
                     "They have the same y-coordinate"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-7-7.1-2"
                 },
                 {
                   "q": "A point is plotted 4 units across and 3 units up from the origin. What are its coordinates?",
@@ -1605,7 +1748,8 @@
                     "(4, 4)",
                     "(3, 4)"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-7-7.1-3"
                 },
                 {
                   "q": "On a grid, which direction does the y-axis go?",
@@ -1615,7 +1759,8 @@
                     "Circular",
                     "Horizontal (left and right)"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-7-7.1-4"
                 }
               ],
               "revision": "Coordinates are written as (x, y). x is the horizontal distance from the origin (0, 0). y is the vertical distance. Point (3, 5) means 3 units across and 5 units up."
@@ -1631,7 +1776,8 @@
                     "3 : 5",
                     "5 : 3"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-7-7.2-0"
                 },
                 {
                   "q": "A recipe uses 2 cups of flour for every 1 cup of sugar. What is the ratio of flour to sugar?",
@@ -1641,7 +1787,8 @@
                     "2 : 3",
                     "3 : 1"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-7-7.2-1"
                 },
                 {
                   "q": "In a class, the ratio of boys to girls is 4 : 3. If there are 12 boys, how many girls are there?",
@@ -1651,7 +1798,8 @@
                     "6",
                     "9"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-7-7.2-2"
                 },
                 {
                   "q": "A drink is made by mixing 1 part syrup with 4 parts water. What is the ratio of syrup to water?",
@@ -1661,7 +1809,8 @@
                     "1 : 4",
                     "5 : 1"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-7-7.2-3"
                 },
                 {
                   "q": "There are 6 red marbles and 4 blue marbles. What is the ratio of red to blue marbles in its simplest form?",
@@ -1671,7 +1820,8 @@
                     "2 : 3",
                     "3 : 2"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-7-7.2-4"
                 }
               ],
               "revision": "A ratio compares two quantities. If there are 3 apples and 5 oranges, the ratio of apples to oranges is 3 : 5. Ratios can be simplified like fractions."
@@ -1687,7 +1837,8 @@
                     "RM9.00",
                     "RM18.00"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4-7-7.3-0"
                 },
                 {
                   "q": "A car uses 8 litres of petrol to travel 100 km. How much petrol is needed for 300 km?",
@@ -1697,7 +1848,8 @@
                     "32 litres",
                     "24 litres"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-7-7.3-1"
                 },
                 {
                   "q": "4 workers take 6 days to paint a house. How long will 8 workers take?",
@@ -1707,7 +1859,8 @@
                     "1 day",
                     "2 days"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-7-7.3-2"
                 },
                 {
                   "q": "2 kg of flour makes 24 roti canai. How many roti canai can be made with 5 kg of flour?",
@@ -1717,7 +1870,8 @@
                     "48",
                     "60"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-7-7.3-3"
                 },
                 {
                   "q": "If 5 apples cost RM4.00, find the cost of 15 apples.",
@@ -1727,10 +1881,11 @@
                     "RM10.00",
                     "RM12.00"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-7-7.3-4"
                 }
               ],
-              "revision": "Proportion shows the relationship between equal ratios. If 3 pens cost RM6, then 6 pens cost RM12 \u2014 the cost is proportional to the number of pens."
+              "revision": "Proportion shows the relationship between equal ratios. If 3 pens cost RM6, then 6 pens cost RM12 — the cost is proportional to the number of pens."
             }
           }
         },
@@ -1748,7 +1903,8 @@
                     "30",
                     "35"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-8-8.1-0"
                 },
                 {
                   "q": "A pictograph shows 4 full symbols and 1 half symbol. Each full symbol represents 10 votes. How many votes is this?",
@@ -1758,17 +1914,19 @@
                     "45",
                     "40"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-8-8.1-1"
                 },
                 {
-                  "q": "A pictograph about favourite fruits shows: Mango \ud83e\udd6d\ud83e\udd6d\ud83e\udd6d, Apple \ud83c\udf4e\ud83c\udf4e, Orange \ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a. Each fruit icon = 4 children. Which fruit is the most popular?",
+                  "q": "A pictograph about favourite fruits shows: Mango 🥭🥭🥭, Apple 🍎🍎, Orange 🍊🍊🍊🍊. Each fruit icon = 4 children. Which fruit is the most popular?",
                   "a": [
                     "Cannot tell",
                     "Apple",
                     "Orange",
                     "Mango"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4-8-8.1-2"
                 },
                 {
                   "q": "In a pictograph, one icon = 10 pupils. There are 3 icons for football and 5 icons for badminton. How many more pupils like badminton than football?",
@@ -1778,7 +1936,8 @@
                     "10",
                     "30"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-8-8.1-3"
                 },
                 {
                   "q": "If a pictograph shows 4.5 symbols and each symbol = 8 children, how many children is this?",
@@ -1788,7 +1947,8 @@
                     "40",
                     "32"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-8-8.1-4"
                 }
               ],
               "revision": "A pictograph uses symbols to represent data. The key shows what each symbol stands for. If one icon = 5 books and there are 6 icons, that is 30 books. Half icons represent half the value."
@@ -1804,7 +1964,8 @@
                     "Monday",
                     "Wednesday"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-8-8.2-0"
                 },
                 {
                   "q": "In a bar chart, the height of a bar reaches 8 units. Each unit represents 5 children. How many children does this bar represent?",
@@ -1814,7 +1975,8 @@
                     "45",
                     "40"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-8-8.2-1"
                 },
                 {
                   "q": "A bar chart shows 4 bars: Red=20, Blue=35, Green=15, Yellow=30. What is the total number of items?",
@@ -1824,7 +1986,8 @@
                     "90",
                     "110"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-8-8.2-2"
                 },
                 {
                   "q": "In a bar chart, a bar height of 12 represents 60 pupils. What does each unit represent?",
@@ -1834,7 +1997,8 @@
                     "4 pupils",
                     "10 pupils"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4-8-8.2-3"
                 },
                 {
                   "q": "A bar chart shows the number of books read in a week: Mon=3, Tue=5, Wed=2, Thu=4, Fri=6. How many more books were read on Friday than Wednesday?",
@@ -1844,7 +2008,8 @@
                     "2",
                     "4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4-8-8.2-4"
                 }
               ],
               "revision": "A bar chart uses rectangular bars to show data. The height or length of each bar represents the value. The higher the bar, the larger the value. Read the scale carefully to interpret bar charts."

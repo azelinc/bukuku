@@ -19,7 +19,8 @@
                     "Puluh ribu",
                     "Ribu"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.1-0"
                 },
                 {
                   "q": "Apakah nilai digit bagi 8 dalam 14 087?",
@@ -29,7 +30,8 @@
                     "800",
                     "8 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.1-1"
                 },
                 {
                   "q": "Antara berikut, yang manakah mempunyai 3 puluh ribu?",
@@ -39,7 +41,8 @@
                     "32 578",
                     "43 721"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.1-2"
                 },
                 {
                   "q": "Cerakinkan 62 307 dengan betul.",
@@ -49,7 +52,8 @@
                     "62 300 + 7",
                     "62 000 + 300 + 7"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.1-3"
                 },
                 {
                   "q": "Yang manakah nombor 5 digit yang paling kecil?",
@@ -59,7 +63,8 @@
                     "11 111",
                     "10 000"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-1-1.1-4"
                 },
                 {
                   "q": "Apakah nombor yang datang selepas 49 999?",
@@ -69,7 +74,8 @@
                     "50 000",
                     "49 998"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.1-5"
                 },
                 {
                   "q": "Tulis nombor 72 084 dalam perkataan.",
@@ -79,7 +85,8 @@
                     "Tujuh puluh dua ribu lapan ratus empat",
                     "Tujuh puluh dua ribu sifar ratus lapan puluh empat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.1-6"
                 },
                 {
                   "q": "80 000 + 400 + 30 + 5 = _____",
@@ -89,7 +96,8 @@
                     "84 350",
                     "84 035"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.1-7"
                 },
                 {
                   "q": "Digit yang manakah bernilai 7 000 dalam 87 241?",
@@ -99,7 +107,8 @@
                     "2",
                     "8"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.1-8"
                 },
                 {
                   "q": "Apakah nombor yang paling besar? 45 678, 45 876, 45 768, 45 867",
@@ -109,7 +118,8 @@
                     "45 768",
                     "45 867"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.1-9"
                 }
               ],
               "revision": "Nombor hingga 100 000 mempunyai nilai tempat (puluh ribu, ribu, ratus, puluh, sa). Nombor seperti 52 173 bermaksud 5 puluh ribu + 2 ribu + 1 ratus + 7 puluh + 3 sa. Nombor boleh dibandingkan, disusun secara menaik atau menurun, dan dicerakinkan mengikut nilai digit."
@@ -125,7 +135,8 @@
                     "65 421",
                     "64 999"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.2-0"
                 },
                 {
                   "q": "Susun nombor berikut dalam tertib menaik: 34 215, 34 125, 34 512, 34 521",
@@ -135,7 +146,8 @@
                     "34 512, 34 521, 34 215, 34 125",
                     "34 215, 34 125, 34 521, 34 512"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.2-1"
                 },
                 {
                   "q": "Apakah pola nombor: 12 450, 12 460, 12 470, ____, 12 490?",
@@ -145,7 +157,8 @@
                     "12 485",
                     "12 490"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.2-2"
                 },
                 {
                   "q": "Nombor yang manakah lebih kecil? 89 000 atau 90 000?",
@@ -155,7 +168,8 @@
                     "Sama",
                     "Tidak dapat dibandingkan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.2-3"
                 },
                 {
                   "q": "Susun nombor berikut dalam tertib menurun: 56 700, 56 070, 56 007, 57 000",
@@ -165,7 +179,8 @@
                     "57 000, 56 007, 56 070, 56 700",
                     "56 700, 57 000, 56 070, 56 007"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.2-4"
                 },
                 {
                   "q": "Lengkapkan pola: 25 500, 25 000, 24 500, ______",
@@ -175,7 +190,8 @@
                     "24 400",
                     "23 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.2-5"
                 }
               ],
               "revision": "Untuk membandingkan nombor, bandingkan nilai tempat bermula dari kiri. Susunan menaik bermaksud dari yang terkecil ke yang terbesar. Susunan menurun bermaksud dari yang terbesar ke yang terkecil. Pola nombor boleh bertambah atau berkurang secara tetap."
@@ -191,7 +207,8 @@
                     "39 000",
                     "30 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.3-0"
                 },
                 {
                   "q": "Bundarkan 19 500 ml kepada ribu ml yang terdekat.",
@@ -201,7 +218,8 @@
                     "19 000 ml",
                     "19 500 ml"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.3-1"
                 },
                 {
                   "q": "Bundarkan RM63 988 kepada puluh ribu ringgit yang terdekat.",
@@ -211,7 +229,8 @@
                     "RM64 000",
                     "RM70 000"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.3-2"
                 },
                 {
                   "q": "Bundarkan 51 473 kepada ribu yang terdekat.",
@@ -221,7 +240,8 @@
                     "52 000",
                     "50 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.3-3"
                 },
                 {
                   "q": "Sebuah stadium mempunyai 24 875 tempat duduk. Bundarkan nombor ini kepada ratus yang terdekat.",
@@ -231,7 +251,8 @@
                     "24 000",
                     "24 800"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.3-4"
                 },
                 {
                   "q": "Anggarkan hasil tambah 48 235 + 32 678 dengan membundarkan kepada ribu terdekat.",
@@ -241,7 +262,8 @@
                     "82 000",
                     "83 000"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.3-5"
                 }
               ],
               "revision": "Pembundaran menjadikan nombor lebih mudah tetapi kekal hampir dengan nilai asal. Lihat digit di sebelah kanan tempat pembundaran — jika 5 atau lebih, bundar ke atas. Jika 4 atau kurang, bundar ke bawah."
@@ -257,7 +279,8 @@
                     "24 320",
                     "23 320"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-1-1.4-0"
                 },
                 {
                   "q": "7 560 ÷ 6 = ______",
@@ -267,7 +290,8 @@
                     "1 270",
                     "1 260"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-1-1.4-1"
                 },
                 {
                   "q": "Sebuah kilang menghasilkan 1 250 botol sos setiap hari. Berapakah botol yang dihasilkan dalam 5 hari?",
@@ -277,7 +301,8 @@
                     "5 250",
                     "6 250"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-1-1.4-2"
                 },
                 {
                   "q": "Terdapat 48 orang murid di dalam dewan. Mereka dibahagikan sama rata kepada 6 kumpulan. Berapakah murid dalam setiap kumpulan?",
@@ -287,7 +312,8 @@
                     "6",
                     "7"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-1-1.4-3"
                 },
                 {
                   "q": "Hitung 12 × 3 046.",
@@ -297,7 +323,8 @@
                     "36 552",
                     "35 652"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.4-4"
                 },
                 {
                   "q": "Bahagikan 8 424 dengan 8.",
@@ -307,7 +334,8 @@
                     "1 053",
                     "1 053 baki 4"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.4-5"
                 },
                 {
                   "q": "Seorang tukang kebun menanam 2 016 anak pokok sama rata dalam 7 baris. Berapakah anak pokok dalam setiap baris?",
@@ -317,7 +345,8 @@
                     "308",
                     "288"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-1-1.4-6"
                 },
                 {
                   "q": "38 725 ÷ 5 = ______",
@@ -327,7 +356,8 @@
                     "7 745",
                     "7 745 baki 2"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.4-7"
                 },
                 {
                   "q": "Sebuah kotak mengandungi 7 bungkus. Setiap bungkus ada 125 biji guli. Berapakah jumlah biji guli?",
@@ -337,7 +367,8 @@
                     "825",
                     "885"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-1-1.4-8"
                 },
                 {
                   "q": "9 504 ÷ 9 = ______",
@@ -347,7 +378,8 @@
                     "1 056",
                     "1 056 baki 1"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-1-1.4-9"
                 }
               ],
               "revision": "Darab adalah penambahan berulang. Apabila mendarab dengan nombor 1 digit, darab setiap nilai tempat bermula dari sa. Bahagi adalah pengongsian sama rata. Apabila membahagi, mulakan dari nilai tempat terbesar dan bekerja dari kiri ke kanan."
@@ -368,7 +400,8 @@
                     "9/4",
                     "3/4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.1-0"
                 },
                 {
                   "q": "Tukarkan 11/4 kepada nombor bercampur.",
@@ -378,7 +411,8 @@
                     "2 3/5",
                     "3 1/4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.1-1"
                 },
                 {
                   "q": "Tukarkan 3 2/5 kepada pecahan tak wajar.",
@@ -388,7 +422,8 @@
                     "15/5",
                     "11/5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.1-2"
                 },
                 {
                   "q": "Tukarkan 9/2 kepada nombor bercampur.",
@@ -398,7 +433,8 @@
                     "4 3/4",
                     "4 1/4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.1-3"
                 },
                 {
                   "q": "Ungkapkan 5 1/3 sebagai pecahan tak wajar.",
@@ -408,7 +444,8 @@
                     "17/3",
                     "14/3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.1-4"
                 },
                 {
                   "q": "Pecahan setara bagi 1/2 ialah",
@@ -418,7 +455,8 @@
                     "2/5",
                     "4/10"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.1-5"
                 },
                 {
                   "q": "Antara berikut, yang manakah pecahan setara dengan 2/3?",
@@ -428,7 +466,8 @@
                     "4/6",
                     "6/9"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.1-6"
                 }
               ],
               "revision": "Pecahan wajar mempunyai pengangka yang lebih kecil daripada penyebut (contohnya 3/4). Pecahan tak wajar mempunyai pengangka yang sama atau lebih besar daripada penyebut. Nombor bercampur menggabungkan nombor bulat dan pecahan wajar. Pecahan setara ialah pecahan yang mempunyai nilai yang sama."
@@ -444,7 +483,8 @@
                     "5/8",
                     "6/8"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.2-0"
                 },
                 {
                   "q": "7/12 - 3/12 =",
@@ -454,7 +494,8 @@
                     "4/12 = 1/3",
                     "4/12"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.2-1"
                 },
                 {
                   "q": "Tambah: 1/3 + 1/4",
@@ -464,7 +505,8 @@
                     "7/24",
                     "2/12"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-2-2.2-2"
                 },
                 {
                   "q": "Sebiji kek dipotong kepada 8 bahagian yang sama. Ali makan 3 bahagian dan Mei makan 2 bahagian. Apakah pecahan kek yang telah dimakan?",
@@ -474,7 +516,8 @@
                     "3/8",
                     "5/16"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.2-3"
                 },
                 {
                   "q": "2 1/3 + 1 1/3 =",
@@ -484,7 +527,8 @@
                     "3 2/6",
                     "3 2/3"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.2-4"
                 },
                 {
                   "q": "5/6 - 1/2 =",
@@ -494,7 +538,8 @@
                     "4/6",
                     "1/3"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.2-5"
                 },
                 {
                   "q": "Mina menggunakan 2/5 daripada segulung reben. Apakah pecahan reben yang tinggal?",
@@ -504,7 +549,8 @@
                     "4/5",
                     "1/5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.2-6"
                 },
                 {
                   "q": "3/10 + 2/5 =",
@@ -514,7 +560,8 @@
                     "7/10",
                     "5/10"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.2-7"
                 },
                 {
                   "q": "Selesaikan: 2 1/2 - 1 1/4",
@@ -524,7 +571,8 @@
                     "1 1/6",
                     "1 1/4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.2-8"
                 },
                 {
                   "q": "Sebiji piza dipotong kepada 6 bahagian sama besar. Ben mengambil 2 bahagian dan Chan mengambil 1 bahagian. Berapakah jumlah pecahan piza yang diambil?",
@@ -534,7 +582,8 @@
                     "2/6",
                     "1/2"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.2-9"
                 }
               ],
               "revision": "Untuk menambah atau menolak pecahan, penyebut mestilah sama. Cari penyebut sepunya terkecil, tukarkan pecahan, kemudian tambah atau tolak pengangka sahaja. Permudahkan jawapan apabila boleh."
@@ -550,7 +599,8 @@
                     "4.3",
                     "4.13"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.3-0"
                 },
                 {
                   "q": "7.65 - 3.42 =",
@@ -560,7 +610,8 @@
                     "4.22",
                     "4.23"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.3-1"
                 },
                 {
                   "q": "Sebuah botol 1.5 liter diisi dengan 0.8 liter air. Berapa banyak lagi air yang diperlukan untuk memenuhkannya?",
@@ -570,7 +621,8 @@
                     "0.9 liter",
                     "0.3 liter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.3-2"
                 },
                 {
                   "q": "5.09 + 3.87 =",
@@ -580,7 +632,8 @@
                     "8.96",
                     "9.96"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.3-3"
                 },
                 {
                   "q": "10.0 - 4.56 =",
@@ -590,7 +643,8 @@
                     "5.44",
                     "5.54"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.3-4"
                 },
                 {
                   "q": "Jumlah jisim tiga beg ialah 1.5 kg, 2.3 kg, dan 0.7 kg. Berapakah jumlah jisim?",
@@ -600,7 +654,8 @@
                     "4.0 kg",
                     "3.5 kg"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-2-2.3-5"
                 },
                 {
                   "q": "6.24 + 12.76 =",
@@ -610,7 +665,8 @@
                     "19.00",
                     "18.00"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.3-6"
                 },
                 {
                   "q": "15.80 - 9.95 =",
@@ -620,7 +676,8 @@
                     "5.75",
                     "5.95"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-2-2.3-7"
                 },
                 {
                   "q": "Sehelai kain panjangnya 3.6 m. 1.8 m digunakan untuk membuat baju. Berapakah panjang kain yang tinggal?",
@@ -630,7 +687,8 @@
                     "2.0 m",
                     "1.8 m"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.3-8"
                 },
                 {
                   "q": "Tambah: 4.07 + 5.93",
@@ -640,7 +698,8 @@
                     "9.90",
                     "10.10"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.3-9"
                 }
               ],
               "revision": "Untuk menambah atau menolak perpuluhan, selarikan titik perpuluhan secara menegak. Tambah sifar untuk menjadikan bilangan tempat perpuluhan sama jika perlu. Kemudian tambah atau tolak seperti nombor bulat dan turunkan titik perpuluhan."
@@ -656,7 +715,8 @@
                     "25%",
                     "50%"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.4-0"
                 },
                 {
                   "q": "Ungkapkan 25% sebagai pecahan dalam bentuk termudah.",
@@ -666,7 +726,8 @@
                     "1/2",
                     "5/20"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-2-2.4-1"
                 },
                 {
                   "q": "Apakah 3/4 sebagai peratus?",
@@ -676,7 +737,8 @@
                     "50%",
                     "100%"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-2-2.4-2"
                 },
                 {
                   "q": "30 daripada 100 orang murid menunggang basikal ke sekolah. Berapakah peratus ini?",
@@ -686,7 +748,8 @@
                     "30%",
                     "13%"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-2-2.4-3"
                 },
                 {
                   "q": "Sebuah kelas mempunyai 25 orang kanak-kanak. 60% adalah lelaki. Berapakah bilangan lelaki?",
@@ -696,7 +759,8 @@
                     "12",
                     "18"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-2-2.4-4"
                 },
                 {
                   "q": "Tukarkan 0.4 kepada peratus.",
@@ -706,7 +770,8 @@
                     "0.4%",
                     "14%"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-2-2.4-5"
                 },
                 {
                   "q": "Tukarkan 20% kepada perpuluhan.",
@@ -716,7 +781,8 @@
                     "0.02",
                     "0.2"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-2-2.4-6"
                 }
               ],
               "revision": "Peratus (%) bermaksud daripada 100. 50% = 50/100 = 1/2. Untuk menukar pecahan kepada peratus, darab dengan 100%. Untuk menukar peratus kepada pecahan, tulis atas 100 dan permudahkan."
@@ -737,7 +803,8 @@
                     "RM44.00",
                     "RM43.20"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.1-0"
                 },
                 {
                   "q": "RM50.00 - RM27.85 =",
@@ -747,7 +814,8 @@
                     "RM22.15",
                     "RM23.15"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-3-3.1-1"
                 },
                 {
                   "q": "Sebuah buku berharga RM12.50 dan sebatang pen berharga RM3.80. Berapakah jumlah harga?",
@@ -757,7 +825,8 @@
                     "RM15.80",
                     "RM16.30"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-3-3.1-2"
                 },
                 {
                   "q": "5 × RM24.80 =",
@@ -767,7 +836,8 @@
                     "RM125.00",
                     "RM134.00"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.1-3"
                 },
                 {
                   "q": "RM85.50 ÷ 3 =",
@@ -777,7 +847,8 @@
                     "RM27.50",
                     "RM28.50"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-3-3.1-4"
                 },
                 {
                   "q": "Sebuah sekolah mengumpul RM756.50 untuk derma. Mereka memerlukan RM1 000. Berapa lagikah wang yang diperlukan?",
@@ -787,7 +858,8 @@
                     "RM253.50",
                     "RM244.50"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.1-5"
                 },
                 {
                   "q": "6 orang rakan berkongsi kos hadiah sama rata. Hadiah itu berharga RM73.80. Berapakah bayaran setiap seorang?",
@@ -797,7 +869,8 @@
                     "RM12.80",
                     "RM11.80"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.1-6"
                 },
                 {
                   "q": "RM100.00 - RM34.90 - RM25.50 =",
@@ -807,7 +880,8 @@
                     "RM40.60",
                     "RM38.60"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.1-7"
                 },
                 {
                   "q": "Satu bungkus biskut berharga RM2.40. Berapakah harga 7 bungkus?",
@@ -817,7 +891,8 @@
                     "RM16.80",
                     "RM14.80"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-3-3.1-8"
                 },
                 {
                   "q": "RM250.00 ÷ 8 =",
@@ -827,7 +902,8 @@
                     "RM31.25",
                     "RM31.50"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-3-3.1-9"
                 }
               ],
               "revision": "Operasi wang dalam Ringgit Malaysia (RM) mengikut peraturan yang sama seperti operasi perpuluhan. Sentiasa selarikan titik perpuluhan dan simbol RM. Apabila memberi baki wang, tolak kos daripada jumlah wang yang dibayar."
@@ -843,7 +919,8 @@
                     "RM18.50",
                     "RM17.50"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-3-3.2-0"
                 },
                 {
                   "q": "Sebuah beg sekolah berharga RM45.90. Sebuah dompet berharga RM12.80. Berapakah beza harga?",
@@ -853,7 +930,8 @@
                     "RM34.10",
                     "RM32.10"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.2-1"
                 },
                 {
                   "q": "Siti mempunyai RM200. Dia ingin membeli 3 helai baju pada harga RM35.90 setiap satu. Adakah wangnya mencukupi?",
@@ -863,7 +941,8 @@
                     "Tidak, dia perlukan RM7.70 lagi",
                     "Ya, dia ada baki RM100"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.2-2"
                 },
                 {
                   "q": "Sebuah keluarga membelanjakan RM12.50 untuk sarapan, RM28.90 untuk makan tengah hari, dan RM45.60 untuk makan malam. Berapakah jumlah yang dibelanjakan untuk makanan?",
@@ -873,7 +952,8 @@
                     "RM88.00",
                     "RM77.00"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.2-3"
                 },
                 {
                   "q": "Encik Ramli menyimpan RM125.60 setiap bulan. Berapa banyak yang dia simpan dalam 4 bulan?",
@@ -883,7 +963,8 @@
                     "RM492.40",
                     "RM502.40"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-3-3.2-4"
                 },
                 {
                   "q": "Puan Lisa membeli 5 kg beras pada harga RM3.20 sekilogram. Dia membayar dengan wang RM20.00. Berapakah baki wangnya?",
@@ -893,7 +974,8 @@
                     "RM2.50",
                     "RM3.50"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.2-5"
                 }
               ],
               "revision": "Mengurus wang dengan bijak bermaksud merancang perbelanjaan, menyimpan secara tetap, dan membezakan antara keperluan dan kehendak. Sentiasa semak sama ada wang mencukupi sebelum membeli."
@@ -909,7 +991,8 @@
                     "RM30",
                     "RM180"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.3-0"
                 },
                 {
                   "q": "Harga kos sebuah kek ialah RM15. Harga jual ialah RM12. Apakah yang berlaku?",
@@ -919,7 +1002,8 @@
                     "Untung RM27",
                     "Tiada untung atau rugi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.3-1"
                 },
                 {
                   "q": "Ali membeli sebuah basikal dengan harga RM350 dan menjualnya dengan harga RM400. Berapakah peratus keuntungan?",
@@ -929,7 +1013,8 @@
                     "12.5%",
                     "25%"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.3-2"
                 },
                 {
                   "q": "Seorang peniaga menjual 20 biji telur dengan harga RM12. Kos sebiji telur ialah RM0.50. Berapakah jumlah keuntungan?",
@@ -939,7 +1024,8 @@
                     "RM5.00",
                     "RM7.00"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.3-3"
                 },
                 {
                   "q": "Puan Siti membeli 3 kg mangga dengan harga RM5 sekilogram. Dia menjual semuanya dengan harga RM21. Berapakah keuntungannya?",
@@ -949,7 +1035,8 @@
                     "RM4",
                     "RM5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.3-4"
                 },
                 {
                   "q": "Seorang penjual membeli 10 biji kek cawan dengan harga RM1.50 sebiji. Dia menjual semuanya dengan harga RM20. Berapakah rugi atau untungnya?",
@@ -959,7 +1046,8 @@
                     "Untung RM15",
                     "Rugi RM15"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-3-3.3-5"
                 }
               ],
               "revision": "Untung = Harga jual - Harga kos. Rugi = Harga kos - Harga jual. Jika harga jual lebih tinggi daripada harga kos, peniaga mendapat untung. Jika harga jual lebih rendah, peniaga mengalami kerugian."
@@ -975,7 +1063,8 @@
                     "Buku cerita tentang wang",
                     "Resit sahaja"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.4-0"
                 },
                 {
                   "q": "Antara berikut, yang manakah contoh wang masuk?",
@@ -985,7 +1074,8 @@
                     "Gaji bulanan",
                     "Membeli makanan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-3-3.4-1"
                 },
                 {
                   "q": "Sebuah kedai mencatat jualan harian: Isnin RM450, Selasa RM520, Rabu RM390. Berapakah jumlah jualan?",
@@ -995,7 +1085,8 @@
                     "RM1 450",
                     "RM1 260"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.4-2"
                 },
                 {
                   "q": "Apakah tujuan menyimpan rekod kewangan?",
@@ -1005,7 +1096,8 @@
                     "Untuk menyembunyikan wang",
                     "Untuk meminjam wang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.4-3"
                 },
                 {
                   "q": "Pendapatan Encik Lim ialah RM3 500 sebulan. Perbelanjaannya ialah RM2 800. Berapakah lebihan wangnya?",
@@ -1015,7 +1107,8 @@
                     "RM600",
                     "RM6 300"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-3-3.4-4"
                 }
               ],
               "revision": "Rekod kewangan ialah catatan wang masuk (pendapatan) dan wang keluar (perbelanjaan). Simpan kira yang baik membantu kita mengurus wang dengan lebih bijak dan mengetahui sama ada kita berbelanja berlebihan."
@@ -1036,7 +1129,8 @@
                     "7 hari",
                     "10 hari"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-4-4.1-0"
                 },
                 {
                   "q": "Berapa bulan dalam setahun?",
@@ -1046,7 +1140,8 @@
                     "12 bulan",
                     "13 bulan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-4-4.1-1"
                 },
                 {
                   "q": "2 tahun = ______ bulan",
@@ -1056,7 +1151,8 @@
                     "36 bulan",
                     "24 bulan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.1-2"
                 },
                 {
                   "q": "4 minggu = ______ hari",
@@ -1066,7 +1162,8 @@
                     "21 hari",
                     "35 hari"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.1-3"
                 },
                 {
                   "q": "3 tahun + 8 bulan = ______ bulan",
@@ -1076,7 +1173,8 @@
                     "36 bulan",
                     "48 bulan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-4-4.1-4"
                 },
                 {
                   "q": "5 minggu 3 hari = ______ hari",
@@ -1086,7 +1184,8 @@
                     "33 hari",
                     "40 hari"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-4-4.1-5"
                 }
               ],
               "revision": "Hubungan unit masa: 1 minggu = 7 hari, 1 bulan ≈ 4 minggu, 1 tahun = 12 bulan. Untuk menukar unit masa, darab atau bahagi mengikut nilai yang betul. Contoh: 2 tahun = 2 × 12 = 24 bulan."
@@ -1102,7 +1201,8 @@
                     "1400 jam",
                     "0200 jam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-4-4.2-0"
                 },
                 {
                   "q": "Apakah 2000 jam dalam sistem 12 jam?",
@@ -1112,7 +1212,8 @@
                     "8:00 pagi",
                     "2:00 petang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-4-4.2-1"
                 },
                 {
                   "q": "Apakah 11:30 pagi dalam sistem 24 jam?",
@@ -1122,7 +1223,8 @@
                     "1130 jam",
                     "2330 jam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-4-4.2-2"
                 },
                 {
                   "q": "Tukarkan 7:45 petang kepada sistem 24 jam.",
@@ -1132,7 +1234,8 @@
                     "1945 jam",
                     "2045 jam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-4-4.2-3"
                 },
                 {
                   "q": "Sekolah bermula pada jam 0730. Pukul berapakah itu dalam sistem 12 jam?",
@@ -1142,7 +1245,8 @@
                     "5:30 petang",
                     "7:30 pagi"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.2-4"
                 },
                 {
                   "q": "Sebuah program TV bermula pada jam 2100. Pukul berapakah itu dalam sistem 12 jam?",
@@ -1152,7 +1256,8 @@
                     "10:00 malam",
                     "8:00 malam"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.2-5"
                 },
                 {
                   "q": "Tukarkan 0015 jam kepada sistem 12 jam.",
@@ -1162,7 +1267,8 @@
                     "1:15 pagi",
                     "12:15 petang"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.2-6"
                 },
                 {
                   "q": "Apakah 10:10 pagi dalam sistem 24 jam?",
@@ -1172,7 +1278,8 @@
                     "2210 jam",
                     "1010 jam"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.2-7"
                 },
                 {
                   "q": "Tukarkan 2359 jam kepada sistem 12 jam.",
@@ -1182,7 +1289,8 @@
                     "11:59 malam",
                     "1:59 petang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-4-4.2-8"
                 },
                 {
                   "q": "Pukul berapakah 1845 jam dalam sistem 12 jam?",
@@ -1192,7 +1300,8 @@
                     "6:45 pagi",
                     "8:45 malam"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-4-4.2-9"
                 }
               ],
               "revision": "Sistem 12 jam menggunakan a.m. (sebelum tengah hari) dan p.m. (selepas tengah hari). Sistem 24 jam berjalan dari 0000 hingga 2359 jam. Untuk menukar waktu petang ke sistem 24 jam, tambah 12 pada jam. Contoh: 2:00 petang = 1400 jam."
@@ -1208,7 +1317,8 @@
                     "7 jam",
                     "6 jam"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.3-0"
                 },
                 {
                   "q": "Satu perjalanan bermula pada jam 0945 dan tamat pada jam 1345. Berapa lamakah perjalanan itu?",
@@ -1218,7 +1328,8 @@
                     "3 jam",
                     "5 jam"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-4-4.3-1"
                 },
                 {
                   "q": "Sebuah filem bermula pada 2:15 petang dan berlangsung selama 1 jam 45 minit. Pukul berapakah ia tamat?",
@@ -1228,7 +1339,8 @@
                     "3:45 petang",
                     "4:00 petang"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.3-2"
                 },
                 {
                   "q": "Jika seorang bayi tidur dari 9:30 malam hingga 6:00 pagi, berapa lamakah dia tidur?",
@@ -1238,7 +1350,8 @@
                     "8 jam",
                     "9 jam"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-4-4.3-3"
                 },
                 {
                   "q": "Sebuah bas bertolak pada jam 1100 dan tiba pada jam 1330. Berapa lamakah perjalanan itu?",
@@ -1248,7 +1361,8 @@
                     "1 jam 30 minit",
                     "2 jam 30 minit"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.3-4"
                 },
                 {
                   "q": "2 jam 45 minit + 1 jam 30 minit =",
@@ -1258,7 +1372,8 @@
                     "3 jam 15 minit",
                     "3 jam 45 minit"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.3-5"
                 }
               ],
               "revision": "Tempoh masa ialah panjang masa antara dua peristiwa. Untuk mencari tempoh, tolak masa mula daripada masa tamat. Contoh: 7:30 pagi hingga 1:30 petang ialah 6 jam."
@@ -1274,7 +1389,8 @@
                     "50 tahun",
                     "1 000 tahun"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.4-0"
                 },
                 {
                   "q": "Berapa tahun dalam satu abad?",
@@ -1284,7 +1400,8 @@
                     "50 tahun",
                     "1 000 tahun"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.4-1"
                 },
                 {
                   "q": "Berapa tahun dalam satu alaf?",
@@ -1294,7 +1411,8 @@
                     "10 000 tahun",
                     "1 000 tahun"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-4-4.4-2"
                 },
                 {
                   "q": "Berapa dekad dalam satu abad?",
@@ -1304,7 +1422,8 @@
                     "5 dekad",
                     "20 dekad"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.4-3"
                 },
                 {
                   "q": "Sebuah bangunan dibina pada tahun 1990. Berapa dekad usianya pada tahun 2026?",
@@ -1314,7 +1433,8 @@
                     "2 dekad",
                     "5 dekad"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.4-4"
                 },
                 {
                   "q": "1 abad + 2 dekad = ______ tahun",
@@ -1324,7 +1444,8 @@
                     "102 tahun",
                     "12 tahun"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-4-4.4-5"
                 }
               ],
               "revision": "Hubungan masa: 1 dekad = 10 tahun, 1 abad = 100 tahun = 10 dekad, 1 alaf = 1 000 tahun = 10 abad. Tahun 2026 berada dalam alaf ke-3, abad ke-21."
@@ -1345,7 +1466,8 @@
                     "5 mm",
                     "10 mm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-5-5.1-0"
                 },
                 {
                   "q": "Tukarkan 5 km kepada meter.",
@@ -1355,7 +1477,8 @@
                     "5 000 m",
                     "500 cm"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-5-5.1-1"
                 },
                 {
                   "q": "Se batang pensil panjangnya 15 cm. Berapa milimeter panjangnya?",
@@ -1365,7 +1488,8 @@
                     "1.5 mm",
                     "1 500 mm"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.1-2"
                 },
                 {
                   "q": "Seutas tali panjangnya 3.5 m. Nyatakan dalam sentimeter.",
@@ -1375,7 +1499,8 @@
                     "3 050 cm",
                     "35 cm"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.1-3"
                 },
                 {
                   "q": "Yang manakah lebih panjang? 0.25 km atau 250 m?",
@@ -1385,7 +1510,8 @@
                     "Kedua-duanya sama panjang",
                     "Tidak boleh dibandingkan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-5-5.1-4"
                 },
                 {
                   "q": "Tambah: 2.3 km + 1.8 km =",
@@ -1395,7 +1521,8 @@
                     "3.1 km",
                     "4.2 km"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.1-5"
                 },
                 {
                   "q": "Seutas reben panjangnya 80 cm. 35 cm dipotong. Berapakah panjang yang tinggal?",
@@ -1405,7 +1532,8 @@
                     "50 cm",
                     "45 cm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-5-5.1-6"
                 },
                 {
                   "q": "Sebuah taman lebarnya 6 m dan panjangnya 8 m. Berapakah jumlah jarak di sekeliling taman?",
@@ -1415,7 +1543,8 @@
                     "28 m",
                     "48 m"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-5-5.1-7"
                 },
                 {
                   "q": "Berapa sentimeter dalam 2.5 m?",
@@ -1425,7 +1554,8 @@
                     "25 cm",
                     "2 500 cm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.1-8"
                 },
                 {
                   "q": "Sebatang jalan panjangnya 2.85 km. Satu lagi jalan panjangnya 3.6 km. Jumlah panjang =",
@@ -1435,7 +1565,8 @@
                     "5.45 km",
                     "6.35 km"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.1-9"
                 }
               ],
               "revision": "Unit panjang: 10 mm = 1 cm, 100 cm = 1 m, 1 000 m = 1 km. Untuk menukar daripada unit besar kepada unit kecil, darab. Untuk menukar daripada unit kecil kepada unit besar, bahagi. Contoh: 3.5 m = 350 cm."
@@ -1451,7 +1582,8 @@
                     "1 000 g",
                     "100 g"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-5-5.2-0"
                 },
                 {
                   "q": "Tukarkan 3.5 kg kepada gram.",
@@ -1461,7 +1593,8 @@
                     "350 g",
                     "3 500 g"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-5-5.2-1"
                 },
                 {
                   "q": "Sekampit beras beratnya 2 kg. Sekampung tepung beratnya 750 g. Berapakah jumlah jisim dalam gram?",
@@ -1471,7 +1604,8 @@
                     "2 750 kg",
                     "2 750 g"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-5-5.2-2"
                 },
                 {
                   "q": "Sebiji tembikai beratnya 4.8 kg. Sebiji nanas beratnya 1.2 kg. Berapa kg lebih berat tembikai itu?",
@@ -1481,7 +1615,8 @@
                     "3.0 kg",
                     "4.0 kg"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.2-3"
                 },
                 {
                   "q": "5 beg yang sama berat mempunyai jumlah jisim 12.5 kg. Berapakah jisim setiap beg?",
@@ -1491,7 +1626,8 @@
                     "2.5 kg",
                     "3.0 kg"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-5-5.2-4"
                 },
                 {
                   "q": "Tambah: 2 kg 500 g + 1 kg 750 g =",
@@ -1501,7 +1637,8 @@
                     "3 kg 750 g",
                     "4 kg 500 g"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.2-5"
                 },
                 {
                   "q": "Tukarkan 4 500 g kepada kg.",
@@ -1511,7 +1648,8 @@
                     "4.05 kg",
                     "0.45 kg"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.2-6"
                 }
               ],
               "revision": "Unit jisim: 1 000 g = 1 kg. Untuk menukar kg kepada g, darab dengan 1 000. 3.5 kg = 3 500 g. Untuk menukar g kepada kg, bahagi dengan 1 000."
@@ -1527,7 +1665,8 @@
                     "100 ml",
                     "10 ml"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.3-0"
                 },
                 {
                   "q": "Tukarkan 2.5 liter kepada mililiter.",
@@ -1537,7 +1676,8 @@
                     "25 000 ml",
                     "2 050 ml"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.3-1"
                 },
                 {
                   "q": "Sebuah botol mempunyai 750 ml air. 600 ml lagi ditambah. Berapakah jumlah isi padu dalam liter?",
@@ -1547,7 +1687,8 @@
                     "1.5 liter",
                     "1.35 ml"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.3-2"
                 },
                 {
                   "q": "Sebuah baldi berisi 5 liter air. 1.75 liter digunakan untuk menyiram pokok. Berapa banyak air yang tinggal?",
@@ -1557,7 +1698,8 @@
                     "4.25 liter",
                     "3.75 liter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.3-3"
                 },
                 {
                   "q": "Tiga botol masing-masing mengandungi 0.8 liter, 1.2 liter, dan 1.5 liter. Jumlah isi padu =",
@@ -1567,7 +1709,8 @@
                     "2.5 liter",
                     "3.0 liter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.3-4"
                 },
                 {
                   "q": "Berapa liter dalam 3 500 ml?",
@@ -1577,7 +1720,8 @@
                     "0.35 liter",
                     "350 liter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.3-5"
                 },
                 {
                   "q": "Sebuah tangki berisi 12 liter air. 7 liter 500 ml digunakan. Berapakah baki air?",
@@ -1587,7 +1731,8 @@
                     "4 liter",
                     "5 liter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.3-6"
                 }
               ],
               "revision": "Unit isi padu: 1 000 ml = 1 liter. Untuk menukar liter kepada ml, darab dengan 1 000. 2.5 liter = 2 500 ml. Untuk menukar ml kepada liter, bahagi dengan 1 000."
@@ -1603,7 +1748,8 @@
                     "2.0 m",
                     "1.3 m"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.4-0"
                 },
                 {
                   "q": "Seorang baker menggunakan 1 kg 250 g tepung untuk membuat kek dan 750 g untuk membuat biskut. Berapakah jumlah tepung yang digunakan?",
@@ -1613,7 +1759,8 @@
                     "2 kg 500 g",
                     "1 kg 750 g"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.4-1"
                 },
                 {
                   "q": "Azman minum 500 ml susu setiap hari. Berapa liter susu yang dia minum dalam 6 hari?",
@@ -1623,7 +1770,8 @@
                     "4.0 liter",
                     "2.5 liter"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.4-2"
                 },
                 {
                   "q": "Seutas dawai panjangnya 3 m 40 cm. Dawai itu dipotong kepada 4 bahagian yang sama panjang. Berapakah panjang setiap bahagian?",
@@ -1633,7 +1781,8 @@
                     "80 cm",
                     "90 cm"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-5-5.4-3"
                 },
                 {
                   "q": "Jumlah jisim seekor kucing dan seekor arnab ialah 7 kg. Jika kucing itu berat 4.5 kg, berapakah berat arnab itu?",
@@ -1643,7 +1792,8 @@
                     "3.0 kg",
                     "2.5 kg"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-5-5.4-4"
                 },
                 {
                   "q": "Sebuah botol mengandungi 1.8 liter jus. Jus itu dituang sama rata ke dalam 6 gelas. Berapa ml jus dalam setiap gelas?",
@@ -1653,7 +1803,8 @@
                     "350 ml",
                     "200 ml"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-5-5.4-5"
                 }
               ],
               "revision": "Untuk menyelesaikan masalah yang melibatkan panjang, jisim dan isi padu, pastikan unit adalah sama sebelum melakukan operasi. Tukarkan semua unit kepada unit yang sama terlebih dahulu."
@@ -1674,7 +1825,8 @@
                     "7",
                     "5"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-6-6.1-0"
                 },
                 {
                   "q": "Bentuk yang manakah mempunyai 4 sisi yang sama panjang dan 4 sudut tegak?",
@@ -1684,7 +1836,8 @@
                     "Rombus",
                     "Segi empat tepat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-6-6.1-1"
                 },
                 {
                   "q": "Segi tiga sama kaki mempunyai...",
@@ -1694,7 +1847,8 @@
                     "tiga sisi yang sama",
                     "dua sisi yang sama"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-6-6.1-2"
                 },
                 {
                   "q": "Bentuk yang manakah mempunyai 3 paksi simetri?",
@@ -1704,7 +1858,8 @@
                     "Segi tiga sama sisi",
                     "Segi empat tepat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.1-3"
                 },
                 {
                   "q": "Pentagon mempunyai berapa bucu?",
@@ -1714,7 +1869,8 @@
                     "5",
                     "6"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.1-4"
                 },
                 {
                   "q": "Perimeter segi empat sama yang panjang sisinya 5 cm ialah",
@@ -1724,7 +1880,8 @@
                     "15 cm",
                     "20 cm"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-6-6.1-5"
                 },
                 {
                   "q": "Luas segi empat tepat yang panjang 8 cm dan lebar 3 cm ialah",
@@ -1734,7 +1891,8 @@
                     "22 cm persegi",
                     "20 cm persegi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-6-6.1-6"
                 }
               ],
               "revision": "Bentuk 2D: segi tiga (3 sisi), segi empat sama (4 sisi sama, 4 sudut tegak), segi empat tepat (4 sisi, 4 sudut tegak), pentagon (5 sisi), heksagon (6 sisi). Perimeter = jumlah semua sisi. Luas segi empat tepat = panjang × lebar."
@@ -1750,7 +1908,8 @@
                     "12",
                     "4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-6-6.2-0"
                 },
                 {
                   "q": "Berapakah bilangan sisi pada kuboid?",
@@ -1760,7 +1919,8 @@
                     "10",
                     "12"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-6-6.2-1"
                 },
                 {
                   "q": "Bentuk yang manakah mempunyai satu bucu dan satu permukaan melengkung?",
@@ -1770,7 +1930,8 @@
                     "Silinder",
                     "Piramid"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-6-6.2-2"
                 },
                 {
                   "q": "Sebiji bola berbentuk...",
@@ -1780,7 +1941,8 @@
                     "Sfera",
                     "Silinder"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.2-3"
                 },
                 {
                   "q": "Berapakah bilangan permukaan pada silinder?",
@@ -1790,7 +1952,8 @@
                     "4",
                     "1"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-6-6.2-4"
                 },
                 {
                   "q": "Isi padu kubus yang panjang sisinya 3 cm ialah",
@@ -1800,7 +1963,8 @@
                     "12 cm padu",
                     "27 cm padu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-6-6.2-5"
                 },
                 {
                   "q": "Piramid mempunyai berapa bucu?",
@@ -1810,7 +1974,8 @@
                     "6",
                     "3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-6-6.2-6"
                 }
               ],
               "revision": "Bentuk 3D: kubus (6 permukaan, 12 sisi, 8 bucu), kuboid (6 permukaan, 12 sisi, 8 bucu), silinder (3 permukaan - 2 bulatan + 1 melengkung), kon (2 permukaan - 1 bulatan + 1 melengkung, 1 bucu), sfera (1 permukaan melengkung). Isi padu kubus = sisi × sisi × sisi."
@@ -1826,7 +1991,8 @@
                     "4",
                     "1"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.3-0"
                 },
                 {
                   "q": "Berapakah paksi simetri yang ada pada segi empat tepat?",
@@ -1836,7 +2002,8 @@
                     "1",
                     "3"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-6-6.3-1"
                 },
                 {
                   "q": "Bentuk yang manakah mempunyai paksi simetri paling banyak?",
@@ -1846,7 +2013,8 @@
                     "Bulatan",
                     "Segi empat tepat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.3-2"
                 },
                 {
                   "q": "Berapakah paksi simetri pada segi tiga sama sisi?",
@@ -1856,7 +2024,8 @@
                     "3",
                     "0"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.3-3"
                 },
                 {
                   "q": "Jika sehelai kertas dilipat dan digunting, apakah konsep yang terlibat?",
@@ -1866,7 +2035,8 @@
                     "Isi padu",
                     "Simetri"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-6-6.3-4"
                 },
                 {
                   "q": "Berapakah paksi simetri yang ada pada bulatan?",
@@ -1876,7 +2046,8 @@
                     "Tiada had",
                     "2"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-6-6.3-5"
                 }
               ],
               "revision": "Simetri bermaksud keseimbangan bentuk. Paksi simetri ialah garisan yang membahagikan bentuk kepada dua bahagian yang sama besar dan sama bentuk. Segi empat sama mempunyai 4 paksi simetri, segi empat tepat mempunyai 2 paksi simetri, dan bulatan mempunyai bilangan paksi simetri yang tidak terhad."
@@ -1897,7 +2068,8 @@
                     "3 unit ke kanan, 5 unit ke atas",
                     "3 unit ke kanan, 5 unit ke bawah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-7-7.1-0"
                 },
                 {
                   "q": "Titik manakah yang terletak pada asalan (0, 0) pada grid koordinat?",
@@ -1907,7 +2079,8 @@
                     "Tengah grid",
                     "Penjuru kanan bawah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-7-7.1-1"
                 },
                 {
                   "q": "Jika titik A berada di (2, 4) dan titik B berada di (2, 7), apakah persamaan antara kedua-duanya?",
@@ -1917,7 +2090,8 @@
                     "Tiada persamaan",
                     "Koordinat-y adalah sama"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-7-7.1-2"
                 },
                 {
                   "q": "Satu titik diplot 4 unit ke kanan dan 3 unit ke atas dari asalan. Apakah koordinatnya?",
@@ -1927,7 +2101,8 @@
                     "(4, 4)",
                     "(3, 4)"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-7-7.1-3"
                 },
                 {
                   "q": "Pada grid, paksi-y menghala ke arah mana?",
@@ -1937,7 +2112,8 @@
                     "Bulatan",
                     "Melintang (kiri dan kanan)"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-7-7.1-4"
                 },
                 {
                   "q": "Apakah nama paksi mengufuk pada satah Cartes?",
@@ -1947,7 +2123,8 @@
                     "Paksi-x",
                     "Asalan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-7-7.1-5"
                 }
               ],
               "revision": "Koordinat ditulis sebagai (x, y). x ialah jarak mengufuk dari asalan (0, 0). y ialah jarak menegak. Titik (3, 5) bermaksud 3 unit ke kanan dan 5 unit ke atas dari asalan."
@@ -1963,7 +2140,8 @@
                     "(5, 5)",
                     "(2, 2)"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-7-7.2-0"
                 },
                 {
                   "q": "Titik P berada di koordinat (6, 3). Berapakah jarak mengufuk titik P dari asalan?",
@@ -1973,7 +2151,8 @@
                     "6 unit",
                     "2 unit"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-7-7.2-1"
                 },
                 {
                   "q": "Titik Q berada di koordinat (1, 8). Berapakah jarak menegak titik Q dari asalan?",
@@ -1983,7 +2162,8 @@
                     "7 unit",
                     "8 unit"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-7-7.2-2"
                 },
                 {
                   "q": "Titik A (3, 2) dan titik B (7, 2). Berapakah jarak mengufuk antara A dan B?",
@@ -1993,7 +2173,8 @@
                     "2 unit",
                     "7 unit"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-7-7.2-3"
                 },
                 {
                   "q": "Titik C (5, 1) dan titik D (5, 6). Berapakah jarak mencancang antara C dan D?",
@@ -2003,7 +2184,8 @@
                     "5 unit",
                     "1 unit"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-7-7.2-4"
                 },
                 {
                   "q": "Di sukuan pertama satah Cartes, kedua-dua koordinat x dan y adalah...",
@@ -2013,7 +2195,8 @@
                     "x positif, y negatif",
                     "x negatif, y positif"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-7-7.2-5"
                 }
               ],
               "revision": "Untuk menentukan kedudukan pada satah Cartes, baca koordinat-x dahulu (mengufuk), kemudian koordinat-y (menegak). Sukuan pertama mempunyai kedua-dua koordinat positif."
@@ -2029,7 +2212,8 @@
                     "4 unit",
                     "3 unit"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-7-7.3-0"
                 },
                 {
                   "q": "Titik R (4, 1) dan titik S (4, 5). Berapakah jarak mencancang antara R dan S?",
@@ -2039,7 +2223,8 @@
                     "1 unit",
                     "3 unit"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-7-7.3-1"
                 },
                 {
                   "q": "Titik A (1, 1) dan titik B (1, 7). Berapakah jarak di antara A dan B?",
@@ -2049,7 +2234,8 @@
                     "1 unit",
                     "8 unit"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-7-7.3-2"
                 },
                 {
                   "q": "Titik M (3, 4) dan titik N (8, 4). Berapakah jarak di antara M dan N?",
@@ -2059,7 +2245,8 @@
                     "5 unit",
                     "8 unit"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-7-7.3-3"
                 },
                 {
                   "q": "Sebuah titik pada satah Cartes mempunyai koordinat (0, 5). Titik ini terletak pada...",
@@ -2069,7 +2256,8 @@
                     "Asalan",
                     "Tidak pada mana-mana paksi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-7-7.3-4"
                 }
               ],
               "revision": "Jarak mengufuk antara dua titik dikira dengan menolak koordinat-x (x₂ - x₁). Jarak mencancang dikira dengan menolak koordinat-y (y₂ - y₁). Jika dua titik mempunyai koordinat-x yang sama, jaraknya ialah jarak mencancang. Jika dua titik mempunyai koordinat-y yang sama, jaraknya ialah jarak mengufuk."
@@ -2090,7 +2278,8 @@
                     "Jenis data",
                     "Purata data"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.1-0"
                 },
                 {
                   "q": "Antara berikut, yang manakah cara mengumpul data?",
@@ -2100,7 +2289,8 @@
                     "Menjalankan soal selidik",
                     "Menulis karangan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-8-8.1-1"
                 },
                 {
                   "q": "Dalam satu tinjauan, 5 orang suka warna merah, 8 orang suka warna biru, 3 orang suka warna hijau. Berapakah jumlah responden?",
@@ -2110,7 +2300,8 @@
                     "16",
                     "11"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-8-8.1-2"
                 },
                 {
                   "q": "Data berikut menunjukkan saiz kasut 10 orang murid: 4, 5, 4, 6, 5, 4, 5, 5, 6, 4. Kekerapan saiz 5 ialah",
@@ -2120,7 +2311,8 @@
                     "5",
                     "2"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.1-3"
                 },
                 {
                   "q": "Jadual kekerapan digunakan untuk...",
@@ -2130,7 +2322,8 @@
                     "Menulis cerita",
                     "Membuat ramalan cuaca"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.1-4"
                 },
                 {
                   "q": "Data: 2, 2, 3, 3, 3, 4, 5. Kekerapan bagi data 3 ialah",
@@ -2140,7 +2333,8 @@
                     "4",
                     "1"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.1-5"
                 }
               ],
               "revision": "Pengumpulan data ialah proses mengumpul maklumat. Kekerapan ialah bilangan kali sesuatu nilai atau kategori muncul dalam data. Jadual kekerapan membantu menyusun data dengan teratur untuk memudahkan analisis."
@@ -2156,7 +2350,8 @@
                     "Isnin",
                     "Rabu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-8-8.2-0"
                 },
                 {
                   "q": "Dalam carta palang, ketinggian satu palang mencapai 8 unit. Setiap unit mewakili 5 orang murid. Berapakah murid yang diwakili oleh palang ini?",
@@ -2166,7 +2361,8 @@
                     "45",
                     "40"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-8-8.2-1"
                 },
                 {
                   "q": "Carta palang menunjukkan 4 palang: Merah=20, Biru=35, Hijau=15, Kuning=30. Berapakah jumlah item?",
@@ -2176,7 +2372,8 @@
                     "90",
                     "110"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.2-2"
                 },
                 {
                   "q": "Dalam carta palang, ketinggian palang 12 mewakili 60 orang murid. Apakah nilai setiap unit?",
@@ -2186,7 +2383,8 @@
                     "4 orang murid",
                     "10 orang murid"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.2-3"
                 },
                 {
                   "q": "Carta palang menunjukkan bilangan buku yang dibaca: Isn=3, Sel=5, Rab=2, Kha=4, Jum=6. Berapa lebih buku yang dibaca pada hari Jumaat berbanding hari Rabu?",
@@ -2196,7 +2394,8 @@
                     "2",
                     "4"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-math4bm-8-8.2-4"
                 },
                 {
                   "q": "Apakah kegunaan carta palang?",
@@ -2206,7 +2405,8 @@
                     "Mengira perimeter",
                     "Melukis bentuk geometri"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.2-5"
                 }
               ],
               "revision": "Carta palang menggunakan palang segi empat tepat untuk menunjukkan data. Ketinggian atau panjang setiap palang mewakili nilai. Semakin tinggi palang, semakin besar nilainya. Baca skala dengan teliti untuk mentafsir carta palang."
@@ -2222,7 +2422,8 @@
                     "Bola sepak",
                     "Tidak dapat ditentukan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-8-8.3-0"
                 },
                 {
                   "q": "Dalam carta pie, satu bulatan penuh mewakili...",
@@ -2232,7 +2433,8 @@
                     "100%",
                     "25%"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-8-8.3-1"
                 },
                 {
                   "q": "Carta pie menunjukkan: Makanan kegemaran. Nasi lemak=40%, Roti canai=30%, Mi goreng=20%, Lain-lain=10%. Makanan yang manakah paling kurang popular?",
@@ -2242,7 +2444,8 @@
                     "Lain-lain",
                     "Mi goreng"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-8-8.3-2"
                 },
                 {
                   "q": "Carta pie tentang hobi: Membaca=35%, Melukis=25%, Sukan=40%. Berapakah jumlah peratus?",
@@ -2252,7 +2455,8 @@
                     "95%",
                     "110%"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.3-3"
                 },
                 {
                   "q": "Jika 25% daripada carta pie mewakili 10 orang murid, berapakah jumlah murid?",
@@ -2262,7 +2466,8 @@
                     "10",
                     "20"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.3-4"
                 }
               ],
               "revision": "Carta pie ialah bulatan yang dibahagikan kepada sektor untuk menunjukkan bahagian data. Satu bulatan penuh mewakili 100% (keseluruhan data). Saiz setiap sektor menunjukkan peratusan atau bahagian daripada keseluruhan."
@@ -2278,7 +2483,8 @@
                     "5",
                     "4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.4-0"
                 },
                 {
                   "q": "Data: 3, 6, 2, 8, 5. Apakah median? (Susun data dahulu)",
@@ -2288,7 +2494,8 @@
                     "5",
                     "8"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-math4bm-8-8.4-1"
                 },
                 {
                   "q": "Data: 2, 4, 6, 8, 10. Apakah min?",
@@ -2298,7 +2505,8 @@
                     "7",
                     "4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.4-2"
                 },
                 {
                   "q": "Data: 5, 5, 6, 7, 8, 8, 9. Apakah mod?",
@@ -2308,7 +2516,8 @@
                     "8",
                     "Tiada mod"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-math4bm-8-8.4-3"
                 },
                 {
                   "q": "Data: 10, 12, 15, 18, 20. Apakah median?",
@@ -2318,7 +2527,8 @@
                     "18",
                     "10"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.4-4"
                 },
                 {
                   "q": "Data: 1, 3, 5, 7, 9, 11. Apakah min?",
@@ -2328,7 +2538,8 @@
                     "7",
                     "4"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-math4bm-8-8.4-5"
                 }
               ],
               "revision": "Mod ialah nilai yang paling kerap muncul dalam data. Median ialah nilai tengah setelah data disusun mengikut tertib. Min ialah purata yang dikira dengan menjumlahkan semua data dan membahagikan dengan bilangan data. Min = Jumlah data ÷ Bilangan data."

@@ -20,7 +20,8 @@
                     "Mengabaikan arahan ibu bapa",
                     "Membantu kerja-kerja rumah"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.1-0"
                 },
                 {
                   "q": "Siapakah yang bertanggungjawab menjaga keselamatan anak-anak?",
@@ -30,7 +31,8 @@
                     "Ibu bapa",
                     "Guru"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.1-1"
                 },
                 {
                   "q": "Apakah yang akan berlaku jika setiap ahli keluarga mengabaikan tanggungjawab?",
@@ -40,7 +42,8 @@
                     "Keluarga menjadi kaya",
                     "Keluarga tidak harmoni"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.1-2"
                 },
                 {
                   "q": "Kata kerja yang manakah sesuai untuk melengkapkan ayat: 'Kami _____ kerja-kerja rumah bersama-sama.'",
@@ -50,7 +53,8 @@
                     "mengerjakan",
                     "menulis"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.1-3"
                 },
                 {
                   "q": "Pilih ayat yang menggunakan kata ganda yang betul.",
@@ -60,7 +64,8 @@
                     "Rumah rumah rumah itu cantik.",
                     "Rumah-rumah di kampung itu cantik."
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.1-4"
                 },
                 {
                   "q": "'Berat sama dipikul, ringan sama dijinjing.' Apakah maksud peribahasa ini?",
@@ -70,7 +75,8 @@
                     "Menanggung beban yang berat",
                     "Bekerjasama dalam susah dan senang"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.1-5"
                 },
                 {
                   "q": "Sinonim bagi kata 'taat' ialah ________.",
@@ -80,7 +86,8 @@
                     "patuh",
                     "marah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.1-6"
                 },
                 {
                   "q": "Pilih kata hubung yang sesuai: '______ kamu rajin belajar, kamu akan berjaya.'",
@@ -90,7 +97,8 @@
                     "Jika",
                     "Sambil"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.1-7"
                 },
                 {
                   "q": "'Anak umpama ______, ibu bapa sebagai ______.' Lengkapkan peribahasa ini.",
@@ -100,7 +108,8 @@
                     "buah; daun",
                     "air; laut"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-1-1.1-8"
                 },
                 {
                   "q": "Bina ayat pasif yang betul daripada ayat: 'Ali mencuci kasut.'",
@@ -110,7 +119,8 @@
                     "Kasut dicuci oleh Ali.",
                     "Ali dicuci oleh kasut."
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.1-9"
                 }
               ]
             },
@@ -126,7 +136,8 @@
                     "Bermain permainan video seorang diri",
                     "Makan bersama-sama"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.2-0"
                 },
                 {
                   "q": "Mengapakah ibu bapa perlu meluangkan masa bersama anak-anak?",
@@ -136,7 +147,8 @@
                     "Untuk meninggalkan anak-anak",
                     "Untuk mengeratkan hubungan kekeluargaan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.2-1"
                 },
                 {
                   "q": "Kata adjektif yang manakah sesuai untuk menggambarkan suasana keluarga yang mesra?",
@@ -146,7 +158,8 @@
                     "gembira",
                     "marah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.2-2"
                 },
                 {
                   "q": "'Hati ______, badan ______.' Lengkapkan peribahasa yang bermaksud kesihatan tubuh berkait dengan emosi.",
@@ -156,7 +169,8 @@
                     "sedih; kuat",
                     "gembira; sihat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.2-3"
                 },
                 {
                   "q": "Pilih kata nama yang tepat: '______ yang mesra menjadikan keluarga bahagia.'",
@@ -166,7 +180,8 @@
                     "Menulis",
                     "Cantik"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-1-1.2-4"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'mesra'?",
@@ -176,7 +191,8 @@
                     "rapat",
                     "akrab"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-1-1.2-5"
                 },
                 {
                   "q": "Ayat 'Kami sekeluarga pergi berkelah di pantai.' termasuk dalam jenis ayat ________.",
@@ -186,7 +202,8 @@
                     "seruan",
                     "penyata"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.2-6"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Ayah ______ belikan hadiah untuk ibu.'",
@@ -196,7 +213,8 @@
                     "mem",
                     "ter"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.2-7"
                 },
                 {
                   "q": "'Bagai aur dengan tebing' bermaksud ________.",
@@ -206,7 +224,8 @@
                     "bermusuh-musuhan",
                     "hubungan yang rapat dan saling membantu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.2-8"
                 },
                 {
                   "q": "Apakah maksud pantun: 'Pergi ke laut memukat ikan, / Ikan dibawa ke daratan; / Kalau kita hidup sepakat, / Bahagia pastinya ketahuan.'?",
@@ -216,7 +235,8 @@
                     "Berkelah di tepi pantai",
                     "Hidup bersendirian"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-1-1.2-9"
                 }
               ]
             },
@@ -232,7 +252,8 @@
                     "Tidak bertolak ansur",
                     "Suka bergaduh"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-1-1.3-0"
                 },
                 {
                   "q": "Siapakah yang memainkan peranan utama dalam membentuk keluarga cemerlang?",
@@ -242,7 +263,8 @@
                     "Kawan",
                     "Guru"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-1-1.3-1"
                 },
                 {
                   "q": "Kata kerja 'mendidik' membawa maksud ________.",
@@ -252,7 +274,8 @@
                     "memukul",
                     "mengajar dan membimbing"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.3-2"
                 },
                 {
                   "q": "Pilih kata adjektif yang betul untuk melengkapkan ayat: 'Anak-anak yang ______ sentiasa membantu ibu bapa.'",
@@ -262,7 +285,8 @@
                     "rajin",
                     "malas"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.3-3"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'cemerlang'?",
@@ -272,7 +296,8 @@
                     "hebat",
                     "unggul"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-1-1.3-4"
                 },
                 {
                   "q": "'Bapa ______, ibu ______.' Lengkapkan dengan kata yang sesuai.",
@@ -282,7 +307,8 @@
                     "bekerja; memasak",
                     "main; tidur"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.3-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Keluarga itu hidup bahagia ______ mereka saling menyayangi.'",
@@ -292,7 +318,8 @@
                     "tetapi",
                     "kerana"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-1-1.3-6"
                 },
                 {
                   "q": "Ayat 'Janganlah kamu bertengkar sesama sendiri.' ialah ayat ________.",
@@ -302,7 +329,8 @@
                     "larangan",
                     "tanya"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.3-7"
                 },
                 {
                   "q": "'Kejayaan keluarga bermula daripada ______ yang kukuh.' Pilih jawapan yang tepat.",
@@ -312,7 +340,8 @@
                     "didikan ibu bapa",
                     "rumah besar"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-1-1.3-8"
                 },
                 {
                   "q": "'Sediakan payung sebelum hujan' bermaksud ________.",
@@ -322,7 +351,8 @@
                     "menunggu hujan",
                     "mandi hujan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-1-1.3-9"
                 }
               ]
             }
@@ -343,7 +373,8 @@
                     "Tempat menyimpan makanan",
                     "Cara memasak makanan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.1-0"
                 },
                 {
                   "q": "Kumpulan makanan yang paling banyak diperlukan oleh tubuh ialah ________.",
@@ -353,7 +384,8 @@
                     "kerepek",
                     "gula-gula"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.1-1"
                 },
                 {
                   "q": "Kata adjektif yang sesuai untuk menggambarkan makanan yang baik untuk kesihatan ialah ________.",
@@ -363,7 +395,8 @@
                     "masin",
                     "pedas"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.1-2"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'sihat'?",
@@ -373,7 +406,8 @@
                     "sakit",
                     "cergas"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-2-2.1-3"
                 },
                 {
                   "q": "'Badan ______ jika makanan ______.' Lengkapkan ayat dengan kata adjektif yang sesuai.",
@@ -383,7 +417,8 @@
                     "sihat; seimbang",
                     "lembik; manis"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-2-2.1-4"
                 },
                 {
                   "q": "Buah-buahan dan sayur-sayuran kaya dengan ________.",
@@ -393,7 +428,8 @@
                     "gula",
                     "vitamin"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.1-5"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ makanan yang berkhasiat.'",
@@ -403,7 +439,8 @@
                     "membakar",
                     "menyimpan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.1-6"
                 },
                 {
                   "q": "'Makanan seimbang ______ badan sihat.' Pilih kata hubung yang sesuai.",
@@ -413,7 +450,8 @@
                     "tetapi",
                     "atau"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.1-7"
                 },
                 {
                   "q": "'Biar tubuh berpeluh, asalkan badan sihat.' Maksud peribahasa ini ialah ________.",
@@ -423,7 +461,8 @@
                     "minum air masak",
                     "bermain dalam hujan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.1-8"
                 },
                 {
                   "q": "Air ______ penting untuk ______ badan. Pilih perkataan yang sesuai.",
@@ -433,7 +472,8 @@
                     "masin; laut",
                     "minum; kesihatan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.1-9"
                 }
               ]
             },
@@ -449,7 +489,8 @@
                     "Penyakit mudah berjangkit",
                     "Hidup selesa"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-2-2.2-0"
                 },
                 {
                   "q": "Kegiatan mengitar semula bertujuan untuk ________.",
@@ -459,7 +500,8 @@
                     "mengurangkan sampah",
                     "membuang sampah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-2-2.2-1"
                 },
                 {
                   "q": "Kata kerja 'mencemarkan' bermaksud ________.",
@@ -469,7 +511,8 @@
                     "menyusun",
                     "mengotorkan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.2-2"
                 },
                 {
                   "q": "Pilih kata adjektif yang sesuai: 'Udara di kawasan ini sangat ______ kerana banyak pokok.'",
@@ -479,7 +522,8 @@
                     "kotor",
                     "panas"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.2-3"
                 },
                 {
                   "q": "'Alam sekitar ______, hidup pun ______.' Lengkapkan ayat.",
@@ -489,7 +533,8 @@
                     "sunyi; gembira",
                     "cemar; bahagia"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.2-4"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'bersih'?",
@@ -499,7 +544,8 @@
                     "cerah",
                     "suci"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.2-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Kawasan perumahan itu perlu di ______ bersihkan.'",
@@ -509,7 +555,8 @@
                     "me",
                     "per"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.2-6"
                 },
                 {
                   "q": "'Buang yang keruh, ambil yang jernih' bermaksud ________.",
@@ -519,7 +566,8 @@
                     "mengambil yang baik dan meninggalkan yang buruk",
                     "membersihkan kolam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-2-2.2-7"
                 },
                 {
                   "q": "Ayat 'Jangan membuang sampah di sungai!' ialah jenis ayat ________.",
@@ -529,7 +577,8 @@
                     "penyata",
                     "tanya"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.2-8"
                 },
                 {
                   "q": "______ persekitaran adalah ______ setiap individu. Pilih kata yang sesuai.",
@@ -539,7 +588,8 @@
                     "Membakar; kerja",
                     "Menjaga; tanggungjawab"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.2-9"
                 }
               ]
             },
@@ -555,7 +605,8 @@
                     "Tidur",
                     "Berenang"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.3-0"
                 },
                 {
                   "q": "Berapa lamakah masa yang disarankan untuk bersenam setiap hari?",
@@ -565,7 +616,8 @@
                     "2 jam",
                     "30 minit"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.3-1"
                 },
                 {
                   "q": "Kata adjektif 'cergas' membawa maksud ________.",
@@ -575,7 +627,8 @@
                     "sedih dan lesu",
                     "malas dan lemah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Ayah ______ badannya dengan berjoging setiap pagi.'",
@@ -585,7 +638,8 @@
                     "memudaratkan",
                     "menyakitkan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.3-3"
                 },
                 {
                   "q": "'Badan sihat, ______ pun cerdas.' Lengkapkan peribahasa ini.",
@@ -595,7 +649,8 @@
                     "kaki",
                     "tangan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.3-4"
                 },
                 {
                   "q": "Apakah sinonim bagi perkataan 'rekreasi'?",
@@ -605,7 +660,8 @@
                     "kerja",
                     "tidur"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.3-5"
                 },
                 {
                   "q": "Pilih kata hubung yang sesuai: 'Kita perlu makan ______ bersenam untuk kesihatan.'",
@@ -615,7 +671,8 @@
                     "kerana",
                     "jika"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-2-2.3-6"
                 },
                 {
                   "q": "Ayat 'Bersukanlah untuk kesihatan!' termasuk dalam jenis ayat ________.",
@@ -625,7 +682,8 @@
                     "perintah",
                     "seruan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.3-7"
                 },
                 {
                   "q": "'Mencegah lebih baik daripada mengubati' bermaksud ________.",
@@ -635,7 +693,8 @@
                     "ubat lebih baik daripada pencegahan",
                     "lebih baik mencegah penyakit daripada merawatnya"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-2-2.3-8"
                 },
                 {
                   "q": "Tidur yang mencukupi untuk orang dewasa ialah sekitar ________ jam sehari.",
@@ -645,7 +704,8 @@
                     "12 hingga 14",
                     "2 hingga 3"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-2-2.3-9"
                 }
               ]
             }
@@ -666,7 +726,8 @@
                     "Di dalam laci tanpa pengunci",
                     "Di tempat yang selamat dan tertutup"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.1-0"
                 },
                 {
                   "q": "Apakah tindakan yang perlu diambil jika terhidu gas bocor?",
@@ -676,7 +737,8 @@
                     "Buka tingkap dan padamkan api",
                     "Nyalakan api"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.1-1"
                 },
                 {
                   "q": "Kata kerja 'mengelakkan' bermaksud ________.",
@@ -686,7 +748,8 @@
                     "menghindari",
                     "menyertai"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.1-2"
                 },
                 {
                   "q": "Pilih kata adjektif yang sesuai: 'Pastikan lantai ______ supaya tidak licin.'",
@@ -696,7 +759,8 @@
                     "licin",
                     "berminyak"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-3-3.1-3"
                 },
                 {
                   "q": "'Biar lambat, asalkan selamat' bermaksud ________.",
@@ -706,7 +770,8 @@
                     "cepat itu bahaya",
                     "lambat itu baik"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.1-4"
                 },
                 {
                   "q": "Apakah nombor telefon kecemasan bomba?",
@@ -716,7 +781,8 @@
                     "994",
                     "997"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.1-5"
                 },
                 {
                   "q": "Pilih imbuhan yang betul: 'Ibu ______ simpan barang pecah belah di tempat selamat.'",
@@ -726,7 +792,8 @@
                     "me",
                     "mem"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.1-6"
                 },
                 {
                   "q": "'Jangan ______ api di dalam rumah.' Pilih kata kerja yang sesuai.",
@@ -736,7 +803,8 @@
                     "tidur",
                     "bermain"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.1-7"
                 },
                 {
                   "q": "Ayat 'Jangan menyentuh wayar yang terdedah!' ialah ayat ________.",
@@ -746,7 +814,8 @@
                     "penyata",
                     "seruan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-3-3.1-8"
                 },
                 {
                   "q": "Antonim bagi perkataan 'selamat' ialah ________.",
@@ -756,7 +825,8 @@
                     "aman",
                     "tenang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.1-9"
                 }
               ]
             },
@@ -772,7 +842,8 @@
                     "Bermain dengan alat radas",
                     "Jangan makan dan minum di dalam makmal"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.2-0"
                 },
                 {
                   "q": "Mengapakah pelajar tidak boleh berlari di tangga?",
@@ -782,7 +853,8 @@
                     "Untuk mengelakkan kemalangan",
                     "Supaya cepat sampai"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.2-1"
                 },
                 {
                   "q": "Kata adjektif 'berhati-hati' bermaksud ________.",
@@ -792,7 +864,8 @@
                     "waspada dan cermat",
                     "cuai dan malas"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.2-2"
                 },
                 {
                   "q": "Pilih kata kerja yang tepat: 'Pelajar dilarang ______ di koridor.'",
@@ -802,7 +875,8 @@
                     "duduk",
                     "berjalan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.2-3"
                 },
                 {
                   "q": "'______ di sekolah menjamin ______ pelajar.' Pilih kata yang sesuai.",
@@ -812,7 +886,8 @@
                     "Kecelakaan; kesihatan",
                     "Kemalangan; kesenangan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.2-4"
                 },
                 {
                   "q": "Apakah yang perlu dilakukan jika berlaku kecemasan di sekolah?",
@@ -822,7 +897,8 @@
                     "Berteriak sekuat hati",
                     "Bertenang dan ikut arahan guru"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.2-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Patuhilah peraturan sekolah ______ kamu ingin selamat.'",
@@ -832,7 +908,8 @@
                     "sambil",
                     "jika"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.2-6"
                 },
                 {
                   "q": "Ayat 'Tolong jaga keselamatan adik-adik kamu.' termasuk jenis ayat ________.",
@@ -842,7 +919,8 @@
                     "seruan",
                     "permintaan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.2-7"
                 },
                 {
                   "q": "'Sedikit-sedikit, lama-lama jadi bukit' mengajar kita tentang ________.",
@@ -852,7 +930,8 @@
                     "cepat marah",
                     "boros berbelanja"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-3-3.2-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'patuh' ialah ________.",
@@ -862,7 +941,8 @@
                     "lawan",
                     "bantah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.2-9"
                 }
               ]
             },
@@ -878,7 +958,8 @@
                     "Duduk di tempat gelap",
                     "Menangis dengan kuat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.3-0"
                 },
                 {
                   "q": "Mengapakah kita tidak boleh bercakap dengan orang yang tidak dikenali?",
@@ -888,7 +969,8 @@
                     "Kerana mereka jahat",
                     "Kerana tidak sopan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-3-3.3-1"
                 },
                 {
                   "q": "Kata adjektif 'waspada' bermaksud ________.",
@@ -898,7 +980,8 @@
                     "cuai",
                     "malas"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-3-3.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ barang berharga di tempat awam.'",
@@ -908,7 +991,8 @@
                     "menjaga",
                     "membuang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.3-3"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'awam'?",
@@ -918,7 +1002,8 @@
                     "peribadi",
                     "ramai"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.3-4"
                 },
                 {
                   "q": "'______ di tempat awam perlu diamalkan.' Pilih kata yang sesuai.",
@@ -928,7 +1013,8 @@
                     "Keselamatan",
                     "Kebakaran"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.3-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Mereka di ______ larang bermain di tepi jalan.'",
@@ -938,7 +1024,8 @@
                     "me",
                     "mem"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.3-6"
                 },
                 {
                   "q": "Ayat 'Awasi barang bawaan anda.' termasuk jenis ayat ________.",
@@ -948,7 +1035,8 @@
                     "tanya",
                     "perintah"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-3-3.3-7"
                 },
                 {
                   "q": "'Jangan mengharapkan ______, usahakanlah ______.' Lengkapkan peribahasa.",
@@ -958,7 +1046,8 @@
                     "belas kasihan; keselamatan sendiri",
                     "duit; harta"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-3-3.3-8"
                 },
                 {
                   "q": "'Bagai pinang dibelah dua' bermaksud ________.",
@@ -968,7 +1057,8 @@
                     "bersatu padu",
                     "bercerai-berai"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-3-3.3-9"
                 }
               ]
             }
@@ -989,7 +1079,8 @@
                     "Cina dan Korea",
                     "Melayu dan Jepun"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.1-0"
                 },
                 {
                   "q": "Apakah bahasa kebangsaan Malaysia?",
@@ -999,7 +1090,8 @@
                     "Bahasa Inggeris",
                     "Bahasa Melayu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.1-1"
                 },
                 {
                   "q": "Kata adjektif yang sesuai untuk menggambarkan masyarakat Malaysia ialah ________.",
@@ -1009,7 +1101,8 @@
                     "pelbagai",
                     "sama"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.1-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ perpaduan antara kaum.'",
@@ -1019,7 +1112,8 @@
                     "menghancurkan",
                     "memutuskan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-4-4.1-3"
                 },
                 {
                   "q": "'Bersatu teguh, bercerai roboh' bermaksud ________.",
@@ -1029,7 +1123,8 @@
                     "bersatu itu lemah",
                     "bercerai itu baik"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-4-4.1-4"
                 },
                 {
                   "q": "Apakah kepentingan perpaduan kaum di Malaysia?",
@@ -1039,7 +1134,8 @@
                     "Negara bergaduh",
                     "Negara berpecah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.1-5"
                 },
                 {
                   "q": "Pilih kata hubung yang sesuai: 'Rakyat Malaysia hidup aman ______ harmoni.'",
@@ -1049,7 +1145,8 @@
                     "tetapi",
                     "dan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.1-6"
                 },
                 {
                   "q": "Ayat 'Malaysia sebuah negara yang unik.' ialah jenis ayat ________.",
@@ -1059,7 +1156,8 @@
                     "seruan",
                     "penyata"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.1-7"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'harmoni' ialah ________.",
@@ -1069,7 +1167,8 @@
                     "aman",
                     "gaduh"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.1-8"
                 },
                 {
                   "q": "'Berbagai ______, satu ______.' Lengkapkan cogan kata perpaduan.",
@@ -1079,7 +1178,8 @@
                     "agama; cara",
                     "kaum; negara"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.1-9"
                 }
               ]
             },
@@ -1095,7 +1195,8 @@
                     "Gotong-royong membersihkan kawasan",
                     "Bergaduh dengan jiran"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.2-0"
                 },
                 {
                   "q": "Mengapakah sambutan hari perayaan bersama penting?",
@@ -1105,7 +1206,8 @@
                     "Untuk bersaing",
                     "Untuk membazir wang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.2-1"
                 },
                 {
                   "q": "Kata kerja 'bergotong-royong' bermaksud ________.",
@@ -1115,7 +1217,8 @@
                     "bermain",
                     "berehat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.2-2"
                 },
                 {
                   "q": "Pilih kata adjektif yang betul: 'Suasana gotong-royong sangat ______.'",
@@ -1125,7 +1228,8 @@
                     "bosan",
                     "sunyi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.2-3"
                 },
                 {
                   "q": "'Bulat air kerana ______, bulat kata kerana ______.' Lengkapkan peribahasa.",
@@ -1135,7 +1239,8 @@
                     "sungai; laut",
                     "pembetung; muafakat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.2-4"
                 },
                 {
                   "q": "Apakah faedah semangat kejiranan yang baik?",
@@ -1145,7 +1250,8 @@
                     "Bermusuh-musuhan",
                     "Tidak bertegur sapa"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.2-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Mereka ______ gotong-royong membersihkan taman.'",
@@ -1155,7 +1261,8 @@
                     "ber",
                     "di"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.2-6"
                 },
                 {
                   "q": "Ayat 'Mari kita sama-sama menjaga perpaduan.' termasuk jenis ayat ________.",
@@ -1165,7 +1272,8 @@
                     "penyata",
                     "seruan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.2-7"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'bersatu'?",
@@ -1175,7 +1283,8 @@
                     "berkumpul",
                     "bercerai"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.2-8"
                 },
                 {
                   "q": "'Kita ______, kita ______.' Pilih kata yang sesuai untuk semangat perpaduan.",
@@ -1185,7 +1294,8 @@
                     "berbeza; bersatu",
                     "berlainan; bergaduh"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.2-9"
                 }
               ]
             },
@@ -1201,7 +1311,8 @@
                     "Baju kurung dan baju melayu",
                     "Hanbok"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.3-0"
                 },
                 {
                   "q": "Apakah tarian tradisional kaum India?",
@@ -1211,7 +1322,8 @@
                     "Ngajat",
                     "Joget"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-4-4.3-1"
                 },
                 {
                   "q": "Kata adjektif 'harmoni' bermaksud ________.",
@@ -1221,7 +1333,8 @@
                     "gaduh dan huru-hara",
                     "sedih dan murung"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ budaya kaum lain.'",
@@ -1231,7 +1344,8 @@
                     "memusuhi",
                     "menghormati"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.3-3"
                 },
                 {
                   "q": "'Berbeda ______, tetap ______.' Lengkapkan slogan perpaduan budaya.",
@@ -1241,7 +1355,8 @@
                     "warna; berbeza",
                     "budaya; satu"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.3-4"
                 },
                 {
                   "q": "Mengapakah toleransi antara kaum penting?",
@@ -1251,7 +1366,8 @@
                     "Untuk mengekalkan keharmonian",
                     "Untuk mendapat hadiah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.3-5"
                 },
                 {
                   "q": "Pilih kata nama yang tepat: '______ antara kaum perlu dipelihara.'",
@@ -1261,7 +1377,8 @@
                     "Bergaduh",
                     "Memarahi"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-4-4.3-6"
                 },
                 {
                   "q": "Ayat 'Janganlah kita bersikap perkauman.' termasuk jenis ayat ________.",
@@ -1271,7 +1388,8 @@
                     "larangan",
                     "tanya"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.3-7"
                 },
                 {
                   "q": "'Bagai isi dengan kuku' bermaksud ________.",
@@ -1281,7 +1399,8 @@
                     "bercerai-berai",
                     "sangat rapat dan karib"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-4-4.3-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'toleransi' ialah ________.",
@@ -1291,7 +1410,8 @@
                     "bertolak ansur",
                     "bermusuhan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-4-4.3-9"
                 }
               ]
             }
@@ -1312,7 +1432,8 @@
                     "Tapak pembakaran",
                     "Tempat membuang sampah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.1-0"
                 },
                 {
                   "q": "Apakah kesan penebangan hutan secara berleluasa?",
@@ -1322,7 +1443,8 @@
                     "Hidup selesa",
                     "Udara segar"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.1-1"
                 },
                 {
                   "q": "Kata adjektif 'indah' sesuai untuk menggambarkan ________.",
@@ -1332,7 +1454,8 @@
                     "sungai yang kotor",
                     "udara yang tercemar"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.1-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ alam sekitar.'",
@@ -1342,7 +1465,8 @@
                     "memelihara",
                     "mencemarkan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-5-5.1-3"
                 },
                 {
                   "q": "'Alam ______, hidup ______.' Lengkapkan dengan kata yang sesuai.",
@@ -1352,7 +1476,8 @@
                     "terjaga; sejahtera",
                     "cemar; senang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-5-5.1-4"
                 },
                 {
                   "q": "Apakah maksud pemuliharaan alam?",
@@ -1362,7 +1487,8 @@
                     "Menjaga dan melindungi alam sekitar",
                     "Mencemarkan alam sekitar"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-5-5.1-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Kita perlu menjaga alam ______ kita mahu hidup selesa.'",
@@ -1372,7 +1498,8 @@
                     "tetapi",
                     "sambil"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.1-6"
                 },
                 {
                   "q": "Ayat 'Sayangilah alam sekitar kita.' termasuk jenis ayat ________.",
@@ -1382,7 +1509,8 @@
                     "seruan",
                     "penyata"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-5-5.1-7"
                 },
                 {
                   "q": "'Bumi ______, kita ______.' Lengkapkan slogan alam sekitar.",
@@ -1392,7 +1520,8 @@
                     "panas; sejuk",
                     "rosak; derita"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.1-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'lestari' ialah ________.",
@@ -1402,7 +1531,8 @@
                     "musnah",
                     "kekal"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-5-5.1-9"
                 }
               ]
             },
@@ -1418,7 +1548,8 @@
                     "Batu-batan",
                     "Manusia"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.2-0"
                 },
                 {
                   "q": "Haiwan yang manakah menjadi lambang kebangsaan Malaysia?",
@@ -1428,7 +1559,8 @@
                     "Burung Kenyalang",
                     "Harimau Malaya"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-5-5.2-1"
                 },
                 {
                   "q": "Kata adjektif 'unik' bermaksud ________.",
@@ -1438,7 +1570,8 @@
                     "sama seperti yang lain",
                     "biasa-biasa sahaja"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.2-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ hidupan liar yang dilindungi.'",
@@ -1448,7 +1581,8 @@
                     "membunuh",
                     "memelihara"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-5-5.2-3"
                 },
                 {
                   "q": "Bunga kebangsaan Malaysia ialah ________.",
@@ -1458,7 +1592,8 @@
                     "Bunga Teratai",
                     "Bunga Melati"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.2-4"
                 },
                 {
                   "q": "Apakah kesan jika spesies haiwan pupus?",
@@ -1468,7 +1603,8 @@
                     "Manusia gembira",
                     "Udara menjadi bersih"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.2-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Haiwan langka perlu di ______ lindungi.'",
@@ -1478,7 +1614,8 @@
                     "me",
                     "mem"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.2-6"
                 },
                 {
                   "q": "Ayat 'Jangan memburu haiwan yang dilindungi.' ialah jenis ayat ________.",
@@ -1488,7 +1625,8 @@
                     "larangan",
                     "tanya"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-5-5.2-7"
                 },
                 {
                   "q": "'Harimau mati meninggalkan ______, manusia mati meninggalkan ______.'",
@@ -1498,7 +1636,8 @@
                     "taring; wang",
                     "belang; nama"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-5-5.2-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'pupus'?",
@@ -1508,7 +1647,8 @@
                     "lenyap",
                     "musnah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.2-9"
                 }
               ]
             },
@@ -1524,7 +1664,8 @@
                     "Angin kencang",
                     "Hujan lebat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.3-0"
                 },
                 {
                   "q": "Apakah amalan yang dapat mengurangkan pencemaran?",
@@ -1534,7 +1675,8 @@
                     "Membuang sampah ke sungai",
                     "Kitar semula bahan buangan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-5-5.3-1"
                 },
                 {
                   "q": "Kata adjektif 'tercemar' bermaksud ________.",
@@ -1544,7 +1686,8 @@
                     "cantik dan indah",
                     "nyaman dan segar"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ pencemaran alam.'",
@@ -1554,7 +1697,8 @@
                     "menyebabkan",
                     "membiarkan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.3-3"
                 },
                 {
                   "q": "'______ hari ini untuk ______ esok.' Lengkapkan slogan kitar semula.",
@@ -1564,7 +1708,8 @@
                     "Kitar semula; masa depan",
                     "Buang sampah; kebersihan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-5-5.3-4"
                 },
                 {
                   "q": "Kelas bahan yang boleh dikitar semula ialah ________.",
@@ -1574,7 +1719,8 @@
                     "sisa makanan",
                     "kotoran haiwan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.3-5"
                 },
                 {
                   "q": "Pilih kata hubung yang sesuai: 'Kita boleh mengitar semula ______ mengurangkan sampah.'",
@@ -1584,7 +1730,8 @@
                     "tetapi",
                     "kerana"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.3-6"
                 },
                 {
                   "q": "Ayat 'Amalkan 3R: Reduce, Reuse, Recycle!' termasuk jenis ayat ________.",
@@ -1594,7 +1741,8 @@
                     "penyata",
                     "tanya"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-5-5.3-7"
                 },
                 {
                   "q": "'Cegah ______, jaga ______.' Pilih kata yang sesuai untuk ayat ini.",
@@ -1604,7 +1752,8 @@
                     "marah; hati",
                     "malas; semangat"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.3-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'cegah'?",
@@ -1614,7 +1763,8 @@
                     "halang",
                     "tegah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-5-5.3-9"
                 }
               ]
             }
@@ -1635,7 +1785,8 @@
                     "Cinta akan wang",
                     "Cinta akan diri sendiri"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.1-0"
                 },
                 {
                   "q": "Apakah lagu kebangsaan Malaysia?",
@@ -1645,7 +1796,8 @@
                     "Tanah Pusaka",
                     "Jalur Gemilang"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.1-1"
                 },
                 {
                   "q": "Kata adjektif 'patriotik' bermaksud ________.",
@@ -1655,7 +1807,8 @@
                     "tidak bertanggungjawab",
                     "mementingkan diri"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.1-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ bendera negara dengan megah.'",
@@ -1665,7 +1818,8 @@
                     "memijak",
                     "mengibarkan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-6-6.1-3"
                 },
                 {
                   "q": "'______ bangsa, ______ negara.' Lengkapkan slogan patriotik.",
@@ -1675,7 +1829,8 @@
                     "Hidup; gemilang",
                     "Lupakan; hancurkan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-6-6.1-4"
                 },
                 {
                   "q": "Apakah warna yang terdapat pada Jalur Gemilang?",
@@ -1685,7 +1840,8 @@
                     "Hijau dan kuning",
                     "Merah, putih, biru, kuning"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-6-6.1-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Kita perlu cinta akan negara ______ kita rakyat Malaysia.'",
@@ -1695,7 +1851,8 @@
                     "sambil",
                     "atau"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.1-6"
                 },
                 {
                   "q": "Ayat 'Tegakkan negaraku!' termasuk jenis ayat ________.",
@@ -1705,7 +1862,8 @@
                     "penyata",
                     "larangan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.1-7"
                 },
                 {
                   "q": "'Jangan ______ negara sendiri.' Pilih kata kerja yang sesuai.",
@@ -1715,7 +1873,8 @@
                     "memuji",
                     "mencintai"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.1-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'berkorban' ialah ________.",
@@ -1725,7 +1884,8 @@
                     "memberi",
                     "mengambil"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-6-6.1-9"
                 }
               ]
             },
@@ -1741,7 +1901,8 @@
                     "Tun Dr. Mahathir",
                     "Tunku Abdul Rahman"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-6-6.2-0"
                 },
                 {
                   "q": "Apakah jasa Tunku Abdul Rahman kepada negara?",
@@ -1751,7 +1912,8 @@
                     "Menulis lagu kebangsaan",
                     "Membina bangunan tinggi"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.2-1"
                 },
                 {
                   "q": "Kata adjektif yang sesuai untuk menggambarkan tokoh negara ialah ________.",
@@ -1761,7 +1923,8 @@
                     "sombrong",
                     "berjasa"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-6-6.2-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ jasa tokoh negara.'",
@@ -1771,7 +1934,8 @@
                     "melupakan",
                     "mengenang"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-6-6.2-3"
                 },
                 {
                   "q": "'______ pemimpin, ______ negara.' Lengkapkan ayat.",
@@ -1781,7 +1945,8 @@
                     "Lawan; hancur",
                     "Tentang; rosak"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.2-4"
                 },
                 {
                   "q": "Siapakah Perdana Menteri Malaysia yang pertama?",
@@ -1791,7 +1956,8 @@
                     "Tun Hussein Onn",
                     "Tun Dr. Mahathir Mohamad"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.2-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Jasa tokoh negara perlu di ______ kenang.'",
@@ -1801,7 +1967,8 @@
                     "peringati",
                     "berkenang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-6-6.2-6"
                 },
                 {
                   "q": "Ayat 'Tokoh negara berjuang untuk kemerdekaan.' ialah jenis ayat ________.",
@@ -1811,7 +1978,8 @@
                     "tanya",
                     "perintah"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.2-7"
                 },
                 {
                   "q": "'Gajah mati meninggalkan gading, harimau mati meninggalkan belang, manusia mati meninggalkan ________.'",
@@ -1821,7 +1989,8 @@
                     "duit",
                     "rumah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.2-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'berjasa'?",
@@ -1831,7 +2000,8 @@
                     "berkorban",
                     "berbudi"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.2-9"
                 }
               ]
             },
@@ -1847,7 +2017,8 @@
                     "Mencemarkan alam",
                     "Mematuhi undang-undang"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-6-6.3-0"
                 },
                 {
                   "q": "Mengapakah kita perlu membayar cukai?",
@@ -1857,7 +2028,8 @@
                     "Untuk keluarga",
                     "Untuk diri sendiri"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.3-1"
                 },
                 {
                   "q": "Kata adjektif 'bertanggungjawab' bermaksud ________.",
@@ -1867,7 +2039,8 @@
                     "cuai",
                     "tidak peduli"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Rakyat perlu ______ pada pilihan raya.'",
@@ -1877,7 +2050,8 @@
                     "mengundi",
                     "tidak peduli"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-6-6.3-3"
                 },
                 {
                   "q": "'______ undang-undang, ______ negara.' Lengkapkan ayat.",
@@ -1887,7 +2061,8 @@
                     "Cabut; hancur",
                     "Tentang; makmur"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.3-4"
                 },
                 {
                   "q": "Apakah hak asasi rakyat Malaysia?",
@@ -1897,7 +2072,8 @@
                     "Mendapat pendidikan",
                     "Membuang sampah merata-rata"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-6-6.3-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Kita perlu menjaga harta awam ______ kita rakyat yang bertanggungjawab.'",
@@ -1907,7 +2083,8 @@
                     "tetapi",
                     "jika"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-6-6.3-6"
                 },
                 {
                   "q": "Ayat 'Buktikanlah cinta kamu kepada negara.' termasuk jenis ayat ________.",
@@ -1917,7 +2094,8 @@
                     "perintah",
                     "larangan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-6-6.3-7"
                 },
                 {
                   "q": "'Di mana bumi dipijak, di situ ______ dijunjung.' Lengkapkan peribahasa.",
@@ -1927,7 +2105,8 @@
                     "kaki",
                     "kepala"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.3-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'patuh'?",
@@ -1937,7 +2116,8 @@
                     "taat",
                     "tunduk"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-6-6.3-9"
                 }
               ]
             }
@@ -1958,7 +2138,8 @@
                     "Batu",
                     "Kayu"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-7-7.1-0"
                 },
                 {
                   "q": "Apakah kepentingan internet dalam pembelajaran?",
@@ -1968,7 +2149,8 @@
                     "Meniru kerja orang lain",
                     "Bermain permainan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-7-7.1-1"
                 },
                 {
                   "q": "Kata adjektif 'moden' bermaksud ________.",
@@ -1978,7 +2160,8 @@
                     "baharu dan canggih",
                     "purba"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-7-7.1-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Teknologi telah ______ kehidupan manusia.'",
@@ -1988,7 +2171,8 @@
                     "menyusahkan",
                     "memburukkan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-7-7.1-3"
                 },
                 {
                   "q": "'Teknologi ______, hidup ______.' Lengkapkan ayat.",
@@ -1998,7 +2182,8 @@
                     "lama; baik",
                     "usang; bahagia"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-7-7.1-4"
                 },
                 {
                   "q": "Apakah maksud inovasi?",
@@ -2008,7 +2193,8 @@
                     "Alat traditional",
                     "Barang lama"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-7-7.1-5"
                 },
                 {
                   "q": "Pilih imbuhan yang betul: 'Telefon pintar ______ revolusi dalam komunikasi.'",
@@ -2018,7 +2204,8 @@
                     "berbawa",
                     "membawa"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.1-6"
                 },
                 {
                   "q": "Ayat 'Gunakan teknologi dengan bijak.' termasuk jenis ayat ________.",
@@ -2028,7 +2215,8 @@
                     "tanya",
                     "perintah"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.1-7"
                 },
                 {
                   "q": "'______ canggih, ______ selamat.' Pilih perkataan yang sesuai.",
@@ -2038,7 +2226,8 @@
                     "Gajet; murung",
                     "Komputer; bahaya"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-7-7.1-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'canggih'?",
@@ -2048,7 +2237,8 @@
                     "hebat",
                     "kuno"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.1-9"
                 }
               ]
             },
@@ -2064,7 +2254,8 @@
                     "Pembelajaran dan penyelidikan",
                     "Menonton video"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-7-7.2-0"
                 },
                 {
                   "q": "Apakah yang dimaksudkan dengan laman web?",
@@ -2074,7 +2265,8 @@
                     "Buku yang tebal",
                     "Kertas kerja"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-7-7.2-1"
                 },
                 {
                   "q": "Kata adjektif 'digital' bermaksud ________.",
@@ -2084,7 +2276,8 @@
                     "berkaitan dengan buku",
                     "berkaitan dengan tulisan tangan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-7-7.2-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu melayari internet secara ________.'",
@@ -2094,7 +2287,8 @@
                     "bahaya",
                     "selamat"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.2-3"
                 },
                 {
                   "q": "'Internet ______, maklumat ______.' Lengkapkan ayat.",
@@ -2104,7 +2298,8 @@
                     "sempit; sikit",
                     "luas; banyak"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.2-4"
                 },
                 {
                   "q": "Mengapakah kita perlu berhati-hati di internet?",
@@ -2114,7 +2309,8 @@
                     "Kerana seronok",
                     "Mengelakkan ancaman siber"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.2-5"
                 },
                 {
                   "q": "Pilih kata hubung yang sesuai: 'Kita boleh belajar secara dalam talian ______ menggunakan internet.'",
@@ -2124,7 +2320,8 @@
                     "atau",
                     "dengan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.2-6"
                 },
                 {
                   "q": "Ayat 'Jangan berkongsi kata laluan dengan orang lain.' ialah jenis ayat ________.",
@@ -2134,7 +2331,8 @@
                     "tanya",
                     "larangan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.2-7"
                 },
                 {
                   "q": "'______ siber perlu ______ oleh semua pengguna internet.' Pilih kata yang sesuai.",
@@ -2144,7 +2342,8 @@
                     "Keselamatan; diamalkan",
                     "Jenayah; dipuji"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-7-7.2-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'melayari' dalam konteks internet ialah ________.",
@@ -2154,7 +2353,8 @@
                     "memancing",
                     "melawati"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.2-9"
                 }
               ]
             },
@@ -2170,7 +2370,8 @@
                     "Komputer yang tidur",
                     "Alat yang boleh bercakap"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-7-7.3-0"
                 },
                 {
                   "q": "Di manakah robot digunakan dalam bidang perubatan?",
@@ -2180,7 +2381,8 @@
                     "Pembedahan",
                     "Menyanyi"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-7-7.3-1"
                 },
                 {
                   "q": "Kata adjektif 'automatik' bermaksud ________.",
@@ -2190,7 +2392,8 @@
                     "manual",
                     "dikawal sepenuhnya oleh manusia"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-7-7.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Inovasi ______ kualiti kehidupan manusia.'",
@@ -2200,7 +2403,8 @@
                     "menurunkan",
                     "meningkatkan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.3-3"
                 },
                 {
                   "q": "'Inovasi ______, negara ______.' Lengkapkan ayat.",
@@ -2210,7 +2414,8 @@
                     "buruk; rosak",
                     "lemah; hancur"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-7-7.3-4"
                 },
                 {
                   "q": "Apakah contoh tenaga boleh baharu?",
@@ -2220,7 +2425,8 @@
                     "Minyak diesel",
                     "Tenaga suria"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.3-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Robot digunakan untuk ______ lakukan tugasan berulang.'",
@@ -2230,7 +2436,8 @@
                     "di",
                     "men"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.3-6"
                 },
                 {
                   "q": "Ayat 'Mari kita mencipta inovasi baharu.' termasuk jenis ayat ________.",
@@ -2240,7 +2447,8 @@
                     "tanya",
                     "ajakan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-7-7.3-7"
                 },
                 {
                   "q": "'______ hijau untuk ______ lestari.' Pilih kata yang sesuai.",
@@ -2250,7 +2458,8 @@
                     "Industri; udara",
                     "Pembalakan; hutan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-7-7.3-8"
                 },
                 {
                   "q": "Apakah sinonim bagi perkataan 'inovasi'?",
@@ -2260,7 +2469,8 @@
                     "pembaharuan",
                     "kemunduran"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-7-7.3-9"
                 }
               ]
             }
@@ -2281,7 +2491,8 @@
                     "Alat untuk bermain",
                     "Alat pertukaran dalam urusan jual beli"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-8-8.1-0"
                 },
                 {
                   "q": "Mengapakah kita perlu menabung?",
@@ -2291,7 +2502,8 @@
                     "Untuk membazir",
                     "Untuk kegunaan masa depan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-8-8.1-1"
                 },
                 {
                   "q": "Kata adjektif 'boros' bermaksud ________.",
@@ -2301,7 +2513,8 @@
                     "suka bekerja",
                     "suka berehat"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-8-8.1-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ wang dengan bijak.'",
@@ -2311,7 +2524,8 @@
                     "mengurus",
                     "menghabiskan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.1-3"
                 },
                 {
                   "q": "'Menabung ______, menghabiskan ______.' Lengkapkan ayat.",
@@ -2321,7 +2535,8 @@
                     "buruk; untung",
                     "banyak; sikit"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.1-4"
                 },
                 {
                   "q": "Apakah tempat yang selamat untuk menyimpan wang?",
@@ -2331,7 +2546,8 @@
                     "Di bawah bantal",
                     "Dalam kotak"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-8-8.1-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Kita perlu menabung ______ masa depan.'",
@@ -2341,7 +2557,8 @@
                     "tetapi",
                     "untuk"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-8-8.1-6"
                 },
                 {
                   "q": "Ayat 'Simpanlah wang di bank.' termasuk jenis ayat ________.",
@@ -2351,7 +2568,8 @@
                     "seruan",
                     "penyata"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.1-7"
                 },
                 {
                   "q": "'Sedikit-sedikit, lama-lama menjadi ______.' Lengkapkan peribahasa tentang menabung.",
@@ -2361,7 +2579,8 @@
                     "bukit",
                     "gunung"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.1-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'simpan'?",
@@ -2371,7 +2590,8 @@
                     "keluarkan",
                     "pegang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.1-9"
                 }
               ]
             },
@@ -2387,7 +2607,8 @@
                     "Sedekah orang lain",
                     "Wang daripada jiran"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.2-0"
                 },
                 {
                   "q": "Pekerjaan yang manakah termasuk dalam sektor perkhidmatan?",
@@ -2397,7 +2618,8 @@
                     "Petani",
                     "Nelayan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.2-1"
                 },
                 {
                   "q": "Kata adjektif 'mulia' bermaksud ________.",
@@ -2407,7 +2629,8 @@
                     "buruk dan keji",
                     "terhormat dan baik"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-8-8.2-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Ibu bapa ______ rezeki untuk keluarga.'",
@@ -2417,7 +2640,8 @@
                     "menyia-nyiakan",
                     "mencari"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-8-8.2-3"
                 },
                 {
                   "q": "'Rezeki ______, jangan ______.' Lengkapkan ayat.",
@@ -2427,7 +2651,8 @@
                     "habis; simpan",
                     "tunggu; usahakan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-8-8.2-4"
                 },
                 {
                   "q": "Apakah yang dimaksudkan dengan usahawan?",
@@ -2437,7 +2662,8 @@
                     "Orang yang bersekolah",
                     "Orang yang bersara"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.2-5"
                 },
                 {
                   "q": "Pilih imbuhan yang sesuai: 'Beliau ______ niaga secara kecil-kecilan.'",
@@ -2447,7 +2673,8 @@
                     "ber",
                     "ter"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.2-6"
                 },
                 {
                   "q": "Ayat 'Hormatilah setiap pekerjaan.' termasuk jenis ayat ________.",
@@ -2457,7 +2684,8 @@
                     "perintah",
                     "tanya"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.2-7"
                 },
                 {
                   "q": "'Rajin ______, malas ______.' Lengkapkan peribahasa.",
@@ -2467,7 +2695,8 @@
                     "belajar; main",
                     "belanja; simpan"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.2-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'pendapatan' ialah ________.",
@@ -2477,7 +2706,8 @@
                     "hutang",
                     "kerugian"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.2-9"
                 }
               ]
             },
@@ -2493,7 +2723,8 @@
                     "Pendiam dan pemalu",
                     "Cepat berputus asa"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.3-0"
                 },
                 {
                   "q": "Apakah contoh perniagaan yang boleh dilakukan oleh murid?",
@@ -2503,7 +2734,8 @@
                     "Memandu teksi",
                     "Membeli rumah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.3-1"
                 },
                 {
                   "q": "Kata adjektif 'inovatif' bermaksud ________.",
@@ -2513,7 +2745,8 @@
                     "malas berfikir",
                     "suka meniru"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Seorang usahawan perlu ______ peluang perniagaan.'",
@@ -2523,7 +2756,8 @@
                     "mencari",
                     "membuang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.3-3"
                 },
                 {
                   "q": "'Usahawan ______, ekonomi ______.' Lengkapkan ayat.",
@@ -2533,7 +2767,8 @@
                     "berjaya; maju",
                     "gagal; kukuh"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.3-4"
                 },
                 {
                   "q": "Mengapakah kita perlu memupuk semangat keusahawanan sejak muda?",
@@ -2543,7 +2778,8 @@
                     "Untuk menyemai nilai kemandirian",
                     "Untuk bermain-main"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.3-5"
                 },
                 {
                   "q": "Pilih kata hubung yang sesuai: 'Mereka berniaga ______ mendapat keuntungan.'",
@@ -2553,7 +2789,8 @@
                     "sambil",
                     "kerana"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-8-8.3-6"
                 },
                 {
                   "q": "Ayat 'Jangan takut untuk mencuba perniagaan.' ialah jenis ayat ________.",
@@ -2563,7 +2800,8 @@
                     "seruan",
                     "larangan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-8-8.3-7"
                 },
                 {
                   "q": "'______ sambil ______.' Maksud peribahasa ini adalah melakukan dua perkara serentak.",
@@ -2573,7 +2811,8 @@
                     "lari; kerja",
                     "Berenang; tidur"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-8-8.3-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'maju'?",
@@ -2583,7 +2822,8 @@
                     "mundur",
                     "gemilang"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-8-8.3-9"
                 }
               ]
             }
@@ -2604,7 +2844,8 @@
                     "Joget",
                     "Bharatanatyam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.1-0"
                 },
                 {
                   "q": "Alat muzik tradisional yang dipalu dan sering digunakan dalam majlis keramaian Melayu ialah ________.",
@@ -2614,7 +2855,8 @@
                     "piano",
                     "violin"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.1-1"
                 },
                 {
                   "q": "Kata adjektif 'tradisional' bermaksud ________.",
@@ -2624,7 +2866,8 @@
                     "turun-temurun dari zaman dahulu",
                     "import dari luar negara"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.1-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Kita perlu ______ warisan bangsa.'",
@@ -2634,7 +2877,8 @@
                     "memusnahkan",
                     "membuang"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.1-3"
                 },
                 {
                   "q": "'Warisan ______, budaya ______.' Lengkapkan ayat.",
@@ -2644,7 +2888,8 @@
                     "hilang; lenyap",
                     "pupus; binasa"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.1-4"
                 },
                 {
                   "q": "Apakah pakaian tradisional kaum Kadazan?",
@@ -2654,7 +2899,8 @@
                     "Cheongsam",
                     "Kain dongki / Kadazan traditional attire"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-9-9.1-5"
                 },
                 {
                   "q": "Pilih imbuhan yang betul: 'Tarian tradisional perlu di ______ warisi.'",
@@ -2664,7 +2910,8 @@
                     "mem",
                     "per"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-9-9.1-6"
                 },
                 {
                   "q": "Ayat 'Peliharalah warisan bangsa kita.' termasuk jenis ayat ________.",
@@ -2674,7 +2921,8 @@
                     "seruan",
                     "larangan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.1-7"
                 },
                 {
                   "q": "'______ budaya, ______ jati diri.' Pilih kata yang sesuai.",
@@ -2684,7 +2932,8 @@
                     "Pupuk; bentukkan",
                     "Hapus; binasakan"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.1-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'warisan' ialah ________.",
@@ -2694,7 +2943,8 @@
                     "hilangan",
                     "pusaka"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-9-9.1-9"
                 }
               ]
             },
@@ -2710,7 +2960,8 @@
                     "Sushi",
                     "Spaghetti"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.2-0"
                 },
                 {
                   "q": "Kuih tradisional yang dibuat daripada tepung beras dan santan, dibungkus dalam daun pisang ialah ________.",
@@ -2720,7 +2971,8 @@
                     "kuih lapis",
                     "kuih dadar"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.2-1"
                 },
                 {
                   "q": "Kata adjektif 'enak' bermaksud ________.",
@@ -2730,7 +2982,8 @@
                     "busuk dan basi",
                     "hambar dan tawar"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.2-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Nenek ______ kuih tradisional untuk cucu-cucunya.'",
@@ -2740,7 +2993,8 @@
                     "melupakan",
                     "memusnahkan"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.2-3"
                 },
                 {
                   "q": "'Makanan ______, tradisi ______.' Lengkapkan ayat.",
@@ -2750,7 +3004,8 @@
                     "panas; lenyap",
                     "warisan; kekal"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-9-9.2-4"
                 },
                 {
                   "q": "Apakah bahan utama dalam pembuatan ketupat?",
@@ -2760,7 +3015,8 @@
                     "Ubi kayu",
                     "Jagung"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.2-5"
                 },
                 {
                   "q": "Pilih kata hubung yang betul: 'Nasi lemak sedap ______ dimakan dengan sambal dan ikan bilis.'",
@@ -2770,7 +3026,8 @@
                     "apabila",
                     "tetapi"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.2-6"
                 },
                 {
                   "q": "Ayat 'Cubalah makanan tradisional ini.' termasuk jenis ayat ________.",
@@ -2780,7 +3037,8 @@
                     "larangan",
                     "ajakan"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-9-9.2-7"
                 },
                 {
                   "q": "'Dimakan ______, dibuang ______.' Lengkapkan pepatah tentang makanan.",
@@ -2790,7 +3048,8 @@
                     "lambat; cepat",
                     "panas; busuk"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.2-8"
                 },
                 {
                   "q": "Apakah antonim bagi perkataan 'manis'?",
@@ -2800,7 +3059,8 @@
                     "pahit",
                     "lazat"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.2-9"
                 }
               ]
             },
@@ -2816,7 +3076,8 @@
                     "Wau",
                     "Gasing"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.3-0"
                 },
                 {
                   "q": "Permainan wau dimainkan dengan cara ________.",
@@ -2826,7 +3087,8 @@
                     "menerbangkan layang-layang",
                     "menyepak bulu ayam"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.3-1"
                 },
                 {
                   "q": "Kata adjektif 'tradisional' sesuai digandingkan dengan kata ________.",
@@ -2836,7 +3098,8 @@
                     "kereta",
                     "telefon"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.3-2"
                 },
                 {
                   "q": "Pilih kata kerja yang betul: 'Mereka ______ congkak di serambi rumah.'",
@@ -2846,7 +3109,8 @@
                     "bermain",
                     "melukis"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.3-3"
                 },
                 {
                   "q": "'Permainan ______, minda ______.' Lengkapkan ayat.",
@@ -2856,7 +3120,8 @@
                     "digital; beku",
                     "moden; cetek"
                   ],
-                  "c": 1
+                  "c": 1,
+                  "id": "tb-bm5-9-9.3-4"
                 },
                 {
                   "q": "Apakah alat yang digunakan untuk bermain gasing?",
@@ -2866,7 +3131,8 @@
                     "Wau",
                     "Gasing (sejenis alat yang dipusingkan)"
                   ],
-                  "c": 3
+                  "c": 3,
+                  "id": "tb-bm5-9-9.3-5"
                 },
                 {
                   "q": "Pilih imbuhan yang tepat: 'Permainan rakyat perlu di ______ hidupkan semula.'",
@@ -2876,7 +3142,8 @@
                     "mem",
                     "me"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.3-6"
                 },
                 {
                   "q": "Ayat 'Bermain congkak sangat menyeronokkan.' ialah jenis ayat ________.",
@@ -2886,7 +3153,8 @@
                     "penyata",
                     "perintah"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "id": "tb-bm5-9-9.3-7"
                 },
                 {
                   "q": "'Menjulang layang-layang, ______ tinggi ______ jauh.'",
@@ -2896,7 +3164,8 @@
                     "seremban; jatuh",
                     "congkak; kalah"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.3-8"
                 },
                 {
                   "q": "Sinonim bagi perkataan 'rakyat' dalam konteks 'permainan rakyat' ialah ________.",
@@ -2906,7 +3175,8 @@
                     "global",
                     "antarabangsa"
                   ],
-                  "c": 0
+                  "c": 0,
+                  "id": "tb-bm5-9-9.3-9"
                 }
               ]
             }
