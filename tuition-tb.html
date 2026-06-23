@@ -592,17 +592,18 @@
                 });
                 const card = document.createElement('div');
                 card.className = 'subject-card';
+                const countLabel = s.tema ? `${Object.keys(s.tema).length} TEMA` : `${units.length} units`;
                 card.innerHTML = `<span class="subj-icon">${s.icon || '📘'}</span>
                     <div class="subj-info">
                         <div class="subj-name">${s.name}</div>
-                        <div class="subj-desc">${units.length} units · ${totalQ} questions</div>
+                        <div class="subj-desc">${countLabel} · ${totalQ} questions</div>
                     </div>`;
                 card.onclick = () => selectSubject(key);
                 list.appendChild(card);
             });
         }
 
-        // SELECT SUBJECT → show units
+        // SELECT SUBJECT → show units (with optional TEMA grouping)
         function selectSubject(key) {
             currentSubject = key;
             const s = questionBank.subjects[key];
@@ -612,42 +613,92 @@
             list.innerHTML = '';
             const units = s.units;
             const isPremium = subscriptionPlan === 'premium';
-            Object.keys(units).forEach(uk => {
-                const u = units[uk];
-                const topics = Object.keys(u.topics);
-                // Calculate unit progress
-                let done = 0;
-                topics.forEach(tk => {
-                    const sk = `tb-${currentSubject}-${uk}-${tk}`;
-                    if (userScores[sk] && userScores[sk].score > 0) done++;
+
+            if (s.tema) {
+                // TEMA-grouped rendering (BM textbook style)
+                const temaKeys = Object.keys(s.tema).sort((a,b) => parseInt(a) - parseInt(b));
+                temaKeys.forEach(tk => {
+                    const tema = s.tema[tk];
+                    // TEMA header
+                    const header = document.createElement('div');
+                    header.style.cssText = 'margin:20px 0 8px 0;padding:8px 14px;background:linear-gradient(135deg,#9b59b6,#8e44ad);color:white;border-radius:10px;font-weight:700;font-size:0.95rem;text-align:left;letter-spacing:0.5px;';
+                    header.textContent = `📖 TEMA ${tk}: ${tema.name}`;
+                    list.appendChild(header);
+                    
+                    // Units under this TEMA
+                    (tema.units || []).forEach(uk => {
+                        const u = units[uk];
+                        if (!u) return;
+                        const topics = Object.keys(u.topics || {});
+                        let done = 0;
+                        topics.forEach(tk2 => {
+                            const sk = `tb-${currentSubject}-${uk}-${tk2}`;
+                            if (userScores[sk] && userScores[sk].score > 0) done++;
+                        });
+                        const pct = topics.length > 0 ? Math.round((done / topics.length) * 100) : 0;
+
+                        const card = document.createElement('div');
+                        card.className = 'unit-card';
+                        card.style.marginLeft = '8px';
+
+                        const unitNum = parseInt(uk);
+                        const locked = !isPremium && unitNum > 1;
+
+                        if (locked) {
+                            card.style.opacity = '0.65';
+                            card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name} <span style="font-size:0.85rem; color:#f39c12;">🔒</span>
+                                <div class="unit-progress-wrap">
+                                    <span style="color:#f39c12; font-size:0.8rem;">⭐ Premium</span>
+                                </div>`;
+                            card.onclick = showPremiumModal;
+                        } else {
+                            card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
+                                <div class="unit-progress-wrap">
+                                    <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
+                                    <span class="unit-progress-text">${done}/${topics.length}</span>
+                                </div>`;
+                            card.onclick = () => selectUnit(uk);
+                        }
+                        list.appendChild(card);
+                    });
                 });
-                const pct = topics.length > 0 ? Math.round((done / topics.length) * 100) : 0;
+            } else {
+                // Flat unit rendering (default for Math, Science, etc.)
+                Object.keys(units).forEach(uk => {
+                    const u = units[uk];
+                    const topics = Object.keys(u.topics || {});
+                    let done = 0;
+                    topics.forEach(tk => {
+                        const sk = `tb-${currentSubject}-${uk}-${tk}`;
+                        if (userScores[sk] && userScores[sk].score > 0) done++;
+                    });
+                    const pct = topics.length > 0 ? Math.round((done / topics.length) * 100) : 0;
 
-                const card = document.createElement('div');
-                card.className = 'unit-card';
+                    const card = document.createElement('div');
+                    card.className = 'unit-card';
 
-                // Free users: only Unit 1 is accessible
-                const unitNum = parseInt(uk);
-                const locked = !isPremium && unitNum > 1;
+                    const unitNum = parseInt(uk);
+                    const locked = !isPremium && unitNum > 1;
 
-                if (locked) {
-                    card.style.opacity = '0.65';
-                    card.style.cursor = 'pointer';
-                    card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name} <span style="font-size:0.85rem; color:#f39c12;">🔒</span>
-                        <div class="unit-progress-wrap">
-                            <span style="color:#f39c12; font-size:0.8rem;">⭐ Premium</span>
-                        </div>`;
-                    card.onclick = showPremiumModal;
-                } else {
-                    card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
-                        <div class="unit-progress-wrap">
-                            <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
-                            <span class="unit-progress-text">${done}/${topics.length}</span>
-                        </div>`;
-                    card.onclick = () => selectUnit(uk);
-                }
-                list.appendChild(card);
-            });
+                    if (locked) {
+                        card.style.opacity = '0.65';
+                        card.style.cursor = 'pointer';
+                        card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name} <span style="font-size:0.85rem; color:#f39c12;">🔒</span>
+                            <div class="unit-progress-wrap">
+                                <span style="color:#f39c12; font-size:0.8rem;">⭐ Premium</span>
+                            </div>`;
+                        card.onclick = showPremiumModal;
+                    } else {
+                        card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
+                            <div class="unit-progress-wrap">
+                                <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
+                                <span class="unit-progress-text">${done}/${topics.length}</span>
+                            </div>`;
+                        card.onclick = () => selectUnit(uk);
+                    }
+                    list.appendChild(card);
+                });
+            }
 
             document.getElementById('subject-screen').style.display = 'none';
             document.getElementById('unit-screen').style.display = 'block';
