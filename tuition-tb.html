@@ -1001,49 +1001,56 @@
             else { feedback = 'Keep trying! 💪 Review the topic and try again.'; emoji = '💪'; }
             document.getElementById('feedback').textContent = feedback;
 
-            // Save to Firestore (per-profile path)
-            const uid = getUserId();
-            let isNewBest = false;
-            if (uid && kidName) {
-                try {
-                    const scoreKey = `tb-${currentSubject}-${currentUnit}-${currentTopic}`;
-                    const ref = doc(db, "profiles", uid, "children", kidName);
-                    const snap = await getDoc(ref);
-                    let existing = snap.exists() ? snap.data().tb_scores || {} : {};
-                    userScores = existing;
-                    if (!existing[scoreKey] || score > existing[scoreKey].score) {
-                        existing[scoreKey] = { score, total, pct, updatedAt: new Date().toISOString() };
-                        await setDoc(ref, { tb_scores: existing }, { merge: true });
-                        userScores = existing;
-                        document.getElementById('sync-status').textContent = '✅ Score saved!';
-                        isNewBest = true;
-                    } else {
-                        document.getElementById('sync-status').textContent = '✅ Best score kept!';
-                    }
-                    // Update streak
-                    await updateStreak();
-                } catch(e) {
-                    document.getElementById('sync-status').textContent = '⚠️ Offline mode (score not saved)';
-                }
-            } else {
-                document.getElementById('sync-status').textContent = 'Sign in to save your progress';
-            }
-
-            // Celebration for perfect score
-            if (pct === 100) {
-                showConfetti();
-                setTimeout(() => showCelebration(), 800);
-            }
-
-            // Show review button if there were mistakes
+            // Show review button if there were mistakes — do this BEFORE Firestore ops
+            // so buttons are always functional even if the save hangs
             const reviewBtn = document.getElementById('review-btn');
             if (wrongQuestions.length > 0) {
                 reviewBtn.style.display = 'block';
                 reviewBtn.innerText = `📝 Review ${wrongQuestions.length} Wrong Answer${wrongQuestions.length > 1 ? 's' : ''}`;
             }
-
             document.getElementById('retry-btn').onclick = () => startQuiz(currentTopic);
             document.getElementById('back-to-topics-btn').onclick = goToTopics;
+
+            // Celebration for perfect score (visual, must not block)
+            if (pct === 100) {
+                showConfetti();
+                setTimeout(() => showCelebration(), 800);
+            }
+
+            // Save to Firestore (async — fire-and-forget, don't block the UI)
+            saveScore().catch(() => {});
+        }
+
+        // Fire-and-forget score save — never blocks the result screen
+        async function saveScore() {
+            const uid = getUserId();
+            if (!uid || !kidName) {
+                document.getElementById('sync-status').textContent = 'Sign in to save your progress';
+                return;
+            }
+            const total = questions.length;
+            const pct = Math.round((score / total) * 100);
+            // Safety timeout: if Firestore doesn't respond in 5s, show offline mode and continue
+            const timeout = new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 5000));
+            try {
+                const scoreKey = `tb-${currentSubject}-${currentUnit}-${currentTopic}`;
+                const ref = doc(db, "profiles", uid, "children", kidName);
+                const snap = await Promise.race([getDoc(ref), timeout]);
+                let existing = snap.exists() ? snap.data().tb_scores || {} : {};
+                userScores = existing;
+                if (!existing[scoreKey] || score > existing[scoreKey].score) {
+                    existing[scoreKey] = { score, total, pct, updatedAt: new Date().toISOString() };
+                    await Promise.race([setDoc(ref, { tb_scores: existing }, { merge: true }), timeout]);
+                    userScores = existing;
+                    document.getElementById('sync-status').textContent = '✅ Score saved!';
+                } else {
+                    document.getElementById('sync-status').textContent = '✅ Best score kept!';
+                }
+                // Update streak (also fire-and-forget)
+                updateStreak().catch(() => {});
+            } catch(e) {
+                document.getElementById('sync-status').textContent = '⚠️ Offline mode (score not saved)';
+            }
         }
 
         // SHOW REVIEW
