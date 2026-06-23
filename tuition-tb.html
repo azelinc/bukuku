@@ -13,6 +13,7 @@
 
         .section { text-align: left; background: #fff; padding: 25px; border-radius: 20px; margin: 20px; border: 1px solid #eee; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         .q-text { font-size: 1.25rem; font-weight: bold; margin-bottom: 20px; color: #2c3e50; line-height: 1.5; }
+        .q-img { max-width: 100%; height: auto; margin: 10px 0 15px; border-radius: 8px; border: 1px solid #e0e0e0; }
 
         .btn {
             display: block; width: 100%; max-width: 300px; padding: 20px; margin: 10px auto;
@@ -587,7 +588,17 @@
             const q = questions[currentQ];
             document.getElementById('q-num').textContent = currentQ + 1;
             document.getElementById('current-score').textContent = score;
-            document.getElementById('question').textContent = q.q;
+            // Remove previous question image if any
+            const oldImg = document.querySelector('.q-img');
+            if (oldImg) oldImg.remove();
+            document.getElementById('question').innerHTML = q.q;
+            if (q.img) {
+                const img = document.createElement('img');
+                img.className = 'q-img';
+                img.src = q.img;
+                img.alt = 'Diagram for question';
+                document.getElementById('question').after(img);
+            }
 
             const optList = document.getElementById('options-list');
             optList.innerHTML = '';
@@ -655,7 +666,8 @@
                     q: q.q,
                     options: q.a,
                     correctIdx: q.c,
-                    chosenIdx: -1
+                    chosenIdx: -1,
+                    img: q.img
                 });
             } else {
                 // Wrong answer
@@ -663,7 +675,8 @@
                     q: q.q,
                     options: q.a,
                     correctIdx: q.c,
-                    chosenIdx: idx
+                    chosenIdx: idx,
+                    img: q.img
                 });
             }
             document.getElementById('current-score').textContent = score;
@@ -755,6 +768,7 @@
                     : `<span class="review-ur-answer">❌ Your answer: ${wq.options[wq.chosenIdx]}</span>`;
                 div.innerHTML = `
                     <div class="review-q">${i + 1}. ${wq.q}</div>
+                    ${wq.img ? `<img class="q-img" src="${wq.img}" alt="Diagram">` : ''}
                     ${chosenTxt}<br>
                     <span class="review-correct">✅ Correct answer: ${correctAns}</span>
                 `;

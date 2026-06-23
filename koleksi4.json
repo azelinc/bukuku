@@ -91,6 +91,7 @@
                     "25 009 dan 25 016"
                   ],
                   "c": 0,
+                  "img": "img/koleksi/math_q8_numberline.png",
                   "note": "unknown - needs diagram (number line)"
                 },
                 {
@@ -205,7 +206,8 @@
                     "46 120"
                   ],
                   "c": 0,
-                  "note": "unknown - needs diagram (number line)"
+                  "note": "unknown - needs diagram (number line)",
+                  "img": "img/koleksi/math_q19_numberline.png"
                 },
                 {
                   "q": "Bentukkan nombor terbesar dan terkecil, kemudian jumlah kedua-dua nombor. Di antara nombor di bawah yang manakah jawapan yang tepat?",
@@ -431,7 +433,8 @@
                     "16 031",
                     "16 310"
                   ],
-                  "c": 2
+                  "c": 2,
+                  "img": "img/koleksi/math_q41_numbercard.png"
                 },
                 {
                   "q": "Tuliskan nombor 24 806 dalam perkataan.",
@@ -462,7 +465,8 @@
                     "ribu"
                   ],
                   "c": 0,
-                  "note": "unknown - needs diagram (number card)"
+                  "note": "unknown - needs diagram (number card)",
+                  "img": "img/koleksi/math_q44_numbercard.png"
                 },
                 {
                   "q": "Antara berikut nombor manakah nilai tempat 4 adalah puluh?",
