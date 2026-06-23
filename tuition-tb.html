@@ -657,7 +657,7 @@
                                     <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
                                     <span class="unit-progress-text">${done}/${topics.length}</span>
                                 </div>`;
-                            card.onclick = () => selectUnit(uk);
+                            card.onclick = topics.length === 1 ? () => startQuiz(topics[0]) : () => selectUnit(uk);
                         }
                         list.appendChild(card);
                     });
@@ -694,7 +694,7 @@
                                 <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
                                 <span class="unit-progress-text">${done}/${topics.length}</span>
                             </div>`;
-                        card.onclick = () => selectUnit(uk);
+                        card.onclick = topics.length === 1 ? () => startQuiz(topics[0]) : () => selectUnit(uk);
                     }
                     list.appendChild(card);
                 });
@@ -1198,6 +1198,12 @@
 
         function goToTopics() {
             currentTopic = null;
+            // Single-topic units: skip topic screen, go back to units
+            const unit = questionBank?.subjects[currentSubject]?.units[currentUnit];
+            if (unit && Object.keys(unit.topics || {}).length === 1) {
+                goToUnits();
+                return;
+            }
             document.getElementById('topic-screen').style.display = 'block';
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'none';
