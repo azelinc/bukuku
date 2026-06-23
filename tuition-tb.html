@@ -436,6 +436,35 @@
                     });
                 });
                 
+                // Prune subjects/units/topics with zero questions matching student's DLP stream
+                Object.keys(merged.subjects).forEach(sk => {
+                    const s = merged.subjects[sk];
+                    Object.keys(s.units).forEach(uk => {
+                        const u = s.units[uk];
+                        Object.keys(u.topics).forEach(tk => {
+                            const t = u.topics[tk];
+                            t.questions = t.questions.filter(q => {
+                                if (q.dlp === undefined) return true;
+                                return q.dlp === isDlpProfile;
+                            });
+                        });
+                        // Remove empty topics
+                        Object.keys(u.topics).forEach(tk => {
+                            if (u.topics[tk].questions.length === 0) {
+                                delete u.topics[tk];
+                            }
+                        });
+                        // Remove empty units
+                        if (Object.keys(u.topics).length === 0) {
+                            delete s.units[uk];
+                        }
+                    });
+                    // Remove empty subjects
+                    if (Object.keys(s.units).length === 0) {
+                        delete merged.subjects[sk];
+                    }
+                });
+                
                 await Promise.all([loadUserScores(), loadSubscription()]);
                 renderSubjects();
                 updateStreakDisplay();
