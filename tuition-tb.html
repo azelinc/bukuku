@@ -793,6 +793,9 @@
                 showResults();
             }
         }
+        // Expose to global scope for inline onclick handlers in HTML
+        window.prevQ = prevQ;
+        window.nextQ = nextQ;
 
         function selectAnswer(idx) {
             if (answered) return;
