@@ -324,7 +324,8 @@
         let userScores = {};
         let subscriptionPlan = 'free';
         let selectedYear = parseInt(new URLSearchParams(window.location.search).get('year')) || 4;
-        let corrections = {};      // admin corrections from Firestore
+        let corrections = {};      // admin corrections from Firestore (answer index)
+        let questionOverrides = {};  // admin full question edits from Firestore
         let isAdmin = false;       // owner check
 
         // Get stored user
@@ -348,7 +349,18 @@
                 // Load corrections from Firestore (admin only, but fetch for all — applies to everyone)
                 try {
                     const corrSnap = await getDoc(doc(db, "corrections", "koleksi"));
-                    if (corrSnap.exists()) corrections = corrSnap.data() || {};
+                    if (corrSnap.exists()) {
+                        const data = corrSnap.data() || {};
+                        corrections = {};
+                        questionOverrides = {};
+                        Object.keys(data).forEach(k => {
+                            if (k.startsWith('_q_')) {
+                                questionOverrides[k.slice(3)] = data[k];
+                            } else {
+                                corrections[k] = data[k];
+                            }
+                        });
+                    }
                 } catch(e) {}
                 // Read profile DLP setting
                 const uid = getUserId();
@@ -390,7 +402,6 @@
                 // Apply Firestore corrections to question bank (overrides wrong answers from JSON)
                 Object.keys(corrections).forEach(qId => {
                     const correctIdx = corrections[qId];
-                    // Walk the entire bank to find matching question
                     Object.keys(merged.subjects).forEach(sk => {
                         const s = merged.subjects[sk];
                         Object.keys(s.units).forEach(uk => {
@@ -398,6 +409,24 @@
                                 s.units[uk].topics[tk].questions.forEach(q => {
                                     if (q.id === qId) {
                                         q.c = correctIdx;
+                                    }
+                                });
+                            });
+                        });
+                    });
+                });
+                // Apply full question overrides from Firestore (edit question text + options)
+                Object.keys(questionOverrides).forEach(qId => {
+                    const override = questionOverrides[qId];
+                    Object.keys(merged.subjects).forEach(sk => {
+                        const s = merged.subjects[sk];
+                        Object.keys(s.units).forEach(uk => {
+                            Object.keys(s.units[uk].topics).forEach(tk => {
+                                s.units[uk].topics[tk].questions.forEach(q => {
+                                    if (q.id === qId) {
+                                        if (override.q) q.q = override.q;
+                                        if (override.a) q.a = override.a;
+                                        if (override.c !== undefined) q.c = override.c;
                                     }
                                 });
                             });
@@ -751,6 +780,12 @@
                     corrLabel.innerHTML = '✏️ Click the CORRECT answer below...';
                 };
                 corrBar.appendChild(corrLabel);
+                // Add "Edit Question" button
+                const editBtn = document.createElement('button');
+                editBtn.textContent = '📝 Edit Question';
+                editBtn.style.cssText = 'display:block;margin-top:8px;padding:8px 14px;background:#fff;border:2px solid #ffc107;border-radius:8px;font-size:0.8rem;font-weight:700;cursor:pointer;color:#856404;width:100%;';
+                editBtn.onclick = () => showQuestionEditor(q, optList);
+                corrBar.appendChild(editBtn);
                 optList.after(corrBar);
             }
         }
@@ -776,7 +811,110 @@
 
         // SELECT ANSWER
         
-        // Track answered questions for navigation
+        
+        // OPEN INLINE QUESTION EDITOR
+        function showQuestionEditor(q, optList) {
+            const existing = questionOverrides[q.id] || {};
+            const origQ = q.q;
+            const origA = [...q.a];
+            const origC = q.c;
+            
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;';
+            
+            const card = document.createElement('div');
+            card.style.cssText = 'background:white;border-radius:16px;padding:20px;max-width:500px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 10px 40px rgba(0,0,0,0.3);';
+            
+            let html = \`<h3 style="margin:0 0 15px;font-size:1.1rem;">✏️ Edit Question</h3>
+                <label style="font-weight:700;font-size:0.85rem;display:block;margin-bottom:4px;">Question:</label>
+                <textarea id="edit-q-text" style="width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;font-size:0.95rem;margin-bottom:12px;resize:vertical;min-height:60px;font-family:inherit;">\${(existing.q || q.q).replace(/</g,'&lt;').replace(/>/g,'&gt;')}</textarea>
+                <label style="font-weight:700;font-size:0.85rem;display:block;margin-bottom:4px;">Options:</label>\`;
+            
+            const opts = existing.a || q.a;
+            const correctIdx = (existing.c !== undefined) ? existing.c : q.c;
+            for (let i = 0; i < 4; i++) {
+                const letter = String.fromCharCode(65 + i);
+                const checked = i === correctIdx ? 'checked' : '';
+                html += \`<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+                    <input type="radio" name="edit-correct" value="\${i}" \${checked} id="edit-cb-\${i}" style="flex-shrink:0;">
+                    <span style="font-weight:700;color:#555;flex-shrink:0;">\${letter})</span>
+                    <input type="text" id="edit-opt-\${i}" value="\${(opts[i] || '').replace(/</g,'&lt;').replace(/>/g,'&gt;')}" style="flex:1;padding:8px 10px;border:1px solid #ddd;border-radius:6px;font-size:0.9rem;">
+                </div>\`;
+            }
+            
+            html += \`<div style="display:flex;gap:10px;margin-top:15px;">
+                <button id="edit-save-btn" style="flex:1;padding:12px;background:#4a90e2;color:white;border:none;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer;">💾 Save</button>
+                <button id="edit-cancel-btn" style="flex:1;padding:12px;background:#eee;color:#666;border:none;border-radius:10px;font-weight:700;font-size:1rem;cursor:pointer;">Cancel</button>
+            </div>\`;
+            
+            card.innerHTML = html;
+            overlay.appendChild(card);
+            document.body.appendChild(overlay);
+            
+            // Cancel
+            document.getElementById('edit-cancel-btn').onclick = () => overlay.remove();
+            overlay.onclick = (e) => { if (e.target === overlay) overlay.remove(); };
+            
+            // Save
+            document.getElementById('edit-save-btn').onclick = async () => {
+                const newQ = document.getElementById('edit-q-text').value.trim();
+                const newOpts = [];
+                for (let i = 0; i < 4; i++) {
+                    newOpts.push(document.getElementById('edit-opt-' + i).value.trim());
+                }
+                const correctRadio = document.querySelector('input[name="edit-correct"]:checked');
+                const newC = correctRadio ? parseInt(correctRadio.value) : q.c;
+                
+                if (!newQ) { alert('Question text cannot be empty'); return; }
+                if (newOpts.some(o => !o)) { alert('All options must have text'); return; }
+                
+                const overrideData = { q: newQ, a: newOpts, c: newC };
+                
+                try {
+                    // Save to Firestore with _q_ prefix to not conflict with simple corrections
+                    await setDoc(doc(db, "corrections", "koleksi"), {
+                        ['_q_' + q.id]: overrideData
+                    }, { merge: true });
+                    
+                    // Apply locally
+                    questionOverrides[q.id] = overrideData;
+                    q.q = newQ;
+                    q.a = newOpts;
+                    q.c = newC;
+                    
+                    // Update the displayed question immediately
+                    document.getElementById('question').innerHTML = newQ;
+                    
+                    // Re-render options
+                    const optList2 = document.getElementById('options-list');
+                    optList2.innerHTML = '';
+                    newOpts.forEach((opt, i) => {
+                        const btn = document.createElement('button');
+                        btn.className = 'option-btn';
+                        btn.textContent = String.fromCharCode(65 + i) + ') ' + opt;
+                        btn.onclick = () => selectAnswer(i);
+                        optList2.appendChild(btn);
+                    });
+                    
+                    overlay.remove();
+                    showToast('✅ Question saved!', 'success');
+                } catch(e) {
+                    alert('❌ Failed to save: ' + e.message);
+                }
+            };
+        }
+        
+        function showToast(msg, type) {
+            const t = document.createElement('div');
+            t.style.cssText = 'position:fixed;bottom:80px;left:50%;transform:translateX(-50%);padding:12px 24px;border-radius:12px;font-weight:700;z-index:99999;font-size:0.9rem;box-shadow:0 4px 20px rgba(0,0,0,0.2);animation:fadeIn 0.2s;';
+            t.style.background = type === 'success' ? '#d4edda' : '#f8d7da';
+            t.style.color = type === 'success' ? '#155724' : '#721c24';
+            t.textContent = msg;
+            document.body.appendChild(t);
+            setTimeout(() => t.remove(), 3000);
+        }
+// Track answered questions for navigation
         let answeredMap = {};
 
         function prevQ() {
