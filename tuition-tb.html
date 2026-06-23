@@ -230,7 +230,7 @@
                 <div id="question" class="q-text">Loading...</div>
                 <div id="options-list"></div>
             </div>
-                    <div class="nav-row">
+                    <div class="nav-row" id="nav-row" style="display:none;">
                 <button class="nav-btn" id="prev-btn" onclick="prevQ()" disabled>◀ Previous</button>
                 <span class="nav-count">Question <span id="nav-q">1</span> of <span id="nav-total">0</span></span>
                 <button class="nav-btn" id="next-btn" onclick="nextQ()">Next ▶</button>
@@ -680,6 +680,10 @@
             document.getElementById('revision-screen').style.display = 'none';
             document.getElementById('quiz-screen').style.display = 'block';
             document.getElementById('q-total').textContent = questions.length;
+
+            // Show navigation buttons only for admin
+            const navRow = document.getElementById('nav-row');
+            if (navRow) navRow.style.display = isAdmin ? 'flex' : 'none';
 
             showQuestion();
         }
