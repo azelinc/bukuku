@@ -657,7 +657,7 @@
                                     <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
                                     <span class="unit-progress-text">${done}/${topics.length}</span>
                                 </div>`;
-                            card.onclick = topics.length === 1 ? () => startQuiz(topics[0]) : () => selectUnit(uk);
+                            card.onclick = topics.length === 1 ? () => { currentUnit = uk; startQuiz(topics[0]); } : () => selectUnit(uk);
                         }
                         list.appendChild(card);
                     });
@@ -694,7 +694,7 @@
                                 <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
                                 <span class="unit-progress-text">${done}/${topics.length}</span>
                             </div>`;
-                        card.onclick = topics.length === 1 ? () => startQuiz(topics[0]) : () => selectUnit(uk);
+                        card.onclick = topics.length === 1 ? () => { currentUnit = uk; startQuiz(topics[0]); } : () => selectUnit(uk);
                     }
                     list.appendChild(card);
                 });
