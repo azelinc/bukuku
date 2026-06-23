@@ -283,6 +283,8 @@
         let userScores = {};
         let subscriptionPlan = 'free';
         let selectedYear = parseInt(new URLSearchParams(window.location.search).get('year')) || 4;
+        let corrections = {};      // admin corrections from Firestore
+        let isAdmin = false;       // owner check
 
         // Get stored user
         function getUserId() {
@@ -296,6 +298,17 @@
         // Load question bank(s)
         async function loadBank() {
             try {
+                // Detect admin from stored auth
+                try {
+                    const auth = JSON.parse(localStorage.getItem('bukuku_auth'));
+                    isAdmin = auth?.email === 'azel.inc@gmail.com';
+                } catch(e) {}
+                
+                // Load corrections from Firestore (admin only, but fetch for all — applies to everyone)
+                try {
+                    const corrSnap = await getDoc(doc(db, "corrections", "koleksi"));
+                    if (corrSnap.exists()) corrections = corrSnap.data() || {};
+                } catch(e) {}
                 // Read profile DLP setting
                 const uid = getUserId();
                 let isDlp = true;
@@ -332,6 +345,25 @@
                 if (Object.keys(merged.subjects).length === 0)
                     throw new Error('No subjects loaded');
                 questionBank = merged;
+                
+                // Apply Firestore corrections to question bank (overrides wrong answers from JSON)
+                Object.keys(corrections).forEach(qId => {
+                    const correctIdx = corrections[qId];
+                    // Walk the entire bank to find matching question
+                    Object.keys(merged.subjects).forEach(sk => {
+                        const s = merged.subjects[sk];
+                        Object.keys(s.units).forEach(uk => {
+                            Object.keys(s.units[uk].topics).forEach(tk => {
+                                s.units[uk].topics[tk].questions.forEach(q => {
+                                    if (q.id === qId) {
+                                        q.c = correctIdx;
+                                    }
+                                });
+                            });
+                        });
+                    });
+                });
+                
                 await Promise.all([loadUserScores(), loadSubscription()]);
                 renderSubjects();
                 updateStreakDisplay();
@@ -586,6 +618,9 @@
         function showQuestion() {
             answered = false;
             const q = questions[currentQ];
+            // Remove previous correction bar if any
+            const oldBar = document.querySelector('.admin-corr-bar');
+            if (oldBar) oldBar.remove();
             document.getElementById('q-num').textContent = currentQ + 1;
             document.getElementById('current-score').textContent = score;
             // Remove previous question image if any
@@ -609,6 +644,42 @@
                 btn.onclick = () => selectAnswer(i);
                 optList.appendChild(btn);
             });
+
+            // Admin: show correction controls
+            if (isAdmin && q.id) {
+                const corrBar = document.createElement('div');
+                corrBar.className = 'admin-corr-bar';
+                corrBar.style.cssText = 'margin:15px 0;padding:12px;background:#fff3cd;border:1px solid #ffc107;border-radius:10px;font-size:0.85rem;';
+                const corrLabel = document.createElement('span');
+                corrLabel.style.cssText = 'font-weight:700;color:#856404;cursor:pointer;';
+                corrLabel.innerHTML = `✏️ Correct answer is: <strong>${String.fromCharCode(65 + q.c)}</strong> — click to change`;
+                corrLabel.onclick = () => {
+                    // Enter correction mode — make options clickable to set new correct answer
+                    const allBtns = optList.querySelectorAll('.option-btn');
+                    allBtns.forEach((btn, i) => {
+                        btn.style.cssText += ';cursor:pointer;border-color:#2196f3;border-width:2px;';
+                        btn.onclick = async () => {
+                            // Save correction to Firestore
+                            try {
+                                await setDoc(doc(db, "corrections", "koleksi"), {
+                                    [q.id]: i
+                                }, { merge: true });
+                                q.c = i; // apply locally immediately
+                                corrLabel.innerHTML = `✏️ Correct answer is: <strong>${String.fromCharCode(65 + i)}</strong> — ✅ saved!`;
+                                // Reset option styles
+                                allBtns.forEach(b => { b.style.borderColor = '#ddd'; b.style.borderWidth = '1px'; });
+                                // Re-bind original click handlers
+                                allBtns.forEach((b, j) => { b.onclick = () => selectAnswer(j); });
+                            } catch(e) {
+                                corrLabel.innerHTML = '✏️ ❌ Failed to save. Try again.';
+                            }
+                        };
+                    });
+                    corrLabel.innerHTML = '✏️ Click the CORRECT answer below...';
+                };
+                corrBar.appendChild(corrLabel);
+                optList.after(corrBar);
+            }
 
             // Timer
             timeLeft = 60;
