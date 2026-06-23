@@ -20,7 +20,8 @@
                     "Dua puluh ribu Sembilan ratus enam."
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_001"
+                  "id": "koleksi_mt4_001",
+                  "dlp": false
                 },
                 {
                   "q": "Antara berikut, nombor manakah yang digit 8 adalah 8 000?",
@@ -31,7 +32,8 @@
                     "10 283"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_002"
+                  "id": "koleksi_mt4_002",
+                  "dlp": false
                 },
                 {
                   "q": "7 puluh ribu + 4 ribu + 0 ratus + 3 puluh + 1 sa =",
@@ -42,7 +44,8 @@
                     "74 310"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_003"
+                  "id": "koleksi_mt4_003",
+                  "dlp": false
                 },
                 {
                   "q": "“Empat puluh tujuh ribu sepuluh” ditulis dalam angka",
@@ -53,7 +56,8 @@
                     "4 010"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_004"
+                  "id": "koleksi_mt4_004",
+                  "dlp": false
                 },
                 {
                   "q": "Cerakinkan 34 001 =",
@@ -64,7 +68,8 @@
                     "30 000 + 4000 + 1"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_005"
+                  "id": "koleksi_mt4_005",
+                  "dlp": false
                 },
                 {
                   "q": "Yang manakah antara berikut nombor, apabila dibundarkan ribu terdekat menjadi 50 000?",
@@ -75,7 +80,8 @@
                     "50 805"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_006"
+                  "id": "koleksi_mt4_006",
+                  "dlp": false
                 },
                 {
                   "q": "Antara berikut, yang manakah susunan nombor adalah dalam tertib menaik?",
@@ -86,7 +92,8 @@
                     "30 521, 34 641, 34 726, 39 562, 39 894"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_007"
+                  "id": "koleksi_mt4_007",
+                  "dlp": false
                 },
                 {
                   "q": "Rajah 1menunjukkan satu garis nombor. RAJAH 1 Apakah nombor bagi P dan Q?",
@@ -99,7 +106,8 @@
                   "c": 0,
                   "img": "img/koleksi/math_q8_numberline.png",
                   "note": "unknown - needs diagram (number line)",
-                  "id": "koleksi_mt4_008"
+                  "id": "koleksi_mt4_008",
+                  "dlp": false
                 },
                 {
                   "q": "Nyatakan nilai tempat bagi digit 5 dalam nombor 12 532 ?",
@@ -110,7 +118,8 @@
                     "Sa"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_009"
+                  "id": "koleksi_mt4_009",
+                  "dlp": false
                 },
                 {
                   "q": "Apakah nilai digit bagi digit bergaris dalam nombor  54 284 ?",
@@ -123,7 +132,8 @@
                   "c": 3,
                   "note": "unknown - unclear which digit underlined",
                   "img": "img/koleksi/math_q10_bergaris.png",
-                  "id": "koleksi_mt4_010"
+                  "id": "koleksi_mt4_010",
+                  "dlp": false
                 },
                 {
                   "q": "Yang manakah antara berikut tidak benar? Nombor Nilai tempat bagi digit bergaris",
@@ -135,7 +145,8 @@
                   ],
                   "c": 0,
                   "img": "img/koleksi/math_q11_table.png",
-                  "id": "koleksi_mt4_011"
+                  "id": "koleksi_mt4_011",
+                  "dlp": false
                 },
                 {
                   "q": "5 806 + 21 345 =",
@@ -146,7 +157,8 @@
                     "26 151"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_012"
+                  "id": "koleksi_mt4_012",
+                  "dlp": false
                 },
                 {
                   "q": "41 045 + 24 011 + 89 + 3 955 =",
@@ -157,7 +169,8 @@
                     "69 100"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_013"
+                  "id": "koleksi_mt4_013",
+                  "dlp": false
                 },
                 {
                   "q": "Antara nombor berikut, yang manakah nombor yang lebih 1000 daripada 56 821.",
@@ -168,7 +181,8 @@
                     "67 821"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_014"
+                  "id": "koleksi_mt4_014",
+                  "dlp": false
                 },
                 {
                   "q": "5 342 +             + 28 107 = 90 146 Apakah nombor yang perlu diisi di dalam kotak tersebut?",
@@ -179,7 +193,8 @@
                     "50 697"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_015"
+                  "id": "koleksi_mt4_015",
+                  "dlp": false
                 },
                 {
                   "q": "Apakah jumlah nilai bagi digit yang bergaris",
@@ -191,7 +206,8 @@
                   ],
                   "c": 1,
                   "img": "img/koleksi/math_q16_bergaris.png",
-                  "id": "koleksi_mt4_016"
+                  "id": "koleksi_mt4_016",
+                  "dlp": false
                 },
                 {
                   "q": "Berdasarkan petikan di atas yang manakah mewakili anu dalam penambahan.",
@@ -203,7 +219,8 @@
                   ],
                   "c": 2,
                   "img": "img/koleksi/math_q17_petikan.png",
-                  "id": "koleksi_mt4_017"
+                  "id": "koleksi_mt4_017",
+                  "dlp": false
                 },
                 {
                   "q": "Dengan menggunakan petikan di atas, apakah ayat matematik yang sesuai?",
@@ -215,7 +232,8 @@
                   ],
                   "c": 2,
                   "img": "img/koleksi/math_q18_petikan.png",
-                  "id": "koleksi_mt4_018"
+                  "id": "koleksi_mt4_018",
+                  "dlp": false
                 },
                 {
                   "q": "Rajah 2 menunjukkan garis nombor. RAJAH 2 Nyatakan jumlah nombor bagi x dan y ?",
@@ -228,7 +246,8 @@
                   "c": 0,
                   "note": "unknown - needs diagram (number line)",
                   "img": "img/koleksi/math_q19_numberline.png",
-                  "id": "koleksi_mt4_019"
+                  "id": "koleksi_mt4_019",
+                  "dlp": false
                 },
                 {
                   "q": "Bentukkan nombor terbesar dan terkecil, kemudian jumlah kedua-dua nombor. Di antara nombor di bawah yang manakah jawapan yang tepat?",
@@ -239,7 +258,8 @@
                     "87 678 Pak Din menjual 40 batang aiskrim coklat dan beberapa batang aiskrim durian. Jumlah aiskrim yang dijual ialah 260 batang. Sebuah syarikat mencetak 30 800 naskhah surat khabar. 14 530 naskhah ialah surat khabar Bahasa Malaysia dan selebihnya ialah surat khabar Bahasa Inggeris. 20 960  21 060   x y"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_020"
+                  "id": "koleksi_mt4_020",
+                  "dlp": false
                 },
                 {
                   "q": "24 396 – 9 990 = _____________",
@@ -250,7 +270,8 @@
                     "34 386"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_021"
+                  "id": "koleksi_mt4_021",
+                  "dlp": false
                 },
                 {
                   "q": "Cari beza antara 61 245 dengan 85 609.",
@@ -261,7 +282,8 @@
                     "24 634"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_022"
+                  "id": "koleksi_mt4_022",
+                  "dlp": false
                 },
                 {
                   "q": "Kira 56 207 – 578 – 21 514 =",
@@ -272,7 +294,8 @@
                     "33 045"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_023"
+                  "id": "koleksi_mt4_023",
+                  "dlp": false
                 },
                 {
                   "q": "41 000  – 5 395 =",
@@ -283,7 +306,8 @@
                     "30.19"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_024"
+                  "id": "koleksi_mt4_024",
+                  "dlp": false
                 },
                 {
                   "q": "Nyatakan hasil tolak bagi nilai digit bergaris bagi nombor  80 515?",
@@ -295,7 +319,8 @@
                   ],
                   "c": 0,
                   "img": "img/koleksi/math_q25_bergaris.png",
-                  "id": "koleksi_mt4_025"
+                  "id": "koleksi_mt4_025",
+                  "dlp": false
                 },
                 {
                   "q": "“ Sebuah kotak boleh diisi dengan 80 000 keping penanda buku. Ahmad telah mengisi sebanyak 52 000 keping penanda buku dan bakinya pada keesokkan harinya” Berdasarkan petikan di atas, apakah anu dalam ayat tersebut?",
@@ -307,7 +332,8 @@
                   ],
                   "c": 2,
                   "img": "img/koleksi/math_q26_petikan.png",
-                  "id": "koleksi_mt4_026"
+                  "id": "koleksi_mt4_026",
+                  "dlp": false
                 },
                 {
                   "q": "“ Seorang penjual buah-buahan ada 68 406 biji epal. Pada hari Isnin, dia menjual sebanyak 5 579 biji epal dan bakinya pada hari Selasa”. Bentukkkan ayat matematik bagi situasi yang diberikan.",
@@ -318,7 +344,8 @@
                     "5 579 -                              = 68 406"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_027"
+                  "id": "koleksi_mt4_027",
+                  "dlp": false
                 },
                 {
                   "q": "Pada Hari Raya yang lalu, Puan Hanani telah membuat 24 500 biji kuih tart. Dia menjual 15 690 biji kuih tart. Kawan-kawannya menolong Puan Hanani menjual sebanyak 8 200 biji kuih tart lagi. Berapa bijikah kuih tart yang masih belum dijual?",
@@ -329,7 +356,8 @@
                     "610"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_028"
+                  "id": "koleksi_mt4_028",
+                  "dlp": false
                 },
                 {
                   "q": "4 123 x 4 =",
@@ -340,7 +368,8 @@
                     "4 127"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_029"
+                  "id": "koleksi_mt4_029",
+                  "dlp": false
                 },
                 {
                   "q": "2 193 x 100 =",
@@ -351,7 +380,8 @@
                     "2 193"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_030"
+                  "id": "koleksi_mt4_030",
+                  "dlp": false
                 },
                 {
                   "q": "67 x 23 =",
@@ -362,7 +392,8 @@
                     "1 541"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_031"
+                  "id": "koleksi_mt4_031",
+                  "dlp": false
                 },
                 {
                   "q": "182 x 45 =",
@@ -373,7 +404,8 @@
                     "7 100"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_032"
+                  "id": "koleksi_mt4_032",
+                  "dlp": false
                 },
                 {
                   "q": "68 901 ÷ 7 =",
@@ -384,7 +416,8 @@
                     "9 443"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_033"
+                  "id": "koleksi_mt4_033",
+                  "dlp": false
                 },
                 {
                   "q": "6 950 ÷ 30 =",
@@ -395,7 +428,8 @@
                     "115"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_034"
+                  "id": "koleksi_mt4_034",
+                  "dlp": false
                 },
                 {
                   "q": "93 201 ÷ 1000 =",
@@ -406,7 +440,8 @@
                     "93 baki 211"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_035"
+                  "id": "koleksi_mt4_035",
+                  "dlp": false
                 },
                 {
                   "q": "÷ 52 = 431",
@@ -417,7 +452,8 @@
                     "21 212"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_036"
+                  "id": "koleksi_mt4_036",
+                  "dlp": false
                 },
                 {
                   "q": "Apakah nombor yang apabila dibundarkan kepada ratus yang hampir adalah 2 700",
@@ -428,7 +464,8 @@
                     "2 780"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_037"
+                  "id": "koleksi_mt4_037",
+                  "dlp": false
                 },
                 {
                   "q": "Sebuah kilang mengeluarkan 16 920 pen biru, 15 806 pen hitam dan 11 700 pen merah. Berapakah jumlah pen kesemuanya yamg kilang tersebut hasilkan?",
@@ -439,7 +476,8 @@
                     "44 624"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_038"
+                  "id": "koleksi_mt4_038",
+                  "dlp": false
                 },
                 {
                   "q": "Sebuah lori dapat mengangkut 2 300 ekor ayam dalam suatu masa. Berapa ekor ayamkah yang dapat diangkut oleh 21 buah lori yang sama.",
@@ -450,7 +488,8 @@
                     "58 300"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_039"
+                  "id": "koleksi_mt4_039",
+                  "dlp": false
                 },
                 {
                   "q": "Seorang chef membuat 8 100 keping tart dalam masa satu minggu. Berapakah jumlah tart nanas yang dibuat setiap hari jika chef tersebut bercuti pada hari Isnin?",
@@ -461,7 +500,8 @@
                     "1100"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_040"
+                  "id": "koleksi_mt4_040",
+                  "dlp": false
                 }
               ]
             },
@@ -478,7 +518,8 @@
                   ],
                   "c": 2,
                   "img": "img/koleksi/math_q41_numbercard.png",
-                  "id": "koleksi_mt4_041"
+                  "id": "koleksi_mt4_041",
+                  "dlp": false
                 },
                 {
                   "q": "Tuliskan nombor 24 806 dalam perkataan.",
@@ -489,7 +530,8 @@
                     "Dua puluh empat ribu lapan ratus enam puluh"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_042"
+                  "id": "koleksi_mt4_042",
+                  "dlp": false
                 },
                 {
                   "q": "Tuliskan tiga puluh ribu lapan puluh dalam bentuk angka.",
@@ -500,7 +542,8 @@
                     "30 800"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_043"
+                  "id": "koleksi_mt4_043",
+                  "dlp": false
                 },
                 {
                   "q": "Rajah 2 menunjukkan satu kad angka. 23 867 Nilai tempat bagi digit yang bergaris ialah",
@@ -513,7 +556,8 @@
                   "c": 0,
                   "note": "unknown - needs diagram (number card)",
                   "img": "img/koleksi/math_q44_numbercard.png",
-                  "id": "koleksi_mt4_044"
+                  "id": "koleksi_mt4_044",
+                  "dlp": false
                 },
                 {
                   "q": "Antara berikut nombor manakah nilai tempat 4 adalah puluh?",
@@ -525,7 +569,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - needs manual checking",
-                  "id": "koleksi_mt4_045"
+                  "id": "koleksi_mt4_045",
+                  "dlp": false
                 },
                 {
                   "q": "Kesemua nombor berikut apabila dibundarkan kepada ratus terdekat menjadi 24 400 kecuali",
@@ -536,7 +581,8 @@
                     "24 358"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_046"
+                  "id": "koleksi_mt4_046",
+                  "dlp": false
                 },
                 {
                   "q": "Sebuah stadium mempunyai 58 198 tempat duduk. Bundarkan jumlah tempat duduk kepada puluh terdekat.",
@@ -547,7 +593,8 @@
                     "58 200"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_047"
+                  "id": "koleksi_mt4_047",
+                  "dlp": false
                 },
                 {
                   "q": "Antara berikut yang manakah benar apabila dibundarkan kepada ribu terdekat.",
@@ -558,7 +605,8 @@
                     "6 841 = 6 900"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_048"
+                  "id": "koleksi_mt4_048",
+                  "dlp": false
                 },
                 {
                   "q": "Antara nombor berikut, yang manakah apabila dibundar kepada ratus yang terdekat menjadi 45 800?",
@@ -569,7 +617,8 @@
                     "45 748"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_049"
+                  "id": "koleksi_mt4_049",
+                  "dlp": false
                 },
                 {
                   "q": "Dalam pesta buku yang telah diadakan, seramai 80 955 orang pengunjung telah hadir. Bundarkan jumlah pengunjung itu kepada ratus yang hampir.",
@@ -581,7 +630,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - unclear rounding target",
-                  "id": "koleksi_mt4_050"
+                  "id": "koleksi_mt4_050",
+                  "dlp": false
                 },
                 {
                   "q": "Dalam satu tabung ada 9 459 biji kekacang. Bundarkan jumlah kekacang itu kepada ratus terdekat.",
@@ -593,7 +643,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - unclear which place to round",
-                  "id": "koleksi_mt4_051"
+                  "id": "koleksi_mt4_051",
+                  "dlp": false
                 },
                 {
                   "q": "Apakah nilai tempat bagi digit yang bergaris dalam nombor 78 352?",
@@ -605,7 +656,8 @@
                   ],
                   "c": 0,
                   "img": "img/koleksi/math_q52_bergaris.png",
-                  "id": "koleksi_mt4_052"
+                  "id": "koleksi_mt4_052",
+                  "dlp": false
                 },
                 {
                   "q": "Bentukkan nombor 5 digit yang terbesar daripada kesemua digit 3, 8, 8, 0 dan 5.",
@@ -617,7 +669,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - needs exact digits",
-                  "id": "koleksi_mt4_053"
+                  "id": "koleksi_mt4_053",
+                  "dlp": false
                 },
                 {
                   "q": "15   Apakah nilai tempat digit 2 dalam nombor 42 503?",
@@ -628,7 +681,8 @@
                     "Puluh ribu"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_054"
+                  "id": "koleksi_mt4_054",
+                  "dlp": false
                 },
                 {
                   "q": "4 126 + 42 822 =",
@@ -639,7 +693,8 @@
                     "46 958"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_055"
+                  "id": "koleksi_mt4_055",
+                  "dlp": false
                 },
                 {
                   "q": "Jumlahkan 890 dan 66 808.",
@@ -650,7 +705,8 @@
                     "66 698"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_056"
+                  "id": "koleksi_mt4_056",
+                  "dlp": false
                 },
                 {
                   "q": "37 425 + 65 + 2 928 =",
@@ -661,7 +717,8 @@
                     "40 518"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_057"
+                  "id": "koleksi_mt4_057",
+                  "dlp": false
                 },
                 {
                   "q": "Ali membeli 3 645 biji mangga. Keesokannya, dia membeli lagi sebanyak 1 240 biji. Hitungkan jumlah mangga yang ada pada Ali sekarang.",
@@ -672,7 +729,8 @@
                     "2 400"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_058"
+                  "id": "koleksi_mt4_058",
+                  "dlp": false
                 },
                 {
                   "q": "Lori A dimuatkan dengan 15 385 kotak air minuman. Lori B dimuatkan dengan 12 980 kotak. Hitungkan jumlah kotak air minuman yang ada dalam kedua-dua lori itu.",
@@ -684,7 +742,8 @@
                   ],
                   "c": 3,
                   "note": "estimated",
-                  "id": "koleksi_mt4_059"
+                  "id": "koleksi_mt4_059",
+                  "dlp": false
                 },
                 {
                   "q": "Puan Aina mempunyai 10 640 biji manik hijau, 8 240 biji manik biru dan 986 biji manik merah. Berapakah jumlah manik Puan Aina?",
@@ -695,7 +754,8 @@
                     "18 800 biji"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_060"
+                  "id": "koleksi_mt4_060",
+                  "dlp": false
                 },
                 {
                   "q": "55 483 + 4 203 =",
@@ -706,7 +766,8 @@
                     "59 786"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_061"
+                  "id": "koleksi_mt4_061",
+                  "dlp": false
                 },
                 {
                   "q": "Seorang penternak ayam telur telah menjual 2 462 biji telur pada hari Ahad dan 2 526 biji pada hari Isnin. Berapa biji telur ayam bagi kedua-dua hari itu?",
@@ -718,7 +779,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - complex word problem",
-                  "id": "koleksi_mt4_062"
+                  "id": "koleksi_mt4_062",
+                  "dlp": false
                 },
                 {
                   "q": "Antara berikut, yang manakah mempunyai hasil tambah yang bernilai 80 065.",
@@ -730,7 +792,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - comparison, needs all options",
-                  "id": "koleksi_mt4_063"
+                  "id": "koleksi_mt4_063",
+                  "dlp": false
                 },
                 {
                   "q": "Cari selisih antara 6 482 dengan 3 126 ialah",
@@ -741,7 +804,8 @@
                     "4 428"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_064"
+                  "id": "koleksi_mt4_064",
+                  "dlp": false
                 },
                 {
                   "q": "65 000 - 425 =",
@@ -752,7 +816,8 @@
                     "65 685"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_065"
+                  "id": "koleksi_mt4_065",
+                  "dlp": false
                 },
                 {
                   "q": "20 503 - 13 258 =",
@@ -763,7 +828,8 @@
                     "17 245"
                   ],
                   "c": 0,
-                  "id": "koleksi_mt4_066"
+                  "id": "koleksi_mt4_066",
+                  "dlp": false
                 },
                 {
                   "q": "Sebuah kilang mancis dapat menghasilkan 53 472 batang anak mancis pada minggu pertama. Sebanyak 40 321 batang pula pada minggu kedua. Kirakan perbezaannya.",
@@ -774,7 +840,8 @@
                     "12 151"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_067"
+                  "id": "koleksi_mt4_067",
+                  "dlp": false
                 },
                 {
                   "q": "Antara hasil tolak berikut, yang manakah paling besar nilainya?",
@@ -786,7 +853,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - comparison, needs all options",
-                  "id": "koleksi_mt4_068"
+                  "id": "koleksi_mt4_068",
+                  "dlp": false
                 },
                 {
                   "q": "Encik Lee membeli 10 000 biji telur. Didapati 398 biji telur telah pecah. Berapa biji telurkah yang tidak pecah?",
@@ -797,7 +865,8 @@
                     "10 398 biji"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_069"
+                  "id": "koleksi_mt4_069",
+                  "dlp": false
                 },
                 {
                   "q": "Berapakah selisih antara 42 ribu dengan hasil tolak 10 000 dengan 6 700?",
@@ -809,7 +878,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - multi-step, needs diagram",
-                  "id": "koleksi_mt4_070"
+                  "id": "koleksi_mt4_070",
+                  "dlp": false
                 },
                 {
                   "q": "Antara hasil tolak berikut yang manakah nilainya terbesar?",
@@ -821,7 +891,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - comparison, needs all options",
-                  "id": "koleksi_mt4_071"
+                  "id": "koleksi_mt4_071",
+                  "dlp": false
                 },
                 {
                   "q": "Ahmad ada 8 968 biji manggis. Sebanyak 486 biji manggis telah diberikan kepada kawannya. Hitungkan jumlah manggis yang masih ada pada Ahmad.",
@@ -832,7 +903,8 @@
                     "8 482"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_072"
+                  "id": "koleksi_mt4_072",
+                  "dlp": false
                 },
                 {
                   "q": "Berapakah hasil darab antara 376 dengan 80?",
@@ -843,7 +915,8 @@
                     "32 880"
                   ],
                   "c": 2,
-                  "id": "koleksi_mt4_073"
+                  "id": "koleksi_mt4_073",
+                  "dlp": false
                 },
                 {
                   "q": "1 413 x 6 =",
@@ -854,7 +927,8 @@
                     "9 478"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_074"
+                  "id": "koleksi_mt4_074",
+                  "dlp": false
                 },
                 {
                   "q": "6 238 x 13 =",
@@ -865,7 +939,8 @@
                     "81 094"
                   ],
                   "c": 3,
-                  "id": "koleksi_mt4_075"
+                  "id": "koleksi_mt4_075",
+                  "dlp": false
                 },
                 {
                   "q": "Harun mempunyai 16 buah album setem. Setiap album boleh memuatkan 1 205 keping setem. Berapa jumlah setem yang ada pada Harun?",
@@ -876,7 +951,8 @@
                     "19 340"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_076"
+                  "id": "koleksi_mt4_076",
+                  "dlp": false
                 },
                 {
                   "q": "Setiap hari Pak Ali dapat memungut sebanyak 3 486 biji telur dari ladangnya. Berapa biji telurkah yang dapat dipungut dalam masa 2 mingggu?",
@@ -888,7 +964,8 @@
                   ],
                   "c": 0,
                   "note": "unknown - word problem, needs extra steps",
-                  "id": "koleksi_mt4_077"
+                  "id": "koleksi_mt4_077",
+                  "dlp": false
                 },
                 {
                   "q": "Darabkan 34 ratus dengan 8.",
@@ -899,7 +976,8 @@
                     "3 392"
                   ],
                   "c": 1,
-                  "id": "koleksi_mt4_078"
+                  "id": "koleksi_mt4_078",
+                  "dlp": false
                 }
               ]
             }

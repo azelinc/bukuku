@@ -328,6 +328,7 @@
         let corrections = {};      // admin corrections from Firestore (answer index)
         let questionOverrides = {};  // admin full question edits from Firestore
         let isAdmin = false;       // owner check
+        let isDlpProfile = true;   // DLP status for current child
 
         // Get stored user
         function getUserId() {
@@ -365,23 +366,23 @@
                 } catch(e) {}
                 // Read profile DLP setting
                 const uid = getUserId();
-                let isDlp = true;
+                isDlpProfile = true;
                 if (uid && kidName) {
                     try {
                         const profileSnap = await getDoc(doc(db, "profiles", uid, "children", kidName));
                         if (profileSnap.exists()) {
-                            isDlp = profileSnap.data().dlp !== false;
+                            isDlpProfile = profileSnap.data().dlp !== false;
                         }
                     } catch(e) {}
                 }
-                const fileSuffix = isDlp ? 'tb' : 'bm';
-                const label = isDlp ? '(DLP)' : '';
+                const fileSuffix = isDlpProfile ? 'tb' : 'bm';
+                const label = isDlpProfile ? '(DLP)' : '';
 
                 // Set page title based on year
                 document.getElementById('page-title').innerHTML = `📘 KSSR Tahun ${selectedYear} ${label} <span id="streak-display"></span>`;
 
                 // Load ALL subject files for this year and merge
-                const subjectFiles = isDlp
+                const subjectFiles = isDlpProfile
                     ? [`math${selectedYear}-tb.json`, `sci${selectedYear}-tb.json`, `eng${selectedYear}-tb.json`, `bm${selectedYear}-tb.json`, `pi${selectedYear}-tb.json`, `koleksi${selectedYear}.json`]
                     : [`math${selectedYear}-bm.json`, `sci${selectedYear}-bm.json`, `eng${selectedYear}-tb.json`, `bm${selectedYear}-tb.json`, `pi${selectedYear}-tb.json`, `koleksi${selectedYear}.json`];
                 const merged = { subjects: {} };
@@ -656,11 +657,21 @@
         function startQuiz(tk) {
             currentTopic = tk;
             const t = questionBank.subjects[currentSubject].units[currentUnit].topics[tk];
-            questions = [...t.questions];
+            // Filter questions by DLP stream — only show questions matching the student's profile
+            const filtered = t.questions.filter(q => {
+                if (q.dlp === undefined) return true; // no tag = show for all
+                return q.dlp === isDlpProfile;
+            });
+            if (filtered.length === 0) {
+                alert('⚠️ No questions available for this stream (DLP/Non-DLP). Try another topic.');
+                goToTopics();
+                return;
+            }
+            questions = filtered;
 
             // Show revision screen first
             document.getElementById('rev-title').textContent = `${tk}: ${t.name}`;
-            document.getElementById('rev-subtitle').textContent = `Unit ${currentUnit} · ${questions.length} questions`;
+            document.getElementById('rev-subtitle').textContent = `Unit ${currentUnit} · ${questions.length} question${questions.length !== 1 ? 's' : ''}`;
             document.getElementById('rev-content').textContent = t.revision || 'Review the topic before starting.';
 
             document.getElementById('topic-screen').style.display = 'none';
