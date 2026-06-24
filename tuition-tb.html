@@ -652,7 +652,7 @@
                                 </div>`;
                             card.onclick = showPremiumModal;
                         } else {
-                            card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
+                            card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name} <span style="font-size:0.9rem;letter-spacing:1px;">${getStars(pct)}</span>
                                 <div class="unit-progress-wrap">
                                     <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
                                     <span class="unit-progress-text">${done}/${topics.length}</span>
@@ -689,7 +689,7 @@
                             </div>`;
                         card.onclick = showPremiumModal;
                     } else {
-                        card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name}
+                        card.innerHTML = `<span class="unit-num">Unit ${uk}</span> ${u.name} <span style="font-size:0.9rem;letter-spacing:1px;">${getStars(pct)}</span>
                             <div class="unit-progress-wrap">
                                 <div class="unit-progress-bar"><div class="unit-progress-fill" style="width:${pct}%"></div></div>
                                 <span class="unit-progress-text">${done}/${topics.length}</span>
