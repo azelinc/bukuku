@@ -38,48 +38,48 @@
                 {
                   "q": "\"Mandi peluh\" bermaksud...",
                   "a": [
-                    "Bekerja keras sehingga berpeluh-peluh",
                     "Mandikan di sungai",
                     "Berenang di kolam",
+                    "Bekerja keras sehingga berpeluh-peluh",
                     "Basah kuyup kerana hujan"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-1-1.1-2",
                   "img": "img/bm4/bm4_u1_p11.png"
                 },
                 {
                   "q": "Apakah tujuan sambutan Hari Keluarga di Taman Impian?",
                   "a": [
-                    "Mengeratkan hubungan sesama jiran",
                     "Menjual pelbagai jenis makanan",
+                    "Mengeratkan hubungan sesama jiran",
                     "Pertandingan sukan tahunan",
                     "Kutipan derma untuk kebajikan"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-1-1.1-3",
                   "img": "img/bm4/bm4_u1_p9.png"
                 },
                 {
                   "q": "Hadif dan Aina menolong Pak Cik Ismail dan Mak Cik Minah membawa...",
                   "a": [
-                    "Tiga bungkusan besar",
                     "Dua buah bakul",
+                    "Tiga bungkusan besar",
                     "Empat kotak",
                     "Lima beg plastik"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-1-1.1-4",
                   "img": "img/bm4/bm4_u1_p12.png"
                 },
                 {
                   "q": "Encik Husin membawa anak-anaknya ke mana untuk bercerita?",
                   "a": [
-                    "Kebun Komuniti",
                     "Taman Permainan",
+                    "Kebun Komuniti",
                     "Perpustakaan Negara",
                     "Pantai"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-1-1.1-5",
                   "img": "img/bm4/bm4_u1_p11.png"
                 },
@@ -110,12 +110,12 @@
                 {
                   "q": "Apakah perasaan Hadif apabila melihat ramai jiran hadir?",
                   "a": [
-                    "Seronok",
                     "Sedih",
                     "Marah",
-                    "Bosan"
+                    "Bosan",
+                    "Seronok"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-1-1.1-8",
                   "img": "img/bm4/bm4_u1_p9.png"
                 },
@@ -168,24 +168,24 @@
                 {
                   "q": "Apakah tujuan amalan kunjung-mengunjungi dalam masyarakat?",
                   "a": [
-                    "Berkenal-kenalan dan beramah mesra",
                     "Mencari rezeki",
+                    "Berkenal-kenalan dan beramah mesra",
                     "Melancong",
                     "Bersukan"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-2-1.2-2",
                   "img": "img/bm4/bm4_u2_p14.png"
                 },
                 {
                   "q": "\"Jasanya seluas alam, budinya tetap dikenang\" — siapakah yang dimaksudkan?",
                   "a": [
-                    "Seorang ibu",
                     "Seorang bapa",
+                    "Seorang ibu",
                     "Seorang guru",
                     "Seorang pemimpin"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-2-1.2-3",
                   "img": "img/bm4/bm4_u2_p17.png"
                 },
@@ -204,24 +204,24 @@
                 {
                   "q": "Apakah kata nama khas?",
                   "a": [
-                    "Kata yang merujuk nama sesuatu yang khusus",
                     "Kata yang merujuk benda am",
+                    "Kata yang merujuk nama sesuatu yang khusus",
                     "Kata kerja",
                     "Kata adjektif"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-2-1.2-5",
                   "img": "img/bm4/bm4_u2_p18.png"
                 },
                 {
                   "q": "Apakah tajuk sajak dalam Unit 2?",
                   "a": [
-                    "Istimewanya Kita",
                     "Ibu Tercinta",
                     "Keluarga Bahagia",
-                    "Warga Prihatin"
+                    "Warga Prihatin",
+                    "Istimewanya Kita"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-2-1.2-6",
                   "img": "img/bm4/bm4_u2_p17.png"
                 }
@@ -238,36 +238,36 @@
                 {
                   "q": "Hadif pergi lawatan sambil belajar ke mana?",
                   "a": [
-                    "Perpustakaan Negara",
                     "Muzium Negara",
+                    "Perpustakaan Negara",
                     "Planetarium",
                     "Zoo Negara"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-3-1.3-0",
                   "img": "img/bm4/bm4_u3_p19.png"
                 },
                 {
                   "q": "Di pintu masuk Perpustakaan Negara terdapat...",
                   "a": [
-                    "Informasi pengguna",
                     "Kafe",
                     "Kedai buku",
-                    "Taman permainan"
+                    "Taman permainan",
+                    "Informasi pengguna"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-3-1.3-1",
                   "img": "img/bm4/bm4_u3_p19.png"
                 },
                 {
                   "q": "Hadif membaca buku melalui...",
                   "a": [
-                    "e-buku di Zon Kanak-kanak",
                     "Buku fizikal",
                     "Aplikasi telefon",
+                    "e-buku di Zon Kanak-kanak",
                     "Internet"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-3-1.3-2",
                   "img": "img/bm4/bm4_u3_p20.png"
                 },
@@ -286,12 +286,12 @@
                 {
                   "q": "Dalam cerita rama-rama, mereka mencari sarapan di...",
                   "a": [
-                    "Ladang bunga di kaki gunung",
                     "Taman bunga raya",
+                    "Ladang bunga di kaki gunung",
                     "Kebun buah-buahan",
                     "Sawah padi"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-3-1.3-4",
                   "img": "img/bm4/bm4_u3_p20.png"
                 }
@@ -308,60 +308,60 @@
                 {
                   "q": "Hadif pergi ke bilik rawatan kerana...",
                   "a": [
-                    "Pening dan lemah badan",
                     "Sakit gigi",
                     "Kaki terseliuh",
-                    "Demam panas"
+                    "Demam panas",
+                    "Pening dan lemah badan"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-4-2.1-0",
                   "img": "img/bm4/bm4_u4_p28.png"
                 },
                 {
                   "q": "Apakah yang perlu dipatuhi oleh penderma darah?",
                   "a": [
-                    "Syarat-syarat tertentu sebelum menderma",
                     "Menderma setiap minggu",
                     "Tidak perlu makan sebelum menderma",
+                    "Syarat-syarat tertentu sebelum menderma",
                     "Hanya lelaki boleh menderma"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-4-2.1-1",
                   "img": "img/bm4/bm4_u4_p29.png"
                 },
                 {
                   "q": "Apakah cara penjagaan kesihatan mata yang betul?",
                   "a": [
-                    "Senaman mata dan memandang objek jauh",
                     "Membaca dalam gelap",
                     "Menonton TV terlalu dekat",
+                    "Senaman mata dan memandang objek jauh",
                     "Guna telefon terlalu lama"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-4-2.1-2",
                   "img": "img/bm4/bm4_u4_p30.png"
                 },
                 {
                   "q": "\"Kesihatan diri tanggungjawab kita\" — maksudnya?",
                   "a": [
-                    "Setiap individu jaga kesihatan diri",
                     "Doktor sahaja bertanggungjawab",
+                    "Setiap individu jaga kesihatan diri",
                     "Ibu bapa yang bertanggungjawab",
                     "Guru yang bertanggungjawab"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-4-2.1-3",
                   "img": "img/bm4/bm4_u4_p32.png"
                 },
                 {
                   "q": "Apakah maksud Farmasi Pandu Lalu?",
                   "a": [
-                    "Farmasi dilalui tanpa turun kereta",
                     "Farmasi bergerak",
+                    "Farmasi dilalui tanpa turun kereta",
                     "Farmasi besar",
                     "Farmasi hospital"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-4-2.1-4",
                   "img": "img/bm4/bm4_u4_p33.png"
                 }
@@ -378,12 +378,12 @@
                 {
                   "q": "Apakah tujuan Kempen Bebas Penyedut Minuman Plastik?",
                   "a": [
-                    "Mengurangkan pencemaran plastik",
                     "Menjual minuman",
                     "Mengumpul wang",
+                    "Mengurangkan pencemaran plastik",
                     "Pertandingan sukan"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-5-2.2-0",
                   "img": "img/bm4/bm4_u5_p35.png"
                 },
@@ -414,12 +414,12 @@
                 {
                   "q": "Hadif menulis surat kepada rakannya tentang...",
                   "a": [
-                    "Perihal kelasnya",
                     "Percutiannya",
                     "Hobinya",
-                    "Cita-citanya"
+                    "Cita-citanya",
+                    "Perihal kelasnya"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-5-2.2-3",
                   "img": "img/bm4/bm4_u5_p40.png"
                 }
@@ -448,12 +448,12 @@
                 {
                   "q": "Apakah aktiviti yang dilakukan Encik Husin sekeluarga?",
                   "a": [
-                    "Menonton rancangan TV",
                     "Bersiar-siar",
                     "Berkebun",
+                    "Menonton rancangan TV",
                     "Bersukan"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-6-2.3-1"
                 }
               ]
@@ -469,24 +469,24 @@
                 {
                   "q": "Hadif sekeluarga menonton apa di ruang tamu?",
                   "a": [
-                    "Berita",
                     "Drama",
                     "Kartun",
+                    "Berita",
                     "Dokumentari"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-7-3.1-0",
                   "img": "img/bm4/bm4_u7_p50.png"
                 },
                 {
                   "q": "Encik Lim mencari apa untuk anaknya yang kecil?",
                   "a": [
-                    "Tadika",
                     "Sekolah",
                     "Pengasuh",
+                    "Tadika",
                     "Tuisyen"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-7-3.1-1",
                   "img": "img/bm4/bm4_u7_p52.png"
                 },
@@ -505,12 +505,12 @@
                 {
                   "q": "Apakah kata adjektif?",
                   "a": [
-                    "Kata yang menerangkan sifat atau keadaan",
                     "Kata yang menunjukkan perbuatan",
                     "Kata merujuk nama",
-                    "Kata menunjukkan bilangan"
+                    "Kata menunjukkan bilangan",
+                    "Kata yang menerangkan sifat atau keadaan"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-7-3.1-3"
                 }
               ]
@@ -538,12 +538,12 @@
                 {
                   "q": "\"Jangan Dedah Maklumat\" — nasihat ini berkaitan dengan...",
                   "a": [
-                    "Keselamatan diri dalam talian",
                     "Kebersihan diri",
                     "Kesihatan diri",
-                    "Pemakanan"
+                    "Pemakanan",
+                    "Keselamatan diri dalam talian"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-8-3.2-1",
                   "img": "img/bm4/bm4_u8_p59.png"
                 },
@@ -562,12 +562,12 @@
                 {
                   "q": "Apakah kata adjektif pancaindera?",
                   "a": [
-                    "Kata berkaitan dengan deria",
                     "Kata menunjukkan bilangan",
                     "Kata kerja",
+                    "Kata berkaitan dengan deria",
                     "Kata nama"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-8-3.2-3"
                 }
               ]
@@ -583,24 +583,24 @@
                 {
                   "q": "Hadif ke bengkel kereta dengan siapa?",
                   "a": [
-                    "Ayahnya",
                     "Ibunya",
                     "Kawannya",
+                    "Ayahnya",
                     "Gurunya"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-9-3.3-0",
                   "img": "img/bm4/bm4_u9_p63.png"
                 },
                 {
                   "q": "Apakah yang dipersembahkan Hadif di tapak perhimpunan?",
                   "a": [
-                    "Syair",
                     "Pantun",
+                    "Syair",
                     "Sajak",
                     "Gurindam"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-9-3.3-1"
                 }
               ]
@@ -640,24 +640,24 @@
                 {
                   "q": "Apakah yang dapat dilihat di Muzium Chetti?",
                   "a": [
-                    "Pelbagai koleksi budaya",
                     "Alat permainan",
+                    "Pelbagai koleksi budaya",
                     "Buku lama",
                     "Kereta klasik"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-10-4.1-2",
                   "img": "img/bm4/bm4_u10_p75.png"
                 },
                 {
                   "q": "Hadif pergi ke pesta apa di pusat komuniti?",
                   "a": [
-                    "Pesta kebudayaan",
                     "Pesta makanan",
                     "Pesta buku",
+                    "Pesta kebudayaan",
                     "Pesta sukan"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-10-4.1-3",
                   "img": "img/bm4/bm4_u10_p76.png"
                 },
@@ -676,12 +676,12 @@
                 {
                   "q": "Apakah kata bilangan?",
                   "a": [
-                    "Kata yang menunjukkan jumlah atau bilangan",
                     "Kata menunjukkan perbuatan",
+                    "Kata yang menunjukkan jumlah atau bilangan",
                     "Kata menunjukkan sifat",
                     "Kata nama"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-10-4.1-5"
                 }
               ]
@@ -709,35 +709,35 @@
                 {
                   "q": "Apakah aspek yang perlu diedit dalam penulisan?",
                   "a": [
-                    "Ejaan, tanda baca dan imbuhan",
                     "Warna dan saiz",
                     "Gambar dan rajah",
-                    "Muka depan"
+                    "Muka depan",
+                    "Ejaan, tanda baca dan imbuhan"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-11-4.2-1"
                 },
                 {
                   "q": "Apakah kata berimbuhan awalan?",
                   "a": [
-                    "Kata yang mendapat imbuhan di awal",
                     "Kata yang mendapat imbuhan di akhir",
                     "Kata tanpa imbuhan",
+                    "Kata yang mendapat imbuhan di awal",
                     "Kata ganda"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-11-4.2-2",
                   "img": "img/bm4/bm4_u11_p83.png"
                 },
                 {
                   "q": "Apakah yang dimaksudkan dengan syair?",
                   "a": [
-                    "Puisi lama 4 baris serangkap",
                     "Cerita pendek",
                     "Dialog",
-                    "Laporan"
+                    "Laporan",
+                    "Puisi lama 4 baris serangkap"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-11-4.2-3"
                 }
               ]
@@ -753,12 +753,12 @@
                 {
                   "q": "Badan yang memajukan kraftangan Malaysia ialah...",
                   "a": [
-                    "Perbadanan Kemajuan Kraftangan Malaysia",
                     "Kementerian Pendidikan",
                     "Dewan Bahasa dan Pustaka",
+                    "Perbadanan Kemajuan Kraftangan Malaysia",
                     "Majlis Kebudayaan"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-12-4.3-0"
                 }
               ]
@@ -774,59 +774,59 @@
                 {
                   "q": "Zara melawat ke galeri apa bersama rakan-rakan?",
                   "a": [
-                    "Galeri diraja",
                     "Galeri seni",
+                    "Galeri diraja",
                     "Galeri sains",
                     "Galeri foto"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-13-5.1-0",
                   "img": "img/bm4/bm4_u13_p94.png"
                 },
                 {
                   "q": "\"Belakang parang kalau diasah lagikan tajam\" — maksudnya?",
                   "a": [
-                    "Orang bodoh jika belajar akan pandai",
                     "Belakang parang tajam",
                     "Parang perlu diasah",
+                    "Orang bodoh jika belajar akan pandai",
                     "Senjata tajam"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-13-5.1-1"
                 },
                 {
                   "q": "Apakah peranan ibu bapa sempena Bulan Kebangsaan?",
                   "a": [
-                    "Menceriakan kelas anak",
                     "Bercuti",
                     "Memasak",
+                    "Menceriakan kelas anak",
                     "Menyanyi"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-13-5.1-2",
                   "img": "img/bm4/bm4_u13_p96.png"
                 },
                 {
                   "q": "Apakah yang dipersembahkan Alif semasa sambutan?",
                   "a": [
-                    "Boria",
                     "Tarian",
+                    "Boria",
                     "Nyanyian",
                     "Drama"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-13-5.1-3",
                   "img": "img/bm4/bm4_u13_p97.png"
                 },
                 {
                   "q": "Apakah kata majmuk?",
                   "a": [
-                    "Kata terbentuk daripada dua kata dasar",
                     "Kata berimbuhan",
                     "Kata ganda",
+                    "Kata terbentuk daripada dua kata dasar",
                     "Kata nama khas"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-13-5.1-4"
                 }
               ]
@@ -854,35 +854,35 @@
                 {
                   "q": "Zara mencari maklumat tentang apa di perpustakaan?",
                   "a": [
-                    "Jalur Gemilang",
                     "Tokoh negara",
+                    "Jalur Gemilang",
                     "Sejarah",
                     "Pahlawan"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-14-5.2-1",
                   "img": "img/bm4/bm4_u14_p102.png"
                 },
                 {
                   "q": "Apakah maksud kata ganda penuh?",
                   "a": [
-                    "Kata digandakan seluruh katanya",
                     "Kata berimbuhan",
+                    "Kata digandakan seluruh katanya",
                     "Kata dipendekkan",
                     "Kata nama"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-14-5.2-2"
                 },
                 {
                   "q": "Siapakah yang ditulis biografi oleh Zara?",
                   "a": [
-                    "Pelumba motor negara",
                     "Perdana Menteri",
+                    "Pelumba motor negara",
                     "Penyanyi",
                     "Atlet"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-14-5.2-3",
                   "img": "img/bm4/bm4_u14_p104.png"
                 }
@@ -899,24 +899,24 @@
                 {
                   "q": "Zara sekeluarga pergi ke karnival apa?",
                   "a": [
-                    "Hari Pendaftaran Negara",
                     "Hari Kebangsaan",
                     "Hari Sukan",
-                    "Hari Kanak-kanak"
+                    "Hari Kanak-kanak",
+                    "Hari Pendaftaran Negara"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-15-5.3-0",
                   "img": "img/bm4/bm4_u15_p107.png"
                 },
                 {
                   "q": "Zara bercerita kepada ibunya tentang...",
                   "a": [
-                    "Cerita yang dibaca di sekolah",
                     "Peperiksaan",
                     "Kawan baru",
-                    "Percutian"
+                    "Percutian",
+                    "Cerita yang dibaca di sekolah"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-15-5.3-1"
                 }
               ]
@@ -932,36 +932,36 @@
                 {
                   "q": "Siapa membuka balai cerap mini di rumah?",
                   "a": [
-                    "Penduduk kampung minat astronomi",
                     "Guru sains",
                     "Doktor",
+                    "Penduduk kampung minat astronomi",
                     "Jurutera"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-16-6.1-0",
                   "img": "img/bm4/bm4_u16_p117.png"
                 },
                 {
                   "q": "Apa yang tersumbat di dapur rumah Zara?",
                   "a": [
-                    "Singki",
                     "Paip",
+                    "Singki",
                     "Tandas",
                     "Bumbung"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-16-6.1-1",
                   "img": "img/bm4/bm4_u16_p119.png"
                 },
                 {
                   "q": "Alif menyertai pertandingan apa?",
                   "a": [
-                    "Robotik",
                     "Sains",
                     "Mewarna",
+                    "Robotik",
                     "Olahraga"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-16-6.1-2",
                   "img": "img/bm4/bm4_u16_p120.png"
                 },
@@ -989,12 +989,12 @@
                 {
                   "q": "Zara membeli apa dengan ibunya?",
                   "a": [
-                    "Kasut sekolah",
                     "Buku",
+                    "Kasut sekolah",
                     "Pakaian",
                     "Makanan"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-17-6.2-0",
                   "img": "img/bm4/bm4_u17_p123.png"
                 },
@@ -1013,12 +1013,12 @@
                 {
                   "q": "Apakah ayat tanya?",
                   "a": [
-                    "Ayat untuk bertanya",
                     "Ayat menyatakan perbuatan",
                     "Ayat menerangkan sifat",
+                    "Ayat untuk bertanya",
                     "Ayat perintah"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-17-6.2-2"
                 }
               ]
@@ -1034,12 +1034,12 @@
                 {
                   "q": "Zara membaca teks apa dengan gaya penyampaian?",
                   "a": [
-                    "Teks berita",
                     "Sajak",
                     "Cerpen",
-                    "Drama"
+                    "Drama",
+                    "Teks berita"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-18-6.3-0",
                   "img": "img/bm4/bm4_u18_p128.png"
                 }
@@ -1056,12 +1056,12 @@
                 {
                   "q": "Encik Hasif membawa Zara dan Dina bertemu dengan siapa?",
                   "a": [
-                    "Encik Azli, pesawah moden",
                     "Penternak ayam",
                     "Nelayan",
+                    "Encik Azli, pesawah moden",
                     "Pengusaha restoran"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-19-7.1-0",
                   "img": "img/bm4/bm4_u19_p136.png"
                 },
@@ -1079,36 +1079,36 @@
                 {
                   "q": "Hadif membantu Pak Hamid membawa apa?",
                   "a": [
-                    "Pisang",
                     "Kelapa",
+                    "Pisang",
                     "Durian",
                     "Rambutan"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-19-7.1-2",
                   "img": "img/bm4/bm4_u19_p140.png"
                 },
                 {
                   "q": "Tepung kulit pisang boleh digunakan untuk...",
                   "a": [
-                    "Menghasilkan kek dan roti",
                     "Membuat baja",
                     "Makanan ikan",
+                    "Menghasilkan kek dan roti",
                     "Pewarna"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-19-7.1-3",
                   "img": "img/bm4/bm4_u19_p142.png"
                 },
                 {
                   "q": "Apakah kata kerja aktif transitif?",
                   "a": [
-                    "Kata kerja yang memerlukan objek",
                     "Kata kerja tanpa objek",
+                    "Kata kerja yang memerlukan objek",
                     "Kata nama",
                     "Kata adjektif"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-19-7.1-4"
                 }
               ]
@@ -1124,47 +1124,47 @@
                 {
                   "q": "Apakah fungsi penggalak tumbuhan?",
                   "a": [
-                    "Menggalakkan kesuburan pokok",
                     "Membunuh serangga",
                     "Menyiram tanaman",
-                    "Membaja tanah"
+                    "Membaja tanah",
+                    "Menggalakkan kesuburan pokok"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-20-7.2-0",
                   "img": "img/bm4/bm4_u20_p144.png"
                 },
                 {
                   "q": "Jiran Zara pulang dari Sabah dan memberi apa?",
                   "a": [
-                    "Buah kuning telur",
                     "Cenderamata",
                     "Ikan kering",
-                    "Biji kopi"
+                    "Biji kopi",
+                    "Buah kuning telur"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-20-7.2-1",
                   "img": "img/bm4/bm4_u20_p146.png"
                 },
                 {
                   "q": "Zara sekeluarga ke pasar apa?",
                   "a": [
-                    "Pasar tani",
                     "Pasar raya",
                     "Pasar malam",
-                    "Pasar basah"
+                    "Pasar basah",
+                    "Pasar tani"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-20-7.2-2"
                 },
                 {
                   "q": "Zara melawat ke muzium apa?",
                   "a": [
-                    "Muzium pertanian",
                     "Muzium negara",
+                    "Muzium pertanian",
                     "Muzium seni",
                     "Muzium laut"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-20-7.2-3",
                   "img": "img/bm4/bm4_u20_p148.png"
                 }
@@ -1181,24 +1181,24 @@
                 {
                   "q": "Zara membaca kisah tentang penternak apa?",
                   "a": [
-                    "Penternak empurau",
                     "Penternak ayam",
                     "Penternak lembu",
+                    "Penternak empurau",
                     "Penternak kambing"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-21-7.3-0",
                   "img": "img/bm4/bm4_u21_p150.png"
                 },
                 {
                   "q": "Murid-murid melakonkan situasi di mana?",
                   "a": [
-                    "Kedai",
                     "Sekolah",
+                    "Kedai",
                     "Kebun",
                     "Pasar"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-21-7.3-1"
                 }
               ]
@@ -1214,47 +1214,47 @@
                 {
                   "q": "Alif membaca surat khabar bersama siapa?",
                   "a": [
-                    "Abangnya",
                     "Ayahnya",
+                    "Abangnya",
                     "Ibunya",
                     "Kawannya"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-22-8.1-0",
                   "img": "img/bm4/bm4_u22_p159.png"
                 },
                 {
                   "q": "Mereka tertarik dengan lokasi unik di kawasan...",
                   "a": [
-                    "Petempatan Orang Asli",
                     "Bandaraya",
                     "Pulau",
+                    "Petempatan Orang Asli",
                     "Gunung"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-22-8.1-1"
                 },
                 {
                   "q": "Apakah kata nafi?",
                   "a": [
-                    "Kata yang menafikan sesuatu",
                     "Kata menyatakan bilangan",
                     "Kata sifat",
-                    "Kata kerja"
+                    "Kata kerja",
+                    "Kata yang menafikan sesuatu"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-22-8.1-2",
                   "img": "img/bm4/bm4_u22_p163.png"
                 },
                 {
                   "q": "Apakah produk utama yang disebut dalam teks?",
                   "a": [
-                    "Minyak masak",
                     "Beras",
                     "Gula",
-                    "Tepung"
+                    "Tepung",
+                    "Minyak masak"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-22-8.1-3"
                 }
               ]
@@ -1270,47 +1270,47 @@
                 {
                   "q": "Siapa terlibat dalam rangkaian \"Mawar Mekar\"?",
                   "a": [
-                    "Puan Azizah, Encik Selvan, Puan Tan",
                     "Guru-guru",
                     "Pelajar",
+                    "Puan Azizah, Encik Selvan, Puan Tan",
                     "Penternak"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-23-8.2-0",
                   "img": "img/bm4/bm4_u23_p165.png"
                 },
                 {
                   "q": "Jimi membaca cerpen di mana?",
                   "a": [
-                    "Ruang tamu rumahnya",
                     "Perpustakaan",
+                    "Ruang tamu rumahnya",
                     "Bilik darjah",
                     "Taman"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-23-8.2-1",
                   "img": "img/bm4/bm4_u23_p166.png"
                 },
                 {
                   "q": "Zara membaca kisah usahawan berjaya dari mana?",
                   "a": [
-                    "Sabah",
                     "Sarawak",
+                    "Sabah",
                     "Johor",
                     "Penang"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-23-8.2-2"
                 },
                 {
                   "q": "Alif melawat bengkel perusahaan membuat apa di Batu Pahat?",
                   "a": [
-                    "Kompang",
                     "Tembikar",
                     "Anyaman",
-                    "Makanan"
+                    "Makanan",
+                    "Kompang"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-23-8.2-3",
                   "img": "img/bm4/bm4_u23_p169.png"
                 }
@@ -1372,24 +1372,24 @@
                 {
                   "q": "Encik Nor Lisman bekerja sebagai...",
                   "a": [
-                    "Posmen",
                     "Guru",
+                    "Posmen",
                     "Doktor",
                     "Pemandu"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-25-9.1-2",
                   "img": "img/bm4/bm4_u25_p182.png"
                 },
                 {
                   "q": "Zara menyertai pertandingan mengarang apa?",
                   "a": [
-                    "Pantun",
                     "Karangan",
+                    "Pantun",
                     "Puisi",
                     "Cerpen"
                   ],
-                  "c": 0,
+                  "c": 1,
                   "id": "tb-bm4-25-9.1-3"
                 }
               ]
@@ -1405,12 +1405,12 @@
                 {
                   "q": "Apakah peranan Zara dalam Pintar Bahasa?",
                   "a": [
-                    "Penjaga masa",
                     "Peserta",
                     "Hakim",
-                    "Pengacara"
+                    "Pengacara",
+                    "Penjaga masa"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-26-9.2-0",
                   "img": "img/bm4/bm4_u26_p190.png"
                 },
@@ -1428,12 +1428,12 @@
                 {
                   "q": "Zara menonton filem pendek tentang sikap...",
                   "a": [
-                    "Masyarakat",
                     "Pelajar",
                     "Kanak-kanak",
-                    "Warga emas"
+                    "Warga emas",
+                    "Masyarakat"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-26-9.2-2",
                   "img": "img/bm4/bm4_u26_p186.png"
                 }
@@ -1450,36 +1450,36 @@
                 {
                   "q": "\"Jujurlah pada diri, hadapi cabaran\" — nilai ini berkaitan...",
                   "a": [
-                    "Integriti",
                     "Kebersihan",
                     "Kesihatan",
-                    "Kecergasan"
+                    "Kecergasan",
+                    "Integriti"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-27-9.3-0",
                   "img": "img/bm4/bm4_u27_p196.png"
                 },
                 {
                   "q": "Pemilik restoran memasang radio, Zara mendengar...",
                   "a": [
-                    "Motivasi pagi",
                     "Berita",
                     "Lagu",
-                    "Iklan"
+                    "Iklan",
+                    "Motivasi pagi"
                   ],
-                  "c": 0,
+                  "c": 3,
                   "id": "tb-bm4-27-9.3-1",
                   "img": "img/bm4/bm4_u27_p197.png"
                 },
                 {
                   "q": "Apakah nilai yang ditekankan dalam Unit 27?",
                   "a": [
-                    "Integriti",
                     "Kebersihan",
                     "Kerajinan",
+                    "Integriti",
                     "Kerjasama"
                   ],
-                  "c": 0,
+                  "c": 2,
                   "id": "tb-bm4-27-9.3-2",
                   "img": "img/bm4/bm4_u27_p198.png"
                 },
