@@ -602,7 +602,8 @@
                     "Gurindam"
                   ],
                   "c": 1,
-                  "id": "tb-bm4-9-3.3-1"
+                  "id": "tb-bm4-9-3.3-1",
+                  "img": "img/bm4/bm4_u9_p64.png"
                 }
               ]
             }
@@ -760,7 +761,8 @@
                     "Majlis Kebudayaan"
                   ],
                   "c": 2,
-                  "id": "tb-bm4-12-4.3-0"
+                  "id": "tb-bm4-12-4.3-0",
+                  "img": "img/bm4/bm4_u12_p86.png"
                 }
               ]
             }
@@ -918,7 +920,8 @@
                     "Cerita yang dibaca di sekolah"
                   ],
                   "c": 3,
-                  "id": "tb-bm4-15-5.3-1"
+                  "id": "tb-bm4-15-5.3-1",
+                  "img": "img/bm4/bm4_u15_p108.png"
                 }
               ]
             }
@@ -1075,7 +1078,8 @@
                     "Menuai buah"
                   ],
                   "c": 0,
-                  "id": "tb-bm4-19-7.1-1"
+                  "id": "tb-bm4-19-7.1-1",
+                  "img": "img/bm4/bm4_u19_p138.png"
                 },
                 {
                   "q": "Hadif membantu Pak Hamid membawa apa?",
@@ -1155,7 +1159,8 @@
                     "Pasar tani"
                   ],
                   "c": 3,
-                  "id": "tb-bm4-20-7.2-2"
+                  "id": "tb-bm4-20-7.2-2",
+                  "img": "img/bm4/bm4_u20_p147.png"
                 },
                 {
                   "q": "Zara melawat ke muzium apa?",
@@ -1200,7 +1205,8 @@
                     "Pasar"
                   ],
                   "c": 1,
-                  "id": "tb-bm4-21-7.3-1"
+                  "id": "tb-bm4-21-7.3-1",
+                  "img": "img/bm4/bm4_u21_p149.png"
                 }
               ]
             }
@@ -1233,7 +1239,8 @@
                     "Gunung"
                   ],
                   "c": 2,
-                  "id": "tb-bm4-22-8.1-1"
+                  "id": "tb-bm4-22-8.1-1",
+                  "img": "img/bm4/bm4_u22_p159.png"
                 },
                 {
                   "q": "Apakah kata nafi?",
@@ -1256,7 +1263,8 @@
                     "Minyak masak"
                   ],
                   "c": 3,
-                  "id": "tb-bm4-22-8.1-3"
+                  "id": "tb-bm4-22-8.1-3",
+                  "img": "img/bm4/bm4_u22_p161.png"
                 }
               ]
             }
@@ -1301,7 +1309,8 @@
                     "Penang"
                   ],
                   "c": 1,
-                  "id": "tb-bm4-23-8.2-2"
+                  "id": "tb-bm4-23-8.2-2",
+                  "img": "img/bm4/bm4_u23_p178.png"
                 },
                 {
                   "q": "Alif melawat bengkel perusahaan membuat apa di Batu Pahat?",
@@ -1334,7 +1343,8 @@
                     "Kesihatan"
                   ],
                   "c": 0,
-                  "id": "tb-bm4-24-8.3-0"
+                  "id": "tb-bm4-24-8.3-0",
+                  "img": "img/bm4/bm4_u24_p172.png"
                 }
               ]
             }
@@ -1391,7 +1401,8 @@
                     "Cerpen"
                   ],
                   "c": 1,
-                  "id": "tb-bm4-25-9.1-3"
+                  "id": "tb-bm4-25-9.1-3",
+                  "img": "img/bm4/bm4_u25_p183.png"
                 }
               ]
             }
@@ -1505,7 +1516,8 @@
                     "Sombong"
                   ],
                   "c": 0,
-                  "id": "tb-bm4-27-9.3-4"
+                  "id": "tb-bm4-27-9.3-4",
+                  "img": "img/bm4/bm4_u27_p199.png"
                 }
               ]
             }
